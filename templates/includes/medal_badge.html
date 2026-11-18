@@ -1,0 +1,10 @@
+{% load i18n %}
+{% if medal_type == "GOLD" %}
+  <span class="badge badge-gold">&#9733; {% trans "Gold" %}</span>
+{% elif medal_type == "SILVER" %}
+  <span class="badge badge-silver">&#9733; {% trans "Silver" %}</span>
+{% elif medal_type == "BRONZE" %}
+  <span class="badge badge-bronze">&#9733; {% trans "Bronze" %}</span>
+{% else %}
+  <span class="badge badge-dark">{% trans "Special Award" %}</span>
+{% endif %}

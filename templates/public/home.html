@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+{% load i18n static techwando_tags %}
+
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <span class="hero-kicker">&#9733; {% trans "Official Martial Arts Academy & Club Registry" %}</span>
+    <h1>{% trans "Discipline, Education, and Verified Martial Arts Excellence" %}</h1>
+    <p class="lead">
+      {% trans "TECHWANDO unites traditional Budo values with modern sports science, athlete belt registries, championship medal verification, and multilingual club management." %}
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-lg btn-primary" href="{% url 'champions:list' %}">{% trans "Explore Champions" %}</a>
+      <a class="btn btn-lg btn-ghost-light" href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a>
+      {% if not user.is_authenticated %}
+      <a class="btn btn-lg btn-ghost-light" href="{% url 'accounts:register' %}">{% trans "Become a Member" %}</a>
+      {% endif %}
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-box">
+        <span class="stat-value">{{ stats.active_members|local_num }}</span>
+        <span class="stat-label">{% trans "Approved Members" %}</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">{{ stats.approved_medals|local_num }}</span>
+        <span class="stat-label">{% trans "Verified Medals" %}</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">{{ stats.black_belts|local_num }}</span>
+        <span class="stat-label">{% trans "Black Belt Holders" %}</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value">{{ stats.competitions|local_num }}</span>
+        <span class="stat-label">{% trans "Official Championships" %}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Featured Champions #}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{% trans "Club Champions & Verified Athletes" %}</h2>
+        <p>{% trans "Athletes whose ranks, achievements, and medals have been officially reviewed and approved." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'champions:list' %}">{% trans "View All Champions" %}</a>
+    </div>
+
+    {% if featured_champions %}
+    <div class="grid grid-4">
+      {% for athlete in featured_champions %}
+      <article class="card card-hover">
+        <div class="card-body">
+          <div class="athlete-card-top">
+            {% if athlete.profile_photo %}
+              <img class="avatar" src="{{ athlete.profile_photo.url }}" alt="{{ athlete.localized_full_name }}">
+            {% else %}
+              <img class="avatar" src="{% static 'images/default-avatar.svg' %}" alt="{{ athlete.localized_full_name }}">
+            {% endif %}
+            <div>
+              <h3 class="card-title" style="margin-block-end:0.2rem;">
+                <a href="{{ athlete.get_public_url }}">{{ athlete.localized_full_name }}</a>
+              </h3>
+              <span class="badge badge-neutral">{{ athlete.get_primary_discipline_display }}</span>
+            </div>
+          </div>
+          {% with belt=athlete.current_approved_belt %}
+          {% if belt %}
+          <p style="margin:0 0 0.65rem;font-size:0.86rem;font-weight:600;">
+            <span class="belt-swatch" style="background:{{ belt.belt_type.color_hex }};"></span>
+            {{ belt.belt_type.localized_name }}
+          </p>
+          {% endif %}
+          {% endwith %}
+          {% if athlete.localized_biography %}
+          <p class="card-text">{{ athlete.localized_biography|truncatechars:100 }}</p>
+          {% endif %}
+          <div class="card-footer-meta">
+            <span>{% trans "Medals" %}: <strong>{{ athlete.approved_medal_count|local_num }}</strong></span>
+            <a href="{{ athlete.get_public_url }}">{% trans "Profile" %} &rarr;</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">{% trans "Approved champion profiles will appear here once published." %}</div>
+    {% endif %}
+  </div>
+</section>
+
+{# Training Programs & Education #}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{% trans "Training Programs & Martial Arts Education" %}</h2>
+        <p>{% trans "Structured courses from beginner foundations to international championship squads." %}</p>
+      </div>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+        <a class="btn btn-outline btn-sm" href="{% url 'pages:education' %}">{% trans "Curriculum" %}</a>
+        <a class="btn btn-dark btn-sm" href="{% url 'pages:services' %}">{% trans "All Programs" %}</a>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      {% for prog in services %}
+      {% with p_tr=prog|tr %}
+      <article class="card card-hover">
+        <div class="card-body">
+          <span class="badge badge-dark" style="align-self:flex-start;margin-block-end:0.75rem;">
+            {% trans "Program" %}
+          </span>
+          <h3 class="card-title">
+            <a href="{{ prog.get_absolute_url }}">{{ p_tr.title }}</a>
+          </h3>
+          <p class="card-text">{{ p_tr.summary|default:p_tr.body|truncatechars:140 }}</p>
+          <div class="card-footer-meta">
+            <a href="{{ prog.get_absolute_url }}">{% trans "Learn more" %}</a>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Recent Verified Medal Winners #}
+{% if recent_medals %}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{% trans "Recent Medal Winners" %}</h2>
+        <p>{% trans "Latest officially verified championship podium finishes." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'champions:medals' %}">{% trans "Full Honor Roll" %}</a>
+    </div>
+    <div class="grid grid-3">
+      {% for medal in recent_medals %}
+      <div class="card">
+        <div class="card-body">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-block-end:0.7rem;">
+            {% include "includes/medal_badge.html" with medal_type=medal.medal_type %}
+            <span style="font-size:0.82rem;color:var(--tw-text-subtle);">{{ medal.award_date|local_date }}</span>
+          </div>
+          <h3 class="card-title">
+            <a href="{{ medal.member.get_public_url }}">{{ medal.member.localized_full_name }}</a>
+          </h3>
+          <p class="card-text" style="margin-block-end:0.4rem;">{{ medal.localized_competition_name }}</p>
+          <small style="color:var(--tw-text-subtle);">{{ medal.localized_competition_location }}</small>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# Featured Equipment & Products #}
+{% if featured_products %}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{% trans "Official Uniforms & Equipment" %}</h2>
+        <p>{% trans "Competition-grade uniforms, certified protective gear, and custom Dan belts." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'products:list' %}">{% trans "Browse Catalog" %}</a>
+    </div>
+    <div class="grid grid-4">
+      {% for product in featured_products %}
+      {% with prod_tr=product|tr img=product.primary_image %}
+      <article class="card card-hover">
+        {% if img %}
+        <a class="card-media" href="{{ product.get_absolute_url }}">
+          <img src="{{ img.image.url }}" alt="{{ img.localized_alt }}" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ product.get_absolute_url }}">{{ prod_tr.name }}</a></h3>
+          <p class="card-text">{{ prod_tr.short_description|default:prod_tr.description|truncatechars:95 }}</p>
+          <div class="card-footer-meta">
+            {% if product.price is not None %}
+              <strong>{{ product.price|local_price:product.currency }}</strong>
+            {% else %}
+              <span>{% trans "Inquire for price" %}</span>
+            {% endif %}
+            <span class="ltr-inline">{{ product.sku }}</span>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# Latest Blog Articles #}
+{% if latest_posts %}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>{% trans "Latest Articles & Club News" %}</h2>
+        <p>{% trans "Technical insights, competition coverage, and belt exam guides." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'blog:list' %}">{% trans "All Articles" %}</a>
+    </div>
+    <div class="grid grid-3">
+      {% for post in latest_posts %}
+      {% with post_tr=post|tr %}
+      <article class="card card-hover">
+        {% if post.featured_image %}
+        <a class="card-media" href="{{ post.get_absolute_url }}">
+          <img src="{{ post.featured_image.url }}" alt="{{ post_tr.featured_image_alt|default:post_tr.title }}" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="card-body">
+          {% if post.category %}
+          <span class="badge badge-neutral" style="align-self:flex-start;margin-block-end:0.6rem;">
+            {{ post.category.localized_name }}
+          </span>
+          {% endif %}
+          <h3 class="card-title"><a href="{{ post.get_absolute_url }}">{{ post_tr.title }}</a></h3>
+          <p class="card-text">{{ post_tr.excerpt|default:post_tr.body|truncatechars:125 }}</p>
+          <div class="card-footer-meta">
+            <span>{{ post.published_at|local_date }}</span>
+            <a href="{{ post.get_absolute_url }}">{% trans "Read article" %}</a>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

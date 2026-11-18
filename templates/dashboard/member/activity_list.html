@@ -1,0 +1,55 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "My Social Activities" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Social & Community Activities" %}</h1>
+    <p>{% trans "Document coaching workshops, volunteer events, and cultural outreach." %}</p>
+  </div>
+  <a class="btn btn-primary" href="{% url 'activities:member_add' %}">+ {% trans "Submit Activity" %}</a>
+</div>
+
+{% if activities %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Title" %}</th>
+          <th>{% trans "Location" %}</th>
+          <th>{% trans "Date" %}</th>
+          <th>{% trans "Public Consent" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for act in activities %}
+        <tr>
+          <td><strong>{{ act.localized_title }}</strong></td>
+          <td>{{ act.localized_location }}</td>
+          <td>{{ act.activity_date|local_date }}</td>
+          <td>{% if act.public_visibility_consent %}{% trans "Yes" %}{% else %}{% trans "Private" %}{% endif %}</td>
+          <td>{% include "includes/status_badge.html" with status=act.approval_status %}</td>
+          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <a class="btn btn-sm btn-outline" href="{% url 'activities:member_detail' act.pk %}">{% trans "View" %}</a>
+            {% if act.can_member_edit %}
+            <a class="btn btn-sm btn-outline" href="{% url 'activities:member_edit' act.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">
+  <p>{% trans "No social activities submitted yet." %}</p>
+  <a class="btn btn-primary" href="{% url 'activities:member_add' %}">{% trans "Submit Social Activity" %}</a>
+</div>
+{% endif %}
+{% endblock %}

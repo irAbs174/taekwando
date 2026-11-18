@@ -1,0 +1,18 @@
+{% load i18n techwando_tags %}
+{% if is_paginated %}
+<nav class="pagination" aria-label="{% trans 'Pagination' %}">
+  {% if page_obj.has_previous %}
+    <a class="btn btn-sm btn-outline" href="{% query_transform page=page_obj.previous_page_number %}">
+      {% trans "Previous" %}
+    </a>
+  {% endif %}
+  <span class="badge badge-neutral" style="padding:0.45rem 0.9rem;">
+    {% trans "Page" %} {{ page_obj.number|local_num }} / {{ page_obj.paginator.num_pages|local_num }}
+  </span>
+  {% if page_obj.has_next %}
+    <a class="btn btn-sm btn-outline" href="{% query_transform page=page_obj.next_page_number %}">
+      {% trans "Next" %}
+    </a>
+  {% endif %}
+</nav>
+{% endif %}

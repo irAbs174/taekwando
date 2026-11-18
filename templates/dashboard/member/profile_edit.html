@@ -1,0 +1,25 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Personal Profile" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "Personal Profile & Public Privacy" %}</h1>
+    <p>{% trans "Membership Number" %}: <strong class="ltr-inline">{{ profile.membership_number }}</strong> &bull; {% trans "Joined" %}: {{ profile.joining_date|local_date }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body" style="padding:1.75rem;">
+    <div class="alert alert-info">
+      {% trans "Your birth date, phone number, email address, and uploaded certificates are always kept strictly private and are never displayed on public pages." %}
+    </div>
+    <form method="post" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      {% include "includes/form_fields.html" with form=form %}
+      <button type="submit" class="btn btn-primary">{% trans "Save Profile" %}</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

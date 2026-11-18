@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <h1>{% if page_tr %}{{ page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %}</h1>
+    <p>
+      {% if page_tr and page_tr.subtitle %}
+        {{ page_tr.subtitle }}
+      {% else %}
+        {% trans "Uniting martial arts heritage, athletic excellence, and verified sports education." %}
+      {% endif %}
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card" style="max-inline-size:900px;margin-inline:auto;">
+      <div class="card-body prose" style="padding:2rem;">
+        {% if page_tr %}
+          {% if page_tr.is_fallback %}
+          <div class="alert alert-info">
+            {% trans "This content is currently shown in the club's alternate language." %}
+          </div>
+          {% endif %}
+          {{ page_tr.body|linebreaks }}
+        {% else %}
+          <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking, and championship verification club connecting Persian and Japanese martial arts communities." %}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if services %}
+    <div style="margin-block-start:3rem;">
+      <div class="section-head">
+        <h2>{% trans "Training Programs" %}</h2>
+        <a class="btn btn-outline btn-sm" href="{% url 'pages:services' %}">{% trans "View All" %}</a>
+      </div>
+      <div class="grid grid-2">
+        {% for svc in services %}
+        {% with s_tr=svc|tr %}
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title"><a href="{{ svc.get_absolute_url }}">{{ s_tr.title }}</a></h3>
+            <p class="card-text">{{ s_tr.summary|default:s_tr.body|truncatechars:160 }}</p>
+          </div>
+        </div>
+        {% endwith %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

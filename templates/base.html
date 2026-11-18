@@ -1,0 +1,75 @@
+{% load i18n static techwando_tags %}<!DOCTYPE html>
+<html lang="{{ CURRENT_LANG }}" dir="{{ HTML_DIR }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ seo_title|default:SITE_NAME }}{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}{{ seo_description|default:'' }}{% endblock %}">
+  <meta name="robots" content="{% block meta_robots %}{{ seo_robots|default:'index, follow' }}{% endblock %}">
+  <link rel="canonical" href="{{ seo_canonical|default:CANONICAL_DEFAULT }}">
+
+  {# Localized hreflang alternates for Persian (fa-IR) & Japanese (ja-JP) #}
+  <link rel="alternate" hreflang="fa-IR" href="{{ HREFLANG_FA }}">
+  <link rel="alternate" hreflang="fa" href="{{ HREFLANG_FA }}">
+  <link rel="alternate" hreflang="ja-JP" href="{{ HREFLANG_JA }}">
+  <link rel="alternate" hreflang="ja" href="{{ HREFLANG_JA }}">
+  <link rel="alternate" hreflang="x-default" href="{{ HREFLANG_FA }}">
+
+  {# Open Graph & Social Metadata #}
+  <meta property="og:site_name" content="{{ SITE_NAME }}">
+  <meta property="og:locale" content="{{ LOCALE_META.og_locale }}">
+  <meta property="og:locale:alternate" content="{{ ALT_LOCALE_META.og_locale }}">
+  <meta property="og:type" content="{{ og_type|default:'website' }}">
+  <meta property="og:title" content="{% firstof og_title seo_title SITE_NAME %}">
+  <meta property="og:description" content="{% firstof og_description seo_description '' %}">
+  <meta property="og:url" content="{{ seo_canonical|default:CANONICAL_DEFAULT }}">
+  {% if og_image %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:alt" content="{{ og_image_alt|default:SITE_NAME }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="{% static 'images/logo-mark.svg' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% if IS_RTL %}
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  {% else %}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  {% endif %}
+
+  <link rel="stylesheet" href="{% static 'css/techwando.css' %}">
+  {% if IS_RTL %}
+  <link rel="stylesheet" href="{% static 'css/rtl.css' %}">
+  {% else %}
+  <link rel="stylesheet" href="{% static 'css/ja.css' %}">
+  {% endif %}
+
+  {% if structured_data_json %}
+  <script type="application/ld+json">{{ structured_data_json|safe }}</script>
+  {% endif %}
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{% trans "Skip to main content" %}</a>
+
+  {% include "includes/navbar.html" %}
+
+  <main id="main-content">
+    {% if messages %}
+    <div class="container" style="padding-block-start: 1rem;">
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags|default:'info' }}" role="status">{{ message }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include "includes/footer.html" %}
+
+  <script src="{% static 'js/techwando.js' %}" defer></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

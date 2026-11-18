@@ -1,0 +1,56 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "My Competitions" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Competition Participations" %}</h1>
+    <p>{% trans "Record your tournament appearances, weight divisions, and standings." %}</p>
+  </div>
+  <a class="btn btn-primary" href="{% url 'competitions:member_add' %}">+ {% trans "Add Competition Record" %}</a>
+</div>
+
+{% if participations %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Competition" %}</th>
+          <th>{% trans "Division" %}</th>
+          <th>{% trans "Result" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in participations %}
+        <tr>
+          <td>
+            <strong>{{ p.competition.localized_title }}</strong>
+            <br><small style="color:var(--tw-text-subtle);">{{ p.competition.start_date|local_date }}</small>
+          </td>
+          <td>{{ p.division_category|default:"—" }}</td>
+          <td>{{ p.localized_result|default:"—" }}</td>
+          <td>{% include "includes/status_badge.html" with status=p.approval_status %}</td>
+          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <a class="btn btn-sm btn-outline" href="{% url 'competitions:member_detail' p.pk %}">{% trans "View" %}</a>
+            {% if p.can_member_edit %}
+            <a class="btn btn-sm btn-outline" href="{% url 'competitions:member_edit' p.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">
+  <p>{% trans "No competition participation records added yet." %}</p>
+  <a class="btn btn-primary" href="{% url 'competitions:member_add' %}">{% trans "Add Competition Record" %}</a>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Japanese (ja-JP) LTR Typographic & Rhythm Refinements
+   ========================================================================== */
+html[lang="ja"] body {
+  direction: ltr;
+  text-align: left;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.82;
+  letter-spacing: 0.02em;
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  font-feature-settings: "palt" 1;
+}
+
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4 {
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+html[lang="ja"] .hero h1 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  line-height: 1.38;
+}
+
+html[lang="ja"] .prose p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}

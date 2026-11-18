@@ -1,0 +1,23 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n %}
+{% block title %}{% trans "Submit Social Activity" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">
+    {% if object %}{% trans "Edit Social Activity" %}{% else %}{% trans "Submit Social Activity" %}{% endif %}
+  </h1>
+</div>
+<div class="card">
+  <div class="card-body" style="padding:1.75rem;">
+    <form method="post" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      {% include "includes/form_fields.html" with form=form %}
+      <div style="display:flex;gap:0.75rem;">
+        <button type="submit" class="btn btn-primary">{% trans "Submit Activity" %}</button>
+        <a class="btn btn-outline" href="{% url 'activities:member_list' %}">{% trans "Cancel" %}</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

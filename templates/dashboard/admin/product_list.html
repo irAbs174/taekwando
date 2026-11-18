@@ -1,0 +1,38 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Manage Products" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Products Catalog Management" %}</h1>
+  <a class="btn btn-primary" href="{% url 'products:admin_add' %}">+ {% trans "Add Product" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "SKU" %}</th>
+          <th>{% trans "Name" %}</th>
+          <th>{% trans "Price" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Action" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pr in products %}
+        {% with pr_tr=pr|tr %}
+        <tr>
+          <td class="ltr-inline"><strong>{{ pr.sku }}</strong></td>
+          <td>{{ pr_tr.name|default:pr.slug }}</td>
+          <td>{% if pr.price is not None %}{{ pr.price|local_price:pr.currency }}{% else %}—{% endif %}</td>
+          <td><span class="badge badge-neutral">{{ pr.get_status_display }}</span></td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'products:admin_edit' pr.pk %}">{% trans "Edit" %}</a></td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

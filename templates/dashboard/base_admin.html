@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+{% block meta_robots %}noindex, nofollow{% endblock %}
+
+{% block content %}
+<div class="container dashboard-shell">
+  <aside class="dashboard-sidebar" aria-label="{% trans 'Administration navigation' %}">
+    <p class="sidebar-heading">{% trans "Administration" %}</p>
+    <ul class="sidebar-nav">
+      <li><a href="{% url 'accounts:admin_dashboard' %}">{% trans "Dashboard Overview" %}</a></li>
+      {% if IS_CLUB_MANAGER or user.role == "MODERATOR" %}
+      <li><a href="{% url 'accounts:admin_moderation_queue' %}">{% trans "Moderation Queue" %}</a></li>
+      <li><a href="{% url 'audit_logs:reviews' %}">{% trans "Moderation History" %}</a></li>
+      {% endif %}
+      {% if IS_CLUB_MANAGER %}
+      <li><a href="{% url 'accounts:admin_member_list' %}">{% trans "Members & Applications" %}</a></li>
+      <li><a href="{% url 'belts:admin_type_list' %}">{% trans "Belt Ranks" %}</a></li>
+      <li><a href="{% url 'competitions:admin_list' %}">{% trans "Competitions" %}</a></li>
+      <li><a href="{% url 'audit_logs:list' %}">{% trans "Audit Logs" %}</a></li>
+      {% endif %}
+      {% if IS_CONTENT_ADMIN %}
+      <li><a href="{% url 'blog:admin_list' %}">{% trans "Blog Articles" %}</a></li>
+      <li><a href="{% url 'blog:admin_category_list' %}">{% trans "Blog Categories" %}</a></li>
+      <li><a href="{% url 'products:admin_list' %}">{% trans "Products Catalog" %}</a></li>
+      <li><a href="{% url 'products:admin_category_list' %}">{% trans "Product Categories" %}</a></li>
+      <li><a href="{% url 'pages:admin_list' %}">{% trans "Pages & Programs" %}</a></li>
+      <li><a href="{% url 'seo:admin_list' %}">{% trans "SEO & Translations" %}</a></li>
+      {% endif %}
+      <li><a href="{% url 'contact:admin_list' %}">{% trans "Contact Messages" %}</a></li>
+      <li><a href="{% url 'admin:index' %}">{% trans "Django Admin" %}</a></li>
+    </ul>
+
+    <hr style="border:0;border-block-start:1px solid var(--tw-border);margin-block:1rem;">
+    <form method="post" action="{% url 'accounts:logout' %}">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-outline btn-sm" style="inline-size:100%;">
+        {% trans "Log Out" %}
+      </button>
+    </form>
+  </aside>
+
+  <section aria-label="{% trans 'Administration workspace' %}">
+    {% block admin_content %}{% endblock %}
+  </section>
+</div>
+{% endblock %}

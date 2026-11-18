@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Member Registration" %} | {{ SITE_NAME }}{% endblock %}
+{% block meta_robots %}noindex, nofollow{% endblock %}
+
+{% block content %}
+<div class="container auth-wrap" style="max-inline-size:600px;">
+  <div class="card">
+    <div class="card-body" style="padding:2rem;">
+      <h1 style="margin:0 0 0.35rem;font-size:1.55rem;">{% trans "TECHWANDO Membership Registration" %}</h1>
+      <p class="card-text">
+        {% trans "Create your individual athlete portal account. Your membership application will be reviewed by club administrators." %}
+      </p>
+
+      <form method="post" action="{% url 'accounts:register' %}" novalidate>
+        {% csrf_token %}
+        {% include "includes/form_fields.html" with form=form %}
+        <button type="submit" class="btn btn-primary btn-lg" style="inline-size:100%;">
+          {% trans "Create Member Account" %}
+        </button>
+      </form>
+
+      <p style="margin-block:1.25rem 0;font-size:0.88rem;text-align:center;">
+        {% trans "Already registered?" %} <a href="{% url 'accounts:login' %}">{% trans "Log In" %}</a>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

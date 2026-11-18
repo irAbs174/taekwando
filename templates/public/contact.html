@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <h1>{% trans "Contact TECHWANDO Club" %}</h1>
+    <p>{% trans "Questions about training schedules, membership applications, seminars, or official gear? Send us a message." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start;">
+      <div class="card">
+        <div class="card-body" style="padding:1.85rem;">
+          <h2 class="card-title" style="font-size:1.3rem;margin-block-end:1.1rem;">{% trans "Send an Inquiry" %}</h2>
+          <form method="post" novalidate>
+            {% csrf_token %}
+            {% include "includes/form_fields.html" with form=form %}
+            <button type="submit" class="btn btn-primary btn-lg">{% trans "Send Message" %}</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body" style="padding:1.85rem;">
+          <h2 class="card-title" style="font-size:1.3rem;">{% trans "Club Administration & Dojang" %}</h2>
+          <p class="card-text">
+            {% trans "Our multilingual administration desk responds to messages in both Persian (fa-IR) and Japanese (ja-JP)." %}
+          </p>
+          <hr style="border:0;border-block-start:1px solid var(--tw-border);margin-block:1rem;">
+          <p><strong>{% trans "Official Email" %}:</strong> <span class="ltr-inline">{{ CLUB_CONTACT_EMAIL }}</span></p>
+          <p><strong>{% trans "Training Hours" %}:</strong> {% trans "Monday – Saturday, 09:00 – 21:00" %}</p>
+          <p><strong>{% trans "Supported Languages" %}:</strong> فارسی (fa-IR) / 日本語 (ja-JP)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

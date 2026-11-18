@@ -1,0 +1,35 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Moderation History" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Moderation & Review History" %}</h1>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Date" %}</th>
+          <th>{% trans "Submission" %}</th>
+          <th>{% trans "Transition" %}</th>
+          <th>{% trans "Reviewer" %}</th>
+          <th>{% trans "Note" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in review_logs %}
+        <tr>
+          <td>{{ r.created_at|local_datetime }}</td>
+          <td><strong>{{ r.target_repr|truncatechars:45 }}</strong></td>
+          <td>{% include "includes/status_badge.html" with status=r.new_status %}</td>
+          <td class="ltr-inline">{% if r.reviewer %}{{ r.reviewer.email }}{% else %}—{% endif %}</td>
+          <td>{{ r.note|default:"—"|truncatechars:70 }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}
