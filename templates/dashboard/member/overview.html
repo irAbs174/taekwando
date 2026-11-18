@@ -1,0 +1,115 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n static techwando_tags %}
+{% block title %}{% trans "Member Dashboard" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="card" style="margin-block-end:1.5rem;">
+  <div class="card-body" style="display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:1.15rem;">
+      {% if profile.profile_photo %}
+        <img class="avatar avatar-lg" src="{{ profile.profile_photo.url }}" alt="{{ profile.localized_full_name }}">
+      {% else %}
+        <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ profile.localized_full_name }}">
+      {% endif %}
+      <div>
+        <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;margin-block-end:0.3rem;">
+          <span class="badge badge-dark ltr-inline">{{ profile.membership_number }}</span>
+          {% include "includes/status_badge.html" with status=profile.membership_status %}
+        </div>
+        <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">{{ profile.localized_full_name }}</h1>
+        <p style="margin:0;color:var(--tw-text-muted);font-size:0.9rem;">
+          {{ profile.get_primary_discipline_display }}
+          {% if current_belt %}
+            &bull; <strong>{{ current_belt.belt_type.localized_name }}</strong>
+          {% else %}
+            &bull; {% trans "No approved belt recorded yet" %}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+    <div style="display:flex;gap:0.55rem;flex-wrap:wrap;">
+      <a class="btn btn-outline btn-sm" href="{% url 'members:profile_edit' %}">{% trans "Edit Profile" %}</a>
+      {% if profile.is_publicly_visible %}
+      <a class="btn btn-dark btn-sm" href="{{ profile.get_public_url %}">{% trans "View Public Profile" %}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if profile.admin_note %}
+<div class="alert alert-info">
+  <strong>{% trans "Club Administration Note" %}:</strong> {{ profile.admin_note }}
+</div>
+{% endif %}
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">{% trans "Current Approved Belt" %}</div>
+    <div class="kpi-value" style="font-size:1.15rem;margin-block-start:0.5rem;">
+      {% if current_belt %}{{ current_belt.belt_type.localized_name }}{% else %}—{% endif %}
+    </div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">{% trans "Approved Medals" %}</div>
+    <div class="kpi-value">{{ medal_breakdown.total|local_num }}</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">{% trans "Approved Achievements" %}</div>
+    <div class="kpi-value">{{ approved_achievements_count|local_num }}</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">{% trans "Pending Submissions" %}</div>
+    <div class="kpi-value" style="color:var(--tw-warning);">{{ pending_submissions_count|local_num }}</div>
+  </div>
+</div>
+
+<div class="card" style="margin-block-end:1.5rem;">
+  <div class="card-body">
+    <h2 class="card-title">{% trans "Quick Submit" %}</h2>
+    <div style="display:flex;gap:0.65rem;flex-wrap:wrap;">
+      <a class="btn btn-primary btn-sm" href="{% url 'medals:member_add' %}">+ {% trans "Submit Medal" %}</a>
+      <a class="btn btn-outline btn-sm" href="{% url 'achievements:member_add' %}">+ {% trans "Add Achievement" %}</a>
+      <a class="btn btn-outline btn-sm" href="{% url 'belts:member_add' %}">+ {% trans "Request Belt Promotion" %}</a>
+      <a class="btn btn-outline btn-sm" href="{% url 'competitions:member_add' %}">+ {% trans "Add Competition" %}</a>
+      <a class="btn btn-outline btn-sm" href="{% url 'activities:member_add' %}">+ {% trans "Submit Social Activity" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">{% trans "Recent Submissions & Activities" %}</h2>
+    {% if recent_items %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>{% trans "Type" %}</th>
+            <th>{% trans "Record" %}</th>
+            <th>{% trans "Date" %}</th>
+            <th>{% trans "Status" %}</th>
+            <th>{% trans "Details" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in recent_items %}
+          <tr>
+            <td><span class="badge badge-neutral">{{ item.kind }}</span></td>
+            <td>
+              <strong>{{ item.title }}</strong>
+              {% if item.note %}<br><small style="color:var(--tw-text-subtle);">{{ item.note|truncatechars:70 }}</small>{% endif %}
+            </td>
+            <td>{{ item.date|local_date }}</td>
+            <td>{% include "includes/status_badge.html" with status=item.status %}</td>
+            <td><a class="btn btn-sm btn-outline" href="{{ item.url }}">{% trans "View" %}</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <p class="card-text">{% trans "You have not submitted any sports records yet. Use the buttons above to get started." %}</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

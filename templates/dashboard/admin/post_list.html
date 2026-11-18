@@ -1,0 +1,43 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Manage Blog" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Blog Articles (Persian & Japanese)" %}</h1>
+  <a class="btn btn-primary" href="{% url 'blog:admin_add' %}">+ {% trans "New Article" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Title" %}</th>
+          <th>{% trans "Category" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Published" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in posts %}
+        {% with ptr=p|tr %}
+        <tr>
+          <td><strong>{{ ptr.title|default:p.slug }}</strong><br><small class="ltr-inline">{{ p.slug }}</small></td>
+          <td>{% if p.category %}{{ p.category.localized_name }}{% else %}—{% endif %}</td>
+          <td><span class="badge badge-neutral">{{ p.get_status_display }}</span></td>
+          <td>{{ p.published_at|local_date|default:"—" }}</td>
+          <td style="display:flex;gap:0.4rem;">
+            <a class="btn btn-sm btn-outline" href="{% url 'blog:admin_edit' p.pk %}">{% trans "Edit" %}</a>
+            {% if p.status == "PUBLISHED" %}
+            <a class="btn btn-sm btn-outline" href="{{ p.get_absolute_url }}">{% trans "View" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

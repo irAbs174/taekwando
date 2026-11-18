@@ -1,0 +1,72 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{{ member.full_name }} | {{ SITE_NAME }}{% endblock %}
+
+{% block admin_content %}
+<div class="section-head">
+  <div>
+    <span class="badge badge-dark ltr-inline">{{ member.membership_number }}</span>
+    {% include "includes/status_badge.html" with status=member.membership_status %}
+    <h1 style="margin:0.4rem 0 0;font-size:1.5rem;">{{ member.full_name }}</h1>
+    <p class="ltr-inline" style="margin:0;">{{ member.user.email }}</p>
+  </div>
+  <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="toggle_active">
+    {% if member.user.is_active %}
+      <button type="submit" class="btn btn-danger btn-sm">{% trans "Deactivate Account" %}</button>
+    {% else %}
+      <button type="submit" class="btn btn-primary btn-sm">{% trans "Reactivate Account" %}</button>
+    {% endif %}
+  </form>
+</div>
+
+<div class="grid grid-2" style="margin-block-end:1.5rem;align-items:start;">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">{% trans "Membership Application Decision" %}</h2>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        <input type="hidden" name="action" value="review_membership">
+        {% include "includes/form_fields.html" with form=decision_form %}
+        <button type="submit" class="btn btn-primary">{% trans "Update Membership Status" %}</button>
+      </form>
+    </div>
+  </div>
+
+  {% if can_change_role %}
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">{% trans "Role Assignment (Super Admin)" %}</h2>
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="change_role">
+        <div class="form-group">
+          <label class="form-label" for="id_role">{% trans "Role" %}</label>
+          <select id="id_role" name="role" class="form-select">
+            {% for code, label in roles %}
+            <option value="{{ code }}" {% if member.user.role == code %}selected{% endif %}>{{ label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="btn btn-dark">{% trans "Save Role" %}</button>
+      </form>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<div class="card" style="margin-block-end:1.5rem;">
+  <div class="card-body">
+    <h2 class="card-title">{% trans "Edit Member Profile" %}</h2>
+    <form method="post" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      <input type="hidden" name="action" value="edit_profile">
+      {% include "includes/form_fields.html" with form=profile_form %}
+      <button type="submit" class="btn btn-primary">{% trans "Save Profile Changes" %}</button>
+    </form>
+  </div>
+</div>
+
+{% include "includes/review_history.html" with review_logs=review_logs %}
+{% endblock %}

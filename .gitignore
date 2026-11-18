@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment & secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Database & backups
+db.sqlite3
+db.sqlite3-shm
+db.sqlite3-wal
+db.sqlite3-journal
+backups/
+*.sqlite3.bak
+*.sql.gz
+
+# Collected static files & user uploads
+staticfiles/
+media/*
+!media/profiles/
+!media/medals/
+!media/certificates/
+!media/activities/
+!media/products/
+media/profiles/*
+!media/profiles/.gitkeep
+media/medals/*
+!media/medals/.gitkeep
+media/certificates/*
+!media/certificates/.gitkeep
+media/activities/*
+!media/activities/.gitkeep
+media/products/*
+!media/products/.gitkeep
+
+private_media/*
+!private_media/certificates/
+!private_media/medals/
+!private_media/activities/
+private_media/certificates/*
+!private_media/certificates/.gitkeep
+private_media/medals/*
+!private_media/medals/.gitkeep
+private_media/activities/*
+!private_media/activities/.gitkeep
+
+# Logs & test artifacts
+logs/
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

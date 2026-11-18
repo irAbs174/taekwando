@@ -1,0 +1,56 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "My Medals" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Medals" %}</h1>
+    <p>{% trans "Submit championship medals with supporting certificates for club verification." %}</p>
+  </div>
+  <a class="btn btn-primary" href="{% url 'medals:member_add' %}">+ {% trans "Submit Medal" %}</a>
+</div>
+
+{% if medals %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Medal" %}</th>
+          <th>{% trans "Competition" %}</th>
+          <th>{% trans "Award Date" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in medals %}
+        <tr>
+          <td>{% include "includes/medal_badge.html" with medal_type=m.medal_type %}</td>
+          <td>
+            <strong>{{ m.localized_competition_name }}</strong>
+            <br><small style="color:var(--tw-text-subtle);">{{ m.localized_competition_location }}</small>
+          </td>
+          <td>{{ m.award_date|local_date }}</td>
+          <td>{% include "includes/status_badge.html" with status=m.approval_status %}</td>
+          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <a class="btn btn-sm btn-outline" href="{% url 'medals:member_detail' m.pk %}">{% trans "View" %}</a>
+            {% if m.can_member_edit %}
+            <a class="btn btn-sm btn-outline" href="{% url 'medals:member_edit' m.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">
+  <p>{% trans "You have not submitted any medals yet." %}</p>
+  <a class="btn btn-primary" href="{% url 'medals:member_add' %}">{% trans "Submit Medal" %}</a>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <span class="badge badge-dark ltr-inline" style="margin-block-end:0.5rem;">SKU: {{ product.sku }}</span>
+    <h1>{{ product_tr.name }}</h1>
+    {% if product_tr.short_description %}<p>{{ product_tr.short_description }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start;">
+      <div class="card">
+        {% with img=product.primary_image %}
+        {% if img %}
+        <div class="card-media">
+          <img src="{{ img.image.url }}" alt="{{ img.localized_alt }}">
+        </div>
+        {% else %}
+        <div class="empty-state" style="border:0;">{% trans "Product photograph coming soon." %}</div>
+        {% endif %}
+        {% endwith %}
+      </div>
+
+      <div class="card">
+        <div class="card-body" style="padding:1.85rem;">
+          {% if product_tr.is_fallback %}
+          <div class="alert alert-info">
+            {% trans "Translation fallback active: displaying the available language description." %}
+          </div>
+          {% endif %}
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-block-end:1rem;">
+            <span class="badge badge-neutral">{{ product.get_discipline_display }}</span>
+            {% if product.is_available %}
+              <span class="badge badge-approved">{% trans "Available at Club Desk" %}</span>
+            {% else %}
+              <span class="badge badge-rejected">{% trans "Currently Unavailable" %}</span>
+            {% endif %}
+          </div>
+
+          <div style="font-size:1.5rem;font-weight:800;margin-block-end:1rem;">
+            {% if product.price is not None %}
+              {{ product.price|local_price:product.currency }}
+            {% else %}
+              {% trans "Custom Order — Contact Club for Pricing" %}
+            {% endif %}
+          </div>
+
+          <div class="prose">{{ product_tr.description|linebreaks }}</div>
+
+          {% if spec_lines %}
+          <h2 style="font-size:1.05rem;margin-block:1.25rem 0.6rem;">{% trans "Technical Specifications" %}</h2>
+          <ul style="padding-inline-start:1.25rem;margin:0 0 1.5rem;color:var(--tw-text-muted);">
+            {% for line in spec_lines %}<li>{{ line }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a class="btn btn-primary" href="{% url 'contact:public' %}">{% trans "Inquire at Club" %}</a>
+            <a class="btn btn-outline" href="{% url 'products:list' %}">{% trans "Back to Catalog" %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

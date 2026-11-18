@@ -1,0 +1,28 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "SEO Management" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Multilingual SEO Metadata" %}</h1>
+  <a class="btn btn-primary" href="{% url 'seo:admin_add' %}">+ {% trans "Add Route SEO" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>{% trans "Route" %}</th><th>{% trans "Localized Title" %}</th><th>{% trans "Robots" %}</th><th>{% trans "Action" %}</th></tr></thead>
+      <tbody>
+        {% for s in seo_entries %}
+        {% with s_tr=s|tr %}
+        <tr>
+          <td><strong>{{ s }}</strong></td>
+          <td>{{ s_tr.seo_title|default:"—"|truncatechars:55 }}</td>
+          <td class="ltr-inline">{{ s.robots_directive }}</td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'seo:admin_edit' s.pk %}">{% trans "Edit" %}</a></td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{{ contact_message.subject }} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.45rem;">{{ contact_message.subject }}</h1>
+  <a class="btn btn-outline btn-sm" href="{% url 'contact:admin_list' %}">{% trans "Back to Inbox" %}</a>
+</div>
+<div class="card" style="margin-block-end:1.25rem;">
+  <div class="card-body">
+    <p><strong>{% trans "From" %}:</strong> {{ contact_message.name }} (<span class="ltr-inline">{{ contact_message.email }}</span>)</p>
+    <p><strong>{% trans "Language" %}:</strong> {{ contact_message.get_language_display }} &bull; <strong>{% trans "Received" %}:</strong> {{ contact_message.submitted_at|local_datetime }}</p>
+    <hr style="border:0;border-block-start:1px solid var(--tw-border);margin-block:1rem;">
+    <div class="prose">{{ contact_message.message|linebreaks }}</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <form method="post">
+      {% csrf_token %}
+      {% include "includes/form_fields.html" with form=form %}
+      <button type="submit" class="btn btn-primary">{% trans "Save Review Note" %}</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

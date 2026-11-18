@@ -1,0 +1,30 @@
+{% load i18n techwando_tags %}
+{% if review_logs %}
+<div class="card" style="margin-block-start:1.25rem;">
+  <div class="card-body">
+    <h2 class="card-title">{% trans "Moderation & Review History" %}</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>{% trans "Date" %}</th>
+            <th>{% trans "Event" %}</th>
+            <th>{% trans "Status" %}</th>
+            <th>{% trans "Note / Feedback" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for log in review_logs %}
+          <tr>
+            <td>{{ log.created_at|local_datetime }}</td>
+            <td>{{ log.get_event_type_display }}</td>
+            <td>{% include "includes/status_badge.html" with status=log.new_status %}</td>
+            <td>{{ log.note|default:"—" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endif %}

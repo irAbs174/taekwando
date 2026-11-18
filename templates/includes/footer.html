@@ -1,0 +1,59 @@
+{% load i18n techwando_tags %}
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>TECHWANDO</h3>
+        <p style="font-size:0.9rem;color:#94a3b8;max-inline-size:380px;margin:0 0 1rem;">
+          {% trans "Multilingual martial arts education, certified athlete registry, belt rankings, and championship medal verification platform." %}
+        </p>
+        <p style="font-size:0.84rem;margin:0;">
+          <span class="ltr-inline">{{ CLUB_CONTACT_EMAIL }}</span>
+        </p>
+      </div>
+      <div>
+        <h3>{% trans "Academy" %}</h3>
+        <ul>
+          <li><a href="{% url 'pages:about' %}">{% trans "About Techwando" %}</a></li>
+          <li><a href="{% url 'pages:education' %}">{% trans "Educational Content" %}</a></li>
+          <li><a href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a></li>
+          <li><a href="{% url 'blog:list' %}">{% trans "Articles & Blog" %}</a></li>
+          <li><a href="{% url 'products:list' %}">{% trans "Equipment Catalog" %}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>{% trans "Champions & Honors" %}</h3>
+        <ul>
+          <li><a href="{% url 'champions:list' %}">{% trans "Champions Directory" %}</a></li>
+          <li><a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a></li>
+          <li><a href="{% url 'champions:belts' %}">{% trans "Belt Achievements" %}</a></li>
+          <li><a href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>{% trans "Member Access" %}</h3>
+        <ul>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'members:dashboard' %}">{% trans "Member Dashboard" %}</a></li>
+          <li><a href="{% url 'members:profile_edit' %}">{% trans "Personal Profile" %}</a></li>
+          {% else %}
+          <li><a href="{% url 'accounts:login' %}">{% trans "Member Log In" %}</a></li>
+          <li><a href="{% url 'accounts:register' %}">{% trans "Apply for Membership" %}</a></li>
+          {% endif %}
+          <li><a href="{% url 'contact:public' %}">{% trans "Contact Club" %}</a></li>
+          <li><a href="{% url 'pages:detail' 'privacy-policy' %}">{% trans "Privacy Policy" %}</a></li>
+          <li><a href="{% url 'api:swagger-ui' %}">{% trans "API Docs (v1)" %}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ "2026"|local_num }} TECHWANDO — {% trans "All rights reserved." %}</span>
+      <span>
+        <a href="{% url 'core:switch_language_get' 'fa' %}?next={{ request.get_full_path|urlencode }}" lang="fa">فارسی (fa-IR)</a>
+        &nbsp;|&nbsp;
+        <a href="{% url 'core:switch_language_get' 'ja' %}?next={{ request.get_full_path|urlencode }}" lang="ja">日本語 (ja-JP)</a>
+      </span>
+    </div>
+  </div>
+</footer>

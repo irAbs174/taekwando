@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% load i18n static techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+      {% if athlete.profile_photo %}
+        <img class="avatar avatar-lg" src="{{ athlete.profile_photo.url }}" alt="{{ athlete.localized_full_name }}">
+      {% else %}
+        <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ athlete.localized_full_name }}">
+      {% endif %}
+      <div>
+        <span class="badge badge-approved" style="margin-block-end:0.5rem;">
+          {% trans "Verified TECHWANDO Athlete" %}
+        </span>
+        <h1 style="margin:0 0 0.35rem;">{{ athlete.localized_full_name }}</h1>
+        <p style="margin:0;color:#cbd5e1;">
+          {{ athlete.get_primary_discipline_display }}
+          {% if current_belt %} &bull; {{ current_belt.belt_type.localized_name }}{% endif %}
+          &bull; {% trans "Member since" %} {{ athlete.joining_date.year|local_num }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">{% trans "Total Verified Medals" %}</div>
+        <div class="kpi-value">{{ medal_summary.total|local_num }}</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">{% trans "Gold Medals" %}</div>
+        <div class="kpi-value" style="color:var(--tw-gold);">{{ medal_summary.gold|local_num }}</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">{% trans "Silver Medals" %}</div>
+        <div class="kpi-value" style="color:var(--tw-silver);">{{ medal_summary.silver|local_num }}</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">{% trans "Bronze Medals" %}</div>
+        <div class="kpi-value" style="color:var(--tw-bronze);">{{ medal_summary.bronze|local_num }}</div>
+      </div>
+    </div>
+
+    {% if athlete.localized_biography %}
+    <div class="card" style="margin-block-end:1.5rem;">
+      <div class="card-body">
+        <h2 class="card-title">{% trans "Athlete Biography" %}</h2>
+        <div class="prose">{{ athlete.localized_biography|linebreaks }}</div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="grid grid-2" style="margin-block-end:1.5rem;">
+      {# Approved Medals (never renders private evidence files) #}
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">{% trans "Approved Medals" %}</h2>
+          {% if approved_medals %}
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>{% trans "Medal" %}</th>
+                  <th>{% trans "Competition" %}</th>
+                  <th>{% trans "Date" %}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for medal in approved_medals %}
+                <tr>
+                  <td>{% include "includes/medal_badge.html" with medal_type=medal.medal_type %}</td>
+                  <td>
+                    <strong>{{ medal.localized_competition_name }}</strong>
+                    {% if medal.division_category %}<br><small>{{ medal.division_category }}</small>{% endif %}
+                  </td>
+                  <td>{{ medal.award_date|local_date }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+          <p class="card-text">{% trans "No approved medals recorded yet." %}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      {# Approved Belt Progression (never renders private certificate files) #}
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">{% trans "Official Belt Progression" %}</h2>
+          {% if approved_belts %}
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>{% trans "Rank" %}</th>
+                  <th>{% trans "Discipline" %}</th>
+                  <th>{% trans "Award Date" %}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for b in approved_belts %}
+                <tr>
+                  <td>
+                    <span class="belt-swatch" style="background:{{ b.belt_type.color_hex }};"></span>
+                    <strong>{{ b.belt_type.localized_name }}</strong>
+                  </td>
+                  <td>{{ b.get_discipline_display }}</td>
+                  <td>{{ b.award_date|local_date }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+          <p class="card-text">{% trans "No approved belt rankings listed yet." %}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {# Approved Achievements #}
+    {% if approved_achievements %}
+    <div class="card" style="margin-block-end:1.5rem;">
+      <div class="card-body">
+        <h2 class="card-title">{% trans "Verified Sports Achievements" %}</h2>
+        <div class="grid grid-2">
+          {% for ach in approved_achievements %}
+          <div style="padding:0.9rem;border:1px solid var(--tw-border);border-radius:var(--tw-radius-sm);">
+            <div style="display:flex;justify-content:space-between;gap:0.5rem;margin-block-end:0.35rem;">
+              <strong>{{ ach.localized_title }}</strong>
+              <small style="color:var(--tw-text-subtle);">{{ ach.achievement_date|local_date }}</small>
+            </div>
+            {% if ach.localized_description %}
+            <p class="card-text" style="margin:0;">{{ ach.localized_description }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {# Approved & Consented Community Activities #}
+    {% if approved_activities %}
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">{% trans "Community & Social Contributions" %}</h2>
+        <div class="grid grid-2">
+          {% for act in approved_activities %}
+          <div style="padding:0.95rem;border:1px solid var(--tw-border);border-radius:var(--tw-radius-sm);">
+            {% if act.photograph %}
+            <img src="{{ act.get_photo_url }}" alt="{{ act.localized_title }}"
+                 style="border-radius:var(--tw-radius-sm);margin-block-end:0.7rem;max-block-size:200px;inline-size:100%;object-fit:cover;" loading="lazy">
+            {% endif %}
+            <strong>{{ act.localized_title }}</strong>
+            <div style="font-size:0.82rem;color:var(--tw-text-subtle);margin-block:0.2rem 0.45rem;">
+              {{ act.localized_location }} &bull; {{ act.activity_date|local_date }}
+            </div>
+            <p class="card-text" style="margin:0;">{{ act.localized_description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

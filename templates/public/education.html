@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <h1>{% trans "Martial Arts Education & Curriculum" %}</h1>
+    <p>{% trans "Technical study guides, Budo etiquette, sports physiology, and belt examination preparation." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if modules %}
+    <div class="grid grid-3">
+      {% for mod in modules %}
+      {% with m_tr=mod|tr %}
+      <article class="card card-hover">
+        <div class="card-body">
+          <span class="badge badge-approved" style="align-self:flex-start;margin-block-end:0.65rem;">
+            {% trans "Education" %}
+          </span>
+          <h2 class="card-title"><a href="{{ mod.get_absolute_url }}">{{ m_tr.title }}</a></h2>
+          {% if m_tr.subtitle %}
+          <p style="font-size:0.86rem;font-weight:600;color:var(--tw-text-subtle);margin:0 0 0.5rem;">{{ m_tr.subtitle }}</p>
+          {% endif %}
+          <p class="card-text">{{ m_tr.summary|default:m_tr.body|truncatechars:160 }}</p>
+          <div class="card-footer-meta">
+            <a href="{{ mod.get_absolute_url }}">{% trans "Read Module" %}</a>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+    {% include "includes/pagination.html" %}
+    {% else %}
+    <div class="empty-state">{% trans "Educational curriculum modules are being prepared." %}</div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

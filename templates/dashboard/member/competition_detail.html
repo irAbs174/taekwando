@@ -1,0 +1,48 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{{ participation.competition.localized_title }} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    {% include "includes/status_badge.html" with status=participation.approval_status %}
+    <h1 style="margin:0.4rem 0 0;font-size:1.45rem;">{{ participation.competition.localized_title }}</h1>
+  </div>
+  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+    {% if participation.can_member_edit %}
+    <a class="btn btn-primary btn-sm" href="{% url 'competitions:member_edit' participation.pk %}">{% trans "Edit & Resubmit" %}</a>
+    {% endif %}
+    {% if participation.can_request_correction %}
+    <a class="btn btn-outline btn-sm" href="{% url 'competitions:member_correction' participation.pk %}">{% trans "Request Correction" %}</a>
+    {% endif %}
+    {% if participation.can_member_delete %}
+    <a class="btn btn-danger btn-sm" href="{% url 'competitions:member_delete' participation.pk %}">{% trans "Delete" %}</a>
+    {% endif %}
+  </div>
+</div>
+
+{% if participation.admin_note %}
+<div class="alert alert-info">
+  <strong>{% trans "Administrator Feedback" %}:</strong> {{ participation.admin_note }}
+</div>
+{% endif %}
+
+<div class="card">
+  <div class="card-body">
+    <p><strong>{% trans "Location" %}:</strong> {{ participation.competition.localized_location }}</p>
+    <p><strong>{% trans "Date" %}:</strong> {{ participation.competition.start_date|local_date }}</p>
+    <p><strong>{% trans "Division" %}:</strong> {{ participation.division_category|default:"—" }}</p>
+    <p><strong>{% trans "Result" %}:</strong> {{ participation.localized_result|default:"—" }}</p>
+    {% if participation.certificate %}
+    <p>
+      <strong>{% trans "Certificate" %}:</strong>
+      <a class="btn btn-sm btn-outline" href="{{ participation.get_certificate_url }}" target="_blank" rel="noopener">
+        {% trans "View Protected Certificate" %}
+      </a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+{% include "includes/review_history.html" with review_logs=review_logs %}
+{% endblock %}

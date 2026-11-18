@@ -1,0 +1,58 @@
+{% load i18n static techwando_tags %}
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="{% url 'pages:home' %}">
+      <img src="{% static 'images/logo-mark.svg' %}" alt="{{ SITE_NAME }} logo" width="38" height="38">
+      <span>
+        TECHWANDO
+        <span class="brand-sub">{% trans "Martial Arts & Club Academy" %}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
+      &#9776;
+    </button>
+
+    <nav aria-label="{% trans 'Primary navigation' %}">
+      <ul class="nav-menu" data-nav-menu>
+        <li><a href="{% url 'pages:home' %}">{% trans "Home" %}</a></li>
+        <li><a href="{% url 'pages:about' %}">{% trans "About" %}</a></li>
+        <li><a href="{% url 'pages:education' %}">{% trans "Education" %}</a></li>
+        <li><a href="{% url 'pages:services' %}">{% trans "Programs" %}</a></li>
+        <li><a href="{% url 'champions:list' %}">{% trans "Champions" %}</a></li>
+        <li><a href="{% url 'champions:medals' %}">{% trans "Medals" %}</a></li>
+        <li><a href="{% url 'products:list' %}">{% trans "Products" %}</a></li>
+        <li><a href="{% url 'blog:list' %}">{% trans "Blog" %}</a></li>
+        <li><a href="{% url 'contact:public' %}">{% trans "Contact" %}</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switcher" role="group" aria-label="{% trans 'Language selector' %}">
+        <a href="{% url 'core:switch_language_get' 'fa' %}?next={{ request.get_full_path|urlencode }}"
+           class="{% if CURRENT_LANG == 'fa' %}active{% endif %}"
+           hreflang="fa" lang="fa">فارسی</a>
+        <a href="{% url 'core:switch_language_get' 'ja' %}?next={{ request.get_full_path|urlencode }}"
+           class="{% if CURRENT_LANG == 'ja' %}active{% endif %}"
+           hreflang="ja" lang="ja">日本語</a>
+      </div>
+
+      {% if user.is_authenticated %}
+        {% if IS_ADMIN_PORTAL_USER %}
+        <a class="btn btn-sm btn-ghost-light" href="{% url 'accounts:admin_dashboard' %}">
+          {% trans "Admin" %}
+        </a>
+        {% endif %}
+        <a class="btn btn-sm btn-primary" href="{% url 'members:dashboard' %}">
+          {% trans "Portal" %}
+          {% if UNREAD_NOTIFICATIONS_COUNT %}
+          <span class="notif-pill">{{ UNREAD_NOTIFICATIONS_COUNT|local_num }}</span>
+          {% endif %}
+        </a>
+      {% else %}
+        <a class="btn btn-sm btn-ghost-light" href="{% url 'accounts:login' %}">{% trans "Log In" %}</a>
+        <a class="btn btn-sm btn-primary" href="{% url 'accounts:register' %}">{% trans "Join Club" %}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>

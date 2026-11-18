@@ -1,0 +1,29 @@
+{% load i18n %}
+{% if form.non_field_errors %}
+<div class="alert alert-danger" role="alert">
+  {% for err in form.non_field_errors %}<div>{{ err }}</div>{% endfor %}
+</div>
+{% endif %}
+{% for field in form %}
+  {% if field.field.widget.input_type == "checkbox" %}
+  <div class="form-check">
+    {{ field }}
+    <div>
+      <label for="{{ field.id_for_label }}" style="margin-block-end:0.15rem;">{{ field.label }}</label>
+      {% if field.help_text %}<div class="form-help">{{ field.help_text }}</div>{% endif %}
+      {% for err in field.errors %}<div class="form-error">{{ err }}</div>{% endfor %}
+    </div>
+  </div>
+  {% elif field.name == "website" %}
+    {{ field }}
+  {% else %}
+  <div class="form-group">
+    <label class="form-label" for="{{ field.id_for_label }}">
+      {{ field.label }}{% if field.field.required %} <span style="color:var(--tw-accent);">*</span>{% endif %}
+    </label>
+    {{ field }}
+    {% if field.help_text %}<div class="form-help">{{ field.help_text }}</div>{% endif %}
+    {% for err in field.errors %}<div class="form-error">{{ err }}</div>{% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,53 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "My Achievements" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Sports Achievements" %}</h1>
+    <p>{% trans "Submit sports achievements and track administrator approval status." %}</p>
+  </div>
+  <a class="btn btn-primary" href="{% url 'achievements:member_add' %}">+ {% trans "Add Achievement" %}</a>
+</div>
+
+{% if achievements %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Title" %}</th>
+          <th>{% trans "Discipline" %}</th>
+          <th>{% trans "Date" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in achievements %}
+        <tr>
+          <td><strong>{{ item.localized_title }}</strong></td>
+          <td>{{ item.get_discipline_display }}</td>
+          <td>{{ item.achievement_date|local_date }}</td>
+          <td>{% include "includes/status_badge.html" with status=item.approval_status %}</td>
+          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <a class="btn btn-sm btn-outline" href="{% url 'achievements:member_detail' item.pk %}">{% trans "View" %}</a>
+            {% if item.can_member_edit %}
+            <a class="btn btn-sm btn-outline" href="{% url 'achievements:member_edit' item.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">
+  <p>{% trans "No sports achievements submitted yet." %}</p>
+  <a class="btn btn-primary" href="{% url 'achievements:member_add' %}">{% trans "Submit First Achievement" %}</a>
+</div>
+{% endif %}
+{% endblock %}

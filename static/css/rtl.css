@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Persian (fa-IR) RTL Typographic & Layout Refinements
+   ========================================================================== */
+html[lang="fa"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", "IRANSansX", "Sahel", "Tahoma", sans-serif;
+  line-height: 1.85;
+  letter-spacing: 0 !important;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3,
+html[lang="fa"] h4 {
+  line-height: 1.48;
+  letter-spacing: 0 !important;
+}
+
+html[lang="fa"] .sidebar-heading {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.78rem;
+}
+
+html[lang="fa"] input[dir="ltr"],
+html[lang="fa"] textarea[dir="ltr"] {
+  text-align: left;
+}

@@ -1,0 +1,27 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n %}
+{% block title %}{% trans "Account Settings" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "Account Settings" %}</h1>
+    <p>{% trans "Manage your login email, preferred interface language, and password." %}</p>
+  </div>
+  <a class="btn btn-outline" href="{% url 'members:password_change' %}">{% trans "Change Password" %}</a>
+</div>
+
+<div class="card">
+  <div class="card-body" style="padding:1.75rem;">
+    <p style="font-size:0.88rem;color:var(--tw-text-muted);margin-block-start:0;">
+      <strong>{% trans "Assigned Role" %}:</strong>
+      <span class="badge badge-neutral">{{ user.get_role_display }}</span>
+    </p>
+    <form method="post" novalidate>
+      {% csrf_token %}
+      {% include "includes/form_fields.html" with form=form %}
+      <button type="submit" class="btn btn-primary">{% trans "Save Settings" %}</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <h1>{% trans "Official Products & Martial Arts Equipment" %}</h1>
+    <p>{% trans "Club-approved uniforms (Dobok & Dogi), competition armor, embroidered Dan belts, and training tools." %}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="filter-bar" method="get">
+      <div>
+        <label class="form-label" for="p-q">{% trans "Search catalog" %}</label>
+        <input id="p-q" name="q" type="text" class="form-control" value="{{ search_query }}">
+      </div>
+      <div>
+        <label class="form-label" for="p-cat">{% trans "Category" %}</label>
+        <select id="p-cat" name="category" class="form-select">
+          <option value="">{% trans "All categories" %}</option>
+          {% for cat in categories %}
+          <option value="{{ cat.slug }}" {% if selected_category == cat.slug %}selected{% endif %}>{{ cat.localized_name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div>
+        <label class="form-label" for="p-disc">{% trans "Discipline" %}</label>
+        <select id="p-disc" name="discipline" class="form-select">
+          <option value="">{% trans "All disciplines" %}</option>
+          {% for code, label in disciplines %}
+          <option value="{{ code }}" {% if selected_discipline == code %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary" style="inline-size:100%;">{% trans "Filter" %}</button>
+      </div>
+    </form>
+
+    {% if products %}
+    <div class="grid grid-3">
+      {% for product in products %}
+      {% with prod_tr=product|tr img=product.primary_image %}
+      <article class="card card-hover">
+        {% if img %}
+        <a class="card-media" href="{{ product.get_absolute_url }}">
+          <img src="{{ img.image.url }}" alt="{{ img.localized_alt }}" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="card-body">
+          <div style="display:flex;justify-content:space-between;gap:0.5rem;margin-block-end:0.5rem;">
+            {% if product.category %}
+            <span class="badge badge-neutral">{{ product.category.localized_name }}</span>
+            {% endif %}
+            <span class="ltr-inline" style="font-size:0.78rem;color:var(--tw-text-subtle);">{{ product.sku }}</span>
+          </div>
+          <h2 class="card-title"><a href="{{ product.get_absolute_url }}">{{ prod_tr.name }}</a></h2>
+          <p class="card-text">{{ prod_tr.short_description|default:prod_tr.description|truncatechars:120 }}</p>
+          <div class="card-footer-meta">
+            {% if product.price is not None %}
+              <strong style="color:var(--tw-text);font-size:1rem;">{{ product.price|local_price:product.currency }}</strong>
+            {% else %}
+              <span>{% trans "Inquire for price" %}</span>
+            {% endif %}
+            <a class="btn btn-sm btn-outline" href="{{ product.get_absolute_url }}">{% trans "Details" %}</a>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+    {% include "includes/pagination.html" %}
+    {% else %}
+    <div class="empty-state">{% trans "No published products match your criteria." %}</div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

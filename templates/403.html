@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Access Denied (403)" %} | {{ SITE_NAME }}{% endblock %}
+{% block meta_robots %}noindex, nofollow{% endblock %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="empty-state" style="max-inline-size:620px;margin-inline:auto;">
+      <span class="badge badge-rejected" style="margin-block-end:1rem;">403</span>
+      <h1 style="margin:0 0 0.75rem;">{% trans "Access Denied" %}</h1>
+      <p>{% trans "You do not have permission to view this page or resource." %}</p>
+      <a class="btn btn-primary" href="{% url 'pages:home' %}">{% trans "Return to Homepage" %}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

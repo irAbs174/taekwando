@@ -1,0 +1,29 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Manage Pages" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Pages, Education & Programs" %}</h1>
+  <a class="btn btn-primary" href="{% url 'pages:admin_add' %}">+ {% trans "Add Page" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>{% trans "Title" %}</th><th>{% trans "Type" %}</th><th>{% trans "Status" %}</th><th>{% trans "Action" %}</th></tr></thead>
+      <tbody>
+        {% for p in pages %}
+        {% with p_tr=p|tr %}
+        <tr>
+          <td><strong>{{ p_tr.title|default:p.slug }}</strong><br><small class="ltr-inline">{{ p.slug }}</small></td>
+          <td>{{ p.get_page_type_display }}</td>
+          <td><span class="badge badge-neutral">{{ p.get_status_display }}</span></td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'pages:admin_edit' p.pk %}">{% trans "Edit" %}</a></td>
+        </tr>
+        {% endwith %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Audit Logs" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "System Audit Logs" %}</h1>
+    <p>{% trans "Immutable security and administrative event trail." %}</p>
+  </div>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Timestamp" %}</th>
+          <th>{% trans "Actor" %}</th>
+          <th>{% trans "Action" %}</th>
+          <th>{% trans "Target" %}</th>
+          <th>{% trans "IP Address" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for log in logs %}
+        <tr>
+          <td>{{ log.created_at|local_datetime }}</td>
+          <td class="ltr-inline">{{ log.actor_email|default:"system" }}</td>
+          <td><code style="font-size:0.8rem;">{{ log.action }}</code></td>
+          <td>{{ log.target_model }} #{{ log.target_id }}<br><small style="color:var(--tw-text-subtle);">{{ log.target_repr|truncatechars:50 }}</small></td>
+          <td class="ltr-inline">{{ log.ip_address|default:"—" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

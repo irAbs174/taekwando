@@ -1,0 +1,36 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Competitions" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Competitions Management" %}</h1>
+  <a class="btn btn-primary" href="{% url 'competitions:admin_add' %}">+ {% trans "Add Competition" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Title" %}</th>
+          <th>{% trans "Discipline" %}</th>
+          <th>{% trans "Dates" %}</th>
+          <th>{% trans "Published" %}</th>
+          <th>{% trans "Action" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in competitions %}
+        <tr>
+          <td><strong>{{ c.localized_title }}</strong><br><small>{{ c.localized_location }}</small></td>
+          <td>{{ c.get_discipline_display }}</td>
+          <td>{{ c.start_date|local_date }}</td>
+          <td>{% if c.is_published %}{% trans "Yes" %}{% else %}{% trans "No" %}{% endif %}</td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'competitions:admin_edit' c.pk %}">{% trans "Edit" %}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

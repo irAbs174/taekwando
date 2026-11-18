@@ -1,0 +1,979 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TECHWANDO 1.0\n"
+"Report-Msgid-Bugs-To: info@techwando.example.com\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0000\n"
+"Last-Translator: TECHWANDO Localization Team\n"
+"Language-Team: TECHWANDO ja\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Skip to main content"
+msgstr "メインコンテンツへ移動"
+
+msgid "Martial Arts & Club Academy"
+msgstr "武道・格闘技クラブアカデミー"
+
+msgid "Home"
+msgstr "ホーム"
+
+msgid "About"
+msgstr "クラブ紹介"
+
+msgid "About Techwando"
+msgstr "TECHWANDOについて"
+
+msgid "About TECHWANDO"
+msgstr "TECHWANDOクラブについて"
+
+msgid "Education"
+msgstr "教育カリキュラム"
+
+msgid "Programs"
+msgstr "プログラム"
+
+msgid "Champions"
+msgstr "チャンピオン"
+
+msgid "Blog"
+msgstr "ブログ"
+
+msgid "Products"
+msgstr "公式用品"
+
+msgid "Contact"
+msgstr "お問い合わせ"
+
+msgid "Admin"
+msgstr "管理画面"
+
+msgid "Administration"
+msgstr "運営管理パネル"
+
+msgid "Portal"
+msgstr "会員ポータル"
+
+msgid "Member Portal"
+msgstr "クラブ会員ポータル"
+
+msgid "Member Dashboard"
+msgstr "会員ダッシュボード"
+
+msgid "Log In"
+msgstr "ログイン"
+
+msgid "Log Out"
+msgstr "ログアウト"
+
+msgid "Join Club"
+msgstr "新規入会申請"
+
+msgid "Become a Member"
+msgstr "入会を申し込む"
+
+msgid "Academy"
+msgstr "アカデミー"
+
+msgid "Training Programs"
+msgstr "トレーニングプログラム"
+
+msgid "Articles & Blog"
+msgstr "記事・お知らせ"
+
+msgid "Equipment Catalog"
+msgstr "公式用具カタログ"
+
+msgid "Champions & Honors"
+msgstr "選手・受賞記録"
+
+msgid "Champions Directory"
+msgstr "公認選手名鑑"
+
+msgid "Medal Winners"
+msgstr "メダリスト一覧"
+
+msgid "Belt Achievements"
+msgstr "昇級・昇段記録"
+
+msgid "Competition Results"
+msgstr "大会成績一覧"
+
+msgid "Member Access"
+msgstr "会員メニュー"
+
+msgid "Member Log In"
+msgstr "会員ログイン"
+
+msgid "Member Registration"
+msgstr "会員登録申請"
+
+msgid "Contact Club"
+msgstr "お問い合わせ"
+
+msgid "API Docs (v1)"
+msgstr "API仕様書 (v1)"
+
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+msgid "Supported Languages"
+msgstr "対応言語"
+
+msgid "All rights reserved."
+msgstr "無断複写・転載を禁じます。"
+
+msgid ""
+"Multilingual martial arts education, certified athlete registry, belt "
+"rankings, and championship medal verification platform."
+msgstr "多言語対応の武道教育・公認選手登録・昇段審査・大会メダル認証プラットフォーム。"
+
+msgid "Official Martial Arts Academy & Club Registry"
+msgstr "公式武道アカデミー・クラブ選手登録機関"
+
+msgid "Discipline, Education, and Verified Martial Arts Excellence"
+msgstr "礼節・知性・公式認定が紡ぐ武道の卓越性"
+
+msgid ""
+"TECHWANDO unites traditional Budo values with modern sports science, athlete"
+" belt registries, championship medal verification, and multilingual club "
+"management."
+msgstr "TECHWANDOは伝統武道の精神と現代スポーツ科学を融合し、段位・大会メダルの厳格な公式認定と多言語クラブ運営を実現します。"
+
+msgid "Explore Champions"
+msgstr "公認選手を見る"
+
+msgid "Approved Members"
+msgstr "公認クラブ会員"
+
+msgid "Gold Medals"
+msgstr "金メダル"
+
+msgid "Silver Medals"
+msgstr "銀メダル"
+
+msgid "Bronze Medals"
+msgstr "銅メダル"
+
+msgid "Special Awards"
+msgstr "特別賞"
+
+msgid "Total Verified Medals"
+msgstr "公式認定メダル総数"
+
+msgid "Black Belt Holders"
+msgstr "黒帯（有段者）"
+
+msgid "Training Programs & Martial Arts Education"
+msgstr "武道教育・トレーニングプログラム"
+
+msgid ""
+"Certified coaching programs for youth beginners, competitive fighters, and "
+"Dan black belt candidates."
+msgstr "初心者・ジュニアから競技選手、黒帯昇段志望者まで対応する公認指導プログラム。"
+
+msgid "All Programs"
+msgstr "プログラム一覧"
+
+msgid "Program"
+msgstr "プログラム"
+
+msgid "Curriculum"
+msgstr "教育課程"
+
+msgid "Learn more"
+msgstr "詳細を見る"
+
+msgid "Read Module"
+msgstr "カリキュラムを読む"
+
+msgid "Program Details"
+msgstr "プログラム詳細"
+
+msgid "Club Champions & Verified Athletes"
+msgstr "クラブチャンピオン・公認アスリート"
+
+msgid ""
+"Athletes whose ranks, achievements, and medals have been officially reviewed"
+" and approved."
+msgstr "段位・競技実績・獲得メダルがクラブ審査委員会により公式承認された選手たちです。"
+
+msgid "View All Champions"
+msgstr "全選手を見る"
+
+msgid "View Profile"
+msgstr "プロフィール詳細"
+
+msgid "Recent Medal Winners"
+msgstr "最新のメダル獲得者"
+
+msgid "Latest officially verified championship podium finishes."
+msgstr "公式審査を経て認定された最新の大会入賞記録です。"
+
+msgid "Full Honor Roll"
+msgstr "メダリスト一覧へ"
+
+msgid "Official Uniforms & Equipment"
+msgstr "公式道着・武道用具"
+
+msgid ""
+"Competition-grade uniforms, certified protective gear, and custom Dan belts."
+msgstr "競技仕様の道着（ドボク・道衣）、公認防具、刺繍入り黒帯を取り揃えています。"
+
+msgid "Browse Catalog"
+msgstr "カタログを見る"
+
+msgid "Inquire for price"
+msgstr "価格はクラブまで要相談"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "Latest Articles & Club News"
+msgstr "最新コラム・クラブニュース"
+
+msgid "Technical insights, competition coverage, and belt exam guides."
+msgstr "技術解説、大会レポート、昇級・昇段審査ガイドをお届けします。"
+
+msgid "All Articles"
+msgstr "記事一覧"
+
+msgid "Read article"
+msgstr "記事を読む"
+
+msgid ""
+"Uniting martial arts heritage, athletic excellence, and verified sports "
+"education."
+msgstr "武道の伝統、競技の卓越性、そして信頼あるスポーツ教育をひとつに。"
+
+msgid ""
+"TECHWANDO is a multilingual martial arts education, athlete development, "
+"belt ranking, and championship verification club connecting Persian and "
+"Japanese martial arts communities."
+msgstr "TECHWANDOはペルシア語圏と日本語圏の武道コミュニティを結ぶ、多言語武道教育・選手育成・段位および大会実績認定クラブです。"
+
+msgid "Martial Arts Education & Curriculum"
+msgstr "武道教育・カリキュラム"
+
+msgid ""
+"Technical study guides, Budo etiquette, sports physiology, and belt "
+"examination preparation."
+msgstr "技術教本、武道礼法、スポーツ生理学、昇級・昇段審査対策を体系的に学びます。"
+
+msgid "Martial Arts Services & Training Programs"
+msgstr "武道指導サービス・プログラム"
+
+msgid ""
+"Structured courses from beginner foundations to international championship "
+"squads."
+msgstr "基礎クラスから国際大会選抜チームまで段階的に編成された指導コースです。"
+
+msgid "Training Program"
+msgstr "トレーニングコース"
+
+msgid "Educational Content"
+msgstr "教育コンテンツ"
+
+msgid "TECHWANDO Champions & Verified Athletes"
+msgstr "TECHWANDO 公認選手・チャンピオン名鑑"
+
+msgid ""
+"Official registry of approved club athletes who authorized public profile "
+"publication."
+msgstr "クラブ承認を受け、プロフィール公開に同意した公認選手の公式名簿です。"
+
+msgid "Athlete name"
+msgstr "選手名"
+
+msgid "Discipline"
+msgstr "競技種目"
+
+msgid "All disciplines"
+msgstr "すべての種目"
+
+msgid "Belt rank"
+msgstr "帯・段級位"
+
+msgid "Belt Rank"
+msgstr "帯・段級位"
+
+msgid "All belt ranks"
+msgstr "すべての帯"
+
+msgid "Competition"
+msgstr "大会"
+
+msgid "All competitions"
+msgstr "すべての大会"
+
+msgid "Medal type"
+msgstr "メダル種別"
+
+msgid "Any medal"
+msgstr "すべて"
+
+msgid "All medals"
+msgstr "すべてのメダル"
+
+msgid "Sort by"
+msgstr "並び替え"
+
+msgid "Newest achievements"
+msgstr "受賞日の新しい順"
+
+msgid "Oldest achievements"
+msgstr "受賞日の古い順"
+
+msgid "Most medals"
+msgstr "メダル獲得数順"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Filter"
+msgstr "絞り込む"
+
+msgid "Apply Filter"
+msgstr "絞り込む"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Medals"
+msgstr "メダル"
+
+msgid "Achievements"
+msgstr "実績"
+
+msgid "No matching athletes found"
+msgstr "該当する選手が見つかりません"
+
+msgid "Try adjusting your search or filter criteria."
+msgstr "検索条件やフィルターを変更してお試しください。"
+
+msgid "Verified TECHWANDO Athlete"
+msgstr "TECHWANDO 公認アスリート"
+
+msgid "Member since"
+msgstr "入会日"
+
+msgid "Athlete Biography"
+msgstr "選手プロフィール"
+
+msgid "Verified Medals"
+msgstr "公式認定メダル"
+
+msgid "Verified Sports Achievements"
+msgstr "公式認定スポーツ実績"
+
+msgid "Official Belt Progression"
+msgstr "公式昇級・昇段履歴"
+
+msgid "Official Championships"
+msgstr "公式大会出場記録"
+
+msgid "Community & Social Contributions"
+msgstr "社会貢献・地域活動"
+
+msgid "Medal Winners & Honor Roll"
+msgstr "メダリスト・栄誉記録一覧"
+
+msgid ""
+"Officially reviewed and approved Gold, Silver, Bronze, and special "
+"championship medals."
+msgstr "公式審査を経て承認された金・銀・銅メダルおよび特別賞の記録です。"
+
+msgid "Belt Achievements & Black Belt Registry"
+msgstr "昇級・昇段記録・黒帯登録簿"
+
+msgid "Officially verified belt promotions and Dan black belt awards."
+msgstr "クラブおよび連盟により公式認定された昇級・黒帯昇段の記録です。"
+
+msgid ""
+"Official championships, participating TECHWANDO athletes, and verified "
+"podium outcomes."
+msgstr "公式大会の概要、出場したTECHWANDO選手、および認定成績一覧です。"
+
+msgid "Athlete"
+msgstr "選手"
+
+msgid "Medal"
+msgstr "メダル"
+
+msgid "Event"
+msgstr "種目・部門"
+
+msgid "Location"
+msgstr "開催地"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Award Date"
+msgstr "認定日"
+
+msgid "Examiner / Federation"
+msgstr "認定機関・審査員"
+
+msgid "Division"
+msgstr "階級・部門"
+
+msgid "Result"
+msgstr "成績"
+
+msgid "Organizer"
+msgstr "主催"
+
+msgid "TECHWANDO Blog & Martial Arts Journal"
+msgstr "TECHWANDO 武道ジャーナル・ブログ"
+
+msgid ""
+"Technical insights, championship coverage, sports conditioning, and club "
+"announcements."
+msgstr "技術解説、大会速報、コンディショニング、クラブ公式のお知らせを掲載しています。"
+
+msgid "Search articles"
+msgstr "記事を検索"
+
+msgid "Category"
+msgstr "カテゴリー"
+
+msgid "All categories"
+msgstr "すべてのカテゴリー"
+
+msgid "Tag"
+msgstr "タグ"
+
+msgid "All tags"
+msgstr "すべてのタグ"
+
+msgid "Back to Blog"
+msgstr "ブログ一覧へ戻る"
+
+msgid "Official Products & Martial Arts Equipment"
+msgstr "公式武道用品・トレーニング機材"
+
+msgid ""
+"Club-approved uniforms (Dobok & Dogi), competition armor, embroidered Dan "
+"belts, and training tools."
+msgstr "クラブ公認道着（ドボク・道衣）、競技用防具、刺繍入り黒帯、各種トレーニング用具。"
+
+msgid "Search catalog"
+msgstr "製品を検索"
+
+msgid "SKU"
+msgstr "品番 (SKU)"
+
+msgid "Available at Club Desk"
+msgstr "クラブ窓口にて取扱中"
+
+msgid "Currently Unavailable"
+msgstr "現在在庫切れ"
+
+msgid "Custom Order — Contact Club for Pricing"
+msgstr "特注品 — 価格はクラブへお問い合わせください"
+
+msgid "Technical Specifications"
+msgstr "製品仕様"
+
+msgid "Inquire at Club"
+msgstr "この製品について問い合わせる"
+
+msgid "Back to Catalog"
+msgstr "カタログへ戻る"
+
+msgid "Contact TECHWANDO Club"
+msgstr "TECHWANDOクラブへのお問い合わせ"
+
+msgid ""
+"Questions about training schedules, membership applications, seminars, or "
+"official gear? Send us a message."
+msgstr "稽古日程、入会手続き、セミナー、公式用品に関するご質問はこちらからお送りください。"
+
+msgid "Send an Inquiry"
+msgstr "お問い合わせフォーム"
+
+msgid "Send Message"
+msgstr "メッセージを送信"
+
+msgid "Club Administration & Dojang"
+msgstr "クラブ事務局・本部道場"
+
+msgid ""
+"Our multilingual administration desk responds to messages in both Persian "
+"(fa-IR) and Japanese (ja-JP)."
+msgstr "多言語事務局がペルシア語（fa-IR）および日本語（ja-JP）でお問い合わせに対応いたします。"
+
+msgid "Official Email"
+msgstr "公式メールアドレス"
+
+msgid "Training Hours"
+msgstr "開館・稽古時間"
+
+msgid "Monday – Saturday, 09:00 – 21:00"
+msgstr "月曜〜土曜 09:00〜21:00"
+
+msgid ""
+"Translation fallback active: displaying the available language version."
+msgstr "フォールバック表示：現在利用可能な言語版を表示しています。"
+
+msgid "Translation fallback active: showing the available language edition."
+msgstr "フォールバック表示：利用可能な言語版の記事を表示しています。"
+
+msgid ""
+"Translation fallback active: displaying the available language description."
+msgstr "フォールバック表示：利用可能な言語版の製品説明を表示しています。"
+
+msgid "This content is currently shown in the club's alternate language."
+msgstr "このコンテンツは現在クラブの別言語版で表示されています。"
+
+msgid "Gold"
+msgstr "金メダル"
+
+msgid "Silver"
+msgstr "銀メダル"
+
+msgid "Bronze"
+msgstr "銅メダル"
+
+msgid "Special Award"
+msgstr "特別賞"
+
+msgid "Pending Review"
+msgstr "審査待ち"
+
+msgid "Approved"
+msgstr "承認済み"
+
+msgid "Rejected"
+msgstr "却下"
+
+msgid "Needs Revision"
+msgstr "要修正"
+
+msgid "Suspended"
+msgstr "停止中"
+
+msgid "Super Admin"
+msgstr "最高管理者"
+
+msgid "Content Admin"
+msgstr "コンテンツ管理者"
+
+msgid "Club Manager"
+msgstr "クラブマネージャー"
+
+msgid "Moderator / Coach Reviewer"
+msgstr "審査員・コーチ"
+
+msgid "Club Member"
+msgstr "クラブ会員"
+
+msgid "Taekwondo"
+msgstr "テコンドー"
+
+msgid "Karate"
+msgstr "空手道"
+
+msgid "Judo"
+msgstr "柔道"
+
+msgid "Aikido"
+msgstr "合気道"
+
+msgid "Hapkido"
+msgstr "ハプキドー"
+
+msgid "General Martial Arts"
+msgstr "総合武道"
+
+msgid "Persian (fa-IR)"
+msgstr "ペルシア語 (fa-IR)"
+
+msgid "Japanese (ja-JP)"
+msgstr "日本語 (ja-JP)"
+
+msgid "Sign In to TECHWANDO"
+msgstr "TECHWANDO ログイン"
+
+msgid "Access your private club member portal or administration panel."
+msgstr "クラブ会員専用ポータルまたは運営管理パネルへログインします。"
+
+msgid "Forgot your password?"
+msgstr "パスワードをお忘れですか？"
+
+msgid "Apply for Membership"
+msgstr "新規入会申請はこちら"
+
+msgid "TECHWANDO Membership Registration"
+msgstr "TECHWANDO 会員登録申請"
+
+msgid ""
+"Create your individual athlete portal account. Your membership application "
+"will be reviewed by club administrators."
+msgstr "選手専用ポータルアカウントを作成します。入会申請はクラブ管理者による審査後に承認されます。"
+
+msgid "Already registered?"
+msgstr "すでにアカウントをお持ちですか？"
+
+msgid "Account Settings"
+msgstr "アカウント設定"
+
+msgid "Manage your login email, preferred interface language, and password."
+msgstr "ログイン用メールアドレス、表示言語、パスワードを管理します。"
+
+msgid "Change Password"
+msgstr "パスワード変更"
+
+msgid "Assigned Role"
+msgstr "付与ロール"
+
+msgid "Save Settings"
+msgstr "設定を保存"
+
+msgid "Update Password"
+msgstr "パスワードを更新"
+
+msgid "Reset Password"
+msgstr "パスワード再設定"
+
+msgid ""
+"Enter your registered email address and we will send reset instructions."
+msgstr "ご登録のメールアドレスを入力してください。再設定手順をお送りします。"
+
+msgid "Send Reset Link"
+msgstr "再設定リンクを送信"
+
+msgid "Return to Log In"
+msgstr "ログイン画面へ戻る"
+
+msgid "Check Your Email"
+msgstr "メールをご確認ください"
+
+msgid "Reset Link Sent"
+msgstr "再設定リンクを送信しました"
+
+msgid "Set New Password"
+msgstr "新しいパスワードの設定"
+
+msgid "Choose a New Password"
+msgstr "新しいパスワードを入力"
+
+msgid "Save New Password"
+msgstr "新しいパスワードを保存"
+
+msgid "Password Reset Complete"
+msgstr "パスワード再設定完了"
+
+msgid "Password Updated"
+msgstr "パスワードを更新しました"
+
+msgid "Overview"
+msgstr "概要"
+
+msgid "Dashboard Overview"
+msgstr "ダッシュボード概要"
+
+msgid "Personal Profile"
+msgstr "個人プロフィール"
+
+msgid "Personal Profile & Public Privacy"
+msgstr "個人プロフィール・公開設定"
+
+msgid "My Achievements"
+msgstr "マイ実績"
+
+msgid "My Sports Achievements"
+msgstr "スポーツ実績一覧"
+
+msgid "My Medals"
+msgstr "マイメダル"
+
+msgid "My Belt History"
+msgstr "昇級・昇段履歴"
+
+msgid "My Competitions"
+msgstr "出場大会記録"
+
+msgid "My Competition Participations"
+msgstr "大会出場記録一覧"
+
+msgid "My Social Activities"
+msgstr "社会貢献活動"
+
+msgid "My Social & Community Activities"
+msgstr "社会・地域貢献活動一覧"
+
+msgid "Notifications"
+msgstr "通知一覧"
+
+msgid "Membership Number"
+msgstr "会員番号"
+
+msgid "Membership"
+msgstr "会員ステータス"
+
+msgid "Joined"
+msgstr "入会日"
+
+msgid "View Public Profile"
+msgstr "公開プロフィールを表示"
+
+msgid "Edit Profile"
+msgstr "プロフィール編集"
+
+msgid "Save Profile"
+msgstr "プロフィールを保存"
+
+msgid "Approved Achievements"
+msgstr "承認済み実績"
+
+msgid "Approved Medals"
+msgstr "承認済みメダル"
+
+msgid "Pending Submissions"
+msgstr "審査待ち申請"
+
+msgid "Current Approved Belt"
+msgstr "現在の公認帯・段位"
+
+msgid "No approved belt recorded yet"
+msgstr "承認済みの帯記録はまだありません"
+
+msgid "Quick Submit"
+msgstr "新規申請メニュー"
+
+msgid "Add Achievement"
+msgstr "実績を申請"
+
+msgid "Submit Achievement"
+msgstr "スポーツ実績を申請"
+
+msgid "Submit Medal"
+msgstr "メダルを申請"
+
+msgid "Request Belt Promotion"
+msgstr "昇級・昇段を申請"
+
+msgid "Add Competition"
+msgstr "大会記録を追加"
+
+msgid "Add Competition Record"
+msgstr "大会出場記録を追加"
+
+msgid "Submit Activity"
+msgstr "社会活動を申請"
+
+msgid "Submit Social Activity"
+msgstr "社会貢献活動を申請"
+
+msgid "Submit for Review"
+msgstr "審査へ提出"
+
+msgid "Edit & Resubmit"
+msgstr "編集して再提出"
+
+msgid "Request Correction"
+msgstr "記録の修正を依頼"
+
+msgid "Submit Correction Request"
+msgstr "修正依頼を送信"
+
+msgid "Administrator Feedback"
+msgstr "管理者からのフィードバック"
+
+msgid "Club Administration Note"
+msgstr "クラブ事務局からの連絡"
+
+msgid "Moderation & Review History"
+msgstr "審査・承認履歴"
+
+msgid "View Protected Certificate"
+msgstr "保護された証明書を表示"
+
+msgid "View Protected Evidence"
+msgstr "保護された証明資料を表示"
+
+msgid "View Uploaded Photograph"
+msgstr "アップロード写真を表示"
+
+msgid "Mark All as Read"
+msgstr "すべて既読にする"
+
+msgid "Mark Read"
+msgstr "既読にする"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "New"
+msgstr "新着"
+
+msgid "Administration Dashboard"
+msgstr "管理ダッシュボード"
+
+msgid "TECHWANDO Administration Portal"
+msgstr "TECHWANDO 運営管理ポータル"
+
+msgid "Moderation Queue"
+msgstr "承認審査キュー"
+
+msgid "Member Submission Moderation Queue"
+msgstr "会員申請・証明資料審査キュー"
+
+msgid "Members & Applications"
+msgstr "会員・入会申請管理"
+
+msgid "Club Members & Membership Applications"
+msgstr "クラブ会員・入会申請一覧"
+
+msgid "Belt Ranks"
+msgstr "帯・段級位マスタ"
+
+msgid "Competitions"
+msgstr "大会管理"
+
+msgid "Blog Articles"
+msgstr "ブログ記事管理"
+
+msgid "Blog Categories"
+msgstr "ブログカテゴリー"
+
+msgid "Products Catalog"
+msgstr "公式用品管理"
+
+msgid "Product Categories"
+msgstr "製品カテゴリー"
+
+msgid "Pages & Programs"
+msgstr "固定ページ・プログラム"
+
+msgid "SEO & Translations"
+msgstr "多言語SEO管理"
+
+msgid "Contact Messages"
+msgstr "お問い合わせ受信箱"
+
+msgid "Audit Logs"
+msgstr "システム監査ログ"
+
+msgid "Moderation History"
+msgstr "審査履歴一覧"
+
+msgid "Django Admin"
+msgstr "Django管理サイト"
+
+msgid "Total Members"
+msgstr "総会員数"
+
+msgid "Pending Applications"
+msgstr "未審査の入会申請"
+
+msgid "Unread Contact Messages"
+msgstr "未読のお問い合わせ"
+
+msgid "Recent Moderation Decisions"
+msgstr "最近の審査結果"
+
+msgid "Recent Audit Trail"
+msgstr "最新の監査ログ"
+
+msgid "Open Queue"
+msgstr "審査キューを開く"
+
+msgid "All Logs"
+msgstr "全ログ表示"
+
+msgid "Review"
+msgstr "審査"
+
+msgid "Save Decision & Notify Member"
+msgstr "審査結果を保存して会員に通知"
+
+msgid "Create Member"
+msgstr "会員を新規作成"
+
+msgid "Deactivate Account"
+msgstr "アカウントを無効化"
+
+msgid "Reactivate Account"
+msgstr "アカウントを再有効化"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Name"
+msgstr "氏名"
+
+msgid "Email"
+msgstr "メールアドレス"
+
+msgid "Status"
+msgstr "ステータス"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "View"
+msgstr "表示"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Yes, Delete"
+msgstr "削除する"
+
+msgid "Active"
+msgstr "有効"
+
+msgid "Inactive"
+msgstr "無効"
+
+msgid "Visible"
+msgstr "公開"
+
+msgid "Private"
+msgstr "非公開"
+
+msgid "Previous"
+msgstr "前へ"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Access Denied"
+msgstr "アクセス拒否"
+
+msgid "Access Denied (403)"
+msgstr "アクセス権限がありません (403)"
+
+msgid "Page Not Found"
+msgstr "ページが見つかりません"
+
+msgid "Page Not Found (404)"
+msgstr "ページが見つかりません (404)"
+
+msgid "Return to Homepage"
+msgstr "トップページへ戻る"

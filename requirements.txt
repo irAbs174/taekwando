@@ -1,0 +1,23 @@
+# Core Framework (Django 5.2 LTS)
+Django>=5.2,<5.3
+
+# REST API & OpenAPI Documentation
+djangorestframework>=3.15,<4.0
+django-filter>=24.3,<26.0
+drf-spectacular>=0.28,<1.0
+
+# Image Validation & Processing
+Pillow>=11.0,<13.0
+
+# Password Hashing (Argon2id)
+argon2-cffi>=23.1,<26.0
+
+# Portable Gettext .po -> .mo Compilation
+polib>=1.2,<2.0
+
+# Production WSGI Server & Static Files
+gunicorn>=23.0,<24.0
+whitenoise>=6.8,<7.0
+
+# Optional Production Error Monitoring (enabled only when SENTRY_DSN is set)
+sentry-sdk[django]>=2.0,<3.0

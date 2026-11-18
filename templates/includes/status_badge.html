@@ -1,0 +1,14 @@
+{% load i18n %}
+{% if status == "APPROVED" %}
+  <span class="badge badge-approved">{% trans "Approved" %}</span>
+{% elif status == "PENDING" %}
+  <span class="badge badge-pending">{% trans "Pending Review" %}</span>
+{% elif status == "REJECTED" %}
+  <span class="badge badge-rejected">{% trans "Rejected" %}</span>
+{% elif status == "NEEDS_REVISION" %}
+  <span class="badge badge-revision">{% trans "Needs Revision" %}</span>
+{% elif status == "SUSPENDED" %}
+  <span class="badge badge-rejected">{% trans "Suspended" %}</span>
+{% else %}
+  <span class="badge badge-neutral">{{ status }}</span>
+{% endif %}

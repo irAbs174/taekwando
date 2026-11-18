@@ -1,0 +1,56 @@
+{% extends "dashboard/base_member.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "My Belt History" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block dashboard_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Belt History" %}</h1>
+    <p>{% trans "Track your approved belt rankings and submit belt promotion certificates." %}</p>
+  </div>
+  <a class="btn btn-primary" href="{% url 'belts:member_add' %}">+ {% trans "Request Belt Promotion" %}</a>
+</div>
+
+{% if belts %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Belt Rank" %}</th>
+          <th>{% trans "Discipline" %}</th>
+          <th>{% trans "Award Date" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Actions" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for b in belts %}
+        <tr>
+          <td>
+            <span class="belt-swatch" style="background:{{ b.belt_type.color_hex }};"></span>
+            <strong>{{ b.belt_type.localized_name }}</strong>
+          </td>
+          <td>{{ b.get_discipline_display }}</td>
+          <td>{{ b.award_date|local_date }}</td>
+          <td>{% include "includes/status_badge.html" with status=b.approval_status %}</td>
+          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <a class="btn btn-sm btn-outline" href="{% url 'belts:member_detail' b.pk %}">{% trans "View" %}</a>
+            {% if b.can_member_edit %}
+            <a class="btn btn-sm btn-outline" href="{% url 'belts:member_edit' b.pk %}">{% trans "Edit" %}</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">
+  <p>{% trans "No belt promotion records submitted yet." %}</p>
+  <a class="btn btn-primary" href="{% url 'belts:member_add' %}">{% trans "Submit Belt Promotion" %}</a>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+{% block meta_robots %}noindex, nofollow{% endblock %}
+
+{% block content %}
+<div class="container dashboard-shell">
+  <aside class="dashboard-sidebar" aria-label="{% trans 'Member dashboard navigation' %}">
+    <p class="sidebar-heading">{% trans "Member Portal" %}</p>
+    <ul class="sidebar-nav">
+      <li><a href="{% url 'members:dashboard' %}">{% trans "Overview" %}</a></li>
+      <li><a href="{% url 'members:profile_edit' %}">{% trans "Personal Profile" %}</a></li>
+      <li><a href="{% url 'achievements:member_list' %}">{% trans "My Achievements" %}</a></li>
+      <li><a href="{% url 'medals:member_list' %}">{% trans "My Medals" %}</a></li>
+      <li><a href="{% url 'belts:member_list' %}">{% trans "My Belt History" %}</a></li>
+      <li><a href="{% url 'competitions:member_list' %}">{% trans "My Competitions" %}</a></li>
+      <li><a href="{% url 'activities:member_list' %}">{% trans "My Social Activities" %}</a></li>
+      <li>
+        <a href="{% url 'notifications:list' %}">
+          <span>{% trans "Notifications" %}</span>
+          {% if UNREAD_NOTIFICATIONS_COUNT %}
+          <span class="notif-pill">{{ UNREAD_NOTIFICATIONS_COUNT|local_num }}</span>
+          {% endif %}
+        </a>
+      </li>
+      <li><a href="{% url 'members:account_settings' %}">{% trans "Account Settings" %}</a></li>
+    </ul>
+
+    <hr style="border:0;border-block-start:1px solid var(--tw-border);margin-block:1rem;">
+    <form method="post" action="{% url 'accounts:logout' %}">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-outline btn-sm" style="inline-size:100%;">
+        {% trans "Log Out" %}
+      </button>
+    </form>
+  </aside>
+
+  <section aria-label="{% trans 'Dashboard content' %}">
+    {% block dashboard_content %}{% endblock %}
+  </section>
+</div>
+{% endblock %}

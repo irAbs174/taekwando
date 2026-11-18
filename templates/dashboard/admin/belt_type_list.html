@@ -1,0 +1,38 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Belt Ranks" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Belt Rank Configuration" %}</h1>
+  <a class="btn btn-primary" href="{% url 'belts:admin_type_add' %}">+ {% trans "Add Belt Rank" %}</a>
+</div>
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Discipline" %}</th>
+          <th>{% trans "Order" %}</th>
+          <th>{% trans "Code" %}</th>
+          <th>{% trans "Persian Name" %}</th>
+          <th>{% trans "Japanese Name" %}</th>
+          <th>{% trans "Action" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for b in belt_types %}
+        <tr>
+          <td>{{ b.get_discipline_display }}</td>
+          <td>{{ b.rank_order|local_num }}</td>
+          <td class="ltr-inline">{{ b.rank_code }}</td>
+          <td><span class="belt-swatch" style="background:{{ b.color_hex }};"></span> {{ b.name_fa }}</td>
+          <td>{{ b.name_ja }}</td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'belts:admin_type_edit' b.pk %}">{% trans "Edit" %}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    <h1>{% trans "Competition Results" %}</h1>
+    <p>{% trans "Official championships, participating TECHWANDO athletes, and verified podium outcomes." %}</p>
+    <div class="subnav-tabs">
+      <a href="{% url 'champions:list' %}">{% trans "Champions Directory" %}</a>
+      <a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a>
+      <a href="{% url 'champions:belts' %}">{% trans "Belt Achievements" %}</a>
+      <a class="active" href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if competitions %}
+    <div style="display:grid;gap:1.5rem;">
+      {% for comp in competitions %}
+      <article class="card">
+        <div class="card-body">
+          <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-block-end:0.65rem;">
+            <span class="badge badge-dark">{{ comp.get_discipline_display }}</span>
+            <span style="font-size:0.86rem;color:var(--tw-text-subtle);">
+              {{ comp.start_date|local_date }} — {{ comp.end_date|local_date }}
+            </span>
+          </div>
+          <h2 class="card-title" style="font-size:1.3rem;">{{ comp.localized_title }}</h2>
+          <p style="margin:0 0 0.6rem;font-size:0.9rem;color:var(--tw-text-muted);">
+            <strong>{% trans "Location" %}:</strong> {{ comp.localized_location }}
+            &nbsp;|&nbsp;
+            <strong>{% trans "Organizer" %}:</strong> {{ comp.localized_organizer }}
+          </p>
+          {% if comp.localized_results_summary %}
+          <p class="card-text">{{ comp.localized_results_summary }}</p>
+          {% endif %}
+
+          {% if comp.public_participations %}
+          <div class="table-wrap" style="margin-block-start:0.75rem;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>{% trans "Athlete" %}</th>
+                  <th>{% trans "Division" %}</th>
+                  <th>{% trans "Result" %}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for part in comp.public_participations %}
+                <tr>
+                  <td><a href="{{ part.member.get_public_url }}"><strong>{{ part.member.localized_full_name }}</strong></a></td>
+                  <td>{{ part.division_category|default:"—" }}</td>
+                  <td>{{ part.localized_result|default:"—" }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% include "includes/pagination.html" %}
+    {% else %}
+    <div class="empty-state">{% trans "No published competition results yet." %}</div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

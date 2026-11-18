@@ -1,0 +1,32 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Contact Inbox" %} | {{ SITE_NAME }}{% endblock %}
+{% block admin_content %}
+<div class="section-head">
+  <h1 style="margin:0;font-size:1.5rem;">{% trans "Contact Messages Inbox" %}</h1>
+</div>
+{% if contact_messages %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>{% trans "Subject" %}</th><th>{% trans "Sender" %}</th><th>{% trans "Lang" %}</th><th>{% trans "Status" %}</th><th>{% trans "Date" %}</th><th>{% trans "Action" %}</th></tr></thead>
+      <tbody>
+        {% for cm in contact_messages %}
+        <tr>
+          <td><strong>{{ cm.subject }}</strong></td>
+          <td>{{ cm.name }}<br><small class="ltr-inline">{{ cm.email }}</small></td>
+          <td><span class="badge badge-neutral ltr-inline">{{ cm.language }}</span></td>
+          <td>{% if cm.is_read %}<span class="badge badge-neutral">{% trans "Read" %}</span>{% else %}<span class="badge badge-pending">{% trans "Unread" %}</span>{% endif %}</td>
+          <td>{{ cm.submitted_at|local_date }}</td>
+          <td><a class="btn btn-sm btn-outline" href="{% url 'contact:admin_detail' cm.pk %}">{% trans "Review" %}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include "includes/pagination.html" %}
+{% else %}
+<div class="empty-state">{% trans "No contact messages received yet." %}</div>
+{% endif %}
+{% endblock %}

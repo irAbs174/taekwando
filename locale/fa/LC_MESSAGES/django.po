@@ -1,0 +1,1009 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TECHWANDO 1.0\n"
+"Report-Msgid-Bugs-To: info@techwando.example.com\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0000\n"
+"Last-Translator: TECHWANDO Localization Team\n"
+"Language-Team: TECHWANDO fa\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Skip to main content"
+msgstr "پرش به محتوای اصلی"
+
+msgid "Martial Arts & Club Academy"
+msgstr "آکادمی و باشگاه هنرهای رزمی"
+
+msgid "Home"
+msgstr "خانه"
+
+msgid "About"
+msgstr "درباره ما"
+
+msgid "About Techwando"
+msgstr "درباره تکواندو"
+
+msgid "About TECHWANDO"
+msgstr "درباره باشگاه تکواندو"
+
+msgid "Education"
+msgstr "آموزش"
+
+msgid "Programs"
+msgstr "دوره‌ها"
+
+msgid "Champions"
+msgstr "قهرمانان"
+
+msgid "Blog"
+msgstr "مقالات"
+
+msgid "Products"
+msgstr "محصولات"
+
+msgid "Contact"
+msgstr "تماس با ما"
+
+msgid "Admin"
+msgstr "مدیریت"
+
+msgid "Administration"
+msgstr "پنل مدیریت"
+
+msgid "Portal"
+msgstr "پرتال اعضا"
+
+msgid "Member Portal"
+msgstr "پرتال اختصاصی اعضا"
+
+msgid "Member Dashboard"
+msgstr "داشبورد عضویت"
+
+msgid "Log In"
+msgstr "ورود"
+
+msgid "Log Out"
+msgstr "خروج"
+
+msgid "Join Club"
+msgstr "عضویت در باشگاه"
+
+msgid "Become a Member"
+msgstr "درخواست عضویت"
+
+msgid "Academy"
+msgstr "آکادمی"
+
+msgid "Training Programs"
+msgstr "برنامه‌های آموزشی"
+
+msgid "Articles & Blog"
+msgstr "مقالات و اخبار"
+
+msgid "Equipment Catalog"
+msgstr "کاتالوگ تجهیزات"
+
+msgid "Champions & Honors"
+msgstr "قهرمانان و افتخارات"
+
+msgid "Champions Directory"
+msgstr "فهرست قهرمانان"
+
+msgid "Medal Winners"
+msgstr "مدال‌آوران"
+
+msgid "Belt Achievements"
+msgstr "کمربندها و درجات"
+
+msgid "Competition Results"
+msgstr "نتایج مسابقات"
+
+msgid "Member Access"
+msgstr "دسترسی اعضا"
+
+msgid "Member Log In"
+msgstr "ورود اعضا"
+
+msgid "Member Registration"
+msgstr "ثبت‌نام عضویت"
+
+msgid "Contact Club"
+msgstr "تماس با باشگاه"
+
+msgid "API Docs (v1)"
+msgstr "مستندات API (نسخه ۱)"
+
+msgid "Privacy Policy"
+msgstr "حریم خصوصی"
+
+msgid "Supported Languages"
+msgstr "زبان‌های پشتیبانی‌شده"
+
+msgid "All rights reserved."
+msgstr "تمامی حقوق محفوظ است."
+
+msgid ""
+"Multilingual martial arts education, certified athlete registry, belt "
+"rankings, and championship medal verification platform."
+msgstr ""
+"سامانه چندزبانه آموزش هنرهای رزمی، ثبت رسمی ورزشکاران، رتبه‌بندی کمربند و "
+"تایید مدال‌های قهرمانی."
+
+msgid "Official Martial Arts Academy & Club Registry"
+msgstr "آکادمی رسمی هنرهای رزمی و سامانه ثبت قهرمانان"
+
+msgid "Discipline, Education, and Verified Martial Arts Excellence"
+msgstr "انضباط، آموزش علمی و افتخارات تاییدشده هنرهای رزمی"
+
+msgid ""
+"TECHWANDO unites traditional Budo values with modern sports science, athlete"
+" belt registries, championship medal verification, and multilingual club "
+"management."
+msgstr ""
+"باشگاه تکواندو ارزش‌های اصیل هنرهای رزمی را با دانش روز ورزش، ثبت رسمی "
+"کمربندها، تایید مدال‌های قهرمانی و مدیریت چندزبانه پیوند می‌دهد."
+
+msgid "Explore Champions"
+msgstr "مشاهده قهرمانان"
+
+msgid "Approved Members"
+msgstr "اعضای تاییدشده"
+
+msgid "Gold Medals"
+msgstr "مدال طلا"
+
+msgid "Silver Medals"
+msgstr "مدال نقره"
+
+msgid "Bronze Medals"
+msgstr "مدال برنز"
+
+msgid "Special Awards"
+msgstr "جوایز ویژه"
+
+msgid "Total Verified Medals"
+msgstr "مجموع مدال‌های تاییدشده"
+
+msgid "Black Belt Holders"
+msgstr "دارندگان کمربند مشکی"
+
+msgid "Training Programs & Martial Arts Education"
+msgstr "دوره‌های تمرینی و آموزش هنرهای رزمی"
+
+msgid ""
+"Certified coaching programs for youth beginners, competitive fighters, and "
+"Dan black belt candidates."
+msgstr ""
+"دوره‌های تخصصی زیر نظر مربیان رسمی برای نوجوانان مبتدی، قهرمانان مسابقاتی و "
+"داوطلبان کمربند مشکی دان."
+
+msgid "All Programs"
+msgstr "همه دوره‌ها"
+
+msgid "Program"
+msgstr "دوره آموزشی"
+
+msgid "Curriculum"
+msgstr "سرفصل آموزشی"
+
+msgid "Learn more"
+msgstr "بیشتر بخوانید"
+
+msgid "Read Module"
+msgstr "مطالعه سرفصل"
+
+msgid "Program Details"
+msgstr "جزئیات دوره"
+
+msgid "Club Champions & Verified Athletes"
+msgstr "قهرمانان باشگاه و ورزشکاران تاییدشده"
+
+msgid ""
+"Athletes whose ranks, achievements, and medals have been officially reviewed"
+" and approved."
+msgstr ""
+"ورزشکارانی که کمربند، دستاوردها و مدال‌های آنان به صورت رسمی بررسی و تایید "
+"شده است."
+
+msgid "View All Champions"
+msgstr "مشاهده همه قهرمانان"
+
+msgid "View Profile"
+msgstr "مشاهده پروفایل"
+
+msgid "Recent Medal Winners"
+msgstr "مدال‌آوران اخیر"
+
+msgid "Latest officially verified championship podium finishes."
+msgstr "جدیدترین افتخارات و سکوهای قهرمانی تاییدشده باشگاه."
+
+msgid "Full Honor Roll"
+msgstr "فهرست کامل مدال‌آوران"
+
+msgid "Official Uniforms & Equipment"
+msgstr "لباس رسمی و تجهیزات رزمی"
+
+msgid ""
+"Competition-grade uniforms, certified protective gear, and custom Dan belts."
+msgstr ""
+"لباس‌های استاندارد مسابقاتی (دوبوک و دوگی)، تجهیزات ایمنی تاییدشده و "
+"کمربندهای گلدوزی‌شده دان."
+
+msgid "Browse Catalog"
+msgstr "مشاهده کاتالوگ"
+
+msgid "Inquire for price"
+msgstr "استعلام قیمت از باشگاه"
+
+msgid "Details"
+msgstr "جزئیات"
+
+msgid "Latest Articles & Club News"
+msgstr "جدیدترین مقالات و اخبار باشگاه"
+
+msgid "Technical insights, competition coverage, and belt exam guides."
+msgstr "نکات فنی، گزارش مسابقات و راهنمای آزمون‌های ارتقای کمربند."
+
+msgid "All Articles"
+msgstr "همه مقالات"
+
+msgid "Read article"
+msgstr "مطالعه مقاله"
+
+msgid ""
+"Uniting martial arts heritage, athletic excellence, and verified sports "
+"education."
+msgstr "پیوند میراث هنرهای رزمی، تعالی ورزشی و آموزش استاندارد بین‌المللی."
+
+msgid ""
+"TECHWANDO is a multilingual martial arts education, athlete development, "
+"belt ranking, and championship verification club connecting Persian and "
+"Japanese martial arts communities."
+msgstr ""
+"تکواندو باشگاهی چندزبانه در حوزه آموزش هنرهای رزمی، پرورش قهرمانان، ثبت "
+"درجات کمربند و تایید افتخارات ورزشی است که جوامع رزمی فارسی‌زبان و "
+"ژاپنی‌زبان را به هم پیوند می‌دهد."
+
+msgid "Martial Arts Education & Curriculum"
+msgstr "آموزش و سرفصل‌های هنرهای رزمی"
+
+msgid ""
+"Technical study guides, Budo etiquette, sports physiology, and belt "
+"examination preparation."
+msgstr ""
+"راهنماهای فنی، آداب و اخلاق رزمی، فیزیولوژی ورزشی و آمادگی آزمون کمربند."
+
+msgid "Martial Arts Services & Training Programs"
+msgstr "خدمات رزمی و دوره‌های تمرینی"
+
+msgid ""
+"Structured courses from beginner foundations to international championship "
+"squads."
+msgstr "دوره‌های هدفمند از سطح پایه تا تیم‌های منتخب مسابقات بین‌المللی."
+
+msgid "Training Program"
+msgstr "دوره تمرینی"
+
+msgid "Educational Content"
+msgstr "محتوای آموزشی"
+
+msgid "TECHWANDO Champions & Verified Athletes"
+msgstr "قهرمانان و ورزشکاران تاییدشده تکواندو"
+
+msgid ""
+"Official registry of approved club athletes who authorized public profile "
+"publication."
+msgstr ""
+"فهرست رسمی ورزشکاران تاییدشده باشگاه که مجوز نمایش عمومی پروفایل را صادر "
+"کرده‌اند."
+
+msgid "Athlete name"
+msgstr "نام ورزشکار"
+
+msgid "Discipline"
+msgstr "رشته رزمی"
+
+msgid "All disciplines"
+msgstr "همه رشته‌ها"
+
+msgid "Belt rank"
+msgstr "درجه کمربند"
+
+msgid "Belt Rank"
+msgstr "درجه کمربند"
+
+msgid "All belt ranks"
+msgstr "همه کمربندها"
+
+msgid "Competition"
+msgstr "مسابقه"
+
+msgid "All competitions"
+msgstr "همه مسابقات"
+
+msgid "Medal type"
+msgstr "نوع مدال"
+
+msgid "Any medal"
+msgstr "همه مدال‌ها"
+
+msgid "All medals"
+msgstr "همه مدال‌ها"
+
+msgid "Sort by"
+msgstr "مرتب‌سازی"
+
+msgid "Newest achievements"
+msgstr "جدیدترین افتخارات"
+
+msgid "Oldest achievements"
+msgstr "قدیمی‌ترین افتخارات"
+
+msgid "Most medals"
+msgstr "بیشترین مدال"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Filter"
+msgstr "اعمال فیلتر"
+
+msgid "Apply Filter"
+msgstr "اعمال فیلتر"
+
+msgid "Reset"
+msgstr "بازنشانی"
+
+msgid "Medals"
+msgstr "مدال‌ها"
+
+msgid "Achievements"
+msgstr "دستاوردها"
+
+msgid "No matching athletes found"
+msgstr "ورزشکاری با این مشخصات یافت نشد"
+
+msgid "Try adjusting your search or filter criteria."
+msgstr "لطفاً عبارت جستجو یا فیلترهای انتخابی را تغییر دهید."
+
+msgid "Verified TECHWANDO Athlete"
+msgstr "ورزشکار رسمی و تاییدشده تکواندو"
+
+msgid "Member since"
+msgstr "عضویت از"
+
+msgid "Athlete Biography"
+msgstr "بیوگرافی ورزشکار"
+
+msgid "Verified Medals"
+msgstr "مدال‌های تاییدشده"
+
+msgid "Verified Sports Achievements"
+msgstr "دستاوردهای ورزشی تاییدشده"
+
+msgid "Official Belt Progression"
+msgstr "سیر ارتقای کمربند"
+
+msgid "Official Championships"
+msgstr "حضور در مسابقات رسمی"
+
+msgid "Community & Social Contributions"
+msgstr "فعالیت‌های اجتماعی و فرهنگی"
+
+msgid "Medal Winners & Honor Roll"
+msgstr "مدال‌آوران و تالار افتخارات"
+
+msgid ""
+"Officially reviewed and approved Gold, Silver, Bronze, and special "
+"championship medals."
+msgstr ""
+"مدال‌های طلا، نقره، برنز و جوایز ویژه قهرمانی بررسی و تاییدشده توسط باشگاه."
+
+msgid "Belt Achievements & Black Belt Registry"
+msgstr "کمربندهای رسمی و فهرست کمربند مشکی"
+
+msgid "Officially verified belt promotions and Dan black belt awards."
+msgstr ""
+"ارتقاهای کمربند و احکام کمربند مشکی دان تاییدشده توسط فدراسیون و باشگاه."
+
+msgid ""
+"Official championships, participating TECHWANDO athletes, and verified "
+"podium outcomes."
+msgstr "مسابقات رسمی، ورزشکاران شرکت‌کننده باشگاه و نتایج تاییدشده قهرمانی."
+
+msgid "Athlete"
+msgstr "ورزشکار"
+
+msgid "Medal"
+msgstr "مدال"
+
+msgid "Event"
+msgstr "رویداد"
+
+msgid "Location"
+msgstr "محل برگزاری"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Award Date"
+msgstr "تاریخ اعطا"
+
+msgid "Examiner / Federation"
+msgstr "فدراسیون / مرجع صادرکننده"
+
+msgid "Division"
+msgstr "رده / وزن"
+
+msgid "Result"
+msgstr "نتیجه"
+
+msgid "Organizer"
+msgstr "برگزارکننده"
+
+msgid "TECHWANDO Blog & Martial Arts Journal"
+msgstr "وبلاگ و مجله تخصصی تکواندو"
+
+msgid ""
+"Technical insights, championship coverage, sports conditioning, and club "
+"announcements."
+msgstr "مقالات فنی، پوشش مسابقات، آمادگی جسمانی و اطلاعیه‌های رسمی باشگاه."
+
+msgid "Search articles"
+msgstr "جستجو در مقالات"
+
+msgid "Category"
+msgstr "دسته‌بندی"
+
+msgid "All categories"
+msgstr "همه دسته‌بندی‌ها"
+
+msgid "Tag"
+msgstr "برچسب"
+
+msgid "All tags"
+msgstr "همه برچسب‌ها"
+
+msgid "Back to Blog"
+msgstr "بازگشت به مقالات"
+
+msgid "Official Products & Martial Arts Equipment"
+msgstr "محصولات رسمی و تجهیزات هنرهای رزمی"
+
+msgid ""
+"Club-approved uniforms (Dobok & Dogi), competition armor, embroidered Dan "
+"belts, and training tools."
+msgstr ""
+"لباس‌های رسمی مورد تایید باشگاه (دوبوک و دوگی)، هوگو و محافظ مسابقاتی، "
+"کمربند مشکی گلدوزی و ابزار تمرین."
+
+msgid "Search catalog"
+msgstr "جستجو در محصولات"
+
+msgid "SKU"
+msgstr "کد کالا (SKU)"
+
+msgid "Available at Club Desk"
+msgstr "موجود در فروشگاه باشگاه"
+
+msgid "Currently Unavailable"
+msgstr "ناموجود"
+
+msgid "Custom Order — Contact Club for Pricing"
+msgstr "سفارش اختصاصی — استعلام قیمت از باشگاه"
+
+msgid "Technical Specifications"
+msgstr "مشخصات فنی"
+
+msgid "Inquire at Club"
+msgstr "استعلام و سفارش از باشگاه"
+
+msgid "Back to Catalog"
+msgstr "بازگشت به کاتالوگ"
+
+msgid "Contact TECHWANDO Club"
+msgstr "تماس با باشگاه تکواندو"
+
+msgid ""
+"Questions about training schedules, membership applications, seminars, or "
+"official gear? Send us a message."
+msgstr ""
+"برای پرسش درباره برنامه کلاس‌ها، شرایط عضویت، سمینارهای آموزشی یا تجهیزات "
+"رسمی پیام خود را ارسال کنید."
+
+msgid "Send an Inquiry"
+msgstr "ارسال پیام"
+
+msgid "Send Message"
+msgstr "ارسال پیام"
+
+msgid "Club Administration & Dojang"
+msgstr "دفتر مرکزی و سالن آموزش (دوجانگ)"
+
+msgid ""
+"Our multilingual administration desk responds to messages in both Persian "
+"(fa-IR) and Japanese (ja-JP)."
+msgstr ""
+"دبیرخانه چندزبانه باشگاه به پیام‌های ارسالی به هر دو زبان فارسی و ژاپنی پاسخ"
+" می‌دهد."
+
+msgid "Official Email"
+msgstr "ایمیل رسمی"
+
+msgid "Training Hours"
+msgstr "ساعات فعالیت باشگاه"
+
+msgid "Monday – Saturday, 09:00 – 21:00"
+msgstr "دوشنبه تا شنبه، ۰۹:۰۰ تا ۲۱:۰۰"
+
+msgid ""
+"Translation fallback active: displaying the available language version."
+msgstr ""
+"نمایش نسخه جایگزین: این محتوا در حال حاضر به زبان دیگر باشگاه نمایش داده "
+"می‌شود."
+
+msgid "Translation fallback active: showing the available language edition."
+msgstr ""
+"نمایش نسخه جایگزین: ترجمه این مقاله به زبان دیگر باشگاه نمایش داده می‌شود."
+
+msgid ""
+"Translation fallback active: displaying the available language description."
+msgstr ""
+"نمایش نسخه جایگزین: توضیحات این محصول به زبان دیگر باشگاه نمایش داده می‌شود."
+
+msgid "This content is currently shown in the club's alternate language."
+msgstr "این محتوا در حال حاضر به زبان دیگر باشگاه نمایش داده می‌شود."
+
+msgid "Gold"
+msgstr "طلا"
+
+msgid "Silver"
+msgstr "نقره"
+
+msgid "Bronze"
+msgstr "برنز"
+
+msgid "Special Award"
+msgstr "جایزه ویژه"
+
+msgid "Pending Review"
+msgstr "در انتظار بررسی"
+
+msgid "Approved"
+msgstr "تاییدشده"
+
+msgid "Rejected"
+msgstr "ردشده"
+
+msgid "Needs Revision"
+msgstr "نیازمند اصلاح"
+
+msgid "Suspended"
+msgstr "تعلیق‌شده"
+
+msgid "Super Admin"
+msgstr "مدیر ارشد سیستم"
+
+msgid "Content Admin"
+msgstr "مدیر محتوا"
+
+msgid "Club Manager"
+msgstr "مدیر باشگاه"
+
+msgid "Moderator / Coach Reviewer"
+msgstr "داور و بازبین فنی"
+
+msgid "Club Member"
+msgstr "عضو باشگاه"
+
+msgid "Taekwondo"
+msgstr "تکواندو"
+
+msgid "Karate"
+msgstr "کاراته"
+
+msgid "Judo"
+msgstr "جودو"
+
+msgid "Aikido"
+msgstr "آیکیدو"
+
+msgid "Hapkido"
+msgstr "هاپکیدو"
+
+msgid "General Martial Arts"
+msgstr "هنرهای رزمی عمومی"
+
+msgid "Persian (fa-IR)"
+msgstr "فارسی (ایران)"
+
+msgid "Japanese (ja-JP)"
+msgstr "ژاپنی (ژاپن)"
+
+msgid "Sign In to TECHWANDO"
+msgstr "ورود به حساب کاربری تکواندو"
+
+msgid "Access your private club member portal or administration panel."
+msgstr "وارد پرتال اختصاصی اعضای باشگاه یا پنل مدیریت شوید."
+
+msgid "Forgot your password?"
+msgstr "رمز عبور خود را فراموش کرده‌اید؟"
+
+msgid "Apply for Membership"
+msgstr "ثبت درخواست عضویت"
+
+msgid "TECHWANDO Membership Registration"
+msgstr "ثبت‌نام عضویت در باشگاه تکواندو"
+
+msgid ""
+"Create your individual athlete portal account. Your membership application "
+"will be reviewed by club administrators."
+msgstr ""
+"حساب پرتال اختصاصی خود را ایجاد کنید. درخواست عضویت شما توسط مدیران باشگاه "
+"بررسی و تایید خواهد شد."
+
+msgid "Already registered?"
+msgstr "قبلاً ثبت‌نام کرده‌اید؟"
+
+msgid "Account Settings"
+msgstr "تنظیمات حساب کاربری"
+
+msgid "Manage your login email, preferred interface language, and password."
+msgstr "ایمیل ورود، زبان پیش‌فرض سامانه و رمز عبور خود را مدیریت کنید."
+
+msgid "Change Password"
+msgstr "تغییر رمز عبور"
+
+msgid "Assigned Role"
+msgstr "نقش کاربری"
+
+msgid "Save Settings"
+msgstr "ذخیره تنظیمات"
+
+msgid "Update Password"
+msgstr "به‌روزرسانی رمز عبور"
+
+msgid "Reset Password"
+msgstr "بازیابی رمز عبور"
+
+msgid ""
+"Enter your registered email address and we will send reset instructions."
+msgstr "ایمیل ثبت‌شده خود را وارد کنید تا لینک بازیابی رمز عبور ارسال شود."
+
+msgid "Send Reset Link"
+msgstr "ارسال لینک بازیابی"
+
+msgid "Return to Log In"
+msgstr "بازگشت به صفحه ورود"
+
+msgid "Check Your Email"
+msgstr "ایمیل خود را بررسی کنید"
+
+msgid "Reset Link Sent"
+msgstr "لینک بازیابی ارسال شد"
+
+msgid "Set New Password"
+msgstr "تعیین رمز عبور جدید"
+
+msgid "Choose a New Password"
+msgstr "انتخاب رمز عبور جدید"
+
+msgid "Save New Password"
+msgstr "ذخیره رمز عبور جدید"
+
+msgid "Password Reset Complete"
+msgstr "رمز عبور با موفقیت تغییر یافت"
+
+msgid "Password Updated"
+msgstr "رمز عبور به‌روزرسانی شد"
+
+msgid "Overview"
+msgstr "نمای کلی"
+
+msgid "Dashboard Overview"
+msgstr "نمای کلی داشبورد"
+
+msgid "Personal Profile"
+msgstr "پروفایل شخصی"
+
+msgid "Personal Profile & Public Privacy"
+msgstr "پروفایل شخصی و حریم خصوصی"
+
+msgid "My Achievements"
+msgstr "دستاوردهای من"
+
+msgid "My Sports Achievements"
+msgstr "دستاوردهای ورزشی من"
+
+msgid "My Medals"
+msgstr "مدال‌های من"
+
+msgid "My Belt History"
+msgstr "سوابق کمربند من"
+
+msgid "My Competitions"
+msgstr "مسابقات من"
+
+msgid "My Competition Participations"
+msgstr "سوابق حضور در مسابقات"
+
+msgid "My Social Activities"
+msgstr "فعالیت‌های اجتماعی من"
+
+msgid "My Social & Community Activities"
+msgstr "فعالیت‌های اجتماعی و داوطلبانه من"
+
+msgid "Notifications"
+msgstr "اعلان‌ها"
+
+msgid "Membership Number"
+msgstr "شماره عضویت"
+
+msgid "Membership"
+msgstr "وضعیت عضویت"
+
+msgid "Joined"
+msgstr "تاریخ عضویت"
+
+msgid "View Public Profile"
+msgstr "مشاهده پروفایل عمومی"
+
+msgid "Edit Profile"
+msgstr "ویرایش پروفایل"
+
+msgid "Save Profile"
+msgstr "ذخیره پروفایل"
+
+msgid "Approved Achievements"
+msgstr "دستاوردهای تاییدشده"
+
+msgid "Approved Medals"
+msgstr "مدال‌های تاییدشده"
+
+msgid "Pending Submissions"
+msgstr "درخواست‌های در انتظار بررسی"
+
+msgid "Current Approved Belt"
+msgstr "آخرین کمربند تاییدشده"
+
+msgid "No approved belt recorded yet"
+msgstr "هنوز کمربند تاییدشده‌ای ثبت نشده است"
+
+msgid "Quick Submit"
+msgstr "ثبت سریع سوابق"
+
+msgid "Add Achievement"
+msgstr "ثبت دستاورد"
+
+msgid "Submit Achievement"
+msgstr "ثبت دستاورد جدید"
+
+msgid "Submit Medal"
+msgstr "ثبت مدال"
+
+msgid "Request Belt Promotion"
+msgstr "درخواست ارتقای کمربند"
+
+msgid "Add Competition"
+msgstr "ثبت مسابقه"
+
+msgid "Add Competition Record"
+msgstr "ثبت حضور در مسابقه"
+
+msgid "Submit Activity"
+msgstr "ثبت فعالیت اجتماعی"
+
+msgid "Submit Social Activity"
+msgstr "ثبت فعالیت اجتماعی"
+
+msgid "Submit for Review"
+msgstr "ارسال برای بررسی"
+
+msgid "Edit & Resubmit"
+msgstr "ویرایش و ارسال مجدد"
+
+msgid "Request Correction"
+msgstr "درخواست اصلاح سابقه"
+
+msgid "Submit Correction Request"
+msgstr "ارسال درخواست اصلاح"
+
+msgid "Administrator Feedback"
+msgstr "پاسخ و نظر مدیر بررسی‌کننده"
+
+msgid "Club Administration Note"
+msgstr "یادداشت مدیریت باشگاه"
+
+msgid "Moderation & Review History"
+msgstr "تاریخچه بررسی و داوری"
+
+msgid "View Protected Certificate"
+msgstr "مشاهده گواهی محافظت‌شده"
+
+msgid "View Protected Evidence"
+msgstr "مشاهده مدرک محافظت‌شده"
+
+msgid "View Uploaded Photograph"
+msgstr "مشاهده تصویر بارگذاری‌شده"
+
+msgid "Mark All as Read"
+msgstr "علامت‌گذاری همه به عنوان خوانده‌شده"
+
+msgid "Mark Read"
+msgstr "خوانده شد"
+
+msgid "Open"
+msgstr "مشاهده"
+
+msgid "New"
+msgstr "جدید"
+
+msgid "Administration Dashboard"
+msgstr "داشبورد مدیریت"
+
+msgid "TECHWANDO Administration Portal"
+msgstr "پرتال مدیریت باشگاه تکواندو"
+
+msgid "Moderation Queue"
+msgstr "صف بررسی و تایید"
+
+msgid "Member Submission Moderation Queue"
+msgstr "صف بررسی مدارک و سوابق اعضا"
+
+msgid "Members & Applications"
+msgstr "اعضا و درخواست‌های عضویت"
+
+msgid "Club Members & Membership Applications"
+msgstr "مدیریت اعضا و درخواست‌های عضویت"
+
+msgid "Belt Ranks"
+msgstr "درجات کمربند"
+
+msgid "Competitions"
+msgstr "مسابقات"
+
+msgid "Blog Articles"
+msgstr "مقالات وبلاگ"
+
+msgid "Blog Categories"
+msgstr "دسته‌بندی مقالات"
+
+msgid "Products Catalog"
+msgstr "کاتالوگ محصولات"
+
+msgid "Product Categories"
+msgstr "دسته‌بندی محصولات"
+
+msgid "Pages & Programs"
+msgstr "صفحات و دوره‌ها"
+
+msgid "SEO & Translations"
+msgstr "سئو و ترجمه‌ها"
+
+msgid "Contact Messages"
+msgstr "پیام‌های تماس"
+
+msgid "Audit Logs"
+msgstr "لاگ‌های امنیتی و ممیزی"
+
+msgid "Moderation History"
+msgstr "سوابق بررسی"
+
+msgid "Django Admin"
+msgstr "مدیریت پیشرفته جنگو"
+
+msgid "Total Members"
+msgstr "کل اعضا"
+
+msgid "Pending Applications"
+msgstr "درخواست‌های عضویت در انتظار"
+
+msgid "Unread Contact Messages"
+msgstr "پیام‌های خوانده‌نشده"
+
+msgid "Recent Moderation Decisions"
+msgstr "آخرین تصمیمات بررسی"
+
+msgid "Recent Audit Trail"
+msgstr "آخرین رخدادهای ممیزی"
+
+msgid "Open Queue"
+msgstr "مشاهده صف بررسی"
+
+msgid "All Logs"
+msgstr "همه لاگ‌ها"
+
+msgid "Review"
+msgstr "بررسی"
+
+msgid "Save Decision & Notify Member"
+msgstr "ثبت تصمیم و ارسال اعلان به عضو"
+
+msgid "Create Member"
+msgstr "ایجاد عضو جدید"
+
+msgid "Deactivate Account"
+msgstr "غیرفعال‌سازی حساب"
+
+msgid "Reactivate Account"
+msgstr "فعال‌سازی مجدد حساب"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Action"
+msgstr "عملیات"
+
+msgid "Actions"
+msgstr "عملیات"
+
+msgid "View"
+msgstr "مشاهده"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Cancel"
+msgstr "انصراف"
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "No"
+msgstr "خیر"
+
+msgid "Yes, Delete"
+msgstr "بله، حذف شود"
+
+msgid "Active"
+msgstr "فعال"
+
+msgid "Inactive"
+msgstr "غیرفعال"
+
+msgid "Visible"
+msgstr "عمومی"
+
+msgid "Private"
+msgstr "خصوصی"
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "Access Denied"
+msgstr "عدم دسترسی"
+
+msgid "Access Denied (403)"
+msgstr "دسترسی غیرمجاز (۴۰۳)"
+
+msgid "Page Not Found"
+msgstr "صفحه یافت نشد"
+
+msgid "Page Not Found (404)"
+msgstr "صفحه مورد نظر یافت نشد (۴۰۴)"
+
+msgid "Return to Homepage"
+msgstr "بازگشت به صفحه اصلی"

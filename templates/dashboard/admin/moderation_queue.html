@@ -1,0 +1,81 @@
+{% extends "dashboard/base_admin.html" %}
+{% load i18n techwando_tags %}
+{% block title %}{% trans "Moderation Queue" %} | {{ SITE_NAME }}{% endblock %}
+
+{% block admin_content %}
+<div class="section-head">
+  <div>
+    <h1 style="margin:0;font-size:1.5rem;">{% trans "Member Submission Moderation Queue" %}</h1>
+    <p>{% trans "Inspect uploaded certificates and approve, reject, or request revision on submissions." %}</p>
+  </div>
+</div>
+
+<form class="filter-bar" method="get">
+  <div>
+    <label class="form-label" for="mq-status">{% trans "Status" %}</label>
+    <select id="mq-status" name="status" class="form-select">
+      {% for code, label in status_choices %}
+      <option value="{{ code }}" {% if status_filter == code %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+      <option value="ALL" {% if status_filter == "ALL" %}selected{% endif %}>{% trans "All statuses" %}</option>
+    </select>
+  </div>
+  <div>
+    <label class="form-label" for="mq-type">{% trans "Submission type" %}</label>
+    <select id="mq-type" name="type" class="form-select">
+      <option value="all" {% if type_filter == "all" %}selected{% endif %}>{% trans "All types" %}</option>
+      {% for code, label in type_choices %}
+      <option value="{{ code }}" {% if type_filter == code %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary" style="inline-size:100%;">{% trans "Filter" %}</button>
+  </div>
+</form>
+
+{% if queue_items %}
+<div class="card">
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{% trans "Type" %}</th>
+          <th>{% trans "Submission" %}</th>
+          <th>{% trans "Athlete" %}</th>
+          <th>{% trans "Status" %}</th>
+          <th>{% trans "Updated" %}</th>
+          <th>{% trans "Action" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in queue_items %}
+        <tr>
+          <td><span class="badge badge-neutral">{{ item.type_label }}</span></td>
+          <td>
+            <strong>{{ item.title }}</strong>
+            {% if item.correction_request %}
+            <br><small style="color:var(--tw-info);">{% trans "Correction requested" %}</small>
+            {% endif %}
+          </td>
+          <td>
+            {{ item.member.full_name }}
+            <br><small class="ltr-inline" style="color:var(--tw-text-subtle);">{{ item.member.membership_number }}</small>
+          </td>
+          <td>{% include "includes/status_badge.html" with status=item.status %}</td>
+          <td>{{ item.updated_at|local_date }}</td>
+          <td>
+            <a class="btn btn-sm btn-primary" href="{% url 'accounts:admin_review_submission' item.model_type item.pk %}">
+              {% trans "Review" %}
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% else %}
+<div class="empty-state">{% trans "No submissions match this moderation filter." %}</div>
+{% endif %}
+{% endblock %}
