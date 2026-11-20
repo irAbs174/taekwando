@@ -1,0 +1,262 @@
+/* ==========================================================================
+   TECHWANDO — Mobile-first responsive refinements
+   Breakpoints: 576px, 768px, 992px, 1200px, 1440px
+   ========================================================================== */
+
+/* Small phones and up ----------------------------------------------------- */
+@media (max-width: 575.98px) {
+  :root {
+    --tw-header-height: 66px;
+  }
+
+  .container {
+    padding-inline: 1rem;
+  }
+
+  /* Bootstrap's largest gutter would push `g-5` rows past the viewport. */
+  .row.g-5 {
+    --bs-gutter-x: 2rem;
+  }
+
+  .hero {
+    padding-block: 2.5rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-panel {
+    margin-block-start: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 8vw, 2.2rem);
+  }
+
+  .hero-cta .btn {
+    flex: 1 1 100%;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-box:nth-child(3) {
+    border-inline-start: 0;
+  }
+
+  .stat-box:nth-child(n + 3) {
+    border-block-start: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-head {
+    align-items: flex-start;
+  }
+
+  .section-head > .btn {
+    inline-size: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .page-banner {
+    padding-block: 1.75rem;
+  }
+
+  .filter-bar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dashboard-profile {
+    align-items: flex-start;
+  }
+
+  .dashboard-profile-actions {
+    inline-size: 100%;
+  }
+
+  .dashboard-profile-actions .btn {
+    flex: 1 1 auto;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kpi-card {
+    padding: 0.9rem 1rem;
+  }
+
+  .data-table {
+    font-size: 0.83rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.6rem 0.65rem;
+  }
+
+  .pagination .btn {
+    flex: 1 1 auto;
+  }
+}
+
+/* Tablets and up ---------------------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .content-with-aside {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sticky-aside {
+    position: static;
+  }
+
+  .site-header .nav-actions .btn-label {
+    display: none;
+  }
+
+  .lang-switcher {
+    margin-inline-start: auto;
+  }
+
+  .dashboard-titlebar {
+    align-items: center;
+  }
+
+  .table-wrap {
+    border: 1px solid var(--tw-border);
+    background: var(--tw-surface);
+  }
+
+  .table-wrap .data-table {
+    min-inline-size: 640px;
+  }
+
+  .cta-panel {
+    text-align: start;
+  }
+}
+
+/* Tablets / small laptops ------------------------------------------------ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Laptops and up --------------------------------------------------------- */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 0.1rem;
+  }
+
+  .sidebar-mobile-trigger {
+    display: none;
+  }
+}
+
+/* Wide desktops ---------------------------------------------------------- */
+@media (min-width: 1440px) {
+  :root {
+    --tw-container: 1240px;
+  }
+
+  .hero {
+    padding-block: 6.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.6rem;
+  }
+}
+
+/* Wide tables become scrollable instead of breaking layout ----------------- */
+@media (max-width: 991.98px) {
+  .table-responsive-stack {
+    overflow-x: auto;
+  }
+}
+
+/* Print ------------------------------------------------------------------ */
+@media print {
+  .site-header,
+  .site-footer,
+  .back-to-top,
+  .dashboard-sidebar,
+  .btn,
+  .pagination,
+  .subnav-tabs {
+    display: none !important;
+  }
+
+  .card,
+  .data-table {
+    box-shadow: none;
+    border-color: #ccc;
+  }
+
+  body {
+    background: #fff;
+  }
+}
+
+/* Higher contrast preference --------------------------------------------- */
+@media (prefers-contrast: more) {
+  .card,
+  .empty-state,
+  .filter-bar,
+  .form-control,
+  .form-select {
+    border-color: var(--tw-text-muted);
+  }
+
+  .btn-outline {
+    border-color: var(--tw-text);
+  }
+}

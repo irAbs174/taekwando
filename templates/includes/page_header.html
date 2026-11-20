@@ -1,0 +1,14 @@
+{% load i18n %}
+{# Reusable page title / action bar. Params: heading, subheading, actions (HTML is not supported — use blocks). #}
+<div class="dashboard-titlebar">
+  <div>
+    <h1>{{ heading }}</h1>
+    {% if subheading %}<p>{{ subheading }}</p>{% endif %}
+  </div>
+  {% if action_url and action_label %}
+  <a class="btn btn-primary" href="{{ action_url }}">
+    {% if action_icon %}<i class="bi {{ action_icon }}" aria-hidden="true"></i>{% endif %}
+    {{ action_label }}
+  </a>
+  {% endif %}
+</div>

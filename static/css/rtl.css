@@ -1,30 +1,104 @@
 /* ==========================================================================
-   Persian (fa-IR) RTL Typographic & Layout Refinements
+   TECHWANDO — Persian (fa-IR) RTL refinements
+   Loaded only when the active language is Persian. Bootstrap's RTL build
+   already mirrors the grid; these rules fix typography and icon direction.
    ========================================================================== */
-html[lang="fa"] body {
-  direction: rtl;
-  text-align: right;
-  font-family: "Vazirmatn", "IRANSansX", "Sahel", "Tahoma", sans-serif;
-  line-height: 1.85;
-  letter-spacing: 0 !important;
-  font-feature-settings: "kern" 1, "liga" 1;
-}
 
-html[lang="fa"] h1,
-html[lang="fa"] h2,
-html[lang="fa"] h3,
-html[lang="fa"] h4 {
-  line-height: 1.48;
-  letter-spacing: 0 !important;
-}
-
-html[lang="fa"] .sidebar-heading {
-  text-transform: none;
+html[dir="rtl"] body {
+  font-family: var(--tw-font-sans);
   letter-spacing: 0;
-  font-size: 0.78rem;
 }
 
-html[lang="fa"] input[dir="ltr"],
-html[lang="fa"] textarea[dir="ltr"] {
-  text-align: left;
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  letter-spacing: 0;
+}
+
+/* Vazirmatn renders Latin numerals beautifully, but Persian numerals should
+   use the localized tabular forms supplied by the template tags. */
+html[dir="rtl"] .stat-value,
+html[dir="rtl"] .kpi-value,
+html[dir="rtl"] .product-price {
+  font-feature-settings: "ss01";
+}
+
+/* Directional icons: arrows must point the other way in RTL. */
+html[dir="rtl"] .bi-arrow-right::before {
+  content: "\f12f"; /* bi-arrow-left */
+}
+
+html[dir="rtl"] .bi-arrow-left::before {
+  content: "\f138"; /* bi-arrow-right */
+}
+
+html[dir="rtl"] .bi-chevron-right::before {
+  content: "\f284"; /* bi-chevron-left */
+}
+
+html[dir="rtl"] .bi-chevron-left::before {
+  content: "\f285"; /* bi-chevron-right */
+}
+
+/* Breadcrumb separators mirror naturally with logical properties. */
+html[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  content: "\\";
+}
+
+/* Keep Latin technical strings (emails, SKUs, API codes) isolated. */
+html[dir="rtl"] .ltr-inline,
+html[dir="rtl"] code,
+html[dir="rtl"] .sku {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Form inputs whose content is inherently LTR keep their direction. */
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="password"],
+html[dir="rtl"] input[type="url"],
+html[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+/* Numbers in tables align better with tabular figures. */
+html[dir="rtl"] .data-table td,
+html[dir="rtl"] .data-table th {
+  font-feature-settings: "ss01";
+}
+
+/* Dropdown/menu carets and chevrons in navigation */
+html[dir="rtl"] .dropdown-toggle::after {
+  margin-inline-start: 0.35em;
+  margin-inline-end: 0;
+}
+
+/* Offcanvas slides from the right in RTL: Bootstrap handles this, but make
+   sure the close button stays in a comfortable place. */
+html[dir="rtl"] .offcanvas-header .btn-close {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+/* Persian typographic punctuation polish */
+html[dir="rtl"] .prose,
+html[dir="rtl"] .card-text,
+html[dir="rtl"] p {
+  text-align: start;
+}
+
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0.04em;
+}
+
+html[dir="rtl"] .hero h1 {
+  line-height: 1.35;
+}
+
+html[dir="rtl"] .navbar-brand {
+  letter-spacing: 0;
 }

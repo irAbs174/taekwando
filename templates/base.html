@@ -6,39 +6,46 @@
   <title>{% block title %}{{ seo_title|default:SITE_NAME }}{% endblock %}</title>
   <meta name="description" content="{% block meta_description %}{{ seo_description|default:'' }}{% endblock %}">
   <meta name="robots" content="{% block meta_robots %}{{ seo_robots|default:'index, follow' }}{% endblock %}">
-  <link rel="canonical" href="{{ seo_canonical|default:CANONICAL_DEFAULT }}">
+  <meta name="author" content="{{ SITE_NAME }}">
+  <meta name="theme-color" content="#14243A">
+  <link rel="canonical" href="{% block canonical %}{{ seo_canonical|default:CANONICAL_DEFAULT }}{% endblock %}">
 
-  {# Localized hreflang alternates for Persian (fa-IR) & Japanese (ja-JP) #}
+  {# Localized hreflang alternates for Persian (fa-IR) and Japanese (ja-JP) #}
   <link rel="alternate" hreflang="fa-IR" href="{{ HREFLANG_FA }}">
   <link rel="alternate" hreflang="fa" href="{{ HREFLANG_FA }}">
   <link rel="alternate" hreflang="ja-JP" href="{{ HREFLANG_JA }}">
   <link rel="alternate" hreflang="ja" href="{{ HREFLANG_JA }}">
   <link rel="alternate" hreflang="x-default" href="{{ HREFLANG_FA }}">
 
-  {# Open Graph & Social Metadata #}
+  {# Open Graph / social sharing metadata #}
   <meta property="og:site_name" content="{{ SITE_NAME }}">
   <meta property="og:locale" content="{{ LOCALE_META.og_locale }}">
   <meta property="og:locale:alternate" content="{{ ALT_LOCALE_META.og_locale }}">
-  <meta property="og:type" content="{{ og_type|default:'website' }}">
-  <meta property="og:title" content="{% firstof og_title seo_title SITE_NAME %}">
-  <meta property="og:description" content="{% firstof og_description seo_description '' %}">
+  <meta property="og:type" content="{% block og_type %}{{ og_type|default:'website' }}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{% firstof og_title seo_title SITE_NAME %}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{% firstof og_description seo_description '' %}{% endblock %}">
   <meta property="og:url" content="{{ seo_canonical|default:CANONICAL_DEFAULT }}">
   {% if og_image %}
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:alt" content="{{ og_image_alt|default:SITE_NAME }}">
+  {% else %}
+  <meta property="og:image" content="{{ SITE_BASE_URL }}{% static 'images/og-default.svg' %}">
+  <meta property="og:image:alt" content="{{ SITE_NAME }}">
   {% endif %}
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% firstof og_title seo_title SITE_NAME %}">
+  <meta name="twitter:description" content="{% firstof og_description seo_description '' %}">
 
   <link rel="icon" type="image/svg+xml" href="{% static 'images/logo-mark.svg' %}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {% if IS_RTL %}
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  {% else %}
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
-  {% endif %}
 
-  <link rel="stylesheet" href="{% static 'css/techwando.css' %}">
+  {# Bootstrap 5 + Bootstrap Icons (bundled locally, no CDN dependency) #}
+  {% if IS_RTL %}
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.rtl.min.css' %}">
+  {% else %}
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.min.css' %}">
+  {% endif %}
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
   {% if IS_RTL %}
   <link rel="stylesheet" href="{% static 'css/rtl.css' %}">
   {% else %}
@@ -48,28 +55,35 @@
   {% if structured_data_json %}
   <script type="application/ld+json">{{ structured_data_json|safe }}</script>
   {% endif %}
+  <noscript>
+    <style>
+      .navbar-collapse { display: block !important; }
+      .dashboard-sidebar { display: block !important; position: static !important; max-block-size: none !important; }
+      .dashboard-toggle, .offcanvas, .back-to-top { display: none !important; }
+      [data-theme-toggle] { display: none; }
+    </style>
+  </noscript>
   {% block extra_head %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}" data-scroll-label="{% trans 'Scrollable table' %}">
   <a class="skip-link" href="#main-content">{% trans "Skip to main content" %}</a>
 
   {% include "includes/navbar.html" %}
 
-  <main id="main-content">
-    {% if messages %}
-    <div class="container" style="padding-block-start: 1rem;">
-      {% for message in messages %}
-      <div class="alert alert-{{ message.tags|default:'info' }}" role="status">{{ message }}</div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
+  <main id="main-content" tabindex="-1">
+    {% include "includes/messages.html" %}
     {% block content %}{% endblock %}
   </main>
 
   {% include "includes/footer.html" %}
+  {% include "includes/modal.html" %}
 
-  <script src="{% static 'js/techwando.js' %}" defer></script>
+  <button type="button" class="back-to-top" data-back-to-top aria-label="{% trans 'Back to top' %}">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="{% static 'vendor/bootstrap/bootstrap.bundle.min.js' %}" defer></script>
+  <script src="{% static 'js/main.js' %}" defer></script>
   {% block extra_js %}{% endblock %}
 </body>
 </html>

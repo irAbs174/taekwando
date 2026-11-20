@@ -1,0 +1,91 @@
+{% load i18n static techwando_tags %}
+{% with app=request.resolver_match.app_name view=request.resolver_match.view_name %}
+{% firstof profile user.member_profile as sidebar_profile %}
+{% if sidebar_profile %}
+<div class="sidebar-user">
+  {% if sidebar_profile.profile_photo %}
+  <img class="avatar" src="{{ sidebar_profile.profile_photo.url }}" alt="">
+  {% else %}
+  <img class="avatar" src="{% static 'images/default-avatar.svg' %}" alt="">
+  {% endif %}
+  <div>
+    <strong>{{ sidebar_profile.localized_full_name }}</strong>
+    <span class="ltr-inline">{{ sidebar_profile.membership_number }}</span>
+  </div>
+</div>
+{% endif %}
+<p class="sidebar-heading">{% trans "Member Portal" %}</p>
+<ul class="sidebar-nav">
+  <li>
+    <a href="{% url 'members:dashboard' %}" class="{% if view == 'dashboard' %}active{% endif %}"
+       {% if view == 'dashboard' %}aria-current="page"{% endif %}>
+      <i class="bi bi-speedometer2" aria-hidden="true"></i>{% trans "Overview" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'members:profile_edit' %}" class="{% if view == 'profile_edit' %}active{% endif %}"
+       {% if view == 'profile_edit' %}aria-current="page"{% endif %}>
+      <i class="bi bi-person" aria-hidden="true"></i>{% trans "My Profile" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'achievements:member_list' %}" class="{% if app == 'achievements' %}active{% endif %}"
+       {% if app == 'achievements' %}aria-current="page"{% endif %}>
+      <i class="bi bi-star" aria-hidden="true"></i>{% trans "My Achievements" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'belts:member_list' %}" class="{% if app == 'belts' %}active{% endif %}"
+       {% if app == 'belts' %}aria-current="page"{% endif %}>
+      <i class="bi bi-award" aria-hidden="true"></i>{% trans "My Belts" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'medals:member_list' %}" class="{% if app == 'medals' %}active{% endif %}"
+       {% if app == 'medals' %}aria-current="page"{% endif %}>
+      <i class="bi bi-trophy" aria-hidden="true"></i>{% trans "My Medals" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'competitions:member_list' %}" class="{% if app == 'competitions' %}active{% endif %}"
+       {% if app == 'competitions' %}aria-current="page"{% endif %}>
+      <i class="bi bi-flag" aria-hidden="true"></i>{% trans "My Competitions" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'activities:member_list' %}" class="{% if app == 'activities' %}active{% endif %}"
+       {% if app == 'activities' %}aria-current="page"{% endif %}>
+      <i class="bi bi-people" aria-hidden="true"></i>{% trans "My Social Activities" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'notifications:list' %}" class="{% if app == 'notifications' %}active{% endif %}"
+       {% if app == 'notifications' %}aria-current="page"{% endif %}>
+      <i class="bi bi-bell" aria-hidden="true"></i>{% trans "Notifications" %}
+      {% if UNREAD_NOTIFICATIONS_COUNT %}
+      <span class="notif-pill">{{ UNREAD_NOTIFICATIONS_COUNT|local_num }}</span>
+      {% endif %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'members:account_settings' %}" class="{% if view == 'account_settings' or view == 'password_change' %}active{% endif %}"
+       {% if view == 'account_settings' or view == 'password_change' %}aria-current="page"{% endif %}>
+      <i class="bi bi-gear" aria-hidden="true"></i>{% trans "Account Settings" %}
+    </a>
+  </li>
+</ul>
+
+<div class="sidebar-footer">
+  {% if IS_ADMIN_PORTAL_USER %}
+  <a class="btn btn-outline btn-sm w-100 mb-2" href="{% url 'accounts:admin_dashboard' %}">
+    <i class="bi bi-shield-lock" aria-hidden="true"></i> {% trans "Administration" %}
+  </a>
+  {% endif %}
+  <form method="post" action="{% url 'accounts:logout' %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-outline btn-sm w-100">
+      <i class="bi bi-box-arrow-right" aria-hidden="true"></i> {% trans "Log Out" %}
+    </button>
+  </form>
+</div>
+{% endwith %}

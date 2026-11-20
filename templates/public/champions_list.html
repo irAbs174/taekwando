@@ -4,12 +4,15 @@
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% trans "Champions" as crumb_parent %}
+    {% trans "Athletes Directory" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=crumb_current %}
     <h1>{% trans "TECHWANDO Champions & Verified Athletes" %}</h1>
     <p>{% trans "Official registry of approved club athletes who authorized public profile publication." %}</p>
     <div class="subnav-tabs">
-      <a class="active" href="{% url 'champions:list' %}">{% trans "Champions Directory" %}</a>
+      <a class="active" href="{% url 'champions:list' %}" aria-current="page">{% trans "Athletes Directory" %}</a>
       <a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a>
-      <a href="{% url 'champions:belts' %}">{% trans "Belt Achievements" %}</a>
+      <a href="{% url 'champions:belts' %}">{% trans "Belt Registry" %}</a>
       <a href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a>
     </div>
   </div>
@@ -17,10 +20,18 @@
 
 <section class="section">
   <div class="container">
-    <form class="filter-bar" method="get" action="{% url 'champions:list' %}">
+    <div class="d-flex align-items-start gap-2 mb-3">
+      <i class="bi bi-shield-check text-success" aria-hidden="true"></i>
+      <p class="small text-muted mb-0">
+        {% trans "Profiles appear only when membership is approved, records are verified, and the athlete has granted explicit public visibility consent." %}
+      </p>
+    </div>
+
+    <form class="filter-bar" method="get" action="{% url 'champions:list' %}" role="search">
       <div>
         <label class="form-label" for="f-q">{% trans "Athlete name" %}</label>
-        <input id="f-q" name="q" type="text" class="form-control" value="{{ filters.q }}" placeholder="{% trans 'Search name...' %}">
+        <input id="f-q" name="q" type="search" class="form-control" value="{{ filters.q }}"
+               placeholder="{% trans 'Search name...' %}">
       </div>
       <div>
         <label class="form-label" for="f-disc">{% trans "Discipline" %}</label>
@@ -71,14 +82,14 @@
           <option value="name" {% if filters.sort == "name" %}selected{% endif %}>{% trans "Athlete name" %}</option>
         </select>
       </div>
-      <div style="display:flex;gap:0.5rem;">
-        <button type="submit" class="btn btn-primary" style="flex:1;">{% trans "Filter" %}</button>
+      <div class="filter-actions">
+        <button type="submit" class="btn btn-primary">{% trans "Filter" %}</button>
         <a href="{% url 'champions:list' %}" class="btn btn-outline">{% trans "Reset" %}</a>
       </div>
     </form>
 
     {% if athletes %}
-    <div class="grid grid-3">
+    <div class="grid grid-3 grid-fit">
       {% for athlete in athletes %}
       <article class="card card-hover">
         <div class="card-body">
@@ -89,7 +100,7 @@
               <img class="avatar" src="{% static 'images/default-avatar.svg' %}" alt="{{ athlete.localized_full_name }}">
             {% endif %}
             <div>
-              <h2 class="card-title" style="margin-block-end:0.2rem;">
+              <h2 class="card-title">
                 <a href="{{ athlete.get_public_url }}">{{ athlete.localized_full_name }}</a>
               </h2>
               <span class="badge badge-neutral">{{ athlete.get_primary_discipline_display }}</span>
@@ -98,7 +109,7 @@
 
           {% with belt=athlete.current_approved_belt %}
           {% if belt %}
-          <p style="margin:0 0 0.65rem;font-size:0.88rem;font-weight:600;">
+          <p class="mb-1 small fw-semibold">
             <span class="belt-swatch" style="background:{{ belt.belt_type.color_hex }};"></span>
             {{ belt.belt_type.localized_name }}
           </p>
@@ -109,7 +120,7 @@
           <p class="card-text">{{ athlete.localized_biography|truncatechars:120 }}</p>
           {% endif %}
 
-          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-block-end:0.75rem;">
+          <div class="d-flex gap-2 flex-wrap">
             {% if athlete.gold_count %}
               <span class="badge badge-gold">{% trans "Gold" %}: {{ athlete.gold_count|local_num }}</span>
             {% endif %}
@@ -131,10 +142,11 @@
     </div>
     {% include "includes/pagination.html" %}
     {% else %}
-    <div class="empty-state">
-      <h3>{% trans "No matching athletes found" %}</h3>
-      <p>{% trans "Try adjusting your search or filter criteria." %}</p>
-    </div>
+    {% trans "No matching athletes found" as empty_title %}
+    {% trans "Try adjusting your search or filter criteria." as empty_text %}
+    {% trans "Reset filters" as empty_action %}
+    {% url 'champions:list' as empty_url %}
+    {% include "includes/empty_state.html" with empty_icon="bi-person-badge" empty_title=empty_title empty_text=empty_text empty_url=empty_url empty_action=empty_action %}
     {% endif %}
   </div>
 </section>

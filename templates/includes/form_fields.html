@@ -1,29 +1,64 @@
-{% load i18n %}
+{% load i18n static techwando_tags %}
 {% if form.non_field_errors %}
-<div class="alert alert-danger" role="alert">
-  {% for err in form.non_field_errors %}<div>{{ err }}</div>{% endfor %}
+<div class="error-summary" role="alert">
+  <strong>{% trans "Please correct the following errors:" %}</strong>
+  <ul>
+    {% for err in form.non_field_errors %}<li>{{ err }}</li>{% endfor %}
+  </ul>
 </div>
 {% endif %}
 {% for field in form %}
   {% if field.field.widget.input_type == "checkbox" %}
-  <div class="form-check">
-    {{ field }}
+  <div class="form-check{% if field.errors %} field-has-error{% endif %}">
+    {{ field|accessible_field }}
     <div>
-      <label for="{{ field.id_for_label }}" style="margin-block-end:0.15rem;">{{ field.label }}</label>
-      {% if field.help_text %}<div class="form-help">{{ field.help_text }}</div>{% endif %}
-      {% for err in field.errors %}<div class="form-error">{{ err }}</div>{% endfor %}
+      <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+      {% if field.help_text %}<div class="form-help">{{ field.help_text|safe }}</div>{% endif %}
+      {% for err in field.errors %}<div class="form-error" id="{{ field.auto_id }}_error">{{ err }}</div>{% endfor %}
     </div>
   </div>
   {% elif field.name == "website" %}
-    {{ field }}
-  {% else %}
-  <div class="form-group">
+  <div class="hp-field" aria-hidden="true">{{ field|accessible_field }}</div>
+  {% elif field.field.widget.input_type == "password" %}
+  <div class="form-group{% if field.errors %} field-has-error{% endif %}">
     <label class="form-label" for="{{ field.id_for_label }}">
-      {{ field.label }}{% if field.field.required %} <span style="color:var(--tw-accent);">*</span>{% endif %}
+      {{ field.label }}{% if field.field.required %}<span class="required" aria-hidden="true">*</span>{% endif %}
     </label>
-    {{ field }}
-    {% if field.help_text %}<div class="form-help">{{ field.help_text }}</div>{% endif %}
-    {% for err in field.errors %}<div class="form-error">{{ err }}</div>{% endfor %}
+    <div class="password-field">
+      {{ field|accessible_field }}
+      <button type="button" class="password-toggle" data-password-toggle
+              aria-label="{% trans 'Show password' %}" aria-pressed="false"
+              data-show-label="{% trans 'Show password' %}" data-hide-label="{% trans 'Hide password' %}"
+              aria-controls="{{ field.id_for_label }}">
+        <i class="bi bi-eye" aria-hidden="true"></i>
+      </button>
+    </div>
+    {% if field.help_text %}<div class="form-help">{{ field.help_text|safe }}</div>{% endif %}
+    {% for err in field.errors %}<div class="form-error" id="{{ field.auto_id }}_error">{{ err }}</div>{% endfor %}
+  </div>
+  {% elif field.field.widget.input_type == "file" %}
+  <div class="form-group{% if field.errors %} field-has-error{% endif %}">
+    <label class="form-label" for="{{ field.id_for_label }}">
+      {{ field.label }}{% if field.field.required %}<span class="required" aria-hidden="true">*</span>{% endif %}
+    </label>
+    <div class="image-upload" data-image-preview>
+      <img src="{% static 'images/default-avatar.svg' %}" alt="" data-image-preview-target>
+      <div class="image-upload-text">
+        {{ field|accessible_field }}
+        <div class="form-help">{% trans "Selected images are previewed locally before upload. Certificates remain private." %}</div>
+      </div>
+    </div>
+    {% if field.help_text %}<div class="form-help">{{ field.help_text|safe }}</div>{% endif %}
+    {% for err in field.errors %}<div class="form-error" id="{{ field.auto_id }}_error">{{ err }}</div>{% endfor %}
+  </div>
+  {% else %}
+  <div class="form-group{% if field.errors %} field-has-error{% endif %}">
+    <label class="form-label" for="{{ field.id_for_label }}">
+      {{ field.label }}{% if field.field.required %}<span class="required" aria-hidden="true">*</span>{% endif %}
+    </label>
+    {{ field|accessible_field }}
+    {% if field.help_text %}<div class="form-help">{{ field.help_text|safe }}</div>{% endif %}
+    {% for err in field.errors %}<div class="form-error" id="{{ field.auto_id }}_error">{{ err }}</div>{% endfor %}
   </div>
   {% endif %}
 {% endfor %}

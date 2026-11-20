@@ -5,7 +5,7 @@
 {% block dashboard_content %}
 <div class="section-head">
   <div>
-    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Competition Participations" %}</h1>
+    <h1 class="section-title">{% trans "My Competition Participations" %}</h1>
     <p>{% trans "Record your tournament appearances, weight divisions, and standings." %}</p>
   </div>
   <a class="btn btn-primary" href="{% url 'competitions:member_add' %}">+ {% trans "Add Competition Record" %}</a>
@@ -34,7 +34,7 @@
           <td>{{ p.division_category|default:"—" }}</td>
           <td>{{ p.localized_result|default:"—" }}</td>
           <td>{% include "includes/status_badge.html" with status=p.approval_status %}</td>
-          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+          <td class="table-actions">
             <a class="btn btn-sm btn-outline" href="{% url 'competitions:member_detail' p.pk %}">{% trans "View" %}</a>
             {% if p.can_member_edit %}
             <a class="btn btn-sm btn-outline" href="{% url 'competitions:member_edit' p.pk %}">{% trans "Edit" %}</a>

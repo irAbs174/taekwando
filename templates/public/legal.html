@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load i18n techwando_tags %}
+
+{% block title %}{% if legal_tr %}{{ legal_tr.seo_title|default:legal_tr.title }}{% else %}{% if legal_kind == "terms" %}{% trans "Terms of Use" %}{% else %}{% trans "Privacy Policy" %}{% endif %}{% endif %} | {{ SITE_NAME }}{% endblock %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    {% trans "Legal" as crumb_parent %}
+    {% if legal_tr %}
+      {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=legal_tr.title %}
+      <h1>{{ legal_tr.title }}</h1>
+      {% if legal_tr.subtitle %}<p>{{ legal_tr.subtitle }}</p>{% endif %}
+    {% else %}
+      {% if legal_kind == "terms" %}
+        {% trans "Terms of Use" as legal_title %}
+        {% trans "Rules for using the TECHWANDO platform and member code of conduct." as legal_subtitle %}
+      {% else %}
+        {% trans "Privacy Policy" as legal_title %}
+        {% trans "How we collect, store and protect your information." as legal_subtitle %}
+      {% endif %}
+      {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=legal_title %}
+      <h1>{{ legal_title }}</h1>
+      <p>{{ legal_subtitle }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <article class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="prose">
+              {% if legal_tr %}
+                {% if legal_tr.is_fallback %}
+                <div class="alert alert-info">
+                  <i class="bi bi-translate" aria-hidden="true"></i>
+                  <span class="alert-body">{% trans "Translation fallback active: displaying the available language version." %}</span>
+                </div>
+                {% endif %}
+                {% if legal_tr.summary %}<p class="lead">{{ legal_tr.summary }}</p>{% endif %}
+                {{ legal_tr.body|linebreaks }}
+              {% else %}
+                {% block legal_fallback %}{% endblock %}
+              {% endif %}
+            </div>
+            <p class="small text-muted mt-4 mb-0">
+              {% trans "Last updated" %}: {{ "2026-11-20"|local_date }}
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="col-lg-4">
+        <div class="sticky-aside d-grid gap-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Legal & policies" %}</h2>
+              <ul class="list-clean list-divided">
+                <li><a href="{% url 'pages:privacy' %}">{% trans "Privacy Policy" %}</a></li>
+                <li><a href="{% url 'pages:terms' %}">{% trans "Terms of Use" %}</a></li>
+                <li><a href="{% url 'pages:detail' 'privacy-policy' %}">{% trans "Full data protection record" %}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Questions?" %}</h2>
+              <p class="card-text">{% trans "Contact the club administration for data requests or policy clarification." %}</p>
+              <a class="btn btn-outline btn-sm align-self-start" href="{% url 'contact:public' %}">{% trans "Contact the club" %}</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load i18n %}
+<section class="section">
+  <div class="container">
+    <div class="cta-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2>{% trans "Begin your martial arts journey with TECHWANDO" %}</h2>
+          <p>
+            {% trans "Train in a bilingual, safety-first dojo with certified coaches, transparent belt progression, and a verified record of every achievement you earn." %}
+          </p>
+        </div>
+        <div class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end">
+          {% if user.is_authenticated %}
+            <a class="btn btn-light" href="{% url 'members:dashboard' %}">
+              <i class="bi bi-speedometer2" aria-hidden="true"></i> {% trans "Open Member Portal" %}
+            </a>
+          {% else %}
+            <a class="btn btn-light" href="{% url 'accounts:register' %}">
+              <i class="bi bi-person-plus" aria-hidden="true"></i> {% trans "Apply for Membership" %}
+            </a>
+          {% endif %}
+          <a class="btn btn-ghost-light" href="{% url 'contact:public' %}">
+            {% trans "Book a Trial Session" %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

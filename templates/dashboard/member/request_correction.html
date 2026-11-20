@@ -4,7 +4,7 @@
 
 {% block dashboard_content %}
 <div class="card" style="max-inline-size:640px;">
-  <div class="card-body" style="padding:1.85rem;">
+  <div class="card-body" >
     <h1 style="margin:0 0 0.5rem;font-size:1.4rem;">{% trans "Request Record Correction" %}</h1>
     <p class="card-text">
       {% trans "Submitting a correction request places this record back under review so you can update details for administrator re-verification." %}
@@ -13,7 +13,7 @@
     <form method="post" novalidate>
       {% csrf_token %}
       {% include "includes/form_fields.html" with form=form %}
-      <div style="display:flex;gap:0.75rem;">
+      <div class="form-actions">
         <button type="submit" class="btn btn-primary">{% trans "Submit Correction Request" %}</button>
         <a class="btn btn-outline" href="{{ cancel_url }}">{% trans "Cancel" %}</a>
       </div>

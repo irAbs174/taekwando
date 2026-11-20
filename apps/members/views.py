@@ -125,6 +125,9 @@ class MemberDashboardView(MemberRequiredMixin, TemplateView):
                 "pending_submissions_count": pending_count,
                 "recent_items": recent_items[:8],
                 "recent_activities": activity_qs.order_by("-activity_date")[:4],
+                "recent_notifications": self.request.user.notifications.order_by(
+                    "-created_at"
+                )[:4],
             }
         )
         return ctx
@@ -140,6 +143,28 @@ class MemberProfileEditView(MemberRequiredMixin, UpdateView):
 
     def get_object(self, queryset=None) -> MemberProfile:
         return self.member_profile
+
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        profile = self.member_profile
+        ctx.update(
+            {
+                "current_belt": profile.current_approved_belt,
+                "belt_history": profile.belt_histories.select_related("belt_type").order_by(
+                    "-award_date", "-id"
+                ),
+                "approved_medal_count": profile.medals.filter(
+                    approval_status=ApprovalStatus.APPROVED
+                ).count(),
+                "approved_achievement_count": profile.achievements.filter(
+                    approval_status=ApprovalStatus.APPROVED
+                ).count(),
+                "approved_competition_count": profile.competition_participations.filter(
+                    approval_status=ApprovalStatus.APPROVED
+                ).count(),
+            }
+        )
+        return ctx
 
     def form_valid(self, form):
         changed = list(form.changed_data)

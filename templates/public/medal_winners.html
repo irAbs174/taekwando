@@ -4,12 +4,15 @@
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% trans "Champions" as crumb_parent %}
+    {% trans "Medal Winners" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=crumb_current %}
     <h1>{% trans "Medal Winners & Honor Roll" %}</h1>
-    <p>{% trans "Officially reviewed and approved Gold, Silver, Bronze, and special championship medals." %}</p>
+    <p>{% trans "Officially reviewed and approved Gold, Silver, Bronze and special championship medals." %}</p>
     <div class="subnav-tabs">
-      <a href="{% url 'champions:list' %}">{% trans "Champions Directory" %}</a>
-      <a class="active" href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a>
-      <a href="{% url 'champions:belts' %}">{% trans "Belt Achievements" %}</a>
+      <a href="{% url 'champions:list' %}">{% trans "Athletes Directory" %}</a>
+      <a class="active" href="{% url 'champions:medals' %}" aria-current="page">{% trans "Medal Winners" %}</a>
+      <a href="{% url 'champions:belts' %}">{% trans "Belt Registry" %}</a>
       <a href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a>
     </div>
   </div>
@@ -19,27 +22,27 @@
   <div class="container">
     <div class="kpi-grid">
       <div class="kpi-card">
-        <div class="kpi-label">{% trans "Gold Medals" %}</div>
-        <div class="kpi-value" style="color:var(--tw-gold);">{{ totals.gold|local_num }}</div>
+        <span class="kpi-label">{% trans "Gold Medals" %}</span>
+        <span class="kpi-value" style="color: var(--tw-gold);">{{ totals.gold|local_num }}</span>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">{% trans "Silver Medals" %}</div>
-        <div class="kpi-value" style="color:var(--tw-silver);">{{ totals.silver|local_num }}</div>
+        <span class="kpi-label">{% trans "Silver Medals" %}</span>
+        <span class="kpi-value" style="color: var(--tw-silver);">{{ totals.silver|local_num }}</span>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">{% trans "Bronze Medals" %}</div>
-        <div class="kpi-value" style="color:var(--tw-bronze);">{{ totals.bronze|local_num }}</div>
+        <span class="kpi-label">{% trans "Bronze Medals" %}</span>
+        <span class="kpi-value" style="color: var(--tw-bronze);">{{ totals.bronze|local_num }}</span>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">{% trans "Special Awards" %}</div>
-        <div class="kpi-value">{{ totals.other|local_num }}</div>
+        <span class="kpi-label">{% trans "Special Awards" %}</span>
+        <span class="kpi-value">{{ totals.other|local_num }}</span>
       </div>
     </div>
 
-    <form class="filter-bar" method="get">
+    <form class="filter-bar" method="get" action="{% url 'champions:medals' %}" role="search">
       <div>
         <label class="form-label" for="m-q">{% trans "Search" %}</label>
-        <input id="m-q" name="q" type="text" class="form-control" value="{{ filters.q }}">
+        <input id="m-q" name="q" type="search" class="form-control" value="{{ filters.q }}">
       </div>
       <div>
         <label class="form-label" for="m-type">{% trans "Medal type" %}</label>
@@ -68,8 +71,9 @@
           {% endfor %}
         </select>
       </div>
-      <div>
-        <button type="submit" class="btn btn-primary" style="inline-size:100%;">{% trans "Apply Filter" %}</button>
+      <div class="filter-actions">
+        <button type="submit" class="btn btn-primary">{% trans "Apply Filter" %}</button>
+        <a class="btn btn-outline" href="{% url 'champions:medals' %}">{% trans "Reset" %}</a>
       </div>
     </form>
 
@@ -77,14 +81,15 @@
     <div class="card">
       <div class="table-wrap">
         <table class="data-table">
+          <caption class="visually-hidden">{% trans "Verified medal winners" %}</caption>
           <thead>
             <tr>
-              <th>{% trans "Medal" %}</th>
-              <th>{% trans "Athlete" %}</th>
-              <th>{% trans "Discipline" %}</th>
-              <th>{% trans "Competition" %}</th>
-              <th>{% trans "Location" %}</th>
-              <th>{% trans "Award Date" %}</th>
+              <th scope="col">{% trans "Medal" %}</th>
+              <th scope="col">{% trans "Athlete" %}</th>
+              <th scope="col">{% trans "Discipline" %}</th>
+              <th scope="col">{% trans "Competition" %}</th>
+              <th scope="col">{% trans "Location" %}</th>
+              <th scope="col">{% trans "Award Date" %}</th>
             </tr>
           </thead>
           <tbody>
@@ -95,7 +100,7 @@
               <td>{{ m.get_discipline_display }}</td>
               <td>
                 {{ m.localized_competition_name }}
-                {% if m.division_category %}<br><small style="color:var(--tw-text-subtle);">{{ m.division_category }}</small>{% endif %}
+                {% if m.division_category %}<br><small class="text-muted">{{ m.division_category }}</small>{% endif %}
               </td>
               <td>{{ m.localized_competition_location }}</td>
               <td>{{ m.award_date|local_date }}</td>
@@ -107,7 +112,8 @@
     </div>
     {% include "includes/pagination.html" %}
     {% else %}
-    <div class="empty-state">{% trans "No approved medals match the selected filters." %}</div>
+    {% trans "No approved medals match the selected filters." as empty_title %}
+    {% include "includes/empty_state.html" with empty_icon="bi-award" empty_title=empty_title %}
     {% endif %}
   </div>
 </section>

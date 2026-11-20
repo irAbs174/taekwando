@@ -9,7 +9,7 @@ from django.core.files.base import ContentFile
 from django.core.management.base import BaseCommand
 from django.db import transaction
 from django.utils import timezone
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 from apps.accounts.models import User, UserRole
 from apps.accounts.rbac import ensure_role_groups
@@ -39,13 +39,43 @@ from apps.seo.models import RouteKey, SEOMetadata, SEOTranslation
 
 
 def _make_card_png(bg_hex: str, accent_hex: str, size=(640, 420)) -> ContentFile:
+    """Create a branded editorial placeholder (no external assets required)."""
     img = Image.new("RGB", size, bg_hex)
     draw = ImageDraw.Draw(img)
     w, h = size
-    draw.rectangle([0, h - 18, w, h], fill=accent_hex)
-    draw.polygon([(w - 180, 0), (w, 0), (w, 180)], fill=accent_hex)
-    draw.ellipse([w // 2 - 90, h // 2 - 90, w // 2 + 90, h // 2 + 90], outline="#ffffff", width=5)
-    draw.rectangle([w // 2 - 55, h // 2 - 8, w // 2 + 55, h // 2 + 8], fill=accent_hex)
+    # Soft oversized rings and a diagonal accent give the card depth without photos.
+    draw.ellipse([w - 250, -140, w + 190, 300], outline="#ffffff", width=2)
+    draw.ellipse([-160, h - 170, 260, h + 250], outline="#ffffff", width=2)
+    draw.polygon([(w - 150, 0), (w, 0), (w, 150)], fill=accent_hex)
+    draw.rectangle([0, h - 12, w, h], fill=accent_hex)
+
+    # Brand emblem: ring, monogram T, belt line and knot.
+    cx, cy, r = w // 2, h // 2 - 26, 66
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline="#ffffff", width=4)
+    draw.rectangle([cx - 30, cy - 26, cx + 30, cy - 10], fill="#ffffff")
+    draw.rectangle([cx - 10, cy - 26, cx + 10, cy + 26], fill="#ffffff")
+    draw.rectangle([cx - 30, cy + 4, cx + 30, cy + 16], fill=accent_hex)
+    draw.ellipse([cx - 5, cy + 5, cx + 5, cy + 15], fill="#f2c14e")
+
+    try:
+        font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+        wordmark = ImageFont.truetype(font_path, 30)
+        caption = ImageFont.truetype(font_path, 13)
+    except OSError:  # pragma: no cover - depends on host fonts
+        wordmark = ImageFont.load_default()
+        caption = ImageFont.load_default()
+    title = "TECHWANDO"
+    box = draw.textbbox((0, 0), title, font=wordmark)
+    draw.text(((w - (box[2] - box[0])) / 2, cy + r + 26), title, fill="#ffffff", font=wordmark)
+    subtitle = "MARTIAL ARTS CLUB"
+    box = draw.textbbox((0, 0), subtitle, font=caption)
+    draw.text(
+        ((w - (box[2] - box[0])) / 2, cy + r + 64),
+        subtitle,
+        fill="#ffffff",
+        font=caption,
+    )
+
     buf = BytesIO()
     img.save(buf, format="PNG")
     return ContentFile(buf.getvalue(), name="visual.png")
@@ -308,6 +338,28 @@ class Command(BaseCommand):
                     "高段者プムセ・護身術（ホシンスル）・試割（キョクパ）の徹底指導",
                     "初段〜四段の公式昇段審査対策およびクラブ公認指導員資格の取得を支援します。",
                     "師範陣による直接指導で技術精度と指導法を磨き、合格後は証明書審査を経て公式黒帯レジストリに認定登録されます。",
+                ),
+            },
+            {
+                "slug": "terms-of-service",
+                "page_type": PageType.LEGAL,
+                "order": 11,
+                "footer": True,
+                "fa": (
+                    "شرایط استفاده و آیین‌نامه عضویت در باشگاه",
+                    "قواعد استفاده از سامانه، رفتار ورزشی و مسئولیت اعضا",
+                    "استفاده از وب‌سایت و پرتال اعضا به معنای پذیرش شرایط باشگاه، آیین‌نامه اخلاقی و قوانین دوجانگ است.",
+                    "عضویت در باشگاه پس از بررسی درخواست و تأیید مدیران انجام می‌شود. هر عضو تنها به اطلاعات خصوصی و سوابق ورزشی خود دسترسی دارد.\n\n"
+                    "ثبت افتخارات، مدال‌ها، ارتقای کمربند، مسابقات و فعالیت‌های اجتماعی نیازمند ارائه مستندات و تأیید هیئت فنی است و عضو نمی‌تواند وضعیت بررسی یا تصمیم مدیران را تغییر دهد.\n\n"
+                    "فروشگاه تجهیزات صرفاً جنبه معرفی دارد و هیچ پرداخت آنلاینی در سامانه انجام نمی‌شود. رعایت اصول ایمنی، احترام متقابل و پرهیز از انتشار اطلاعات خصوصی دیگران الزامی است.",
+                ),
+                "ja": (
+                    "利用規約・会員規程",
+                    "本サイトおよび会員ポータルのご利用条件",
+                    "本ウェブサイトおよび会員ポータルの利用をもって、クラブ規約・道場訓・行動規範に同意したものとみなします。",
+                    "会員登録は管理者による審査・承認後に有効となります。各会員は自身の非公開情報および競技記録のみにアクセスできます。\n\n"
+                    "実績・メダル・昇段・大会参加・社会活動の登録には証明書類の提出と技術委員会の承認が必要であり、会員が自ら審査結果を変更することはできません。\n\n"
+                    "用品カタログは情報提供のみを目的とし、オンライン決済機能は提供していません。安全指導の遵守、相互尊重、他者の個人情報の保護を必須とします。",
                 ),
             },
             {

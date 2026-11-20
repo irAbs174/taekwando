@@ -1,0 +1,42 @@
+{% extends "public/legal.html" %}
+{% load i18n %}
+
+{% block legal_fallback %}
+<h2>{% trans "Acceptance of terms" %}</h2>
+<p>
+  {% trans "By using this website or the member portal you agree to these terms, the club code of conduct, and all applicable dojo rules. If you do not agree, please do not use the service." %}
+</p>
+
+<h2>{% trans "Membership and accounts" %}</h2>
+<ul>
+  <li>{% trans "Provide accurate registration and profile information." %}</li>
+  <li>{% trans "Keep your password confidential and do not share your account." %}</li>
+  <li>{% trans "Membership is subject to review and approval by club administration." %}</li>
+  <li>{% trans "You may only access your own private records and submissions." %}</li>
+</ul>
+
+<h2>{% trans "Submissions and moderation" %}</h2>
+<p>
+  {% trans "Achievements, medals, belt promotions, competitions and social activities are submitted for review. Administrators may approve, reject or request revisions, and may add feedback visible to you in the portal. Members cannot approve their own submissions or change review decisions." %}
+</p>
+
+<h2>{% trans "Code of conduct" %}</h2>
+<p>
+  {% trans "Respect instructors, fellow members and visitors. Harassment, discrimination, unsafe training and the publication of another person's private information are prohibited and may result in suspension." %}
+</p>
+
+<h2>{% trans "Equipment catalog" %}</h2>
+<p>
+  {% trans "Product listings are informational. No online checkout or payment is provided; prices, availability and custom orders must be confirmed directly with the club desk." %}
+</p>
+
+<h2>{% trans "Limitation of liability" %}</h2>
+<p>
+  {% trans "Martial arts training carries inherent physical risk. Members must follow safety instructions and disclose relevant health conditions. The club is not liable for misuse of the platform or for training undertaken contrary to coach guidance." %}
+</p>
+
+<h2>{% trans "Changes to these terms" %}</h2>
+<p>
+  {% trans "We may update these terms to reflect changes in the club or the law. Material changes will be communicated through the member portal." %}
+</p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% load i18n %}
+{# Reusable empty state. Params: empty_icon, empty_title, empty_text, empty_url, empty_action #}
+<div class="empty-state">
+  <span class="empty-icon" aria-hidden="true"><i class="bi {{ empty_icon|default:'bi-inbox' }}"></i></span>
+  {% if empty_title %}<h2>{{ empty_title }}</h2>{% endif %}
+  {% if empty_text %}<p>{{ empty_text }}</p>{% endif %}
+  {% if empty_url and empty_action %}
+  <a class="btn btn-primary btn-sm" href="{{ empty_url }}">{{ empty_action }}</a>
+  {% endif %}
+</div>

@@ -5,7 +5,7 @@
 {% block dashboard_content %}
 <div class="section-head">
   <div>
-    <h1 style="margin:0;font-size:1.5rem;">{% trans "My Medals" %}</h1>
+    <h1 class="section-title">{% trans "My Medals" %}</h1>
     <p>{% trans "Submit championship medals with supporting certificates for club verification." %}</p>
   </div>
   <a class="btn btn-primary" href="{% url 'medals:member_add' %}">+ {% trans "Submit Medal" %}</a>
@@ -34,7 +34,7 @@
           </td>
           <td>{{ m.award_date|local_date }}</td>
           <td>{% include "includes/status_badge.html" with status=m.approval_status %}</td>
-          <td style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+          <td class="table-actions">
             <a class="btn btn-sm btn-outline" href="{% url 'medals:member_detail' m.pk %}">{% trans "View" %}</a>
             {% if m.can_member_edit %}
             <a class="btn btn-sm btn-outline" href="{% url 'medals:member_edit' m.pk %}">{% trans "Edit" %}</a>

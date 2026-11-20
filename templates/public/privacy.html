@@ -1,0 +1,37 @@
+{% extends "public/legal.html" %}
+{% load i18n %}
+
+{% block legal_fallback %}
+<h2>{% trans "Information we collect" %}</h2>
+<p>
+  {% trans "We collect the information required to manage club membership: your name, contact details, chosen discipline, training and competition records, and the documents you submit for verification." %}
+</p>
+
+<h2>{% trans "Private by default" %}</h2>
+<p>
+  {% trans "Email addresses, phone numbers, birth dates and uploaded certificates are stored in a protected private area. They are visible only to you and to authorized club reviewers; they are never shown on public pages or in public APIs." %}
+</p>
+
+<h2>{% trans "Public athlete profiles" %}</h2>
+<p>
+  {% trans "An athlete profile is published only when membership is approved, the record has passed review, and the member has given explicit consent to both public profile consent and visibility. Consent can be withdrawn at any time from your account settings." %}
+</p>
+
+<h2>{% trans "Your rights" %}</h2>
+<ul>
+  <li>{% trans "Access and correct your own profile information." %}</li>
+  <li>{% trans "Withdraw public visibility consent." %}</li>
+  <li>{% trans "Request correction of an approved record through the member portal." %}</li>
+  <li>{% trans "Contact the club administration to request deletion where legally permitted." %}</li>
+</ul>
+
+<h2>{% trans "Data retention and security" %}</h2>
+<p>
+  {% trans "Access to member data is role-based, logged, and limited to what each administrator needs. Security events are recorded in an immutable audit log, and sensitive files are served only through authenticated endpoints." %}
+</p>
+
+<h2>{% trans "Contact" %}</h2>
+<p>
+  {% trans "For privacy questions, contact the club administration using the contact form or the official email address published on this website." %}
+</p>
+{% endblock %}

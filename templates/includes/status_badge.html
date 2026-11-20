@@ -1,14 +1,22 @@
 {% load i18n %}
 {% if status == "APPROVED" %}
-  <span class="badge badge-approved">{% trans "Approved" %}</span>
+  <span class="badge badge-approved"><i class="bi bi-check-circle-fill" aria-hidden="true"></i>{% trans "Approved" %}</span>
 {% elif status == "PENDING" %}
-  <span class="badge badge-pending">{% trans "Pending Review" %}</span>
+  <span class="badge badge-pending"><i class="bi bi-hourglass-split" aria-hidden="true"></i>{% trans "Pending Review" %}</span>
 {% elif status == "REJECTED" %}
-  <span class="badge badge-rejected">{% trans "Rejected" %}</span>
+  <span class="badge badge-rejected"><i class="bi bi-x-circle-fill" aria-hidden="true"></i>{% trans "Rejected" %}</span>
 {% elif status == "NEEDS_REVISION" %}
-  <span class="badge badge-revision">{% trans "Needs Revision" %}</span>
+  <span class="badge badge-revision"><i class="bi bi-pencil-square" aria-hidden="true"></i>{% trans "Needs Revision" %}</span>
 {% elif status == "SUSPENDED" %}
-  <span class="badge badge-rejected">{% trans "Suspended" %}</span>
+  <span class="badge badge-rejected"><i class="bi bi-slash-circle" aria-hidden="true"></i>{% trans "Suspended" %}</span>
+{% elif status == "PUBLISHED" %}
+  <span class="badge badge-approved"><i class="bi bi-globe2" aria-hidden="true"></i>{% trans "Published" %}</span>
+{% elif status == "DRAFT" %}
+  <span class="badge badge-neutral"><i class="bi bi-file-earmark" aria-hidden="true"></i>{% trans "Draft" %}</span>
+{% elif status == "SCHEDULED" %}
+  <span class="badge badge-pending"><i class="bi bi-clock" aria-hidden="true"></i>{% trans "Scheduled" %}</span>
+{% elif status == "ARCHIVED" %}
+  <span class="badge badge-neutral"><i class="bi bi-archive" aria-hidden="true"></i>{% trans "Archived" %}</span>
 {% else %}
   <span class="badge badge-neutral">{{ status }}</span>
 {% endif %}

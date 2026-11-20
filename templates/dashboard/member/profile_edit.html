@@ -1,25 +1,109 @@
 {% extends "dashboard/base_member.html" %}
-{% load i18n techwando_tags %}
+{% load i18n static techwando_tags %}
 {% block title %}{% trans "Personal Profile" %} | {{ SITE_NAME }}{% endblock %}
 
 {% block dashboard_content %}
-<div class="section-head">
+<div class="dashboard-titlebar">
   <div>
-    <h1 style="margin:0;font-size:1.5rem;">{% trans "Personal Profile & Public Privacy" %}</h1>
-    <p>{% trans "Membership Number" %}: <strong class="ltr-inline">{{ profile.membership_number }}</strong> &bull; {% trans "Joined" %}: {{ profile.joining_date|local_date }}</p>
+    <h1>{% trans "Personal Profile & Public Privacy" %}</h1>
+    <p>
+      {% trans "Membership Number" %}: <strong class="ltr-inline">{{ profile.membership_number }}</strong>
+      · {% trans "Joined" %}: {{ profile.joining_date|local_date }}
+    </p>
   </div>
+  <span class="badge badge-neutral">{{ profile.get_primary_discipline_display }}</span>
 </div>
 
-<div class="card">
-  <div class="card-body" style="padding:1.75rem;">
-    <div class="alert alert-info">
-      {% trans "Your birth date, phone number, email address, and uploaded certificates are always kept strictly private and are never displayed on public pages." %}
+<div class="row g-4">
+  <div class="col-lg-7">
+    <div class="card">
+      <div class="card-body">
+        <div class="notice mb-3">
+          <i class="bi bi-shield-lock" aria-hidden="true"></i>
+          <span>{% trans "Your birth date, phone number, email address and uploaded certificates are always private and are never displayed on public pages." %}</span>
+        </div>
+        <form method="post" enctype="multipart/form-data" novalidate>
+          {% csrf_token %}
+          {% include "includes/form_fields.html" with form=form %}
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              <i class="bi bi-check2" aria-hidden="true"></i> {% trans "Save Profile" %}
+            </button>
+            <a class="btn btn-outline" href="{% url 'members:dashboard' %}">{% trans "Cancel" %}</a>
+          </div>
+        </form>
+      </div>
     </div>
-    <form method="post" enctype="multipart/form-data" novalidate>
-      {% csrf_token %}
-      {% include "includes/form_fields.html" with form=form %}
-      <button type="submit" class="btn btn-primary">{% trans "Save Profile" %}</button>
-    </form>
+  </div>
+
+  <div class="col-lg-5">
+    <div class="card dashboard-section">
+      <div class="card-body">
+        <div class="d-flex align-items-center gap-3">
+          {% if profile.profile_photo %}
+            <img class="avatar avatar-lg" src="{{ profile.profile_photo.url }}" alt="{{ profile.localized_full_name }}">
+          {% else %}
+            <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ profile.localized_full_name }}">
+          {% endif %}
+          <div>
+            <h2 class="card-title mb-1">{{ profile.localized_full_name }}</h2>
+            <span class="small text-muted ltr-inline">{{ profile.membership_number }}</span>
+          </div>
+        </div>
+        <hr class="divider">
+        <dl class="meta-grid">
+          <div class="meta-item">
+            <dt>{% trans "Discipline" %}</dt>
+            <dd>{{ profile.get_primary_discipline_display }}</dd>
+          </div>
+          <div class="meta-item">
+            <dt>{% trans "Current Approved Belt" %}</dt>
+            <dd>{% if current_belt %}{{ current_belt.belt_type.localized_name }}{% else %}—{% endif %}</dd>
+          </div>
+          <div class="meta-item">
+            <dt>{% trans "Approved Medals" %}</dt>
+            <dd>{{ approved_medal_count|local_num }}</dd>
+          </div>
+          <div class="meta-item">
+            <dt>{% trans "Achievements" %}</dt>
+            <dd>{{ approved_achievement_count|local_num }}</dd>
+          </div>
+          <div class="meta-item">
+            <dt>{% trans "Competitions" %}</dt>
+            <dd>{{ approved_competition_count|local_num }}</dd>
+          </div>
+          <div class="meta-item">
+            <dt>{% trans "Public Profile" %}</dt>
+            <dd>{% if profile.is_publicly_visible %}{% trans "Published" %}{% else %}{% trans "Private" %}{% endif %}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">{% trans "Belt History" %}</h2>
+        {% if belt_history %}
+        <ol class="timeline mt-2">
+          {% for belt in belt_history %}
+          <li>
+            <span class="timeline-date">{{ belt.award_date|local_date }}</span>
+            <strong>
+              <span class="belt-swatch" style="background: {{ belt.belt_type.color_hex }};"></span>
+              {{ belt.belt_type.localized_name }}
+            </strong>
+            <div class="d-flex gap-2 align-items-center flex-wrap mt-1">
+              {% include "includes/status_badge.html" with status=belt.approval_status %}
+              <a class="small" href="{% url 'belts:member_detail' belt.pk %}">{% trans "Details" %}</a>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+        {% else %}
+        <p class="card-text mb-0">{% trans "No belt records yet." %}</p>
+        {% endif %}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

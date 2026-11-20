@@ -7,7 +7,7 @@
   <div>
     <span class="badge badge-dark ltr-inline">{{ member.membership_number }}</span>
     {% include "includes/status_badge.html" with status=member.membership_status %}
-    <h1 style="margin:0.4rem 0 0;font-size:1.5rem;">{{ member.full_name }}</h1>
+    <h1 class="section-title section-title-sm">{{ member.full_name }}</h1>
     <p class="ltr-inline" style="margin:0;">{{ member.user.email }}</p>
   </div>
   <form method="post">

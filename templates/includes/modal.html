@@ -1,0 +1,19 @@
+{% load i18n %}
+{# Shared accessible confirmation dialog, used by main.js via data-confirm attributes. #}
+<div class="modal fade" id="confirmDialog" tabindex="-1" aria-labelledby="confirmDialogTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="confirmDialogTitle">{% trans "Please confirm" %}</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{% trans 'Close' %}"></button>
+      </div>
+      <div class="modal-body" data-confirm-message>
+        {% trans "Are you sure you want to continue? This action cannot be undone." %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" data-bs-dismiss="modal">{% trans "Cancel" %}</button>
+        <button type="button" class="btn btn-danger" data-confirm-accept>{% trans "Yes, Continue" %}</button>
+      </div>
+    </div>
+  </div>
+</div>
