@@ -5,13 +5,13 @@
 {% block dashboard_content %}
 <div class="section-head">
   <div>
-    <div style="display:flex;gap:0.5rem;align-items:center;">
+    <div class="table-actions align-items-center">
       {% include "includes/medal_badge.html" with medal_type=medal.medal_type %}
       {% include "includes/status_badge.html" with status=medal.approval_status %}
     </div>
-    <h1 style="margin:0.45rem 0 0;font-size:1.45rem;">{{ medal.localized_competition_name }}</h1>
+    <h1 class="section-title section-title-sm">{{ medal.localized_competition_name }}</h1>
   </div>
-  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+  <div class="table-actions">
     {% if medal.can_member_edit %}
     <a class="btn btn-primary btn-sm" href="{% url 'medals:member_edit' medal.pk %}">{% trans "Edit & Resubmit" %}</a>
     {% endif %}

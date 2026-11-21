@@ -3,7 +3,7 @@
 {% block title %}{% trans "Manage Products" %} | {{ SITE_NAME }}{% endblock %}
 {% block admin_content %}
 <div class="section-head">
-  <h1 style="margin:0;font-size:1.5rem;">{% trans "Products Catalog Management" %}</h1>
+  <h1 class="section-title">{% trans "Products Catalog Management" %}</h1>
   <a class="btn btn-primary" href="{% url 'products:admin_add' %}">+ {% trans "Add Product" %}</a>
 </div>
 <div class="card">

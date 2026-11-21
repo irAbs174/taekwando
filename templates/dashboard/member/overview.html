@@ -3,92 +3,120 @@
 {% block title %}{% trans "Member Dashboard" %} | {{ SITE_NAME }}{% endblock %}
 
 {% block dashboard_content %}
-<div class="card" style="margin-block-end:1.5rem;">
-  <div class="card-body" style="display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;">
-    <div style="display:flex;align-items:center;gap:1.15rem;">
-      {% if profile.profile_photo %}
-        <img class="avatar avatar-lg" src="{{ profile.profile_photo.url }}" alt="{{ profile.localized_full_name }}">
-      {% else %}
-        <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ profile.localized_full_name }}">
-      {% endif %}
-      <div>
-        <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;margin-block-end:0.3rem;">
-          <span class="badge badge-dark ltr-inline">{{ profile.membership_number }}</span>
-          {% include "includes/status_badge.html" with status=profile.membership_status %}
-        </div>
-        <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">{{ profile.localized_full_name }}</h1>
-        <p style="margin:0;color:var(--tw-text-muted);font-size:0.9rem;">
-          {{ profile.get_primary_discipline_display }}
-          {% if current_belt %}
-            &bull; <strong>{{ current_belt.belt_type.localized_name }}</strong>
-          {% else %}
-            &bull; {% trans "No approved belt recorded yet" %}
-          {% endif %}
-        </p>
+<div class="dashboard-profile">
+  <div class="dashboard-profile-main">
+    {% if profile.profile_photo %}
+      <img class="avatar avatar-lg" src="{{ profile.profile_photo.url }}" alt="{{ profile.localized_full_name }}">
+    {% else %}
+      <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ profile.localized_full_name }}">
+    {% endif %}
+    <div>
+      <div class="d-flex gap-2 align-items-center flex-wrap mb-1">
+        <span class="badge badge-dark ltr-inline">{{ profile.membership_number }}</span>
+        {% include "includes/status_badge.html" with status=profile.membership_status %}
       </div>
+      <h1>{{ profile.localized_full_name }}</h1>
+      <p>
+        {{ profile.get_primary_discipline_display }}
+        {% if current_belt %} · <strong>{{ current_belt.belt_type.localized_name }}</strong>{% else %} · {% trans "No approved belt recorded yet" %}{% endif %}
+      </p>
     </div>
-    <div style="display:flex;gap:0.55rem;flex-wrap:wrap;">
-      <a class="btn btn-outline btn-sm" href="{% url 'members:profile_edit' %}">{% trans "Edit Profile" %}</a>
-      {% if profile.is_publicly_visible %}
-      <a class="btn btn-dark btn-sm" href="{{ profile.get_public_url %}">{% trans "View Public Profile" %}</a>
-      {% endif %}
-    </div>
+  </div>
+  <div class="dashboard-profile-actions">
+    <a class="btn btn-outline btn-sm" href="{% url 'members:profile_edit' %}">
+      <i class="bi bi-pencil" aria-hidden="true"></i> {% trans "Edit Profile" %}
+    </a>
+    {% if profile.is_publicly_visible %}
+    <a class="btn btn-dark btn-sm" href="{{ profile.get_public_url }}">
+      <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> {% trans "View Public Profile" %}
+    </a>
+    {% endif %}
   </div>
 </div>
 
 {% if profile.admin_note %}
-<div class="alert alert-info">
-  <strong>{% trans "Club Administration Note" %}:</strong> {{ profile.admin_note }}
+<div class="alert alert-info dashboard-section">
+  <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+  <span class="alert-body"><strong>{% trans "Club Administration Note" %}:</strong> <span dir="auto">{{ profile.admin_note }}</span></span>
 </div>
 {% endif %}
 
 <div class="kpi-grid">
   <div class="kpi-card">
-    <div class="kpi-label">{% trans "Current Approved Belt" %}</div>
-    <div class="kpi-value" style="font-size:1.15rem;margin-block-start:0.5rem;">
+    <i class="bi bi-award kpi-icon" aria-hidden="true"></i>
+    <span class="kpi-label">{% trans "Current Approved Belt" %}</span>
+    <span class="kpi-value" style="font-size: 1.15rem;">
       {% if current_belt %}{{ current_belt.belt_type.localized_name }}{% else %}—{% endif %}
-    </div>
+    </span>
   </div>
   <div class="kpi-card">
-    <div class="kpi-label">{% trans "Approved Medals" %}</div>
-    <div class="kpi-value">{{ medal_breakdown.total|local_num }}</div>
+    <i class="bi bi-trophy kpi-icon" aria-hidden="true"></i>
+    <span class="kpi-label">{% trans "Approved Medals" %}</span>
+    <span class="kpi-value">{{ medal_breakdown.total|local_num }}</span>
+    <span class="kpi-note">
+      {{ medal_breakdown.gold|local_num }} {% trans "gold" %} · {{ medal_breakdown.silver|local_num }} {% trans "silver" %} · {{ medal_breakdown.bronze|local_num }} {% trans "bronze" %}
+    </span>
   </div>
   <div class="kpi-card">
-    <div class="kpi-label">{% trans "Approved Achievements" %}</div>
-    <div class="kpi-value">{{ approved_achievements_count|local_num }}</div>
+    <i class="bi bi-star kpi-icon" aria-hidden="true"></i>
+    <span class="kpi-label">{% trans "Approved Achievements" %}</span>
+    <span class="kpi-value">{{ approved_achievements_count|local_num }}</span>
   </div>
   <div class="kpi-card">
-    <div class="kpi-label">{% trans "Pending Submissions" %}</div>
-    <div class="kpi-value" style="color:var(--tw-warning);">{{ pending_submissions_count|local_num }}</div>
+    <i class="bi bi-flag kpi-icon" aria-hidden="true"></i>
+    <span class="kpi-label">{% trans "Competition Participation" %}</span>
+    <span class="kpi-value">{{ approved_competitions_count|local_num }}</span>
+  </div>
+  <div class="kpi-card accent">
+    <i class="bi bi-hourglass-split kpi-icon" aria-hidden="true"></i>
+    <span class="kpi-label">{% trans "Pending Submissions" %}</span>
+    <span class="kpi-value" style="color: var(--tw-warning);">{{ pending_submissions_count|local_num }}</span>
   </div>
 </div>
 
-<div class="card" style="margin-block-end:1.5rem;">
+<div class="card dashboard-section">
   <div class="card-body">
-    <h2 class="card-title">{% trans "Quick Submit" %}</h2>
-    <div style="display:flex;gap:0.65rem;flex-wrap:wrap;">
-      <a class="btn btn-primary btn-sm" href="{% url 'medals:member_add' %}">+ {% trans "Submit Medal" %}</a>
-      <a class="btn btn-outline btn-sm" href="{% url 'achievements:member_add' %}">+ {% trans "Add Achievement" %}</a>
-      <a class="btn btn-outline btn-sm" href="{% url 'belts:member_add' %}">+ {% trans "Request Belt Promotion" %}</a>
-      <a class="btn btn-outline btn-sm" href="{% url 'competitions:member_add' %}">+ {% trans "Add Competition" %}</a>
-      <a class="btn btn-outline btn-sm" href="{% url 'activities:member_add' %}">+ {% trans "Submit Social Activity" %}</a>
+    <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+      <h2 class="card-title">{% trans "Quick Submit" %}</h2>
+      <span class="small text-muted">{% trans "All submissions are reviewed before publication." %}</span>
+    </div>
+    <div class="quick-actions">
+      <a class="btn btn-primary btn-sm" href="{% url 'medals:member_add' %}">
+        <i class="bi bi-plus-lg" aria-hidden="true"></i> {% trans "Submit Medal" %}
+      </a>
+      <a class="btn btn-outline btn-sm" href="{% url 'achievements:member_add' %}">
+        <i class="bi bi-plus-lg" aria-hidden="true"></i> {% trans "Add Achievement" %}
+      </a>
+      <a class="btn btn-outline btn-sm" href="{% url 'belts:member_add' %}">
+        <i class="bi bi-plus-lg" aria-hidden="true"></i> {% trans "Request Belt Promotion" %}
+      </a>
+      <a class="btn btn-outline btn-sm" href="{% url 'competitions:member_add' %}">
+        <i class="bi bi-plus-lg" aria-hidden="true"></i> {% trans "Add Competition" %}
+      </a>
+      <a class="btn btn-outline btn-sm" href="{% url 'activities:member_add' %}">
+        <i class="bi bi-plus-lg" aria-hidden="true"></i> {% trans "Submit Social Activity" %}
+      </a>
     </div>
   </div>
 </div>
 
-<div class="card">
+<div class="card dashboard-section">
   <div class="card-body">
-    <h2 class="card-title">{% trans "Recent Submissions & Activities" %}</h2>
+    <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+      <h2 class="card-title">{% trans "Recent Submissions" %}</h2>
+      <a class="btn btn-sm btn-outline" href="{% url 'achievements:member_list' %}">{% trans "All achievements" %}</a>
+    </div>
     {% if recent_items %}
     <div class="table-wrap">
       <table class="data-table">
+        <caption class="visually-hidden">{% trans "Your recent submissions" %}</caption>
         <thead>
           <tr>
-            <th>{% trans "Type" %}</th>
-            <th>{% trans "Record" %}</th>
-            <th>{% trans "Date" %}</th>
-            <th>{% trans "Status" %}</th>
-            <th>{% trans "Details" %}</th>
+            <th scope="col">{% trans "Type" %}</th>
+            <th scope="col">{% trans "Record" %}</th>
+            <th scope="col">{% trans "Date" %}</th>
+            <th scope="col">{% trans "Status" %}</th>
+            <th scope="col"><span class="visually-hidden">{% trans "Details" %}</span></th>
           </tr>
         </thead>
         <tbody>
@@ -97,19 +125,70 @@
             <td><span class="badge badge-neutral">{{ item.kind }}</span></td>
             <td>
               <strong>{{ item.title }}</strong>
-              {% if item.note %}<br><small style="color:var(--tw-text-subtle);">{{ item.note|truncatechars:70 }}</small>{% endif %}
+              {% if item.note %}<br><small class="text-muted">{{ item.note|truncatechars:70 }}</small>{% endif %}
             </td>
             <td>{{ item.date|local_date }}</td>
             <td>{% include "includes/status_badge.html" with status=item.status %}</td>
-            <td><a class="btn btn-sm btn-outline" href="{{ item.url }}">{% trans "View" %}</a></td>
+            <td><a class="btn btn-sm btn-outline" href="{{ item.url }}"><span class="visually-hidden">{% trans "View" %} </span>{% trans "View" %}</a></td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
     {% else %}
-    <p class="card-text">{% trans "You have not submitted any sports records yet. Use the buttons above to get started." %}</p>
+    <p class="card-text mb-0">{% trans "You have not submitted any sports records yet. Use the buttons above to get started." %}</p>
     {% endif %}
+  </div>
+</div>
+
+<div class="dashboard-grid">
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+        <h2 class="card-title">{% trans "Recent Notifications" %}</h2>
+        <a class="small fw-semibold text-decoration-none" href="{% url 'notifications:list' %}">{% trans "View all" %}</a>
+      </div>
+      {% if recent_notifications %}
+      <ul class="list-clean list-divided mt-1">
+        {% for n in recent_notifications %}
+        <li>
+          <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <span class="small {% if not n.is_read %}fw-semibold{% endif %}">{{ n.localized_message|truncatechars:110 }}</span>
+            <span class="small text-muted">{{ n.created_at|local_date }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="card-text mb-0">{% trans "You have no notifications yet." %}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+        <h2 class="card-title">{% trans "Recent Activities" %}</h2>
+        <a class="small fw-semibold text-decoration-none" href="{% url 'activities:member_list' %}">{% trans "View all" %}</a>
+      </div>
+      {% if recent_activities %}
+      <ul class="list-clean list-divided mt-1">
+        {% for activity in recent_activities %}
+        <li>
+          <div class="d-flex justify-content-between gap-2 flex-wrap">
+            <span>
+              <strong class="small">{{ activity.localized_title }}</strong>
+              <span class="d-block small text-muted">{{ activity.localized_location }}</span>
+            </span>
+            <span class="small text-muted">{{ activity.activity_date|local_date }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="card-text mb-0">{% trans "No social activities submitted yet." %}</p>
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endblock %}

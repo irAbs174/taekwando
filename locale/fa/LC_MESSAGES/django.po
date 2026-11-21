@@ -26,10 +26,10 @@ msgid "About"
 msgstr "درباره ما"
 
 msgid "About Techwando"
-msgstr "درباره تکواندو"
+msgstr "درباره TECHWANDO"
 
 msgid "About TECHWANDO"
-msgstr "درباره باشگاه تکواندو"
+msgstr "درباره TECHWANDO"
 
 msgid "Education"
 msgstr "آموزش"
@@ -145,8 +145,8 @@ msgid ""
 " belt registries, championship medal verification, and multilingual club "
 "management."
 msgstr ""
-"باشگاه تکواندو ارزش‌های اصیل هنرهای رزمی را با دانش روز ورزش، ثبت رسمی "
-"کمربندها، تایید مدال‌های قهرمانی و مدیریت چندزبانه پیوند می‌دهد."
+"TECHWANDO ارزش‌های اصیل بودو را با دانش روز ورزش، ثبت رسمی کمربندها، تأیید "
+"مدال‌های قهرمانی و مدیریت چندزبانه باشگاه پیوند می‌دهد."
 
 msgid "Explore Champions"
 msgstr "مشاهده قهرمانان"
@@ -265,9 +265,9 @@ msgid ""
 "belt ranking, and championship verification club connecting Persian and "
 "Japanese martial arts communities."
 msgstr ""
-"تکواندو باشگاهی چندزبانه در حوزه آموزش هنرهای رزمی، پرورش قهرمانان، ثبت "
-"درجات کمربند و تایید افتخارات ورزشی است که جوامع رزمی فارسی‌زبان و "
-"ژاپنی‌زبان را به هم پیوند می‌دهد."
+"TECHWANDO باشگاهی چندزبانه در حوزه آموزش هنرهای رزمی، پرورش ورزشکاران، ثبت "
+"درجات کمربند و تأیید قهرمانی است که جوامع رزمی فارسی‌زبان و ژاپنی‌زبان را به"
+" هم پیوند می‌دهد."
 
 msgid "Martial Arts Education & Curriculum"
 msgstr "آموزش و سرفصل‌های هنرهای رزمی"
@@ -293,7 +293,7 @@ msgid "Educational Content"
 msgstr "محتوای آموزشی"
 
 msgid "TECHWANDO Champions & Verified Athletes"
-msgstr "قهرمانان و ورزشکاران تاییدشده تکواندو"
+msgstr "قهرمانان و ورزشکاران تأییدشده TECHWANDO"
 
 msgid ""
 "Official registry of approved club athletes who authorized public profile "
@@ -372,7 +372,7 @@ msgid "Try adjusting your search or filter criteria."
 msgstr "لطفاً عبارت جستجو یا فیلترهای انتخابی را تغییر دهید."
 
 msgid "Verified TECHWANDO Athlete"
-msgstr "ورزشکار رسمی و تاییدشده تکواندو"
+msgstr "ورزشکار رسمی و تأییدشده TECHWANDO"
 
 msgid "Member since"
 msgstr "عضویت از"
@@ -447,7 +447,7 @@ msgid "Organizer"
 msgstr "برگزارکننده"
 
 msgid "TECHWANDO Blog & Martial Arts Journal"
-msgstr "وبلاگ و مجله تخصصی تکواندو"
+msgstr "وبلاگ و مجله هنرهای رزمی TECHWANDO"
 
 msgid ""
 "Technical insights, championship coverage, sports conditioning, and club "
@@ -507,7 +507,7 @@ msgid "Back to Catalog"
 msgstr "بازگشت به کاتالوگ"
 
 msgid "Contact TECHWANDO Club"
-msgstr "تماس با باشگاه تکواندو"
+msgstr "تماس با باشگاه TECHWANDO"
 
 msgid ""
 "Questions about training schedules, membership applications, seminars, or "
@@ -626,7 +626,7 @@ msgid "Japanese (ja-JP)"
 msgstr "ژاپنی (ژاپن)"
 
 msgid "Sign In to TECHWANDO"
-msgstr "ورود به حساب کاربری تکواندو"
+msgstr "ورود به TECHWANDO"
 
 msgid "Access your private club member portal or administration panel."
 msgstr "وارد پرتال اختصاصی اعضای باشگاه یا پنل مدیریت شوید."
@@ -638,7 +638,7 @@ msgid "Apply for Membership"
 msgstr "ثبت درخواست عضویت"
 
 msgid "TECHWANDO Membership Registration"
-msgstr "ثبت‌نام عضویت در باشگاه تکواندو"
+msgstr "ثبت‌نام عضویت در TECHWANDO"
 
 msgid ""
 "Create your individual athlete portal account. Your membership application "
@@ -847,7 +847,7 @@ msgid "Administration Dashboard"
 msgstr "داشبورد مدیریت"
 
 msgid "TECHWANDO Administration Portal"
-msgstr "پرتال مدیریت باشگاه تکواندو"
+msgstr "پرتال مدیریت TECHWANDO"
 
 msgid "Moderation Queue"
 msgstr "صف بررسی و تایید"
@@ -1007,3 +1007,3009 @@ msgstr "صفحه مورد نظر یافت نشد (۴۰۴)"
 
 msgid "Return to Homepage"
 msgstr "بازگشت به صفحه اصلی"
+
+msgid ""
+"A bilingual martial arts academy uniting Persian and Japanese budo "
+"traditions with modern sports education, transparent belt progression, and "
+"verified championship records."
+msgstr ""
+"آکادمی دوزبانه هنرهای رزمی که سنت‌های رزمی ایرانی و بودوی ژاپنی را با آموزش "
+"نوین ورزشی، ارتقای شفاف کمربند و سوابق تأییدشده قهرمانی پیوند می‌دهد."
+
+msgid "A curriculum that grows with the athlete"
+msgstr "برنامه‌ای که همراه با ورزشکار رشد می‌کند"
+
+msgid "A modern academy rooted in respect, effort and integrity"
+msgstr "آکادمی مدرنی که ریشه در احترام، تلاش و درستکاری دارد"
+
+msgid "API Docs"
+msgstr "مستندات API"
+
+msgid "About Us"
+msgstr "درباره ما"
+
+msgid "Acceptance of terms"
+msgstr "پذیرش شرایط"
+
+msgid "Access and correct your own profile information."
+msgstr "به اطلاعات پروفایل خود دسترسی داشته و آن را اصلاح کنید."
+
+msgid ""
+"Access to member data is role-based, logged, and limited to what each "
+"administrator needs. Security events are recorded in an immutable audit log,"
+" and sensitive files are served only through authenticated endpoints."
+msgstr ""
+"دسترسی به داده‌های اعضا بر پایه نقش، ثبت‌شده و محدود به نیاز هر مدیر است. "
+"رویدادهای امنیتی در گزارش حسابرسی تغییرناپذیر ثبت می‌شوند و فایل‌های حساس "
+"تنها از مسیرهای احراز هویت‌شده ارائه می‌گردند."
+
+msgid "Account"
+msgstr "حساب کاربری"
+
+msgid "Achievement Date"
+msgstr "تاریخ افتخار"
+
+msgid ""
+"Achievements, medals, belt promotions, competitions and social activities "
+"are submitted for review. Administrators may approve, reject or request "
+"revisions, and may add feedback visible to you in the portal. Members cannot"
+" approve their own submissions or change review decisions."
+msgstr ""
+"افتخارات، مدال‌ها، ارتقای کمربند، مسابقات و فعالیت‌های اجتماعی برای بررسی "
+"ارسال می‌شوند. مدیران می‌توانند تأیید، رد یا درخواست اصلاح کنند و بازخورد "
+"خود را در پرتال نمایش دهند. اعضا نمی‌توانند ثبت‌های خود را تأیید یا تصمیم "
+"بررسی را تغییر دهند."
+
+msgid "Actor"
+msgstr "کاربر اقدام‌کننده"
+
+msgid "Add Belt Rank"
+msgstr "افزودن درجه کمربند"
+
+msgid "Add Category"
+msgstr "افزودن دسته‌بندی"
+
+msgid "Add Competition Participation"
+msgstr "افزودن حضور در مسابقه"
+
+msgid "Add Page"
+msgstr "افزودن صفحه"
+
+msgid "Add Product"
+msgstr "افزودن محصول"
+
+msgid "Add Route SEO"
+msgstr "افزودن سئوی مسیر"
+
+msgid "Administration navigation"
+msgstr "ناوبری پنل مدیریت"
+
+msgid "Administration workspace"
+msgstr "فضای کاری مدیریت"
+
+msgid ""
+"Administrators review supporting documents before records are published."
+msgstr "مدیران پیش از انتشار سوابق، مدارک پشتیبان را بررسی می‌کنند."
+
+msgid ""
+"Age-appropriate groups, small class sizes and a respectful training culture."
+msgstr "گروه‌های متناسب با سن، کلاس‌های کم‌جمعیت و فرهنگ تمرینی محترمانه."
+
+msgid "All achievements"
+msgstr "همه افتخارات"
+
+msgid "All articles"
+msgstr "همه مقالات"
+
+msgid "All levels"
+msgstr "همه سطوح"
+
+msgid "All programs"
+msgstr "همه دوره‌ها"
+
+msgid "All statuses"
+msgstr "همه وضعیت‌ها"
+
+msgid "All submissions are reviewed before publication."
+msgstr "همه ثبت‌ها پیش از انتشار بررسی می‌شوند."
+
+msgid "All types"
+msgstr "همه انواع"
+
+msgid ""
+"An athlete profile is published only when membership is approved, the record"
+" has passed review, and the member has given explicit consent to both public"
+" profile consent and visibility. Consent can be withdrawn at any time from "
+"your account settings."
+msgstr ""
+"پروفایل ورزشکار تنها زمانی منتشر می‌شود که عضویت تأیید شده، سابقه بررسی را "
+"گذرانده و عضو رضایت صریح خود را برای انتشار عمومی و نمایش پروفایل اعلام کرده"
+" باشد. این رضایت هر زمان از تنظیمات حساب قابل لغو است."
+
+msgid "An unexpected server error occurred. Please try again shortly."
+msgstr "خطای غیرمنتظره‌ای در سرور رخ داد. لطفاً کمی بعد دوباره تلاش کنید."
+
+msgid "Applied practice"
+msgstr "تمرین کاربردی"
+
+msgid "Approved and consented club activities will be published here."
+msgstr ""
+"فعالیت‌های تأییدشده باشگاه که رضایت انتشار دارند در اینجا منتشر می‌شوند."
+
+msgid "Approved medal records"
+msgstr "سوابق مدال تأییدشده"
+
+msgid "Archived"
+msgstr "بایگانی‌شده"
+
+msgid "Are you sure you want to continue? This action cannot be undone."
+msgstr "آیا از ادامه مطمئن هستید؟ این عمل قابل بازگشت نیست."
+
+msgid "Are you sure you want to permanently remove this submission?"
+msgstr "آیا از حذف دائمی این ثبت مطمئن هستید؟"
+
+msgid "Article details"
+msgstr "مشخصات مقاله"
+
+msgid "Articles & News"
+msgstr "مقالات و اخبار"
+
+msgid "Athlete profiles"
+msgstr "پروفایل ورزشکاران"
+
+msgid "Athletes Directory"
+msgstr "فهرست ورزشکاران"
+
+msgid "Attend the required training hours."
+msgstr "ساعت‌های تمرینی لازم را تکمیل کنید."
+
+msgid ""
+"Authentic instruction across striking, grappling and weapons-based Japanese "
+"and Korean arts."
+msgstr "آموزش اصیل هنرهای رزمی ژاپنی و کره‌ای در حوزه ضربه، گلاویزی و سلاح."
+
+msgid "Author"
+msgstr "نویسنده"
+
+msgid "Back to Inbox"
+msgstr "بازگشت به صندوق ورودی"
+
+msgid "Back to Queue"
+msgstr "بازگشت به صف بررسی"
+
+msgid "Back to athletes"
+msgstr "بازگشت به ورزشکاران"
+
+msgid "Back to the journal"
+msgstr "بازگشت به مجله"
+
+msgid "Back to top"
+msgstr "بازگشت به بالا"
+
+msgid "Bamboo sword fundamentals, zanshin and the discipline of the kendojo."
+msgstr "مبانی شمشیر بامبو، ذهن هوشیار (زانشین) و انضباط دوجوی کندو."
+
+msgid "Begin your martial arts journey with TECHWANDO"
+msgstr "سفر رزمی خود را با TECHWANDO آغاز کنید"
+
+msgid "Belt History"
+msgstr "تاریخچه کمربند"
+
+msgid "Belt Promotion Request"
+msgstr "درخواست ارتقای کمربند"
+
+msgid "Belt Rank Configuration"
+msgstr "تنظیمات درجات کمربند"
+
+msgid "Belt Rank Form"
+msgstr "فرم درجه کمربند"
+
+msgid "Belt Registry"
+msgstr "ثبت کمربندها"
+
+msgid ""
+"Belt ranks reflect demonstrated skill and character, never shortcuts or "
+"favouritism."
+msgstr ""
+"درجات کمربند نشان‌دهنده مهارت و منش اثبات‌شده است، نه میان‌بر یا تبعیض."
+
+msgid ""
+"Blending and redirecting energy, joint locks and non-resistance defence."
+msgstr "هماهنگی و هدایت انرژی، قفل مفاصل و دفاع بدون مقاومت."
+
+msgid "Blog Article (fa-IR & ja-JP)"
+msgstr "مقاله وبلاگ (فارسی و ژاپنی)"
+
+msgid "Blog Article Editor"
+msgstr "ویرایشگر مقاله"
+
+msgid "Blog Articles (Persian & Japanese)"
+msgstr "مقالات وبلاگ (فارسی و ژاپنی)"
+
+msgid "Blog Category"
+msgstr "دسته‌بندی وبلاگ"
+
+msgid "Book a Trial Session"
+msgstr "رزرو جلسه آزمایشی"
+
+msgid "Book a supervised trial session before joining."
+msgstr "پیش از عضویت یک جلسه آزمایشی زیر نظر مربی رزرو کنید."
+
+msgid "Breadcrumb"
+msgstr "مسیر صفحه"
+
+msgid "Browse Champions"
+msgstr "مشاهده قهرمانان"
+
+msgid "Browse the catalog"
+msgstr "مشاهده کاتالوگ"
+
+msgid "By"
+msgstr "نویسنده"
+
+msgid ""
+"By using this website or the member portal you agree to these terms, the "
+"club code of conduct, and all applicable dojo rules. If you do not agree, "
+"please do not use the service."
+msgstr ""
+"با استفاده از این وب‌سایت یا پرتال اعضا، شما با این شرایط، آیین‌نامه رفتاری "
+"باشگاه و همه قوانین دوجو موافقت می‌کنید. در صورت عدم موافقت، لطفاً از این "
+"سرویس استفاده نکنید."
+
+msgid "Certificate"
+msgstr "گواهینامه"
+
+msgid ""
+"Certified coaches with competition, teaching and safeguarding experience."
+msgstr "مربیان دارای گواهینامه با تجربه مسابقه، آموزش و صیانت از ورزشکاران."
+
+msgid ""
+"Certified coaching for youth beginners, competitive athletes and Dan black "
+"belt candidates."
+msgstr ""
+"مربیگری دارای گواهینامه برای نوجوانان مبتدی، ورزشکاران رقابتی و داوطلبان "
+"کمربند مشکی دان."
+
+msgid "Certified, safety-first coaching"
+msgstr "مربیگری دارای گواهینامه با اولویت ایمنی"
+
+msgid "Championship"
+msgstr "قهرمانی"
+
+msgid "Changes to these terms"
+msgstr "تغییرات این شرایط"
+
+msgid "Choose a program"
+msgstr "یک دوره را انتخاب کنید"
+
+msgid "Clear filters"
+msgstr "پاک‌کردن فیلترها"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Club activities beyond the mat"
+msgstr "فعالیت‌های باشگاه فراتر از تشک"
+
+msgid "Club administration & dojo"
+msgstr "مدیریت باشگاه و دوجو"
+
+msgid "Club at a glance"
+msgstr "باشگاه در یک نگاه"
+
+msgid ""
+"Club-approved uniforms, competition protection, embroidered Dan belts and "
+"training tools. In-store inquiry only — no online payment."
+msgstr ""
+"لباس‌های تأییدشده باشگاه، محافظ مسابقات، کمربندهای دان گلدوزی‌شده و ابزار "
+"تمرین. فقط استعلام حضوری — بدون پرداخت آنلاین."
+
+msgid "Club-approved uniforms, protective gear and embroidered Dan belts."
+msgstr "لباس‌ها، تجهیزات محافظ و کمربندهای دان گلدوزی‌شده تأییدشده باشگاه."
+
+msgid ""
+"Coaches break down each technique, then rebuild it under controlled "
+"pressure."
+msgstr ""
+"مربیان هر تکنیک را جزء‌به‌جزء آموزش می‌دهند و سپس آن را زیر فشار کنترل‌شده "
+"بازسازی می‌کنند."
+
+msgid "Coaching team"
+msgstr "تیم مربیان"
+
+msgid "Code"
+msgstr "کد"
+
+msgid "Code of conduct"
+msgstr "آیین‌نامه رفتاری"
+
+msgid "Community"
+msgstr "جامعه"
+
+msgid ""
+"Community activities are published only after administrator approval and "
+"explicit member consent."
+msgstr ""
+"فعالیت‌های اجتماعی تنها پس از تأیید مدیر و رضایت صریح عضو منتشر می‌شوند."
+
+msgid "Community responsibility"
+msgstr "مسئولیت اجتماعی"
+
+msgid "Competition Form"
+msgstr "فرم مسابقه"
+
+msgid "Competition Location"
+msgstr "محل مسابقه"
+
+msgid "Competition Participation"
+msgstr "حضور در مسابقه"
+
+msgid "Competitions Management"
+msgstr "مدیریت مسابقات"
+
+msgid "Confirm Deletion"
+msgstr "تأیید حذف"
+
+msgid "Contact Inbox"
+msgstr "صندوق پیام‌های تماس"
+
+msgid "Contact Messages Inbox"
+msgstr "صندوق پیام‌های تماس"
+
+msgid "Contact the club"
+msgstr "تماس با باشگاه"
+
+msgid ""
+"Contact the club administration for data requests or policy clarification."
+msgstr "برای درخواست داده یا روشن‌سازی سیاست‌ها با مدیریت باشگاه تماس بگیرید."
+
+msgid ""
+"Contact the club administration to request deletion where legally permitted."
+msgstr "برای درخواست حذف در موارد مجاز قانونی با مدیریت باشگاه تماس بگیرید."
+
+msgid "Content"
+msgstr "محتوا"
+
+msgid "Correction requested"
+msgstr "اصلاح درخواست شد"
+
+msgid "Create Account"
+msgstr "ایجاد حساب"
+
+msgid "Create Member Account"
+msgstr "ایجاد حساب عضو"
+
+msgid ""
+"Create your athlete portal account. Your membership application is reviewed "
+"by club administrators."
+msgstr ""
+"حساب پرتال ورزشکار خود را بسازید. درخواست عضویت شما توسط مدیران باشگاه بررسی"
+" می‌شود."
+
+msgid "Cultural bridge"
+msgstr "پل فرهنگی"
+
+msgid "Dashboard"
+msgstr "داشبورد"
+
+msgid "Dashboard content"
+msgstr "محتوای داشبورد"
+
+msgid "Data retention and security"
+msgstr "نگهداری داده و امنیت"
+
+msgid "Dates"
+msgstr "تاریخ‌ها"
+
+msgid "Delete Submission?"
+msgstr "حذف ثبت؟"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Discipline, education and verified martial arts excellence"
+msgstr "انضباط، آموزش و تعالی تأییدشده در هنرهای رزمی"
+
+msgid "Disciplines"
+msgstr "رشته‌ها"
+
+msgid "Disciplines taught at the academy"
+msgstr "رشته‌های آموزشی آکادمی"
+
+msgid "Dismiss"
+msgstr "بستن"
+
+msgid "Division / Category"
+msgstr "دسته / رده"
+
+msgid "Document coaching workshops, volunteer events, and cultural outreach."
+msgstr ""
+"کارگاه‌های مربیگری، رویدادهای داوطلبانه و فعالیت‌های فرهنگی را ثبت کنید."
+
+msgid "Dojo shop"
+msgstr "فروشگاه دوجو"
+
+msgid "Draft"
+msgstr "پیش‌نویس"
+
+msgid ""
+"Dynamic kicking techniques, poomsae forms, Olympic-style sparring and Dan "
+"promotion."
+msgstr ""
+"تکنیک‌های پویای ضربه پا، فرم‌های پومسه، مبارزه به سبک المپیک و ارتقای دان."
+
+msgid ""
+"Each module combines technical instruction, physical preparation and the "
+"ethical foundations of martial arts practice."
+msgstr ""
+"هر ماژول آموزش فنی، آمادگی جسمانی و مبانی اخلاقی هنرهای رزمی را در هم "
+"می‌آمیزد."
+
+msgid "Edit Belt Promotion"
+msgstr "ویرایش ارتقای کمربند"
+
+msgid "Edit Competition Record"
+msgstr "ویرایش سابقه مسابقه"
+
+msgid "Edit Medal Submission"
+msgstr "ویرایش ثبت مدال"
+
+msgid "Edit Member Profile"
+msgstr "ویرایش پروفایل عضو"
+
+msgid "Edit Social Activity"
+msgstr "ویرایش فعالیت اجتماعی"
+
+msgid "Edit Sports Achievement"
+msgstr "ویرایش افتخار ورزشی"
+
+msgid "Education & Curriculum"
+msgstr "آموزش و برنامه درسی"
+
+msgid "Educational curriculum modules are being prepared."
+msgstr "ماژول‌های آموزشی در حال آماده‌سازی هستند."
+
+msgid ""
+"Email addresses, phone numbers, birth dates and uploaded certificates are "
+"stored in a protected private area. They are visible only to you and to "
+"authorized club reviewers; they are never shown on public pages or in public"
+" APIs."
+msgstr ""
+"نشانی ایمیل، شماره تلفن، تاریخ تولد و گواهینامه‌های بارگذاری‌شده در فضای "
+"خصوصی محافظت‌شده نگهداری می‌شوند. این اطلاعات تنها برای شما و بازرسان مجاز "
+"باشگاه قابل مشاهده است و هرگز در صفحات عمومی یا APIهای عمومی نمایش داده "
+"نمی‌شود."
+
+msgid "Equipment"
+msgstr "تجهیزات"
+
+msgid "Equipment catalog"
+msgstr "کاتالوگ تجهیزات"
+
+msgid "Established martial arts academy"
+msgstr "آکادمی باسابقه هنرهای رزمی"
+
+msgid ""
+"Every athlete keeps a permanent training record, and every belt promotion, "
+"medal and community activity is reviewed by our technical board before "
+"publication."
+msgstr ""
+"هر ورزشکار دارای سابقه تمرینی ماندگار است و هر ارتقای کمربند، مدال و فعالیت "
+"اجتماعی پیش از انتشار توسط هیئت فنی بررسی می‌شود."
+
+msgid "Explore Our Champions"
+msgstr "مشاهده قهرمانان ما"
+
+msgid "Explore the curriculum"
+msgstr "مشاهده برنامه درسی"
+
+msgid "Family-friendly club"
+msgstr "باشگاه مناسب خانواده"
+
+msgid "Find the right training path"
+msgstr "مسیر تمرینی مناسب خود را بیابید"
+
+msgid "Follow the club"
+msgstr "باشگاه را دنبال کنید"
+
+msgid ""
+"For privacy questions, contact the club administration using the contact "
+"form or the official email address published on this website."
+msgstr ""
+"برای پرسش‌های حریم خصوصی از فرم تماس یا نشانی ایمیل رسمی منتشرشده در این "
+"وب‌سایت با مدیریت باشگاه تماس بگیرید."
+
+msgid "From"
+msgstr "از"
+
+msgid ""
+"From a child's first class to international championship preparation, our "
+"curriculum balances technique, physical conditioning, etiquette and personal"
+" responsibility."
+msgstr ""
+"از نخستین کلاس کودک تا آماده‌سازی برای مسابقات بین‌المللی، برنامه ما تعادل "
+"میان تکنیک، آمادگی جسمانی، ادب و مسئولیت‌پذیری را حفظ می‌کند."
+
+msgid "Full data protection record"
+msgstr "سند کامل حفاظت از داده"
+
+msgid "Fully bilingual Persian and Japanese"
+msgstr "کاملاً دوزبانه فارسی و ژاپنی"
+
+msgid "Fundamentals first"
+msgstr "نخست مبانی"
+
+msgid "Further reading"
+msgstr "مطالعه بیشتر"
+
+msgid "Granted"
+msgstr "داده شده"
+
+msgid "Hello,"
+msgstr "سلام،"
+
+msgid "Honest progression"
+msgstr "پیشرفت صادقانه"
+
+msgid "Honours"
+msgstr "افتخارات"
+
+msgid "How promotion works"
+msgstr "فرایند ارتقا چگونه است"
+
+msgid "How we collect, store and protect your information."
+msgstr "شیوه جمع‌آوری، نگهداری و حفاظت از اطلاعات شما."
+
+msgid "IP Address"
+msgstr "نشانی IP"
+
+msgid ""
+"If an active account exists for the address entered, password reset "
+"instructions have been sent."
+msgstr ""
+"در صورتی که حسابی فعال با نشانی واردشده وجود داشته باشد، دستورالعمل بازنشانی"
+" گذرواژه ارسال شده است."
+
+msgid "If you did not request this change, you can safely ignore this email."
+msgstr ""
+"اگر این تغییر را درخواست نکرده‌اید، می‌توانید این ایمیل را نادیده بگیرید."
+
+msgid "Immutable security and administrative event trail."
+msgstr "رهگیری تغییرناپذیر رویدادهای امنیتی و مدیریتی."
+
+msgid "Inbox & system"
+msgstr "صندوق ورودی و سامانه"
+
+msgid "Information we collect"
+msgstr "اطلاعاتی که جمع‌آوری می‌کنیم"
+
+msgid "Inquire"
+msgstr "استعلام"
+
+msgid "Inspect Supporting Certificate / Evidence"
+msgstr "بررسی گواهینامه / مدرک پشتیبان"
+
+msgid ""
+"Inspect uploaded certificates and approve, reject, or request revision on "
+"submissions."
+msgstr ""
+"گواهینامه‌های بارگذاری‌شده را بررسی و ثبت‌ها را تأیید، رد یا درخواست اصلاح "
+"کنید."
+
+msgid "Invalid or Expired Link"
+msgstr "پیوند نامعتبر یا منقضی"
+
+msgid "Japanese Name"
+msgstr "نام ژاپنی"
+
+msgid "Join the Club"
+msgstr "عضویت در باشگاه"
+
+msgid "Journal"
+msgstr "مجله"
+
+msgid "Keep your password confidential and do not share your account."
+msgstr ""
+"گذرواژه خود را محرمانه نگه دارید و حساب خود را با دیگران به اشتراک نگذارید."
+
+msgid "Kendo"
+msgstr "کندو"
+
+msgid "Knowledge & news"
+msgstr "دانش و اخبار"
+
+msgid "Lang"
+msgstr "زبان"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Language selector"
+msgstr "انتخاب زبان"
+
+msgid "Languages"
+msgstr "زبان‌ها"
+
+msgid "Last updated"
+msgstr "آخرین به‌روزرسانی"
+
+msgid "Latest achievements and medal winners"
+msgstr "تازه‌ترین افتخارات و مدال‌آوران"
+
+msgid "Latest articles and club news"
+msgstr "تازه‌ترین مقالات و اخبار باشگاه"
+
+msgid ""
+"Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete"
+" verification workflow and Persian-Japanese cultural bridge."
+msgstr ""
+"با فلسفه هنرهای رزمی TECHWANDO، مربیگری دارای گواهینامه، فرایند تأیید "
+"ورزشکاران و پل فرهنگی فارسی-ژاپنی آشنا شوید."
+
+msgid "Learn from experienced instructors"
+msgstr "از مربیان باتجربه بیاموزید"
+
+msgid "Legal"
+msgstr "حقوقی"
+
+msgid "Legal & policies"
+msgstr "اسناد حقوقی و سیاست‌ها"
+
+msgid "Limitation of liability"
+msgstr "محدودیت مسئولیت"
+
+msgid "Localized Title"
+msgstr "عنوان محلی‌شده"
+
+msgid "Manage"
+msgstr "مدیریت"
+
+msgid "Manage Blog"
+msgstr "مدیریت وبلاگ"
+
+msgid "Manage Pages"
+msgstr "مدیریت صفحات"
+
+msgid "Manage Products"
+msgstr "مدیریت محصولات"
+
+msgid "Martial arts"
+msgstr "هنرهای رزمی"
+
+msgid ""
+"Martial arts training carries inherent physical risk. Members must follow "
+"safety instructions and disclose relevant health conditions. The club is not"
+" liable for misuse of the platform or for training undertaken contrary to "
+"coach guidance."
+msgstr ""
+"تمرین هنرهای رزمی خطر جسمی ذاتی دارد. اعضا باید دستورالعمل‌های ایمنی را "
+"رعایت کنند و شرایط سلامتی مرتبط را اعلام نمایند. باشگاه در قبال استفاده "
+"نادرست از سامانه یا تمرین خلاف توصیه مربی مسئولیتی ندارد."
+
+msgid "Medal honor roll"
+msgstr "تالار افتخارات مدال"
+
+msgid "Meet the team"
+msgstr "آشنایی با تیم"
+
+msgid "Member Correction Request"
+msgstr "درخواست اصلاح عضو"
+
+msgid "Member dashboard navigation"
+msgstr "ناوبری داشبورد عضو"
+
+msgid "Members & Contact"
+msgstr "اعضا و تماس"
+
+msgid "Members & sport"
+msgstr "اعضا و ورزش"
+
+msgid ""
+"Members contribute through volunteering, youth mentoring and cultural "
+"exchange activities."
+msgstr ""
+"اعضا از طریق داوطلبی، راهنمایی نوجوانان و فعالیت‌های فرهنگی مشارکت می‌کنند."
+
+msgid "Membership #"
+msgstr "شماره عضویت"
+
+msgid "Membership Application Decision"
+msgstr "تصمیم درباره درخواست عضویت"
+
+msgid "Membership and accounts"
+msgstr "عضویت و حساب‌ها"
+
+msgid "Membership is subject to review and approval by club administration."
+msgstr "عضویت منوط به بررسی و تأیید مدیریت باشگاه است."
+
+msgid "Membership status"
+msgstr "وضعیت عضویت"
+
+msgid "Menu"
+msgstr "منو"
+
+msgid ""
+"Messages are stored securely and reviewed only by authorized club "
+"administrators. Never send identity documents through this form."
+msgstr ""
+"پیام‌ها به‌صورت امن نگهداری و تنها توسط مدیران مجاز باشگاه بررسی می‌شوند. "
+"هرگز مدارک هویتی را از طریق این فرم ارسال نکنید."
+
+msgid "Mission & values"
+msgstr "مأموریت و ارزش‌ها"
+
+msgid "Moderation Decision"
+msgstr "تصمیم بررسی"
+
+msgid "Multilingual SEO Metadata"
+msgstr "فراداده سئوی چندزبانه"
+
+msgid "My Account"
+msgstr "حساب من"
+
+msgid "My Belts"
+msgstr "کمربندهای من"
+
+msgid "My Profile"
+msgstr "پروفایل من"
+
+msgid "Name or SKU"
+msgstr "نام یا کد کالا"
+
+msgid "Need more information?"
+msgstr "اطلاعات بیشتری می‌خواهید؟"
+
+msgid "New Article"
+msgstr "مقاله جدید"
+
+msgid "No approved belt rankings listed yet."
+msgstr "هنوز درجه کمربند تأییدشده‌ای ثبت نشده است."
+
+msgid "No approved medals match the selected filters."
+msgstr "هیچ مدال تأییدشده‌ای با فیلترهای انتخابی مطابقت ندارد."
+
+msgid "No approved medals recorded yet."
+msgstr "هنوز مدال تأییدشده‌ای ثبت نشده است."
+
+msgid "No audit logs recorded yet."
+msgstr "هنوز گزارش حسابرسی ثبت نشده است."
+
+msgid "No belt promotion records match your filters."
+msgstr "هیچ سابقه ارتقای کمربندی با فیلترهای شما مطابقت ندارد."
+
+msgid "No belt promotion records submitted yet."
+msgstr "هنوز درخواست ارتقای کمربندی ارسال نشده است."
+
+msgid "No belt records yet."
+msgstr "هنوز سابقه کمربندی وجود ندارد."
+
+msgid "No competition participation records added yet."
+msgstr "هنوز سابقه حضور در مسابقه‌ای افزوده نشده است."
+
+msgid "No contact messages received yet."
+msgstr "هنوز پیام تماسی دریافت نشده است."
+
+msgid "No members found."
+msgstr "عضوی یافت نشد."
+
+msgid "No moderation events recorded yet."
+msgstr "هنوز رویداد بررسی ثبت نشده است."
+
+msgid "No published articles found."
+msgstr "مقاله منتشرشده‌ای یافت نشد."
+
+msgid "No published competition results yet."
+msgstr "هنوز نتیجه مسابقه منتشرشده‌ای وجود ندارد."
+
+msgid "No published products match your criteria."
+msgstr "هیچ محصول منتشرشده‌ای با معیارهای شما مطابقت ندارد."
+
+msgid "No social activities submitted yet."
+msgstr "هنوز فعالیت اجتماعی ارسال نشده است."
+
+msgid "No sports achievements submitted yet."
+msgstr "هنوز افتخار ورزشی ارسال نشده است."
+
+msgid "No submissions match this moderation filter."
+msgstr "هیچ ثبتی با این فیلتر بررسی مطابقت ندارد."
+
+msgid "No supporting file attached."
+msgstr "فایل پشتیبانی پیوست نشده است."
+
+msgid "Not granted (private)"
+msgstr "داده نشده (خصوصی)"
+
+msgid "Note"
+msgstr "یادداشت"
+
+msgid "Note / Feedback"
+msgstr "یادداشت / بازخورد"
+
+msgid "Notes"
+msgstr "یادداشت‌ها"
+
+msgid "Official Martial Arts Academy & Verified Club Registry"
+msgstr "آکادمی رسمی هنرهای رزمی و ثبت تأییدشده باشگاه"
+
+msgid ""
+"Official championships, participating TECHWANDO athletes and verified podium"
+" outcomes."
+msgstr "مسابقات رسمی، ورزشکاران شرکت‌کننده TECHWANDO و نتایج تأییدشده سکو."
+
+msgid "Official uniforms and equipment"
+msgstr "لباس و تجهیزات رسمی"
+
+msgid ""
+"Officially reviewed and approved Gold, Silver, Bronze and special "
+"championship medals."
+msgstr ""
+"مدال‌های طلا، نقره، برنز و ویژه قهرمانی که رسماً بررسی و تأیید شده‌اند."
+
+msgid "One club, two languages"
+msgstr "یک باشگاه، دو زبان"
+
+msgid ""
+"Only records approved by the technical board and cleared for public display "
+"appear here."
+msgstr ""
+"تنها سوابقی در اینجا نمایش داده می‌شود که هیئت فنی تأیید کرده و مجوز نمایش "
+"عمومی دارند."
+
+msgid ""
+"Only records reviewed and approved by the club technical board are displayed"
+" on this profile."
+msgstr ""
+"در این پروفایل تنها سوابقی نمایش داده می‌شود که هیئت فنی باشگاه بررسی و "
+"تأیید کرده است."
+
+msgid "Open Member Portal"
+msgstr "ورود به پرتال اعضا"
+
+msgid "Open the link below to set a new password:"
+msgstr "برای تعیین گذرواژه جدید، پیوند زیر را باز کنید:"
+
+msgid "Order"
+msgstr "ترتیب"
+
+msgid "Other club-approved items you may need."
+msgstr "سایر اقلام تأییدشده باشگاه که ممکن است نیاز داشته باشید."
+
+msgid ""
+"Our administration desk can help with schedules, membership and programs."
+msgstr "دفتر مدیریت ما می‌تواند در مورد برنامه‌ها، عضویت و دوره‌ها کمک کند."
+
+msgid "Our instructors"
+msgstr "مربیان ما"
+
+msgid ""
+"Our mission is to develop confident, respectful and resilient people through"
+" authentic martial arts practice."
+msgstr ""
+"مأموریت ما پرورش انسان‌هایی با اعتمادبه‌نفس، محترم و تاب‌آور از طریق تمرین "
+"اصیل هنرهای رزمی است."
+
+msgid "Our multilingual administration desk replies in Persian and Japanese."
+msgstr "دفتر مدیریت دوزبانه ما به فارسی و ژاپنی پاسخ می‌دهد."
+
+msgid "Our story"
+msgstr "داستان ما"
+
+msgid "Page"
+msgstr "صفحه"
+
+msgid "Page (fa-IR & ja-JP)"
+msgstr "صفحه (فارسی و ژاپنی)"
+
+msgid "Page Editor"
+msgstr "ویرایشگر صفحه"
+
+msgid "Pages, Education & Programs"
+msgstr "صفحات، آموزش و دوره‌ها"
+
+msgid "Pagination"
+msgstr "صفحه‌بندی"
+
+msgid "Persian (fa-IR) and Japanese (ja-JP) support"
+msgstr "پشتیبانی فارسی (fa-IR) و ژاپنی (ja-JP)"
+
+msgid "Persian Name"
+msgstr "نام فارسی"
+
+msgid ""
+"Persian and Japanese language editions with shared standards and values."
+msgstr "نسخه‌های فارسی و ژاپنی با استانداردها و ارزش‌های مشترک."
+
+msgid ""
+"Persian and Japanese members share standards, events and a single verified "
+"record system."
+msgstr ""
+"اعضای فارسی‌زبان و ژاپنی‌زبان در استانداردها، رویدادها و یک سامانه واحد "
+"سوابق تأییدشده شریک هستند."
+
+msgid ""
+"Personal data and certificates stay private; public profiles require "
+"explicit consent."
+msgstr ""
+"داده‌های شخصی و گواهینامه‌ها خصوصی می‌مانند؛ پروفایل عمومی نیازمند رضایت "
+"صریح است."
+
+msgid "Phone"
+msgstr "تلفن"
+
+msgid "Please confirm"
+msgstr "لطفاً تأیید کنید"
+
+msgid "Please correct the following errors:"
+msgstr "لطفاً خطاهای زیر را اصلاح کنید:"
+
+msgid "Practical self-defence, escapes, throws and pressure-point control."
+msgstr "دفاع شخصی کاربردی، رهایی، پرتاب‌ها و کنترل نقاط فشاری."
+
+msgid "Practice with purpose"
+msgstr "تمرین هدفمند"
+
+msgid "Precise linear strikes, kata bunkai and controlled kumite practice."
+msgstr "ضربات خطی دقیق، بونکای کاتا و تمرین کومیته کنترل‌شده."
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "Primary navigation"
+msgstr "ناوبری اصلی"
+
+msgid "Privacy by design"
+msgstr "حریم خصوصی از پایه"
+
+msgid "Privacy consent confirmed"
+msgstr "رضایت حریم خصوصی تأیید شد"
+
+msgid "Private Certificate"
+msgstr "گواهینامه خصوصی"
+
+msgid "Private Evidence File"
+msgstr "فایل مدرک خصوصی"
+
+msgid "Private by default"
+msgstr "خصوصی به‌صورت پیش‌فرض"
+
+msgid "Product (fa-IR & ja-JP)"
+msgstr "محصول (فارسی و ژاپنی)"
+
+msgid "Product Category"
+msgstr "دسته‌بندی محصول"
+
+msgid "Product Editor"
+msgstr "ویرایشگر محصول"
+
+msgid ""
+"Product listings are informational. No online checkout or payment is "
+"provided; prices, availability and custom orders must be confirmed directly "
+"with the club desk."
+msgstr ""
+"فهرست محصولات جنبه اطلاع‌رسانی دارد. هیچ پرداخت یا خرید آنلاینی ارائه "
+"نمی‌شود؛ قیمت، موجودی و سفارش سفارشی باید مستقیماً با میز باشگاه تأیید شود."
+
+msgid "Products Catalog Management"
+msgstr "مدیریت کاتالوگ محصولات"
+
+msgid ""
+"Profiles appear only when membership is approved, records are verified, and "
+"the athlete has granted explicit public visibility consent."
+msgstr ""
+"پروفایل‌ها تنها زمانی نمایش داده می‌شوند که عضویت تأیید شده، سوابق بررسی شده"
+" و ورزشکار رضایت صریح انتشار عمومی داده باشد."
+
+msgid "Program details"
+msgstr "جزئیات دوره"
+
+msgid ""
+"Progress comes from repetition, reflection and respect — not from collecting"
+" belts."
+msgstr "پیشرفت از تکرار، تأمل و احترام می‌آید، نه از جمع‌آوری کمربند."
+
+msgid ""
+"Progressive intensity, qualified supervision and evidence-based injury "
+"prevention guide every session."
+msgstr ""
+"شدت تدریجی، نظارت واجد شرایط و پیشگیری علمی از آسیب، راهنمای هر جلسه است."
+
+msgid ""
+"Progressive syllabi for poomsae, kata, sparring, self-defence and "
+"conditioning."
+msgstr ""
+"برنامه‌های درسی تدریجی برای پومسه، کاتا، مبارزه، دفاع شخصی و آمادگی جسمانی."
+
+msgid "Provide accurate registration and profile information."
+msgstr "اطلاعات دقیق ثبت‌نام و پروفایل را ارائه دهید."
+
+msgid "Public"
+msgstr "عمومی"
+
+msgid "Public Consent"
+msgstr "رضایت عمومی"
+
+msgid "Public Display Consent"
+msgstr "رضایت نمایش عمومی"
+
+msgid "Public Profile"
+msgstr "پروفایل عمومی"
+
+msgid "Public athlete profiles"
+msgstr "پروفایل عمومی ورزشکاران"
+
+msgid "Published"
+msgstr "منتشرشده"
+
+msgid ""
+"Qualified coaches who combine competition experience with a commitment to "
+"athlete welfare."
+msgstr ""
+"مربیان واجد شرایط که تجربه مسابقه را با تعهد به سلامت ورزشکار ترکیب می‌کنند."
+
+msgid ""
+"Questions about training schedules, membership, seminars or official "
+"equipment? Send us a message."
+msgstr ""
+"پرسشی درباره برنامه تمرین، عضویت، سمینارها یا تجهیزات رسمی دارید؟ برای ما "
+"پیام بفرستید."
+
+msgid "Questions?"
+msgstr "پرسشی دارید؟"
+
+msgid "Quick links"
+msgstr "پیوندهای سریع"
+
+msgid "Read"
+msgstr "مطالعه"
+
+msgid "Read our story"
+msgstr "داستان ما را بخوانید"
+
+msgid "Received"
+msgstr "دریافت‌شده"
+
+msgid "Recent Activities"
+msgstr "فعالیت‌های اخیر"
+
+msgid "Recent Notifications"
+msgstr "اعلان‌های اخیر"
+
+msgid "Recent Submissions"
+msgstr "ثبت‌های اخیر"
+
+msgid "Recent achievements"
+msgstr "افتخارات اخیر"
+
+msgid "Recent medal winners"
+msgstr "مدال‌آوران اخیر"
+
+msgid "Record"
+msgstr "سابقه"
+
+msgid "Record your tournament appearances, weight divisions, and standings."
+msgstr "حضور در مسابقات، رده وزنی و رتبه‌های خود را ثبت کنید."
+
+msgid "Records"
+msgstr "سوابق"
+
+msgid "Reflection and service"
+msgstr "تأمل و خدمت"
+
+msgid ""
+"Reigi, humility and mutual care are taught alongside technique, inside and "
+"outside the dojo."
+msgstr ""
+"ادب (ریگی)، فروتنی و مراقبت متقابل در کنار تکنیک، درون و بیرون دوجو آموزش "
+"داده می‌شود."
+
+msgid "Related articles"
+msgstr "مقالات مرتبط"
+
+msgid "Related equipment"
+msgstr "تجهیزات مرتبط"
+
+msgid "Request New Link"
+msgstr "درخواست پیوند جدید"
+
+msgid "Request Record Correction"
+msgstr "درخواست اصلاح سابقه"
+
+msgid "Request correction of an approved record through the member portal."
+msgstr "از طریق پرتال اعضا درخواست اصلاح یک سابقه تأییدشده را ثبت کنید."
+
+msgid "Reset filters"
+msgstr "بازنشانی فیلترها"
+
+msgid "Respect & etiquette"
+msgstr "احترام و آداب"
+
+msgid ""
+"Respect instructors, fellow members and visitors. Harassment, "
+"discrimination, unsafe training and the publication of another person's "
+"private information are prohibited and may result in suspension."
+msgstr ""
+"به مربیان، هم‌باشگاهی‌ها و بازدیدکنندگان احترام بگذارید. آزار، تبعیض، تمرین "
+"ناایمن و انتشار اطلاعات خصوصی دیگران ممنوع است و می‌تواند به تعلیق منجر شود."
+
+msgid "Results appear in your private record."
+msgstr "نتایج در سابقه خصوصی شما نمایش داده می‌شود."
+
+msgid "Review Submission"
+msgstr "بررسی ثبت"
+
+msgid "Review decisions, membership updates, and club alerts."
+msgstr "تصمیم‌های بررسی، به‌روزرسانی عضویت و هشدارهای باشگاه."
+
+msgid ""
+"Review membership applications, edit profiles, and manage member account "
+"status."
+msgstr ""
+"درخواست‌های عضویت را بررسی، پروفایل‌ها را ویرایش و وضعیت حساب اعضا را مدیریت"
+" کنید."
+
+msgid "Reviewed and verified"
+msgstr "بررسی و تأییدشده"
+
+msgid "Reviewer"
+msgstr "بررسی‌کننده"
+
+msgid "Robots"
+msgstr "ربات‌ها"
+
+msgid "Role"
+msgstr "نقش"
+
+msgid "Role Assignment (Super Admin)"
+msgstr "تخصیص نقش (مدیر ارشد)"
+
+msgid "Route"
+msgstr "مسیر"
+
+msgid "Rules for using the TECHWANDO platform and member code of conduct."
+msgstr "قواعد استفاده از سامانه TECHWANDO و آیین‌نامه رفتاری اعضا."
+
+msgid "SEO Editor"
+msgstr "ویرایشگر سئو"
+
+msgid "SEO Management"
+msgstr "مدیریت سئو"
+
+msgid "SEO Metadata (fa-IR & ja-JP)"
+msgstr "فراداده سئو (فارسی و ژاپنی)"
+
+msgid "Safety first"
+msgstr "ایمنی اول"
+
+msgid "Save Article"
+msgstr "ذخیره مقاله"
+
+msgid "Save Competition"
+msgstr "ذخیره مسابقه"
+
+msgid "Save Page"
+msgstr "ذخیره صفحه"
+
+msgid "Save Product"
+msgstr "ذخیره محصول"
+
+msgid "Save Profile Changes"
+msgstr "ذخیره تغییرات پروفایل"
+
+msgid "Save Review Note"
+msgstr "ذخیره یادداشت بررسی"
+
+msgid "Save Role"
+msgstr "ذخیره نقش"
+
+msgid "Save SEO"
+msgstr "ذخیره سئو"
+
+msgid "Scheduled"
+msgstr "زمان‌بندی‌شده"
+
+msgid "Search name..."
+msgstr "جستجوی نام..."
+
+msgid "Search the journal"
+msgstr "جستجو در مجله"
+
+msgid "See club results"
+msgstr "مشاهده نتایج باشگاه"
+
+msgid "See the curriculum"
+msgstr "مشاهده برنامه درسی"
+
+msgid "Select the group that matches age and experience."
+msgstr "گروه متناسب با سن و تجربه را انتخاب کنید."
+
+msgid ""
+"Selected images are previewed locally before upload. Certificates remain "
+"private."
+msgstr ""
+"تصاویر انتخاب‌شده پیش از بارگذاری به‌صورت محلی پیش‌نمایش داده می‌شوند. "
+"گواهینامه‌ها خصوصی می‌مانند."
+
+msgid ""
+"Self-assessment, mentoring and community service complete the path to senior"
+" rank."
+msgstr ""
+"خودارزیابی، راهنمایی دیگران و خدمت اجتماعی مسیر رسیدن به درجات ارشد را کامل "
+"می‌کند."
+
+msgid "Send an inquiry"
+msgstr "ارسال درخواست"
+
+msgid "Sender"
+msgstr "فرستنده"
+
+msgid "Server Error"
+msgstr "خطای سرور"
+
+msgid "Show password"
+msgstr "نمایش گذرواژه"
+
+msgid "Signed in as"
+msgstr "واردشده با"
+
+msgid "Slug"
+msgstr "نامک"
+
+msgid "Social media"
+msgstr "رسانه‌های اجتماعی"
+
+msgid ""
+"Sparring, randori and scenario drills teach decision-making without "
+"sacrificing safety."
+msgstr ""
+"مبارزه، راندوری و تمرین‌های سناریومحور تصمیم‌گیری را بدون فداکردن ایمنی "
+"آموزش می‌دهند."
+
+msgid ""
+"Stance, balance, breathing and etiquette form the base of every discipline."
+msgstr "حالت ایستادن، تعادل، تنفس و ادب، پایه هر رشته را تشکیل می‌دهند."
+
+msgid "Structured curriculum"
+msgstr "برنامه درسی ساختارمند"
+
+msgid "Study path"
+msgstr "مسیر مطالعه"
+
+msgid "Subject"
+msgstr "موضوع"
+
+msgid "Submission"
+msgstr "ثبت"
+
+msgid "Submission Details"
+msgstr "جزئیات ثبت"
+
+msgid "Submission type"
+msgstr "نوع ثبت"
+
+msgid "Submissions and moderation"
+msgstr "ثبت‌ها و بررسی"
+
+msgid "Submit Belt Promotion"
+msgstr "ثبت ارتقای کمربند"
+
+msgid "Submit Belt Promotion Request"
+msgstr "ارسال درخواست ارتقای کمربند"
+
+msgid "Submit First Achievement"
+msgstr "ثبت نخستین افتخار"
+
+msgid "Submit Promotion Request"
+msgstr "ارسال درخواست ارتقا"
+
+msgid "Submit Record"
+msgstr "ثبت سابقه"
+
+msgid "Submit Sports Achievement"
+msgstr "ثبت افتخار ورزشی"
+
+msgid ""
+"Submit championship medals with supporting certificates for club "
+"verification."
+msgstr ""
+"مدال‌های قهرمانی را همراه با گواهینامه‌های پشتیبان برای تأیید باشگاه ثبت "
+"کنید."
+
+msgid "Submit sports achievements and track administrator approval status."
+msgstr "افتخارات ورزشی خود را ثبت و وضعیت تأیید مدیران را پیگیری کنید."
+
+msgid "Submit the examination application."
+msgstr "درخواست آزمون را ارسال کنید."
+
+msgid "Submitted"
+msgstr "ارسال‌شده"
+
+msgid ""
+"Submitting a correction request places this record back under review so you "
+"can update details for administrator re-verification."
+msgstr ""
+"با ارسال درخواست اصلاح، این سابقه دوباره به مرحله بررسی بازمی‌گردد تا جزئیات"
+" را برای بازبینی مجدد مدیران به‌روزرسانی کنید."
+
+msgid "System Audit Logs"
+msgstr "گزارش‌های حسابرسی سامانه"
+
+msgid "System messages"
+msgstr "پیام‌های سامانه"
+
+msgid ""
+"TECHWANDO is a bilingual martial arts education and club management platform"
+" for athletes, families and coaches. Every promotion, medal and community "
+"activity is reviewed by our technical board before it becomes part of an "
+"athlete's official record."
+msgstr ""
+"TECHWANDO یک سامانه دوزبانه آموزش هنرهای رزمی و مدیریت باشگاه برای "
+"ورزشکاران، خانواده‌ها و مربیان است. هر ارتقای کمربند، مدال و فعالیت اجتماعی "
+"پیش از ثبت در سابقه رسمی ورزشکار توسط هیئت فنی بررسی می‌شود."
+
+msgid ""
+"TECHWANDO is a multilingual martial arts education, athlete development, "
+"belt ranking and championship verification club connecting Persian and "
+"Japanese martial arts communities."
+msgstr ""
+"TECHWANDO باشگاهی چندزبانه در حوزه آموزش هنرهای رزمی، پرورش ورزشکار، "
+"رتبه‌بندی کمربند و تأیید قهرمانی است که جوامع رزمی فارسی‌زبان و ژاپنی‌زبان "
+"را به هم پیوند می‌دهد."
+
+msgid ""
+"TECHWANDO unites Persian and Japanese budo traditions with modern sports "
+"science, transparent belt progression, and a certified record of every "
+"championship achievement."
+msgstr ""
+"TECHWANDO سنت‌های رزمی ایرانی و بودوی ژاپنی را با علوم نوین ورزشی، ارتقای "
+"شفاف کمربند و سابقه تأییدشده هر دستاورد قهرمانی پیوند می‌دهد."
+
+msgid "Taekwondo · Karate · Judo"
+msgstr "تکواندو · کاراته · جودو"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+msgid "Target"
+msgstr "هدف"
+
+msgid "Technical articles published by our coaching team."
+msgstr "مقالات فنی منتشرشده توسط تیم مربیان ما."
+
+msgid "Technical board reviews and approves."
+msgstr "هیئت فنی بررسی و تأیید می‌کند."
+
+msgid ""
+"Technical guidance, competition reports and belt examination preparation."
+msgstr "راهنمایی فنی، گزارش مسابقات و آمادگی آزمون کمربند."
+
+msgid ""
+"Technical insights, championship coverage, sports conditioning and club "
+"announcements."
+msgstr "تحلیل‌های فنی، پوشش مسابقات، آمادگی جسمانی و اطلاعیه‌های باشگاه."
+
+msgid "Technical precision"
+msgstr "دقت فنی"
+
+msgid ""
+"Technical study guides, budo etiquette, sports physiology and belt "
+"examination preparation."
+msgstr "راهنمای مطالعه فنی، آداب بودو، فیزیولوژی ورزشی و آمادگی آزمون کمربند."
+
+msgid "Terms of Use"
+msgstr "شرایط استفاده"
+
+msgid "The Academy"
+msgstr "آکادمی"
+
+msgid "The Club"
+msgstr "باشگاه"
+
+msgid "The requested page could not be found or is not publicly available."
+msgstr "صفحه درخواستی یافت نشد یا به‌صورت عمومی در دسترس نیست."
+
+msgid "This password reset link is invalid or has already been used."
+msgstr "این پیوند بازنشانی گذرواژه نامعتبر است یا قبلاً استفاده شده است."
+
+msgid "Throws, groundwork and mutual welfare through safe, technical randori."
+msgstr "پرتاب‌ها، کار روی زمین و سود متقابل از طریق راندوری ایمن و فنی."
+
+msgid "Timestamp"
+msgstr "زمان ثبت"
+
+msgid "Toggle dark mode"
+msgstr "تغییر حالت تیره"
+
+msgid "Toggle navigation"
+msgstr "باز و بسته کردن منو"
+
+msgid "Track progress"
+msgstr "پیگیری پیشرفت"
+
+msgid ""
+"Track your approved belt rankings and submit belt promotion certificates."
+msgstr ""
+"درجات کمربند تأییدشده خود را پیگیری و گواهینامه‌های ارتقای کمربند را ارسال "
+"کنید."
+
+msgid ""
+"Train in a bilingual, safety-first dojo with certified coaches, transparent "
+"belt progression, and a verified record of every achievement you earn."
+msgstr ""
+"در دوجوی دوزبانه با اولویت ایمنی، زیر نظر مربیان دارای گواهینامه، با ارتقای "
+"شفاف کمربند و سابقه تأییدشده هر دستاورد خود تمرین کنید."
+
+msgid "Training clips, event announcements and belt examination results."
+msgstr "کلیپ‌های تمرین، اطلاعیه رویدادها و نتایج آزمون کمربند."
+
+msgid "Training philosophy"
+msgstr "فلسفه تمرین"
+
+msgid "Training programs"
+msgstr "دوره‌های تمرینی"
+
+msgid "Training programs will be listed soon."
+msgstr "دوره‌های تمرینی به‌زودی معرفی می‌شوند."
+
+msgid "Transition"
+msgstr "گذار"
+
+msgid "Transparent belt and Dan progression"
+msgstr "ارتقای شفاف کمربند و دان"
+
+msgid "Try a class"
+msgstr "شرکت در یک کلاس"
+
+msgid "Try a different search term or browse all categories."
+msgstr "عبارت جستجوی دیگری را امتحان کنید یا همه دسته‌ها را مرور کنید."
+
+msgid "Try clearing the filters or contact the club desk for a custom order."
+msgstr "فیلترها را پاک کنید یا برای سفارش سفارشی با میز باشگاه تماس بگیرید."
+
+msgid "Type"
+msgstr "نوع"
+
+msgid ""
+"Uniting martial arts heritage, athletic excellence and verified sports "
+"education."
+msgstr "پیوند میراث هنرهای رزمی، تعالی ورزشی و آموزش تأییدشده ورزشی."
+
+msgid "Unread"
+msgstr "خوانده‌نشده"
+
+msgid "Update Membership Status"
+msgstr "به‌روزرسانی وضعیت عضویت"
+
+msgid "Updated"
+msgstr "به‌روزرسانی‌شده"
+
+msgid "Verification"
+msgstr "تأیید"
+
+msgid "Verified achievements will appear here once approved."
+msgstr "افتخارات تأییدشده پس از تصویب در اینجا نمایش داده می‌شوند."
+
+msgid "Verified belt promotions"
+msgstr "ارتقاهای کمربند تأییدشده"
+
+msgid "Verified competition and medal records"
+msgstr "سوابق تأییدشده مسابقات و مدال‌ها"
+
+msgid "Verified medal winners"
+msgstr "مدال‌آوران تأییدشده"
+
+msgid "Verified medals will appear here once approved."
+msgstr "مدال‌های تأییدشده پس از تصویب در اینجا نمایش داده می‌شوند."
+
+msgid ""
+"Verified participant results will be published after the technical board "
+"review."
+msgstr "نتایج تأییدشده شرکت‌کنندگان پس از بررسی هیئت فنی منتشر می‌شود."
+
+msgid "Verified records"
+msgstr "سوابق تأییدشده"
+
+msgid "View all"
+msgstr "مشاهده همه"
+
+msgid "View all programs"
+msgstr "مشاهده همه دوره‌ها"
+
+msgid "Visit & Contact"
+msgstr "بازدید و تماس"
+
+msgid "Visit the Dojo"
+msgstr "بازدید از دوجو"
+
+msgid "Visit the dojo"
+msgstr "بازدید از دوجو"
+
+msgid ""
+"Volunteering, cultural exchange and youth outreach organised by our members."
+msgstr ""
+"داوطلبی، تبادل فرهنگی و برنامه‌های نوجوانان که توسط اعضای ما سازماندهی "
+"می‌شود."
+
+msgid "We are here to help"
+msgstr "ما اینجا هستیم تا کمک کنیم"
+
+msgid ""
+"We collect the information required to manage club membership: your name, "
+"contact details, chosen discipline, training and competition records, and "
+"the documents you submit for verification."
+msgstr ""
+"ما اطلاعات لازم برای مدیریت عضویت باشگاه را جمع‌آوری می‌کنیم: نام، اطلاعات "
+"تماس، رشته انتخابی، سوابق تمرین و مسابقه و مدارکی که برای تأیید ارسال "
+"می‌کنید."
+
+msgid ""
+"We may update these terms to reflect changes in the club or the law. "
+"Material changes will be communicated through the member portal."
+msgstr ""
+"ممکن است این شرایط را برای هماهنگی با تغییرات باشگاه یا قانون به‌روزرسانی "
+"کنیم. تغییرات مهم از طریق پرتال اعضا اطلاع‌رسانی می‌شود."
+
+msgid ""
+"Weekly classes, squad training and examination preparation, grouped by age "
+"and level."
+msgstr ""
+"کلاس‌های هفتگی، تمرین تیمی و آمادگی آزمون، دسته‌بندی‌شده بر اساس سن و سطح."
+
+msgid "Welcome to the dojo"
+msgstr "خوش آمدید به دوجو"
+
+msgid "What we stand for"
+msgstr "ارزش‌های ما"
+
+msgid "Why TECHWANDO"
+msgstr "چرا TECHWANDO"
+
+msgid "Why train with us"
+msgstr "چرا با ما تمرین کنیم"
+
+msgid "Withdraw public visibility consent."
+msgstr "رضایت نمایش عمومی را پس بگیرید."
+
+msgid "Yes, Continue"
+msgstr "بله، ادامه"
+
+msgid "You do not have permission to view this page or resource."
+msgstr "شما مجوز مشاهده این صفحه یا منبع را ندارید."
+
+msgid "You have no notifications yet."
+msgstr "هنوز اعلانی ندارید."
+
+msgid "You have not submitted any medals yet."
+msgstr "هنوز مدالی ارسال نکرده‌اید."
+
+msgid ""
+"You have not submitted any sports records yet. Use the buttons above to get "
+"started."
+msgstr ""
+"هنوز هیچ سابقه ورزشی ارسال نکرده‌اید. برای شروع از دکمه‌های بالا استفاده "
+"کنید."
+
+msgid "You may only access your own private records and submissions."
+msgstr "شما تنها به سوابق و ثبت‌های خصوصی خود دسترسی دارید."
+
+msgid "You requested a password reset for your TECHWANDO Club account."
+msgstr "شما بازنشانی گذرواژه حساب باشگاه TECHWANDO خود را درخواست کرده‌اید."
+
+msgid "Your belt and competition record lives in the portal."
+msgstr "سابقه کمربند و مسابقات شما در پرتال نگهداری می‌شود."
+
+msgid ""
+"Your birth date, phone number, email address and uploaded certificates are "
+"always private and are never displayed on public pages."
+msgstr ""
+"تاریخ تولد، شماره تلفن، نشانی ایمیل و گواهینامه‌های بارگذاری‌شده شما همیشه "
+"خصوصی است و هرگز در صفحات عمومی نمایش داده نمی‌شود."
+
+msgid "Your member data and uploaded documents remain private."
+msgstr "داده‌های عضویت و مدارک بارگذاری‌شده شما خصوصی می‌ماند."
+
+msgid "Your new password is active. You may now sign in."
+msgstr "گذرواژه جدید شما فعال است. اکنون می‌توانید وارد شوید."
+
+msgid "Your recent submissions"
+msgstr "ثبت‌های اخیر شما"
+
+msgid "Your rights"
+msgstr "حقوق شما"
+
+msgid "Youth, adult and elite squads"
+msgstr "گروه‌های نوجوانان، بزرگسالان و نخبه"
+
+msgid "bronze"
+msgstr "برنز"
+
+msgid "gold"
+msgstr "طلا"
+
+msgid "silver"
+msgstr "نقره"
+
+msgid "%(count)d membership application(s) approved."
+msgstr "%(count)d درخواست عضویت تأیید شد."
+
+msgid "%(count)d membership application(s) rejected."
+msgstr "%(count)d درخواست عضویت رد شد."
+
+msgid "%(count)d message(s) marked read."
+msgstr "%(count)d پیام خوانده‌شده علامت‌گذاری شد."
+
+msgid "%(count)d message(s) marked unread."
+msgstr "%(count)d پیام خوانده‌نشده علامت‌گذاری شد."
+
+msgid "%(count)d own submission(s) skipped (self-approval forbidden)."
+msgstr "%(count)d ثبت شخصی نادیده گرفته شد (تأیید ثبت خود ممنوع است)."
+
+msgid "%(count)d submission(s) updated."
+msgstr "%(count)d ثبت به‌روزرسانی شد."
+
+msgid "A user with this email address already exists."
+msgstr "کاربری با این نشانی ایمیل از قبل وجود دارد."
+
+msgid "A user with this email already exists."
+msgstr "کاربری با این ایمیل از قبل وجود دارد."
+
+msgid "About Page"
+msgstr "صفحه درباره ما"
+
+msgid "Account active status updated."
+msgstr "وضعیت فعال حساب به‌روزرسانی شد."
+
+msgid "Account settings updated."
+msgstr "تنظیمات حساب به‌روزرسانی شد."
+
+msgid "Accounts & Roles"
+msgstr "حساب‌ها و نقش‌ها"
+
+msgid "Achievement"
+msgstr "افتخار ورزشی"
+
+msgid "Achievement date"
+msgstr "تاریخ افتخار"
+
+msgid "Achievement date cannot be in the future."
+msgstr "تاریخ افتخار نمی‌تواند در آینده باشد."
+
+msgid "Achievement deleted."
+msgstr "افتخار ورزشی حذف شد."
+
+msgid "Achievement title"
+msgstr "عنوان افتخار ورزشی"
+
+msgid "Achievement title (Japanese)"
+msgstr "عنوان افتخار (ژاپنی)"
+
+msgid "Achievement updated and resubmitted for review."
+msgstr "افتخار ورزشی به‌روزرسانی و برای بررسی دوباره ارسال شد."
+
+msgid "Active status"
+msgstr "وضعیت فعال بودن"
+
+msgid "Activity date"
+msgstr "تاریخ فعالیت"
+
+msgid "Activity date cannot be in the future."
+msgstr "تاریخ فعالیت نمی‌تواند در آینده باشد."
+
+msgid "Activity photograph"
+msgstr "عکس فعالیت"
+
+msgid "Activity title"
+msgstr "عنوان فعالیت"
+
+msgid "Activity title (Japanese)"
+msgstr "عنوان فعالیت (ژاپنی)"
+
+msgid "Actor / Reviewer"
+msgstr "اقدام‌کننده / بررسی‌کننده"
+
+msgid "Actor email snapshot"
+msgstr "نسخه ثبت‌شده ایمیل اقدام‌کننده"
+
+msgid "Additional notes"
+msgstr "یادداشت‌های تکمیلی"
+
+msgid "Administrator feedback"
+msgstr "بازخورد مدیر"
+
+msgid "Administrator feedback / note"
+msgstr "بازخورد / یادداشت مدیر"
+
+msgid "Administrator note"
+msgstr "یادداشت مدیر"
+
+msgid "All notifications marked as read."
+msgstr "همه اعلان‌ها خوانده‌شده علامت‌گذاری شدند."
+
+msgid ""
+"Allow displaying this social activity on my public athlete profile once "
+"approved."
+msgstr ""
+"پس از تأیید، اجازه نمایش این فعالیت اجتماعی در پروفایل عمومی ورزشکار من داده"
+" شود."
+
+msgid "Allowed document formats: PDF, JPG, JPEG, PNG, WebP."
+msgstr "قالب‌های مجاز سند: PDF، JPG، JPEG، PNG، WebP."
+
+msgid "Allowed image formats: JPG, JPEG, PNG, WebP."
+msgstr "قالب‌های مجاز تصویر: JPG، JPEG، PNG، WebP."
+
+msgid "Alt text (Japanese)"
+msgstr "متن جایگزین (ژاپنی)"
+
+msgid "Alt text (Persian)"
+msgstr "متن جایگزین (فارسی)"
+
+msgid "An account with this email already exists."
+msgstr "حسابی با این ایمیل از قبل وجود دارد."
+
+msgid "An email address is required."
+msgstr "نشانی ایمیل الزامی است."
+
+msgid "Approval status"
+msgstr "وضعیت تأیید"
+
+msgid "Approve"
+msgstr "تأیید"
+
+msgid "Approve membership immediately"
+msgstr "تأیید فوری عضویت"
+
+msgid "Approve selected membership applications"
+msgstr "تأیید درخواست‌های عضویت انتخاب‌شده"
+
+msgid "Approve selected submissions"
+msgstr "تأیید ثبت‌های انتخاب‌شده"
+
+msgid "Approved Member"
+msgstr "عضو تأییدشده"
+
+msgid ""
+"Approved belt rank promotions and Dan black belt recipients at TECHWANDO."
+msgstr ""
+"ارتقاهای تأییدشده کمربند و دریافت‌کنندگان کمربند مشکی دان در TECHWANDO."
+
+msgid "Article content"
+msgstr "محتوای مقاله"
+
+msgid ""
+"Articles on Taekwondo techniques, sports science, belt preparation, and "
+"TECHWANDO championship updates."
+msgstr ""
+"مقالاتی درباره تکنیک‌های تکواندو، علوم ورزشی، آمادگی آزمون کمربند و اخبار "
+"قهرمانی TECHWANDO."
+
+msgid "Audit log"
+msgstr "گزارش حسابرسی"
+
+msgid "Audit logs"
+msgstr "گزارش‌های حسابرسی"
+
+msgid "Available for club inquiry"
+msgstr "قابل استعلام از باشگاه"
+
+msgid "Award date"
+msgstr "تاریخ دریافت جایزه"
+
+msgid "Award date cannot be in the future."
+msgstr "تاریخ دریافت جایزه نمی‌تواند در آینده باشد."
+
+msgid "Belt Promotion"
+msgstr "ارتقای کمربند"
+
+msgid "Belt badge color"
+msgstr "رنگ نشان کمربند"
+
+msgid "Belt histories"
+msgstr "تاریخچه کمربندها"
+
+msgid "Belt history"
+msgstr "تاریخچه کمربند"
+
+msgid "Belt promotion submission removed."
+msgstr "درخواست ارتقای کمربند حذف شد."
+
+msgid "Belt promotion updated and resubmitted for administrator review."
+msgstr "ارتقای کمربند به‌روزرسانی و برای بررسی مدیر دوباره ارسال شد."
+
+msgid "Belt rank created."
+msgstr "درجه کمربند ایجاد شد."
+
+msgid "Belt rank name (Japanese)"
+msgstr "نام درجه کمربند (ژاپنی)"
+
+msgid "Belt rank name (Persian)"
+msgstr "نام درجه کمربند (فارسی)"
+
+msgid "Belt rank updated."
+msgstr "درجه کمربند به‌روزرسانی شد."
+
+msgid "Belt type"
+msgstr "نوع کمربند"
+
+msgid "Belt types"
+msgstr "انواع کمربند"
+
+msgid "Belts & Rankings"
+msgstr "کمربندها و رتبه‌بندی"
+
+msgid "Biography (Japanese)"
+msgstr "زندگی‌نامه (ژاپنی)"
+
+msgid "Biography (Persian)"
+msgstr "زندگی‌نامه (فارسی)"
+
+msgid "Birth date"
+msgstr "تاریخ تولد"
+
+msgid "Birth date cannot be in the future."
+msgstr "تاریخ تولد نمی‌تواند در آینده باشد."
+
+msgid "Black belt (Dan) level"
+msgstr "سطح کمربند مشکی (دان)"
+
+msgid "Blog & Articles"
+msgstr "وبلاگ و مقالات"
+
+msgid "Blog Index"
+msgstr "فهرست وبلاگ"
+
+msgid "Blog article created successfully."
+msgstr "مقاله با موفقیت ایجاد شد."
+
+msgid "Blog article updated successfully."
+msgstr "مقاله با موفقیت به‌روزرسانی شد."
+
+msgid "Blog categories"
+msgstr "دسته‌بندی‌های وبلاگ"
+
+msgid "Blog category"
+msgstr "دسته‌بندی وبلاگ"
+
+msgid "Blog category created."
+msgstr "دسته‌بندی وبلاگ ایجاد شد."
+
+msgid "Blog category updated."
+msgstr "دسته‌بندی وبلاگ به‌روزرسانی شد."
+
+msgid "Blog post"
+msgstr "پست وبلاگ"
+
+msgid "Blog posts"
+msgstr "پست‌های وبلاگ"
+
+msgid "Body (Japanese)"
+msgstr "متن (ژاپنی)"
+
+msgid "Body (Persian)"
+msgstr "متن (فارسی)"
+
+msgid "Canonical URL"
+msgstr "نشانی Canonical"
+
+msgid "Canonical URL Override (Japanese)"
+msgstr "بازنویسی نشانی Canonical (ژاپنی)"
+
+msgid "Canonical URL Override (Persian)"
+msgstr "بازنویسی نشانی Canonical (فارسی)"
+
+msgid "Canonical URL override"
+msgstr "بازنویسی نشانی Canonical"
+
+msgid "Category name"
+msgstr "نام دسته‌بندی"
+
+msgid "Category translation"
+msgstr "ترجمه دسته‌بندی"
+
+msgid "Category translations"
+msgstr "ترجمه‌های دسته‌بندی"
+
+msgid "Champion Profile"
+msgstr "پروفایل قهرمان"
+
+msgid "Championship & Competition Results"
+msgstr "نتایج قهرمانی و مسابقات"
+
+msgid "Club Members"
+msgstr "اعضای باشگاه"
+
+msgid "Club, Athlete & Multilingual Content Management"
+msgstr "مدیریت باشگاه، ورزشکاران و محتوای چندزبانه"
+
+msgid "Competition Record"
+msgstr "سابقه مسابقه"
+
+msgid "Competition created."
+msgstr "مسابقه ایجاد شد."
+
+msgid "Competition location"
+msgstr "محل مسابقه"
+
+msgid "Competition location (Japanese)"
+msgstr "محل مسابقه (ژاپنی)"
+
+msgid "Competition name"
+msgstr "نام مسابقه"
+
+msgid "Competition name (Japanese)"
+msgstr "نام مسابقه (ژاپنی)"
+
+msgid "Competition participation"
+msgstr "حضور در مسابقه"
+
+msgid "Competition participation deleted."
+msgstr "سابقه حضور در مسابقه حذف شد."
+
+msgid "Competition participation submitted and awaiting review."
+msgstr "حضور در مسابقه ثبت و در انتظار بررسی است."
+
+msgid "Competition participations"
+msgstr "حضور در مسابقات"
+
+msgid "Competition record updated and resubmitted."
+msgstr "سابقه مسابقه به‌روزرسانی و دوباره ارسال شد."
+
+msgid ""
+"Competition title (auto-filled when selecting a registered competition)."
+msgstr "عنوان مسابقه (با انتخاب مسابقه ثبت‌شده به‌طور خودکار پر می‌شود)."
+
+msgid "Competition updated."
+msgstr "مسابقه به‌روزرسانی شد."
+
+msgid "Confirm password"
+msgstr "تکرار گذرواژه"
+
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+msgid "Contact message"
+msgstr "پیام تماس"
+
+msgid "Contact message updated."
+msgstr "پیام تماس به‌روزرسانی شد."
+
+msgid "Contact messages"
+msgstr "پیام‌های تماس"
+
+msgid "Content (Japanese)"
+msgstr "محتوا (ژاپنی)"
+
+msgid "Content (Persian)"
+msgstr "محتوا (فارسی)"
+
+msgid "Content Administrator"
+msgstr "مدیر محتوا"
+
+msgid "Correction Requested"
+msgstr "اصلاح درخواست شد"
+
+msgid "Correction details"
+msgstr "جزئیات اصلاح"
+
+msgid ""
+"Correction request recorded. You can now edit and resubmit the achievement."
+msgstr ""
+"درخواست اصلاح ثبت شد. اکنون می‌توانید افتخار را ویرایش و دوباره ارسال کنید."
+
+msgid ""
+"Correction request recorded. You can now edit and resubmit the activity."
+msgstr ""
+"درخواست اصلاح ثبت شد. اکنون می‌توانید فعالیت را ویرایش و دوباره ارسال کنید."
+
+msgid "Correction request recorded. You can now edit and resubmit the medal."
+msgstr ""
+"درخواست اصلاح ثبت شد. اکنون می‌توانید مدال را ویرایش و دوباره ارسال کنید."
+
+msgid "Correction request recorded. You can now edit and resubmit the record."
+msgstr ""
+"درخواست اصلاح ثبت شد. اکنون می‌توانید سابقه را ویرایش و دوباره ارسال کنید."
+
+msgid "Created at"
+msgstr "تاریخ ایجاد"
+
+msgid "Currency"
+msgstr "واحد پول"
+
+msgid "Date joined"
+msgstr "تاریخ عضویت"
+
+msgid "Decision"
+msgstr "تصمیم"
+
+msgid "Decision note"
+msgstr "یادداشت تصمیم"
+
+msgid "Description (Japanese)"
+msgstr "توضیحات (ژاپنی)"
+
+msgid "Description (Persian)"
+msgstr "توضیحات (فارسی)"
+
+msgid "Designates whether the user can access administration tools."
+msgstr "مشخص می‌کند آیا کاربر می‌تواند به ابزارهای مدیریت دسترسی داشته باشد."
+
+msgid "Designates whether this account can log in."
+msgstr "مشخص می‌کند آیا این حساب می‌تواند وارد شود."
+
+msgid "Detailed description"
+msgstr "توضیحات کامل"
+
+msgid "Display order"
+msgstr "ترتیب نمایش"
+
+msgid "Division / Weight category"
+msgstr "دسته / رده وزنی"
+
+msgid "Educational Module"
+msgstr "ماژول آموزشی"
+
+msgid "Email address"
+msgstr "نشانی ایمیل"
+
+msgid "Email, action, model, IP..."
+msgstr "ایمیل، اقدام، مدل، IP..."
+
+msgid "End date"
+msgstr "تاریخ پایان"
+
+msgid "End date cannot be earlier than start date."
+msgstr "تاریخ پایان نمی‌تواند پیش از تاریخ شروع باشد."
+
+msgid "Enter a valid birth date."
+msgstr "تاریخ تولد معتبر وارد کنید."
+
+msgid "Enter a valid phone number (digits, spaces, +, -, parentheses)."
+msgstr "شماره تلفن معتبر وارد کنید (ارقام، فاصله، +، -، پرانتز)."
+
+msgid "Enter the competition location."
+msgstr "محل مسابقه را وارد کنید."
+
+msgid "Enter the competition name or select a registered competition."
+msgstr "نام مسابقه را وارد کنید یا یک مسابقه ثبت‌شده انتخاب کنید."
+
+msgid "Event type"
+msgstr "نوع رویداد"
+
+msgid "Evidence"
+msgstr "مدرک"
+
+msgid "Example: 10-GEUP, 5-GEUP, 1-DAN, 3-DAN"
+msgstr "مثال: ۱۰-گیوپ، ۵-گیوپ، ۱-دان، ۳-دان"
+
+msgid "Example: 1st Place, Silver Medalist, Quarterfinalist"
+msgstr "مثال: مقام اول، مدال نقره، یک‌چهارم نهایی"
+
+msgid "Excerpt (Japanese)"
+msgstr "خلاصه (ژاپنی)"
+
+msgid "Excerpt (Persian)"
+msgstr "خلاصه (فارسی)"
+
+msgid "Excerpt / summary"
+msgstr "خلاصه / چکیده"
+
+msgid "Explain what needs to be updated or corrected..."
+msgstr "توضیح دهید چه چیزی باید به‌روزرسانی یا اصلاح شود..."
+
+msgid "Featured article"
+msgstr "مقاله ویژه"
+
+msgid "Featured image"
+msgstr "تصویر شاخص"
+
+msgid "Featured image alt text"
+msgstr "متن جایگزین تصویر شاخص"
+
+msgid "Featured product"
+msgstr "محصول ویژه"
+
+msgid "File header does not match a valid image format."
+msgstr "سرآیند فایل با قالب تصویر معتبر مطابقت ندارد."
+
+msgid "File size cannot exceed %(max_mb)s MB."
+msgstr "حجم فایل نمی‌تواند از %(max_mb)s مگابایت بیشتر باشد."
+
+msgid "First name"
+msgstr "نام"
+
+msgid "First name (Japanese)"
+msgstr "نام (ژاپنی)"
+
+msgid "Full name"
+msgstr "نام کامل"
+
+msgid "General Static Page"
+msgstr "صفحه ثابت عمومی"
+
+msgid "Higher numbers indicate higher ranks (e.g., White=1 ... 9th Dan=19)."
+msgstr ""
+"اعداد بالاتر نشان‌دهنده رتبه‌های بالاتر است (مثلاً سفید=۱ ... دان ۹=۱۹)."
+
+msgid "Homepage"
+msgstr "صفحه اصلی"
+
+msgid ""
+"How TECHWANDO collects, stores and protects member data, certificates and "
+"public athlete profile information."
+msgstr ""
+"شیوه جمع‌آوری، نگهداری و حفاظت TECHWANDO از داده‌های اعضا، گواهینامه‌ها و "
+"اطلاعات پروفایل عمومی ورزشکاران."
+
+msgid "I agree to the club code of conduct and privacy policy."
+msgstr "با آیین‌نامه رفتاری باشگاه و سیاست حریم خصوصی موافقم."
+
+msgid ""
+"I consent to displaying my approved sports records and name on the public "
+"website."
+msgstr "با نمایش سوابق ورزشی تأییدشده و نام خود در وب‌سایت عمومی موافقم."
+
+msgid "IP address"
+msgstr "نشانی IP"
+
+msgid "Image Alt (Japanese)"
+msgstr "متن جایگزین تصویر (ژاپنی)"
+
+msgid "Image Alt (Persian)"
+msgstr "متن جایگزین تصویر (فارسی)"
+
+msgid "Image alt text"
+msgstr "متن جایگزین تصویر"
+
+msgid "Image dimensions exceed the maximum allowed size."
+msgstr "ابعاد تصویر از حداکثر اندازه مجاز بیشتر است."
+
+msgid "Initial password"
+msgstr "گذرواژه اولیه"
+
+msgid "Internal staff note"
+msgstr "یادداشت داخلی کارکنان"
+
+msgid "Invalid WebP image file."
+msgstr "فایل تصویر WebP نامعتبر است."
+
+msgid "Invalid approval status."
+msgstr "وضعیت تأیید نامعتبر است."
+
+msgid "Invalid email address or password."
+msgstr "نشانی ایمیل یا گذرواژه نامعتبر است."
+
+msgid "Invalid membership status."
+msgstr "وضعیت عضویت نامعتبر است."
+
+msgid "Invalid role selected."
+msgstr "نقش انتخاب‌شده نامعتبر است."
+
+msgid "Joining date"
+msgstr "تاریخ عضویت"
+
+msgid "Last name"
+msgstr "نام خانوادگی"
+
+msgid "Last name (Japanese)"
+msgstr "نام خانوادگی (ژاپنی)"
+
+msgid ""
+"Learn about TECHWANDO's martial arts philosophy, certified coaching "
+"programs, athlete verification workflow, and Persian-Japanese cultural "
+"bridge."
+msgstr ""
+"با فلسفه هنرهای رزمی TECHWANDO، برنامه‌های مربیگری دارای گواهینامه، فرایند "
+"تأیید ورزشکاران و پل فرهنگی فارسی-ژاپنی آشنا شوید."
+
+msgid "Linked content model"
+msgstr "مدل محتوای مرتبط"
+
+msgid "Linked object ID"
+msgstr "شناسه شیء مرتبط"
+
+msgid "Location (Japanese)"
+msgstr "مکان (ژاپنی)"
+
+msgid "Location (Persian)"
+msgstr "مکان (فارسی)"
+
+msgid "Mark as read"
+msgstr "علامت‌گذاری به‌عنوان خوانده‌شده"
+
+msgid "Mark selected messages as read"
+msgstr "علامت‌گذاری پیام‌های انتخاب‌شده به‌عنوان خوانده‌شده"
+
+msgid "Mark selected messages as unread"
+msgstr "علامت‌گذاری پیام‌های انتخاب‌شده به‌عنوان خوانده‌نشده"
+
+msgid "Martial Arts Academy, Champions & Club Platform"
+msgstr "آکادمی هنرهای رزمی، قهرمانان و سامانه باشگاه"
+
+msgid "Martial Arts Blog & Technical Articles"
+msgstr "وبلاگ هنرهای رزمی و مقالات فنی"
+
+msgid "Martial Arts Equipment & Uniform Catalog"
+msgstr "کاتالوگ تجهیزات و لباس هنرهای رزمی"
+
+msgid "Martial arts discipline"
+msgstr "رشته هنرهای رزمی"
+
+msgid "Medal submission deleted."
+msgstr "ثبت مدال حذف شد."
+
+msgid "Medal submission updated and resubmitted for review."
+msgstr "ثبت مدال به‌روزرسانی و برای بررسی دوباره ارسال شد."
+
+msgid "Member"
+msgstr "عضو"
+
+msgid "Member account created successfully."
+msgstr "حساب عضو با موفقیت ایجاد شد."
+
+msgid "Member correction request"
+msgstr "درخواست اصلاح عضو"
+
+msgid "Member profile"
+msgstr "پروفایل عضو"
+
+msgid "Member profile updated."
+msgstr "پروفایل عضو به‌روزرسانی شد."
+
+msgid "Member profiles"
+msgstr "پروفایل‌های اعضا"
+
+msgid "Membership Status Update"
+msgstr "به‌روزرسانی وضعیت عضویت"
+
+msgid "Membership decision"
+msgstr "تصمیم عضویت"
+
+msgid "Membership number"
+msgstr "شماره عضویت"
+
+msgid "Membership reviewer"
+msgstr "بررسی‌کننده عضویت"
+
+msgid "Membership status updated."
+msgstr "وضعیت عضویت به‌روزرسانی شد."
+
+msgid "Message"
+msgstr "پیام"
+
+msgid "Message (Japanese)"
+msgstr "پیام (ژاپنی)"
+
+msgid "Message (Persian / default)"
+msgstr "پیام (فارسی / پیش‌فرض)"
+
+msgid "Meta Description (Japanese)"
+msgstr "توضیحات متا (ژاپنی)"
+
+msgid "Meta Description (Persian)"
+msgstr "توضیحات متا (فارسی)"
+
+msgid "Moderation decision saved and the member has been notified."
+msgstr "تصمیم بررسی ذخیره و به عضو اطلاع داده شد."
+
+msgid "Moderator"
+msgstr "ناظر"
+
+msgid "Name (A-Z)"
+msgstr "نام (الف-ی)"
+
+msgid "Name (Japanese)"
+msgstr "نام (ژاپنی)"
+
+msgid "Name (Persian)"
+msgstr "نام (فارسی)"
+
+msgid "New Contact Message"
+msgstr "پیام تماس جدید"
+
+msgid "New state"
+msgstr "وضعیت جدید"
+
+msgid "New status"
+msgstr "وضعیت جدید"
+
+msgid "Notification"
+msgstr "اعلان"
+
+msgid "Notification type"
+msgstr "نوع اعلان"
+
+msgid "Numeric placement"
+msgstr "رتبه عددی"
+
+msgid "Official Belt Promotions & Black Belt Registry"
+msgstr "ارتقاهای رسمی کمربند و ثبت کمربند مشکی"
+
+msgid ""
+"Official TECHWANDO uniforms (Dobok & Dogi), certified protective gear, "
+"belts, and training equipment."
+msgstr ""
+"لباس‌های رسمی TECHWANDO (دوبوک و دوگی)، تجهیزات محافظ تأییدشده، کمربندها و "
+"ابزار تمرین."
+
+msgid "Official belt certificate"
+msgstr "گواهینامه رسمی کمربند"
+
+msgid ""
+"Official directory of approved TECHWANDO martial arts athletes, medal "
+"winners, black belt holders, and championship records."
+msgstr ""
+"فهرست رسمی ورزشکاران تأییدشده TECHWANDO، مدال‌آوران، دارندگان کمربند مشکی و "
+"سوابق قهرمانی."
+
+msgid ""
+"Official verified Gold, Silver, and Bronze medal winners of TECHWANDO Club."
+msgstr "مدال‌آوران رسمی و تأییدشده طلا، نقره و برنز باشگاه TECHWANDO."
+
+msgid "One specification per line."
+msgstr "هر مشخصه در یک خط."
+
+msgid "Only Super Administrators can activate or deactivate staff accounts."
+msgstr "تنها مدیران ارشد می‌توانند حساب‌های کارکنان را فعال یا غیرفعال کنند."
+
+msgid "Only Super Administrators can modify user roles."
+msgstr "تنها مدیران ارشد می‌توانند نقش کاربران را تغییر دهند."
+
+msgid "Only a Super Administrator can assign administrative roles."
+msgstr "تنها یک مدیر ارشد می‌تواند نقش‌های مدیریتی اختصاص دهد."
+
+msgid "Open Graph Description (Japanese)"
+msgstr "توضیحات Open Graph (ژاپنی)"
+
+msgid "Open Graph Description (Persian)"
+msgstr "توضیحات Open Graph (فارسی)"
+
+msgid "Open Graph Title (Japanese)"
+msgstr "عنوان Open Graph (ژاپنی)"
+
+msgid "Open Graph Title (Persian)"
+msgstr "عنوان Open Graph (فارسی)"
+
+msgid "Open Graph description"
+msgstr "توضیحات Open Graph"
+
+msgid "Open Graph image"
+msgstr "تصویر Open Graph"
+
+msgid "Open Graph image alt text"
+msgstr "متن جایگزین تصویر Open Graph"
+
+msgid "Open Graph title"
+msgstr "عنوان Open Graph"
+
+msgid "Organizer (Japanese)"
+msgstr "برگزارکننده (ژاپنی)"
+
+msgid "Organizer (Persian)"
+msgstr "برگزارکننده (فارسی)"
+
+msgid "Other / Special Award"
+msgstr "سایر / جایزه ویژه"
+
+msgid "Other Martial Art"
+msgstr "سایر هنرهای رزمی"
+
+msgid "PDF files containing embedded scripts or actions are not permitted."
+msgstr "فایل‌های PDF حاوی اسکریپت یا اکشن جاسازی‌شده مجاز نیستند."
+
+msgid "Page category"
+msgstr "دسته‌بندی صفحه"
+
+msgid "Page content"
+msgstr "محتوای صفحه"
+
+msgid "Page created successfully."
+msgstr "صفحه با موفقیت ایجاد شد."
+
+msgid "Page translation"
+msgstr "ترجمه صفحه"
+
+msgid "Page translations"
+msgstr "ترجمه‌های صفحه"
+
+msgid "Page updated successfully."
+msgstr "صفحه با موفقیت به‌روزرسانی شد."
+
+msgid "Pages"
+msgstr "صفحات"
+
+msgid "Participants"
+msgstr "شرکت‌کنندگان"
+
+msgid "Participation / result certificate"
+msgstr "گواهینامه حضور / نتیجه"
+
+msgid "Password"
+msgstr "گذرواژه"
+
+msgid "Personal Info"
+msgstr "اطلاعات شخصی"
+
+msgid "Phone number"
+msgstr "شماره تلفن"
+
+msgid "Phone number (optional)"
+msgstr "شماره تلفن (اختیاری)"
+
+msgid "Photograph"
+msgstr "عکس"
+
+msgid "Please correct the highlighted profile fields."
+msgstr "لطفاً فیلدهای مشخص‌شده پروفایل را اصلاح کنید."
+
+msgid "Please describe the correction needed."
+msgstr "لطفاً اصلاح لازم را توضیح دهید."
+
+msgid "Please provide a reason when rejecting or requesting revision."
+msgstr "هنگام رد یا درخواست اصلاح، دلیل را ذکر کنید."
+
+msgid "Please write a message of at least 10 characters."
+msgstr "لطفاً پیامی با حداقل ۱۰ نویسه بنویسید."
+
+msgid "Policy / Legal Page"
+msgstr "صفحه سیاست / حقوقی"
+
+msgid "Post"
+msgstr "مطلب"
+
+msgid "Post translation"
+msgstr "ترجمه مطلب"
+
+msgid "Post translations"
+msgstr "ترجمه‌های مطلب"
+
+msgid "Preferred language"
+msgstr "زبان ترجیحی"
+
+msgid "Previous state"
+msgstr "وضعیت قبلی"
+
+msgid "Previous status"
+msgstr "وضعیت قبلی"
+
+msgid "Price (optional)"
+msgstr "قیمت (اختیاری)"
+
+msgid "Primary discipline"
+msgstr "رشته اصلی"
+
+msgid "Primary image"
+msgstr "تصویر اصلی"
+
+msgid "Primary martial arts discipline"
+msgstr "رشته اصلی هنرهای رزمی"
+
+msgid "Product"
+msgstr "محصول"
+
+msgid "Product Name (Japanese)"
+msgstr "نام محصول (ژاپنی)"
+
+msgid "Product Name (Persian)"
+msgstr "نام محصول (فارسی)"
+
+msgid "Product categories"
+msgstr "دسته‌بندی‌های محصولات"
+
+msgid "Product category"
+msgstr "دسته‌بندی محصول"
+
+msgid "Product category created."
+msgstr "دسته‌بندی محصول ایجاد شد."
+
+msgid "Product category translation"
+msgstr "ترجمه دسته‌بندی محصول"
+
+msgid "Product category translations"
+msgstr "ترجمه‌های دسته‌بندی محصول"
+
+msgid "Product category updated."
+msgstr "دسته‌بندی محصول به‌روزرسانی شد."
+
+msgid "Product created successfully."
+msgstr "محصول با موفقیت ایجاد شد."
+
+msgid "Product image"
+msgstr "تصویر محصول"
+
+msgid "Product images"
+msgstr "تصاویر محصول"
+
+msgid "Product name"
+msgstr "نام محصول"
+
+msgid "Product translation"
+msgstr "ترجمه محصول"
+
+msgid "Product translations"
+msgstr "ترجمه‌های محصول"
+
+msgid "Product updated successfully."
+msgstr "محصول با موفقیت به‌روزرسانی شد."
+
+msgid "Products & Equipment"
+msgstr "محصولات و تجهیزات"
+
+msgid "Profile photo"
+msgstr "عکس پروفایل"
+
+msgid ""
+"Provide a complete title and body in at least one language (Persian or "
+"Japanese)."
+msgstr "عنوان و متن کامل را حداقل در یک زبان (فارسی یا ژاپنی) ارائه دهید."
+
+msgid "Provide a page title and body in at least one language."
+msgstr "عنوان و متن صفحه را حداقل در یک زبان ارائه دهید."
+
+msgid "Provide clear feedback for the athlete..."
+msgstr "بازخورد روشن برای ورزشکار بنویسید..."
+
+msgid "Provide product name and description in at least one language."
+msgstr "نام و توضیحات محصول را حداقل در یک زبان ارائه دهید."
+
+msgid "Public profile consent"
+msgstr "رضایت پروفایل عمومی"
+
+msgid "Public profile slug"
+msgstr "نامک پروفایل عمومی"
+
+msgid "Public profile visibility"
+msgstr "نمایش پروفایل عمومی"
+
+msgid "Public visibility consent"
+msgstr "رضایت نمایش عمومی"
+
+msgid "Publication date"
+msgstr "تاریخ انتشار"
+
+msgid "Publication status"
+msgstr "وضعیت انتشار"
+
+msgid "REST API"
+msgstr "REST API"
+
+msgid "Rank code"
+msgstr "کد رتبه"
+
+msgid "Rank progression order"
+msgstr "ترتیب ارتقای رتبه"
+
+msgid ""
+"Reach out to TECHWANDO martial arts academy regarding classes, membership, "
+"competitions, and training equipment."
+msgstr ""
+"برای کلاس‌ها، عضویت، مسابقات و تجهیزات تمرین با آکادمی هنرهای رزمی TECHWANDO"
+" تماس بگیرید."
+
+msgid "Read at"
+msgstr "زمان خواندن"
+
+msgid "Read status"
+msgstr "وضعیت خواندن"
+
+msgid "Recipient"
+msgstr "گیرنده"
+
+msgid "Recommended discipline"
+msgstr "رشته پیشنهادی"
+
+msgid "Recorded at"
+msgstr "زمان ثبت"
+
+msgid "Registered competition"
+msgstr "مسابقه ثبت‌شده"
+
+msgid "Reject"
+msgstr "رد"
+
+msgid "Reject selected membership applications"
+msgstr "رد درخواست‌های عضویت انتخاب‌شده"
+
+msgid "Reject selected submissions"
+msgstr "رد ثبت‌های انتخاب‌شده"
+
+msgid "Request Revision"
+msgstr "درخواست اصلاح"
+
+msgid "Request revision on selected submissions"
+msgstr "درخواست اصلاح برای ثبت‌های انتخاب‌شده"
+
+msgid "Resubmitted"
+msgstr "دوباره ارسال‌شده"
+
+msgid "Result / Standing"
+msgstr "نتیجه / رتبه"
+
+msgid "Result / Standing (Japanese)"
+msgstr "نتیجه / رتبه (ژاپنی)"
+
+msgid "Results summary (Japanese)"
+msgstr "خلاصه نتایج (ژاپنی)"
+
+msgid "Results summary (Persian)"
+msgstr "خلاصه نتایج (فارسی)"
+
+msgid "Review date"
+msgstr "تاریخ بررسی"
+
+msgid "Review log"
+msgstr "گزارش بررسی"
+
+msgid "Review logs"
+msgstr "گزارش‌های بررسی"
+
+msgid "Reviewed"
+msgstr "بررسی‌شده"
+
+msgid "Reviewed by"
+msgstr "بررسی‌شده توسط"
+
+msgid "Revision Requested"
+msgstr "اصلاح درخواست شد"
+
+msgid "Robots follow"
+msgstr "دنبال‌کردن ربات‌ها"
+
+msgid "Robots index"
+msgstr "نمایه‌سازی ربات‌ها"
+
+msgid "Role & Access Control"
+msgstr "نقش و کنترل دسترسی"
+
+msgid "SEO & Metadata"
+msgstr "سئو و فراداده"
+
+msgid "SEO Description (Japanese)"
+msgstr "توضیحات سئو (ژاپنی)"
+
+msgid "SEO Description (Persian)"
+msgstr "توضیحات سئو (فارسی)"
+
+msgid "SEO Title (Japanese)"
+msgstr "عنوان سئو (ژاپنی)"
+
+msgid "SEO Title (Persian)"
+msgstr "عنوان سئو (فارسی)"
+
+msgid "SEO description"
+msgstr "توضیحات سئو"
+
+msgid "SEO entry"
+msgstr "ورودی سئو"
+
+msgid "SEO follow"
+msgstr "دنبال‌کردن سئو"
+
+msgid "SEO index"
+msgstr "نمایه سئو"
+
+msgid "SEO meta description"
+msgstr "توضیحات متای سئو"
+
+msgid "SEO metadata"
+msgstr "فراداده سئو"
+
+msgid "SEO metadata saved."
+msgstr "فراداده سئو ذخیره شد."
+
+msgid "SEO metadata updated."
+msgstr "فراداده سئو به‌روزرسانی شد."
+
+msgid "SEO title"
+msgstr "عنوان سئو"
+
+msgid "SEO translation"
+msgstr "ترجمه سئو"
+
+msgid "SEO translations"
+msgstr "ترجمه‌های سئو"
+
+msgid "Search athlete name..."
+msgstr "جستجوی نام ورزشکار..."
+
+msgid "Selected belt rank must match the chosen discipline."
+msgstr "درجه کمربند انتخاب‌شده باید با رشته انتخابی مطابقت داشته باشد."
+
+msgid "Set a future date/time with Scheduled status to auto-publish."
+msgstr ""
+"برای انتشار خودکار، تاریخ/زمان آینده را با وضعیت زمان‌بندی‌شده تنظیم کنید."
+
+msgid "Short Description (Japanese)"
+msgstr "توضیح کوتاه (ژاپنی)"
+
+msgid "Short Description (Persian)"
+msgstr "توضیح کوتاه (فارسی)"
+
+msgid "Short description"
+msgstr "توضیح کوتاه"
+
+msgid "Show link in footer"
+msgstr "نمایش پیوند در فوتر"
+
+msgid "Show my athlete profile in the public Champions directory."
+msgstr "نمایش پروفایل ورزشکار من در فهرست عمومی قهرمانان."
+
+msgid "Social Activities"
+msgstr "فعالیت‌های اجتماعی"
+
+msgid "Social Activity"
+msgstr "فعالیت اجتماعی"
+
+msgid "Social activities"
+msgstr "فعالیت‌های اجتماعی"
+
+msgid "Social activity"
+msgstr "فعالیت اجتماعی"
+
+msgid "Social activity removed."
+msgstr "فعالیت اجتماعی حذف شد."
+
+msgid "Social activity updated and resubmitted for moderation."
+msgstr "فعالیت اجتماعی به‌روزرسانی و برای بررسی دوباره ارسال شد."
+
+msgid "Spam submission rejected."
+msgstr "ارسال هرزنامه رد شد."
+
+msgid "Specifications (Japanese)"
+msgstr "مشخصات (ژاپنی)"
+
+msgid "Specifications (Persian)"
+msgstr "مشخصات (فارسی)"
+
+msgid "Sports Achievements"
+msgstr "افتخارات ورزشی"
+
+msgid "Staff status"
+msgstr "وضعیت کارمند"
+
+msgid "Start date"
+msgstr "تاریخ شروع"
+
+msgid "Static route key"
+msgstr "کلید مسیر ثابت"
+
+msgid ""
+"Structured educational syllabus covering Poomsae, Kyorugi tactics, etiquette"
+" (Reigi), sports nutrition, and belt examination criteria."
+msgstr ""
+"برنامه آموزشی ساختارمند شامل پومسه، تاکتیک‌های کیوروگی، آداب (ریگی)، تغذیه "
+"ورزشی و معیارهای آزمون کمربند."
+
+msgid "Submission Approved"
+msgstr "ثبت تأییدشده"
+
+msgid "Submission Pending"
+msgstr "ثبت در انتظار بررسی"
+
+msgid "Submission Rejected"
+msgstr "ثبت ردشده"
+
+msgid "Submission date"
+msgstr "تاریخ ثبت"
+
+msgid "Submission summary"
+msgstr "خلاصه ثبت"
+
+msgid "Subtitle"
+msgstr "زیرعنوان"
+
+msgid "Subtitle (Japanese)"
+msgstr "زیرعنوان (ژاپنی)"
+
+msgid "Subtitle (Persian)"
+msgstr "زیرعنوان (فارسی)"
+
+msgid "Summary"
+msgstr "خلاصه"
+
+msgid "Summary (Japanese)"
+msgstr "خلاصه (ژاپنی)"
+
+msgid "Summary (Persian)"
+msgstr "خلاصه (فارسی)"
+
+msgid "Super Administrator"
+msgstr "مدیر ارشد"
+
+msgid "Supporting certificate"
+msgstr "گواهینامه پشتیبان"
+
+msgid "Supporting evidence / certificate"
+msgstr "مدرک / گواهینامه پشتیبان"
+
+msgid "System Notification"
+msgstr "اعلان سامانه"
+
+msgid "TECHWANDO Admin"
+msgstr "مدیریت TECHWANDO"
+
+msgid "TECHWANDO Administration"
+msgstr "مدیریت TECHWANDO"
+
+msgid "Tag name (Japanese)"
+msgstr "نام برچسب (ژاپنی)"
+
+msgid "Tag name (Persian)"
+msgstr "نام برچسب (فارسی)"
+
+msgid "Target ID"
+msgstr "شناسه هدف"
+
+msgid "Target link"
+msgstr "پیوند هدف"
+
+msgid "Target model"
+msgstr "مدل هدف"
+
+msgid "Target summary"
+msgstr "خلاصه هدف"
+
+msgid "Technical specifications"
+msgstr "مشخصات فنی"
+
+msgid ""
+"Terms of use, member code of conduct and acceptable use rules for the "
+"TECHWANDO club platform."
+msgstr ""
+"شرایط استفاده، آیین‌نامه رفتاری اعضا و قواعد استفاده مجاز از سامانه باشگاه "
+"TECHWANDO."
+
+msgid "Thank you! Your message has been sent to the TECHWANDO club team."
+msgstr "سپاسگزاریم! پیام شما به تیم باشگاه TECHWANDO ارسال شد."
+
+msgid "The two password fields did not match."
+msgstr "دو فیلد گذرواژه مطابقت نداشتند."
+
+msgid "The uploaded file is not a valid PDF document."
+msgstr "فایل بارگذاری‌شده یک سند PDF معتبر نیست."
+
+msgid "The uploaded file is not a valid or safe image."
+msgstr "فایل بارگذاری‌شده تصویر معتبر یا ایمن نیست."
+
+msgid ""
+"This account is currently deactivated. Please contact the club "
+"administrator."
+msgstr "این حساب در حال حاضر غیرفعال است. لطفاً با مدیر باشگاه تماس بگیرید."
+
+msgid "This email address is already in use."
+msgstr "این نشانی ایمیل در حال استفاده است."
+
+msgid "Timestamps"
+msgstr "زمان‌ها"
+
+msgid "Title (Japanese)"
+msgstr "عنوان (ژاپنی)"
+
+msgid "Title (Persian)"
+msgstr "عنوان (فارسی)"
+
+msgid ""
+"Too many failed login attempts. Please wait a few minutes and try again."
+msgstr ""
+"تلاش‌های ناموفق ورود بیش از حد زیاد است. لطفاً چند دقیقه صبر کنید و دوباره "
+"تلاش کنید."
+
+msgid ""
+"Too many messages submitted recently. Please try again in a few minutes."
+msgstr ""
+"پیام‌های زیادی اخیراً ارسال شده است. لطفاً چند دقیقه دیگر دوباره تلاش کنید."
+
+msgid "Training Program / Service"
+msgstr "دوره آموزشی / خدمت"
+
+msgid "Training Programs & Services"
+msgstr "دوره‌ها و خدمات آموزشی"
+
+msgid "Unsupported image format. Use JPEG, PNG, or WebP."
+msgstr "قالب تصویر پشتیبانی نمی‌شود. از JPEG، PNG یا WebP استفاده کنید."
+
+msgid "Updated at"
+msgstr "تاریخ به‌روزرسانی"
+
+msgid "Upload Primary Product Image"
+msgstr "بارگذاری تصویر اصلی محصول"
+
+msgid "Uploaded file is empty."
+msgstr "فایل بارگذاری‌شده خالی است."
+
+msgid "User"
+msgstr "کاربر"
+
+msgid "User account"
+msgstr "حساب کاربری"
+
+msgid "User agent"
+msgstr "عامل کاربر"
+
+msgid "User role"
+msgstr "نقش کاربر"
+
+msgid "User role updated."
+msgstr "نقش کاربر به‌روزرسانی شد."
+
+msgid "Users"
+msgstr "کاربران"
+
+msgid "Verified TECHWANDO team results, tournament standings, and medalists."
+msgstr "نتایج تأییدشده تیم TECHWANDO، رتبه‌های مسابقات و مدال‌آوران."
+
+msgid "Verified athlete profile at TECHWANDO Club."
+msgstr "پروفایل تأییدشده ورزشکار در باشگاه TECHWANDO."
+
+msgid "Welcome back, %(name)s."
+msgstr "خوش آمدید، %(name)s."
+
+msgid "Welcome to TECHWANDO! Your member account has been created."
+msgstr "به TECHWANDO خوش آمدید! حساب عضو شما ایجاد شد."
+
+msgid ""
+"You already submitted a participation record for this competition and "
+"division."
+msgstr "شما قبلاً برای این مسابقه و دسته، سابقه حضور ثبت کرده‌اید."
+
+msgid "You are not authorized to review membership applications."
+msgstr "شما مجاز به بررسی درخواست‌های عضویت نیستید."
+
+msgid "You are not authorized to review this submission."
+msgstr "شما مجاز به بررسی این ثبت نیستید."
+
+msgid "You cannot approve your own membership application."
+msgstr "نمی‌توانید درخواست عضویت خود را تأیید کنید."
+
+msgid "You cannot deactivate your own account."
+msgstr "نمی‌توانید حساب خود را غیرفعال کنید."
+
+msgid "You cannot downgrade your own Super Administrator role."
+msgstr "نمی‌توانید نقش مدیر ارشد خود را تنزل دهید."
+
+msgid "You cannot review or approve your own submission."
+msgstr "نمی‌توانید ثبت خود را بررسی یا تأیید کنید."
+
+msgid "You have been signed out safely."
+msgstr "شما با امنیت خارج شدید."
+
+msgid "You may only request corrections for your own records."
+msgstr "تنها می‌توانید برای سوابق خود درخواست اصلاح کنید."
+
+msgid "You must grant public profile consent to make your profile visible."
+msgstr "برای نمایش پروفایل، باید رضایت پروفایل عمومی را اعلام کنید."
+
+msgid "Your belt promotion request has been submitted and is pending review."
+msgstr "درخواست ارتقای کمربند شما ارسال و در انتظار بررسی است."
+
+msgid ""
+"Your medal submission has been recorded and is pending administrator review."
+msgstr "ثبت مدال شما ثبت و در انتظار بررسی مدیر است."
+
+msgid "Your password has been changed successfully."
+msgstr "گذرواژه شما با موفقیت تغییر کرد."
+
+msgid "Your profile has been updated."
+msgstr "پروفایل شما به‌روزرسانی شد."
+
+msgid "Your social activity has been submitted and is pending moderation."
+msgstr "فعالیت اجتماعی شما ارسال و در انتظار بررسی است."
+
+msgid ""
+"Your sports achievement has been submitted and is pending administrator "
+"review."
+msgstr "افتخار ورزشی شما ارسال و در انتظار بررسی مدیر است."
+
+msgid ""
+"Youth fundamentals, competitive sparring squads, black belt Dan preparation,"
+" and international training seminars at TECHWANDO."
+msgstr ""
+"مبانی نوجوانان، تیم‌های مبارزه رقابتی، آماده‌سازی دان کمربند مشکی و "
+"سمینارهای تمرینی بین‌المللی در TECHWANDO."
+
+msgid "TECHWANDO — Password Reset Request"
+msgstr "TECHWANDO — درخواست بازنشانی گذرواژه"
+
+msgid "Hide password"
+msgstr "پنهان‌کردن گذرواژه"
+
+msgid "Scrollable table"
+msgstr "جدول قابل پیمایش"

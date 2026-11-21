@@ -1,0 +1,22 @@
+{% load i18n %}
+{% url 'pages:home' as default_home_url %}
+{# Accessible breadcrumb trail. Optional params: parent_label, parent_url, current_label, home_url #}
+{% if current_label or parent_label %}
+<nav aria-label="{% trans 'Breadcrumb' %}" class="breadcrumb-nav">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{% firstof home_url default_home_url %}">{% trans "Home" %}</a>
+    </li>
+    {% if parent_label %}
+    <li class="breadcrumb-item">
+      {% if parent_url %}
+        <a href="{{ parent_url }}">{{ parent_label }}</a>
+      {% else %}
+        {{ parent_label }}
+      {% endif %}
+    </li>
+    {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ current_label }}</li>
+  </ol>
+</nav>
+{% endif %}

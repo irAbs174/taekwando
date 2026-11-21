@@ -1,33 +1,90 @@
+/* Self-hosted Japanese face (JIS subset) keeps ja pages legible on systems
+   without Hiragino / Yu Gothic installed, without any third-party requests. */
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSansJP-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSansJP-Bold.woff2") format("woff2");
+}
+
 /* ==========================================================================
-   Japanese (ja-JP) LTR Typographic & Rhythm Refinements
+   TECHWANDO — Japanese (ja-JP) LTR typography refinements
+   Loaded only for Japanese pages. Latin layout remains LTR.
    ========================================================================== */
+
+html[lang="ja"],
 html[lang="ja"] body {
-  direction: ltr;
-  text-align: left;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-  line-height: 1.82;
-  letter-spacing: 0.02em;
-  line-break: strict;
-  word-break: normal;
-  overflow-wrap: anywhere;
-  font-feature-settings: "palt" 1;
+  font-family: var(--tw-font-ja);
+  line-height: 1.85;
+  letter-spacing: 0.015em;
 }
 
 html[lang="ja"] h1,
 html[lang="ja"] h2,
 html[lang="ja"] h3,
-html[lang="ja"] h4 {
-  line-height: 1.42;
-  letter-spacing: 0.03em;
-  font-weight: 700;
+html[lang="ja"] h4,
+html[lang="ja"] h5,
+html[lang="ja"] h6 {
+  font-family: var(--tw-font-ja);
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  font-feature-settings: "palt" 1;
 }
 
 html[lang="ja"] .hero h1 {
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  line-height: 1.38;
+  line-height: 1.35;
 }
 
+html[lang="ja"] .lead,
+html[lang="ja"] .prose,
+html[lang="ja"] p {
+  line-height: 1.9;
+}
+
+html[lang="ja"] .eyebrow {
+  letter-spacing: 0.12em;
+}
+
+html[lang="ja"] .card-title,
+html[lang="ja"] .kpi-label,
+html[lang="ja"] .badge {
+  font-family: var(--tw-font-ja);
+}
+
+/* Japanese punctuation and mixed-script spacing */
 html[lang="ja"] .prose p {
-  text-align: justify;
-  text-justify: inter-ideograph;
+  margin-block-end: 1.1rem;
+}
+
+html[lang="ja"] .ltr-inline,
+html[lang="ja"] code,
+html[lang="ja"] .sku {
+  font-family: var(--tw-font-mono);
+  font-size: 0.92em;
+}
+
+/* Numerals stay Latin in Japanese, with tabular alignment in tables */
+html[lang="ja"] .data-table td,
+html[lang="ja"] .data-table th,
+html[lang="ja"] .kpi-value,
+html[lang="ja"] .product-price {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Slightly looser form labels keep CJK glyphs readable */
+html[lang="ja"] .form-label {
+  letter-spacing: 0.02em;
+}
+
+html[lang="ja"] .navbar-brand {
+  letter-spacing: 0.09em;
 }

@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% load i18n techwando_tags %}
 
+{% block title %}{{ page_tr.title }} | {{ SITE_NAME }}{% endblock %}
+
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% include "includes/breadcrumbs.html" with current_label=page_tr.title %}
     <h1>{{ page_tr.title }}</h1>
     {% if page_tr.subtitle %}<p>{{ page_tr.subtitle }}</p>{% endif %}
   </div>
@@ -11,21 +14,50 @@
 
 <section class="section">
   <div class="container">
-    <article class="card" style="max-inline-size:880px;margin-inline:auto;">
-      {% if page.featured_image %}
-      <div class="card-media">
-        <img src="{{ page.featured_image.url }}" alt="{{ page_tr.featured_image_alt|default:page_tr.title }}">
-      </div>
-      {% endif %}
-      <div class="card-body prose" style="padding:2rem;">
-        {% if page_tr.is_fallback %}
-        <div class="alert alert-info">
-          {% trans "Translation fallback active: displaying the available language version." %}
+    <div class="row g-4 g-lg-5">
+      <article class="col-lg-8">
+        <div class="card">
+          {% if page.featured_image %}
+          <div class="card-media" style="aspect-ratio: 16 / 8;">
+            <img src="{{ page.featured_image.url }}" alt="{{ page_tr.featured_image_alt|default:page_tr.title }}" loading="lazy">
+          </div>
+          {% endif %}
+          <div class="card-body">
+            {% if page_tr.is_fallback %}
+            <div class="alert alert-info">
+              <i class="bi bi-translate" aria-hidden="true"></i>
+              <span class="alert-body">{% trans "Translation fallback active: displaying the available language version." %}</span>
+            </div>
+            {% endif %}
+            {% if page_tr.summary %}<p class="lead">{{ page_tr.summary }}</p>{% endif %}
+            <div class="prose">{{ page_tr.body|linebreaks }}</div>
+          </div>
         </div>
-        {% endif %}
-        {{ page_tr.body|linebreaks }}
-      </div>
-    </article>
+      </article>
+      <aside class="col-lg-4">
+        <div class="sticky-aside d-grid gap-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Need more information?" %}</h2>
+              <p class="card-text">{% trans "Our administration desk can help with schedules, membership and programs." %}</p>
+              <a class="btn btn-primary btn-sm align-self-start" href="{% url 'contact:public' %}">{% trans "Contact the club" %}</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Quick links" %}</h2>
+              <ul class="list-clean list-divided">
+                <li><a href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a></li>
+                <li><a href="{% url 'pages:education' %}">{% trans "Education & Curriculum" %}</a></li>
+                <li><a href="{% url 'champions:list' %}">{% trans "Athletes Directory" %}</a></li>
+                <li><a href="{% url 'pages:privacy' %}">{% trans "Privacy Policy" %}</a></li>
+                <li><a href="{% url 'pages:terms' %}">{% trans "Terms of Use" %}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
 </section>
 {% endblock %}

@@ -1,10 +1,10 @@
 {% load i18n %}
 {% if medal_type == "GOLD" %}
-  <span class="badge badge-gold">&#9733; {% trans "Gold" %}</span>
+  <span class="badge badge-gold"><i class="bi bi-award-fill" aria-hidden="true"></i>{% trans "Gold" %}</span>
 {% elif medal_type == "SILVER" %}
-  <span class="badge badge-silver">&#9733; {% trans "Silver" %}</span>
+  <span class="badge badge-silver"><i class="bi bi-award-fill" aria-hidden="true"></i>{% trans "Silver" %}</span>
 {% elif medal_type == "BRONZE" %}
-  <span class="badge badge-bronze">&#9733; {% trans "Bronze" %}</span>
+  <span class="badge badge-bronze"><i class="bi bi-award-fill" aria-hidden="true"></i>{% trans "Bronze" %}</span>
 {% else %}
-  <span class="badge badge-dark">{% trans "Special Award" %}</span>
+  <span class="badge badge-dark"><i class="bi bi-star-fill" aria-hidden="true"></i>{% trans "Special Award" %}</span>
 {% endif %}

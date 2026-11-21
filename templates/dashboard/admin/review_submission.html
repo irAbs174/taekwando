@@ -7,7 +7,7 @@
   <div>
     <span class="badge badge-dark">{{ type_label }}</span>
     {% include "includes/status_badge.html" with status=submission.approval_status %}
-    <h1 style="margin:0.45rem 0 0;font-size:1.45rem;">{{ submission }}</h1>
+    <h1 class="section-title section-title-sm">{{ submission }}</h1>
   </div>
   <a class="btn btn-outline btn-sm" href="{% url 'accounts:admin_moderation_queue' %}">{% trans "Back to Queue" %}</a>
 </div>

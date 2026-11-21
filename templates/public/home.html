@@ -1,20 +1,46 @@
 {% extends "base.html" %}
 {% load i18n static techwando_tags %}
 
+{% block title %}{{ seo_title|default:SITE_NAME }}{% endblock %}
+
 {% block content %}
+{# 1. Hero ----------------------------------------------------------------- #}
 <section class="hero">
   <div class="container">
-    <span class="hero-kicker">&#9733; {% trans "Official Martial Arts Academy & Club Registry" %}</span>
-    <h1>{% trans "Discipline, Education, and Verified Martial Arts Excellence" %}</h1>
-    <p class="lead">
-      {% trans "TECHWANDO unites traditional Budo values with modern sports science, athlete belt registries, championship medal verification, and multilingual club management." %}
-    </p>
-    <div class="hero-cta">
-      <a class="btn btn-lg btn-primary" href="{% url 'champions:list' %}">{% trans "Explore Champions" %}</a>
-      <a class="btn btn-lg btn-ghost-light" href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a>
-      {% if not user.is_authenticated %}
-      <a class="btn btn-lg btn-ghost-light" href="{% url 'accounts:register' %}">{% trans "Become a Member" %}</a>
-      {% endif %}
+    <div class="hero-inner">
+      <div>
+        <span class="hero-kicker">
+          <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+          {% trans "Official Martial Arts Academy & Verified Club Registry" %}
+        </span>
+        <h1 class="text-balance">{% trans "Discipline, education and verified martial arts excellence" %}</h1>
+        <p class="lead">
+          {% trans "TECHWANDO unites Persian and Japanese budo traditions with modern sports science, transparent belt progression, and a certified record of every championship achievement." %}
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="{% url 'champions:list' %}">
+            <i class="bi bi-trophy" aria-hidden="true"></i> {% trans "Explore Our Champions" %}
+          </a>
+          <a class="btn btn-ghost-light btn-lg" href="{% url 'pages:services' %}">
+            {% trans "Training Programs" %}
+          </a>
+          {% if not user.is_authenticated %}
+          <a class="btn btn-ghost-light btn-lg" href="{% url 'accounts:register' %}">
+            {% trans "Become a Member" %}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="{% trans 'Why train with us' %}">
+        <h2>{% trans "Why TECHWANDO" %}</h2>
+        <ul>
+          <li><i class="bi bi-shield-check" aria-hidden="true"></i>{% trans "Certified, safety-first coaching" %}</li>
+          <li><i class="bi bi-diagram-3" aria-hidden="true"></i>{% trans "Transparent belt and Dan progression" %}</li>
+          <li><i class="bi bi-award" aria-hidden="true"></i>{% trans "Verified competition and medal records" %}</li>
+          <li><i class="bi bi-translate" aria-hidden="true"></i>{% trans "Fully bilingual Persian and Japanese" %}</li>
+        </ul>
+      </aside>
     </div>
 
     <div class="stats-strip">
@@ -38,197 +64,265 @@
   </div>
 </section>
 
-{# Featured Champions #}
+{# 2. Introduction --------------------------------------------------------- #}
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>{% trans "Club Champions & Verified Athletes" %}</h2>
-        <p>{% trans "Athletes whose ranks, achievements, and medals have been officially reviewed and approved." %}</p>
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-7">
+        <span class="eyebrow">{% trans "Welcome to the dojo" %}</span>
+        <h2 class="text-balance">{% trans "A modern academy rooted in respect, effort and integrity" %}</h2>
+        <div class="prose mt-3">
+          <p>
+            {% trans "TECHWANDO is a bilingual martial arts education and club management platform for athletes, families and coaches. Every promotion, medal and community activity is reviewed by our technical board before it becomes part of an athlete's official record." %}
+          </p>
+          <p>
+            {% trans "From a child's first class to international championship preparation, our curriculum balances technique, physical conditioning, etiquette and personal responsibility." %}
+          </p>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a class="btn btn-primary" href="{% url 'pages:about' %}">{% trans "Read our story" %}</a>
+          <a class="btn btn-outline" href="{% url 'pages:education' %}">{% trans "Explore the curriculum" %}</a>
+        </div>
       </div>
-      <a class="btn btn-outline" href="{% url 'champions:list' %}">{% trans "View All Champions" %}</a>
-    </div>
-
-    {% if featured_champions %}
-    <div class="grid grid-4">
-      {% for athlete in featured_champions %}
-      <article class="card card-hover">
-        <div class="card-body">
-          <div class="athlete-card-top">
-            {% if athlete.profile_photo %}
-              <img class="avatar" src="{{ athlete.profile_photo.url }}" alt="{{ athlete.localized_full_name }}">
-            {% else %}
-              <img class="avatar" src="{% static 'images/default-avatar.svg' %}" alt="{{ athlete.localized_full_name }}">
-            {% endif %}
-            <div>
-              <h3 class="card-title" style="margin-block-end:0.2rem;">
-                <a href="{{ athlete.get_public_url }}">{{ athlete.localized_full_name }}</a>
-              </h3>
-              <span class="badge badge-neutral">{{ athlete.get_primary_discipline_display }}</span>
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="feature-icon"><i class="bi bi-mortarboard" aria-hidden="true"></i></span>
+                <h3 class="card-title">{% trans "Structured curriculum" %}</h3>
+                <p class="card-text">{% trans "Progressive syllabi for poomsae, kata, sparring, self-defence and conditioning." %}</p>
+              </div>
             </div>
           </div>
-          {% with belt=athlete.current_approved_belt %}
-          {% if belt %}
-          <p style="margin:0 0 0.65rem;font-size:0.86rem;font-weight:600;">
-            <span class="belt-swatch" style="background:{{ belt.belt_type.color_hex }};"></span>
-            {{ belt.belt_type.localized_name }}
-          </p>
-          {% endif %}
-          {% endwith %}
-          {% if athlete.localized_biography %}
-          <p class="card-text">{{ athlete.localized_biography|truncatechars:100 }}</p>
-          {% endif %}
-          <div class="card-footer-meta">
-            <span>{% trans "Medals" %}: <strong>{{ athlete.approved_medal_count|local_num }}</strong></span>
-            <a href="{{ athlete.get_public_url }}">{% trans "Profile" %} &rarr;</a>
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="feature-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+                <h3 class="card-title">{% trans "Family-friendly club" %}</h3>
+                <p class="card-text">{% trans "Age-appropriate groups, small class sizes and a respectful training culture." %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="feature-icon"><i class="bi bi-clipboard-check" aria-hidden="true"></i></span>
+                <h3 class="card-title">{% trans "Verified records" %}</h3>
+                <p class="card-text">{% trans "Administrators review supporting documents before records are published." %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="feature-icon"><i class="bi bi-globe-asia-australia" aria-hidden="true"></i></span>
+                <h3 class="card-title">{% trans "Cultural bridge" %}</h3>
+                <p class="card-text">{% trans "Persian and Japanese language editions with shared standards and values." %}</p>
+              </div>
+            </div>
           </div>
         </div>
-      </article>
-      {% endfor %}
+      </div>
     </div>
-    {% else %}
-    <div class="empty-state">{% trans "Approved champion profiles will appear here once published." %}</div>
-    {% endif %}
   </div>
 </section>
 
-{# Training Programs & Education #}
-<section class="section section-alt">
+{# 3. Disciplines --------------------------------------------------------- #}
+<section class="section section-alt" id="disciplines">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>{% trans "Training Programs & Martial Arts Education" %}</h2>
-        <p>{% trans "Structured courses from beginner foundations to international championship squads." %}</p>
+        <span class="eyebrow">{% trans "Martial arts" %}</span>
+        <h2>{% trans "Disciplines taught at the academy" %}</h2>
+        <p>{% trans "Authentic instruction across striking, grappling and weapons-based Japanese and Korean arts." %}</p>
       </div>
-      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
-        <a class="btn btn-outline btn-sm" href="{% url 'pages:education' %}">{% trans "Curriculum" %}</a>
-        <a class="btn btn-dark btn-sm" href="{% url 'pages:services' %}">{% trans "All Programs" %}</a>
-      </div>
+      <a class="btn btn-outline" href="{% url 'pages:services' %}">{% trans "All programs" %}</a>
     </div>
 
     <div class="grid grid-3">
-      {% for prog in services %}
-      {% with p_tr=prog|tr %}
-      <article class="card card-hover">
+      <article class="card card-hover discipline-card">
         <div class="card-body">
-          <span class="badge badge-dark" style="align-self:flex-start;margin-block-end:0.75rem;">
-            {% trans "Program" %}
-          </span>
-          <h3 class="card-title">
-            <a href="{{ prog.get_absolute_url }}">{{ p_tr.title }}</a>
-          </h3>
-          <p class="card-text">{{ p_tr.summary|default:p_tr.body|truncatechars:140 }}</p>
-          <div class="card-footer-meta">
-            <a href="{{ prog.get_absolute_url }}">{% trans "Learn more" %}</a>
-          </div>
+          <span class="discipline-icon"><i class="bi bi-lightning-charge" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Taekwondo" %}</h3>
+          <p class="card-text">{% trans "Dynamic kicking techniques, poomsae forms, Olympic-style sparring and Dan promotion." %}</p>
         </div>
       </article>
-      {% endwith %}
-      {% endfor %}
+      <article class="card card-hover discipline-card">
+        <div class="card-body">
+          <span class="discipline-icon"><i class="bi bi-hand-index-thumb" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Karate" %}</h3>
+          <p class="card-text">{% trans "Precise linear strikes, kata bunkai and controlled kumite practice." %}</p>
+        </div>
+      </article>
+      <article class="card card-hover discipline-card">
+        <div class="card-body">
+          <span class="discipline-icon"><i class="bi bi-people-fill" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Judo" %}</h3>
+          <p class="card-text">{% trans "Throws, groundwork and mutual welfare through safe, technical randori." %}</p>
+        </div>
+      </article>
+      <article class="card card-hover discipline-card">
+        <div class="card-body">
+          <span class="discipline-icon"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Aikido" %}</h3>
+          <p class="card-text">{% trans "Blending and redirecting energy, joint locks and non-resistance defence." %}</p>
+        </div>
+      </article>
+      <article class="card card-hover discipline-card">
+        <div class="card-body">
+          <span class="discipline-icon"><i class="bi bi-slash-lg" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Kendo" %}</h3>
+          <p class="card-text">{% trans "Bamboo sword fundamentals, zanshin and the discipline of the kendojo." %}</p>
+        </div>
+      </article>
+      <article class="card card-hover discipline-card">
+        <div class="card-body">
+          <span class="discipline-icon"><i class="bi bi-shield-shaded" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Hapkido" %}</h3>
+          <p class="card-text">{% trans "Practical self-defence, escapes, throws and pressure-point control." %}</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-{# Recent Verified Medal Winners #}
-{% if recent_medals %}
+{# 4. Featured instructors ------------------------------------------------ #}
+{% if CLUB_INSTRUCTORS %}
 <section class="section">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>{% trans "Recent Medal Winners" %}</h2>
-        <p>{% trans "Latest officially verified championship podium finishes." %}</p>
+        <span class="eyebrow">{% trans "Coaching team" %}</span>
+        <h2>{% trans "Learn from experienced instructors" %}</h2>
+        <p>{% trans "Certified coaches with competition, teaching and safeguarding experience." %}</p>
       </div>
-      <a class="btn btn-outline" href="{% url 'champions:medals' %}">{% trans "Full Honor Roll" %}</a>
+      <a class="btn btn-outline" href="{% url 'pages:about' %}#instructors">{% trans "Meet the team" %}</a>
     </div>
+
     <div class="grid grid-3">
-      {% for medal in recent_medals %}
-      <div class="card">
-        <div class="card-body">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-block-end:0.7rem;">
-            {% include "includes/medal_badge.html" with medal_type=medal.medal_type %}
-            <span style="font-size:0.82rem;color:var(--tw-text-subtle);">{{ medal.award_date|local_date }}</span>
-          </div>
-          <h3 class="card-title">
-            <a href="{{ medal.member.get_public_url }}">{{ medal.member.localized_full_name }}</a>
-          </h3>
-          <p class="card-text" style="margin-block-end:0.4rem;">{{ medal.localized_competition_name }}</p>
-          <small style="color:var(--tw-text-subtle);">{{ medal.localized_competition_location }}</small>
+      {% for instructor in CLUB_INSTRUCTORS %}
+      <article class="card card-hover">
+        <div class="card-media" style="aspect-ratio: 4 / 3;">
+          <img src="{% static instructor.photo %}" alt="{{ instructor.name }}" loading="lazy">
         </div>
-      </div>
+        <div class="card-body">
+          <h3 class="card-title">{{ instructor.name }}</h3>
+          <p class="card-text mb-0">{{ instructor.role }}</p>
+          <div class="card-footer-meta">
+            <span class="badge badge-neutral">{{ instructor.discipline }}</span>
+            <span>{{ instructor.rank }}</span>
+          </div>
+        </div>
+      </article>
       {% endfor %}
     </div>
   </div>
 </section>
 {% endif %}
 
-{# Featured Equipment & Products #}
-{% if featured_products %}
+{# 5. Achievements & medal winners ---------------------------------------- #}
 <section class="section section-alt">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>{% trans "Official Uniforms & Equipment" %}</h2>
-        <p>{% trans "Competition-grade uniforms, certified protective gear, and custom Dan belts." %}</p>
+        <span class="eyebrow">{% trans "Honours" %}</span>
+        <h2>{% trans "Latest achievements and medal winners" %}</h2>
+        <p>{% trans "Only records approved by the technical board and cleared for public display appear here." %}</p>
       </div>
-      <a class="btn btn-outline" href="{% url 'products:list' %}">{% trans "Browse Catalog" %}</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline btn-sm" href="{% url 'champions:medals' %}">{% trans "Medal honor roll" %}</a>
+        <a class="btn btn-dark btn-sm" href="{% url 'champions:list' %}">{% trans "Athlete profiles" %}</a>
+      </div>
     </div>
-    <div class="grid grid-4">
-      {% for product in featured_products %}
-      {% with prod_tr=product|tr img=product.primary_image %}
-      <article class="card card-hover">
-        {% if img %}
-        <a class="card-media" href="{{ product.get_absolute_url }}">
-          <img src="{{ img.image.url }}" alt="{{ img.localized_alt }}" loading="lazy">
-        </a>
-        {% endif %}
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ product.get_absolute_url }}">{{ prod_tr.name }}</a></h3>
-          <p class="card-text">{{ prod_tr.short_description|default:prod_tr.description|truncatechars:95 }}</p>
-          <div class="card-footer-meta">
-            {% if product.price is not None %}
-              <strong>{{ product.price|local_price:product.currency }}</strong>
-            {% else %}
-              <span>{% trans "Inquire for price" %}</span>
-            {% endif %}
-            <span class="ltr-inline">{{ product.sku }}</span>
-          </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h3 class="h6 text-uppercase text-muted mb-3">{% trans "Recent achievements" %}</h3>
+        {% if recent_achievements %}
+        <div class="d-grid gap-3">
+          {% for achievement in recent_achievements %}
+          <article class="card">
+            <div class="card-body flex-row align-items-start gap-3">
+              <span class="feature-icon mb-0"><i class="bi bi-star" aria-hidden="true"></i></span>
+              <div class="flex-grow-1">
+                <h4 class="card-title">{{ achievement.localized_title }}</h4>
+                <p class="card-text mb-1">{{ achievement.get_discipline_display }}</p>
+                <div class="d-flex justify-content-between gap-2 flex-wrap small text-muted">
+                  <a href="{{ achievement.member.get_public_url }}" class="fw-semibold text-decoration-none">
+                    {{ achievement.member.localized_full_name }}
+                  </a>
+                  <span>{{ achievement.achievement_date|local_date }}</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
         </div>
-      </article>
-      {% endwith %}
-      {% endfor %}
+        {% else %}
+        {% trans "Verified achievements will appear here once approved." as empty_achievements %}
+        {% include "includes/empty_state.html" with empty_icon="bi-star" empty_title=empty_achievements %}
+        {% endif %}
+      </div>
+
+      <div class="col-lg-5">
+        <h3 class="h6 text-uppercase text-muted mb-3">{% trans "Recent medal winners" %}</h3>
+        {% if recent_medals %}
+        <div class="d-grid gap-3">
+          {% for medal in recent_medals|slice:":4" %}
+          <article class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
+                {% include "includes/medal_badge.html" with medal_type=medal.medal_type %}
+                <span class="small text-muted">{{ medal.award_date|local_date }}</span>
+              </div>
+              <h4 class="card-title">
+                <a href="{{ medal.member.get_public_url }}">{{ medal.member.localized_full_name }}</a>
+              </h4>
+              <p class="card-text mb-0">{{ medal.localized_competition_name }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% else %}
+        {% trans "Verified medals will appear here once approved." as empty_medals %}
+        {% include "includes/empty_state.html" with empty_icon="bi-award" empty_title=empty_medals %}
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>
-{% endif %}
 
-{# Latest Blog Articles #}
+{# 6. Blog ---------------------------------------------------------------- #}
 {% if latest_posts %}
 <section class="section">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>{% trans "Latest Articles & Club News" %}</h2>
-        <p>{% trans "Technical insights, competition coverage, and belt exam guides." %}</p>
+        <span class="eyebrow">{% trans "Journal" %}</span>
+        <h2>{% trans "Latest articles and club news" %}</h2>
+        <p>{% trans "Technical guidance, competition reports and belt examination preparation." %}</p>
       </div>
-      <a class="btn btn-outline" href="{% url 'blog:list' %}">{% trans "All Articles" %}</a>
+      <a class="btn btn-outline" href="{% url 'blog:list' %}">{% trans "All articles" %}</a>
     </div>
+
     <div class="grid grid-3">
       {% for post in latest_posts %}
       {% with post_tr=post|tr %}
       <article class="card card-hover">
-        {% if post.featured_image %}
-        <a class="card-media" href="{{ post.get_absolute_url }}">
-          <img src="{{ post.featured_image.url }}" alt="{{ post_tr.featured_image_alt|default:post_tr.title }}" loading="lazy">
+        <a class="card-media" href="{{ post.get_absolute_url }}" tabindex="-1" aria-hidden="true">
+          {% if post.featured_image %}
+          <img src="{{ post.featured_image.url }}" alt="" loading="lazy">
+          {% else %}
+          <img src="{% static 'images/placeholders/blog-default.svg' %}" alt="" loading="lazy">
+          {% endif %}
         </a>
-        {% endif %}
         <div class="card-body">
           {% if post.category %}
-          <span class="badge badge-neutral" style="align-self:flex-start;margin-block-end:0.6rem;">
-            {{ post.category.localized_name }}
-          </span>
+          <span class="badge badge-accent align-self-start">{{ post.category.localized_name }}</span>
           {% endif %}
           <h3 class="card-title"><a href="{{ post.get_absolute_url }}">{{ post_tr.title }}</a></h3>
-          <p class="card-text">{{ post_tr.excerpt|default:post_tr.body|truncatechars:125 }}</p>
+          <p class="card-text">{{ post_tr.excerpt|default:post_tr.body|striptags|truncatechars:120 }}</p>
           <div class="card-footer-meta">
             <span>{{ post.published_at|local_date }}</span>
             <a href="{{ post.get_absolute_url }}">{% trans "Read article" %}</a>
@@ -241,4 +335,91 @@
   </div>
 </section>
 {% endif %}
+
+{# 7. Club activities ----------------------------------------------------- #}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{% trans "Community" %}</span>
+        <h2>{% trans "Club activities beyond the mat" %}</h2>
+        <p>{% trans "Volunteering, cultural exchange and youth outreach organised by our members." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'champions:competitions' %}">{% trans "See club results" %}</a>
+    </div>
+
+    {% if recent_activities %}
+    <div class="grid grid-3">
+      {% for activity in recent_activities %}
+      <article class="card card-hover">
+        {% if activity.get_photo_url %}
+        <div class="card-media">
+          <img src="{{ activity.get_photo_url }}" alt="{{ activity.localized_title }}" loading="lazy">
+        </div>
+        {% endif %}
+        <div class="card-body">
+          <span class="badge badge-approved align-self-start">{{ activity.localized_location }}</span>
+          <h3 class="card-title">{{ activity.localized_title }}</h3>
+          <p class="card-text">{{ activity.localized_description|truncatechars:130 }}</p>
+          <div class="card-footer-meta">
+            <span>{{ activity.activity_date|local_date }}</span>
+            <a href="{{ activity.member.get_public_url }}">{{ activity.member.localized_full_name }}</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    {% trans "Approved and consented club activities will be published here." as empty_activities %}
+    {% trans "Community activities are published only after administrator approval and explicit member consent." as empty_activities_text %}
+    {% include "includes/empty_state.html" with empty_icon="bi-people" empty_title=empty_activities empty_text=empty_activities_text %}
+    {% endif %}
+  </div>
+</section>
+
+{# 8. Equipment ----------------------------------------------------------- #}
+{% if featured_products %}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{% trans "Dojo shop" %}</span>
+        <h2>{% trans "Official uniforms and equipment" %}</h2>
+        <p>{% trans "Club-approved uniforms, protective gear and embroidered Dan belts." %}</p>
+      </div>
+      <a class="btn btn-outline" href="{% url 'products:list' %}">{% trans "Browse the catalog" %}</a>
+    </div>
+
+    <div class="grid grid-4">
+      {% for product in featured_products %}
+      {% with prod_tr=product|tr img=product.primary_image %}
+      <article class="card card-hover">
+        <a class="card-media" href="{{ product.get_absolute_url }}" tabindex="-1" aria-hidden="true">
+          {% if img %}
+          <img src="{{ img.image.url }}" alt="" loading="lazy">
+          {% else %}
+          <img src="{% static 'images/placeholders/product-default.svg' %}" alt="" loading="lazy">
+          {% endif %}
+        </a>
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ product.get_absolute_url }}">{{ prod_tr.name }}</a></h3>
+          <div class="card-footer-meta">
+            {% if product.price is not None %}
+              <strong>{{ product.price|local_price:product.currency }}</strong>
+            {% else %}
+              <span>{% trans "Inquire for price" %}</span>
+            {% endif %}
+            <span class="ltr-inline small">{{ product.sku }}</span>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# 9. Call to action ------------------------------------------------------ #}
+{% include "includes/cta.html" %}
 {% endblock %}

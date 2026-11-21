@@ -1,20 +1,27 @@
 {% extends "base.html" %}
-{% load i18n techwando_tags %}
+{% load i18n static techwando_tags %}
 
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% trans "Journal" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with current_label=crumb_current %}
+    <span class="eyebrow text-white-50" style="color: rgba(255,255,255,0.65);">{% trans "Knowledge & news" %}</span>
     <h1>{% trans "TECHWANDO Blog & Martial Arts Journal" %}</h1>
-    <p>{% trans "Technical insights, championship coverage, sports conditioning, and club announcements." %}</p>
+    <p>{% trans "Technical insights, championship coverage, sports conditioning and club announcements." %}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <form class="filter-bar" method="get">
+    <form class="filter-bar" method="get" action="{% url 'blog:list' %}" role="search">
       <div>
         <label class="form-label" for="bl-q">{% trans "Search articles" %}</label>
-        <input id="bl-q" name="q" type="text" class="form-control" value="{{ search_query }}">
+        <div class="search-group">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input id="bl-q" name="q" type="search" class="form-control" value="{{ search_query }}"
+                 placeholder="{% trans 'Search the journal' %}">
+        </div>
       </div>
       <div>
         <label class="form-label" for="bl-cat">{% trans "Category" %}</label>
@@ -34,8 +41,9 @@
           {% endfor %}
         </select>
       </div>
-      <div>
-        <button type="submit" class="btn btn-primary" style="inline-size:100%;">{% trans "Search" %}</button>
+      <div class="filter-actions">
+        <button type="submit" class="btn btn-primary">{% trans "Search" %}</button>
+        <a class="btn btn-outline" href="{% url 'blog:list' %}">{% trans "Reset" %}</a>
       </div>
     </form>
 
@@ -44,21 +52,24 @@
       {% for post in posts %}
       {% with post_tr=post|tr %}
       <article class="card card-hover">
-        {% if post.featured_image %}
-        <a class="card-media" href="{{ post.get_absolute_url }}">
-          <img src="{{ post.featured_image.url }}" alt="{{ post_tr.featured_image_alt|default:post_tr.title }}" loading="lazy">
-        </a>
-        {% endif %}
-        <div class="card-body">
-          {% if post.category %}
-          <span class="badge badge-neutral" style="align-self:flex-start;margin-block-end:0.6rem;">
-            {{ post.category.localized_name }}
-          </span>
+        <a class="card-media" href="{{ post.get_absolute_url }}" tabindex="-1" aria-hidden="true">
+          {% if post.featured_image %}
+          <img src="{{ post.featured_image.url }}" alt="" loading="lazy">
+          {% else %}
+          <img src="{% static 'images/placeholders/blog-default.svg' %}" alt="" loading="lazy">
           {% endif %}
+        </a>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap">
+            {% if post.category %}
+            <span class="badge badge-accent">{{ post.category.localized_name }}</span>
+            {% endif %}
+            <span class="small text-muted">{{ post.published_at|local_date }}</span>
+          </div>
           <h2 class="card-title"><a href="{{ post.get_absolute_url }}">{{ post_tr.title }}</a></h2>
-          <p class="card-text">{{ post_tr.excerpt|default:post_tr.body|truncatechars:140 }}</p>
+          <p class="card-text">{{ post_tr.excerpt|default:post_tr.body|striptags|truncatechars:140 }}</p>
           <div class="card-footer-meta">
-            <span>{{ post.published_at|local_date }}</span>
+            <span>{% trans "By" %} {{ post.author.get_short_name|default:SITE_NAME }}</span>
             <a href="{{ post.get_absolute_url }}">{% trans "Read article" %}</a>
           </div>
         </div>
@@ -68,7 +79,11 @@
     </div>
     {% include "includes/pagination.html" %}
     {% else %}
-    <div class="empty-state">{% trans "No published articles found." %}</div>
+    {% trans "No published articles found." as empty_title %}
+    {% trans "Try a different search term or browse all categories." as empty_text %}
+    {% trans "All articles" as empty_action %}
+    {% url 'blog:list' as empty_url %}
+    {% include "includes/empty_state.html" with empty_icon="bi-journal-text" empty_title=empty_title empty_text=empty_text empty_url=empty_url empty_action=empty_action %}
     {% endif %}
   </div>
 </section>

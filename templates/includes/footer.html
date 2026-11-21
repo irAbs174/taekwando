@@ -1,58 +1,76 @@
-{% load i18n techwando_tags %}
+{% load i18n static techwando_tags %}
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h3>TECHWANDO</h3>
-        <p style="font-size:0.9rem;color:#94a3b8;max-inline-size:380px;margin:0 0 1rem;">
-          {% trans "Multilingual martial arts education, certified athlete registry, belt rankings, and championship medal verification platform." %}
+        <a class="footer-brand" href="{% url 'pages:home' %}">
+          <img src="{% static 'images/logo-mark.svg' %}" alt="" width="36" height="36">
+          {{ SITE_NAME }}
+        </a>
+        <p class="footer-about">
+          {% trans "A bilingual martial arts academy uniting Persian and Japanese budo traditions with modern sports education, transparent belt progression, and verified championship records." %}
         </p>
-        <p style="font-size:0.84rem;margin:0;">
-          <span class="ltr-inline">{{ CLUB_CONTACT_EMAIL }}</span>
-        </p>
+        <div class="social-links" aria-label="{% trans 'Social media' %}">
+          {% for social in CLUB_SOCIAL_LINKS %}
+          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.label }}">
+            <i class="bi {{ social.icon }}" aria-hidden="true"></i>
+          </a>
+          {% endfor %}
+        </div>
       </div>
+
       <div>
-        <h3>{% trans "Academy" %}</h3>
+        <h2>{% trans "The Academy" %}</h2>
         <ul>
-          <li><a href="{% url 'pages:about' %}">{% trans "About Techwando" %}</a></li>
-          <li><a href="{% url 'pages:education' %}">{% trans "Educational Content" %}</a></li>
+          <li><a href="{% url 'pages:about' %}">{% trans "About TECHWANDO" %}</a></li>
+          <li><a href="{% url 'pages:education' %}">{% trans "Education & Curriculum" %}</a></li>
           <li><a href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a></li>
-          <li><a href="{% url 'blog:list' %}">{% trans "Articles & Blog" %}</a></li>
-          <li><a href="{% url 'products:list' %}">{% trans "Equipment Catalog" %}</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>{% trans "Champions & Honors" %}</h3>
-        <ul>
-          <li><a href="{% url 'champions:list' %}">{% trans "Champions Directory" %}</a></li>
-          <li><a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a></li>
-          <li><a href="{% url 'champions:belts' %}">{% trans "Belt Achievements" %}</a></li>
           <li><a href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a></li>
+          <li><a href="{% url 'blog:list' %}">{% trans "Articles & News" %}</a></li>
         </ul>
       </div>
+
       <div>
-        <h3>{% trans "Member Access" %}</h3>
+        <h2>{% trans "Championship" %}</h2>
+        <ul>
+          <li><a href="{% url 'champions:list' %}">{% trans "Athletes Directory" %}</a></li>
+          <li><a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a></li>
+          <li><a href="{% url 'champions:belts' %}">{% trans "Belt Registry" %}</a></li>
+          <li><a href="{% url 'products:list' %}">{% trans "Equipment Catalog" %}</a></li>
+          <li><a href="{% url 'contact:public' %}">{% trans "Visit the Dojo" %}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>{% trans "Members & Contact" %}</h2>
         <ul>
           {% if user.is_authenticated %}
           <li><a href="{% url 'members:dashboard' %}">{% trans "Member Dashboard" %}</a></li>
-          <li><a href="{% url 'members:profile_edit' %}">{% trans "Personal Profile" %}</a></li>
+          <li><a href="{% url 'members:profile_edit' %}">{% trans "My Profile" %}</a></li>
           {% else %}
           <li><a href="{% url 'accounts:login' %}">{% trans "Member Log In" %}</a></li>
           <li><a href="{% url 'accounts:register' %}">{% trans "Apply for Membership" %}</a></li>
           {% endif %}
-          <li><a href="{% url 'contact:public' %}">{% trans "Contact Club" %}</a></li>
-          <li><a href="{% url 'pages:detail' 'privacy-policy' %}">{% trans "Privacy Policy" %}</a></li>
-          <li><a href="{% url 'api:swagger-ui' %}">{% trans "API Docs (v1)" %}</a></li>
+          <li><a href="{% url 'pages:privacy' %}">{% trans "Privacy Policy" %}</a></li>
+          <li><a href="{% url 'pages:terms' %}">{% trans "Terms of Use" %}</a></li>
+          <li>
+            <a class="ltr-inline" href="mailto:{{ CLUB_CONTACT_EMAIL }}">{{ CLUB_CONTACT_EMAIL }}</a>
+          </li>
+          {% if CLUB_PHONE %}
+          <li><a class="ltr-inline" href="tel:{{ CLUB_PHONE }}">{{ CLUB_PHONE }}</a></li>
+          {% endif %}
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; {{ "2026"|local_num }} TECHWANDO — {% trans "All rights reserved." %}</span>
-      <span>
-        <a href="{% url 'core:switch_language_get' 'fa' %}?next={{ request.get_full_path|urlencode }}" lang="fa">فارسی (fa-IR)</a>
-        &nbsp;|&nbsp;
-        <a href="{% url 'core:switch_language_get' 'ja' %}?next={{ request.get_full_path|urlencode }}" lang="ja">日本語 (ja-JP)</a>
+      <span>&copy; {{ CURRENT_YEAR|local_num }} {{ SITE_NAME }} — {% trans "All rights reserved." %}</span>
+      <span class="d-flex align-items-center gap-2 flex-wrap">
+        <a href="{% switch_lang_url 'fa' %}" lang="fa" hreflang="fa">فارسی (fa-IR)</a>
+        <span aria-hidden="true">·</span>
+        <a href="{% switch_lang_url 'ja' %}" lang="ja" hreflang="ja">日本語 (ja-JP)</a>
+        <span aria-hidden="true">·</span>
+        <a href="{% url 'api:swagger-ui' %}">{% trans "API Docs" %}</a>
       </span>
     </div>
   </div>

@@ -6,9 +6,9 @@
 <div class="section-head">
   <div>
     {% include "includes/status_badge.html" with status=activity.approval_status %}
-    <h1 style="margin:0.4rem 0 0;font-size:1.45rem;">{{ activity.localized_title }}</h1>
+    <h1 class="section-title section-title-sm">{{ activity.localized_title }}</h1>
   </div>
-  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+  <div class="table-actions">
     {% if activity.can_member_edit %}
     <a class="btn btn-primary btn-sm" href="{% url 'activities:member_edit' activity.pk %}">{% trans "Edit & Resubmit" %}</a>
     {% endif %}

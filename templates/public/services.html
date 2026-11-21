@@ -4,27 +4,63 @@
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% trans "The Club" as crumb_parent %}
+    {% trans "Training Programs" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=crumb_current %}
     <h1>{% trans "Martial Arts Services & Training Programs" %}</h1>
-    <p>{% trans "Certified coaching programs for youth beginners, competitive fighters, and Dan black belt candidates." %}</p>
+    <p>{% trans "Certified coaching for youth beginners, competitive athletes and Dan black belt candidates." %}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-5">
+        <span class="eyebrow">{% trans "Programs" %}</span>
+        <h2>{% trans "Find the right training path" %}</h2>
+        <p class="lead mt-2">
+          {% trans "Weekly classes, squad training and examination preparation, grouped by age and level." %}
+        </p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-sm-4">
+            <div class="card h-100"><div class="card-body">
+              <span class="feature-icon"><i class="bi bi-1-circle" aria-hidden="true"></i></span>
+              <h3 class="card-title">{% trans "Try a class" %}</h3>
+              <p class="card-text">{% trans "Book a supervised trial session before joining." %}</p>
+            </div></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card h-100"><div class="card-body">
+              <span class="feature-icon"><i class="bi bi-2-circle" aria-hidden="true"></i></span>
+              <h3 class="card-title">{% trans "Choose a program" %}</h3>
+              <p class="card-text">{% trans "Select the group that matches age and experience." %}</p>
+            </div></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card h-100"><div class="card-body">
+              <span class="feature-icon"><i class="bi bi-3-circle" aria-hidden="true"></i></span>
+              <h3 class="card-title">{% trans "Track progress" %}</h3>
+              <p class="card-text">{% trans "Your belt and competition record lives in the portal." %}</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {% if programs %}
     <div class="grid grid-3">
       {% for prog in programs %}
       {% with p_tr=prog|tr %}
       <article class="card card-hover">
         <div class="card-body">
-          <span class="badge badge-dark" style="align-self:flex-start;margin-block-end:0.65rem;">
-            {% trans "Training Program" %}
-          </span>
+          <span class="badge badge-dark align-self-start">{% trans "Training Program" %}</span>
           <h2 class="card-title"><a href="{{ prog.get_absolute_url }}">{{ p_tr.title }}</a></h2>
           {% if p_tr.subtitle %}
-          <p style="font-size:0.86rem;font-weight:600;color:var(--tw-text-subtle);margin:0 0 0.5rem;">{{ p_tr.subtitle }}</p>
+          <p class="small fw-semibold text-muted mb-0">{{ p_tr.subtitle }}</p>
           {% endif %}
-          <p class="card-text">{{ p_tr.summary|default:p_tr.body|truncatechars:170 }}</p>
+          <p class="card-text">{{ p_tr.summary|default:p_tr.body|striptags|truncatechars:170 }}</p>
           <div class="card-footer-meta">
             <a href="{{ prog.get_absolute_url }}">{% trans "Program Details" %}</a>
             <a class="btn btn-sm btn-primary" href="{% url 'contact:public' %}">{% trans "Inquire" %}</a>
@@ -36,8 +72,11 @@
     </div>
     {% include "includes/pagination.html" %}
     {% else %}
-    <div class="empty-state">{% trans "Training programs will be listed soon." %}</div>
+    {% trans "Training programs will be listed soon." as empty_title %}
+    {% include "includes/empty_state.html" with empty_icon="bi-calendar2-week" empty_title=empty_title %}
     {% endif %}
   </div>
 </section>
+
+{% include "includes/cta.html" %}
 {% endblock %}

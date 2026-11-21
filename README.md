@@ -49,7 +49,9 @@ techwando/
 │   ├── audit_logs/          # Immutable AuditLog + log_audit_event service
 │   └── api/                 # Versioned /api/v1/ DRF ViewSets, serializers, permissions & OpenAPI
 ├── templates/               # Semantic RTL/LTR HTML5 templates (public, accounts, member, admin)
-├── static/                  # Design system CSS (techwando.css, rtl.css, ja.css), JS, SVG assets
+├── static/                  # Design-system CSS (variables/layout/components/forms/responsive/
+│                            # dashboard/rtl/ja), vanilla JS, local Bootstrap 5 & Bootstrap Icons,
+│                            # Vazirmatn + Noto Sans JP woff2, SVG logos & image placeholders
 ├── locale/                  # Compiled Persian (fa) and Japanese (ja) gettext catalogs (.po/.mo)
 ├── tests/                   # Automated test suite (auth, RBAC, moderation, i18n/SEO, API, security)
 ├── deploy/                  # Gunicorn, Nginx (HTTPS + X-Accel-Redirect), systemd, backup cron, logrotate
@@ -81,7 +83,7 @@ techwando/
 ## Key Localized Routes & REST API (`/api/v1/`)
 
 ### Web Routes (available under both `/fa/...` and `/ja/...`)
-- Public: `/fa/`, `/fa/about/`, `/fa/education/`, `/fa/services/`, `/fa/blog/`, `/fa/products/`, `/fa/champions/`, `/fa/champions/<slug>/`, `/fa/champions/medals/`, `/fa/champions/belts/`, `/fa/champions/competitions/`, `/fa/contact/`
+- Public: `/fa/`, `/fa/about/`, `/fa/education/`, `/fa/services/`, `/fa/privacy/`, `/fa/terms/`, `/fa/blog/`, `/fa/blog/<slug>/`, `/fa/products/`, `/fa/products/<slug>/`, `/fa/champions/`, `/fa/champions/<public-slug>/`, `/fa/champions/medals/`, `/fa/champions/belts/`, `/fa/champions/competitions/`, `/fa/contact/`
 - Auth: `/fa/accounts/login/`, `/fa/accounts/register/`, `/fa/accounts/password-reset/`
 - Member Portal: `/fa/member/dashboard/`, `/fa/member/profile/`, `/fa/member/achievements/`, `/fa/member/medals/`, `/fa/member/belts/`, `/fa/member/competitions/`, `/fa/member/activities/`, `/fa/member/notifications/`, `/fa/member/settings/`
 - Administration: `/fa/accounts/management/`, `/fa/accounts/management/moderation/`, `/fa/accounts/management/members/`, `/django-admin/` (configurable via `DJANGO_ADMIN_URL`)
@@ -126,7 +128,7 @@ cp .env.example .env
 ### Testing, Security Audit & Operations Commands
 
 ```bash
-# Run the complete automated test suite (49 tests across auth, RBAC, moderation, i18n, SEO, API & security)
+# Run the complete automated test suite (59 tests across auth, RBAC, moderation, i18n, SEO, API, security & frontend templates)
 DJANGO_SETTINGS_MODULE=config.settings.testing .venv/bin/python manage.py test tests apps --verbosity=2
 
 # Verify zero unapplied model changes
@@ -154,8 +156,8 @@ Default demo password (override via `--demo-password`): `Techwando!2026`
 - Content Admin: `content@techwando.example.com`
 - Club Manager: `manager@techwando.example.com`
 - Moderator: `moderator@techwando.example.com`
-- Private Member (with pending submission): `member@techwando.example.com`
-- Verified Public Champions: `arash.rezaei@techwando.example.com`, `haruka.sato@techwando.example.com`, `parisa.moradi@techwando.example.com`, `kenji.takahashi@techwando.example.com`
+- Private Member (with a pending medal submission): `member@techwando.example.com`
+- Verified Public Champions: `parisa.rahimi@techwando.example.com`, `haruto.yamamoto@techwando.example.com`, `amir.hosseini@techwando.example.com`, `aoi.nakamura@techwando.example.com`
 
 > Never use `--with-demo-accounts` in production.
 
@@ -166,3 +168,91 @@ Default demo password (override via `--demo-password`): `Techwando!2026`
 - [Production Deployment Guide (Docker, Gunicorn, Nginx, HTTPS & PostgreSQL Migration)](docs/deployment.md)
 - [SQLite Online Backup, Verification & Disaster Recovery Guide](docs/sqlite-backup-restore.md)
 - [Security Architecture & Pre-Launch Checklist](docs/security-checklist.md)
+
+---
+
+## Frontend Design System (Bootstrap 5, RTL/LTR)
+
+The interface is server-rendered with **Django templates + HTML5 + CSS3 + Bootstrap 5.3.3 + Bootstrap Icons + vanilla JavaScript**. No React/Vue/Angular/Next.js/Tailwind/jQuery is used. Bootstrap, Bootstrap Icons and Vazirmatn are served locally from `static/vendor/` and `static/fonts/`, so pages render without any CDN request.
+
+### Structure
+
+```text
+templates/
+├── base.html                 # <html lang dir>, SEO/OG metadata, skip link, navbar, messages, modal
+├── includes/                 # navbar, footer, messages, pagination, breadcrumbs, form_fields,
+│                             # status_badge, medal_badge, page_header, empty_state, stat_card,
+│                             # cta, modal, sidebar_member, sidebar_admin, review_history
+├── public/                   # home, about, education, services, legal/privacy/terms, blog_*,
+│                             # product_*, champions_list, champion_detail, medal_winners,
+│                             # belt_achievements, competition_results, contact, page_detail
+├── accounts/                 # login, register, password reset flow
+├── dashboard/
+│   ├── base_member.html      # sidebar + mobile offcanvas shell
+│   ├── base_admin.html       # administration shell
+│   ├── member/               # overview, profile_edit, achievements, belts, medals,
+│   │                         # competitions, activities, notifications, delete/correction
+│   └── admin/                # overview, moderation queue/review, members, content CRUD,
+│                             # SEO, contact inbox, audit logs
+├── 403.html / 404.html / 500.html
+└── emails/
+```
+
+```text
+static/
+├── css/
+│   ├── variables.css         # design tokens (brand palette, spacing, radius, shadows, fonts)
+│   ├── layout.css            # header, hero, sections, cards, footer, page banner, grid
+│   ├── components.css        # buttons, badges, alerts, tables, cards, pagination, timeline
+│   ├── forms.css             # inputs, validation, uploads, auth, error summary
+│   ├── dashboard.css         # sidebar/offcanvas shell, KPI cards, dashboard helpers
+│   ├── responsive.css        # 320/576/768/992/1200/1440 breakpoints, print, contrast
+│   ├── rtl.css               # Persian-only typographic and icon corrections
+│   ├── ja.css                # Japanese-only CJK typography
+│   └── main.css              # imports the cascade in order
+├── js/
+│   ├── main.js               # theme, password toggle, image preview, confirm modal, alerts
+│   └── dashboard.js          # offcanvas link closing, table affordance, filter submit
+├── vendor/bootstrap/         # Bootstrap 5.3.3 LTR + RTL + bundle (local)
+├── vendor/bootstrap-icons/   # icon font + CSS (local)
+├── fonts/                    # Vazirmatn woff2 (Persian) + Noto Sans JP woff2 (Japanese)
+└── images/                   # logo, default avatar, OG image, placeholders
+```
+
+`base.html` loads `bootstrap.rtl.min.css` + `rtl.css` when `IS_RTL`, otherwise
+`bootstrap.min.css` + `ja.css`. Design tokens live in `variables.css`; retheming the
+whole site only requires editing that file.
+
+### Frontend conventions
+
+- **Escaping and URLs**: always `{% url %}`, `{% static %}`, `{% csrf_token %}`, `{% trans %}`/`{% blocktrans %}`. Never hardcode Persian/Japanese interface copy.
+- **Permission-aware UI**: hide member/admin navigation with `IS_ADMIN_PORTAL_USER`, `IS_CLUB_MANAGER`, `IS_CONTENT_ADMIN`; backend mixins remain the source of truth.
+- **Privacy**: never render `PRIVATE_MEDIA_ROOT` `.url` values; use the protected `get_certificate_url` / `get_evidence_url` endpoints. Public champion cards only use approved + consented records.
+- **Forms**: include `includes/form_fields.html` inside `<form novalidate>`; it renders labels, help text, validation errors, `aria-invalid`/`aria-describedby`, password toggles and local image previews.
+- **Empty states**: every queryset loop is guarded with `{% empty %}` or `{% include "includes/empty_state.html" %}` so seeded-less databases still render.
+- **JavaScript**: progressive enhancement only; all navigation, forms and logout work with JS disabled. Confirm dialogs use a Bootstrap modal and fall back to native confirmation.
+- **Bootstrap RTL**: use logical properties (`margin-inline-start`, `border-inline-start`, `inline-size`) in custom CSS instead of left/right.
+- **Adding a string**: wrap it in `{% trans %}`, run `python manage.py compile_translations`, and add `msgstr` entries to `locale/fa` and `locale/ja` `django.po`.
+
+### Frontend QA checklist
+
+```bash
+# 1. Django configuration and templates
+python manage.py check --settings=config.settings.development
+
+# 2. Full test suite (templates, permissions, CSRF, i18n/SEO)
+python manage.py test --settings=config.settings.testing
+
+# 3. Compile catalogs after editing .po files
+python manage.py compile_translations
+
+# 4. Run and inspect key routes
+python manage.py runserver 0.0.0.0:8000
+# /fa/  /ja/  /fa/champions/  /fa/blog/  /fa/products/  /fa/contact/
+# /fa/accounts/login/  /fa/member/dashboard/  /fa/accounts/management/
+```
+
+Responsive breakpoints to verify in browser devtools: **320px, 768px, 1024px, 1440px**.
+Tables scroll horizontally inside `.table-wrap`; the member sidebar becomes an
+offcanvas drawer below 992px. Check both `dir="rtl"` (`/fa/`) and `dir="ltr"` (`/ja/`),
+keyboard focus rings, skip link, and contrast in light/dark themes.

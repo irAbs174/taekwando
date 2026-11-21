@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from django.conf import settings
+from django.utils import timezone
 from django.urls import translate_url
 
 from apps.core.permissions import can_access_admin_portal, can_manage_content, can_manage_members
@@ -40,10 +41,29 @@ def site_context(request) -> dict:
         is_club_manager = can_manage_members(user)
         is_content_admin = can_manage_content(user)
 
+    instructors = [
+        {
+            "name": person.get(f"name_{current_lang}") or person.get("name_fa", ""),
+            "role": person.get("role", ""),
+            "discipline": person.get("discipline", ""),
+            "rank": person.get(f"rank_{current_lang}") or person.get("rank_fa", ""),
+            "photo": person.get("photo", ""),
+        }
+        for person in getattr(settings, "CLUB_INSTRUCTORS", [])
+    ]
+
     return {
         "SITE_NAME": settings.SITE_NAME,
         "SITE_BASE_URL": base_url,
         "CLUB_CONTACT_EMAIL": settings.CLUB_CONTACT_EMAIL,
+        "CLUB_PHONE": getattr(settings, "CLUB_PHONE", ""),
+        "CLUB_ADDRESS": getattr(settings, "CLUB_ADDRESS", {}).get(current_lang, ""),
+        "CLUB_TRAINING_HOURS": getattr(settings, "CLUB_TRAINING_HOURS", {}).get(
+            current_lang, ""
+        ),
+        "CLUB_SOCIAL_LINKS": getattr(settings, "CLUB_SOCIAL_LINKS", []),
+        "CLUB_INSTRUCTORS": instructors,
+        "CURRENT_YEAR": timezone.localdate().year,
         "CURRENT_LANG": current_lang,
         "ALT_LANG": alt_lang,
         "IS_RTL": locale_meta["dir"] == "rtl",

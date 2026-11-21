@@ -61,6 +61,71 @@ DJANGO_ADMIN_URL = os.environ.get("DJANGO_ADMIN_URL", "django-admin/").lstrip("/
 if not DJANGO_ADMIN_URL.endswith("/"):
     DJANGO_ADMIN_URL += "/"
 CLUB_CONTACT_EMAIL = os.environ.get("CLUB_CONTACT_EMAIL", "info@techwando.example.com")
+CLUB_PHONE = os.environ.get("CLUB_PHONE", "+98 21 8888 0000")
+CLUB_ADDRESS = {
+    "fa": os.environ.get(
+        "CLUB_ADDRESS_FA",
+        "تهران، خیابان ولیعصر، بالاتر از پارک ساعی، پلاک ۱۲۴، طبقه دوم",
+    ),
+    "ja": os.environ.get(
+        "CLUB_ADDRESS_JA",
+        "テヘラン市 ヴァリアスル通り 124番地 2階（サーイ公園北側）",
+    ),
+}
+CLUB_TRAINING_HOURS = {
+    "fa": os.environ.get("CLUB_HOURS_FA", "شنبه تا پنجشنبه، ۹:۰۰ تا ۲۱:۰۰"),
+    "ja": os.environ.get("CLUB_HOURS_JA", "土曜〜木曜 9:00〜21:00"),
+}
+CLUB_SOCIAL_LINKS = [
+    {
+        "label": "Instagram",
+        "icon": "bi-instagram",
+        "url": os.environ.get("CLUB_INSTAGRAM_URL", "https://www.instagram.com/techwando"),
+    },
+    {
+        "label": "YouTube",
+        "icon": "bi-youtube",
+        "url": os.environ.get("CLUB_YOUTUBE_URL", "https://www.youtube.com/@techwando"),
+    },
+    {
+        "label": "Telegram",
+        "icon": "bi-telegram",
+        "url": os.environ.get("CLUB_TELEGRAM_URL", "https://t.me/techwando"),
+    },
+]
+
+# Featured coaching team shown on the homepage and About page.
+# Configuration-driven so the frontend needs no database schema change.
+# Names are content (not interface strings); roles are translated via gettext.
+CLUB_INSTRUCTORS = [
+    {
+        "name_fa": "استاد رضا موسوی",
+        "name_ja": "レザ・モサビ 師範",
+        "role": _("Technical Director & Head Coach"),
+        "discipline": _("Taekwondo"),
+        "rank_fa": "دان ۴ — استاد",
+        "rank_ja": "四段 師範",
+        "photo": "images/placeholders/instructor-1.svg",
+    },
+    {
+        "name_fa": "استاد هاروکی تاناکا",
+        "name_ja": "田中 春樹 師範",
+        "role": _("Karate & Kata Program Lead"),
+        "discipline": _("Karate"),
+        "rank_fa": "دان ۳ کاراته",
+        "rank_ja": "空手 三段",
+        "photo": "images/placeholders/instructor-2.svg",
+    },
+    {
+        "name_fa": "استاد سارا احمدی",
+        "name_ja": "サラ・アフマディ 師範",
+        "role": _("Youth Development & Conditioning"),
+        "discipline": _("Judo"),
+        "rank_fa": "دان ۲ جودو",
+        "rank_ja": "柔道 二段",
+        "photo": "images/placeholders/instructor-3.svg",
+    },
+]
 
 # -----------------------------------------------------------------------------
 # Application Definition

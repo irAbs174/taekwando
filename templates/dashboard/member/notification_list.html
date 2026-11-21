@@ -5,7 +5,7 @@
 {% block dashboard_content %}
 <div class="section-head">
   <div>
-    <h1 style="margin:0;font-size:1.5rem;">{% trans "Notifications" %}</h1>
+    <h1 class="section-title">{% trans "Notifications" %}</h1>
     <p>{% trans "Review decisions, membership updates, and club alerts." %}</p>
   </div>
   {% if UNREAD_NOTIFICATIONS_COUNT %}
@@ -28,7 +28,7 @@
         </div>
         <div>{{ n.localized_message }}</div>
       </div>
-      <div style="display:flex;gap:0.45rem;">
+      <div class="table-actions">
         {% if n.target_url %}
         <form method="post" action="{% url 'notifications:mark_read' n.pk %}">
           {% csrf_token %}

@@ -1,0 +1,86 @@
+{% load i18n %}
+{% with view=request.resolver_match.view_name app=request.resolver_match.app_name %}
+<p class="sidebar-heading">{% trans "Administration" %}</p>
+<ul class="sidebar-nav">
+  <li>
+    <a href="{% url 'accounts:admin_dashboard' %}" class="{% if view == 'admin_dashboard' %}active{% endif %}"
+       {% if view == 'admin_dashboard' %}aria-current="page"{% endif %}>
+      <i class="bi bi-grid-1x2" aria-hidden="true"></i>{% trans "Overview" %}
+    </a>
+  </li>
+  {% if IS_CLUB_MANAGER or user.role == "MODERATOR" %}
+  <li>
+    <a href="{% url 'accounts:admin_moderation_queue' %}" class="{% if view == 'admin_moderation_queue' %}active{% endif %}"
+       {% if view == 'admin_moderation_queue' %}aria-current="page"{% endif %}>
+      <i class="bi bi-inboxes" aria-hidden="true"></i>{% trans "Moderation Queue" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'audit_logs:reviews' %}" class="{% if view == 'reviews' %}active{% endif %}">
+      <i class="bi bi-clock-history" aria-hidden="true"></i>{% trans "Moderation History" %}
+    </a>
+  </li>
+  {% endif %}
+</ul>
+
+{% if IS_CLUB_MANAGER %}
+<div class="sidebar-section">
+  <p class="sidebar-heading">{% trans "Members & sport" %}</p>
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'accounts:admin_member_list' %}" class="{% if view == 'admin_member_list' or view == 'admin_member_detail' %}active{% endif %}">
+      <i class="bi bi-people" aria-hidden="true"></i>{% trans "Members & Applications" %}</a></li>
+    <li><a href="{% url 'belts:admin_type_list' %}" class="{% if 'belt' in view %}active{% endif %}">
+      <i class="bi bi-award" aria-hidden="true"></i>{% trans "Belt Ranks" %}</a></li>
+    <li><a href="{% url 'competitions:admin_list' %}" class="{% if app == 'competitions' %}active{% endif %}">
+      <i class="bi bi-flag" aria-hidden="true"></i>{% trans "Competitions" %}</a></li>
+    <li><a href="{% url 'audit_logs:list' %}" class="{% if view == 'list' and app == 'audit_logs' %}active{% endif %}">
+      <i class="bi bi-shield-check" aria-hidden="true"></i>{% trans "Audit Logs" %}</a></li>
+  </ul>
+</div>
+{% endif %}
+
+{% if IS_CONTENT_ADMIN %}
+<div class="sidebar-section">
+  <p class="sidebar-heading">{% trans "Content" %}</p>
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'blog:admin_list' %}" class="{% if app == 'blog' and 'category' not in view %}active{% endif %}">
+      <i class="bi bi-journal-text" aria-hidden="true"></i>{% trans "Blog Articles" %}</a></li>
+    <li><a href="{% url 'blog:admin_category_list' %}" class="{% if 'category' in view and app == 'blog' %}active{% endif %}">
+      <i class="bi bi-tags" aria-hidden="true"></i>{% trans "Blog Categories" %}</a></li>
+    <li><a href="{% url 'products:admin_list' %}" class="{% if app == 'products' and 'category' not in view %}active{% endif %}">
+      <i class="bi bi-bag" aria-hidden="true"></i>{% trans "Products Catalog" %}</a></li>
+    <li><a href="{% url 'products:admin_category_list' %}" class="{% if 'category' in view and app == 'products' %}active{% endif %}">
+      <i class="bi bi-grid" aria-hidden="true"></i>{% trans "Product Categories" %}</a></li>
+    <li><a href="{% url 'pages:admin_list' %}" class="{% if app == 'pages' and 'admin' in view %}active{% endif %}">
+      <i class="bi bi-file-earmark-text" aria-hidden="true"></i>{% trans "Pages & Programs" %}</a></li>
+    <li><a href="{% url 'seo:admin_list' %}" class="{% if app == 'seo' %}active{% endif %}">
+      <i class="bi bi-search" aria-hidden="true"></i>{% trans "SEO & Translations" %}</a></li>
+  </ul>
+</div>
+{% endif %}
+
+<div class="sidebar-section">
+  <p class="sidebar-heading">{% trans "Inbox & system" %}</p>
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'contact:admin_list' %}" class="{% if app == 'contact' %}active{% endif %}">
+      <i class="bi bi-envelope" aria-hidden="true"></i>{% trans "Contact Messages" %}</a></li>
+    <li><a href="{% url 'admin:index' %}">
+      <i class="bi bi-tools" aria-hidden="true"></i>{% trans "Django Admin" %}</a></li>
+  </ul>
+</div>
+
+<div class="sidebar-footer">
+  <div class="sidebar-user">
+    <div>
+      <strong>{{ user.get_short_name|default:user.email }}</strong>
+      <span>{{ user.get_role_display }}</span>
+    </div>
+  </div>
+  <form method="post" action="{% url 'accounts:logout' %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-outline btn-sm w-100">
+      <i class="bi bi-box-arrow-right" aria-hidden="true"></i> {% trans "Log Out" %}
+    </button>
+  </form>
+</div>
+{% endwith %}

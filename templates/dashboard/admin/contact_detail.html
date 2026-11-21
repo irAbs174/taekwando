@@ -3,7 +3,7 @@
 {% block title %}{{ contact_message.subject }} | {{ SITE_NAME }}{% endblock %}
 {% block admin_content %}
 <div class="section-head">
-  <h1 style="margin:0;font-size:1.45rem;">{{ contact_message.subject }}</h1>
+  <h1 class="section-title">{{ contact_message.subject }}</h1>
   <a class="btn btn-outline btn-sm" href="{% url 'contact:admin_list' %}">{% trans "Back to Inbox" %}</a>
 </div>
 <div class="card" style="margin-block-end:1.25rem;">

@@ -1,15 +1,25 @@
 {% extends "base.html" %}
-{% load i18n techwando_tags %}
+{% load i18n static techwando_tags %}
+
+{% block title %}{% if page_tr %}{{ page_tr.seo_title|default:page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %} | {{ SITE_NAME }}{% endblock %}
+{% block meta_description %}{% if page_tr %}{{ page_tr.seo_description|default:page_tr.summary }}{% else %}{% trans "Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Japanese cultural bridge." %}{% endif %}{% endblock %}
 
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% if page_tr %}
+      {% include "includes/breadcrumbs.html" with current_label=page_tr.title %}
+    {% else %}
+      {% trans "About TECHWANDO" as about_label %}
+      {% include "includes/breadcrumbs.html" with current_label=about_label %}
+    {% endif %}
+    <span class="hero-kicker mb-3"><i class="bi bi-buildings" aria-hidden="true"></i>{% trans "Established martial arts academy" %}</span>
     <h1>{% if page_tr %}{{ page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %}</h1>
     <p>
       {% if page_tr and page_tr.subtitle %}
         {{ page_tr.subtitle }}
       {% else %}
-        {% trans "Uniting martial arts heritage, athletic excellence, and verified sports education." %}
+        {% trans "Uniting martial arts heritage, athletic excellence and verified sports education." %}
       {% endif %}
     </p>
   </div>
@@ -17,41 +27,215 @@
 
 <section class="section">
   <div class="container">
-    <div class="card" style="max-inline-size:900px;margin-inline:auto;">
-      <div class="card-body prose" style="padding:2rem;">
-        {% if page_tr %}
-          {% if page_tr.is_fallback %}
-          <div class="alert alert-info">
-            {% trans "This content is currently shown in the club's alternate language." %}
-          </div>
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-7">
+        <span class="eyebrow">{% trans "Our story" %}</span>
+        <div class="prose prose-wide">
+          {% if page_tr %}
+            {% if page_tr.is_fallback %}
+            <div class="alert alert-info">
+              <i class="bi bi-translate" aria-hidden="true"></i>
+              <span class="alert-body">{% trans "This content is currently shown in the club's alternate language." %}</span>
+            </div>
+            {% endif %}
+            {{ page_tr.body|linebreaks }}
+          {% else %}
+            <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Japanese martial arts communities." %}</p>
+            <p>{% trans "Every athlete keeps a permanent training record, and every belt promotion, medal and community activity is reviewed by our technical board before publication." %}</p>
           {% endif %}
-          {{ page_tr.body|linebreaks }}
-        {% else %}
-          <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking, and championship verification club connecting Persian and Japanese martial arts communities." %}</p>
-        {% endif %}
+        </div>
       </div>
-    </div>
 
-    {% if services %}
-    <div style="margin-block-start:3rem;">
-      <div class="section-head">
-        <h2>{% trans "Training Programs" %}</h2>
-        <a class="btn btn-outline btn-sm" href="{% url 'pages:services' %}">{% trans "View All" %}</a>
-      </div>
-      <div class="grid grid-2">
-        {% for svc in services %}
-        {% with s_tr=svc|tr %}
+      <div class="col-lg-5">
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title"><a href="{{ svc.get_absolute_url }}">{{ s_tr.title }}</a></h3>
-            <p class="card-text">{{ s_tr.summary|default:s_tr.body|truncatechars:160 }}</p>
+            <h2 class="card-title">{% trans "Club at a glance" %}</h2>
+            <dl class="meta-grid mt-2">
+              <div class="meta-item">
+                <dt>{% trans "Disciplines" %}</dt>
+                <dd>{% trans "Taekwondo · Karate · Judo" %}</dd>
+              </div>
+              <div class="meta-item">
+                <dt>{% trans "Languages" %}</dt>
+                <dd>فارسی · 日本語</dd>
+              </div>
+              <div class="meta-item">
+                <dt>{% trans "Membership" %}</dt>
+                <dd>{% trans "Youth, adult and elite squads" %}</dd>
+              </div>
+              <div class="meta-item">
+                <dt>{% trans "Records" %}</dt>
+                <dd>{% trans "Reviewed and verified" %}</dd>
+              </div>
+            </dl>
+            <hr class="divider">
+            <h3 class="card-title">{% trans "Visit the dojo" %}</h3>
+            <ul class="icon-list mt-2">
+              {% if CLUB_ADDRESS %}<li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>{{ CLUB_ADDRESS }}</span></li>{% endif %}
+              {% if CLUB_TRAINING_HOURS %}<li><i class="bi bi-clock" aria-hidden="true"></i><span>{{ CLUB_TRAINING_HOURS }}</span></li>{% endif %}
+              <li><i class="bi bi-envelope" aria-hidden="true"></i><span class="ltr-inline">{{ CLUB_CONTACT_EMAIL }}</span></li>
+            </ul>
+            <a class="btn btn-outline btn-sm mt-3 align-self-start" href="{% url 'contact:public' %}">
+              {% trans "Contact the club" %}
+            </a>
           </div>
         </div>
-        {% endwith %}
-        {% endfor %}
       </div>
     </div>
-    {% endif %}
   </div>
 </section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{% trans "Mission & values" %}</span>
+        <h2>{% trans "What we stand for" %}</h2>
+        <p>{% trans "Our mission is to develop confident, respectful and resilient people through authentic martial arts practice." %}</p>
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Safety first" %}</h3>
+          <p class="card-text">{% trans "Progressive intensity, qualified supervision and evidence-based injury prevention guide every session." %}</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Respect & etiquette" %}</h3>
+          <p class="card-text">{% trans "Reigi, humility and mutual care are taught alongside technique, inside and outside the dojo." %}</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Honest progression" %}</h3>
+          <p class="card-text">{% trans "Belt ranks reflect demonstrated skill and character, never shortcuts or favouritism." %}</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Community responsibility" %}</h3>
+          <p class="card-text">{% trans "Members contribute through volunteering, youth mentoring and cultural exchange activities." %}</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-translate" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "One club, two languages" %}</h3>
+          <p class="card-text">{% trans "Persian and Japanese members share standards, events and a single verified record system." %}</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <span class="feature-icon"><i class="bi bi-eye" aria-hidden="true"></i></span>
+          <h3 class="card-title">{% trans "Privacy by design" %}</h3>
+          <p class="card-text">{% trans "Personal data and certificates stay private; public profiles require explicit consent." %}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <span class="eyebrow">{% trans "Training philosophy" %}</span>
+        <h2>{% trans "Practice with purpose" %}</h2>
+        <p class="lead mt-2">
+          {% trans "Progress comes from repetition, reflection and respect — not from collecting belts." %}
+        </p>
+        <a class="btn btn-outline mt-2" href="{% url 'pages:education' %}">{% trans "See the curriculum" %}</a>
+      </div>
+      <div class="col-lg-7">
+        <ol class="timeline list-unstyled mt-3">
+          <li>
+            <strong>{% trans "Fundamentals first" %}</strong>
+            <p class="card-text">{% trans "Stance, balance, breathing and etiquette form the base of every discipline." %}</p>
+          </li>
+          <li>
+            <strong>{% trans "Technical precision" %}</strong>
+            <p class="card-text">{% trans "Coaches break down each technique, then rebuild it under controlled pressure." %}</p>
+          </li>
+          <li>
+            <strong>{% trans "Applied practice" %}</strong>
+            <p class="card-text">{% trans "Sparring, randori and scenario drills teach decision-making without sacrificing safety." %}</p>
+          </li>
+          <li>
+            <strong>{% trans "Reflection and service" %}</strong>
+            <p class="card-text">{% trans "Self-assessment, mentoring and community service complete the path to senior rank." %}</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if CLUB_INSTRUCTORS %}
+<section class="section section-alt" id="instructors">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{% trans "Coaching team" %}</span>
+        <h2>{% trans "Our instructors" %}</h2>
+        <p>{% trans "Qualified coaches who combine competition experience with a commitment to athlete welfare." %}</p>
+      </div>
+    </div>
+    <div class="grid grid-3">
+      {% for instructor in CLUB_INSTRUCTORS %}
+      <article class="card card-hover">
+        <div class="card-media" style="aspect-ratio: 4 / 3;">
+          <img src="{% static instructor.photo %}" alt="{{ instructor.name }}" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">{{ instructor.name }}</h3>
+          <p class="card-text mb-0">{{ instructor.role }}</p>
+          <div class="card-footer-meta">
+            <span class="badge badge-neutral">{{ instructor.discipline }}</span>
+            <span>{{ instructor.rank }}</span>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if services %}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{% trans "Programs" %}</span>
+        <h2>{% trans "Training programs" %}</h2>
+      </div>
+      <a class="btn btn-outline btn-sm" href="{% url 'pages:services' %}">{% trans "View all programs" %}</a>
+    </div>
+    <div class="grid grid-2">
+      {% for svc in services %}
+      {% with s_tr=svc|tr %}
+      <article class="card card-hover">
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ svc.get_absolute_url }}">{{ s_tr.title }}</a></h3>
+          <p class="card-text">{{ s_tr.summary|default:s_tr.body|striptags|truncatechars:160 }}</p>
+          <div class="card-footer-meta">
+            <span>{% trans "All levels" %}</span>
+            <a href="{{ svc.get_absolute_url }}">{% trans "Program details" %}</a>
+          </div>
+        </div>
+      </article>
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% include "includes/cta.html" %}
 {% endblock %}

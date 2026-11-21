@@ -4,12 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TECHWANDO — 500</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 2rem;
+      font-family: "Vazirmatn", "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at 80% 10%, #2b3a52, #0b1524 60%);
+      color: #eef2f7; text-align: center;
+    }
+    .box { max-width: 560px; }
+    .mark {
+      width: 64px; height: 64px; margin: 0 auto 1.5rem; border-radius: 16px;
+      background: #c62828; display: grid; place-items: center; font-weight: 800; font-size: 1.4rem;
+    }
+    h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 .75rem; }
+    p { color: #aab6c6; line-height: 1.8; margin: 0 0 .6rem; }
+    a { display: inline-block; margin-top: 1.5rem; padding: .7rem 1.4rem; border-radius: 8px;
+        background: #fff; color: #14243a; font-weight: 600; text-decoration: none; }
+  </style>
 </head>
-<body style="font-family:sans-serif;background:#0b1120;color:#fff;display:grid;place-items:center;min-height:100vh;margin:0;padding:2rem;text-align:center;">
-  <div>
-    <h1 style="margin-bottom:0.5rem;">TECHWANDO — 500</h1>
+<body>
+  <div class="box">
+    <div class="mark" aria-hidden="true">TW</div>
+    <h1>TECHWANDO — {% trans "Server Error" %}</h1>
     <p>{% trans "An unexpected server error occurred. Please try again shortly." %}</p>
     <p lang="ja" dir="ltr">サーバーエラーが発生しました。しばらくしてから再度お試しください。</p>
+    <a href="/">{% trans "Return to Homepage" %}</a>
   </div>
 </body>
 </html>

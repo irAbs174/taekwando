@@ -5,11 +5,15 @@
 {% block content %}
 <section class="section">
   <div class="container">
-    <div class="empty-state" style="max-inline-size:620px;margin-inline:auto;">
-      <span class="badge badge-rejected" style="margin-block-end:1rem;">403</span>
-      <h1 style="margin:0 0 0.75rem;">{% trans "Access Denied" %}</h1>
+    <div class="empty-state" style="max-inline-size: 640px; margin-inline: auto;">
+      <span class="empty-icon" aria-hidden="true"><i class="bi bi-shield-lock"></i></span>
+      <span class="badge badge-rejected">403</span>
+      <h1>{% trans "Access Denied" %}</h1>
       <p>{% trans "You do not have permission to view this page or resource." %}</p>
-      <a class="btn btn-primary" href="{% url 'pages:home' %}">{% trans "Return to Homepage" %}</a>
+      <div class="d-flex gap-2 flex-wrap justify-content-center">
+        <a class="btn btn-primary" href="{% url 'pages:home' %}">{% trans "Return to Homepage" %}</a>
+        <a class="btn btn-outline" href="{% url 'members:dashboard' %}">{% trans "Member Portal" %}</a>
+      </div>
     </div>
   </div>
 </section>

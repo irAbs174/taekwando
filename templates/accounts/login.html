@@ -1,29 +1,38 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n static %}
 {% block title %}{% trans "Member Log In" %} | {{ SITE_NAME }}{% endblock %}
 {% block meta_robots %}noindex, nofollow{% endblock %}
 
 {% block content %}
 <div class="container auth-wrap">
-  <div class="card">
-    <div class="card-body" style="padding:2rem;">
-      <h1 style="margin:0 0 0.35rem;font-size:1.55rem;">{% trans "Sign In to TECHWANDO" %}</h1>
-      <p class="card-text">{% trans "Access your private club member portal or administration panel." %}</p>
+  <div class="auth-card">
+    <div class="card">
+      <div class="card-body">
+        <div class="auth-head">
+          <img class="auth-mark" src="{% static 'images/logo-mark.svg' %}" alt="" width="54" height="54">
+          <h1>{% trans "Sign In to TECHWANDO" %}</h1>
+          <p>{% trans "Access your private club member portal or administration panel." %}</p>
+        </div>
 
-      <form method="post" action="{% url 'accounts:login' %}" novalidate>
-        {% csrf_token %}
-        {% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}
-        {% include "includes/form_fields.html" with form=form %}
-        <button type="submit" class="btn btn-primary btn-lg" style="inline-size:100%;">
-          {% trans "Log In" %}
-        </button>
-      </form>
+        <form method="post" action="{% url 'accounts:login' %}" novalidate>
+          {% csrf_token %}
+          {% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}
+          {% include "includes/form_fields.html" with form=form %}
+          <button type="submit" class="btn btn-primary btn-lg w-100">
+            <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i> {% trans "Log In" %}
+          </button>
+        </form>
 
-      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-block-start:1.25rem;font-size:0.88rem;">
-        <a href="{% url 'accounts:password_reset' %}">{% trans "Forgot your password?" %}</a>
-        <a href="{% url 'accounts:register' %}">{% trans "Apply for Membership" %}</a>
+        <div class="auth-links">
+          <a href="{% url 'accounts:password_reset' %}">{% trans "Forgot your password?" %}</a>
+          <a href="{% url 'accounts:register' %}">{% trans "Apply for Membership" %}</a>
+        </div>
       </div>
     </div>
+    <p class="text-center small text-muted mt-3 mb-0">
+      <i class="bi bi-shield-lock" aria-hidden="true"></i>
+      {% trans "Your member data and uploaded documents remain private." %}
+    </p>
   </div>
 </div>
 {% endblock %}

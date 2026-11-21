@@ -100,6 +100,18 @@ def local_datetime(value) -> str:
     return local_date(value)
 
 
+@register.filter(name="accessible_field")
+def accessible_field(field):
+    """Render a form field with ARIA wiring for server-side validation errors."""
+    attrs = {}
+    if field.errors:
+        attrs["aria-invalid"] = "true"
+        attrs["aria-describedby"] = f"{field.auto_id}_error"
+    if field.field.required:
+        attrs["aria-required"] = "true"
+    return field.as_widget(attrs=attrs)
+
+
 @register.filter(name="tr")
 def tr(obj, lang_code: str | None = None):
     """Fetch the localized translation object with automatic language fallback."""

@@ -977,3 +977,2874 @@ msgstr "ページが見つかりません (404)"
 
 msgid "Return to Homepage"
 msgstr "トップページへ戻る"
+
+msgid ""
+"A bilingual martial arts academy uniting Persian and Japanese budo "
+"traditions with modern sports education, transparent belt progression, and "
+"verified championship records."
+msgstr "ペルシャと日本の武道の伝統を、現代のスポーツ教育・透明な昇級昇段・公認された大会記録と融合させるバイリンガル武道アカデミーです。"
+
+msgid "A curriculum that grows with the athlete"
+msgstr "選手とともに成長するカリキュラム"
+
+msgid "A modern academy rooted in respect, effort and integrity"
+msgstr "礼節・努力・誠実を基盤とする現代的なアカデミー"
+
+msgid "API Docs"
+msgstr "APIドキュメント"
+
+msgid "About Us"
+msgstr "私たちについて"
+
+msgid "Acceptance of terms"
+msgstr "規約への同意"
+
+msgid "Access and correct your own profile information."
+msgstr "ご自身のプロフィール情報の閲覧・修正"
+
+msgid ""
+"Access to member data is role-based, logged, and limited to what each "
+"administrator needs. Security events are recorded in an immutable audit log,"
+" and sensitive files are served only through authenticated endpoints."
+msgstr ""
+"会員データへのアクセスは権限に基づき、記録され、各管理者に必要な範囲に限定されます。セキュリティ事象は改ざん不能な監査ログに保存され、機密ファイルは認証済みのエンドポイントからのみ配信されます。"
+
+msgid "Account"
+msgstr "アカウント"
+
+msgid "Achievement Date"
+msgstr "実績日"
+
+msgid ""
+"Achievements, medals, belt promotions, competitions and social activities "
+"are submitted for review. Administrators may approve, reject or request "
+"revisions, and may add feedback visible to you in the portal. Members cannot"
+" approve their own submissions or change review decisions."
+msgstr ""
+"実績・メダル・昇段・大会・社会活動は審査のために提出されます。管理者は承認・却下・修正依頼を行い、ポータルにフィードバックを表示できます。会員が自身の申請を承認したり審査結果を変更することはできません。"
+
+msgid "Actor"
+msgstr "実行者"
+
+msgid "Add Belt Rank"
+msgstr "帯位の追加"
+
+msgid "Add Category"
+msgstr "カテゴリを追加"
+
+msgid "Add Competition Participation"
+msgstr "大会参加を追加"
+
+msgid "Add Page"
+msgstr "ページを追加"
+
+msgid "Add Product"
+msgstr "商品を追加"
+
+msgid "Add Route SEO"
+msgstr "ルートSEOを追加"
+
+msgid "Administration navigation"
+msgstr "管理画面ナビゲーション"
+
+msgid "Administration workspace"
+msgstr "管理ワークスペース"
+
+msgid ""
+"Administrators review supporting documents before records are published."
+msgstr "管理者は記録の公開前に証明書類を審査します。"
+
+msgid ""
+"Age-appropriate groups, small class sizes and a respectful training culture."
+msgstr "年齢に応じたクラス編成、少人数制、礼節ある稽古文化。"
+
+msgid "All achievements"
+msgstr "すべての実績"
+
+msgid "All articles"
+msgstr "すべての記事"
+
+msgid "All levels"
+msgstr "全レベル"
+
+msgid "All programs"
+msgstr "すべてのプログラム"
+
+msgid "All statuses"
+msgstr "すべてのステータス"
+
+msgid "All submissions are reviewed before publication."
+msgstr "すべての申請は公開前に審査されます。"
+
+msgid "All types"
+msgstr "すべての種類"
+
+msgid ""
+"An athlete profile is published only when membership is approved, the record"
+" has passed review, and the member has given explicit consent to both public"
+" profile consent and visibility. Consent can be withdrawn at any time from "
+"your account settings."
+msgstr ""
+"選手プロフィールは、会員資格の承認・記録の審査通過・公開同意と公開設定の両方への明示的な同意が揃った場合にのみ公開されます。同意はアカウント設定からいつでも撤回できます。"
+
+msgid "An unexpected server error occurred. Please try again shortly."
+msgstr "予期しないサーバーエラーが発生しました。しばらくしてから再度お試しください。"
+
+msgid "Applied practice"
+msgstr "実践的な稽古"
+
+msgid "Approved and consented club activities will be published here."
+msgstr "承認され公開同意のあるクラブ活動がここに掲載されます。"
+
+msgid "Approved medal records"
+msgstr "承認済みメダル記録"
+
+msgid "Archived"
+msgstr "アーカイブ済み"
+
+msgid "Are you sure you want to continue? This action cannot be undone."
+msgstr "続行してもよろしいですか？この操作は元に戻せません。"
+
+msgid "Are you sure you want to permanently remove this submission?"
+msgstr "この申請を完全に削除してもよろしいですか？"
+
+msgid "Article details"
+msgstr "記事の詳細"
+
+msgid "Articles & News"
+msgstr "記事・ニュース"
+
+msgid "Athlete profiles"
+msgstr "選手プロフィール"
+
+msgid "Athletes Directory"
+msgstr "選手名鑑"
+
+msgid "Attend the required training hours."
+msgstr "所定の稽古時間数を満たすこと。"
+
+msgid ""
+"Authentic instruction across striking, grappling and weapons-based Japanese "
+"and Korean arts."
+msgstr "打撃・組技・武器術にわたる日本および韓国の武道を正統に指導します。"
+
+msgid "Author"
+msgstr "著者"
+
+msgid "Back to Inbox"
+msgstr "受信箱に戻る"
+
+msgid "Back to Queue"
+msgstr "審査キューに戻る"
+
+msgid "Back to athletes"
+msgstr "選手一覧に戻る"
+
+msgid "Back to the journal"
+msgstr "ブログに戻る"
+
+msgid "Back to top"
+msgstr "ページ上部へ"
+
+msgid "Bamboo sword fundamentals, zanshin and the discipline of the kendojo."
+msgstr "竹刀の基本、残心、剣道場の規律。"
+
+msgid "Begin your martial arts journey with TECHWANDO"
+msgstr "TECHWANDOで武道の旅を始めましょう"
+
+msgid "Belt History"
+msgstr "帯の履歴"
+
+msgid "Belt Promotion Request"
+msgstr "昇級・昇段申請"
+
+msgid "Belt Rank Configuration"
+msgstr "帯位設定"
+
+msgid "Belt Rank Form"
+msgstr "帯位フォーム"
+
+msgid "Belt Registry"
+msgstr "帯位登録"
+
+msgid ""
+"Belt ranks reflect demonstrated skill and character, never shortcuts or "
+"favouritism."
+msgstr "帯位は実証された技量と人格を反映するものであり、近道やえこひいきではありません。"
+
+msgid ""
+"Blending and redirecting energy, joint locks and non-resistance defence."
+msgstr "力の流れを合わせて導く技法、関節技、抵抗しない護身。"
+
+msgid "Blog Article (fa-IR & ja-JP)"
+msgstr "ブログ記事（ペルシャ語・日本語）"
+
+msgid "Blog Article Editor"
+msgstr "記事エディター"
+
+msgid "Blog Articles (Persian & Japanese)"
+msgstr "ブログ記事（ペルシャ語・日本語）"
+
+msgid "Blog Category"
+msgstr "ブログカテゴリ"
+
+msgid "Book a Trial Session"
+msgstr "体験稽古を予約"
+
+msgid "Book a supervised trial session before joining."
+msgstr "入会前に指導員立会いの体験稽古をご予約ください。"
+
+msgid "Breadcrumb"
+msgstr "パンくずリスト"
+
+msgid "Browse Champions"
+msgstr "チャンピオンを見る"
+
+msgid "Browse the catalog"
+msgstr "カタログを見る"
+
+msgid "By"
+msgstr "著者"
+
+msgid ""
+"By using this website or the member portal you agree to these terms, the "
+"club code of conduct, and all applicable dojo rules. If you do not agree, "
+"please do not use the service."
+msgstr ""
+"本ウェブサイトまたは会員ポータルをご利用になることで、本規約、クラブ行動規範、および適用される道場規則に同意したものとみなします。同意いただけない場合はご利用をお控えください。"
+
+msgid "Certificate"
+msgstr "証明書"
+
+msgid ""
+"Certified coaches with competition, teaching and safeguarding experience."
+msgstr "大会経験・指導経験・選手保護の研修を備えた公認指導者。"
+
+msgid ""
+"Certified coaching for youth beginners, competitive athletes and Dan black "
+"belt candidates."
+msgstr "ジュニア初心者・競技選手・黒帯有段者志望者への公認指導。"
+
+msgid "Certified, safety-first coaching"
+msgstr "公認指導による安全第一の稽古"
+
+msgid "Championship"
+msgstr "選手権"
+
+msgid "Changes to these terms"
+msgstr "本規約の変更"
+
+msgid "Choose a program"
+msgstr "プログラムを選ぶ"
+
+msgid "Clear filters"
+msgstr "フィルターを解除"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Club activities beyond the mat"
+msgstr "畳の外でのクラブ活動"
+
+msgid "Club administration & dojo"
+msgstr "クラブ事務局・道場"
+
+msgid "Club at a glance"
+msgstr "クラブ概要"
+
+msgid ""
+"Club-approved uniforms, competition protection, embroidered Dan belts and "
+"training tools. In-store inquiry only — no online payment."
+msgstr "クラブ公認の道着、試合用防具、刺繍入り段帯、稽古用具。店頭でのお問い合わせのみで、オンライン決済はありません。"
+
+msgid "Club-approved uniforms, protective gear and embroidered Dan belts."
+msgstr "クラブ公認の道着、防具、刺繍入り段帯。"
+
+msgid ""
+"Coaches break down each technique, then rebuild it under controlled "
+"pressure."
+msgstr "指導員は技を分解して教え、その後、管理された負荷の中で組み立て直します。"
+
+msgid "Coaching team"
+msgstr "指導陣"
+
+msgid "Code"
+msgstr "コード"
+
+msgid "Code of conduct"
+msgstr "行動規範"
+
+msgid "Community"
+msgstr "コミュニティ"
+
+msgid ""
+"Community activities are published only after administrator approval and "
+"explicit member consent."
+msgstr "社会活動は管理者の承認と会員の明示的な同意がある場合にのみ公開されます。"
+
+msgid "Community responsibility"
+msgstr "社会への責任"
+
+msgid "Competition Form"
+msgstr "大会フォーム"
+
+msgid "Competition Location"
+msgstr "大会開催地"
+
+msgid "Competition Participation"
+msgstr "大会参加"
+
+msgid "Competitions Management"
+msgstr "大会管理"
+
+msgid "Confirm Deletion"
+msgstr "削除の確認"
+
+msgid "Contact Inbox"
+msgstr "お問い合わせ受信箱"
+
+msgid "Contact Messages Inbox"
+msgstr "お問い合わせメッセージ受信箱"
+
+msgid "Contact the club"
+msgstr "クラブに問い合わせる"
+
+msgid ""
+"Contact the club administration for data requests or policy clarification."
+msgstr "データに関するご請求やポリシーの確認はクラブ事務局までお問い合わせください。"
+
+msgid ""
+"Contact the club administration to request deletion where legally permitted."
+msgstr "法令上認められる範囲での削除をご希望の場合は、クラブ事務局までご連絡ください。"
+
+msgid "Content"
+msgstr "コンテンツ"
+
+msgid "Correction requested"
+msgstr "修正依頼済み"
+
+msgid "Create Account"
+msgstr "アカウント作成"
+
+msgid "Create Member Account"
+msgstr "会員アカウントを作成"
+
+msgid ""
+"Create your athlete portal account. Your membership application is reviewed "
+"by club administrators."
+msgstr "選手ポータルのアカウントを作成してください。入会申請はクラブ管理者が審査します。"
+
+msgid "Cultural bridge"
+msgstr "文化の架け橋"
+
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+msgid "Dashboard content"
+msgstr "ダッシュボードの内容"
+
+msgid "Data retention and security"
+msgstr "データの保持とセキュリティ"
+
+msgid "Dates"
+msgstr "日付"
+
+msgid "Delete Submission?"
+msgstr "申請を削除しますか？"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Discipline, education and verified martial arts excellence"
+msgstr "規律・教育・公認された武道の卓越性"
+
+msgid "Disciplines"
+msgstr "種目"
+
+msgid "Disciplines taught at the academy"
+msgstr "アカデミーで学べる種目"
+
+msgid "Dismiss"
+msgstr "閉じる"
+
+msgid "Division / Category"
+msgstr "階級・カテゴリ"
+
+msgid "Document coaching workshops, volunteer events, and cultural outreach."
+msgstr "指導者研修、ボランティア活動、文化交流の記録。"
+
+msgid "Dojo shop"
+msgstr "道場ショップ"
+
+msgid "Draft"
+msgstr "下書き"
+
+msgid ""
+"Dynamic kicking techniques, poomsae forms, Olympic-style sparring and Dan "
+"promotion."
+msgstr "力強い蹴り技、プムセ、オリンピック式組手、昇段。"
+
+msgid ""
+"Each module combines technical instruction, physical preparation and the "
+"ethical foundations of martial arts practice."
+msgstr "各モジュールは技術指導、体力養成、武道の倫理的基盤を組み合わせています。"
+
+msgid "Edit Belt Promotion"
+msgstr "昇級・昇段を編集"
+
+msgid "Edit Competition Record"
+msgstr "大会記録を編集"
+
+msgid "Edit Medal Submission"
+msgstr "メダル申請を編集"
+
+msgid "Edit Member Profile"
+msgstr "会員プロフィールを編集"
+
+msgid "Edit Social Activity"
+msgstr "社会活動を編集"
+
+msgid "Edit Sports Achievement"
+msgstr "スポーツ実績を編集"
+
+msgid "Education & Curriculum"
+msgstr "教育・カリキュラム"
+
+msgid "Educational curriculum modules are being prepared."
+msgstr "教育カリキュラムのモジュールを準備中です。"
+
+msgid ""
+"Email addresses, phone numbers, birth dates and uploaded certificates are "
+"stored in a protected private area. They are visible only to you and to "
+"authorized club reviewers; they are never shown on public pages or in public"
+" APIs."
+msgstr ""
+"メールアドレス、電話番号、生年月日、アップロードされた証明書は保護された非公開領域に保存されます。ご本人と権限を持つクラブ審査担当者のみが閲覧でき、公開ページや公開APIに表示されることはありません。"
+
+msgid "Equipment"
+msgstr "用具"
+
+msgid "Equipment catalog"
+msgstr "用具カタログ"
+
+msgid "Established martial arts academy"
+msgstr "伝統ある武道アカデミー"
+
+msgid ""
+"Every athlete keeps a permanent training record, and every belt promotion, "
+"medal and community activity is reviewed by our technical board before "
+"publication."
+msgstr "すべての選手が継続的な稽古記録を持ち、昇級・昇段、メダル、社会活動は公開前に技術委員会の審査を受けます。"
+
+msgid "Explore Our Champions"
+msgstr "チャンピオンを見る"
+
+msgid "Explore the curriculum"
+msgstr "カリキュラムを見る"
+
+msgid "Family-friendly club"
+msgstr "家族で通えるクラブ"
+
+msgid "Find the right training path"
+msgstr "自分に合った稽古の道を見つける"
+
+msgid "Follow the club"
+msgstr "クラブをフォロー"
+
+msgid ""
+"For privacy questions, contact the club administration using the contact "
+"form or the official email address published on this website."
+msgstr "プライバシーに関するご質問は、お問い合わせフォームまたは本サイトに掲載の公式メールアドレスからクラブ事務局までご連絡ください。"
+
+msgid "From"
+msgstr "差出人"
+
+msgid ""
+"From a child's first class to international championship preparation, our "
+"curriculum balances technique, physical conditioning, etiquette and personal"
+" responsibility."
+msgstr "子どもの初めての稽古から国際大会への準備まで、技術・体力・礼儀・自己責任のバランスを重視します。"
+
+msgid "Full data protection record"
+msgstr "データ保護記録の全文"
+
+msgid "Fully bilingual Persian and Japanese"
+msgstr "ペルシャ語・日本語の完全バイリンガル"
+
+msgid "Fundamentals first"
+msgstr "まず基本から"
+
+msgid "Further reading"
+msgstr "関連記事"
+
+msgid "Granted"
+msgstr "同意済み"
+
+msgid "Hello,"
+msgstr "こんにちは。"
+
+msgid "Honest progression"
+msgstr "誠実な成長"
+
+msgid "Honours"
+msgstr "栄誉"
+
+msgid "How promotion works"
+msgstr "昇級・昇段の流れ"
+
+msgid "How we collect, store and protect your information."
+msgstr "お客様情報の収集・保存・保護の方法。"
+
+msgid "IP Address"
+msgstr "IPアドレス"
+
+msgid ""
+"If an active account exists for the address entered, password reset "
+"instructions have been sent."
+msgstr "ご入力のアドレスに有効なアカウントが存在する場合、パスワード再設定のご案内をお送りしました。"
+
+msgid "If you did not request this change, you can safely ignore this email."
+msgstr "この変更にお心当たりがない場合は、本メールを破棄してください。"
+
+msgid "Immutable security and administrative event trail."
+msgstr "改ざん不能なセキュリティ・管理イベントの記録。"
+
+msgid "Inbox & system"
+msgstr "受信箱・システム"
+
+msgid "Information we collect"
+msgstr "収集する情報"
+
+msgid "Inquire"
+msgstr "お問い合わせ"
+
+msgid "Inspect Supporting Certificate / Evidence"
+msgstr "証明書・証拠書類を確認"
+
+msgid ""
+"Inspect uploaded certificates and approve, reject, or request revision on "
+"submissions."
+msgstr "アップロードされた証明書を確認し、申請を承認・却下・修正依頼してください。"
+
+msgid "Invalid or Expired Link"
+msgstr "リンクが無効または期限切れです"
+
+msgid "Japanese Name"
+msgstr "日本語名"
+
+msgid "Join the Club"
+msgstr "クラブに入会"
+
+msgid "Journal"
+msgstr "ブログ"
+
+msgid "Keep your password confidential and do not share your account."
+msgstr "パスワードは厳重に管理し、アカウントを共有しないでください。"
+
+msgid "Kendo"
+msgstr "剣道"
+
+msgid "Knowledge & news"
+msgstr "知識とニュース"
+
+msgid "Lang"
+msgstr "言語"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Language selector"
+msgstr "言語選択"
+
+msgid "Languages"
+msgstr "言語"
+
+msgid "Last updated"
+msgstr "最終更新"
+
+msgid "Latest achievements and medal winners"
+msgstr "最新の実績とメダリスト"
+
+msgid "Latest articles and club news"
+msgstr "最新記事とクラブニュース"
+
+msgid ""
+"Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete"
+" verification workflow and Persian-Japanese cultural bridge."
+msgstr "TECHWANDOの武道哲学、公認指導、選手認証の流れ、ペルシャと日本の文化交流についてご紹介します。"
+
+msgid "Learn from experienced instructors"
+msgstr "経験豊富な指導者から学ぶ"
+
+msgid "Legal"
+msgstr "法的事項"
+
+msgid "Legal & policies"
+msgstr "法的事項・ポリシー"
+
+msgid "Limitation of liability"
+msgstr "免責事項"
+
+msgid "Localized Title"
+msgstr "ローカライズ済みタイトル"
+
+msgid "Manage"
+msgstr "管理"
+
+msgid "Manage Blog"
+msgstr "ブログ管理"
+
+msgid "Manage Pages"
+msgstr "ページ管理"
+
+msgid "Manage Products"
+msgstr "商品管理"
+
+msgid "Martial arts"
+msgstr "武道・武術"
+
+msgid ""
+"Martial arts training carries inherent physical risk. Members must follow "
+"safety instructions and disclose relevant health conditions. The club is not"
+" liable for misuse of the platform or for training undertaken contrary to "
+"coach guidance."
+msgstr ""
+"武道の稽古には身体的なリスクが伴います。会員は安全指示を守り、関連する健康状態を申告してください。本プラットフォームの不正利用や指導者の指示に反する稽古について、クラブは責任を負いません。"
+
+msgid "Medal honor roll"
+msgstr "メダル栄誉リスト"
+
+msgid "Meet the team"
+msgstr "指導陣を紹介"
+
+msgid "Member Correction Request"
+msgstr "会員による修正依頼"
+
+msgid "Member dashboard navigation"
+msgstr "会員ダッシュボードのナビゲーション"
+
+msgid "Members & Contact"
+msgstr "会員・お問い合わせ"
+
+msgid "Members & sport"
+msgstr "会員・競技"
+
+msgid ""
+"Members contribute through volunteering, youth mentoring and cultural "
+"exchange activities."
+msgstr "会員はボランティア、青少年指導、文化交流活動を通じて貢献しています。"
+
+msgid "Membership #"
+msgstr "会員番号"
+
+msgid "Membership Application Decision"
+msgstr "入会申請の審査結果"
+
+msgid "Membership and accounts"
+msgstr "会員資格とアカウント"
+
+msgid "Membership is subject to review and approval by club administration."
+msgstr "会員資格はクラブ事務局の審査・承認を経て有効となります。"
+
+msgid "Membership status"
+msgstr "会員ステータス"
+
+msgid "Menu"
+msgstr "メニュー"
+
+msgid ""
+"Messages are stored securely and reviewed only by authorized club "
+"administrators. Never send identity documents through this form."
+msgstr "メッセージは安全に保存され、権限を持つクラブ管理者のみが確認します。本フォームから身分証明書を送信しないでください。"
+
+msgid "Mission & values"
+msgstr "使命と価値観"
+
+msgid "Moderation Decision"
+msgstr "審査結果"
+
+msgid "Multilingual SEO Metadata"
+msgstr "多言語SEOメタデータ"
+
+msgid "My Account"
+msgstr "マイアカウント"
+
+msgid "My Belts"
+msgstr "マイ帯位"
+
+msgid "My Profile"
+msgstr "マイプロフィール"
+
+msgid "Name or SKU"
+msgstr "商品名またはSKU"
+
+msgid "Need more information?"
+msgstr "さらに詳しい情報が必要ですか？"
+
+msgid "New Article"
+msgstr "新しい記事"
+
+msgid "No approved belt rankings listed yet."
+msgstr "承認済みの帯位記録はまだありません。"
+
+msgid "No approved medals match the selected filters."
+msgstr "選択した条件に一致する承認済みメダルはありません。"
+
+msgid "No approved medals recorded yet."
+msgstr "承認済みメダルはまだ記録されていません。"
+
+msgid "No audit logs recorded yet."
+msgstr "監査ログはまだ記録されていません。"
+
+msgid "No belt promotion records match your filters."
+msgstr "条件に一致する昇級・昇段記録はありません。"
+
+msgid "No belt promotion records submitted yet."
+msgstr "昇級・昇段の申請はまだありません。"
+
+msgid "No belt records yet."
+msgstr "帯位の記録はまだありません。"
+
+msgid "No competition participation records added yet."
+msgstr "大会参加の記録はまだありません。"
+
+msgid "No contact messages received yet."
+msgstr "お問い合わせメッセージはまだありません。"
+
+msgid "No members found."
+msgstr "会員が見つかりません。"
+
+msgid "No moderation events recorded yet."
+msgstr "審査イベントはまだ記録されていません。"
+
+msgid "No published articles found."
+msgstr "公開済みの記事が見つかりません。"
+
+msgid "No published competition results yet."
+msgstr "公開された大会結果はまだありません。"
+
+msgid "No published products match your criteria."
+msgstr "条件に一致する公開商品はありません。"
+
+msgid "No social activities submitted yet."
+msgstr "社会活動はまだ提出されていません。"
+
+msgid "No sports achievements submitted yet."
+msgstr "スポーツ実績はまだ提出されていません。"
+
+msgid "No submissions match this moderation filter."
+msgstr "この審査フィルターに一致する申請はありません。"
+
+msgid "No supporting file attached."
+msgstr "添付書類はありません。"
+
+msgid "Not granted (private)"
+msgstr "未同意（非公開）"
+
+msgid "Note"
+msgstr "メモ"
+
+msgid "Note / Feedback"
+msgstr "メモ・フィードバック"
+
+msgid "Notes"
+msgstr "メモ"
+
+msgid "Official Martial Arts Academy & Verified Club Registry"
+msgstr "公式武道アカデミー・公認クラブ登録"
+
+msgid ""
+"Official championships, participating TECHWANDO athletes and verified podium"
+" outcomes."
+msgstr "公式大会、参加したTECHWANDO選手、認定された表彰台結果。"
+
+msgid "Official uniforms and equipment"
+msgstr "公式道着・用具"
+
+msgid ""
+"Officially reviewed and approved Gold, Silver, Bronze and special "
+"championship medals."
+msgstr "正式に審査・承認された金・銀・銅および特別賞メダル。"
+
+msgid "One club, two languages"
+msgstr "ひとつのクラブ、ふたつの言語"
+
+msgid ""
+"Only records approved by the technical board and cleared for public display "
+"appear here."
+msgstr "技術委員会が承認し、公開が許可された記録のみを掲載しています。"
+
+msgid ""
+"Only records reviewed and approved by the club technical board are displayed"
+" on this profile."
+msgstr "このプロフィールには、クラブ技術委員会が審査・承認した記録のみを表示しています。"
+
+msgid "Open Member Portal"
+msgstr "会員ポータルを開く"
+
+msgid "Open the link below to set a new password:"
+msgstr "以下のリンクから新しいパスワードを設定してください。"
+
+msgid "Order"
+msgstr "順序"
+
+msgid "Other club-approved items you may need."
+msgstr "その他、必要に応じてご利用いただけるクラブ公認商品。"
+
+msgid ""
+"Our administration desk can help with schedules, membership and programs."
+msgstr "事務局がスケジュール、入会、プログラムについてご案内します。"
+
+msgid "Our instructors"
+msgstr "指導者紹介"
+
+msgid ""
+"Our mission is to develop confident, respectful and resilient people through"
+" authentic martial arts practice."
+msgstr "正統な武道の稽古を通じて、自信・礼節・しなやかさを備えた人材を育成することが私たちの使命です。"
+
+msgid "Our multilingual administration desk replies in Persian and Japanese."
+msgstr "多言語対応の事務局がペルシャ語と日本語で対応いたします。"
+
+msgid "Our story"
+msgstr "私たちの歩み"
+
+msgid "Page"
+msgstr "ページ"
+
+msgid "Page (fa-IR & ja-JP)"
+msgstr "ページ（ペルシャ語・日本語）"
+
+msgid "Page Editor"
+msgstr "ページエディター"
+
+msgid "Pages, Education & Programs"
+msgstr "ページ・教育・プログラム"
+
+msgid "Pagination"
+msgstr "ページ送り"
+
+msgid "Persian (fa-IR) and Japanese (ja-JP) support"
+msgstr "ペルシャ語（fa-IR）・日本語（ja-JP）対応"
+
+msgid "Persian Name"
+msgstr "ペルシャ語名"
+
+msgid ""
+"Persian and Japanese language editions with shared standards and values."
+msgstr "共通の基準と価値観を備えたペルシャ語版・日本語版。"
+
+msgid ""
+"Persian and Japanese members share standards, events and a single verified "
+"record system."
+msgstr "ペルシャ語圏と日本語圏の会員が、基準・行事・単一の公認記録システムを共有します。"
+
+msgid ""
+"Personal data and certificates stay private; public profiles require "
+"explicit consent."
+msgstr "個人データと証明書は非公開に保たれ、公開プロフィールには明示的な同意が必要です。"
+
+msgid "Phone"
+msgstr "電話"
+
+msgid "Please confirm"
+msgstr "確認してください"
+
+msgid "Please correct the following errors:"
+msgstr "次のエラーを修正してください。"
+
+msgid "Practical self-defence, escapes, throws and pressure-point control."
+msgstr "実践的な護身術、脱出法、投げ技、急所の制御。"
+
+msgid "Practice with purpose"
+msgstr "目的を持った稽古"
+
+msgid "Precise linear strikes, kata bunkai and controlled kumite practice."
+msgstr "正確な直線的打撃、形の分解稽古、管理された組手。"
+
+msgid "Price"
+msgstr "価格"
+
+msgid "Primary navigation"
+msgstr "メインナビゲーション"
+
+msgid "Privacy by design"
+msgstr "プライバシー・バイ・デザイン"
+
+msgid "Privacy consent confirmed"
+msgstr "プライバシー同意を確認済み"
+
+msgid "Private Certificate"
+msgstr "非公開証明書"
+
+msgid "Private Evidence File"
+msgstr "非公開証拠ファイル"
+
+msgid "Private by default"
+msgstr "既定で非公開"
+
+msgid "Product (fa-IR & ja-JP)"
+msgstr "商品（ペルシャ語・日本語）"
+
+msgid "Product Category"
+msgstr "商品カテゴリ"
+
+msgid "Product Editor"
+msgstr "商品エディター"
+
+msgid ""
+"Product listings are informational. No online checkout or payment is "
+"provided; prices, availability and custom orders must be confirmed directly "
+"with the club desk."
+msgstr "商品情報はご案内目的です。オンライン決済や購入手続きはありません。価格・在庫・特注についてはクラブ受付に直接ご確認ください。"
+
+msgid "Products Catalog Management"
+msgstr "商品カタログ管理"
+
+msgid ""
+"Profiles appear only when membership is approved, records are verified, and "
+"the athlete has granted explicit public visibility consent."
+msgstr "プロフィールは、会員資格の承認、記録の審査、選手の明示的な公開同意が揃った場合にのみ表示されます。"
+
+msgid "Program details"
+msgstr "プログラム詳細"
+
+msgid ""
+"Progress comes from repetition, reflection and respect — not from collecting"
+" belts."
+msgstr "成長は反復・省察・敬意から生まれるものであり、帯を集めることではありません。"
+
+msgid ""
+"Progressive intensity, qualified supervision and evidence-based injury "
+"prevention guide every session."
+msgstr "段階的な強度、有資格者の指導、科学的根拠に基づく傷害予防をすべての稽古で徹底します。"
+
+msgid ""
+"Progressive syllabi for poomsae, kata, sparring, self-defence and "
+"conditioning."
+msgstr "プムセ、形、組手、護身術、コンディショニングの段階的カリキュラム。"
+
+msgid "Provide accurate registration and profile information."
+msgstr "正確な登録情報・プロフィール情報をご提供ください。"
+
+msgid "Public"
+msgstr "公開"
+
+msgid "Public Consent"
+msgstr "公開同意"
+
+msgid "Public Display Consent"
+msgstr "公開表示への同意"
+
+msgid "Public Profile"
+msgstr "公開プロフィール"
+
+msgid "Public athlete profiles"
+msgstr "公開選手プロフィール"
+
+msgid "Published"
+msgstr "公開済み"
+
+msgid ""
+"Qualified coaches who combine competition experience with a commitment to "
+"athlete welfare."
+msgstr "大会経験と選手の健康への配慮を併せ持つ有資格指導者。"
+
+msgid ""
+"Questions about training schedules, membership, seminars or official "
+"equipment? Send us a message."
+msgstr "稽古日程、入会、セミナー、公式用具についてご質問があればお問い合わせください。"
+
+msgid "Questions?"
+msgstr "ご質問はありますか？"
+
+msgid "Quick links"
+msgstr "クイックリンク"
+
+msgid "Read"
+msgstr "読む"
+
+msgid "Read our story"
+msgstr "私たちの歩みを読む"
+
+msgid "Received"
+msgstr "受信日時"
+
+msgid "Recent Activities"
+msgstr "最近の活動"
+
+msgid "Recent Notifications"
+msgstr "最近の通知"
+
+msgid "Recent Submissions"
+msgstr "最近の申請"
+
+msgid "Recent achievements"
+msgstr "最近の実績"
+
+msgid "Recent medal winners"
+msgstr "最近のメダリスト"
+
+msgid "Record"
+msgstr "記録"
+
+msgid "Record your tournament appearances, weight divisions, and standings."
+msgstr "大会出場、階級、順位を記録しましょう。"
+
+msgid "Records"
+msgstr "記録"
+
+msgid "Reflection and service"
+msgstr "省察と奉仕"
+
+msgid ""
+"Reigi, humility and mutual care are taught alongside technique, inside and "
+"outside the dojo."
+msgstr "礼儀、謙虚さ、相互の思いやりを、道場の内外で技術とともに教えます。"
+
+msgid "Related articles"
+msgstr "関連記事"
+
+msgid "Related equipment"
+msgstr "関連用具"
+
+msgid "Request New Link"
+msgstr "新しいリンクを請求"
+
+msgid "Request Record Correction"
+msgstr "記録の修正を依頼"
+
+msgid "Request correction of an approved record through the member portal."
+msgstr "会員ポータルから承認済み記録の修正を依頼できます。"
+
+msgid "Reset filters"
+msgstr "フィルターをリセット"
+
+msgid "Respect & etiquette"
+msgstr "敬意と礼儀"
+
+msgid ""
+"Respect instructors, fellow members and visitors. Harassment, "
+"discrimination, unsafe training and the publication of another person's "
+"private information are prohibited and may result in suspension."
+msgstr ""
+"指導者、会員、来訪者を尊重してください。ハラスメント、差別、危険な稽古、他者の個人情報の公開は禁止され、停会処分の対象となる場合があります。"
+
+msgid "Results appear in your private record."
+msgstr "結果はご自身の非公開記録に表示されます。"
+
+msgid "Review Submission"
+msgstr "申請を審査"
+
+msgid "Review decisions, membership updates, and club alerts."
+msgstr "審査結果、会員情報の更新、クラブからのお知らせ。"
+
+msgid ""
+"Review membership applications, edit profiles, and manage member account "
+"status."
+msgstr "入会申請の審査、プロフィール編集、会員アカウントの状態管理。"
+
+msgid "Reviewed and verified"
+msgstr "審査・認定済み"
+
+msgid "Reviewer"
+msgstr "審査担当者"
+
+msgid "Robots"
+msgstr "ロボット"
+
+msgid "Role"
+msgstr "役割"
+
+msgid "Role Assignment (Super Admin)"
+msgstr "役割の割り当て（スーパー管理者）"
+
+msgid "Route"
+msgstr "ルート"
+
+msgid "Rules for using the TECHWANDO platform and member code of conduct."
+msgstr "TECHWANDOプラットフォームの利用規則と会員行動規範。"
+
+msgid "SEO Editor"
+msgstr "SEOエディター"
+
+msgid "SEO Management"
+msgstr "SEO管理"
+
+msgid "SEO Metadata (fa-IR & ja-JP)"
+msgstr "SEOメタデータ（ペルシャ語・日本語）"
+
+msgid "Safety first"
+msgstr "安全第一"
+
+msgid "Save Article"
+msgstr "記事を保存"
+
+msgid "Save Competition"
+msgstr "大会を保存"
+
+msgid "Save Page"
+msgstr "ページを保存"
+
+msgid "Save Product"
+msgstr "商品を保存"
+
+msgid "Save Profile Changes"
+msgstr "プロフィールの変更を保存"
+
+msgid "Save Review Note"
+msgstr "審査メモを保存"
+
+msgid "Save Role"
+msgstr "役割を保存"
+
+msgid "Save SEO"
+msgstr "SEOを保存"
+
+msgid "Scheduled"
+msgstr "予約公開"
+
+msgid "Search name..."
+msgstr "名前を検索..."
+
+msgid "Search the journal"
+msgstr "ブログを検索"
+
+msgid "See club results"
+msgstr "クラブの成績を見る"
+
+msgid "See the curriculum"
+msgstr "カリキュラムを見る"
+
+msgid "Select the group that matches age and experience."
+msgstr "年齢と経験に合ったクラスをお選びください。"
+
+msgid ""
+"Selected images are previewed locally before upload. Certificates remain "
+"private."
+msgstr "選択した画像はアップロード前に端末内でプレビューされます。証明書は非公開のままです。"
+
+msgid ""
+"Self-assessment, mentoring and community service complete the path to senior"
+" rank."
+msgstr "自己評価、後進の指導、社会貢献が上位段位への道を完成させます。"
+
+msgid "Send an inquiry"
+msgstr "お問い合わせを送信"
+
+msgid "Sender"
+msgstr "送信者"
+
+msgid "Server Error"
+msgstr "サーバーエラー"
+
+msgid "Show password"
+msgstr "パスワードを表示"
+
+msgid "Signed in as"
+msgstr "ログイン中："
+
+msgid "Slug"
+msgstr "スラッグ"
+
+msgid "Social media"
+msgstr "ソーシャルメディア"
+
+msgid ""
+"Sparring, randori and scenario drills teach decision-making without "
+"sacrificing safety."
+msgstr "組手、乱取り、シナリオ稽古を通じて、安全を損なわずに判断力を養います。"
+
+msgid ""
+"Stance, balance, breathing and etiquette form the base of every discipline."
+msgstr "構え、バランス、呼吸、礼儀がすべての種目の基礎です。"
+
+msgid "Structured curriculum"
+msgstr "体系化されたカリキュラム"
+
+msgid "Study path"
+msgstr "学習の道筋"
+
+msgid "Subject"
+msgstr "件名"
+
+msgid "Submission"
+msgstr "申請"
+
+msgid "Submission Details"
+msgstr "申請の詳細"
+
+msgid "Submission type"
+msgstr "申請の種類"
+
+msgid "Submissions and moderation"
+msgstr "申請と審査"
+
+msgid "Submit Belt Promotion"
+msgstr "昇級・昇段を申請"
+
+msgid "Submit Belt Promotion Request"
+msgstr "昇級・昇段申請を送信"
+
+msgid "Submit First Achievement"
+msgstr "最初の実績を提出"
+
+msgid "Submit Promotion Request"
+msgstr "昇段申請を送信"
+
+msgid "Submit Record"
+msgstr "記録を提出"
+
+msgid "Submit Sports Achievement"
+msgstr "スポーツ実績を提出"
+
+msgid ""
+"Submit championship medals with supporting certificates for club "
+"verification."
+msgstr "大会メダルは証明書を添えてクラブの認定に提出してください。"
+
+msgid "Submit sports achievements and track administrator approval status."
+msgstr "スポーツ実績を提出し、管理者の承認状況を確認できます。"
+
+msgid "Submit the examination application."
+msgstr "審査申請を提出すること。"
+
+msgid "Submitted"
+msgstr "提出済み"
+
+msgid ""
+"Submitting a correction request places this record back under review so you "
+"can update details for administrator re-verification."
+msgstr "修正依頼を送信すると、この記録は再審査の対象となり、管理者の再確認のために詳細を更新できます。"
+
+msgid "System Audit Logs"
+msgstr "システム監査ログ"
+
+msgid "System messages"
+msgstr "システムメッセージ"
+
+msgid ""
+"TECHWANDO is a bilingual martial arts education and club management platform"
+" for athletes, families and coaches. Every promotion, medal and community "
+"activity is reviewed by our technical board before it becomes part of an "
+"athlete's official record."
+msgstr ""
+"TECHWANDOは、選手・ご家族・指導者のためのバイリンガル武道教育・クラブ管理プラットフォームです。昇級・昇段、メダル、社会活動は、選手の公式記録となる前に技術委員会の審査を受けます。"
+
+msgid ""
+"TECHWANDO is a multilingual martial arts education, athlete development, "
+"belt ranking and championship verification club connecting Persian and "
+"Japanese martial arts communities."
+msgstr ""
+"TECHWANDOは、武道教育・選手育成・帯位認定・大会実績の認証を行う多言語クラブであり、ペルシャ語圏と日本語圏の武道コミュニティをつなぎます。"
+
+msgid ""
+"TECHWANDO unites Persian and Japanese budo traditions with modern sports "
+"science, transparent belt progression, and a certified record of every "
+"championship achievement."
+msgstr "TECHWANDOは、ペルシャと日本の武道の伝統を、現代スポーツ科学、透明な昇級昇段、すべての大会実績の公認記録と融合させます。"
+
+msgid "Taekwondo · Karate · Judo"
+msgstr "テコンドー・空手・柔道"
+
+msgid "Tags"
+msgstr "タグ"
+
+msgid "Target"
+msgstr "対象"
+
+msgid "Technical articles published by our coaching team."
+msgstr "指導陣が執筆した技術記事。"
+
+msgid "Technical board reviews and approves."
+msgstr "技術委員会が審査・承認します。"
+
+msgid ""
+"Technical guidance, competition reports and belt examination preparation."
+msgstr "技術指南、大会レポート、昇級・昇段審査の準備。"
+
+msgid ""
+"Technical insights, championship coverage, sports conditioning and club "
+"announcements."
+msgstr "技術解説、大会レポート、コンディショニング、クラブからのお知らせ。"
+
+msgid "Technical precision"
+msgstr "技術の精度"
+
+msgid ""
+"Technical study guides, budo etiquette, sports physiology and belt "
+"examination preparation."
+msgstr "技術学習ガイド、武道の礼法、スポーツ生理学、昇級・昇段審査対策。"
+
+msgid "Terms of Use"
+msgstr "利用規約"
+
+msgid "The Academy"
+msgstr "アカデミー"
+
+msgid "The Club"
+msgstr "クラブ"
+
+msgid "The requested page could not be found or is not publicly available."
+msgstr "お探しのページは見つからないか、公開されていません。"
+
+msgid "This password reset link is invalid or has already been used."
+msgstr "このパスワード再設定リンクは無効か、すでに使用されています。"
+
+msgid "Throws, groundwork and mutual welfare through safe, technical randori."
+msgstr "安全で技術的な乱取りを通じた投げ技、寝技、相互扶助。"
+
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+msgid "Toggle dark mode"
+msgstr "ダークモードの切り替え"
+
+msgid "Toggle navigation"
+msgstr "ナビゲーションの切り替え"
+
+msgid "Track progress"
+msgstr "進捗を記録"
+
+msgid ""
+"Track your approved belt rankings and submit belt promotion certificates."
+msgstr "承認済みの帯位を確認し、昇級・昇段の証明書を提出できます。"
+
+msgid ""
+"Train in a bilingual, safety-first dojo with certified coaches, transparent "
+"belt progression, and a verified record of every achievement you earn."
+msgstr "公認指導者による安全第一のバイリンガル道場で、透明な昇級昇段と、得た実績すべての公認記録とともに稽古しましょう。"
+
+msgid "Training clips, event announcements and belt examination results."
+msgstr "稽古動画、イベント案内、昇級・昇段審査の結果。"
+
+msgid "Training philosophy"
+msgstr "指導理念"
+
+msgid "Training programs"
+msgstr "稽古プログラム"
+
+msgid "Training programs will be listed soon."
+msgstr "稽古プログラムは近日公開予定です。"
+
+msgid "Transition"
+msgstr "移行"
+
+msgid "Transparent belt and Dan progression"
+msgstr "透明な昇級・昇段"
+
+msgid "Try a class"
+msgstr "クラスを体験"
+
+msgid "Try a different search term or browse all categories."
+msgstr "別の検索語をお試しいただくか、すべてのカテゴリをご覧ください。"
+
+msgid "Try clearing the filters or contact the club desk for a custom order."
+msgstr "フィルターを解除するか、特注についてはクラブ受付までお問い合わせください。"
+
+msgid "Type"
+msgstr "種類"
+
+msgid ""
+"Uniting martial arts heritage, athletic excellence and verified sports "
+"education."
+msgstr "武道の伝統、競技の卓越性、公認されたスポーツ教育を結びつけます。"
+
+msgid "Unread"
+msgstr "未読"
+
+msgid "Update Membership Status"
+msgstr "会員ステータスを更新"
+
+msgid "Updated"
+msgstr "更新日時"
+
+msgid "Verification"
+msgstr "認証"
+
+msgid "Verified achievements will appear here once approved."
+msgstr "承認済みの実績がここに表示されます。"
+
+msgid "Verified belt promotions"
+msgstr "承認済みの昇級・昇段"
+
+msgid "Verified competition and medal records"
+msgstr "公認の大会・メダル記録"
+
+msgid "Verified medal winners"
+msgstr "認定メダリスト"
+
+msgid "Verified medals will appear here once approved."
+msgstr "承認済みのメダルがここに表示されます。"
+
+msgid ""
+"Verified participant results will be published after the technical board "
+"review."
+msgstr "認定された参加結果は技術委員会の審査後に公開されます。"
+
+msgid "Verified records"
+msgstr "公認記録"
+
+msgid "View all"
+msgstr "すべて表示"
+
+msgid "View all programs"
+msgstr "すべてのプログラムを見る"
+
+msgid "Visit & Contact"
+msgstr "見学・お問い合わせ"
+
+msgid "Visit the Dojo"
+msgstr "道場を見学"
+
+msgid "Visit the dojo"
+msgstr "道場へお越しください"
+
+msgid ""
+"Volunteering, cultural exchange and youth outreach organised by our members."
+msgstr "会員が企画するボランティア、文化交流、青少年向け活動。"
+
+msgid "We are here to help"
+msgstr "私たちがお手伝いします"
+
+msgid ""
+"We collect the information required to manage club membership: your name, "
+"contact details, chosen discipline, training and competition records, and "
+"the documents you submit for verification."
+msgstr "クラブ会員管理に必要な情報（氏名、連絡先、選択種目、稽古・大会記録、認証のために提出された書類）を収集します。"
+
+msgid ""
+"We may update these terms to reflect changes in the club or the law. "
+"Material changes will be communicated through the member portal."
+msgstr "クラブや法令の変更に応じて本規約を更新する場合があります。重要な変更は会員ポータルでお知らせします。"
+
+msgid ""
+"Weekly classes, squad training and examination preparation, grouped by age "
+"and level."
+msgstr "年齢・レベル別の週次クラス、選手強化、審査対策。"
+
+msgid "Welcome to the dojo"
+msgstr "道場へようこそ"
+
+msgid "What we stand for"
+msgstr "私たちが大切にしていること"
+
+msgid "Why TECHWANDO"
+msgstr "TECHWANDOを選ぶ理由"
+
+msgid "Why train with us"
+msgstr "私たちと稽古する理由"
+
+msgid "Withdraw public visibility consent."
+msgstr "公開表示への同意を撤回する。"
+
+msgid "Yes, Continue"
+msgstr "はい、続行します"
+
+msgid "You do not have permission to view this page or resource."
+msgstr "このページまたはリソースを閲覧する権限がありません。"
+
+msgid "You have no notifications yet."
+msgstr "通知はまだありません。"
+
+msgid "You have not submitted any medals yet."
+msgstr "メダルはまだ提出されていません。"
+
+msgid ""
+"You have not submitted any sports records yet. Use the buttons above to get "
+"started."
+msgstr "スポーツ記録はまだ提出されていません。上のボタンから開始してください。"
+
+msgid "You may only access your own private records and submissions."
+msgstr "ご自身の非公開記録と申請のみアクセスできます。"
+
+msgid "You requested a password reset for your TECHWANDO Club account."
+msgstr "TECHWANDOクラブアカウントのパスワード再設定がリクエストされました。"
+
+msgid "Your belt and competition record lives in the portal."
+msgstr "帯位と大会の記録はポータルで管理されます。"
+
+msgid ""
+"Your birth date, phone number, email address and uploaded certificates are "
+"always private and are never displayed on public pages."
+msgstr "生年月日、電話番号、メールアドレス、アップロードされた証明書は常に非公開で、公開ページに表示されることはありません。"
+
+msgid "Your member data and uploaded documents remain private."
+msgstr "会員データとアップロード書類は非公開に保たれます。"
+
+msgid "Your new password is active. You may now sign in."
+msgstr "新しいパスワードが有効になりました。ログインできます。"
+
+msgid "Your recent submissions"
+msgstr "最近の申請"
+
+msgid "Your rights"
+msgstr "お客様の権利"
+
+msgid "Youth, adult and elite squads"
+msgstr "ジュニア・一般・エリートクラス"
+
+msgid "bronze"
+msgstr "銅"
+
+msgid "gold"
+msgstr "金"
+
+msgid "silver"
+msgstr "銀"
+
+msgid "%(count)d membership application(s) approved."
+msgstr "%(count)d件の入会申請を承認しました。"
+
+msgid "%(count)d membership application(s) rejected."
+msgstr "%(count)d件の入会申請を却下しました。"
+
+msgid "%(count)d message(s) marked read."
+msgstr "%(count)d件のメッセージを既読にしました。"
+
+msgid "%(count)d message(s) marked unread."
+msgstr "%(count)d件のメッセージを未読にしました。"
+
+msgid "%(count)d own submission(s) skipped (self-approval forbidden)."
+msgstr "自分の申請 %(count)d件をスキップしました（自己承認は禁止されています）。"
+
+msgid "%(count)d submission(s) updated."
+msgstr "%(count)d件の申請を更新しました。"
+
+msgid "A user with this email address already exists."
+msgstr "このメールアドレスのユーザーはすでに存在します。"
+
+msgid "A user with this email already exists."
+msgstr "このメールのユーザーはすでに存在します。"
+
+msgid "About Page"
+msgstr "会社概要ページ"
+
+msgid "Account active status updated."
+msgstr "アカウントの有効状態を更新しました。"
+
+msgid "Account settings updated."
+msgstr "アカウント設定を更新しました。"
+
+msgid "Accounts & Roles"
+msgstr "アカウントと役割"
+
+msgid "Achievement"
+msgstr "実績"
+
+msgid "Achievement date"
+msgstr "実績日"
+
+msgid "Achievement date cannot be in the future."
+msgstr "実績日を未来の日付にすることはできません。"
+
+msgid "Achievement deleted."
+msgstr "実績を削除しました。"
+
+msgid "Achievement title"
+msgstr "実績のタイトル"
+
+msgid "Achievement title (Japanese)"
+msgstr "実績のタイトル（日本語）"
+
+msgid "Achievement updated and resubmitted for review."
+msgstr "実績を更新し、再審査に提出しました。"
+
+msgid "Active status"
+msgstr "有効ステータス"
+
+msgid "Activity date"
+msgstr "活動日"
+
+msgid "Activity date cannot be in the future."
+msgstr "活動日を未来の日付にすることはできません。"
+
+msgid "Activity photograph"
+msgstr "活動写真"
+
+msgid "Activity title"
+msgstr "活動タイトル"
+
+msgid "Activity title (Japanese)"
+msgstr "活動タイトル（日本語）"
+
+msgid "Actor / Reviewer"
+msgstr "実行者・審査担当者"
+
+msgid "Actor email snapshot"
+msgstr "実行者メールの記録"
+
+msgid "Additional notes"
+msgstr "追加メモ"
+
+msgid "Administrator feedback"
+msgstr "管理者からのフィードバック"
+
+msgid "Administrator feedback / note"
+msgstr "管理者のフィードバック・メモ"
+
+msgid "Administrator note"
+msgstr "管理者メモ"
+
+msgid "All notifications marked as read."
+msgstr "すべての通知を既読にしました。"
+
+msgid ""
+"Allow displaying this social activity on my public athlete profile once "
+"approved."
+msgstr "承認後、この社会活動を公開選手プロフィールに表示することを許可します。"
+
+msgid "Allowed document formats: PDF, JPG, JPEG, PNG, WebP."
+msgstr "使用可能な書類形式：PDF、JPG、JPEG、PNG、WebP。"
+
+msgid "Allowed image formats: JPG, JPEG, PNG, WebP."
+msgstr "使用可能な画像形式：JPG、JPEG、PNG、WebP。"
+
+msgid "Alt text (Japanese)"
+msgstr "代替テキスト（日本語）"
+
+msgid "Alt text (Persian)"
+msgstr "代替テキスト（ペルシャ語）"
+
+msgid "An account with this email already exists."
+msgstr "このメールのアカウントはすでに存在します。"
+
+msgid "An email address is required."
+msgstr "メールアドレスは必須です。"
+
+msgid "Approval status"
+msgstr "承認ステータス"
+
+msgid "Approve"
+msgstr "承認"
+
+msgid "Approve membership immediately"
+msgstr "会員資格を即時承認"
+
+msgid "Approve selected membership applications"
+msgstr "選択した入会申請を承認"
+
+msgid "Approve selected submissions"
+msgstr "選択した申請を承認"
+
+msgid "Approved Member"
+msgstr "承認済み会員"
+
+msgid ""
+"Approved belt rank promotions and Dan black belt recipients at TECHWANDO."
+msgstr "TECHWANDOで承認された昇級・昇段および黒帯有段者。"
+
+msgid "Article content"
+msgstr "記事本文"
+
+msgid ""
+"Articles on Taekwondo techniques, sports science, belt preparation, and "
+"TECHWANDO championship updates."
+msgstr "テコンドーの技術、スポーツ科学、昇級・昇段対策、TECHWANDOの大会情報に関する記事。"
+
+msgid "Audit log"
+msgstr "監査ログ"
+
+msgid "Audit logs"
+msgstr "監査ログ"
+
+msgid "Available for club inquiry"
+msgstr "クラブへのお問い合わせ可能"
+
+msgid "Award date"
+msgstr "受賞日"
+
+msgid "Award date cannot be in the future."
+msgstr "受賞日を未来の日付にすることはできません。"
+
+msgid "Belt Promotion"
+msgstr "昇級・昇段"
+
+msgid "Belt badge color"
+msgstr "帯バッジの色"
+
+msgid "Belt histories"
+msgstr "帯位の履歴"
+
+msgid "Belt history"
+msgstr "帯位の履歴"
+
+msgid "Belt promotion submission removed."
+msgstr "昇級・昇段の申請を削除しました。"
+
+msgid "Belt promotion updated and resubmitted for administrator review."
+msgstr "昇級・昇段を更新し、管理者の再審査に提出しました。"
+
+msgid "Belt rank created."
+msgstr "帯位を作成しました。"
+
+msgid "Belt rank name (Japanese)"
+msgstr "帯位名（日本語）"
+
+msgid "Belt rank name (Persian)"
+msgstr "帯位名（ペルシャ語）"
+
+msgid "Belt rank updated."
+msgstr "帯位を更新しました。"
+
+msgid "Belt type"
+msgstr "帯の種類"
+
+msgid "Belt types"
+msgstr "帯の種類"
+
+msgid "Belts & Rankings"
+msgstr "帯位とランキング"
+
+msgid "Biography (Japanese)"
+msgstr "プロフィール（日本語）"
+
+msgid "Biography (Persian)"
+msgstr "プロフィール（ペルシャ語）"
+
+msgid "Birth date"
+msgstr "生年月日"
+
+msgid "Birth date cannot be in the future."
+msgstr "生年月日を未来の日付にすることはできません。"
+
+msgid "Black belt (Dan) level"
+msgstr "黒帯（段）レベル"
+
+msgid "Blog & Articles"
+msgstr "ブログ・記事"
+
+msgid "Blog Index"
+msgstr "ブログ一覧"
+
+msgid "Blog article created successfully."
+msgstr "記事を作成しました。"
+
+msgid "Blog article updated successfully."
+msgstr "記事を更新しました。"
+
+msgid "Blog categories"
+msgstr "ブログカテゴリ"
+
+msgid "Blog category"
+msgstr "ブログカテゴリ"
+
+msgid "Blog category created."
+msgstr "ブログカテゴリを作成しました。"
+
+msgid "Blog category updated."
+msgstr "ブログカテゴリを更新しました。"
+
+msgid "Blog post"
+msgstr "ブログ記事"
+
+msgid "Blog posts"
+msgstr "ブログ記事"
+
+msgid "Body (Japanese)"
+msgstr "本文（日本語）"
+
+msgid "Body (Persian)"
+msgstr "本文（ペルシャ語）"
+
+msgid "Canonical URL"
+msgstr "正規URL"
+
+msgid "Canonical URL Override (Japanese)"
+msgstr "正規URLの上書き（日本語）"
+
+msgid "Canonical URL Override (Persian)"
+msgstr "正規URLの上書き（ペルシャ語）"
+
+msgid "Canonical URL override"
+msgstr "正規URLの上書き"
+
+msgid "Category name"
+msgstr "カテゴリ名"
+
+msgid "Category translation"
+msgstr "カテゴリ翻訳"
+
+msgid "Category translations"
+msgstr "カテゴリ翻訳"
+
+msgid "Champion Profile"
+msgstr "チャンピオンプロフィール"
+
+msgid "Championship & Competition Results"
+msgstr "選手権・大会結果"
+
+msgid "Club Members"
+msgstr "クラブ会員"
+
+msgid "Club, Athlete & Multilingual Content Management"
+msgstr "クラブ・選手・多言語コンテンツ管理"
+
+msgid "Competition Record"
+msgstr "大会記録"
+
+msgid "Competition created."
+msgstr "大会を作成しました。"
+
+msgid "Competition location"
+msgstr "大会開催地"
+
+msgid "Competition location (Japanese)"
+msgstr "大会開催地（日本語）"
+
+msgid "Competition name"
+msgstr "大会名"
+
+msgid "Competition name (Japanese)"
+msgstr "大会名（日本語）"
+
+msgid "Competition participation"
+msgstr "大会参加"
+
+msgid "Competition participation deleted."
+msgstr "大会参加記録を削除しました。"
+
+msgid "Competition participation submitted and awaiting review."
+msgstr "大会参加を提出しました。審査待ちです。"
+
+msgid "Competition participations"
+msgstr "大会参加記録"
+
+msgid "Competition record updated and resubmitted."
+msgstr "大会記録を更新し、再提出しました。"
+
+msgid ""
+"Competition title (auto-filled when selecting a registered competition)."
+msgstr "大会名（登録済み大会を選ぶと自動入力されます）。"
+
+msgid "Competition updated."
+msgstr "大会を更新しました。"
+
+msgid "Confirm password"
+msgstr "パスワード（確認）"
+
+msgid "Contact Us"
+msgstr "お問い合わせ"
+
+msgid "Contact message"
+msgstr "お問い合わせメッセージ"
+
+msgid "Contact message updated."
+msgstr "お問い合わせメッセージを更新しました。"
+
+msgid "Contact messages"
+msgstr "お問い合わせメッセージ"
+
+msgid "Content (Japanese)"
+msgstr "コンテンツ（日本語）"
+
+msgid "Content (Persian)"
+msgstr "コンテンツ（ペルシャ語）"
+
+msgid "Content Administrator"
+msgstr "コンテンツ管理者"
+
+msgid "Correction Requested"
+msgstr "修正依頼済み"
+
+msgid "Correction details"
+msgstr "修正の詳細"
+
+msgid ""
+"Correction request recorded. You can now edit and resubmit the achievement."
+msgstr "修正依頼を記録しました。実績を編集して再提出できます。"
+
+msgid ""
+"Correction request recorded. You can now edit and resubmit the activity."
+msgstr "修正依頼を記録しました。活動を編集して再提出できます。"
+
+msgid "Correction request recorded. You can now edit and resubmit the medal."
+msgstr "修正依頼を記録しました。メダルを編集して再提出できます。"
+
+msgid "Correction request recorded. You can now edit and resubmit the record."
+msgstr "修正依頼を記録しました。記録を編集して再提出できます。"
+
+msgid "Created at"
+msgstr "作成日時"
+
+msgid "Currency"
+msgstr "通貨"
+
+msgid "Date joined"
+msgstr "登録日"
+
+msgid "Decision"
+msgstr "判定"
+
+msgid "Decision note"
+msgstr "判定メモ"
+
+msgid "Description (Japanese)"
+msgstr "説明（日本語）"
+
+msgid "Description (Persian)"
+msgstr "説明（ペルシャ語）"
+
+msgid "Designates whether the user can access administration tools."
+msgstr "ユーザーが管理ツールにアクセスできるかどうかを指定します。"
+
+msgid "Designates whether this account can log in."
+msgstr "このアカウントがログインできるかどうかを指定します。"
+
+msgid "Detailed description"
+msgstr "詳細説明"
+
+msgid "Display order"
+msgstr "表示順"
+
+msgid "Division / Weight category"
+msgstr "階級・体重別"
+
+msgid "Educational Module"
+msgstr "教育モジュール"
+
+msgid "Email address"
+msgstr "メールアドレス"
+
+msgid "Email, action, model, IP..."
+msgstr "メール、操作、モデル、IP..."
+
+msgid "End date"
+msgstr "終了日"
+
+msgid "End date cannot be earlier than start date."
+msgstr "終了日は開始日より前に設定できません。"
+
+msgid "Enter a valid birth date."
+msgstr "有効な生年月日を入力してください。"
+
+msgid "Enter a valid phone number (digits, spaces, +, -, parentheses)."
+msgstr "有効な電話番号を入力してください（数字、スペース、+、-、括弧）。"
+
+msgid "Enter the competition location."
+msgstr "大会開催地を入力してください。"
+
+msgid "Enter the competition name or select a registered competition."
+msgstr "大会名を入力するか、登録済みの大会を選択してください。"
+
+msgid "Event type"
+msgstr "イベント種別"
+
+msgid "Evidence"
+msgstr "証拠書類"
+
+msgid "Example: 10-GEUP, 5-GEUP, 1-DAN, 3-DAN"
+msgstr "例：10級、5級、初段、三段"
+
+msgid "Example: 1st Place, Silver Medalist, Quarterfinalist"
+msgstr "例：優勝、銀メダル、準々決勝進出"
+
+msgid "Excerpt (Japanese)"
+msgstr "抜粋（日本語）"
+
+msgid "Excerpt (Persian)"
+msgstr "抜粋（ペルシャ語）"
+
+msgid "Excerpt / summary"
+msgstr "抜粋・概要"
+
+msgid "Explain what needs to be updated or corrected..."
+msgstr "更新・修正が必要な内容をご記入ください..."
+
+msgid "Featured article"
+msgstr "注目記事"
+
+msgid "Featured image"
+msgstr "アイキャッチ画像"
+
+msgid "Featured image alt text"
+msgstr "アイキャッチ画像の代替テキスト"
+
+msgid "Featured product"
+msgstr "おすすめ商品"
+
+msgid "File header does not match a valid image format."
+msgstr "ファイルヘッダーが有効な画像形式と一致しません。"
+
+msgid "File size cannot exceed %(max_mb)s MB."
+msgstr "ファイルサイズは%(max_mb)sMBを超えることはできません。"
+
+msgid "First name"
+msgstr "名"
+
+msgid "First name (Japanese)"
+msgstr "名（日本語）"
+
+msgid "Full name"
+msgstr "氏名"
+
+msgid "General Static Page"
+msgstr "一般静的ページ"
+
+msgid "Higher numbers indicate higher ranks (e.g., White=1 ... 9th Dan=19)."
+msgstr "数字が大きいほど上位の位を表します（例：白帯=1 … 九段=19）。"
+
+msgid "Homepage"
+msgstr "ホームページ"
+
+msgid ""
+"How TECHWANDO collects, stores and protects member data, certificates and "
+"public athlete profile information."
+msgstr "TECHWANDOが会員データ、証明書、公開選手プロフィール情報を収集・保存・保護する方法。"
+
+msgid "I agree to the club code of conduct and privacy policy."
+msgstr "クラブの行動規範とプライバシーポリシーに同意します。"
+
+msgid ""
+"I consent to displaying my approved sports records and name on the public "
+"website."
+msgstr "承認されたスポーツ記録と氏名を公開ウェブサイトに表示することに同意します。"
+
+msgid "IP address"
+msgstr "IPアドレス"
+
+msgid "Image Alt (Japanese)"
+msgstr "画像の代替テキスト（日本語）"
+
+msgid "Image Alt (Persian)"
+msgstr "画像の代替テキスト（ペルシャ語）"
+
+msgid "Image alt text"
+msgstr "画像の代替テキスト"
+
+msgid "Image dimensions exceed the maximum allowed size."
+msgstr "画像の寸法が最大許容サイズを超えています。"
+
+msgid "Initial password"
+msgstr "初期パスワード"
+
+msgid "Internal staff note"
+msgstr "スタッフ内部メモ"
+
+msgid "Invalid WebP image file."
+msgstr "無効なWebP画像ファイルです。"
+
+msgid "Invalid approval status."
+msgstr "承認ステータスが無効です。"
+
+msgid "Invalid email address or password."
+msgstr "メールアドレスまたはパスワードが正しくありません。"
+
+msgid "Invalid membership status."
+msgstr "会員ステータスが無効です。"
+
+msgid "Invalid role selected."
+msgstr "選択された役割が無効です。"
+
+msgid "Joining date"
+msgstr "入会日"
+
+msgid "Last name"
+msgstr "姓"
+
+msgid "Last name (Japanese)"
+msgstr "姓（日本語）"
+
+msgid ""
+"Learn about TECHWANDO's martial arts philosophy, certified coaching "
+"programs, athlete verification workflow, and Persian-Japanese cultural "
+"bridge."
+msgstr "TECHWANDOの武道哲学、公認指導プログラム、選手認証の流れ、ペルシャと日本の文化交流についてご紹介します。"
+
+msgid "Linked content model"
+msgstr "リンク先コンテンツモデル"
+
+msgid "Linked object ID"
+msgstr "リンク先オブジェクトID"
+
+msgid "Location (Japanese)"
+msgstr "場所（日本語）"
+
+msgid "Location (Persian)"
+msgstr "場所（ペルシャ語）"
+
+msgid "Mark as read"
+msgstr "既読にする"
+
+msgid "Mark selected messages as read"
+msgstr "選択したメッセージを既読にする"
+
+msgid "Mark selected messages as unread"
+msgstr "選択したメッセージを未読にする"
+
+msgid "Martial Arts Academy, Champions & Club Platform"
+msgstr "武道アカデミー・チャンピオン・クラブプラットフォーム"
+
+msgid "Martial Arts Blog & Technical Articles"
+msgstr "武道ブログ・技術記事"
+
+msgid "Martial Arts Equipment & Uniform Catalog"
+msgstr "武道用具・道着カタログ"
+
+msgid "Martial arts discipline"
+msgstr "武道種目"
+
+msgid "Medal submission deleted."
+msgstr "メダル申請を削除しました。"
+
+msgid "Medal submission updated and resubmitted for review."
+msgstr "メダル申請を更新し、再審査に提出しました。"
+
+msgid "Member"
+msgstr "会員"
+
+msgid "Member account created successfully."
+msgstr "会員アカウントを作成しました。"
+
+msgid "Member correction request"
+msgstr "会員による修正依頼"
+
+msgid "Member profile"
+msgstr "会員プロフィール"
+
+msgid "Member profile updated."
+msgstr "会員プロフィールを更新しました。"
+
+msgid "Member profiles"
+msgstr "会員プロフィール"
+
+msgid "Membership Status Update"
+msgstr "会員ステータスの更新"
+
+msgid "Membership decision"
+msgstr "会員資格の判定"
+
+msgid "Membership number"
+msgstr "会員番号"
+
+msgid "Membership reviewer"
+msgstr "会員審査担当者"
+
+msgid "Membership status updated."
+msgstr "会員ステータスを更新しました。"
+
+msgid "Message"
+msgstr "メッセージ"
+
+msgid "Message (Japanese)"
+msgstr "メッセージ（日本語）"
+
+msgid "Message (Persian / default)"
+msgstr "メッセージ（ペルシャ語・既定）"
+
+msgid "Meta Description (Japanese)"
+msgstr "メタディスクリプション（日本語）"
+
+msgid "Meta Description (Persian)"
+msgstr "メタディスクリプション（ペルシャ語）"
+
+msgid "Moderation decision saved and the member has been notified."
+msgstr "審査結果を保存し、会員に通知しました。"
+
+msgid "Moderator"
+msgstr "モデレーター"
+
+msgid "Name (A-Z)"
+msgstr "名前（A-Z）"
+
+msgid "Name (Japanese)"
+msgstr "名前（日本語）"
+
+msgid "Name (Persian)"
+msgstr "名前（ペルシャ語）"
+
+msgid "New Contact Message"
+msgstr "新しいお問い合わせ"
+
+msgid "New state"
+msgstr "新しい状態"
+
+msgid "New status"
+msgstr "新しいステータス"
+
+msgid "Notification"
+msgstr "通知"
+
+msgid "Notification type"
+msgstr "通知の種類"
+
+msgid "Numeric placement"
+msgstr "数値順位"
+
+msgid "Official Belt Promotions & Black Belt Registry"
+msgstr "公式昇級・昇段と黒帯登録"
+
+msgid ""
+"Official TECHWANDO uniforms (Dobok & Dogi), certified protective gear, "
+"belts, and training equipment."
+msgstr "TECHWANDO公式道着（道服・道衣）、公認防具、帯、稽古用具。"
+
+msgid "Official belt certificate"
+msgstr "公式帯位証明書"
+
+msgid ""
+"Official directory of approved TECHWANDO martial arts athletes, medal "
+"winners, black belt holders, and championship records."
+msgstr "承認済みTECHWANDO選手、メダリスト、黒帯保持者、大会記録の公式名鑑。"
+
+msgid ""
+"Official verified Gold, Silver, and Bronze medal winners of TECHWANDO Club."
+msgstr "TECHWANDOクラブの公式認定金・銀・銅メダリスト。"
+
+msgid "One specification per line."
+msgstr "仕様は1行に1項目ずつ入力してください。"
+
+msgid "Only Super Administrators can activate or deactivate staff accounts."
+msgstr "スタッフアカウントの有効化・無効化はスーパー管理者のみが行えます。"
+
+msgid "Only Super Administrators can modify user roles."
+msgstr "ユーザー役割の変更はスーパー管理者のみが行えます。"
+
+msgid "Only a Super Administrator can assign administrative roles."
+msgstr "管理役割を割り当てられるのはスーパー管理者のみです。"
+
+msgid "Open Graph Description (Japanese)"
+msgstr "Open Graphの説明（日本語）"
+
+msgid "Open Graph Description (Persian)"
+msgstr "Open Graphの説明（ペルシャ語）"
+
+msgid "Open Graph Title (Japanese)"
+msgstr "Open Graphのタイトル（日本語）"
+
+msgid "Open Graph Title (Persian)"
+msgstr "Open Graphのタイトル（ペルシャ語）"
+
+msgid "Open Graph description"
+msgstr "Open Graphの説明"
+
+msgid "Open Graph image"
+msgstr "Open Graph画像"
+
+msgid "Open Graph image alt text"
+msgstr "Open Graph画像の代替テキスト"
+
+msgid "Open Graph title"
+msgstr "Open Graphのタイトル"
+
+msgid "Organizer (Japanese)"
+msgstr "主催者（日本語）"
+
+msgid "Organizer (Persian)"
+msgstr "主催者（ペルシャ語）"
+
+msgid "Other / Special Award"
+msgstr "その他・特別賞"
+
+msgid "Other Martial Art"
+msgstr "その他の武道"
+
+msgid "PDF files containing embedded scripts or actions are not permitted."
+msgstr "スクリプトやアクションが埋め込まれたPDFファイルは許可されていません。"
+
+msgid "Page category"
+msgstr "ページカテゴリ"
+
+msgid "Page content"
+msgstr "ページ本文"
+
+msgid "Page created successfully."
+msgstr "ページを作成しました。"
+
+msgid "Page translation"
+msgstr "ページ翻訳"
+
+msgid "Page translations"
+msgstr "ページ翻訳"
+
+msgid "Page updated successfully."
+msgstr "ページを更新しました。"
+
+msgid "Pages"
+msgstr "ページ"
+
+msgid "Participants"
+msgstr "参加者"
+
+msgid "Participation / result certificate"
+msgstr "参加・成績証明書"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Personal Info"
+msgstr "個人情報"
+
+msgid "Phone number"
+msgstr "電話番号"
+
+msgid "Phone number (optional)"
+msgstr "電話番号（任意）"
+
+msgid "Photograph"
+msgstr "写真"
+
+msgid "Please correct the highlighted profile fields."
+msgstr "ハイライトされたプロフィール項目を修正してください。"
+
+msgid "Please describe the correction needed."
+msgstr "必要な修正内容をご記入ください。"
+
+msgid "Please provide a reason when rejecting or requesting revision."
+msgstr "却下または修正依頼の際は理由を記載してください。"
+
+msgid "Please write a message of at least 10 characters."
+msgstr "10文字以上のメッセージをご記入ください。"
+
+msgid "Policy / Legal Page"
+msgstr "ポリシー・法務ページ"
+
+msgid "Post"
+msgstr "記事"
+
+msgid "Post translation"
+msgstr "記事翻訳"
+
+msgid "Post translations"
+msgstr "記事翻訳"
+
+msgid "Preferred language"
+msgstr "優先言語"
+
+msgid "Previous state"
+msgstr "以前の状態"
+
+msgid "Previous status"
+msgstr "以前のステータス"
+
+msgid "Price (optional)"
+msgstr "価格（任意）"
+
+msgid "Primary discipline"
+msgstr "主種目"
+
+msgid "Primary image"
+msgstr "メイン画像"
+
+msgid "Primary martial arts discipline"
+msgstr "主な武道種目"
+
+msgid "Product"
+msgstr "商品"
+
+msgid "Product Name (Japanese)"
+msgstr "商品名（日本語）"
+
+msgid "Product Name (Persian)"
+msgstr "商品名（ペルシャ語）"
+
+msgid "Product categories"
+msgstr "商品カテゴリ"
+
+msgid "Product category"
+msgstr "商品カテゴリ"
+
+msgid "Product category created."
+msgstr "商品カテゴリを作成しました。"
+
+msgid "Product category translation"
+msgstr "商品カテゴリ翻訳"
+
+msgid "Product category translations"
+msgstr "商品カテゴリ翻訳"
+
+msgid "Product category updated."
+msgstr "商品カテゴリを更新しました。"
+
+msgid "Product created successfully."
+msgstr "商品を作成しました。"
+
+msgid "Product image"
+msgstr "商品画像"
+
+msgid "Product images"
+msgstr "商品画像"
+
+msgid "Product name"
+msgstr "商品名"
+
+msgid "Product translation"
+msgstr "商品翻訳"
+
+msgid "Product translations"
+msgstr "商品翻訳"
+
+msgid "Product updated successfully."
+msgstr "商品を更新しました。"
+
+msgid "Products & Equipment"
+msgstr "商品・用具"
+
+msgid "Profile photo"
+msgstr "プロフィール写真"
+
+msgid ""
+"Provide a complete title and body in at least one language (Persian or "
+"Japanese)."
+msgstr "少なくとも1つの言語（ペルシャ語または日本語）でタイトルと本文を完全に入力してください。"
+
+msgid "Provide a page title and body in at least one language."
+msgstr "少なくとも1つの言語でページタイトルと本文を入力してください。"
+
+msgid "Provide clear feedback for the athlete..."
+msgstr "選手への明確なフィードバックをご記入ください..."
+
+msgid "Provide product name and description in at least one language."
+msgstr "少なくとも1つの言語で商品名と説明を入力してください。"
+
+msgid "Public profile consent"
+msgstr "公開プロフィールへの同意"
+
+msgid "Public profile slug"
+msgstr "公開プロフィールのスラッグ"
+
+msgid "Public profile visibility"
+msgstr "公開プロフィールの表示"
+
+msgid "Public visibility consent"
+msgstr "公開表示への同意"
+
+msgid "Publication date"
+msgstr "公開日"
+
+msgid "Publication status"
+msgstr "公開ステータス"
+
+msgid "REST API"
+msgstr "REST API"
+
+msgid "Rank code"
+msgstr "位コード"
+
+msgid "Rank progression order"
+msgstr "位の昇格順"
+
+msgid ""
+"Reach out to TECHWANDO martial arts academy regarding classes, membership, "
+"competitions, and training equipment."
+msgstr "クラス、入会、大会、稽古用具についてTECHWANDO武道アカデミーまでお問い合わせください。"
+
+msgid "Read at"
+msgstr "既読日時"
+
+msgid "Read status"
+msgstr "既読ステータス"
+
+msgid "Recipient"
+msgstr "受信者"
+
+msgid "Recommended discipline"
+msgstr "おすすめ種目"
+
+msgid "Recorded at"
+msgstr "記録日時"
+
+msgid "Registered competition"
+msgstr "登録済み大会"
+
+msgid "Reject"
+msgstr "却下"
+
+msgid "Reject selected membership applications"
+msgstr "選択した入会申請を却下"
+
+msgid "Reject selected submissions"
+msgstr "選択した申請を却下"
+
+msgid "Request Revision"
+msgstr "修正依頼"
+
+msgid "Request revision on selected submissions"
+msgstr "選択した申請に修正を依頼"
+
+msgid "Resubmitted"
+msgstr "再提出済み"
+
+msgid "Result / Standing"
+msgstr "結果・順位"
+
+msgid "Result / Standing (Japanese)"
+msgstr "結果・順位（日本語）"
+
+msgid "Results summary (Japanese)"
+msgstr "結果の概要（日本語）"
+
+msgid "Results summary (Persian)"
+msgstr "結果の概要（ペルシャ語）"
+
+msgid "Review date"
+msgstr "審査日"
+
+msgid "Review log"
+msgstr "審査ログ"
+
+msgid "Review logs"
+msgstr "審査ログ"
+
+msgid "Reviewed"
+msgstr "審査済み"
+
+msgid "Reviewed by"
+msgstr "審査担当"
+
+msgid "Revision Requested"
+msgstr "修正依頼"
+
+msgid "Robots follow"
+msgstr "ロボットのフォロー"
+
+msgid "Robots index"
+msgstr "ロボットのインデックス"
+
+msgid "Role & Access Control"
+msgstr "役割・アクセス制御"
+
+msgid "SEO & Metadata"
+msgstr "SEO・メタデータ"
+
+msgid "SEO Description (Japanese)"
+msgstr "SEO説明（日本語）"
+
+msgid "SEO Description (Persian)"
+msgstr "SEO説明（ペルシャ語）"
+
+msgid "SEO Title (Japanese)"
+msgstr "SEOタイトル（日本語）"
+
+msgid "SEO Title (Persian)"
+msgstr "SEOタイトル（ペルシャ語）"
+
+msgid "SEO description"
+msgstr "SEO説明"
+
+msgid "SEO entry"
+msgstr "SEOエントリ"
+
+msgid "SEO follow"
+msgstr "SEOフォロー"
+
+msgid "SEO index"
+msgstr "SEOインデックス"
+
+msgid "SEO meta description"
+msgstr "SEOメタディスクリプション"
+
+msgid "SEO metadata"
+msgstr "SEOメタデータ"
+
+msgid "SEO metadata saved."
+msgstr "SEOメタデータを保存しました。"
+
+msgid "SEO metadata updated."
+msgstr "SEOメタデータを更新しました。"
+
+msgid "SEO title"
+msgstr "SEOタイトル"
+
+msgid "SEO translation"
+msgstr "SEO翻訳"
+
+msgid "SEO translations"
+msgstr "SEO翻訳"
+
+msgid "Search athlete name..."
+msgstr "選手名を検索..."
+
+msgid "Selected belt rank must match the chosen discipline."
+msgstr "選択した帯位は選択した種目と一致する必要があります。"
+
+msgid "Set a future date/time with Scheduled status to auto-publish."
+msgstr "自動公開するには、予約公開ステータスで未来の日時を設定してください。"
+
+msgid "Short Description (Japanese)"
+msgstr "短い説明（日本語）"
+
+msgid "Short Description (Persian)"
+msgstr "短い説明（ペルシャ語）"
+
+msgid "Short description"
+msgstr "短い説明"
+
+msgid "Show link in footer"
+msgstr "フッターにリンクを表示"
+
+msgid "Show my athlete profile in the public Champions directory."
+msgstr "公開チャンピオン名鑑に選手プロフィールを表示する。"
+
+msgid "Social Activities"
+msgstr "社会活動"
+
+msgid "Social Activity"
+msgstr "社会活動"
+
+msgid "Social activities"
+msgstr "社会活動"
+
+msgid "Social activity"
+msgstr "社会活動"
+
+msgid "Social activity removed."
+msgstr "社会活動を削除しました。"
+
+msgid "Social activity updated and resubmitted for moderation."
+msgstr "社会活動を更新し、再審査に提出しました。"
+
+msgid "Spam submission rejected."
+msgstr "スパム投稿を拒否しました。"
+
+msgid "Specifications (Japanese)"
+msgstr "仕様（日本語）"
+
+msgid "Specifications (Persian)"
+msgstr "仕様（ペルシャ語）"
+
+msgid "Sports Achievements"
+msgstr "スポーツ実績"
+
+msgid "Staff status"
+msgstr "スタッフステータス"
+
+msgid "Start date"
+msgstr "開始日"
+
+msgid "Static route key"
+msgstr "静的ルートキー"
+
+msgid ""
+"Structured educational syllabus covering Poomsae, Kyorugi tactics, etiquette"
+" (Reigi), sports nutrition, and belt examination criteria."
+msgstr "プムセ、キョルギの戦術、礼儀（礼儀作法）、スポーツ栄養、昇級・昇段審査基準を網羅する体系的なカリキュラム。"
+
+msgid "Submission Approved"
+msgstr "申請承認"
+
+msgid "Submission Pending"
+msgstr "申請審査中"
+
+msgid "Submission Rejected"
+msgstr "申請却下"
+
+msgid "Submission date"
+msgstr "提出日"
+
+msgid "Submission summary"
+msgstr "申請の概要"
+
+msgid "Subtitle"
+msgstr "サブタイトル"
+
+msgid "Subtitle (Japanese)"
+msgstr "サブタイトル（日本語）"
+
+msgid "Subtitle (Persian)"
+msgstr "サブタイトル（ペルシャ語）"
+
+msgid "Summary"
+msgstr "概要"
+
+msgid "Summary (Japanese)"
+msgstr "概要（日本語）"
+
+msgid "Summary (Persian)"
+msgstr "概要（ペルシャ語）"
+
+msgid "Super Administrator"
+msgstr "スーパー管理者"
+
+msgid "Supporting certificate"
+msgstr "証明書"
+
+msgid "Supporting evidence / certificate"
+msgstr "証拠書類・証明書"
+
+msgid "System Notification"
+msgstr "システム通知"
+
+msgid "TECHWANDO Admin"
+msgstr "TECHWANDO管理"
+
+msgid "TECHWANDO Administration"
+msgstr "TECHWANDO管理"
+
+msgid "Tag name (Japanese)"
+msgstr "タグ名（日本語）"
+
+msgid "Tag name (Persian)"
+msgstr "タグ名（ペルシャ語）"
+
+msgid "Target ID"
+msgstr "ターゲットID"
+
+msgid "Target link"
+msgstr "ターゲットリンク"
+
+msgid "Target model"
+msgstr "ターゲットモデル"
+
+msgid "Target summary"
+msgstr "ターゲットの概要"
+
+msgid "Technical specifications"
+msgstr "技術仕様"
+
+msgid ""
+"Terms of use, member code of conduct and acceptable use rules for the "
+"TECHWANDO club platform."
+msgstr "TECHWANDOクラブプラットフォームの利用規約、会員行動規範、利用規則。"
+
+msgid "Thank you! Your message has been sent to the TECHWANDO club team."
+msgstr "ありがとうございます。メッセージをTECHWANDOクラブチームへ送信しました。"
+
+msgid "The two password fields did not match."
+msgstr "2つのパスワードが一致しません。"
+
+msgid "The uploaded file is not a valid PDF document."
+msgstr "アップロードされたファイルは有効なPDFではありません。"
+
+msgid "The uploaded file is not a valid or safe image."
+msgstr "アップロードされたファイルは有効または安全な画像ではありません。"
+
+msgid ""
+"This account is currently deactivated. Please contact the club "
+"administrator."
+msgstr "このアカウントは現在無効です。クラブ管理者にお問い合わせください。"
+
+msgid "This email address is already in use."
+msgstr "このメールアドレスはすでに使用されています。"
+
+msgid "Timestamps"
+msgstr "タイムスタンプ"
+
+msgid "Title (Japanese)"
+msgstr "タイトル（日本語）"
+
+msgid "Title (Persian)"
+msgstr "タイトル（ペルシャ語）"
+
+msgid ""
+"Too many failed login attempts. Please wait a few minutes and try again."
+msgstr "ログイン失敗が多すぎます。数分待ってから再度お試しください。"
+
+msgid ""
+"Too many messages submitted recently. Please try again in a few minutes."
+msgstr "最近の送信が多すぎます。しばらくしてから再度お試しください。"
+
+msgid "Training Program / Service"
+msgstr "トレーニングプログラム・サービス"
+
+msgid "Training Programs & Services"
+msgstr "トレーニングプログラム・サービス"
+
+msgid "Unsupported image format. Use JPEG, PNG, or WebP."
+msgstr "対応していない画像形式です。JPEG、PNG、WebPをご利用ください。"
+
+msgid "Updated at"
+msgstr "更新日時"
+
+msgid "Upload Primary Product Image"
+msgstr "メイン商品画像をアップロード"
+
+msgid "Uploaded file is empty."
+msgstr "アップロードされたファイルが空です。"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "User account"
+msgstr "ユーザーアカウント"
+
+msgid "User agent"
+msgstr "ユーザーエージェント"
+
+msgid "User role"
+msgstr "ユーザー役割"
+
+msgid "User role updated."
+msgstr "ユーザー役割を更新しました。"
+
+msgid "Users"
+msgstr "ユーザー"
+
+msgid "Verified TECHWANDO team results, tournament standings, and medalists."
+msgstr "TECHWANDOチームの公認結果、大会順位、メダリスト。"
+
+msgid "Verified athlete profile at TECHWANDO Club."
+msgstr "TECHWANDOクラブの認定選手プロフィール。"
+
+msgid "Welcome back, %(name)s."
+msgstr "おかえりなさい、%(name)sさん。"
+
+msgid "Welcome to TECHWANDO! Your member account has been created."
+msgstr "TECHWANDOへようこそ！会員アカウントを作成しました。"
+
+msgid ""
+"You already submitted a participation record for this competition and "
+"division."
+msgstr "この大会・階級の参加記録はすでに提出されています。"
+
+msgid "You are not authorized to review membership applications."
+msgstr "入会申請を審査する権限がありません。"
+
+msgid "You are not authorized to review this submission."
+msgstr "この申請を審査する権限がありません。"
+
+msgid "You cannot approve your own membership application."
+msgstr "ご自身の入会申請を承認することはできません。"
+
+msgid "You cannot deactivate your own account."
+msgstr "ご自身のアカウントを無効化することはできません。"
+
+msgid "You cannot downgrade your own Super Administrator role."
+msgstr "ご自身のスーパー管理者役割を降格することはできません。"
+
+msgid "You cannot review or approve your own submission."
+msgstr "ご自身の申請を審査・承認することはできません。"
+
+msgid "You have been signed out safely."
+msgstr "安全にログアウトしました。"
+
+msgid "You may only request corrections for your own records."
+msgstr "修正を依頼できるのはご自身の記録のみです。"
+
+msgid "You must grant public profile consent to make your profile visible."
+msgstr "プロフィールを公開するには、公開プロフィールへの同意が必要です。"
+
+msgid "Your belt promotion request has been submitted and is pending review."
+msgstr "昇級・昇段の申請を提出しました。審査待ちです。"
+
+msgid ""
+"Your medal submission has been recorded and is pending administrator review."
+msgstr "メダル申請を記録しました。管理者の審査待ちです。"
+
+msgid "Your password has been changed successfully."
+msgstr "パスワードを変更しました。"
+
+msgid "Your profile has been updated."
+msgstr "プロフィールを更新しました。"
+
+msgid "Your social activity has been submitted and is pending moderation."
+msgstr "社会活動を提出しました。審査待ちです。"
+
+msgid ""
+"Your sports achievement has been submitted and is pending administrator "
+"review."
+msgstr "スポーツ実績を提出しました。管理者の審査待ちです。"
+
+msgid ""
+"Youth fundamentals, competitive sparring squads, black belt Dan preparation,"
+" and international training seminars at TECHWANDO."
+msgstr "ジュニアの基礎、競技組手チーム、黒帯有段者養成、TECHWANDOの国際研修セミナー。"
+
+msgid "TECHWANDO — Password Reset Request"
+msgstr "TECHWANDO — パスワード再設定のご案内"
+
+msgid "Hide password"
+msgstr "パスワードを隠す"
+
+msgid "Scrollable table"
+msgstr "スクロール可能な表"

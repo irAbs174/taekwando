@@ -8,6 +8,8 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic import CreateView, DetailView, ListView, TemplateView, UpdateView
 
+from apps.achievements.models import Achievement
+from apps.activities.models import SocialActivity
 from apps.audit_logs.services import log_audit_event
 from apps.belts.models import BeltHistory
 from apps.blog.models import Post
@@ -55,6 +57,18 @@ class HomePageView(TemplateView):
             .order_by("-award_date", "-id")[:6]
         )
 
+        recent_achievements = (
+            Achievement.objects.publicly_visible()
+            .select_related("member")
+            .order_by("-achievement_date", "-id")[:4]
+        )
+
+        recent_activities = (
+            SocialActivity.objects.publicly_visible()
+            .select_related("member")
+            .order_by("-activity_date", "-id")[:3]
+        )
+
         latest_posts = (
             Post.objects.published()
             .select_related("category")
@@ -84,6 +98,8 @@ class HomePageView(TemplateView):
             {
                 "featured_champions": champions,
                 "recent_medals": recent_medals,
+                "recent_achievements": recent_achievements,
+                "recent_activities": recent_activities,
                 "latest_posts": latest_posts,
                 "featured_products": featured_products,
                 "services": services,
@@ -290,3 +306,64 @@ class AdminPageUpdateView(ContentAdminMixin, UpdateView):
         )
         messages.success(self.request, _("Page updated successfully."))
         return resp
+
+class LegalPageMixin:
+    """Base for the named privacy and terms routes backed by a Page record."""
+
+    template_name = "public/legal.html"
+    page_slug = ""
+    legal_kind = ""
+    default_title = ""
+    default_description = ""
+
+    def get_legal_page(self):
+        return (
+            Page.objects.published()
+            .prefetch_related("translations")
+            .filter(slug=self.page_slug)
+            .first()
+        )
+
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        page = self.get_legal_page()
+        tr = page.get_translation(self.request.LANGUAGE_CODE) if page else None
+        ctx["legal_page"] = page
+        ctx["legal_tr"] = tr
+        ctx["legal_kind"] = self.legal_kind
+        title = self.default_title
+        if tr:
+            title = tr.seo_title or tr.title or title
+        description = self.default_description
+        if tr:
+            description = tr.seo_description or tr.summary or description
+        ctx.update(
+            build_seo_context(
+                self.request,
+                default_title=title,
+                default_description=description,
+            )
+        )
+        return ctx
+
+
+class PrivacyPageView(LegalPageMixin, TemplateView):
+    template_name = "public/privacy.html"
+    page_slug = "privacy-policy"
+    legal_kind = "privacy"
+    default_title = _("Privacy Policy")
+    default_description = _(
+        "How TECHWANDO collects, stores and protects member data, certificates "
+        "and public athlete profile information."
+    )
+
+
+class TermsPageView(LegalPageMixin, TemplateView):
+    template_name = "public/terms.html"
+    page_slug = "terms-of-service"
+    legal_kind = "terms"
+    default_title = _("Terms of Use")
+    default_description = _(
+        "Terms of use, member code of conduct and acceptable use rules for the "
+        "TECHWANDO club platform."
+    )

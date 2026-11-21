@@ -1,0 +1,182 @@
+/* ==========================================================================
+   TECHWANDO — Design tokens
+   Single source of truth for colours, typography, spacing and elevation.
+   Change these variables to re-theme the whole website.
+   ========================================================================== */
+
+:root {
+  /* Brand palette */
+  --tw-primary: #14243a;
+  --tw-primary-rgb: 20, 36, 58;
+  --tw-primary-600: #1d3452;
+  --tw-primary-700: #16283f;
+  --tw-primary-900: #0b1524;
+  --tw-accent: #c62828;
+  --tw-accent-rgb: 198, 40, 40;
+  --tw-accent-600: #a91f1f;
+  --tw-accent-soft: #fdeaea;
+
+  /* Surfaces */
+  --tw-bg: #f7f8fa;
+  --tw-surface: #ffffff;
+  --tw-surface-alt: #f1f3f6;
+  --tw-surface-inverse: #101a2b;
+
+  /* Text */
+  --tw-text: #252b36;
+  --tw-text-muted: #5a6270;
+  --tw-text-subtle: #626b78;
+  --tw-text-on-dark: #eef2f7;
+  --tw-text-on-dark-muted: #aab6c6;
+
+  /* Lines & elevation */
+  --tw-border: #e4e7ec;
+  --tw-border-strong: #cdd3db;
+  --tw-shadow-xs: 0 1px 2px rgba(16, 26, 43, 0.06);
+  --tw-shadow-sm: 0 1px 3px rgba(16, 26, 43, 0.08), 0 1px 2px rgba(16, 26, 43, 0.04);
+  --tw-shadow-md: 0 8px 24px rgba(16, 26, 43, 0.08);
+  --tw-shadow-lg: 0 20px 48px rgba(16, 26, 43, 0.14);
+
+  /* Semantic */
+  --tw-success: #1c7c4a;
+  --tw-success-soft: #e7f5ed;
+  --tw-warning: #a15c00;
+  --tw-warning-soft: #fff4e0;
+  --tw-danger: #b3261e;
+  --tw-danger-soft: #fdeceb;
+  --tw-info: #1f5c8b;
+  --tw-info-soft: #e8f2fa;
+  --tw-gold: #8a5f00;
+  --tw-gold-soft: #fdf3d7;
+  --tw-silver: #5d6773;
+  --tw-silver-soft: #eef1f4;
+  --tw-bronze: #8a4b1f;
+  --tw-bronze-soft: #f8ebdf;
+
+  /* Geometry */
+  --tw-radius-xs: 6px;
+  --tw-radius-sm: 10px;
+  --tw-radius: 14px;
+  --tw-radius-lg: 20px;
+  --tw-radius-pill: 999px;
+
+  /* Spacing rhythm */
+  --tw-space-1: 0.25rem;
+  --tw-space-2: 0.5rem;
+  --tw-space-3: 0.75rem;
+  --tw-space-4: 1rem;
+  --tw-space-5: 1.5rem;
+  --tw-space-6: 2rem;
+  --tw-space-7: 3rem;
+  --tw-space-8: 4.5rem;
+
+  /* Typography */
+  --tw-font-sans: "Vazirmatn", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial,
+    sans-serif;
+  --tw-font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic",
+    "Noto Sans JP", "Noto Sans CJK JP", Meiryo, var(--tw-font-sans);
+  --tw-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --tw-font-size-base: 1rem;
+  --tw-line-height: 1.7;
+  --tw-measure: 68ch;
+
+  /* Layout */
+  --tw-container: 1180px;
+  --tw-header-height: 76px;
+  --tw-sidebar-width: 272px;
+
+  /* Motion */
+  --tw-transition: 180ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --tw-focus-ring: 0 0 0 0.22rem rgba(var(--tw-primary-rgb), 0.22);
+
+  /* Bootstrap bridge */
+  --bs-primary: var(--tw-primary);
+  --bs-primary-rgb: var(--tw-primary-rgb);
+  --bs-body-bg: var(--tw-bg);
+  --bs-body-color: var(--tw-text);
+  --bs-body-font-family: var(--tw-font-sans);
+  --bs-body-font-size: var(--tw-font-size-base);
+  --bs-body-line-height: var(--tw-line-height);
+  --bs-border-color: var(--tw-border);
+  --bs-link-color: var(--tw-primary);
+  --bs-link-hover-color: var(--tw-accent);
+  --bs-secondary-color: var(--tw-text-muted);
+  --bs-emphasis-color: var(--tw-text);
+  --bs-border-radius: var(--tw-radius-sm);
+  --bs-border-radius-lg: var(--tw-radius);
+  --bs-focus-ring-color: rgba(var(--tw-primary-rgb), 0.25);
+  --bs-tertiary-bg: var(--tw-surface-alt);
+}
+
+/* --------------------------------------------------------------------------
+   Local fonts — no third-party font requests required at runtime.
+   Persian uses Vazirmatn (bundled). Japanese uses the platform UI Gothic
+   stack (Hiragino / Yu Gothic / Noto Sans JP) which is optimised for CJK.
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional dark theme — toggled by main.js and remembered in localStorage. */
+[data-theme="dark"] {
+  --tw-bg: #0e1725;
+  --tw-surface: #162133;
+  --tw-surface-alt: #1c293d;
+  --tw-text: #e8edf4;
+  --tw-text-muted: #a3aebd;
+  --tw-text-subtle: #8c98a8;
+  --tw-border: #2a3a52;
+  --tw-border-strong: #3b4d68;
+  --tw-accent-soft: #3a1c1f;
+  --tw-success-soft: #12291e;
+  --tw-warning-soft: #2c2110;
+  --tw-danger-soft: #311313;
+  --tw-info-soft: #122232;
+  --tw-gold-soft: #2c2410;
+  --tw-silver-soft: #232b36;
+  --tw-bronze-soft: #2c2017;
+  --tw-primary: #2a4a72;
+  --tw-primary-600: #35598a;
+  --tw-primary-700: #24405f;
+  --bs-body-bg: var(--tw-bg);
+  --bs-body-color: var(--tw-text);
+  --bs-border-color: var(--tw-border);
+  --bs-tertiary-bg: var(--tw-surface-alt);
+  --bs-secondary-color: var(--tw-text-muted);
+  --bs-link-color: #9dc3f0;
+  --bs-link-color-rgb: 157, 195, 240;
+  --bs-link-hover-color: #c6dcf8;
+  --bs-link-hover-color-rgb: 198, 220, 248;
+}

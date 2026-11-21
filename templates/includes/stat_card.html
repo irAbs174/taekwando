@@ -1,0 +1,9 @@
+{% load techwando_tags %}
+{# Params: stat_label, stat_value, stat_icon, stat_note, stat_accent (bool), stat_url #}
+<div class="kpi-card{% if stat_accent %} accent{% endif %}">
+  {% if stat_icon %}<i class="bi {{ stat_icon }} kpi-icon" aria-hidden="true"></i>{% endif %}
+  <span class="kpi-label">{{ stat_label }}</span>
+  <span class="kpi-value">{% if stat_localize %}{{ stat_value|local_num }}{% else %}{{ stat_value }}{% endif %}</span>
+  {% if stat_note %}<span class="kpi-note">{{ stat_note }}</span>{% endif %}
+  {% if stat_url %}<a class="stretched-link" href="{{ stat_url }}" aria-label="{{ stat_label }}"></a>{% endif %}
+</div>

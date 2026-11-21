@@ -6,9 +6,9 @@
 <div class="section-head">
   <div>
     {% include "includes/status_badge.html" with status=belt.approval_status %}
-    <h1 style="margin:0.4rem 0 0;font-size:1.45rem;">{{ belt.belt_type.localized_name }}</h1>
+    <h1 class="section-title section-title-sm">{{ belt.belt_type.localized_name }}</h1>
   </div>
-  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+  <div class="table-actions">
     {% if belt.can_member_edit %}
     <a class="btn btn-primary btn-sm" href="{% url 'belts:member_edit' belt.pk %}">{% trans "Edit & Resubmit" %}</a>
     {% endif %}

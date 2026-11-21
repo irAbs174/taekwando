@@ -1,38 +1,87 @@
 {% extends "base.html" %}
-{% load i18n techwando_tags %}
+{% load i18n %}
 
 {% block content %}
 <section class="page-banner">
   <div class="container">
+    {% trans "Contact" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with current_label=crumb_current %}
+    <span class="eyebrow" style="color: rgba(255,255,255,0.65);">{% trans "We are here to help" %}</span>
     <h1>{% trans "Contact TECHWANDO Club" %}</h1>
-    <p>{% trans "Questions about training schedules, membership applications, seminars, or official gear? Send us a message." %}</p>
+    <p>{% trans "Questions about training schedules, membership, seminars or official equipment? Send us a message." %}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="grid grid-2" style="align-items:start;">
-      <div class="card">
-        <div class="card-body" style="padding:1.85rem;">
-          <h2 class="card-title" style="font-size:1.3rem;margin-block-end:1.1rem;">{% trans "Send an Inquiry" %}</h2>
-          <form method="post" novalidate>
-            {% csrf_token %}
-            {% include "includes/form_fields.html" with form=form %}
-            <button type="submit" class="btn btn-primary btn-lg">{% trans "Send Message" %}</button>
-          </form>
+    <div class="row g-4 g-lg-5 align-items-start">
+      <div class="col-lg-7">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title" style="font-size: 1.25rem;">{% trans "Send an inquiry" %}</h2>
+            <p class="card-text">{% trans "Our multilingual administration desk replies in Persian and Japanese." %}</p>
+            <hr class="divider">
+            <form method="post" action="{% url 'contact:public' %}" novalidate>
+              {% csrf_token %}
+              {% include "includes/form_fields.html" with form=form %}
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-send" aria-hidden="true"></i> {% trans "Send Message" %}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-body" style="padding:1.85rem;">
-          <h2 class="card-title" style="font-size:1.3rem;">{% trans "Club Administration & Dojang" %}</h2>
-          <p class="card-text">
-            {% trans "Our multilingual administration desk responds to messages in both Persian (fa-IR) and Japanese (ja-JP)." %}
-          </p>
-          <hr style="border:0;border-block-start:1px solid var(--tw-border);margin-block:1rem;">
-          <p><strong>{% trans "Official Email" %}:</strong> <span class="ltr-inline">{{ CLUB_CONTACT_EMAIL }}</span></p>
-          <p><strong>{% trans "Training Hours" %}:</strong> {% trans "Monday – Saturday, 09:00 – 21:00" %}</p>
-          <p><strong>{% trans "Supported Languages" %}:</strong> فارسی (fa-IR) / 日本語 (ja-JP)</p>
+      <div class="col-lg-5">
+        <div class="d-grid gap-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Club administration & dojo" %}</h2>
+              <ul class="icon-list mt-1">
+                {% if CLUB_ADDRESS %}
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>{{ CLUB_ADDRESS }}</span></li>
+                {% endif %}
+                {% if CLUB_TRAINING_HOURS %}
+                <li><i class="bi bi-clock" aria-hidden="true"></i><span>{{ CLUB_TRAINING_HOURS }}</span></li>
+                {% endif %}
+                <li>
+                  <i class="bi bi-envelope" aria-hidden="true"></i>
+                  <span><span class="visually-hidden">{% trans "Email" %}: </span>
+                    <a class="ltr-inline" href="mailto:{{ CLUB_CONTACT_EMAIL }}">{{ CLUB_CONTACT_EMAIL }}</a></span>
+                </li>
+                {% if CLUB_PHONE %}
+                <li>
+                  <i class="bi bi-telephone" aria-hidden="true"></i>
+                  <span><span class="visually-hidden">{% trans "Phone" %}: </span>
+                    <a class="ltr-inline" href="tel:{{ CLUB_PHONE }}">{{ CLUB_PHONE }}</a></span>
+                </li>
+                {% endif %}
+                <li><i class="bi bi-translate" aria-hidden="true"></i><span>{% trans "Persian (fa-IR) and Japanese (ja-JP) support" %}</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">{% trans "Follow the club" %}</h2>
+              <p class="card-text">{% trans "Training clips, event announcements and belt examination results." %}</p>
+              <div class="social-row mt-1">
+                {% for social in CLUB_SOCIAL_LINKS %}
+                <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer"
+                   aria-label="{{ social.label }}">
+                  <i class="bi {{ social.icon }}" aria-hidden="true"></i>
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="notice">
+            <i class="bi bi-shield-lock" aria-hidden="true"></i>
+            <span>{% trans "Messages are stored securely and reviewed only by authorized club administrators. Never send identity documents through this form." %}</span>
+          </div>
         </div>
       </div>
     </div>
