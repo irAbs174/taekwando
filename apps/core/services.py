@@ -18,11 +18,11 @@ STATUS_LABELS_FA = {
     ApprovalStatus.NEEDS_REVISION: "نیازمند اصلاح",
 }
 
-STATUS_LABELS_JA = {
-    ApprovalStatus.PENDING: "審査待ち",
-    ApprovalStatus.APPROVED: "承認済み",
-    ApprovalStatus.REJECTED: "却下",
-    ApprovalStatus.NEEDS_REVISION: "修正依頼",
+STATUS_LABELS_KO = {
+    ApprovalStatus.PENDING: "검토 대기",
+    ApprovalStatus.APPROVED: "승인됨",
+    ApprovalStatus.REJECTED: "거절됨",
+    ApprovalStatus.NEEDS_REVISION: "수정 요청",
 }
 
 MODEL_LABELS_FA = {
@@ -34,13 +34,13 @@ MODEL_LABELS_FA = {
     "memberprofile": "درخواست عضویت",
 }
 
-MODEL_LABELS_JA = {
-    "medal": "メダル",
-    "achievement": "競技実績",
-    "belthistory": "昇級・昇段申請",
-    "socialactivity": "社会活動",
-    "competitionparticipation": "大会出場記録",
-    "memberprofile": "入会申請",
+MODEL_LABELS_KO = {
+    "medal": "메달",
+    "achievement": "스포츠 성과",
+    "belthistory": "승급 신청",
+    "socialactivity": "사회 활동",
+    "competitionparticipation": "대회 참가 기록",
+    "memberprofile": "회원 가입 신청",
 }
 
 
@@ -99,12 +99,12 @@ class ModerationService:
         )
 
         fa_kind = MODEL_LABELS_FA.get(model_key, model_key)
-        ja_kind = MODEL_LABELS_JA.get(model_key, model_key)
+        ko_kind = MODEL_LABELS_KO.get(model_key, model_key)
         member_name = submission.member.full_name
         NotificationService.notify_moderators(
             model_key=model_key,
             message_fa=f"ثبت جدید {fa_kind} توسط {member_name}: «{submission}» در انتظار بررسی است.",
-            message_ja=f"{member_name} さんから新しい{ja_kind}「{submission}」が提出され、審査待ちです。",
+            message_ko=f"{member_name} 님이 새 {ko_kind} 「{submission}」을 제출했습니다. 검토 대기 중입니다.",
             notification_type="SUBMISSION_PENDING",
             target_url=reverse(
                 "accounts:admin_review_submission",
@@ -170,11 +170,11 @@ class ModerationService:
         )
 
         fa_kind = MODEL_LABELS_FA.get(model_key, model_key)
-        ja_kind = MODEL_LABELS_JA.get(model_key, model_key)
+        ko_kind = MODEL_LABELS_KO.get(model_key, model_key)
         NotificationService.notify_moderators(
             model_key=model_key,
             message_fa=f"درخواست اصلاح برای {fa_kind} «{locked}» توسط {locked.member.full_name} ثبت شد.",
-            message_ja=f"{locked.member.full_name} さんから{ja_kind}「{locked}」の修正申請が届きました。",
+            message_ko=f"{locked.member.full_name} 님이 {ko_kind} 「{locked}」에 대한 수정을 요청했습니다.",
             notification_type="CORRECTION_REQUEST",
             target_url=reverse(
                 "accounts:admin_review_submission",
@@ -285,15 +285,15 @@ class ModerationService:
         )
 
         fa_kind = MODEL_LABELS_FA.get(model_key, model_key)
-        ja_kind = MODEL_LABELS_JA.get(model_key, model_key)
+        ko_kind = MODEL_LABELS_KO.get(model_key, model_key)
         fa_status = STATUS_LABELS_FA.get(new_status, new_status)
-        ja_status = STATUS_LABELS_JA.get(new_status, new_status)
+        ko_status = STATUS_LABELS_KO.get(new_status, new_status)
 
         fa_msg = f"وضعیت {fa_kind} «{locked}» به «{fa_status}» تغییر یافت."
-        ja_msg = f"{ja_kind}「{locked}」の審査結果が「{ja_status}」に更新されました。"
+        ko_msg = f"{ko_kind} 「{locked}」의 심사 결과가 「{ko_status}」로 변경되었습니다."
         if cleaned_note:
             fa_msg += f" یادداشت مدیر: {cleaned_note}"
-            ja_msg += f" 管理者コメント: {cleaned_note}"
+            ko_msg += f" 관리자 의견: {cleaned_note}"
 
         notif_type_map = {
             ApprovalStatus.APPROVED: "SUBMISSION_APPROVED",
@@ -306,7 +306,7 @@ class ModerationService:
         NotificationService.notify_user(
             recipient=locked.member.user,
             message_fa=fa_msg,
-            message_ja=ja_msg,
+            message_ko=ko_msg,
             notification_type=notif_type_map[new_status],
             target_url=member_url,
         )

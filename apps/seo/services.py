@@ -60,7 +60,7 @@ def build_seo_context(
         default_description = (
             "پلتفرم جامع آموزش هنرهای رزمی، مدیریت باشگاه تکواندو، پروفایل قهرمانان و افتخارات ورزشی."
             if lang == "fa"
-            else "TECHWANDO（テクワンドー）— 武道教育・クラブ運営・公認選手プロフィール・メダル実績管理プラットフォーム。"
+            else "TECHWANDO — 무술 교육, 클럽 운영, 공인 선수 프로필 및 메달 기록 관리 플랫폼."
         )
 
     final_canonical = canonical_url or f"{base_url}{request.path}"

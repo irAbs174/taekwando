@@ -52,7 +52,7 @@ class ContactService:
         NotificationService.notify_roles(
             roles=[UserRole.SUPER_ADMIN, UserRole.CLUB_MANAGER, UserRole.CONTENT_ADMIN],
             message_fa=f"پیام تماس جدید از {entry.name}: «{entry.subject}»",
-            message_ja=f"{entry.name} 様から新しいお問い合わせ：「{entry.subject}」",
+            message_ko=f"{entry.name} 님의 새 문의: 「{entry.subject}」",
             notification_type=NotificationType.CONTACT_MESSAGE,
             target_url=reverse("contact:admin_detail", kwargs={"pk": entry.pk}),
         )

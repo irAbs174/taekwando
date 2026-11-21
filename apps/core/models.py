@@ -10,7 +10,7 @@ from django.utils.translation import gettext_lazy as _
 
 class LanguageChoice(models.TextChoices):
     PERSIAN = "fa", _("Persian (fa-IR)")
-    JAPANESE = "ja", _("Japanese (ja-JP)")
+    KOREAN = "ko", _("Korean (ko-KR)")
 
 
 class ApprovalStatus(models.TextChoices):

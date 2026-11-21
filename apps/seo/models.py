@@ -87,7 +87,7 @@ class SEOMetadata(TimeStampedModel):
 
 
 class SEOTranslation(models.Model):
-    """Language-specific SEO fields (Persian fa & Japanese ja) for a single SEOMetadata."""
+    """Language-specific SEO fields (Persian fa & Korean ko) for a single SEOMetadata."""
 
     seo = models.ForeignKey(
         SEOMetadata,

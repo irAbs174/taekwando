@@ -25,8 +25,8 @@ class PublicPagesAndPrivacyTests(TechwandoTestCase):
             "secret_email_tkd@tw.test",
             first_name="آرمان",
             last_name="شریفی",
-            first_name_ja="アルマン",
-            last_name_ja="シャリフィ",
+            first_name_ko="アルマン",
+            last_name_ko="シャリフィ",
             public=True,
             discipline=Discipline.TAEKWONDO,
             phone="+989129998877",
@@ -194,7 +194,7 @@ class PublicPagesAndPrivacyTests(TechwandoTestCase):
 
     def test_contact_form_stores_message_and_honeypot_blocks_bots(self):
         ok = self.client.post(
-            "/ja/contact/",
+            "/ko/contact/",
             {
                 "name": "山田 太郎",
                 "email": "yamada@example.jp",
@@ -205,12 +205,12 @@ class PublicPagesAndPrivacyTests(TechwandoTestCase):
         )
         self.assertEqual(ok.status_code, 302)
         msg = ContactMessage.objects.get(email="yamada@example.jp")
-        self.assertEqual(msg.language, "ja")
+        self.assertEqual(msg.language, "ko")
         self.assertFalse(msg.is_read)
 
         # Bot filling honeypot rejected
         bot = self.client.post(
-            "/ja/contact/",
+            "/ko/contact/",
             {
                 "name": "SpamBot",
                 "email": "spam@example.com",

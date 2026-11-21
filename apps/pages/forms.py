@@ -42,37 +42,37 @@ class PageBilingualForm(forms.ModelForm):
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "rtl"}),
     )
 
-    ja_title = forms.CharField(
-        label=_("Title (Japanese)"),
+    ko_title = forms.CharField(
+        label=_("Title (Korean)"),
         max_length=200,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_subtitle = forms.CharField(
-        label=_("Subtitle (Japanese)"),
+    ko_subtitle = forms.CharField(
+        label=_("Subtitle (Korean)"),
         max_length=260,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_summary = forms.CharField(
-        label=_("Summary (Japanese)"),
+    ko_summary = forms.CharField(
+        label=_("Summary (Korean)"),
         max_length=600,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
-    ja_body = forms.CharField(
-        label=_("Content (Japanese)"),
+    ko_body = forms.CharField(
+        label=_("Content (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 7, "dir": "ltr"}),
     )
-    ja_seo_title = forms.CharField(
-        label=_("SEO Title (Japanese)"),
+    ko_seo_title = forms.CharField(
+        label=_("SEO Title (Korean)"),
         max_length=160,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_seo_description = forms.CharField(
-        label=_("SEO Description (Japanese)"),
+    ko_seo_description = forms.CharField(
+        label=_("SEO Description (Korean)"),
         max_length=320,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
@@ -107,7 +107,7 @@ class PageBilingualForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 tr = by_lang.get(code)
                 if tr:
                     self.fields[f"{code}_title"].initial = tr.title
@@ -122,17 +122,17 @@ class PageBilingualForm(forms.ModelForm):
         has_fa = bool(
             (cleaned.get("fa_title") or "").strip() and (cleaned.get("fa_body") or "").strip()
         )
-        has_ja = bool(
-            (cleaned.get("ja_title") or "").strip() and (cleaned.get("ja_body") or "").strip()
+        has_ko = bool(
+            (cleaned.get("ko_title") or "").strip() and (cleaned.get("ko_body") or "").strip()
         )
-        if not has_fa and not has_ja:
+        if not has_fa and not has_ko:
             raise forms.ValidationError(
                 _("Provide a page title and body in at least one language.")
             )
         return cleaned
 
     def save_translations(self, page: Page) -> None:
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             title = (self.cleaned_data.get(f"{code}_title") or "").strip()
             body = (self.cleaned_data.get(f"{code}_body") or "").strip()
             if title and body:

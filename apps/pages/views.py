@@ -156,7 +156,7 @@ class AboutPageView(TemplateView):
                 if page_tr
                 else _(
                     "Learn about TECHWANDO's martial arts philosophy, certified coaching "
-                    "programs, athlete verification workflow, and Persian-Japanese cultural bridge."
+                    "programs, athlete verification workflow, and Persian-Korean cultural bridge."
                 ),
             )
         )

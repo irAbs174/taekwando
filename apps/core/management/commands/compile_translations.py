@@ -7,7 +7,7 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = "Compile Persian (fa) and Japanese (ja) gettext .po catalogs to .mo files."
+    help = "Compile Persian (fa) and Korean (ko) gettext .po catalogs to .mo files."
 
     def handle(self, *args, **options):
         compiled = 0

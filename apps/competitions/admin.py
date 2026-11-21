@@ -9,9 +9,10 @@ from apps.core.admin import ModeratedModelAdminMixin
 
 @admin.register(Competition)
 class CompetitionAdmin(admin.ModelAdmin):
+    exclude = ('title_ja', 'location_ja', 'organizer_ja', 'description_ja', 'results_summary_ja')
     list_display = (
         "title_fa",
-        "title_ja",
+        "title_ko",
         "discipline",
         "location_fa",
         "start_date",
@@ -20,14 +21,15 @@ class CompetitionAdmin(admin.ModelAdmin):
         "is_published",
     )
     list_filter = ("discipline", "is_published", "start_date")
-    search_fields = ("title_fa", "title_ja", "location_fa", "location_ja", "organizer", "slug")
-    prepopulated_fields = {"slug": ("title_ja",)}
+    search_fields = ("title_fa", "title_ko", "location_fa", "location_ko", "organizer", "slug")
+    prepopulated_fields = {"slug": ("title_ko",)}
     list_per_page = 25
     date_hierarchy = "start_date"
 
 
 @admin.register(CompetitionParticipation)
 class CompetitionParticipationAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
+    exclude = ('result_ja',)
     list_display = (
         "id",
         "member",
@@ -45,7 +47,7 @@ class CompetitionParticipationAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
         "member__last_name",
         "member__membership_number",
         "competition__title_fa",
-        "competition__title_ja",
+        "competition__title_ko",
         "division_category",
         "result",
     )

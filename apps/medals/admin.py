@@ -9,6 +9,7 @@ from apps.medals.models import Medal
 
 @admin.register(Medal)
 class MedalAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
+    exclude = ('competition_name_ja', 'competition_location_ja')
     list_display = (
         "id",
         "medal_type",
@@ -25,7 +26,7 @@ class MedalAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
     list_filter = ("approval_status", "medal_type", "discipline", "award_date", "competition")
     search_fields = (
         "competition_name",
-        "competition_name_ja",
+        "competition_name_ko",
         "competition_location",
         "division_category",
         "member__first_name",

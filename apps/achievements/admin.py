@@ -9,6 +9,7 @@ from apps.core.admin import ModeratedModelAdminMixin
 
 @admin.register(Achievement)
 class AchievementAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
+    exclude = ('title_ja', 'description_ja')
     list_display = (
         "id",
         "title",
@@ -24,7 +25,7 @@ class AchievementAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
     list_filter = ("approval_status", "discipline", "achievement_date", "competition")
     search_fields = (
         "title",
-        "title_ja",
+        "title_ko",
         "description",
         "member__first_name",
         "member__last_name",

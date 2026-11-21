@@ -194,24 +194,24 @@ def review_membership_application(
         MembershipStatus.PENDING: "در انتظار بررسی قرار گرفت",
     }.get(new_status, new_status)
 
-    status_ja = {
-        MembershipStatus.APPROVED: "承認されました",
-        MembershipStatus.REJECTED: "却下されました",
-        MembershipStatus.NEEDS_REVISION: "情報修正が必要です",
-        MembershipStatus.SUSPENDED: "一時停止されました",
-        MembershipStatus.PENDING: "審査待ちになりました",
+    status_ko = {
+        MembershipStatus.APPROVED: "승인되었습니다",
+        MembershipStatus.REJECTED: "거절되었습니다",
+        MembershipStatus.NEEDS_REVISION: "정보 수정이 필요합니다",
+        MembershipStatus.SUSPENDED: "일시 중지되었습니다",
+        MembershipStatus.PENDING: "검토 대기 중입니다",
     }.get(new_status, new_status)
 
     fa_msg = f"وضعیت عضویت شما ({locked.membership_number}) {status_fa}."
-    ja_msg = f"会員資格（{locked.membership_number}）が{status_ja}。"
+    ko_msg = f"회원 자격 ({locked.membership_number}): {status_ko}."
     if cleaned_note:
         fa_msg += f" یادداشت مدیریت: {cleaned_note}"
-        ja_msg += f" 管理者コメント: {cleaned_note}"
+        ko_msg += f" 관리자 의견: {cleaned_note}"
 
     NotificationService.notify_user(
         recipient=locked.user,
         message_fa=fa_msg,
-        message_ja=ja_msg,
+        message_ko=ko_msg,
         notification_type=NotificationType.MEMBERSHIP_UPDATE,
         target_url=reverse("members:dashboard"),
     )

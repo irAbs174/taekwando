@@ -23,7 +23,7 @@ def _req_lang(serializer: serializers.Serializer) -> str:
     request = serializer.context.get("request")
     if request:
         q_lang = request.query_params.get("lang")
-        if q_lang in {"fa", "ja"}:
+        if q_lang in {"fa", "ko"}:
             return q_lang
         return normalize_lang(getattr(request, "LANGUAGE_CODE", None))
     return normalize_lang()
@@ -39,10 +39,10 @@ class TagSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Tag
-        fields = ["slug", "name", "name_fa", "name_ja"]
+        fields = ["slug", "name", "name_fa", "name_ko"]
 
     def get_name(self, obj: Tag) -> str:
-        return (obj.name_ja or obj.name_fa) if _req_lang(self) == "ja" else obj.name_fa
+        return (obj.name_ko or obj.name_fa) if _req_lang(self) == "ko" else obj.name_fa
 
 
 class PublicBlogCategorySerializer(serializers.ModelSerializer):
@@ -129,7 +129,7 @@ class ProductImageSerializer(serializers.ModelSerializer):
         fields = ["id", "image", "alt", "is_primary", "display_order"]
 
     def get_alt(self, obj: ProductImage) -> str:
-        return obj.alt_text_ja if _req_lang(self) == "ja" and obj.alt_text_ja else obj.alt_text_fa
+        return obj.alt_text_ko if _req_lang(self) == "ko" and obj.alt_text_ko else obj.alt_text_fa
 
 
 class PublicProductCategorySerializer(serializers.ModelSerializer):
@@ -238,7 +238,7 @@ class BeltTypeSerializer(serializers.ModelSerializer):
             "id",
             "discipline",
             "name_fa",
-            "name_ja",
+            "name_ko",
             "rank_code",
             "rank_order",
             "color_hex",
@@ -270,18 +270,18 @@ class PublicMedalSerializer(serializers.ModelSerializer):
 
     def get_athlete_name(self, obj: Medal) -> str:
         m = obj.member
-        if _req_lang(self) == "ja" and (m.last_name_ja or m.first_name_ja):
-            return f"{m.last_name_ja} {m.first_name_ja}".strip()
+        if _req_lang(self) == "ko" and (m.last_name_ko or m.first_name_ko):
+            return f"{m.last_name_ko} {m.first_name_ko}".strip()
         return m.full_name
 
     def get_competition_display(self, obj: Medal) -> str:
-        if _req_lang(self) == "ja" and obj.competition_name_ja:
-            return obj.competition_name_ja
+        if _req_lang(self) == "ko" and obj.competition_name_ko:
+            return obj.competition_name_ko
         return obj.competition_name
 
     def get_location_display(self, obj: Medal) -> str:
-        if _req_lang(self) == "ja" and obj.competition_location_ja:
-            return obj.competition_location_ja
+        if _req_lang(self) == "ko" and obj.competition_location_ko:
+            return obj.competition_location_ko
         return obj.competition_location
 
 
@@ -293,9 +293,9 @@ class PublicAchievementSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "title",
-            "title_ja",
+            "title_ko",
             "description",
-            "description_ja",
+            "description_ko",
             "discipline",
             "achievement_date",
         ]
@@ -325,14 +325,14 @@ class PublicChampionListSerializer(serializers.ModelSerializer):
         ]
 
     def get_display_name(self, obj: MemberProfile) -> str:
-        if _req_lang(self) == "ja" and (obj.last_name_ja or obj.first_name_ja):
-            return f"{obj.last_name_ja} {obj.first_name_ja}".strip()
+        if _req_lang(self) == "ko" and (obj.last_name_ko or obj.first_name_ko):
+            return f"{obj.last_name_ko} {obj.first_name_ko}".strip()
         return obj.full_name
 
     def get_bio(self, obj: MemberProfile) -> str:
-        if _req_lang(self) == "ja":
-            return obj.biography_ja or obj.biography
-        return obj.biography or obj.biography_ja
+        if _req_lang(self) == "ko":
+            return obj.biography_ko or obj.biography
+        return obj.biography or obj.biography_ko
 
     @extend_schema_field(BeltTypeSerializer(allow_null=True))
     def get_current_belt(self, obj: MemberProfile):
@@ -403,14 +403,14 @@ class CurrentMemberProfileSerializer(serializers.ModelSerializer):
             "admin_note",
             "first_name",
             "last_name",
-            "first_name_ja",
-            "last_name_ja",
+            "first_name_ko",
+            "last_name_ko",
             "profile_photo",
             "primary_discipline",
             "birth_date",
             "phone",
             "biography",
-            "biography_ja",
+            "biography_ko",
             "public_profile_consent",
             "public_profile_visibility",
             "current_belt",
@@ -459,9 +459,9 @@ class MemberAchievementSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "title",
-            "title_ja",
+            "title_ko",
             "description",
-            "description_ja",
+            "description_ko",
             "discipline",
             "competition",
             "achievement_date",
@@ -501,9 +501,9 @@ class MemberMedalSerializer(serializers.ModelSerializer):
             "discipline",
             "competition",
             "competition_name",
-            "competition_name_ja",
+            "competition_name_ko",
             "competition_location",
-            "competition_location_ja",
+            "competition_location_ko",
             "division_category",
             "award_date",
             "evidence",
@@ -580,12 +580,12 @@ class MemberActivitySerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "title",
-            "title_ja",
+            "title_ko",
             "description",
-            "description_ja",
+            "description_ko",
             "activity_date",
             "location",
-            "location_ja",
+            "location_ko",
             "photograph",
             "photo_url",
             "public_visibility_consent",
@@ -629,8 +629,8 @@ class MemberNotificationSerializer(serializers.ModelSerializer):
         read_only_fields = fields
 
     def get_localized_message(self, obj: Notification) -> str:
-        if _req_lang(self) == "ja" and obj.message_ja:
-            return obj.message_ja
+        if _req_lang(self) == "ko" and obj.message_ko:
+            return obj.message_ko
         return obj.message
 
 
@@ -684,8 +684,8 @@ class AdminMemberSerializer(serializers.ModelSerializer):
             "is_active",
             "first_name",
             "last_name",
-            "first_name_ja",
-            "last_name_ja",
+            "first_name_ko",
+            "last_name_ko",
             "primary_discipline",
             "birth_date",
             "phone",
@@ -933,11 +933,11 @@ class PublicCompetitionSerializer(serializers.ModelSerializer):
             "slug",
             "discipline",
             "title_fa",
-            "title_ja",
+            "title_ko",
             "location_fa",
-            "location_ja",
+            "location_ko",
             "start_date",
             "end_date",
             "organizer",
-            "organizer_ja",
+            "organizer_ko",
         ]

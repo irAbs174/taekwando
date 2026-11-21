@@ -27,6 +27,9 @@ class Notification(models.Model):
         related_name="notifications",
     )
     message = models.TextField(_("Message (Persian / default)"))
+    message_ko = models.TextField(_("Message (Korean)"), blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     message_ja = models.TextField(_("Message (Japanese)"), blank=True)
     notification_type = models.CharField(
         _("Notification type"),
@@ -56,6 +59,6 @@ class Notification(models.Model):
 
     @property
     def localized_message(self) -> str:
-        if normalize_lang() == "ja" and self.message_ja:
-            return self.message_ja
+        if normalize_lang() == "ko" and self.message_ko:
+            return self.message_ko
         return self.message

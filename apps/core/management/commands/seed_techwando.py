@@ -1,4 +1,4 @@
-"""Seed realistic multilingual (Persian fa-IR & Japanese ja-JP) TECHWANDO data."""
+"""Seed demo data; historical Japanese examples are retained as Japanese."""
 from __future__ import annotations
 
 import datetime
@@ -82,7 +82,7 @@ def _make_card_png(bg_hex: str, accent_hex: str, size=(640, 420)) -> ContentFile
 
 
 class Command(BaseCommand):
-    help = "Populate TECHWANDO with bilingual (fa & ja) belt ranks, pages, blog, products, and demo athletes."
+    help = "Populate TECHWANDO with demo belt ranks, pages, blog, products, and athletes."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -216,7 +216,7 @@ class Command(BaseCommand):
                 "fa": (
                     "درباره آکادمی و باشگاه تکواندو (TECHWANDO)",
                     "پیوند انضباط سنتی هنرهای رزمی با دانش نوین علوم ورزشی",
-                    "آکادمی تکواندو بستری حرفه‌ای و دوزبانه برای آموزش هنرهای رزمی، پرورش قهرمانان، ثبت رسمی کمربندها و مستندسازی افتخارات ورزشی بین جوامع فارسی‌زبان و ژاپنی‌زبان است.",
+                    "آکادمی تکواندو بستری حرفه‌ای و دوزبانه برای آموزش هنرهای رزمی، پرورش قهرمانان، ثبت رسمی کمربندها و مستندسازی افتخارات ورزشی بین جوامع فارسی‌زبان و کره‌ای‌زبان است.",
                     "باشگاه تکواندو (TECHWANDO) با هدف ارتقای استاندارد آموزش هنرهای رزمی، اخلاق پهلوانی و شفافیت در ثبت سوابق ورزشی بنیان‌گذاری شده است.\n\n"
                     "در این مجموعه، هر هنرجو از نخستین روز ورود دارای پرونده ورزشی اختصاصی است و تمامی مراحل ارتقای کمربند، حضور در مسابقات، مدال‌های کسب‌شده و فعالیت‌های فرهنگی‌اجتماعی پس از بررسی مستندات توسط هیئت فنی و مدیران باشگاه تأیید و ثبت می‌گردد.\n\n"
                     "ارزش‌های بنیادین ما بر احترام متقابل (ادب و ریگی)، پشتکار پیوسته، سلامت جسم و ذهن، و مسئولیت‌پذیری اجتماعی استوار است.",
@@ -425,7 +425,7 @@ class Command(BaseCommand):
             (
                 RouteKey.BLOG,
                 "مجله تخصصی و مقالات آموزشی هنرهای رزمی | TECHWANDO",
-                "مقالات فنی تکواندو، کاراته، جودو، آمادگی جسمانی و اخبار مسابقات به زبان‌های فارسی و ژاپنی.",
+                "مقالات فنی تکواندو، کاراته، جودو، آمادگی جسمانی و اخبار مسابقات به زبان‌های فارسی و کره‌ای.",
                 "武道コラム・技術ブログ｜TECHWANDO",
                 "テコンドー・武道の技術解説、試合レポート、スポーツ科学に関する最新記事を日本語・ペルシャ語で発信。",
             ),
@@ -665,10 +665,10 @@ class Command(BaseCommand):
                 "featured": True,
                 "colors": ("#09090b", "#ca8a04"),
                 "fa": (
-                    "کمربند مشکی دان با گلدوزی اختصاصی فارسی و ژاپنی",
+                    "کمربند مشکی دان با گلدوزی اختصاصی فارسی و کره‌ای",
                     "کمربند کتان سنگین ۵ سانتی‌متری با گلدوزی طلایی نام ورزشکار و درجه دان.",
-                    "ویژه اعضای تأییدشده کمربند مشکی باشگاه تکواندو. قیمت بر اساس تعداد خطوط گلدوزی فارسی و ژاپنی از طریق دفتر باشگاه استعلام می‌شود.",
-                    "عرض کمربند: ۵ سانتی‌متر استاندارد اساتید\nهسته داخلی: کتان دولایه فشرده\nسفارشی‌سازی: گلدوزی نام به فارسی و ژاپنی",
+                    "ویژه اعضای تأییدشده کمربند مشکی باشگاه تکواندو. قیمت بر اساس تعداد خطوط گلدوزی فارسی و کره‌ای از طریق دفتر باشگاه استعلام می‌شود.",
+                    "عرض کمربند: ۵ سانتی‌متر استاندارد اساتید\nهسته داخلی: کتان دولایه فشرده\nسفارشی‌سازی: گلدوزی نام به فارسی و کره‌ای",
                 ),
                 "ja": (
                     "特製刺繍入り 黒帯（日本語・ペルシャ語名入れ対応）",
@@ -746,8 +746,8 @@ class Command(BaseCommand):
         staff_specs = [
             ("admin@techwando.example.com", "آرش", "کاظمی", UserRole.SUPER_ADMIN, "fa"),
             ("content@techwando.example.com", "سارا", "مرادی", UserRole.CONTENT_ADMIN, "fa"),
-            ("manager@techwando.example.com", "Kenji", "Takahashi", UserRole.CLUB_MANAGER, "ja"),
-            ("moderator@techwando.example.com", "Yuki", "Sato", UserRole.MODERATOR, "ja"),
+            ("manager@techwando.example.com", "Kenji", "Takahashi", UserRole.CLUB_MANAGER, "ko"),
+            ("moderator@techwando.example.com", "Yuki", "Sato", UserRole.MODERATOR, "ko"),
         ]
         staff_users = {}
         for email, fn, ln, role, lang in staff_specs:
@@ -813,7 +813,7 @@ class Command(BaseCommand):
                 "ln": "یاماموتو",
                 "fn_ja": "陽翔",
                 "ln_ja": "山本",
-                "lang": "ja",
+                "lang": "ko",
                 "disc": Discipline.TAEKWONDO,
                 "public": True,
                 "bio_fa": "ملی‌پوش رده بزرگسالان تکواندو و دارنده مدال طلای پومسه انفرادی در رقابت‌های بین‌المللی توکیو.",
@@ -862,7 +862,7 @@ class Command(BaseCommand):
                 "ln": "ناکامورا",
                 "fn_ja": "葵",
                 "ln_ja": "中村",
-                "lang": "ja",
+                "lang": "ko",
                 "disc": Discipline.JUDO,
                 "public": True,
                 "bio_fa": "ورزشکار جودو و مربی آمادگی جسمانی باشگاه با سابقه کسب مدال برنز مسابقات دعوتی اوساکا.",

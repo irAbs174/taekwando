@@ -1,10 +1,12 @@
-"""Django Admin configuration for Blog with inline Persian/Japanese translations."""
+"""Django Admin configuration for Blog with inline Persian/Korean translations."""
 from django.contrib import admin
+
+from apps.core.admin import SupportedTranslationInlineMixin
 
 from apps.blog.models import Category, CategoryTranslation, Post, PostTranslation, Tag
 
 
-class CategoryTranslationInline(admin.TabularInline):
+class CategoryTranslationInline(SupportedTranslationInlineMixin, admin.TabularInline):
     model = CategoryTranslation
     extra = 1
     max_num = 2
@@ -21,12 +23,13 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
-    list_display = ("slug", "name_fa", "name_ja")
-    search_fields = ("slug", "name_fa", "name_ja")
+    exclude = ('name_ja',)
+    list_display = ("slug", "name_fa", "name_ko")
+    search_fields = ("slug", "name_fa", "name_ko")
     list_per_page = 30
 
 
-class PostTranslationInline(admin.StackedInline):
+class PostTranslationInline(SupportedTranslationInlineMixin, admin.StackedInline):
     model = PostTranslation
     extra = 1
     max_num = 2

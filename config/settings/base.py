@@ -67,14 +67,14 @@ CLUB_ADDRESS = {
         "CLUB_ADDRESS_FA",
         "تهران، خیابان ولیعصر، بالاتر از پارک ساعی، پلاک ۱۲۴، طبقه دوم",
     ),
-    "ja": os.environ.get(
-        "CLUB_ADDRESS_JA",
-        "テヘラン市 ヴァリアスル通り 124番地 2階（サーイ公園北側）",
+    "ko": os.environ.get(
+        "CLUB_ADDRESS_KO",
+        "테헤란 발리아스르 거리 124번지 2층 (사이 공원 북쪽)",
     ),
 }
 CLUB_TRAINING_HOURS = {
     "fa": os.environ.get("CLUB_HOURS_FA", "شنبه تا پنجشنبه، ۹:۰۰ تا ۲۱:۰۰"),
-    "ja": os.environ.get("CLUB_HOURS_JA", "土曜〜木曜 9:00〜21:00"),
+    "ko": os.environ.get("CLUB_HOURS_KO", "토요일~목요일 9:00~21:00"),
 }
 CLUB_SOCIAL_LINKS = [
     {
@@ -100,29 +100,29 @@ CLUB_SOCIAL_LINKS = [
 CLUB_INSTRUCTORS = [
     {
         "name_fa": "استاد رضا موسوی",
-        "name_ja": "レザ・モサビ 師範",
+        "name_ko": "레자 무사비 사범",
         "role": _("Technical Director & Head Coach"),
         "discipline": _("Taekwondo"),
         "rank_fa": "دان ۴ — استاد",
-        "rank_ja": "四段 師範",
+        "rank_ko": "4단 사범",
         "photo": "images/placeholders/instructor-1.svg",
     },
     {
         "name_fa": "استاد هاروکی تاناکا",
-        "name_ja": "田中 春樹 師範",
+        "name_ko": "다나카 하루키 사범",
         "role": _("Karate & Kata Program Lead"),
         "discipline": _("Karate"),
         "rank_fa": "دان ۳ کاراته",
-        "rank_ja": "空手 三段",
+        "rank_ko": "가라테 3단",
         "photo": "images/placeholders/instructor-2.svg",
     },
     {
         "name_fa": "استاد سارا احمدی",
-        "name_ja": "サラ・アフマディ 師範",
+        "name_ko": "사라 아흐마디 사범",
         "role": _("Youth Development & Conditioning"),
         "discipline": _("Judo"),
         "rank_fa": "دان ۲ جودو",
-        "rank_ja": "柔道 二段",
+        "rank_ko": "유도 2단",
         "photo": "images/placeholders/instructor-3.svg",
     },
 ]
@@ -302,20 +302,20 @@ CONTACT_RATE_LIMIT_ATTEMPTS = env_int("CONTACT_RATE_LIMIT_ATTEMPTS", 5)
 CONTACT_RATE_LIMIT_WINDOW = env_int("CONTACT_RATE_LIMIT_WINDOW", 600)
 
 # -----------------------------------------------------------------------------
-# Internationalization & Localization (Persian fa-IR RTL & Japanese ja-JP LTR)
+# Internationalization & Localization (Persian fa-IR RTL & Korean ko-KR LTR)
 # -----------------------------------------------------------------------------
 LANGUAGE_CODE = os.environ.get("DJANGO_DEFAULT_LANGUAGE", "fa")
-if LANGUAGE_CODE not in {"fa", "ja"}:
+if LANGUAGE_CODE not in {"fa", "ko"}:
     LANGUAGE_CODE = "fa"
 
 LANGUAGES = [
     ("fa", _("Persian")),
-    ("ja", _("Japanese")),
+    ("ko", _("Korean")),
 ]
 
 LANGUAGE_LOCALES = {
     "fa": {"bcp47": "fa-IR", "og_locale": "fa_IR", "dir": "rtl", "native": "فارسی"},
-    "ja": {"bcp47": "ja-JP", "og_locale": "ja_JP", "dir": "ltr", "native": "日本語"},
+    "ko": {"bcp47": "ko-KR", "og_locale": "ko_KR", "dir": "ltr", "native": "한국어"},
 }
 
 LANGUAGE_COOKIE_NAME = "techwando_lang"
@@ -416,7 +416,7 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {
     "TITLE": "TECHWANDO Platform API",
     "DESCRIPTION": (
-        "Multilingual (Persian fa-IR & Japanese ja-JP) Martial Arts, Sports Education, "
+        "Multilingual (Persian fa-IR & Korean ko-KR) Martial Arts, Sports Education, "
         "Club Management, Athlete Profiles, Achievements, and Medal Management REST API."
     ),
     "VERSION": "1.0.0",

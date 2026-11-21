@@ -10,11 +10,11 @@
   <meta name="theme-color" content="#14243A">
   <link rel="canonical" href="{% block canonical %}{{ seo_canonical|default:CANONICAL_DEFAULT }}{% endblock %}">
 
-  {# Localized hreflang alternates for Persian (fa-IR) and Japanese (ja-JP) #}
+  {# Localized hreflang alternates for Persian (fa-IR) and Korean (ko-KR) #}
   <link rel="alternate" hreflang="fa-IR" href="{{ HREFLANG_FA }}">
   <link rel="alternate" hreflang="fa" href="{{ HREFLANG_FA }}">
-  <link rel="alternate" hreflang="ja-JP" href="{{ HREFLANG_JA }}">
-  <link rel="alternate" hreflang="ja" href="{{ HREFLANG_JA }}">
+  <link rel="alternate" hreflang="ko-KR" href="{{ HREFLANG_KO }}">
+  <link rel="alternate" hreflang="ko" href="{{ HREFLANG_KO }}">
   <link rel="alternate" hreflang="x-default" href="{{ HREFLANG_FA }}">
 
   {# Open Graph / social sharing metadata #}
@@ -49,7 +49,7 @@
   {% if IS_RTL %}
   <link rel="stylesheet" href="{% static 'css/rtl.css' %}">
   {% else %}
-  <link rel="stylesheet" href="{% static 'css/ja.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ko.css' %}">
   {% endif %}
 
   {% if structured_data_json %}

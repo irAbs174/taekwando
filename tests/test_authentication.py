@@ -57,13 +57,13 @@ class AuthenticationTests(TechwandoTestCase):
     def test_duplicate_email_registration_rejected(self):
         self.create_member("dup@techwando.test")
         resp = self.client.post(
-            "/ja/accounts/register/",
+            "/ko/accounts/register/",
             {
                 "first_name": "健太",
                 "last_name": "佐藤",
                 "email": "DUP@techwando.test",
                 "primary_discipline": "KARATE",
-                "preferred_language": "ja",
+                "preferred_language": "ko",
                 "password1": DEFAULT_PASSWORD,
                 "password2": DEFAULT_PASSWORD,
             },
@@ -91,7 +91,7 @@ class AuthenticationTests(TechwandoTestCase):
 
         # Staff user redirects to admin dashboard
         admin_resp = self.client.post(
-            "/ja/accounts/login/",
+            "/ko/accounts/login/",
             {"email": "manager@techwando.test", "password": DEFAULT_PASSWORD},
             follow=True,
         )

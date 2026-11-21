@@ -9,6 +9,7 @@ from apps.core.admin import ModeratedModelAdminMixin
 
 @admin.register(SocialActivity)
 class SocialActivityAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
+    exclude = ('title_ja', 'description_ja', 'location_ja')
     list_display = (
         "id",
         "title",
@@ -24,7 +25,7 @@ class SocialActivityAdmin(ModeratedModelAdminMixin, admin.ModelAdmin):
     list_filter = ("approval_status", "public_visibility_consent", "activity_date")
     search_fields = (
         "title",
-        "title_ja",
+        "title_ko",
         "location",
         "description",
         "member__first_name",

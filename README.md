@@ -1,6 +1,6 @@
 # TECHWANDO — Multilingual Martial Arts, Sports Education & Club Management Platform
 
-**TECHWANDO** is a modular, security-hardened, production-oriented **Django 5.2 LTS** web platform and **REST API (`/api/v1/`)** built for an international martial arts academy and sports club operating natively in **Persian (`fa-IR`, RTL)** and **Japanese (`ja-JP`, LTR)**.
+**TECHWANDO** is a modular, security-hardened, production-oriented **Django 5.2 LTS** web platform and **REST API (`/api/v1/`)** built for an international martial arts academy and sports club operating natively in **Persian (`fa-IR`, RTL)** and **Korean (`ko-KR`, LTR)**.
 
 It integrates three isolated yet connected surfaces:
 1. **Multilingual Public Website & SEO Showcase** — Academy overview, educational curriculum, martial arts training programs, official equipment catalog (no online checkout), bilingual blog, verified Champions directory with search/filtering/sorting, public Athlete Profiles, Medal Winners honor roll, Belt Achievements registry, Competition Results, and anti-spam Contact form.
@@ -20,18 +20,18 @@ techwando/
 ├── docker-compose.yml
 ├── config/
 │   ├── settings/
-│   │   ├── base.py          # Shared configuration, Argon2, i18n (fa/ja), DRF, logging
+│   │   ├── base.py          # Shared configuration, Argon2, i18n (fa/ko), DRF, logging
 │   │   ├── development.py   # Local development settings
 │   │   ├── production.py    # Hardened HTTPS/HSTS/cookie/proxy/Sentry settings
 │   │   └── testing.py       # Fast isolated in-memory test settings
-│   ├── urls.py              # Localized /fa/ & /ja/ i18n_patterns + /api/v1/ + SEO + media guards
+│   ├── urls.py              # Localized /fa/ & /ko/ i18n_patterns + /api/v1/ + SEO + media guards
 │   ├── sitemaps.py          # Multilingual XML sitemaps (static, pages, blog, products, champions)
 │   ├── asgi.py
 │   └── wsgi.py
 ├── apps/
 │   ├── core/                # Base models, ReviewLog, ModerationService, RBAC mixins,
 │   │                        # PrivateMediaStorage, file validators, CSP middleware,
-│   │                        # Persian/Japanese template tags, and management commands
+│   │                        # Persian/Korean template tags, and management commands
 │   ├── accounts/            # Custom email User model, 5 RBAC roles/groups, rate-limited auth,
 │   │                        # custom admin dashboard, unified moderation queue & member admin
 │   ├── members/             # MemberProfile, privacy consent, member portal & public Champions views
@@ -50,9 +50,9 @@ techwando/
 │   └── api/                 # Versioned /api/v1/ DRF ViewSets, serializers, permissions & OpenAPI
 ├── templates/               # Semantic RTL/LTR HTML5 templates (public, accounts, member, admin)
 ├── static/                  # Design-system CSS (variables/layout/components/forms/responsive/
-│                            # dashboard/rtl/ja), vanilla JS, local Bootstrap 5 & Bootstrap Icons,
-│                            # Vazirmatn + Noto Sans JP woff2, SVG logos & image placeholders
-├── locale/                  # Compiled Persian (fa) and Japanese (ja) gettext catalogs (.po/.mo)
+│                            # dashboard/rtl/ko), vanilla JS, local Bootstrap 5 & Bootstrap Icons,
+│                            # Vazirmatn woff2, SVG logos & image placeholders
+├── locale/                  # Compiled Persian (fa) and Korean (ko) gettext catalogs (.po/.mo)
 ├── tests/                   # Automated test suite (auth, RBAC, moderation, i18n/SEO, API, security)
 ├── deploy/                  # Gunicorn, Nginx (HTTPS + X-Accel-Redirect), systemd, backup cron, logrotate
 └── docs/                    # Deployment guide, SQLite backup/restore guide, security checklist
@@ -62,7 +62,8 @@ techwando/
 
 ## Multilingual & Database Design
 
-- **Interface Localization**: Persian (`fa`, `dir="rtl"`, Vazirmatn typography, Persian numerals `۰۱۲۳۴۵۶۷۸۹`, Jalali-friendly formatting) and Japanese (`ja`, `dir="ltr"`, Noto Sans JP typography, `YYYY年M月D日` dates, family-name-first ordering, balanced CJK line-height) with distinct typography rules—never a naive layout mirror.
+- **Interface Localization**: Persian (`fa`, `dir="rtl"`, Vazirmatn typography, Persian numerals `۰۱۲۳۴۵۶۷۸۹`, Jalali-friendly formatting) and Korean (`ko`, `dir="ltr"`, system Korean font typography, `YYYY년 M월 D일` dates, family-name-first ordering, balanced CJK line-height) with distinct typography rules—never a naive layout mirror.
+- **Korean content**: The Korean interface catalog is incomplete; untranslated interface strings appear in English. Existing Japanese content is retained as historical data, not presented as Korean. Editors should add Korean translations; until then, published content falls back to Persian where available.
 - **Database Translation Pattern**: Content entities (`Post`, `Category`, `Product`, `ProductCategory`, `Page`, `SEOMetadata`) store language-neutral attributes once and pair with dedicated `*Translation` tables enforcing `UniqueConstraint(fields=[<parent>, "language"])`, with automatic fallback when a language variant is not yet authored.
 - **Database Compatibility**: Default `db.sqlite3` (WAL mode + `PRAGMA foreign_keys=ON`) using 100% standard Django ORM models/constraints ready for zero-redesign migration to PostgreSQL.
 
@@ -82,14 +83,14 @@ techwando/
 
 ## Key Localized Routes & REST API (`/api/v1/`)
 
-### Web Routes (available under both `/fa/...` and `/ja/...`)
+### Web Routes (available under both `/fa/...` and `/ko/...`)
 - Public: `/fa/`, `/fa/about/`, `/fa/education/`, `/fa/services/`, `/fa/privacy/`, `/fa/terms/`, `/fa/blog/`, `/fa/blog/<slug>/`, `/fa/products/`, `/fa/products/<slug>/`, `/fa/champions/`, `/fa/champions/<public-slug>/`, `/fa/champions/medals/`, `/fa/champions/belts/`, `/fa/champions/competitions/`, `/fa/contact/`
 - Auth: `/fa/accounts/login/`, `/fa/accounts/register/`, `/fa/accounts/password-reset/`
 - Member Portal: `/fa/member/dashboard/`, `/fa/member/profile/`, `/fa/member/achievements/`, `/fa/member/medals/`, `/fa/member/belts/`, `/fa/member/competitions/`, `/fa/member/activities/`, `/fa/member/notifications/`, `/fa/member/settings/`
 - Administration: `/fa/accounts/management/`, `/fa/accounts/management/moderation/`, `/fa/accounts/management/members/`, `/django-admin/` (configurable via `DJANGO_ADMIN_URL`)
 - SEO & Ops: `/robots.txt`, `/sitemap.xml`, `/healthz/`
 
-### REST API (`/api/v1/`, Session Auth + CSRF, localized via `Accept-Language: fa|ja`)
+### REST API (`/api/v1/`, Session Auth + CSRF, localized via `Accept-Language: fa|ko`)
 - **OpenAPI Docs**: `/api/v1/schema/`, `/api/v1/docs/` (Swagger UI), `/api/v1/redoc/`
 - **Public**: `GET /api/v1/public/{blog,products,champions,medals,pages}/`, `POST /api/v1/public/contact/`
 - **Member**: `GET|PATCH /api/v1/member/profile/`, CRUD + `POST .../request_correction/` on `/api/v1/member/{achievements,medals,belts,activities}/`, `GET|POST /api/v1/member/notifications/`
@@ -112,7 +113,7 @@ cp .env.example .env
 .venv/bin/python manage.py migrate
 .venv/bin/python manage.py setup_roles
 
-# 4. Compile Persian (fa) & Japanese (ja) gettext translations
+# 4. Compile Persian (fa) & Korean (ko) gettext translations
 .venv/bin/python manage.py compile_translations
 
 # 5. (Optional) Seed bilingual content, belt ranks, competitions & demo accounts
@@ -208,31 +209,31 @@ static/
 │   ├── dashboard.css         # sidebar/offcanvas shell, KPI cards, dashboard helpers
 │   ├── responsive.css        # 320/576/768/992/1200/1440 breakpoints, print, contrast
 │   ├── rtl.css               # Persian-only typographic and icon corrections
-│   ├── ja.css                # Japanese-only CJK typography
+│   ├── ko.css                # Korean-only typography
 │   └── main.css              # imports the cascade in order
 ├── js/
 │   ├── main.js               # theme, password toggle, image preview, confirm modal, alerts
 │   └── dashboard.js          # offcanvas link closing, table affordance, filter submit
 ├── vendor/bootstrap/         # Bootstrap 5.3.3 LTR + RTL + bundle (local)
 ├── vendor/bootstrap-icons/   # icon font + CSS (local)
-├── fonts/                    # Vazirmatn woff2 (Persian) + Noto Sans JP woff2 (Japanese)
+├── fonts/                    # Vazirmatn woff2 (Persian)
 └── images/                   # logo, default avatar, OG image, placeholders
 ```
 
 `base.html` loads `bootstrap.rtl.min.css` + `rtl.css` when `IS_RTL`, otherwise
-`bootstrap.min.css` + `ja.css`. Design tokens live in `variables.css`; retheming the
+`bootstrap.min.css` + `ko.css`. Design tokens live in `variables.css`; retheming the
 whole site only requires editing that file.
 
 ### Frontend conventions
 
-- **Escaping and URLs**: always `{% url %}`, `{% static %}`, `{% csrf_token %}`, `{% trans %}`/`{% blocktrans %}`. Never hardcode Persian/Japanese interface copy.
+- **Escaping and URLs**: always `{% url %}`, `{% static %}`, `{% csrf_token %}`, `{% trans %}`/`{% blocktrans %}`. Never hardcode Persian/Korean interface copy.
 - **Permission-aware UI**: hide member/admin navigation with `IS_ADMIN_PORTAL_USER`, `IS_CLUB_MANAGER`, `IS_CONTENT_ADMIN`; backend mixins remain the source of truth.
 - **Privacy**: never render `PRIVATE_MEDIA_ROOT` `.url` values; use the protected `get_certificate_url` / `get_evidence_url` endpoints. Public champion cards only use approved + consented records.
 - **Forms**: include `includes/form_fields.html` inside `<form novalidate>`; it renders labels, help text, validation errors, `aria-invalid`/`aria-describedby`, password toggles and local image previews.
 - **Empty states**: every queryset loop is guarded with `{% empty %}` or `{% include "includes/empty_state.html" %}` so seeded-less databases still render.
 - **JavaScript**: progressive enhancement only; all navigation, forms and logout work with JS disabled. Confirm dialogs use a Bootstrap modal and fall back to native confirmation.
 - **Bootstrap RTL**: use logical properties (`margin-inline-start`, `border-inline-start`, `inline-size`) in custom CSS instead of left/right.
-- **Adding a string**: wrap it in `{% trans %}`, run `python manage.py compile_translations`, and add `msgstr` entries to `locale/fa` and `locale/ja` `django.po`.
+- **Adding a string**: wrap it in `{% trans %}`, run `python manage.py compile_translations`, and add `msgstr` entries to `locale/fa` and `locale/ko` `django.po`.
 
 ### Frontend QA checklist
 
@@ -248,11 +249,11 @@ python manage.py compile_translations
 
 # 4. Run and inspect key routes
 python manage.py runserver 0.0.0.0:8000
-# /fa/  /ja/  /fa/champions/  /fa/blog/  /fa/products/  /fa/contact/
+# /fa/  /ko/  /fa/champions/  /fa/blog/  /fa/products/  /fa/contact/
 # /fa/accounts/login/  /fa/member/dashboard/  /fa/accounts/management/
 ```
 
 Responsive breakpoints to verify in browser devtools: **320px, 768px, 1024px, 1440px**.
 Tables scroll horizontally inside `.table-wrap`; the member sidebar becomes an
-offcanvas drawer below 992px. Check both `dir="rtl"` (`/fa/`) and `dir="ltr"` (`/ja/`),
+offcanvas drawer below 992px. Check both `dir="rtl"` (`/fa/`) and `dir="ltr"` (`/ko/`),
 keyboard focus rings, skip link, and contrast in light/dark themes.

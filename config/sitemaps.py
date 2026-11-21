@@ -1,4 +1,4 @@
-"""Multilingual (fa & ja) XML sitemaps with xhtml:link hreflang alternates."""
+"""Multilingual (fa & ko) XML sitemaps with xhtml:link hreflang alternates."""
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
@@ -13,7 +13,7 @@ class StaticViewSitemap(Sitemap):
     changefreq = "weekly"
     i18n = True
     alternates = True
-    languages = ["fa", "ja"]
+    languages = ["fa", "ko"]
 
     def items(self):
         return [
@@ -39,7 +39,7 @@ class BlogPostSitemap(Sitemap):
     changefreq = "weekly"
     i18n = True
     alternates = True
-    languages = ["fa", "ja"]
+    languages = ["fa", "ko"]
 
     def items(self):
         return Post.objects.published().filter(robots_index=True).order_by("-published_at")
@@ -53,7 +53,7 @@ class ProductSitemap(Sitemap):
     changefreq = "weekly"
     i18n = True
     alternates = True
-    languages = ["fa", "ja"]
+    languages = ["fa", "ko"]
 
     def items(self):
         return Product.objects.published().filter(robots_index=True).order_by("-updated_at")
@@ -67,7 +67,7 @@ class ChampionSitemap(Sitemap):
     changefreq = "weekly"
     i18n = True
     alternates = True
-    languages = ["fa", "ja"]
+    languages = ["fa", "ko"]
 
     def items(self):
         return MemberProfile.objects.publicly_visible().order_by("-updated_at")
@@ -84,7 +84,7 @@ class StaticPageSitemap(Sitemap):
     changefreq = "monthly"
     i18n = True
     alternates = True
-    languages = ["fa", "ja"]
+    languages = ["fa", "ko"]
 
     def items(self):
         return (

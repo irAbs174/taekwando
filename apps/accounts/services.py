@@ -75,9 +75,9 @@ class AccountService:
                 f"درخواست عضویت جدید از {profile.full_name} "
                 f"(شماره {profile.membership_number}) ثبت شد."
             ),
-            message_ja=(
-                f"{profile.full_name} さん（会員番号 {profile.membership_number}）から"
-                f"新規入会申請が届きました。"
+            message_ko=(
+                f"{profile.full_name} 님 (회원 번호 {profile.membership_number})의 "
+                f"신규 회원 가입 신청이 접수되었습니다."
             ),
             notification_type=NotificationType.MEMBERSHIP_UPDATE,
             target_url=reverse("accounts:admin_member_detail", kwargs={"pk": profile.pk}),
@@ -89,9 +89,9 @@ class AccountService:
                 f"به باشگاه تکواندو خوش آمدید! شماره عضویت شما {profile.membership_number} است. "
                 f"درخواست عضویت شما در انتظار تأیید مدیریت می‌باشد."
             ),
-            message_ja=(
-                f"TECHWANDOへようこそ！あなたの会員番号は {profile.membership_number} です。"
-                f"現在、入会申請は管理者の承認待ちです。"
+            message_ko=(
+                f"TECHWANDO에 오신 것을 환영합니다! 회원 번호는 {profile.membership_number}입니다. "
+                f"회원 가입 신청은 관리자 승인 대기 중입니다."
             ),
             notification_type=NotificationType.MEMBERSHIP_UPDATE,
             target_url=reverse("members:dashboard"),

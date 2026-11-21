@@ -120,7 +120,7 @@ class PublicChampionViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [AllowAny]
     lookup_field = "slug"
     filterset_fields = ["primary_discipline"]
-    search_fields = ["first_name", "last_name", "first_name_ja", "last_name_ja"]
+    search_fields = ["first_name", "last_name", "first_name_ko", "last_name_ko"]
     ordering_fields = ["joining_date", "approved_medal_count"]
 
     def get_queryset(self):
@@ -165,7 +165,7 @@ class PublicMedalWinnerViewSet(viewsets.ReadOnlyModelViewSet):
         "member__first_name",
         "member__last_name",
         "competition_name",
-        "competition_name_ja",
+        "competition_name_ko",
     ]
     ordering_fields = ["award_date"]
     ordering = ["-award_date"]

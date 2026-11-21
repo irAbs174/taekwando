@@ -1,6 +1,8 @@
 """Django Admin configuration for Products with inline translations and images."""
 from django.contrib import admin
 
+from apps.core.admin import SupportedTranslationInlineMixin
+
 from apps.products.models import (
     Product,
     ProductCategory,
@@ -10,7 +12,7 @@ from apps.products.models import (
 )
 
 
-class ProductCategoryTranslationInline(admin.TabularInline):
+class ProductCategoryTranslationInline(SupportedTranslationInlineMixin, admin.TabularInline):
     model = ProductCategoryTranslation
     extra = 1
     max_num = 2
@@ -25,13 +27,14 @@ class ProductCategoryAdmin(admin.ModelAdmin):
     list_per_page = 25
 
 
-class ProductTranslationInline(admin.StackedInline):
+class ProductTranslationInline(SupportedTranslationInlineMixin, admin.StackedInline):
     model = ProductTranslation
     extra = 1
     max_num = 2
 
 
 class ProductImageInline(admin.TabularInline):
+    exclude = ('alt_text_ja',)
     model = ProductImage
     extra = 1
 

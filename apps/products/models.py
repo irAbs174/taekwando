@@ -201,6 +201,9 @@ class ProductImage(TimeStampedModel):
         validators=[validate_safe_image],
     )
     alt_text_fa = models.CharField(_("Alt text (Persian)"), max_length=180, blank=True)
+    alt_text_ko = models.CharField(_("Alt text (Korean)"), max_length=180, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     alt_text_ja = models.CharField(_("Alt text (Japanese)"), max_length=180, blank=True)
     is_primary = models.BooleanField(_("Primary image"), default=False)
     display_order = models.PositiveSmallIntegerField(_("Display order"), default=0)
@@ -215,6 +218,6 @@ class ProductImage(TimeStampedModel):
 
     @property
     def localized_alt(self) -> str:
-        if normalize_lang() == "ja":
-            return self.alt_text_ja or self.alt_text_fa or str(self.product)
-        return self.alt_text_fa or self.alt_text_ja or str(self.product)
+        if normalize_lang() == "ko":
+            return self.alt_text_ko or self.alt_text_fa or str(self.product)
+        return self.alt_text_fa or self.alt_text_ko or str(self.product)

@@ -51,7 +51,7 @@ class BeltTypeAdminForm(forms.ModelForm):
         fields = [
             "discipline",
             "name_fa",
-            "name_ja",
+            "name_ko",
             "rank_code",
             "rank_order",
             "color_hex",
@@ -61,7 +61,7 @@ class BeltTypeAdminForm(forms.ModelForm):
         widgets = {
             "discipline": forms.Select(attrs={"class": "form-select"}),
             "name_fa": forms.TextInput(attrs={"class": "form-control"}),
-            "name_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "name_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "rank_code": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "rank_order": forms.NumberInput(attrs={"class": "form-control", "min": 1}),
             "color_hex": forms.TextInput(attrs={"class": "form-control", "type": "color"}),

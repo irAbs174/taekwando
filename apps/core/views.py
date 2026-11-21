@@ -144,7 +144,7 @@ class BlockedPrivateMediaPathView(View):
 
 
 class RootLanguageRedirectView(View):
-    """Redirect bare `/` to the user's preferred localized homepage (`/fa/` or `/ja/`)."""
+    """Redirect bare `/` to the user's preferred localized homepage (`/fa/` or `/ko/`)."""
 
     def get(self, request):
         lang = normalize_lang(getattr(request, "LANGUAGE_CODE", None))
@@ -152,7 +152,7 @@ class RootLanguageRedirectView(View):
 
 
 class SwitchLanguageView(View):
-    """Switch interface and route language between Persian (fa) and Japanese (ja)."""
+    """Switch interface and route language between Persian (fa) and Korean (ko)."""
 
     def post(self, request):
         lang = (request.POST.get("language") or "").strip().lower()
@@ -176,7 +176,7 @@ class SwitchLanguageView(View):
 
         translated = translate_url(next_url, lang)
         # Ensure prefix matches selected language for localized public/portal routes
-        other = "ja" if lang == "fa" else "fa"
+        other = "ko" if lang == "fa" else "fa"
         if translated.startswith(f"/{other}/"):
             translated = f"/{lang}/{translated[len(other) + 2:]}"
         elif translated == "/":

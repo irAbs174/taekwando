@@ -15,7 +15,7 @@
           <th>{% trans "Order" %}</th>
           <th>{% trans "Code" %}</th>
           <th>{% trans "Persian Name" %}</th>
-          <th>{% trans "Japanese Name" %}</th>
+          <th>{% trans "Korean Name" %}</th>
           <th>{% trans "Action" %}</th>
         </tr>
       </thead>
@@ -26,7 +26,7 @@
           <td>{{ b.rank_order|local_num }}</td>
           <td class="ltr-inline">{{ b.rank_code }}</td>
           <td><span class="belt-swatch" style="background:{{ b.color_hex }};"></span> {{ b.name_fa }}</td>
-          <td>{{ b.name_ja }}</td>
+          <td>{{ b.name_ko }}</td>
           <td><a class="btn btn-sm btn-outline" href="{% url 'belts:admin_type_edit' b.pk %}">{% trans "Edit" %}</a></td>
         </tr>
         {% endfor %}

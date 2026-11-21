@@ -59,7 +59,7 @@ class AuthorizationAndIsolationTests(TechwandoTestCase):
         self.b_notif = Notification.objects.create(
             recipient=self.user_b,
             message="پیام خصوصی",
-            message_ja="個別通知",
+            message_ko="個別通知",
         )
 
     def test_unauthenticated_redirected_from_member_and_admin_portals(self):

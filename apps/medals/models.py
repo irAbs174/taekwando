@@ -69,12 +69,26 @@ class Medal(ModeratedSubmissionModel):
         max_length=200,
         help_text=_("Competition title (auto-filled when selecting a registered competition)."),
     )
+    competition_name_ko = models.CharField(
+        _("Competition name (Korean)"),
+        max_length=200,
+        blank=True,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     competition_name_ja = models.CharField(
         _("Competition name (Japanese)"),
         max_length=200,
         blank=True,
     )
     competition_location = models.CharField(_("Competition location"), max_length=200)
+    competition_location_ko = models.CharField(
+        _("Competition location (Korean)"),
+        max_length=200,
+        blank=True,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     competition_location_ja = models.CharField(
         _("Competition location (Japanese)"),
         max_length=200,
@@ -121,12 +135,12 @@ class Medal(ModeratedSubmissionModel):
         if self.competition_id:
             if not self.competition_name:
                 self.competition_name = self.competition.title_fa
-            if not self.competition_name_ja and self.competition.title_ja:
-                self.competition_name_ja = self.competition.title_ja
+            if not self.competition_name_ko and self.competition.title_ko:
+                self.competition_name_ko = self.competition.title_ko
             if not self.competition_location:
                 self.competition_location = self.competition.location_fa
-            if not self.competition_location_ja and self.competition.location_ja:
-                self.competition_location_ja = self.competition.location_ja
+            if not self.competition_location_ko and self.competition.location_ko:
+                self.competition_location_ko = self.competition.location_ko
 
     def save(self, *args, **kwargs) -> None:
         if self.competition_id:
@@ -143,17 +157,17 @@ class Medal(ModeratedSubmissionModel):
     def localized_competition_name(self) -> str:
         if self.competition_id:
             return self.competition.localized_title
-        if normalize_lang() == "ja":
-            return self.competition_name_ja or self.competition_name
-        return self.competition_name or self.competition_name_ja
+        if normalize_lang() == "ko":
+            return self.competition_name_ko or self.competition_name
+        return self.competition_name or self.competition_name_ko
 
     @property
     def localized_competition_location(self) -> str:
         if self.competition_id:
             return self.competition.localized_location
-        if normalize_lang() == "ja":
-            return self.competition_location_ja or self.competition_location
-        return self.competition_location or self.competition_location_ja
+        if normalize_lang() == "ko":
+            return self.competition_location_ko or self.competition_location
+        return self.competition_location or self.competition_location_ko
 
     def get_member_url(self) -> str:
         return reverse("medals:member_detail", kwargs={"pk": self.pk})

@@ -2,7 +2,7 @@
 {% load i18n static techwando_tags %}
 
 {% block title %}{% if page_tr %}{{ page_tr.seo_title|default:page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %} | {{ SITE_NAME }}{% endblock %}
-{% block meta_description %}{% if page_tr %}{{ page_tr.seo_description|default:page_tr.summary }}{% else %}{% trans "Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Japanese cultural bridge." %}{% endif %}{% endblock %}
+{% block meta_description %}{% if page_tr %}{{ page_tr.seo_description|default:page_tr.summary }}{% else %}{% trans "Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Korean cultural bridge." %}{% endif %}{% endblock %}
 
 {% block content %}
 <section class="page-banner">
@@ -40,7 +40,7 @@
             {% endif %}
             {{ page_tr.body|linebreaks }}
           {% else %}
-            <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Japanese martial arts communities." %}</p>
+            <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Korean martial arts communities." %}</p>
             <p>{% trans "Every athlete keeps a permanent training record, and every belt promotion, medal and community activity is reviewed by our technical board before publication." %}</p>
           {% endif %}
         </div>
@@ -57,7 +57,7 @@
               </div>
               <div class="meta-item">
                 <dt>{% trans "Languages" %}</dt>
-                <dd>فارسی · 日本語</dd>
+                <dd>فارسی · 한국어</dd>
               </div>
               <div class="meta-item">
                 <dt>{% trans "Membership" %}</dt>
@@ -127,7 +127,7 @@
         <div class="card-body">
           <span class="feature-icon"><i class="bi bi-translate" aria-hidden="true"></i></span>
           <h3 class="card-title">{% trans "One club, two languages" %}</h3>
-          <p class="card-text">{% trans "Persian and Japanese members share standards, events and a single verified record system." %}</p>
+          <p class="card-text">{% trans "Persian and Korean members share standards, events and a single verified record system." %}</p>
         </div>
       </article>
       <article class="card">

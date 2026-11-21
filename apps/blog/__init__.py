@@ -1,1 +1,1 @@
-"""Multilingual blog with categories, tags, separate fa/ja translations, and scheduling."""
+"""Multilingual blog with categories, tags, separate fa/ko translations, and scheduling."""

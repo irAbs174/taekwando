@@ -258,8 +258,8 @@ class PublicChampionsListView(ListView):
             qs = qs.filter(
                 Q(first_name__icontains=q)
                 | Q(last_name__icontains=q)
-                | Q(first_name_ja__icontains=q)
-                | Q(last_name_ja__icontains=q)
+                | Q(first_name_ko__icontains=q)
+                | Q(last_name_ko__icontains=q)
             )
         if discipline in dict(Discipline.choices):
             qs = qs.filter(
@@ -466,10 +466,10 @@ class PublicMedalWinnersView(ListView):
             qs = qs.filter(
                 Q(member__first_name__icontains=q)
                 | Q(member__last_name__icontains=q)
-                | Q(member__first_name_ja__icontains=q)
-                | Q(member__last_name_ja__icontains=q)
+                | Q(member__first_name_ko__icontains=q)
+                | Q(member__last_name_ko__icontains=q)
                 | Q(competition_name__icontains=q)
-                | Q(competition_name_ja__icontains=q)
+                | Q(competition_name_ko__icontains=q)
             )
         if medal_type in dict(MedalType.choices):
             qs = qs.filter(medal_type=medal_type)
@@ -543,8 +543,8 @@ class PublicBeltAchievementsView(ListView):
             qs = qs.filter(
                 Q(member__first_name__icontains=q)
                 | Q(member__last_name__icontains=q)
-                | Q(member__first_name_ja__icontains=q)
-                | Q(member__last_name_ja__icontains=q)
+                | Q(member__first_name_ko__icontains=q)
+                | Q(member__last_name_ko__icontains=q)
             )
         return qs.order_by("-award_date", "-belt_type__rank_order")
 

@@ -1,4 +1,4 @@
-"""Root URL configuration for TECHWANDO with localized /fa/ and /ja/ routing."""
+"""Root URL configuration for TECHWANDO with localized /fa/ and /ko/ routing."""
 from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
@@ -34,7 +34,7 @@ urlpatterns = [
     ),
 ]
 
-# Localized Persian (/fa/) and Japanese (/ja/) public, member, and management routes
+# Localized Persian (/fa/) and Korean (/ko/) public, member, and management routes
 urlpatterns += i18n_patterns(
     path("", include("apps.pages.urls")),
     path("blog/", include("apps.blog.urls")),

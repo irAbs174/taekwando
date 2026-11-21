@@ -1,4 +1,4 @@
-"""Template tags and filters for Persian/Japanese typography, dates, and URLs."""
+"""Template tags and filters for Persian/Korean typography, dates, and URLs."""
 from __future__ import annotations
 
 import datetime
@@ -39,7 +39,7 @@ def persian_digits(value) -> str:
 
 @register.filter(name="local_num")
 def local_num(value) -> str:
-    """Render numerals according to the active language (Persian ۰-۹ vs Japanese 0-9)."""
+    """Render numerals according to the active language (Persian ۰-۹ vs Korean 0-9)."""
     if value is None or value == "":
         return ""
     text = str(value)
@@ -65,7 +65,7 @@ def local_price(value, currency: str = "") -> str:
 
 @register.filter(name="local_date")
 def local_date(value) -> str:
-    """Render dates naturally in Persian (fa-IR) and Japanese (ja-JP)."""
+    """Render dates naturally in Persian (fa-IR) and Korean (ko-KR)."""
     if not value:
         return ""
     if isinstance(value, datetime.datetime):
@@ -78,15 +78,15 @@ def local_date(value) -> str:
         return str(value)
 
     lang = normalize_lang()
-    if lang == "ja":
-        return f"{dt_date.year}年{dt_date.month}月{dt_date.day}日"
+    if lang == "ko":
+        return f"{dt_date.year}년 {dt_date.month}월 {dt_date.day}일"
     month_name = _PERSIAN_MONTHS.get(dt_date.month, str(dt_date.month))
     return f"{dt_date.day} {month_name} {dt_date.year}".translate(_PERSIAN_DIGIT_MAP)
 
 
 @register.filter(name="local_datetime")
 def local_datetime(value) -> str:
-    """Render date + time in Persian or Japanese."""
+    """Render date + time in Persian or Korean."""
     if not value:
         return ""
     if isinstance(value, datetime.datetime):
@@ -121,13 +121,13 @@ def tr(obj, lang_code: str | None = None):
 @register.filter(name="localized_attr")
 def localized_attr(obj, field_base: str) -> str:
     """
-    Read `<field_base>_fa` or `<field_base>_ja` on bilingual models with automatic
+    Read `<field_base>_fa` or `<field_base>_ko` on bilingual models with automatic
     fallback to the alternate language.
     """
     if obj is None:
         return ""
     lang = normalize_lang()
-    alt = "ja" if lang == "fa" else "fa"
+    alt = "ko" if lang == "fa" else "fa"
     primary = getattr(obj, f"{field_base}_{lang}", "") or ""
     if primary:
         return primary

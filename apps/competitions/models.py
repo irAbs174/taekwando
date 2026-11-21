@@ -24,6 +24,9 @@ class Competition(TimeStampedModel):
 
     slug = models.SlugField(_("Slug"), max_length=140, unique=True, db_index=True)
     title_fa = models.CharField(_("Title (Persian)"), max_length=200)
+    title_ko = models.CharField(_("Title (Korean)"), max_length=200, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     title_ja = models.CharField(_("Title (Japanese)"), max_length=200, blank=True)
     discipline = models.CharField(
         _("Martial arts discipline"),
@@ -33,14 +36,26 @@ class Competition(TimeStampedModel):
         db_index=True,
     )
     location_fa = models.CharField(_("Location (Persian)"), max_length=200)
+    location_ko = models.CharField(_("Location (Korean)"), max_length=200, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     location_ja = models.CharField(_("Location (Japanese)"), max_length=200, blank=True)
     start_date = models.DateField(_("Start date"), db_index=True)
     end_date = models.DateField(_("End date"))
     organizer = models.CharField(_("Organizer (Persian)"), max_length=200)
+    organizer_ko = models.CharField(_("Organizer (Korean)"), max_length=200, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     organizer_ja = models.CharField(_("Organizer (Japanese)"), max_length=200, blank=True)
     description_fa = models.TextField(_("Description (Persian)"), blank=True)
+    description_ko = models.TextField(_("Description (Korean)"), blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     description_ja = models.TextField(_("Description (Japanese)"), blank=True)
     results_summary_fa = models.TextField(_("Results summary (Persian)"), blank=True)
+    results_summary_ko = models.TextField(_("Results summary (Korean)"), blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     results_summary_ja = models.TextField(_("Results summary (Japanese)"), blank=True)
     is_published = models.BooleanField(_("Published"), default=True, db_index=True)
 
@@ -76,41 +91,41 @@ class Competition(TimeStampedModel):
     @property
     def localized_title(self) -> str:
         return (
-            (self.title_ja or self.title_fa)
-            if normalize_lang() == "ja"
-            else (self.title_fa or self.title_ja)
+            (self.title_ko or self.title_fa)
+            if normalize_lang() == "ko"
+            else (self.title_fa or self.title_ko)
         )
 
     @property
     def localized_location(self) -> str:
         return (
-            (self.location_ja or self.location_fa)
-            if normalize_lang() == "ja"
-            else (self.location_fa or self.location_ja)
+            (self.location_ko or self.location_fa)
+            if normalize_lang() == "ko"
+            else (self.location_fa or self.location_ko)
         )
 
     @property
     def localized_organizer(self) -> str:
         return (
-            (self.organizer_ja or self.organizer)
-            if normalize_lang() == "ja"
-            else (self.organizer or self.organizer_ja)
+            (self.organizer_ko or self.organizer)
+            if normalize_lang() == "ko"
+            else (self.organizer or self.organizer_ko)
         )
 
     @property
     def localized_description(self) -> str:
         return (
-            (self.description_ja or self.description_fa)
-            if normalize_lang() == "ja"
-            else (self.description_fa or self.description_ja)
+            (self.description_ko or self.description_fa)
+            if normalize_lang() == "ko"
+            else (self.description_fa or self.description_ko)
         )
 
     @property
     def localized_results_summary(self) -> str:
         return (
-            (self.results_summary_ja or self.results_summary_fa)
-            if normalize_lang() == "ja"
-            else (self.results_summary_fa or self.results_summary_ja)
+            (self.results_summary_ko or self.results_summary_fa)
+            if normalize_lang() == "ko"
+            else (self.results_summary_fa or self.results_summary_ko)
         )
 
 
@@ -155,6 +170,13 @@ class CompetitionParticipation(ModeratedSubmissionModel):
         blank=True,
         help_text=_("Example: 1st Place, Silver Medalist, Quarterfinalist"),
     )
+    result_ko = models.CharField(
+        _("Result / Standing (Korean)"),
+        max_length=160,
+        blank=True,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     result_ja = models.CharField(
         _("Result / Standing (Japanese)"),
         max_length=160,
@@ -205,9 +227,9 @@ class CompetitionParticipation(ModeratedSubmissionModel):
 
     @property
     def localized_result(self) -> str:
-        if normalize_lang() == "ja":
-            return self.result_ja or self.result
-        return self.result or self.result_ja
+        if normalize_lang() == "ko":
+            return self.result_ko or self.result
+        return self.result or self.result_ko
 
     def get_member_url(self) -> str:
         return reverse("competitions:member_detail", kwargs={"pk": self.pk})

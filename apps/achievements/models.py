@@ -37,8 +37,18 @@ class Achievement(ModeratedSubmissionModel):
         related_name="achievements",
     )
     title = models.CharField(_("Achievement title"), max_length=200)
+    title_ko = models.CharField(_("Achievement title (Korean)"), max_length=200, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     title_ja = models.CharField(_("Achievement title (Japanese)"), max_length=200, blank=True)
     description = models.TextField(_("Description"), blank=True, max_length=3000)
+    description_ko = models.TextField(
+        _("Description (Korean)"),
+        blank=True,
+        max_length=3000,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     description_ja = models.TextField(
         _("Description (Japanese)"),
         blank=True,
@@ -100,15 +110,15 @@ class Achievement(ModeratedSubmissionModel):
 
     @property
     def localized_title(self) -> str:
-        if normalize_lang() == "ja":
-            return self.title_ja or self.title
-        return self.title or self.title_ja
+        if normalize_lang() == "ko":
+            return self.title_ko or self.title
+        return self.title or self.title_ko
 
     @property
     def localized_description(self) -> str:
-        if normalize_lang() == "ja":
-            return self.description_ja or self.description
-        return self.description or self.description_ja
+        if normalize_lang() == "ko":
+            return self.description_ko or self.description
+        return self.description or self.description_ko
 
     def get_member_url(self) -> str:
         return reverse("achievements:member_detail", kwargs={"pk": self.pk})
