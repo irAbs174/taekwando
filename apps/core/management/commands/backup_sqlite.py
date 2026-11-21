@@ -40,7 +40,7 @@ class Command(BaseCommand):
         out_dir = Path(options["output_dir"])
         out_dir.mkdir(parents=True, exist_ok=True)
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-        dest_path = out_dir / f"techwando_{stamp}.sqlite3"
+        dest_path = out_dir / f"teakwondo_{stamp}.sqlite3"
 
         with sqlite3.connect(f"file:{src_path}?mode=ro", uri=True) as src_conn:
             with sqlite3.connect(str(dest_path)) as dst_conn:
@@ -57,7 +57,7 @@ class Command(BaseCommand):
         sha_path.chmod(0o600)
 
         keep = max(1, int(options["keep"]))
-        snapshots = sorted(out_dir.glob("techwando_*.sqlite3"), reverse=True)
+        snapshots = sorted(out_dir.glob("teakwondo_*.sqlite3"), reverse=True)
         for old in snapshots[keep:]:
             old.unlink(missing_ok=True)
             old.with_suffix(".sqlite3.sha256").unlink(missing_ok=True)

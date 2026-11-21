@@ -151,11 +151,11 @@ class AboutPageView(TemplateView):
                 route_key=RouteKey.ABOUT,
                 default_title=(page_tr.seo_title or page_tr.title)
                 if page_tr
-                else _("About TECHWANDO"),
+                else _("About TEAKWONDO"),
                 default_description=(page_tr.seo_description or page_tr.summary)
                 if page_tr
                 else _(
-                    "Learn about TECHWANDO's martial arts philosophy, certified coaching "
+                    "Learn about TEAKWONDO's martial arts philosophy, certified coaching "
                     "programs, athlete verification workflow, and Persian-Korean cultural bridge."
                 ),
             )
@@ -217,7 +217,7 @@ class ServicesPageView(ListView):
                 default_title=_("Martial Arts Services & Training Programs"),
                 default_description=_(
                     "Youth fundamentals, competitive sparring squads, black belt Dan "
-                    "preparation, and international training seminars at TECHWANDO."
+                    "preparation, and international training seminars at TEAKWONDO."
                 ),
             )
         )
@@ -263,7 +263,7 @@ class GalleryPageView(ListView):
             build_seo_context(
                 self.request,
                 route_key=RouteKey.GALLERY,
-                default_title=_("Club Gallery — TECHWANDO in Pictures"),
+                default_title=_("Club Gallery — TEAKWONDO in Pictures"),
                 default_description=_(
                     "Approved club photos from training, competitions and community "
                     "activities, published with member consent."
@@ -402,7 +402,7 @@ class PrivacyPageView(LegalPageMixin, TemplateView):
     legal_kind = "privacy"
     default_title = _("Privacy Policy")
     default_description = _(
-        "How TECHWANDO collects, stores and protects member data, certificates "
+        "How TEAKWONDO collects, stores and protects member data, certificates "
         "and public athlete profile information."
     )
 
@@ -414,5 +414,5 @@ class TermsPageView(LegalPageMixin, TemplateView):
     default_title = _("Terms of Use")
     default_description = _(
         "Terms of use, member code of conduct and acceptable use rules for the "
-        "TECHWANDO club platform."
+        "TEAKWONDO club platform."
     )

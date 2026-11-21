@@ -14,7 +14,7 @@ from apps.core.validators import validate_safe_image
 
 class RouteKey(models.TextChoices):
     HOME = "home", _("Homepage")
-    ABOUT = "about", _("About Techwando")
+    ABOUT = "about", _("About Teakwondo")
     EDUCATION = "education", _("Educational Content")
     SERVICES = "services", _("Training Programs & Services")
     GALLERY = "gallery", _("Photo Gallery")

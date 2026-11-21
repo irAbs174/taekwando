@@ -1,4 +1,4 @@
-"""Shared test helpers and realistic model/file factories for TECHWANDO tests."""
+"""Shared test helpers and realistic model/file factories for TEAKWONDO tests."""
 from __future__ import annotations
 
 import datetime
@@ -47,12 +47,12 @@ def make_pdf_upload(name: str = "certificate.pdf") -> SimpleUploadedFile:
     return SimpleUploadedFile(name, pdf_bytes, content_type="application/pdf")
 
 
-class TechwandoTestCase(TestCase):
+class TeakwondoTestCase(TestCase):
     """Base test case using isolated temporary public and private media directories."""
 
     @classmethod
     def setUpClass(cls):
-        cls._tmp_dir = Path(tempfile.mkdtemp(prefix="techwando_test_"))
+        cls._tmp_dir = Path(tempfile.mkdtemp(prefix="teakwondo_test_"))
         cls._media_root = cls._tmp_dir / "media"
         cls._private_root = cls._tmp_dir / "private_media"
         cls._media_root.mkdir(parents=True, exist_ok=True)
@@ -239,7 +239,7 @@ class TechwandoTestCase(TestCase):
                 title="고급 품새의 핵심",
                 excerpt="呼吸と重心の精密なコントロール解説。",
                 body="日本語による上級プムセの解説本文です。",
-                seo_title="プムセ技術解説 | TECHWANDO",
+                seo_title="プムセ技術解説 | TEAKWONDO",
                 seo_description="日本語のSEOディスクリプション。",
             )
         return post
@@ -307,9 +307,9 @@ class TechwandoTestCase(TestCase):
         PageTranslation.objects.create(
             page=page,
             language="ko",
-            title="TECHWANDOアカデミー紹介",
+            title="TEAKWONDOアカデミー紹介",
             subtitle="武道の伝統と現代スポーツ科学",
-            summary="TECHWANDOクラブの概要。",
-            body="TECHWANDOアカデミーの詳細な日本語紹介文です。",
+            summary="TEAKWONDOクラブの概要。",
+            body="TEAKWONDOアカデミーの詳細な日本語紹介文です。",
         )
         return page

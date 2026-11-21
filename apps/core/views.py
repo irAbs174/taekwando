@@ -207,7 +207,7 @@ class HealthCheckView(View):
         with connection.cursor() as cursor:
             cursor.execute("SELECT 1")
             cursor.fetchone()
-        return JsonResponse({"status": "ok", "service": "techwando"})
+        return JsonResponse({"status": "ok", "service": "teakwondo"})
 
 
 def error_403(request, exception=None):

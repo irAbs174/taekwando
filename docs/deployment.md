@@ -1,6 +1,6 @@
-# TECHWANDO Production Deployment Guide
+# TEAKWONDO Production Deployment Guide
 
-This guide covers deploying **TECHWANDO** (Django 5.2 LTS) to production using either **Docker Compose** (recommended) or a hardened **Ubuntu/Debian Linux VPS** (`systemd` + `Gunicorn` + `Nginx` + Let's Encrypt HTTPS).
+This guide covers deploying **TEAKWONDO** (Django 5.2 LTS) to production using either **Docker Compose** (recommended) or a hardened **Ubuntu/Debian Linux VPS** (`systemd` + `Gunicorn` + `Nginx` + Let's Encrypt HTTPS).
 
 ---
 
@@ -20,9 +20,9 @@ Required production environment variables:
 DJANGO_SETTINGS_MODULE=config.settings.production
 DJANGO_DEBUG=False
 DJANGO_SECRET_KEY=<generated-64-char-random-secret>
-DJANGO_ALLOWED_HOSTS=techwando.example.com,www.techwando.example.com
-DJANGO_CSRF_TRUSTED_ORIGINS=https://techwando.example.com,https://www.techwando.example.com
-SITE_BASE_URL=https://techwando.example.com
+DJANGO_ALLOWED_HOSTS=teakwondo.example.com,www.teakwondo.example.com
+DJANGO_CSRF_TRUSTED_ORIGINS=https://teakwondo.example.com,https://www.teakwondo.example.com
+SITE_BASE_URL=https://teakwondo.example.com
 
 # Obscured Django Admin URL (always keep trailing slash)
 DJANGO_ADMIN_URL=club-control-9f3a2c/
@@ -40,9 +40,9 @@ EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
 EMAIL_HOST=smtp.example.com
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
-EMAIL_HOST_USER=noreply@techwando.example.com
+EMAIL_HOST_USER=noreply@teakwondo.example.com
 EMAIL_HOST_PASSWORD=<smtp-secret>
-DEFAULT_FROM_EMAIL=TECHWANDO <noreply@techwando.example.com>
+DEFAULT_FROM_EMAIL=TEAKWONDO <noreply@teakwondo.example.com>
 
 # Optional Sentry Error & Performance Monitoring
 SENTRY_DSN=
@@ -66,14 +66,14 @@ docker compose up -d
 
 ```bash
 docker compose exec web python manage.py check --deploy
-curl -fsS https://techwando.example.com/healthz/
+curl -fsS https://teakwondo.example.com/healthz/
 ```
 
 4. Create your initial `SUPER_ADMIN` account and optional starter data:
 
 ```bash
 docker compose exec web python manage.py createsuperuser
-docker compose exec web python manage.py seed_techwando
+docker compose exec web python manage.py seed_teakwondo
 ```
 
 5. Trigger an immediate verified SQLite backup:
@@ -89,38 +89,38 @@ docker compose exec web python manage.py backup_sqlite --output-dir /app/backups
 ```bash
 # 1. System packages & unprivileged user
 sudo apt-get update && sudo apt-get install -y python3.12 python3.12-venv nginx certbot python3-certbot-nginx gettext sqlite3
-sudo useradd --system --home /srv/techwando --shell /usr/sbin/nologin techwando
+sudo useradd --system --home /srv/teakwondo --shell /usr/sbin/nologin teakwondo
 
 # 2. Application checkout & virtual environment
-sudo mkdir -p /srv/techwando/{data,media,private_media,staticfiles,logs,backups}
-sudo chown -R techwando:www-data /srv/techwando
-sudo chmod 750 /srv/techwando/{data,private_media,backups}
+sudo mkdir -p /srv/teakwondo/{data,media,private_media,staticfiles,logs,backups}
+sudo chown -R teakwondo:www-data /srv/teakwondo
+sudo chmod 750 /srv/teakwondo/{data,private_media,backups}
 
-cd /srv/techwando
-sudo -u techwando python3.12 -m venv .venv
-sudo -u techwando .venv/bin/pip install --upgrade pip -r requirements.txt
+cd /srv/teakwondo
+sudo -u teakwondo python3.12 -m venv .venv
+sudo -u teakwondo .venv/bin/pip install --upgrade pip -r requirements.txt
 
 # 3. Database migration, RBAC setup, translations, static files & deploy audit
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py check --deploy
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py migrate --noinput
-sudo chmod 600 /srv/techwando/data/db.sqlite3
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py setup_roles
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py compile_translations
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py collectstatic --noinput
-sudo -u techwando DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py createsuperuser
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py check --deploy
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py migrate --noinput
+sudo chmod 600 /srv/teakwondo/data/db.sqlite3
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py setup_roles
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py compile_translations
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py collectstatic --noinput
+sudo -u teakwondo DJANGO_SETTINGS_MODULE=config.settings.production .venv/bin/python manage.py createsuperuser
 
 # 4. Enable Gunicorn systemd service, Nginx reverse proxy, Let's Encrypt, logrotate & backup cron
-sudo cp deploy/techwando.service /etc/systemd/system/techwando.service
-sudo systemctl daemon-reload && sudo systemctl enable --now techwando
+sudo cp deploy/teakwondo.service /etc/systemd/system/teakwondo.service
+sudo systemctl daemon-reload && sudo systemctl enable --now teakwondo
 
-sudo cp deploy/nginx.conf /etc/nginx/sites-available/techwando
-sudo ln -sf /etc/nginx/sites-available/techwando /etc/nginx/sites-enabled/techwando
+sudo cp deploy/nginx.conf /etc/nginx/sites-available/teakwondo
+sudo ln -sf /etc/nginx/sites-available/teakwondo /etc/nginx/sites-enabled/teakwondo
 sudo nginx -t && sudo systemctl reload nginx
-sudo certbot --nginx -d techwando.example.com -d www.techwando.example.com
+sudo certbot --nginx -d teakwondo.example.com -d www.teakwondo.example.com
 
-sudo cp deploy/logrotate-techwando.conf /etc/logrotate.d/techwando
-sudo chmod +x /srv/techwando/deploy/backup_cron.sh
-echo "30 2 * * * techwando /srv/techwando/deploy/backup_cron.sh >> /srv/techwando/logs/backup.log 2>&1" | sudo tee /etc/cron.d/techwando-backup
+sudo cp deploy/logrotate-teakwondo.conf /etc/logrotate.d/teakwondo
+sudo chmod +x /srv/teakwondo/deploy/backup_cron.sh
+echo "30 2 * * * teakwondo /srv/teakwondo/deploy/backup_cron.sh >> /srv/teakwondo/logs/backup.log 2>&1" | sudo tee /etc/cron.d/teakwondo-backup
 ```
 
 ---
@@ -131,11 +131,11 @@ After deploying, verify that athlete certificates and medal evidence can never b
 
 ```bash
 # Must return 403 or 404
-curl -I https://techwando.example.com/_private_media/medals/2026/11/test.pdf
-curl -I https://techwando.example.com/media/certificates/2026/11/test.pdf
+curl -I https://teakwondo.example.com/_private_media/medals/2026/11/test.pdf
+curl -I https://teakwondo.example.com/media/certificates/2026/11/test.pdf
 
 # Must redirect (302) anonymous users to login
-curl -I https://techwando.example.com/protected-media/medal/1/
+curl -I https://teakwondo.example.com/protected-media/medal/1/
 ```
 
 ---
@@ -143,7 +143,7 @@ curl -I https://techwando.example.com/protected-media/medal/1/
 ## 5. Logging, Monitoring & Health Checks
 
 - **Liveness / Database Readiness**: `GET /healthz/` executes `SELECT 1` and returns `{"status": "ok", "database": "ok"}` (HTTP `200`) or HTTP `503` on failure.
-- **Application & Security Logs**: Written to `logs/techwando.log` and `logs/security.log` (failed logins, rate-limit lockouts, permission denials), rotated via `deploy/logrotate-techwando.conf`.
+- **Application & Security Logs**: Written to `logs/teakwondo.log` and `logs/security.log` (failed logins, rate-limit lockouts, permission denials), rotated via `deploy/logrotate-teakwondo.conf`.
 - **Audit & Review Trail**: Immutable database records in `audit_logs.AuditLog` and `core.ReviewLog`, inspectable by `CLUB_MANAGER` and `SUPER_ADMIN`.
 - **Error Tracking**: Set `SENTRY_DSN` in `.env` to activate automatic `sentry-sdk` Django integration (with `send_default_pii=False`).
 
@@ -157,13 +157,13 @@ All models, constraints, indexes, and queries use pure database-agnostic Django 
 2. Export logical data:
    ```bash
    python manage.py dumpdata --natural-foreign --natural-primary \
-     --exclude contenttypes --exclude auth.permission --indent 2 > techwando_export.json
+     --exclude contenttypes --exclude auth.permission --indent 2 > teakwondo_export.json
    ```
 3. Install `psycopg[binary]` and update `.env`:
    ```ini
    DB_ENGINE=django.db.backends.postgresql
-   DB_NAME=techwando
-   DB_USER=techwando_app
+   DB_NAME=teakwondo
+   DB_USER=teakwondo_app
    DB_PASSWORD=<strong-password>
    DB_HOST=127.0.0.1
    DB_PORT=5432
@@ -172,6 +172,6 @@ All models, constraints, indexes, and queries use pure database-agnostic Django 
 4. Apply migrations, load data, and re-sync RBAC groups:
    ```bash
    python manage.py migrate --noinput
-   python manage.py loaddata techwando_export.json
+   python manage.py loaddata teakwondo_export.json
    python manage.py setup_roles
    ```

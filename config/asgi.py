@@ -1,4 +1,4 @@
-"""ASGI config for TECHWANDO project."""
+"""ASGI config for TEAKWONDO project."""
 import os
 
 from django.core.asgi import get_asgi_application

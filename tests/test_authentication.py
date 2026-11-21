@@ -6,14 +6,14 @@ from apps.accounts.models import User, UserRole
 from apps.audit_logs.models import AuditLog
 from apps.members.models import MemberProfile, MembershipStatus
 from apps.notifications.models import Notification
-from tests.base import DEFAULT_PASSWORD, TechwandoTestCase
+from tests.base import DEFAULT_PASSWORD, TeakwondoTestCase
 
 
-class AuthenticationTests(TechwandoTestCase):
+class AuthenticationTests(TeakwondoTestCase):
     def setUp(self):
         cache.cache.clear()
         self.manager = self.create_user(
-            "manager@techwando.test", role=UserRole.CLUB_MANAGER
+            "manager@teakwondo.test", role=UserRole.CLUB_MANAGER
         )
 
     def test_public_registration_creates_member_and_blocks_role_escalation(self):
@@ -23,7 +23,7 @@ class AuthenticationTests(TechwandoTestCase):
             {
                 "first_name": "سارا",
                 "last_name": "کریمی",
-                "email": "Sara.Karimi@Techwando.Test",
+                "email": "Sara.Karimi@Teakwondo.Test",
                 "primary_discipline": "TAEKWONDO",
                 "preferred_language": "fa",
                 "password1": DEFAULT_PASSWORD,
@@ -39,7 +39,7 @@ class AuthenticationTests(TechwandoTestCase):
         self.assertEqual(resp.status_code, 302)
         self.assertTrue(resp["Location"].endswith("/member/dashboard/"))
 
-        user = User.objects.get(email="sara.karimi@techwando.test")
+        user = User.objects.get(email="sara.karimi@teakwondo.test")
         self.assertEqual(user.role, UserRole.MEMBER)
         self.assertFalse(user.is_staff)
         self.assertFalse(user.is_superuser)
@@ -55,13 +55,13 @@ class AuthenticationTests(TechwandoTestCase):
         self.assertTrue(AuditLog.objects.filter(action__contains="REGISTER").exists())
 
     def test_duplicate_email_registration_rejected(self):
-        self.create_member("dup@techwando.test")
+        self.create_member("dup@teakwondo.test")
         resp = self.client.post(
             "/ko/accounts/register/",
             {
                 "first_name": "健太",
                 "last_name": "佐藤",
-                "email": "DUP@techwando.test",
+                "email": "DUP@teakwondo.test",
                 "primary_discipline": "KARATE",
                 "preferred_language": "ko",
                 "password1": DEFAULT_PASSWORD,
@@ -69,13 +69,13 @@ class AuthenticationTests(TechwandoTestCase):
             },
         )
         self.assertEqual(resp.status_code, 200)
-        self.assertEqual(User.objects.filter(email__iexact="dup@techwando.test").count(), 1)
+        self.assertEqual(User.objects.filter(email__iexact="dup@teakwondo.test").count(), 1)
 
     def test_login_logout_post_only_and_role_redirects(self):
-        user, _ = self.create_member("athlete@techwando.test")
+        user, _ = self.create_member("athlete@teakwondo.test")
         resp = self.client.post(
             "/fa/accounts/login/",
-            {"email": "athlete@techwando.test", "password": DEFAULT_PASSWORD},
+            {"email": "athlete@teakwondo.test", "password": DEFAULT_PASSWORD},
             follow=True,
         )
         self.assertEqual(resp.status_code, 200)
@@ -92,7 +92,7 @@ class AuthenticationTests(TechwandoTestCase):
         # Staff user redirects to admin dashboard
         admin_resp = self.client.post(
             "/ko/accounts/login/",
-            {"email": "manager@techwando.test", "password": DEFAULT_PASSWORD},
+            {"email": "manager@teakwondo.test", "password": DEFAULT_PASSWORD},
             follow=True,
         )
         self.assertEqual(admin_resp.status_code, 200)
@@ -100,32 +100,32 @@ class AuthenticationTests(TechwandoTestCase):
 
     def test_inactive_account_cannot_login(self):
         self.create_user(
-            "inactive@techwando.test", role=UserRole.MEMBER, is_active=False
+            "inactive@teakwondo.test", role=UserRole.MEMBER, is_active=False
         )
         resp = self.client.post(
             "/fa/accounts/login/",
-            {"email": "inactive@techwando.test", "password": DEFAULT_PASSWORD},
+            {"email": "inactive@teakwondo.test", "password": DEFAULT_PASSWORD},
         )
         self.assertEqual(resp.status_code, 200)
         self.assertFalse(resp.wsgi_request.user.is_authenticated)
 
     def test_login_brute_force_rate_limiting_blocks_repeated_failures(self):
-        self.create_member("target@techwando.test")
+        self.create_member("target@teakwondo.test")
         for _ in range(5):
             self.client.post(
                 "/fa/accounts/login/",
-                {"email": "target@techwando.test", "password": "WrongPassword123!"},
+                {"email": "target@teakwondo.test", "password": "WrongPassword123!"},
             )
         # 6th attempt even with CORRECT password must be blocked (429 Too Many Requests)
         locked_resp = self.client.post(
             "/fa/accounts/login/",
-            {"email": "target@techwando.test", "password": DEFAULT_PASSWORD},
+            {"email": "target@teakwondo.test", "password": DEFAULT_PASSWORD},
         )
         self.assertEqual(locked_resp.status_code, 429)
         self.assertFalse(locked_resp.wsgi_request.user.is_authenticated)
 
     def test_password_change_and_password_reset_flow(self):
-        user, _ = self.create_member("resetme@techwando.test")
+        user, _ = self.create_member("resetme@teakwondo.test")
         self.client.force_login(user)
 
         new_pw = "Updated#Pass2026!Tw"
@@ -145,7 +145,7 @@ class AuthenticationTests(TechwandoTestCase):
         self.client.logout()
         reset_resp = self.client.post(
             "/fa/accounts/password-reset/",
-            {"email": "resetme@techwando.test"},
+            {"email": "resetme@teakwondo.test"},
         )
         self.assertEqual(reset_resp.status_code, 302)
         self.assertEqual(len(mail.outbox), 1)

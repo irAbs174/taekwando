@@ -1,4 +1,4 @@
-"""Production Gunicorn configuration for TECHWANDO."""
+"""Production Gunicorn configuration for TEAKWONDO."""
 import multiprocessing
 import os
 

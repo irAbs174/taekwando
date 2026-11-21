@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n static techwando_tags %}
+{% load i18n static teakwondo_tags %}
 
 {% block title %}{{ seo_title|default:SITE_NAME }}{% endblock %}
 
@@ -15,7 +15,7 @@
         </span>
         <h1 class="text-balance">{% trans "Discipline, education and verified martial arts excellence" %}</h1>
         <p class="lead">
-          {% trans "TECHWANDO unites Persian and Korean budo traditions with modern sports science, transparent belt progression, and a certified record of every championship achievement." %}
+          {% trans "TEAKWONDO unites Persian and Korean budo traditions with modern sports science, transparent belt progression, and a certified record of every championship achievement." %}
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="{% url 'champions:list' %}">
@@ -35,10 +35,10 @@
       <aside class="hero-panel" aria-label="{% trans 'Why train with us' %}">
         <div class="hero-banner">
           <img src="{% static 'images/hero-banner.png' %}"
-               alt="{% trans 'TECHWANDO — Martial Arts & Club Academy' %}"
+               alt="{% trans 'TEAKWONDO — Martial Arts & Club Academy' %}"
                width="1200" height="440" fetchpriority="high">
         </div>
-        <h2>{% trans "Why TECHWANDO" %}</h2>
+        <h2>{% trans "Why TEAKWONDO" %}</h2>
         <ul>
           <li><i class="bi bi-shield-check" aria-hidden="true"></i>{% trans "Certified, safety-first coaching" %}</li>
           <li><i class="bi bi-diagram-3" aria-hidden="true"></i>{% trans "Transparent belt and Dan progression" %}</li>
@@ -78,7 +78,7 @@
         <h2 class="text-balance">{% trans "A modern academy rooted in respect, effort and integrity" %}</h2>
         <div class="prose mt-3">
           <p>
-            {% trans "TECHWANDO is a bilingual martial arts education and club management platform for athletes, families and coaches. Every promotion, medal and community activity is reviewed by our technical board before it becomes part of an athlete's official record." %}
+            {% trans "TEAKWONDO is a bilingual martial arts education and club management platform for athletes, families and coaches. Every promotion, medal and community activity is reviewed by our technical board before it becomes part of an athlete's official record." %}
           </p>
           <p>
             {% trans "From a child's first class to international championship preparation, our curriculum balances technique, physical conditioning, etiquette and personal responsibility." %}

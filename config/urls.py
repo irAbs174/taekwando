@@ -1,4 +1,4 @@
-"""Root URL configuration for TECHWANDO with localized /fa/ and /ko/ routing."""
+"""Root URL configuration for TEAKWONDO with localized /fa/ and /ko/ routing."""
 from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static

@@ -1,12 +1,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: TECHWANDO 1.0\n"
-"Report-Msgid-Bugs-To: info@techwando.example.com\n"
+"Project-Id-Version: TEAKWONDO 1.0\n"
+"Report-Msgid-Bugs-To: info@teakwondo.example.com\n"
 "POT-Creation-Date: 2026-11-17 00:00+0000\n"
 "PO-Revision-Date: 2026-11-17 00:00+0000\n"
-"Last-Translator: TECHWANDO Localization Team\n"
-"Language-Team: TECHWANDO ko\n"
+"Last-Translator: TEAKWONDO Localization Team\n"
+"Language-Team: TEAKWONDO ko\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,11 +25,11 @@ msgstr "홈"
 msgid "About"
 msgstr "소개"
 
-msgid "About Techwando"
-msgstr "TECHWANDO 소개"
+msgid "About Teakwondo"
+msgstr "TEAKWONDO 소개"
 
-msgid "About TECHWANDO"
-msgstr "TECHWANDO 소개"
+msgid "About TEAKWONDO"
+msgstr "TEAKWONDO 소개"
 
 msgid "Education"
 msgstr "교육"
@@ -139,7 +139,7 @@ msgid "Discipline, Education, and Verified Martial Arts Excellence"
 msgstr ""
 
 msgid ""
-"TECHWANDO unites traditional Budo values with modern sports science, athlete"
+"TEAKWONDO unites traditional Budo values with modern sports science, athlete"
 " belt registries, championship medal verification, and multilingual club "
 "management."
 msgstr ""
@@ -251,7 +251,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"TECHWANDO is a multilingual martial arts education, athlete development, "
+"TEAKWONDO is a multilingual martial arts education, athlete development, "
 "belt ranking, and championship verification club connecting Persian and "
 "Korean martial arts communities."
 msgstr ""
@@ -278,7 +278,7 @@ msgstr "훈련 프로그램"
 msgid "Educational Content"
 msgstr "교육 콘텐츠"
 
-msgid "TECHWANDO Champions & Verified Athletes"
+msgid "TEAKWONDO Champions & Verified Athletes"
 msgstr ""
 
 msgid ""
@@ -355,7 +355,7 @@ msgstr "일치하는 선수가 없습니다"
 msgid "Try adjusting your search or filter criteria."
 msgstr "검색어나 필터를 변경해 보세요."
 
-msgid "Verified TECHWANDO Athlete"
+msgid "Verified TEAKWONDO Athlete"
 msgstr ""
 
 msgid "Member since"
@@ -394,7 +394,7 @@ msgid "Officially verified belt promotions and Dan black belt awards."
 msgstr ""
 
 msgid ""
-"Official championships, participating TECHWANDO athletes, and verified "
+"Official championships, participating TEAKWONDO athletes, and verified "
 "podium outcomes."
 msgstr ""
 
@@ -428,7 +428,7 @@ msgstr "결과"
 msgid "Organizer"
 msgstr "주최자"
 
-msgid "TECHWANDO Blog & Martial Arts Journal"
+msgid "TEAKWONDO Blog & Martial Arts Journal"
 msgstr ""
 
 msgid ""
@@ -486,8 +486,8 @@ msgstr "클럽에 문의"
 msgid "Back to Catalog"
 msgstr "목록으로 돌아가기"
 
-msgid "Contact TECHWANDO Club"
-msgstr "TECHWANDO 클럽에 문의"
+msgid "Contact TEAKWONDO Club"
+msgstr "TEAKWONDO 클럽에 문의"
 
 msgid ""
 "Questions about training schedules, membership applications, seminars, or "
@@ -597,8 +597,8 @@ msgstr "페르시아어 (fa-IR)"
 msgid "Korean (ko-KR)"
 msgstr "한국어 (ko-KR)"
 
-msgid "Sign In to TECHWANDO"
-msgstr "TECHWANDO 로그인"
+msgid "Sign In to TEAKWONDO"
+msgstr "TEAKWONDO 로그인"
 
 msgid "Access your private club member portal or administration panel."
 msgstr "회원 포털 또는 관리자 페이지에 로그인하세요."
@@ -609,8 +609,8 @@ msgstr "비밀번호를 잊으셨나요?"
 msgid "Apply for Membership"
 msgstr "회원 가입 신청"
 
-msgid "TECHWANDO Membership Registration"
-msgstr "TECHWANDO 회원 가입"
+msgid "TEAKWONDO Membership Registration"
+msgstr "TEAKWONDO 회원 가입"
 
 msgid ""
 "Create your individual athlete portal account. Your membership application "
@@ -816,8 +816,8 @@ msgstr "신규"
 msgid "Administration Dashboard"
 msgstr "관리자 대시보드"
 
-msgid "TECHWANDO Administration Portal"
-msgstr "TECHWANDO 관리자 포털"
+msgid "TEAKWONDO Administration Portal"
+msgstr "TEAKWONDO 관리자 포털"
 
 msgid "Moderation Queue"
 msgstr "심사 대기 목록"
@@ -1147,7 +1147,7 @@ msgstr "맨 위로"
 msgid "Bamboo sword fundamentals, zanshin and the discipline of the kendojo."
 msgstr "죽도 기본기, 잔심과 검도장의 규율을 배웁니다."
 
-msgid "Begin your martial arts journey with TECHWANDO"
+msgid "Begin your martial arts journey with TEAKWONDO"
 msgstr ""
 
 msgid "Belt History"
@@ -1565,7 +1565,7 @@ msgid "Latest articles and club news"
 msgstr "최신 기사와 클럽 소식"
 
 msgid ""
-"Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete"
+"Learn about TEAKWONDO's martial arts philosophy, certified coaching, athlete"
 " verification workflow and Persian-Korean cultural bridge."
 msgstr ""
 
@@ -1749,7 +1749,7 @@ msgid "Official Martial Arts Academy & Verified Club Registry"
 msgstr "공식 무술 아카데미 및 인증 클럽 등록부"
 
 msgid ""
-"Official championships, participating TECHWANDO athletes and verified podium"
+"Official championships, participating TEAKWONDO athletes and verified podium"
 " outcomes."
 msgstr ""
 
@@ -2055,7 +2055,7 @@ msgstr ""
 msgid "Route"
 msgstr ""
 
-msgid "Rules for using the TECHWANDO platform and member code of conduct."
+msgid "Rules for using the TEAKWONDO platform and member code of conduct."
 msgstr ""
 
 msgid "SEO Editor"
@@ -2217,25 +2217,25 @@ msgid "System messages"
 msgstr ""
 
 msgid ""
-"TECHWANDO is a bilingual martial arts education and club management platform"
+"TEAKWONDO is a bilingual martial arts education and club management platform"
 " for athletes, families and coaches. Every promotion, medal and community "
 "activity is reviewed by our technical board before it becomes part of an "
 "athlete's official record."
 msgstr ""
-"TECHWANDO는 선수, 가족, 지도자를 위한 이중 언어 무술 교육 및 클럽 관리 플랫폼입니다. 모든 승급, 메달 및 지역사회 활동은 "
+"TEAKWONDO는 선수, 가족, 지도자를 위한 이중 언어 무술 교육 및 클럽 관리 플랫폼입니다. 모든 승급, 메달 및 지역사회 활동은 "
 "기술위원회의 검토를 거쳐 선수의 공식 기록에 등록됩니다."
 
 msgid ""
-"TECHWANDO is a multilingual martial arts education, athlete development, "
+"TEAKWONDO is a multilingual martial arts education, athlete development, "
 "belt ranking and championship verification club connecting Persian and "
 "Korean martial arts communities."
 msgstr ""
 
 msgid ""
-"TECHWANDO unites Persian and Korean budo traditions with modern sports "
+"TEAKWONDO unites Persian and Korean budo traditions with modern sports "
 "science, transparent belt progression, and a certified record of every "
 "championship achievement."
-msgstr "TECHWANDO는 페르시아와 한국의 무술 전통을 현대 스포츠 과학, 투명한 승급 과정 및 인증된 대회 기록과 결합합니다."
+msgstr "TEAKWONDO는 페르시아와 한국의 무술 전통을 현대 스포츠 과학, 투명한 승급 과정 및 인증된 대회 기록과 결합합니다."
 
 msgid "Taekwondo · Karate · Judo"
 msgstr ""
@@ -2422,8 +2422,8 @@ msgstr "도장에 오신 것을 환영합니다"
 msgid "What we stand for"
 msgstr ""
 
-msgid "Why TECHWANDO"
-msgstr "TECHWANDO를 선택하는 이유"
+msgid "Why TEAKWONDO"
+msgstr "TEAKWONDO를 선택하는 이유"
 
 msgid "Why train with us"
 msgstr ""
@@ -2451,7 +2451,7 @@ msgstr ""
 msgid "You may only access your own private records and submissions."
 msgstr ""
 
-msgid "You requested a password reset for your TECHWANDO Club account."
+msgid "You requested a password reset for your TEAKWONDO Club account."
 msgstr ""
 
 msgid "Your belt and competition record lives in the portal."
@@ -2624,7 +2624,7 @@ msgid "Approved Member"
 msgstr ""
 
 msgid ""
-"Approved belt rank promotions and Dan black belt recipients at TECHWANDO."
+"Approved belt rank promotions and Dan black belt recipients at TEAKWONDO."
 msgstr ""
 
 msgid "Article content"
@@ -2632,7 +2632,7 @@ msgstr ""
 
 msgid ""
 "Articles on Taekwondo techniques, sports science, belt preparation, and "
-"TECHWANDO championship updates."
+"TEAKWONDO championship updates."
 msgstr ""
 
 msgid "Audit log"
@@ -2981,7 +2981,7 @@ msgid "Homepage"
 msgstr ""
 
 msgid ""
-"How TECHWANDO collects, stores and protects member data, certificates and "
+"How TEAKWONDO collects, stores and protects member data, certificates and "
 "public athlete profile information."
 msgstr ""
 
@@ -3039,7 +3039,7 @@ msgid "Last name (Korean)"
 msgstr ""
 
 msgid ""
-"Learn about TECHWANDO's martial arts philosophy, certified coaching "
+"Learn about TEAKWONDO's martial arts philosophy, certified coaching "
 "programs, athlete verification workflow, and Persian-Korean cultural bridge."
 msgstr ""
 
@@ -3167,7 +3167,7 @@ msgid "Official Belt Promotions & Black Belt Registry"
 msgstr ""
 
 msgid ""
-"Official TECHWANDO uniforms (Dobok & Dogi), certified protective gear, "
+"Official TEAKWONDO uniforms (Dobok & Dogi), certified protective gear, "
 "belts, and training equipment."
 msgstr ""
 
@@ -3175,12 +3175,12 @@ msgid "Official belt certificate"
 msgstr ""
 
 msgid ""
-"Official directory of approved TECHWANDO martial arts athletes, medal "
+"Official directory of approved TEAKWONDO martial arts athletes, medal "
 "winners, black belt holders, and championship records."
 msgstr ""
 
 msgid ""
-"Official verified Gold, Silver, and Bronze medal winners of TECHWANDO Club."
+"Official verified Gold, Silver, and Bronze medal winners of TEAKWONDO Club."
 msgstr ""
 
 msgid "One specification per line."
@@ -3417,7 +3417,7 @@ msgid "Rank progression order"
 msgstr ""
 
 msgid ""
-"Reach out to TECHWANDO martial arts academy regarding classes, membership, "
+"Reach out to TEAKWONDO martial arts academy regarding classes, membership, "
 "competitions, and training equipment."
 msgstr ""
 
@@ -3657,10 +3657,10 @@ msgstr ""
 msgid "System Notification"
 msgstr ""
 
-msgid "TECHWANDO Admin"
+msgid "TEAKWONDO Admin"
 msgstr ""
 
-msgid "TECHWANDO Administration"
+msgid "TEAKWONDO Administration"
 msgstr ""
 
 msgid "Tag name (Korean)"
@@ -3686,10 +3686,10 @@ msgstr ""
 
 msgid ""
 "Terms of use, member code of conduct and acceptable use rules for the "
-"TECHWANDO club platform."
+"TEAKWONDO club platform."
 msgstr ""
 
-msgid "Thank you! Your message has been sent to the TECHWANDO club team."
+msgid "Thank you! Your message has been sent to the TEAKWONDO club team."
 msgstr ""
 
 msgid "The two password fields did not match."
@@ -3762,16 +3762,16 @@ msgstr ""
 msgid "Users"
 msgstr ""
 
-msgid "Verified TECHWANDO team results, tournament standings, and medalists."
+msgid "Verified TEAKWONDO team results, tournament standings, and medalists."
 msgstr ""
 
-msgid "Verified athlete profile at TECHWANDO Club."
+msgid "Verified athlete profile at TEAKWONDO Club."
 msgstr ""
 
 msgid "Welcome back, %(name)s."
 msgstr ""
 
-msgid "Welcome to TECHWANDO! Your member account has been created."
+msgid "Welcome to TEAKWONDO! Your member account has been created."
 msgstr ""
 
 msgid ""
@@ -3829,10 +3829,10 @@ msgstr ""
 
 msgid ""
 "Youth fundamentals, competitive sparring squads, black belt Dan preparation,"
-" and international training seminars at TECHWANDO."
+" and international training seminars at TEAKWONDO."
 msgstr ""
 
-msgid "TECHWANDO — Password Reset Request"
+msgid "TEAKWONDO — Password Reset Request"
 msgstr ""
 
 msgid "Hide password"
@@ -3867,8 +3867,8 @@ msgid "Photo Gallery"
 msgstr "사진 갤러리"
 
 
-msgid "TECHWANDO — Martial Arts & Club Academy"
-msgstr "TECHWANDO — 무술 및 클럽 아카데미"
+msgid "TEAKWONDO — Martial Arts & Club Academy"
+msgstr "TEAKWONDO — 무술 및 클럽 아카데미"
 
 
 msgid "Community & club life"
@@ -3909,8 +3909,8 @@ msgid "Photo preview"
 msgstr "사진 미리보기"
 
 
-msgid "Club Gallery — TECHWANDO in Pictures"
-msgstr "클럽 갤러리 — 사진으로 보는 TECHWANDO"
+msgid "Club Gallery — TEAKWONDO in Pictures"
+msgstr "클럽 갤러리 — 사진으로 보는 TEAKWONDO"
 
 
 msgid ""

@@ -1,1 +1,1 @@
-"""TECHWANDO Django configuration package."""
+"""TEAKWONDO Django configuration package."""

@@ -1,11 +1,11 @@
-"""Synchronize TECHWANDO role groups and granular permissions."""
+"""Synchronize TEAKWONDO role groups and granular permissions."""
 from django.core.management.base import BaseCommand
 
 from apps.accounts.rbac import ensure_role_groups
 
 
 class Command(BaseCommand):
-    help = "Create or update all 5 TECHWANDO RBAC groups and their permissions."
+    help = "Create or update all 5 TEAKWONDO RBAC groups and their permissions."
 
     def handle(self, *args, **options):
         groups = ensure_role_groups()

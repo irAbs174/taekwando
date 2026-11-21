@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='seometadata',
             name='route_key',
-            field=models.CharField(blank=True, choices=[('home', 'Homepage'), ('about', 'About Techwando'), ('education', 'Educational Content'), ('services', 'Training Programs & Services'), ('gallery', 'Photo Gallery'), ('blog', 'Blog Index'), ('products', 'Products & Equipment'), ('champions', 'Champions Directory'), ('medal_winners', 'Medal Winners'), ('belt_achievements', 'Belt Achievements'), ('competition_results', 'Competition Results'), ('contact', 'Contact Us')], max_length=40, null=True, unique=True, verbose_name='Static route key'),
+            field=models.CharField(blank=True, choices=[('home', 'Homepage'), ('about', 'About Teakwondo'), ('education', 'Educational Content'), ('services', 'Training Programs & Services'), ('gallery', 'Photo Gallery'), ('blog', 'Blog Index'), ('products', 'Products & Equipment'), ('champions', 'Champions Directory'), ('medal_winners', 'Medal Winners'), ('belt_achievements', 'Belt Achievements'), ('competition_results', 'Competition Results'), ('contact', 'Contact Us')], max_length=40, null=True, unique=True, verbose_name='Static route key'),
         ),
     ]

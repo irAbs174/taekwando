@@ -64,7 +64,7 @@ def _make_card_png(bg_hex: str, accent_hex: str, size=(640, 420)) -> ContentFile
     except OSError:  # pragma: no cover - depends on host fonts
         wordmark = ImageFont.load_default()
         caption = ImageFont.load_default()
-    title = "TECHWANDO"
+    title = "TEAKWONDO"
     box = draw.textbbox((0, 0), title, font=wordmark)
     draw.text(((w - (box[2] - box[0])) / 2, cy + r + 26), title, fill="#ffffff", font=wordmark)
     subtitle = "MARTIAL ARTS CLUB"
@@ -82,7 +82,7 @@ def _make_card_png(bg_hex: str, accent_hex: str, size=(640, 420)) -> ContentFile
 
 
 class Command(BaseCommand):
-    help = "Populate TECHWANDO with demo belt ranks, pages, blog, products, and athletes."
+    help = "Populate TEAKWONDO with demo belt ranks, pages, blog, products, and athletes."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -92,7 +92,7 @@ class Command(BaseCommand):
         )
         parser.add_argument(
             "--demo-password",
-            default="Techwando!2026",
+            default="Teakwondo!2026",
             help="Password for demo accounts (local development only).",
         )
 
@@ -108,7 +108,7 @@ class Command(BaseCommand):
             author = self._seed_accounts_and_athletes(comps, options["demo_password"])
         self._seed_blog(author)
         self._seed_products()
-        self.stdout.write(self.style.SUCCESS("TECHWANDO bilingual catalog & records seeded."))
+        self.stdout.write(self.style.SUCCESS("TEAKWONDO bilingual catalog & records seeded."))
 
     def _seed_belts(self):
         belts = [
@@ -162,7 +162,7 @@ class Command(BaseCommand):
                 "description_fa": "رقابت‌های رسمی کیوروگی و پومسه با حضور ورزشکاران برتر باشگاه‌های آسیایی.",
                 "description_ja": "アジア各国の公認クラブ代表選手が集うキョルギ・プムセ公式国際大会。",
                 "results_summary_fa": "تیم باشگاه تکواندو موفق به کسب ۲ مدال طلا و ۱ مدال نقره در رده بزرگسالان شد.",
-                "results_summary_ja": "TECHWANDO代表チームはシニア部門で金メダル2個・銀メダル1個を獲得しました。",
+                "results_summary_ja": "TEAKWONDO代表チームはシニア部門で金メダル2個・銀メダル1個を獲得しました。",
             },
             {
                 "slug": "tehran-friendship-budo-cup-2026",
@@ -214,18 +214,18 @@ class Command(BaseCommand):
                 "order": 1,
                 "footer": True,
                 "fa": (
-                    "درباره آکادمی و باشگاه تکواندو (TECHWANDO)",
+                    "درباره آکادمی و باشگاه تکواندو (TEAKWONDO)",
                     "پیوند انضباط سنتی هنرهای رزمی با دانش نوین علوم ورزشی",
                     "آکادمی تکواندو بستری حرفه‌ای و دوزبانه برای آموزش هنرهای رزمی، پرورش قهرمانان، ثبت رسمی کمربندها و مستندسازی افتخارات ورزشی بین جوامع فارسی‌زبان و کره‌ای‌زبان است.",
-                    "باشگاه تکواندو (TECHWANDO) با هدف ارتقای استاندارد آموزش هنرهای رزمی، اخلاق پهلوانی و شفافیت در ثبت سوابق ورزشی بنیان‌گذاری شده است.\n\n"
+                    "باشگاه تکواندو (TEAKWONDO) با هدف ارتقای استاندارد آموزش هنرهای رزمی، اخلاق پهلوانی و شفافیت در ثبت سوابق ورزشی بنیان‌گذاری شده است.\n\n"
                     "در این مجموعه، هر هنرجو از نخستین روز ورود دارای پرونده ورزشی اختصاصی است و تمامی مراحل ارتقای کمربند، حضور در مسابقات، مدال‌های کسب‌شده و فعالیت‌های فرهنگی‌اجتماعی پس از بررسی مستندات توسط هیئت فنی و مدیران باشگاه تأیید و ثبت می‌گردد.\n\n"
                     "ارزش‌های بنیادین ما بر احترام متقابل (ادب و ریگی)، پشتکار پیوسته، سلامت جسم و ذهن، و مسئولیت‌پذیری اجتماعی استوار است.",
                 ),
                 "ja": (
-                    "TECHWANDO（テクワンドー）について",
+                    "TEAKWONDO（テクワンドー）について",
                     "伝統武道の礼節と現代スポーツ科学を融合した国際武道アカデミー",
-                    "TECHWANDOは、武道教育・クラブ運営・公認選手プロフィール・昇級昇段・メダル実績を一元管理するペルシャ語・日本語対応の公式プラットフォームです。",
-                    "TECHWANDO（テクワンドー）は、礼節（礼に始まり礼に終わる精神）、技術向上、そして公正な競技実績の認証を目的に設立された武道・スポーツ教育クラブです。\n\n"
+                    "TEAKWONDOは、武道教育・クラブ運営・公認選手プロフィール・昇級昇段・メダル実績を一元管理するペルシャ語・日本語対応の公式プラットフォームです。",
+                    "TEAKWONDO（テクワンドー）は、礼節（礼に始まり礼に終わる精神）、技術向上、そして公正な競技実績の認証を目的に設立された武道・スポーツ教育クラブです。\n\n"
                     "すべてのクラブ会員には専用ポータルが付与され、昇級・昇段審査の履歴、公式大会への出場記録、獲得メダル、地域社会貢献活動が証明書とともに厳正な審査ワークフローを経て公認記録として登録されます。\n\n"
                     "イランと日本をつなぐ武道交流の架け橋として、青少年育成から国際大会を目指すトップアスリートまで体系的な指導を提供しています。",
                 ),
@@ -283,7 +283,7 @@ class Command(BaseCommand):
                     "道場訓・礼法（礼儀）と社会貢献リーダーシップ",
                     "心技体の調和と地域社会に信頼される武道家の育成",
                     "道場での礼法、師範・仲間への敬意、そして青少年指導や地域ボランティア活動の意義を学びます。",
-                    "武道の本質は勝敗を超えた人格形成にあります。TECHWANDOでは、競技成績だけでなく地域清掃・青少年スポーツ教室・国際交流などの社会活動を奨励し、公式実績として評価しています。",
+                    "武道の本質は勝敗を超えた人格形成にあります。TEAKWONDOでは、競技成績だけでなく地域清掃・青少年スポーツ教室・国際交流などの社会活動を奨励し、公式実績として評価しています。",
                 ),
             },
             {
@@ -377,7 +377,7 @@ class Command(BaseCommand):
                     "プライバシーポリシー・個人情報保護方針",
                     "会員データおよび証明書類の厳格なアクセス管理について",
                     "連絡先・生年月日・証明書ファイルは非公開領域で保護され、一般公開されることは一切ありません。",
-                    "TECHWANDOでは、会員本人の明示的な公開同意と管理者の承認が揃った競技実績のみをチャンピオンページに掲載します。アップロードされた証明書・メダル証憑は非公開ストレージに保管され、本人および権限を持つ審査担当者のみが閲覧できます。",
+                    "TEAKWONDOでは、会員本人の明示的な公開同意と管理者の承認が揃った競技実績のみをチャンピオンページに掲載します。アップロードされた証明書・メダル証憑は非公開ストレージに保管され、本人および権限を持つ審査担当者のみが閲覧できます。",
                 ),
             },
         ]
@@ -410,30 +410,30 @@ class Command(BaseCommand):
         entries = [
             (
                 RouteKey.HOME,
-                "آکادمی هنرهای رزمی و باشگاه تکواندو | TECHWANDO",
+                "آکادمی هنرهای رزمی و باشگاه تکواندو | TEAKWONDO",
                 "پلتفرم دوزبانه آموزش تکواندو و هنرهای رزمی، مدیریت باشگاه، پروفایل رسمی قهرمانان و ثبت مدال‌ها.",
-                "TECHWANDO（テクワンドー）公式｜武道教育・クラブ管理・公認選手プラットフォーム",
+                "TEAKWONDO（テクワンドー）公式｜武道教育・クラブ管理・公認選手プラットフォーム",
                 "テコンドー・空手・柔道の体系的教育、会員ポータル、公認チャンピオン実績・メダル管理を行う国際武道クラブ。",
             ),
             (
                 RouteKey.CHAMPIONS,
-                "فهرست قهرمانان و ورزشکاران رسمی | TECHWANDO",
+                "فهرست قهرمانان و ورزشکاران رسمی | TEAKWONDO",
                 "جستجو و مشاهده پروفایل رسمی قهرمانان، دارندگان کمربند مشکی و مدال‌آوران تأییدشده باشگاه تکواندو.",
-                "公認チャンピオン・選手名鑑｜TECHWANDO",
-                "厳正な審査を経て認定されたTECHWANDO所属アスリート・黒帯有段者・メダリストの公式ディレクトリ。",
+                "公認チャンピオン・選手名鑑｜TEAKWONDO",
+                "厳正な審査を経て認定されたTEAKWONDO所属アスリート・黒帯有段者・メダリストの公式ディレクトリ。",
             ),
             (
                 RouteKey.BLOG,
-                "مجله تخصصی و مقالات آموزشی هنرهای رزمی | TECHWANDO",
+                "مجله تخصصی و مقالات آموزشی هنرهای رزمی | TEAKWONDO",
                 "مقالات فنی تکواندو، کاراته، جودو، آمادگی جسمانی و اخبار مسابقات به زبان‌های فارسی و کره‌ای.",
-                "武道コラム・技術ブログ｜TECHWANDO",
+                "武道コラム・技術ブログ｜TEAKWONDO",
                 "テコンドー・武道の技術解説、試合レポート、スポーツ科学に関する最新記事を日本語・ペルシャ語で発信。",
             ),
             (
                 RouteKey.PRODUCTS,
-                "تجهیزات و پوشاک استاندارد هنرهای رزمی | TECHWANDO",
+                "تجهیزات و پوشاک استاندارد هنرهای رزمی | TEAKWONDO",
                 "کاتالوگ رسمی لباس دوبوک و دوگی، محافظ‌های استاندارد مسابقاتی، کمربند و تجهیزات تمرینی.",
-                "公認武道用品・トレーニングギア｜TECHWANDO",
+                "公認武道用品・トレーニングギア｜TEAKWONDO",
                 "公式道着（ドボク・道衣）、認定プロテクター、黒帯、トレーニング用品の製品カタログ。",
             ),
         ]
@@ -507,8 +507,8 @@ class Command(BaseCommand):
                     "1. 膝関節への負担を軽減し腰を完全に開くため、軸足を160〜180度スムーズに回転させる。\n"
                     "2. 膝を最短軌道で引き上げ、インパクト直前に鞭のように膝下を解放する。\n"
                     "3. 電子防具への正確なミート後、即座に引き足を取って防御姿勢へ復帰する。\n\n"
-                    "TECHWANDOの技術クラスでは、レジスタンスバンドとスロー映像分析を用いて基礎から徹底指導しています。",
-                    "TECHWANDO道場でのトルリョチャギ技術解説",
+                    "TEAKWONDOの技術クラスでは、レジスタンスバンドとスロー映像分析を用いて基礎から徹底指導しています。",
+                    "TEAKWONDO道場でのトルリョチャギ技術解説",
                 ),
             },
             {
@@ -527,10 +527,10 @@ class Command(BaseCommand):
                 ),
                 "ja": (
                     "2026年 東京国際オープン大会レポート：金2・銀1の快挙",
-                    "国立代々木競技場で開催された国際大会にて、TECHWANDO代表選手団が素晴らしい成績を収めました。",
-                    "イラン・日本両国の所属選手で構成されたTECHWANDO代表チームは、キョルギおよびプムセ部門で日頃の鍛錬の成果を遺憾なく発揮しました。\n\n"
+                    "国立代々木競技場で開催された国際大会にて、TEAKWONDO代表選手団が素晴らしい成績を収めました。",
+                    "イラン・日本両国の所属選手で構成されたTEAKWONDO代表チームは、キョルギおよびプムセ部門で日頃の鍛錬の成果を遺憾なく発揮しました。\n\n"
                     "公式認定されたすべての獲得メダルと出場記録は、当サイトの「チャンピオン」および「メダリスト一覧」ページにてご覧いただけます。",
-                    "東京国際オープン大会でのTECHWANDO代表チーム",
+                    "東京国際オープン大会でのTEAKWONDO代表チーム",
                 ),
             },
             {
@@ -612,7 +612,7 @@ class Command(BaseCommand):
 
         items = [
             {
-                "slug": "techwando-pro-black-collar-dobok",
+                "slug": "teakwondo-pro-black-collar-dobok",
                 "sku": "TW-DBK-101",
                 "cat": cats["uniforms"],
                 "disc": Discipline.TAEKWONDO,
@@ -627,7 +627,7 @@ class Command(BaseCommand):
                     "جنس: ۶۵٪ پلی‌استر تنفسی، ۳۵٪ پنبه اعلا\nسایزبندی: ۱۵۰ تا ۲۰۰ سانتی‌متر\nیقه: مشکی رسمی ویژه دارندگان دان\nشست‌وشو: مقاوم در برابر تغییر فرم",
                 ),
                 "ja": (
-                    "TECHWANDO プロ競技用 黒襟ドボク（公認モデル）",
+                    "TEAKWONDO プロ競技用 黒襟ドボク（公認モデル）",
                     "超軽量・高通気マイクロファイバー素材を採用した有段者向け公式道着。",
                     "激しいハイキックや回転動作を妨げない立体裁断と、吸汗速乾性に優れたハニカム織生地を採用。公式大会および昇段審査に最適な一着です。",
                     "素材：高機能ポリエステル65%・厳選コットン35%\nサイズ展開：150cm〜200cm\n襟仕様：有段者用ブラックVネック\n特徴：補強ステッチ・防縮加工済み",
@@ -673,7 +673,7 @@ class Command(BaseCommand):
                 "ja": (
                     "特製刺繍入り 黒帯（日本語・ペルシャ語名入れ対応）",
                     "重厚な5cm幅コットン芯地仕様、金糸による氏名・段位オーダー刺繍対応。",
-                    "TECHWANDO公認有段者向けの特別仕立て黒帯です。刺繍文字数・仕様に応じたクラブ窓口お見積り品（価格お問い合わせ）となります。",
+                    "TEAKWONDO公認有段者向けの特別仕立て黒帯です。刺繍文字数・仕様に応じたクラブ窓口お見積り品（価格お問い合わせ）となります。",
                     "帯幅：5.0cm（本絹風高密度コットン）\n刺繍：金糸（日本語・ペルシャ語両対応）\n長さ：260cm〜320cm",
                 ),
             },
@@ -744,10 +744,10 @@ class Command(BaseCommand):
 
     def _seed_accounts_and_athletes(self, comps: list[Competition], password: str) -> User:
         staff_specs = [
-            ("admin@techwando.example.com", "آرش", "کاظمی", UserRole.SUPER_ADMIN, "fa"),
-            ("content@techwando.example.com", "سارا", "مرادی", UserRole.CONTENT_ADMIN, "fa"),
-            ("manager@techwando.example.com", "Kenji", "Takahashi", UserRole.CLUB_MANAGER, "ko"),
-            ("moderator@techwando.example.com", "Yuki", "Sato", UserRole.MODERATOR, "ko"),
+            ("admin@teakwondo.example.com", "آرش", "کاظمی", UserRole.SUPER_ADMIN, "fa"),
+            ("content@teakwondo.example.com", "سارا", "مرادی", UserRole.CONTENT_ADMIN, "fa"),
+            ("manager@teakwondo.example.com", "Kenji", "Takahashi", UserRole.CLUB_MANAGER, "ko"),
+            ("moderator@teakwondo.example.com", "Yuki", "Sato", UserRole.MODERATOR, "ko"),
         ]
         staff_users = {}
         for email, fn, ln, role, lang in staff_specs:
@@ -780,7 +780,7 @@ class Command(BaseCommand):
 
         athletes = [
             {
-                "email": "parisa.rahimi@techwando.example.com",
+                "email": "parisa.rahimi@teakwondo.example.com",
                 "fn": "پریسا",
                 "ln": "رحیمی",
                 "fn_ja": "パリサ",
@@ -789,7 +789,7 @@ class Command(BaseCommand):
                 "disc": Discipline.TAEKWONDO,
                 "public": True,
                 "bio_fa": "قهرمان کیوروگی و پومسه با ۸ سال سابقه عضویت در تیم منتخب آکادمی تکواندو و مربی رده نوجوانان.",
-                "bio_ja": "TECHWANDO所属8年。キョルギ・プムセ両部門で国際大会入賞歴を持ち、ジュニアクラス指導補佐も務める。",
+                "bio_ja": "TEAKWONDO所属8年。キョルギ・プムセ両部門で国際大会入賞歴を持ち、ジュニアクラス指導補佐も務める。",
                 "belt": (dan3, datetime.date(2025, 9, 15)),
                 "medal": (MedalType.GOLD, comps[0], "-57kg Senior Kyorugi", datetime.date(2026, 5, 16)),
                 "ach": (
@@ -808,7 +808,7 @@ class Command(BaseCommand):
                 ),
             },
             {
-                "email": "haruto.yamamoto@techwando.example.com",
+                "email": "haruto.yamamoto@teakwondo.example.com",
                 "fn": "هاروتو",
                 "ln": "یاماموتو",
                 "fn_ja": "陽翔",
@@ -836,7 +836,7 @@ class Command(BaseCommand):
                 ),
             },
             {
-                "email": "amir.hosseini@techwando.example.com",
+                "email": "amir.hosseini@teakwondo.example.com",
                 "fn": "امیرحسین",
                 "ln": "حسینی",
                 "fn_ja": "アミルホセイン",
@@ -857,7 +857,7 @@ class Command(BaseCommand):
                 "act": None,
             },
             {
-                "email": "aoi.nakamura@techwando.example.com",
+                "email": "aoi.nakamura@teakwondo.example.com",
                 "fn": "آئویی",
                 "ln": "ناکامورا",
                 "fn_ja": "葵",
@@ -879,7 +879,7 @@ class Command(BaseCommand):
             },
             {
                 # Private member (consent=False) — verifies public pages respect privacy
-                "email": "member@techwando.example.com",
+                "email": "member@teakwondo.example.com",
                 "fn": "نیما",
                 "ln": "رضایی",
                 "fn_ja": "ニマ",
@@ -935,7 +935,7 @@ class Command(BaseCommand):
                 belt_type=belt_type,
                 discipline=belt_type.discipline,
                 award_date=belt_date,
-                issuing_authority="Kukkiwon / TECHWANDO Technical Board",
+                issuing_authority="Kukkiwon / TEAKWONDO Technical Board",
             )
             ModerationService.review_submission(
                 bh, reviewer=reviewer, new_status=ApprovalStatus.APPROVED, note="Certificate verified."

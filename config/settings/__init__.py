@@ -1,1 +1,1 @@
-"""Environment-specific settings package for TECHWANDO."""
+"""Environment-specific settings package for TEAKWONDO."""

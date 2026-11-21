@@ -1,5 +1,5 @@
 """
-Base Django settings for TECHWANDO.
+Base Django settings for TEAKWONDO.
 Shared across development, testing, and production environments.
 """
 from __future__ import annotations
@@ -55,12 +55,12 @@ def env_list(name: str, default: list[str] | None = None) -> list[str]:
 # -----------------------------------------------------------------------------
 # Site Metadata
 # -----------------------------------------------------------------------------
-SITE_NAME = os.environ.get("SITE_NAME", "TECHWANDO")
+SITE_NAME = os.environ.get("SITE_NAME", "TEAKWONDO")
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "http://localhost:8000").rstrip("/")
 DJANGO_ADMIN_URL = os.environ.get("DJANGO_ADMIN_URL", "django-admin/").lstrip("/")
 if not DJANGO_ADMIN_URL.endswith("/"):
     DJANGO_ADMIN_URL += "/"
-CLUB_CONTACT_EMAIL = os.environ.get("CLUB_CONTACT_EMAIL", "info@techwando.example.com")
+CLUB_CONTACT_EMAIL = os.environ.get("CLUB_CONTACT_EMAIL", "info@teakwondo.example.com")
 CLUB_PHONE = os.environ.get("CLUB_PHONE", "+98 21 8888 0000")
 CLUB_ADDRESS = {
     "fa": os.environ.get(
@@ -80,17 +80,17 @@ CLUB_SOCIAL_LINKS = [
     {
         "label": "Instagram",
         "icon": "bi-instagram",
-        "url": os.environ.get("CLUB_INSTAGRAM_URL", "https://www.instagram.com/techwando"),
+        "url": os.environ.get("CLUB_INSTAGRAM_URL", "https://www.instagram.com/teakwondo"),
     },
     {
         "label": "YouTube",
         "icon": "bi-youtube",
-        "url": os.environ.get("CLUB_YOUTUBE_URL", "https://www.youtube.com/@techwando"),
+        "url": os.environ.get("CLUB_YOUTUBE_URL", "https://www.youtube.com/@teakwondo"),
     },
     {
         "label": "Telegram",
         "icon": "bi-telegram",
-        "url": os.environ.get("CLUB_TELEGRAM_URL", "https://t.me/techwando"),
+        "url": os.environ.get("CLUB_TELEGRAM_URL", "https://t.me/teakwondo"),
     },
 ]
 
@@ -225,8 +225,8 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": DB_ENGINE,
-            "NAME": os.environ.get("DB_NAME", "techwando"),
-            "USER": os.environ.get("DB_USER", "techwando"),
+            "NAME": os.environ.get("DB_NAME", "teakwondo"),
+            "USER": os.environ.get("DB_USER", "teakwondo"),
             "PASSWORD": os.environ.get("DB_PASSWORD", ""),
             "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
             "PORT": os.environ.get("DB_PORT", "5432"),
@@ -243,7 +243,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "techwando-default-cache",
+        "LOCATION": "teakwondo-default-cache",
     }
 }
 
@@ -318,7 +318,7 @@ LANGUAGE_LOCALES = {
     "ko": {"bcp47": "ko-KR", "og_locale": "ko_KR", "dir": "ltr", "native": "한국어"},
 }
 
-LANGUAGE_COOKIE_NAME = "techwando_lang"
+LANGUAGE_COOKIE_NAME = "teakwondo_lang"
 LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 365
 LANGUAGE_COOKIE_SAMESITE = "Lax"
 LANGUAGE_COOKIE_HTTPONLY = True
@@ -376,7 +376,7 @@ EMAIL_USE_TLS = env_bool("EMAIL_USE_TLS", True)
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = os.environ.get(
-    "DEFAULT_FROM_EMAIL", "TECHWANDO <noreply@techwando.example.com>"
+    "DEFAULT_FROM_EMAIL", "TEAKWONDO <noreply@teakwondo.example.com>"
 )
 
 # -----------------------------------------------------------------------------
@@ -414,7 +414,7 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "TECHWANDO Platform API",
+    "TITLE": "TEAKWONDO Platform API",
     "DESCRIPTION": (
         "Multilingual (Persian fa-IR & Korean ko-KR) Martial Arts, Sports Education, "
         "Club Management, Athlete Profiles, Achievements, and Medal Management REST API."
@@ -460,7 +460,7 @@ LOGGING = {
         },
         "file": {
             "class": "logging.handlers.RotatingFileHandler",
-            "filename": LOG_DIR / "techwando.log",
+            "filename": LOG_DIR / "teakwondo.log",
             "maxBytes": 5 * 1024 * 1024,
             "backupCount": 5,
             "formatter": "standard",
@@ -486,12 +486,12 @@ LOGGING = {
             "level": "WARNING",
             "propagate": False,
         },
-        "techwando": {
+        "teakwondo": {
             "handlers": ["console", "file"],
             "level": DJANGO_LOG_LEVEL,
             "propagate": False,
         },
-        "techwando.security": {
+        "teakwondo.security": {
             "handlers": ["console", "security_file"],
             "level": "INFO",
             "propagate": False,

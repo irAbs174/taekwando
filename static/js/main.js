@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TECHWANDO — Progressive front-end enhancements (vanilla JavaScript)
+   TEAKWONDO — Progressive front-end enhancements (vanilla JavaScript)
    Everything here is optional: navigation, forms and server-side validation
    continue to work when JavaScript is unavailable.
    ========================================================================== */
@@ -12,7 +12,7 @@
   /* ---------------------------------------------------------------------
      Theme (light / dark) — remembered per browser
      --------------------------------------------------------------------- */
-  var STORAGE_KEY = "techwando-theme";
+  var STORAGE_KEY = "teakwondo-theme";
 
   function applyTheme(theme) {
     if (theme === "dark") {

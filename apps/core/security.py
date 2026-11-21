@@ -7,7 +7,7 @@ import logging
 from django.conf import settings
 from django.core.cache import cache
 
-security_logger = logging.getLogger("techwando.security")
+security_logger = logging.getLogger("teakwondo.security")
 
 
 def get_client_ip(request) -> str | None:
@@ -24,7 +24,7 @@ def get_client_ip(request) -> str | None:
 
 def _rate_key(scope: str, identifier: str) -> str:
     digest = hashlib.sha256(identifier.lower().strip().encode("utf-8")).hexdigest()[:32]
-    return f"techwando:rl:{scope}:{digest}"
+    return f"teakwondo:rl:{scope}:{digest}"
 
 
 def is_rate_limited(scope: str, identifier: str, max_attempts: int, window_seconds: int) -> bool:

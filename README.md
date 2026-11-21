@@ -1,6 +1,6 @@
-# TECHWANDO — Multilingual Martial Arts, Sports Education & Club Management Platform
+# TEAKWONDO — Multilingual Martial Arts, Sports Education & Club Management Platform
 
-**TECHWANDO** is a modular, security-hardened, production-oriented **Django 5.2 LTS** web platform and **REST API (`/api/v1/`)** built for an international martial arts academy and sports club operating natively in **Persian (`fa-IR`, RTL)** and **Korean (`ko-KR`, LTR)**.
+**TEAKWONDO** is a modular, security-hardened, production-oriented **Django 5.2 LTS** web platform and **REST API (`/api/v1/`)** built for an international martial arts academy and sports club operating natively in **Persian (`fa-IR`, RTL)** and **Korean (`ko-KR`, LTR)**.
 
 It integrates three isolated yet connected surfaces:
 1. **Multilingual Public Website & SEO Showcase** — Academy overview, educational curriculum, martial arts training programs, official equipment catalog (no online checkout), bilingual blog, verified Champions directory with search/filtering/sorting, public Athlete Profiles, Medal Winners honor roll, Belt Achievements registry, Competition Results, and anti-spam Contact form.
@@ -12,7 +12,7 @@ It integrates three isolated yet connected surfaces:
 ## Architecture & Directory Structure
 
 ```text
-techwando/
+teakwondo/
 ├── manage.py
 ├── requirements.txt
 ├── .env.example
@@ -117,7 +117,7 @@ cp .env.example .env
 .venv/bin/python manage.py compile_translations
 
 # 5. (Optional) Seed bilingual content, belt ranks, competitions & demo accounts
-.venv/bin/python manage.py seed_techwando --with-demo-accounts
+.venv/bin/python manage.py seed_teakwondo --with-demo-accounts
 
 # 6. Create a real Super Admin account
 .venv/bin/python manage.py createsuperuser
@@ -138,9 +138,9 @@ DJANGO_SETTINGS_MODULE=config.settings.testing .venv/bin/python manage.py test t
 # Run Django production deployment security audit
 DJANGO_SETTINGS_MODULE=config.settings.production \
   DJANGO_SECRET_KEY="$(.venv/bin/python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())')" \
-  DJANGO_ALLOWED_HOSTS="techwando.example.com" \
-  DJANGO_CSRF_TRUSTED_ORIGINS="https://techwando.example.com" \
-  SITE_BASE_URL="https://techwando.example.com" \
+  DJANGO_ALLOWED_HOSTS="teakwondo.example.com" \
+  DJANGO_CSRF_TRUSTED_ORIGINS="https://teakwondo.example.com" \
+  SITE_BASE_URL="https://teakwondo.example.com" \
   .venv/bin/python manage.py check --deploy
 
 # Collect static files for production
@@ -152,13 +152,13 @@ DJANGO_SETTINGS_MODULE=config.settings.production \
 
 ### Local Demo Accounts (only when seeded with `--with-demo-accounts`)
 
-Default demo password (override via `--demo-password`): `Techwando!2026`
-- Super Admin: `admin@techwando.example.com`
-- Content Admin: `content@techwando.example.com`
-- Club Manager: `manager@techwando.example.com`
-- Moderator: `moderator@techwando.example.com`
-- Private Member (with a pending medal submission): `member@techwando.example.com`
-- Verified Public Champions: `parisa.rahimi@techwando.example.com`, `haruto.yamamoto@techwando.example.com`, `amir.hosseini@techwando.example.com`, `aoi.nakamura@techwando.example.com`
+Default demo password (override via `--demo-password`): `Teakwondo!2026`
+- Super Admin: `admin@teakwondo.example.com`
+- Content Admin: `content@teakwondo.example.com`
+- Club Manager: `manager@teakwondo.example.com`
+- Moderator: `moderator@teakwondo.example.com`
+- Private Member (with a pending medal submission): `member@teakwondo.example.com`
+- Verified Public Champions: `parisa.rahimi@teakwondo.example.com`, `haruto.yamamoto@teakwondo.example.com`, `amir.hosseini@teakwondo.example.com`, `aoi.nakamura@teakwondo.example.com`
 
 > Never use `--with-demo-accounts` in production.
 

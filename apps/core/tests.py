@@ -1,7 +1,7 @@
 """App-level placeholder delegating to unified suite under `tests/`."""
 from django.test import TestCase
 
-from apps.core.templatetags.techwando_tags import persian_digits
+from apps.core.templatetags.teakwondo_tags import persian_digits
 
 
 class CoreUtilitiesSmokeTest(TestCase):

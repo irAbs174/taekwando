@@ -10,10 +10,10 @@ from apps.belts.models import BeltHistory
 from apps.contact.models import ContactMessage
 from apps.core.models import ApprovalStatus, Discipline, PublicationStatus
 from apps.medals.models import Medal, MedalType
-from tests.base import TechwandoTestCase, make_pdf_upload
+from tests.base import TeakwondoTestCase, make_pdf_upload
 
 
-class PublicPagesAndPrivacyTests(TechwandoTestCase):
+class PublicPagesAndPrivacyTests(TeakwondoTestCase):
     def setUp(self):
         cache.cache.clear()
         self.belt_dan = self.create_belt_type("DAN-2", 11, Discipline.TAEKWONDO, is_black=True)

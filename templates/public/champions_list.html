@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n static techwando_tags %}
+{% load i18n static teakwondo_tags %}
 
 {% block content %}
 <section class="page-banner">
@@ -7,7 +7,7 @@
     {% trans "Champions" as crumb_parent %}
     {% trans "Athletes Directory" as crumb_current %}
     {% include "includes/breadcrumbs.html" with parent_label=crumb_parent current_label=crumb_current %}
-    <h1>{% trans "TECHWANDO Champions & Verified Athletes" %}</h1>
+    <h1>{% trans "TEAKWONDO Champions & Verified Athletes" %}</h1>
     <p>{% trans "Official registry of approved club athletes who authorized public profile publication." %}</p>
     <div class="subnav-tabs">
       <a class="active" href="{% url 'champions:list' %}" aria-current="page">{% trans "Athletes Directory" %}</a>
