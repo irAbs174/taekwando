@@ -1,10 +1,12 @@
-"""Django Admin configuration for Page with inline Persian/Japanese translations."""
+"""Django Admin configuration for Page with inline Persian/Korean translations."""
 from django.contrib import admin
+
+from apps.core.admin import SupportedTranslationInlineMixin
 
 from apps.pages.models import Page, PageTranslation
 
 
-class PageTranslationInline(admin.StackedInline):
+class PageTranslationInline(SupportedTranslationInlineMixin, admin.StackedInline):
     model = PageTranslation
     extra = 1
     max_num = 2

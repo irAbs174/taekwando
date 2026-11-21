@@ -16,14 +16,14 @@ class CategoryBilingualForm(forms.ModelForm):
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "rtl"}),
     )
-    ja_name = forms.CharField(
-        label=_("Name (Japanese)"),
+    ko_name = forms.CharField(
+        label=_("Name (Korean)"),
         max_length=120,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_description = forms.CharField(
-        label=_("Description (Japanese)"),
+    ko_description = forms.CharField(
+        label=_("Description (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
@@ -41,13 +41,13 @@ class CategoryBilingualForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 if code in by_lang:
                     self.fields[f"{code}_name"].initial = by_lang[code].name
                     self.fields[f"{code}_description"].initial = by_lang[code].description
 
     def save_translations(self, category: Category) -> None:
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             name = (self.cleaned_data.get(f"{code}_name") or "").strip()
             if name:
                 CategoryTranslation.objects.update_or_create(
@@ -98,38 +98,38 @@ class PostBilingualForm(forms.ModelForm):
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "rtl"}),
     )
 
-    # Japanese translation
-    ja_title = forms.CharField(
-        label=_("Title (Japanese)"),
+    # Korean translation
+    ko_title = forms.CharField(
+        label=_("Title (Korean)"),
         max_length=220,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_excerpt = forms.CharField(
-        label=_("Excerpt (Japanese)"),
+    ko_excerpt = forms.CharField(
+        label=_("Excerpt (Korean)"),
         max_length=600,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
-    ja_body = forms.CharField(
-        label=_("Body (Japanese)"),
+    ko_body = forms.CharField(
+        label=_("Body (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 8, "dir": "ltr"}),
     )
-    ja_image_alt = forms.CharField(
-        label=_("Image Alt (Japanese)"),
+    ko_image_alt = forms.CharField(
+        label=_("Image Alt (Korean)"),
         max_length=180,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_seo_title = forms.CharField(
-        label=_("SEO Title (Japanese)"),
+    ko_seo_title = forms.CharField(
+        label=_("SEO Title (Korean)"),
         max_length=160,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_seo_description = forms.CharField(
-        label=_("SEO Description (Japanese)"),
+    ko_seo_description = forms.CharField(
+        label=_("SEO Description (Korean)"),
         max_length=320,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
@@ -169,7 +169,7 @@ class PostBilingualForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 tr = by_lang.get(code)
                 if tr:
                     self.fields[f"{code}_title"].initial = tr.title
@@ -182,15 +182,15 @@ class PostBilingualForm(forms.ModelForm):
     def clean(self):
         cleaned = super().clean()
         has_fa = bool((cleaned.get("fa_title") or "").strip() and (cleaned.get("fa_body") or "").strip())
-        has_ja = bool((cleaned.get("ja_title") or "").strip() and (cleaned.get("ja_body") or "").strip())
-        if not has_fa and not has_ja:
+        has_ko = bool((cleaned.get("ko_title") or "").strip() and (cleaned.get("ko_body") or "").strip())
+        if not has_fa and not has_ko:
             raise forms.ValidationError(
-                _("Provide a complete title and body in at least one language (Persian or Japanese).")
+                _("Provide a complete title and body in at least one language (Persian or Korean).")
             )
         return cleaned
 
     def save_translations(self, post: Post) -> None:
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             title = (self.cleaned_data.get(f"{code}_title") or "").strip()
             body = (self.cleaned_data.get(f"{code}_body") or "").strip()
             if title and body:

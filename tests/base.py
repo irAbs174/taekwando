@@ -123,8 +123,8 @@ class TechwandoTestCase(TestCase):
         *,
         first_name: str = "کیان",
         last_name: str = "مرادی",
-        first_name_ja: str = "キアン",
-        last_name_ja: str = "モラディ",
+        first_name_ko: str = "キアン",
+        last_name_ko: str = "モラディ",
         status: str = MembershipStatus.APPROVED,
         public: bool = True,
         discipline: str = Discipline.TAEKWONDO,
@@ -140,8 +140,8 @@ class TechwandoTestCase(TestCase):
         profile = ensure_member_profile(user)
         profile.first_name = first_name
         profile.last_name = last_name
-        profile.first_name_ja = first_name_ja
-        profile.last_name_ja = last_name_ja
+        profile.first_name_ko = first_name_ko
+        profile.last_name_ko = last_name_ko
         profile.membership_status = status
         profile.public_profile_consent = public
         profile.public_profile_visibility = public
@@ -149,7 +149,7 @@ class TechwandoTestCase(TestCase):
         profile.phone = phone
         profile.birth_date = birth_date
         profile.biography = "قهرمان ملی تکواندو"
-        profile.biography_ja = "テコンドー全国チャンピオン"
+        profile.biography_ko = "テコンドー全国챔피언"
         profile.save()
         return user, profile
 
@@ -166,7 +166,7 @@ class TechwandoTestCase(TestCase):
             defaults={
                 "rank_order": order,
                 "name_fa": "کمربند مشکی دان ۱" if is_black else "کمربند آبی",
-                "name_ja": "黒帯 初段" if is_black else "青帯",
+                "name_ko": "黒帯 初段" if is_black else "青帯",
                 "color_hex": "#111827" if is_black else "#1D4ED8",
                 "is_black_belt": is_black,
             },
@@ -182,11 +182,11 @@ class TechwandoTestCase(TestCase):
             slug=slug,
             defaults={
                 "title_fa": "مسابقات آزاد آسیا ۲۰۲۶",
-                "title_ja": "アジアオープン選手権 2026",
+                "title_ko": "アジアオープン選手権 2026",
                 "location_fa": "توکیو، ژاپن",
-                "location_ja": "日本・東京",
+                "location_ko": "日本・東京",
                 "organizer": "فدراسیون آسیا",
-                "organizer_ja": "アジア連盟",
+                "organizer_ko": "アジア連盟",
                 "discipline": discipline,
                 "start_date": datetime.date(2026, 5, 10),
                 "end_date": datetime.date(2026, 5, 12),
@@ -200,7 +200,7 @@ class TechwandoTestCase(TestCase):
         slug: str = "poomsae-mastery",
         status: str = PublicationStatus.PUBLISHED,
         published_at=None,
-        include_ja: bool = True,
+        include_ko: bool = True,
     ) -> Post:
         from django.utils import timezone
 
@@ -209,11 +209,11 @@ class TechwandoTestCase(TestCase):
             category=cat, language="fa", defaults={"name": "آموزش فنی"}
         )
         CategoryTranslation.objects.get_or_create(
-            category=cat, language="ja", defaults={"name": "技術解説"}
+            category=cat, language="ko", defaults={"name": "技術解説"}
         )
         tag, _ = Tag.objects.get_or_create(
             slug="black-belt",
-            defaults={"name_fa": "کمربند مشکی", "name_ja": "黒帯"},
+            defaults={"name_fa": "کمربند مشکی", "name_ko": "黒帯"},
         )
         post = Post.objects.create(
             slug=slug,
@@ -232,11 +232,11 @@ class TechwandoTestCase(TestCase):
             seo_title="آموزش پومسه | تکواندو",
             seo_description="توضیحات سئو پومسه فارسی.",
         )
-        if include_ja:
+        if include_ko:
             PostTranslation.objects.create(
                 post=post,
-                language="ja",
-                title="上級プムセの極意",
+                language="ko",
+                title="고급 품새의 핵심",
                 excerpt="呼吸と重心の精密なコントロール解説。",
                 body="日本語による上級プムセの解説本文です。",
                 seo_title="プムセ技術解説 | TECHWANDO",
@@ -255,7 +255,7 @@ class TechwandoTestCase(TestCase):
             category=cat, language="fa", defaults={"name": "لباس رزمی"}
         )
         ProductCategoryTranslation.objects.get_or_create(
-            category=cat, language="ja", defaults={"name": "公式道着"}
+            category=cat, language="ko", defaults={"name": "公式道着"}
         )
         product = Product.objects.create(
             slug=slug,
@@ -278,7 +278,7 @@ class TechwandoTestCase(TestCase):
         )
         ProductTranslation.objects.create(
             product=product,
-            language="ja",
+            language="ko",
             name="公認競技用ドボク",
             short_description="公式大会対応モデル",
             description="通気性に優れた高品質な競技用道着です。",
@@ -306,7 +306,7 @@ class TechwandoTestCase(TestCase):
         )
         PageTranslation.objects.create(
             page=page,
-            language="ja",
+            language="ko",
             title="TECHWANDOアカデミー紹介",
             subtitle="武道の伝統と現代スポーツ科学",
             summary="TECHWANDOクラブの概要。",

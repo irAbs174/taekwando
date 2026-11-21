@@ -1,4 +1,4 @@
-"""Forms for managing route SEO metadata and Persian/Japanese translations."""
+"""Forms for managing route SEO metadata and Persian/Korean translations."""
 from django import forms
 from django.utils.translation import gettext_lazy as _
 
@@ -6,7 +6,7 @@ from apps.seo.models import SEOMetadata
 
 
 class RouteSEOBilingualForm(forms.ModelForm):
-    """Unified bilingual form managing an SEOMetadata record with fa & ja translations."""
+    """Unified bilingual form managing an SEOMetadata record with fa & ko translations."""
 
     fa_seo_title = forms.CharField(
         label=_("SEO Title (Persian)"),
@@ -37,32 +37,32 @@ class RouteSEOBilingualForm(forms.ModelForm):
         widget=forms.URLInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
 
-    ja_seo_title = forms.CharField(
-        label=_("SEO Title (Japanese)"),
+    ko_seo_title = forms.CharField(
+        label=_("SEO Title (Korean)"),
         max_length=160,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_seo_description = forms.CharField(
-        label=_("Meta Description (Japanese)"),
+    ko_seo_description = forms.CharField(
+        label=_("Meta Description (Korean)"),
         max_length=320,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
-    ja_og_title = forms.CharField(
-        label=_("Open Graph Title (Japanese)"),
+    ko_og_title = forms.CharField(
+        label=_("Open Graph Title (Korean)"),
         max_length=160,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_og_description = forms.CharField(
-        label=_("Open Graph Description (Japanese)"),
+    ko_og_description = forms.CharField(
+        label=_("Open Graph Description (Korean)"),
         max_length=320,
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
-    ja_canonical_url = forms.URLField(
-        label=_("Canonical URL Override (Japanese)"),
+    ko_canonical_url = forms.URLField(
+        label=_("Canonical URL Override (Korean)"),
         required=False,
         widget=forms.URLInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
@@ -84,7 +84,7 @@ class RouteSEOBilingualForm(forms.ModelForm):
         self.fields["route_key"].required = True
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 tr = by_lang.get(code)
                 if tr:
                     self.fields[f"{code}_seo_title"].initial = tr.seo_title
@@ -96,7 +96,7 @@ class RouteSEOBilingualForm(forms.ModelForm):
     def save_translations(self, seo_obj: SEOMetadata) -> None:
         from apps.seo.models import SEOTranslation
 
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             title = (self.cleaned_data.get(f"{code}_seo_title") or "").strip()
             if title:
                 SEOTranslation.objects.update_or_create(

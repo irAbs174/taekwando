@@ -11,26 +11,26 @@ class MemberSocialActivityForm(forms.ModelForm):
         model = SocialActivity
         fields = [
             "title",
-            "title_ja",
+            "title_ko",
             "activity_date",
             "location",
-            "location_ja",
+            "location_ko",
             "description",
-            "description_ja",
+            "description_ko",
             "photograph",
             "public_visibility_consent",
         ]
         widgets = {
             "title": forms.TextInput(attrs={"class": "form-control"}),
-            "title_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "title_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "activity_date": forms.DateInput(
                 attrs={"class": "form-control", "type": "date"},
                 format="%Y-%m-%d",
             ),
             "location": forms.TextInput(attrs={"class": "form-control"}),
-            "location_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "location_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "description": forms.Textarea(attrs={"class": "form-control", "rows": 4}),
-            "description_ja": forms.Textarea(
+            "description_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 4, "dir": "ltr"}
             ),
             "photograph": forms.FileInput(

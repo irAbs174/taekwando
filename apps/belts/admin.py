@@ -9,17 +9,18 @@ from apps.core.admin import ModeratedModelAdminMixin
 
 @admin.register(BeltType)
 class BeltTypeAdmin(admin.ModelAdmin):
+    exclude = ('name_ja',)
     list_display = (
         "discipline",
         "rank_order",
         "rank_code",
         "name_fa",
-        "name_ja",
+        "name_ko",
         "is_black_belt",
         "is_active",
     )
     list_filter = ("discipline", "is_black_belt", "is_active")
-    search_fields = ("name_fa", "name_ja", "rank_code")
+    search_fields = ("name_fa", "name_ko", "rank_code")
     list_per_page = 30
 
 

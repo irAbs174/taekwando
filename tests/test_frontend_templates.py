@@ -24,31 +24,30 @@ class PublicShellTests(TestCase):
         self.assertIn("/static/js/main.js", html)
         self.assertIn('class="skip-link"', html)
 
-    def test_japanese_shell_is_ltr_and_uses_ja_typography(self):
-        with translation.override("ja"):
+    def test_korean_shell_is_ltr_and_uses_ko_typography(self):
+        with translation.override("ko"):
             url = reverse("pages:home")
-        response = self.client.get(url, HTTP_ACCEPT_LANGUAGE="ja")
+        response = self.client.get(url, HTTP_ACCEPT_LANGUAGE="ko")
         self.assertEqual(response.status_code, 200)
         html = response.content.decode()
-        self.assertIn('<html lang="ja" dir="ltr">', html)
+        self.assertIn('<html lang="ko" dir="ltr">', html)
         self.assertIn("bootstrap.min.css", html)
-        self.assertIn("/static/css/ja.css", html)
+        self.assertIn("/static/css/ko.css", html)
 
-    def test_japanese_webfont_is_self_hosted(self):
-        css_path = finders.find("css/ja.css")
+    def test_korean_typography_uses_korean_font_stack(self):
+        css_path = finders.find("css/ko.css")
         self.assertIsNotNone(css_path)
         with open(css_path, encoding="utf-8") as handle:
             css = handle.read()
-        self.assertIn('font-family: "Noto Sans JP"', css)
-        self.assertIsNotNone(finders.find("fonts/NotoSansJP-Regular.woff2"))
-        self.assertIsNotNone(finders.find("fonts/NotoSansJP-Bold.woff2"))
+        self.assertIn('--tw-font-ko', css)
+        self.assertIn('html[lang="ko"]', css)
 
     def test_public_pages_expose_one_h1_and_localized_metadata(self):
         for name, lang in (
             ("pages:about", "fa"),
             ("champions:list", "fa"),
-            ("blog:list", "ja"),
-            ("products:list", "ja"),
+            ("blog:list", "ko"),
+            ("products:list", "ko"),
         ):
             with self.subTest(view=name, lang=lang):
                 with translation.override(lang):
@@ -58,7 +57,7 @@ class PublicShellTests(TestCase):
                 html = response.content.decode()
                 self.assertEqual(len(re.findall(r"<h1[\s>]", html)), 1)
                 self.assertIn("hreflang=\"fa-IR\"", html)
-                self.assertIn("hreflang=\"ja-JP\"", html)
+                self.assertIn("hreflang=\"ko-KR\"", html)
 
 
 class MemberPortalShellTests(TechwandoTestCase):

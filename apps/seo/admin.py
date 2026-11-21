@@ -1,10 +1,12 @@
 """Django Admin configuration for SEOMetadata with inline translations."""
 from django.contrib import admin
 
+from apps.core.admin import SupportedTranslationInlineMixin
+
 from apps.seo.models import SEOMetadata, SEOTranslation
 
 
-class SEOTranslationInline(admin.StackedInline):
+class SEOTranslationInline(SupportedTranslationInlineMixin, admin.StackedInline):
     model = SEOTranslation
     extra = 1
     max_num = 2

@@ -11,22 +11,22 @@ from apps.core.translation_utils import normalize_lang
 
 def site_context(request) -> dict:
     current_lang = normalize_lang(getattr(request, "LANGUAGE_CODE", None))
-    alt_lang = "ja" if current_lang == "fa" else "fa"
+    alt_lang = "ko" if current_lang == "fa" else "fa"
     locale_meta = settings.LANGUAGE_LOCALES.get(current_lang, settings.LANGUAGE_LOCALES["fa"])
-    alt_locale_meta = settings.LANGUAGE_LOCALES.get(alt_lang, settings.LANGUAGE_LOCALES["ja"])
+    alt_locale_meta = settings.LANGUAGE_LOCALES.get(alt_lang, settings.LANGUAGE_LOCALES["ko"])
 
     full_path = request.get_full_path()
     fa_path = translate_url(full_path, "fa")
-    ja_path = translate_url(full_path, "ja")
+    ko_path = translate_url(full_path, "ko")
     if not fa_path.startswith("/fa/"):
         fa_path = "/fa/"
-    if not ja_path.startswith("/ja/"):
-        ja_path = "/ja/"
+    if not ko_path.startswith("/ko/"):
+        ko_path = "/ko/"
 
     # Canonical path without query string for hreflang links
     clean_path = request.path
     fa_clean = translate_url(clean_path, "fa")
-    ja_clean = translate_url(clean_path, "ja")
+    ko_clean = translate_url(clean_path, "ko")
     base_url = settings.SITE_BASE_URL
 
     unread_notifications = 0
@@ -71,9 +71,9 @@ def site_context(request) -> dict:
         "LOCALE_META": locale_meta,
         "ALT_LOCALE_META": alt_locale_meta,
         "SWITCH_URL_FA": fa_path,
-        "SWITCH_URL_JA": ja_path,
+        "SWITCH_URL_KO": ko_path,
         "HREFLANG_FA": f"{base_url}{fa_clean}",
-        "HREFLANG_JA": f"{base_url}{ja_clean}",
+        "HREFLANG_KO": f"{base_url}{ko_clean}",
         "CANONICAL_DEFAULT": f"{base_url}{clean_path}",
         "UNREAD_NOTIFICATIONS_COUNT": unread_notifications,
         "IS_ADMIN_PORTAL_USER": is_admin_portal_user,

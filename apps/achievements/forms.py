@@ -14,17 +14,17 @@ class MemberAchievementForm(forms.ModelForm):
         model = Achievement
         fields = [
             "title",
-            "title_ja",
+            "title_ko",
             "discipline",
             "competition",
             "achievement_date",
             "description",
-            "description_ja",
+            "description_ko",
             "certificate",
         ]
         widgets = {
             "title": forms.TextInput(attrs={"class": "form-control"}),
-            "title_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "title_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "discipline": forms.Select(attrs={"class": "form-select"}),
             "competition": forms.Select(attrs={"class": "form-select"}),
             "achievement_date": forms.DateInput(
@@ -32,7 +32,7 @@ class MemberAchievementForm(forms.ModelForm):
                 format="%Y-%m-%d",
             ),
             "description": forms.Textarea(attrs={"class": "form-control", "rows": 4}),
-            "description_ja": forms.Textarea(
+            "description_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 4, "dir": "ltr"}
             ),
             "certificate": forms.FileInput(

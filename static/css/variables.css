@@ -73,6 +73,7 @@
   /* Typography */
   --tw-font-sans: "Vazirmatn", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial,
     sans-serif;
+  --tw-font-ko: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
   --tw-font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic",
     "Noto Sans JP", "Noto Sans CJK JP", Meiryo, var(--tw-font-sans);
   --tw-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;

@@ -14,7 +14,7 @@ class MemberCompetitionParticipationForm(forms.ModelForm):
             "competition",
             "division_category",
             "result",
-            "result_ja",
+            "result_ko",
             "placement",
             "notes",
             "certificate",
@@ -23,7 +23,7 @@ class MemberCompetitionParticipationForm(forms.ModelForm):
             "competition": forms.Select(attrs={"class": "form-select"}),
             "division_category": forms.TextInput(attrs={"class": "form-control"}),
             "result": forms.TextInput(attrs={"class": "form-control"}),
-            "result_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "result_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "placement": forms.NumberInput(attrs={"class": "form-control", "min": 1}),
             "notes": forms.Textarea(attrs={"class": "form-control", "rows": 3}),
             "certificate": forms.FileInput(
@@ -66,26 +66,26 @@ class CompetitionAdminForm(forms.ModelForm):
             "slug",
             "discipline",
             "title_fa",
-            "title_ja",
+            "title_ko",
             "location_fa",
-            "location_ja",
+            "location_ko",
             "start_date",
             "end_date",
             "organizer",
-            "organizer_ja",
+            "organizer_ko",
             "description_fa",
-            "description_ja",
+            "description_ko",
             "results_summary_fa",
-            "results_summary_ja",
+            "results_summary_ko",
             "is_published",
         ]
         widgets = {
             "slug": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "discipline": forms.Select(attrs={"class": "form-select"}),
             "title_fa": forms.TextInput(attrs={"class": "form-control"}),
-            "title_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "title_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "location_fa": forms.TextInput(attrs={"class": "form-control"}),
-            "location_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "location_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "start_date": forms.DateInput(
                 attrs={"class": "form-control", "type": "date"},
                 format="%Y-%m-%d",
@@ -95,13 +95,13 @@ class CompetitionAdminForm(forms.ModelForm):
                 format="%Y-%m-%d",
             ),
             "organizer": forms.TextInput(attrs={"class": "form-control"}),
-            "organizer_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "organizer_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "description_fa": forms.Textarea(attrs={"class": "form-control", "rows": 3}),
-            "description_ja": forms.Textarea(
+            "description_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 3, "dir": "ltr"}
             ),
             "results_summary_fa": forms.Textarea(attrs={"class": "form-control", "rows": 3}),
-            "results_summary_ja": forms.Textarea(
+            "results_summary_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 3, "dir": "ltr"}
             ),
             "is_published": forms.CheckboxInput(attrs={"class": "form-check-input"}),

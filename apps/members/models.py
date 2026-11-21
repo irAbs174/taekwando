@@ -53,11 +53,25 @@ class MemberProfile(TimeStampedModel):
     )
     first_name = models.CharField(_("First name"), max_length=100)
     last_name = models.CharField(_("Last name"), max_length=100)
+    first_name_ko = models.CharField(
+        _("First name (Korean)"),
+        max_length=100,
+        blank=True,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     first_name_ja = models.CharField(
         _("First name (Japanese)"),
         max_length=100,
         blank=True,
     )
+    last_name_ko = models.CharField(
+        _("Last name (Korean)"),
+        max_length=100,
+        blank=True,
+    )
+
+    # Legacy Korean data is retained but not used for Korean.
     last_name_ja = models.CharField(
         _("Last name (Japanese)"),
         max_length=100,
@@ -71,6 +85,9 @@ class MemberProfile(TimeStampedModel):
         blank=True,
     )
     biography = models.TextField(_("Biography (Persian)"), blank=True, max_length=3000)
+    biography_ko = models.TextField(_("Biography (Korean)"), blank=True, max_length=3000)
+
+    # Legacy Korean data is retained but not used for Korean.
     biography_ja = models.TextField(_("Biography (Japanese)"), blank=True, max_length=3000)
     primary_discipline = models.CharField(
         _("Primary discipline"),
@@ -169,16 +186,16 @@ class MemberProfile(TimeStampedModel):
 
     @property
     def localized_full_name(self) -> str:
-        if normalize_lang() == "ja" and (self.last_name_ja or self.first_name_ja):
-            # Japanese standard family-name given-name ordering
-            return f"{self.last_name_ja} {self.first_name_ja}".strip()
+        if normalize_lang() == "ko" and (self.last_name_ko or self.first_name_ko):
+            # Korean standard family-name given-name ordering
+            return f"{self.last_name_ko} {self.first_name_ko}".strip()
         return self.full_name
 
     @property
     def localized_biography(self) -> str:
-        if normalize_lang() == "ja":
-            return self.biography_ja or self.biography
-        return self.biography or self.biography_ja
+        if normalize_lang() == "ko":
+            return self.biography_ko or self.biography
+        return self.biography or self.biography_ko
 
     @property
     def is_publicly_visible(self) -> bool:

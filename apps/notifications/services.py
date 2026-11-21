@@ -14,7 +14,7 @@ class NotificationService:
         *,
         recipient,
         message_fa: str,
-        message_ja: str = "",
+        message_ko: str = "",
         notification_type: str = NotificationType.SYSTEM,
         target_url: str = "",
     ) -> Notification | None:
@@ -23,7 +23,7 @@ class NotificationService:
         return Notification.objects.create(
             recipient=recipient,
             message=message_fa,
-            message_ja=message_ja or message_fa,
+            message_ko=message_ko or message_fa,
             notification_type=notification_type,
             target_url=target_url[:255],
         )
@@ -33,7 +33,7 @@ class NotificationService:
         *,
         model_key: str,
         message_fa: str,
-        message_ja: str = "",
+        message_ko: str = "",
         notification_type: str = NotificationType.SUBMISSION_PENDING,
         target_url: str = "",
         exclude_user_id: int | None = None,
@@ -53,7 +53,7 @@ class NotificationService:
                     Notification(
                         recipient=admin_user,
                         message=message_fa,
-                        message_ja=message_ja or message_fa,
+                        message_ko=message_ko or message_fa,
                         notification_type=notification_type,
                         target_url=target_url[:255],
                     )
@@ -67,7 +67,7 @@ class NotificationService:
         *,
         roles: list[str],
         message_fa: str,
-        message_ja: str = "",
+        message_ko: str = "",
         notification_type: str = NotificationType.SYSTEM,
         target_url: str = "",
     ) -> int:
@@ -77,7 +77,7 @@ class NotificationService:
             Notification(
                 recipient=u,
                 message=message_fa,
-                message_ja=message_ja or message_fa,
+                message_ko=message_ko or message_fa,
                 notification_type=notification_type,
                 target_url=target_url[:255],
             )

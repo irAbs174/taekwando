@@ -37,9 +37,9 @@ class ModerationWorkflowTests(TechwandoTestCase):
                 "discipline": Discipline.TAEKWONDO,
                 "competition": self.comp.pk,
                 "competition_name": "مسابقات آزاد آسیا ۲۰۲۶",
-                "competition_name_ja": "アジアオープン 2026",
+                "competition_name_ko": "アジアオープン 2026",
                 "competition_location": "توکیو",
-                "competition_location_ja": "東京",
+                "competition_location_ko": "東京",
                 "division_category": "کیوروگی -۶۸ کیلوگرم",
                 "award_date": "2026-05-11",
                 "evidence": make_pdf_upload("gold_cert.pdf"),
@@ -86,9 +86,9 @@ class ModerationWorkflowTests(TechwandoTestCase):
                 "discipline": Discipline.TAEKWONDO,
                 "competition": self.comp.pk,
                 "competition_name": "مسابقات آزاد آسیا ۲۰۲۶",
-                "competition_name_ja": "アジアオープン 2026",
+                "competition_name_ko": "アジアオープン 2026",
                 "competition_location": "توکیو",
-                "competition_location_ja": "東京",
+                "competition_location_ko": "東京",
                 "division_category": "کیوروگی -۶۸ کیلوگرم",
                 "award_date": "2026-05-11",
                 "notes": "شماره حکم فدراسیون: AS-9921",
@@ -113,9 +113,9 @@ class ModerationWorkflowTests(TechwandoTestCase):
         self.assertEqual(medal.reviewer, self.moderator)
         self.assertIsNotNone(medal.reviewed_at)
 
-        # Now visible on public Medal Winners page (both Persian and Japanese!)
+        # Now visible on public Medal Winners page (both Persian and Korean!)
         self.assertContains(self.client.get("/fa/champions/medals/"), "نیما هدایتی")
-        self.assertContains(self.client.get("/ja/champions/medals/"), "アジアオープン選手権 2026")
+        self.assertContains(self.client.get("/ko/champions/medals/"), "アジアオープン選手権 2026")
 
         # 6. Approved record CANNOT be directly edited or deleted by member
         self.client.force_login(self.member_user)

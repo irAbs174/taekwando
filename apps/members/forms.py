@@ -19,22 +19,22 @@ class MemberProfileEditForm(forms.ModelForm):
         fields = [
             "first_name",
             "last_name",
-            "first_name_ja",
-            "last_name_ja",
+            "first_name_ko",
+            "last_name_ko",
             "profile_photo",
             "primary_discipline",
             "birth_date",
             "phone",
             "biography",
-            "biography_ja",
+            "biography_ko",
             "public_profile_consent",
             "public_profile_visibility",
         ]
         widgets = {
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
             "last_name": forms.TextInput(attrs={"class": "form-control"}),
-            "first_name_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
-            "last_name_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "first_name_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "last_name_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "profile_photo": forms.ClearableFileInput(
                 attrs={"class": "form-control", "accept": ".jpg,.jpeg,.png,.webp"}
             ),
@@ -45,7 +45,7 @@ class MemberProfileEditForm(forms.ModelForm):
             ),
             "phone": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "biography": forms.Textarea(attrs={"class": "form-control", "rows": 4}),
-            "biography_ja": forms.Textarea(
+            "biography_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 4, "dir": "ltr"}
             ),
             "public_profile_consent": forms.CheckboxInput(attrs={"class": "form-check-input"}),
@@ -80,8 +80,8 @@ class AdminMemberProfileForm(forms.ModelForm):
         fields = [
             "first_name",
             "last_name",
-            "first_name_ja",
-            "last_name_ja",
+            "first_name_ko",
+            "last_name_ko",
             "profile_photo",
             "primary_discipline",
             "birth_date",
@@ -90,15 +90,15 @@ class AdminMemberProfileForm(forms.ModelForm):
             "membership_status",
             "admin_note",
             "biography",
-            "biography_ja",
+            "biography_ko",
             "public_profile_consent",
             "public_profile_visibility",
         ]
         widgets = {
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
             "last_name": forms.TextInput(attrs={"class": "form-control"}),
-            "first_name_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
-            "last_name_ja": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "first_name_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
+            "last_name_ko": forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
             "profile_photo": forms.ClearableFileInput(
                 attrs={"class": "form-control", "accept": ".jpg,.jpeg,.png,.webp"}
             ),
@@ -115,7 +115,7 @@ class AdminMemberProfileForm(forms.ModelForm):
             "membership_status": forms.Select(attrs={"class": "form-select"}),
             "admin_note": forms.Textarea(attrs={"class": "form-control", "rows": 3}),
             "biography": forms.Textarea(attrs={"class": "form-control", "rows": 4}),
-            "biography_ja": forms.Textarea(
+            "biography_ko": forms.Textarea(
                 attrs={"class": "form-control", "rows": 4, "dir": "ltr"}
             ),
             "public_profile_consent": forms.CheckboxInput(attrs={"class": "form-check-input"}),

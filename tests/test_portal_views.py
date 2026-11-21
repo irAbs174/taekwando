@@ -81,11 +81,11 @@ class PortalFullTemplateCoverageTests(TechwandoTestCase):
         self.notif = Notification.objects.create(
             recipient=self.member_user,
             message="رکورد شما در انتظار بررسی است.",
-            message_ja="申請は審査待ちです。",
+            message_ko="申請は審査待ちです。",
             target_url=self.medal.get_member_url(),
         )
 
-    def test_all_member_portal_screens_render_in_fa_and_ja(self):
+    def test_all_member_portal_screens_render_in_fa_and_ko(self):
         self.client.force_login(self.member_user)
         paths = [
             "/member/dashboard/",
@@ -119,7 +119,7 @@ class PortalFullTemplateCoverageTests(TechwandoTestCase):
             f"/member/activities/{self.act.pk}/delete/",
             "/member/notifications/",
         ]
-        for lang in ("fa", "ja"):
+        for lang in ("fa", "ko"):
             for p in paths:
                 url = f"/{lang}{p}"
                 resp = self.client.get(url)
@@ -133,7 +133,7 @@ class PortalFullTemplateCoverageTests(TechwandoTestCase):
             200,
         )
 
-    def test_all_admin_portal_screens_render_in_fa_and_ja(self):
+    def test_all_admin_portal_screens_render_in_fa_and_ko(self):
         self.client.force_login(self.super_admin)
         paths = [
             "/accounts/management/",
@@ -175,7 +175,7 @@ class PortalFullTemplateCoverageTests(TechwandoTestCase):
             "/management/audit-logs/",
             "/management/audit-logs/reviews/",
         ]
-        for lang in ("fa", "ja"):
+        for lang in ("fa", "ko"):
             for p in paths:
                 url = f"/{lang}{p}"
                 resp = self.client.get(url)

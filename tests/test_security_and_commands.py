@@ -139,7 +139,7 @@ class SecurityAndManagementCommandTests(TechwandoTestCase):
         call_command("seed_techwando", "--with-demo-accounts")
         call_command("seed_techwando", "--with-demo-accounts")
         self.assertEqual(self.client.get("/fa/").status_code, 200)
-        self.assertEqual(self.client.get("/ja/").status_code, 200)
+        self.assertEqual(self.client.get("/ko/").status_code, 200)
 
         # Test backup_sqlite against a real file-backed SQLite DB
         with tempfile.TemporaryDirectory() as tmp:

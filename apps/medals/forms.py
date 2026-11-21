@@ -18,9 +18,9 @@ class MemberMedalForm(forms.ModelForm):
             "discipline",
             "competition",
             "competition_name",
-            "competition_name_ja",
+            "competition_name_ko",
             "competition_location",
-            "competition_location_ja",
+            "competition_location_ko",
             "division_category",
             "award_date",
             "evidence",
@@ -30,11 +30,11 @@ class MemberMedalForm(forms.ModelForm):
             "discipline": forms.Select(attrs={"class": "form-select"}),
             "competition": forms.Select(attrs={"class": "form-select"}),
             "competition_name": forms.TextInput(attrs={"class": "form-control"}),
-            "competition_name_ja": forms.TextInput(
+            "competition_name_ko": forms.TextInput(
                 attrs={"class": "form-control", "dir": "ltr"}
             ),
             "competition_location": forms.TextInput(attrs={"class": "form-control"}),
-            "competition_location_ja": forms.TextInput(
+            "competition_location_ko": forms.TextInput(
                 attrs={"class": "form-control", "dir": "ltr"}
             ),
             "division_category": forms.TextInput(attrs={"class": "form-control"}),
@@ -61,12 +61,12 @@ class MemberMedalForm(forms.ModelForm):
         if comp:
             if not cleaned.get("competition_name"):
                 cleaned["competition_name"] = comp.title_fa
-            if not cleaned.get("competition_name_ja"):
-                cleaned["competition_name_ja"] = comp.title_ja
+            if not cleaned.get("competition_name_ko"):
+                cleaned["competition_name_ko"] = comp.title_ko
             if not cleaned.get("competition_location"):
                 cleaned["competition_location"] = comp.location_fa
-            if not cleaned.get("competition_location_ja"):
-                cleaned["competition_location_ja"] = comp.location_ja
+            if not cleaned.get("competition_location_ko"):
+                cleaned["competition_location_ko"] = comp.location_ko
         else:
             if not (cleaned.get("competition_name") or "").strip():
                 self.add_error(

@@ -39,7 +39,7 @@ class RestAPITests(TechwandoTestCase):
             discipline=Discipline.TAEKWONDO,
             competition=self.comp,
             competition_name="مسابقات آسیایی",
-            competition_name_ja="アジア大会",
+            competition_name_ko="アジア大会",
             award_date=datetime.date(2026, 5, 11),
             approval_status=ApprovalStatus.APPROVED,
         )
@@ -53,13 +53,13 @@ class RestAPITests(TechwandoTestCase):
         )
 
     def test_public_endpoints_and_openapi_schema_with_localization(self):
-        # Blog in Persian vs Japanese
+        # Blog in Persian vs Korean
         fa_posts = self.api.get("/api/v1/public/blog/", HTTP_ACCEPT_LANGUAGE="fa")
-        ja_posts = self.api.get("/api/v1/public/blog/", HTTP_ACCEPT_LANGUAGE="ja")
+        ko_posts = self.api.get("/api/v1/public/blog/", HTTP_ACCEPT_LANGUAGE="ko")
         self.assertEqual(fa_posts.status_code, 200)
         self.assertIn("count", fa_posts.data)
         self.assertEqual(fa_posts.data["results"][0]["title"], "اصول پومسه پیشرفته")
-        self.assertEqual(ja_posts.data["results"][0]["title"], "上級プムセの極意")
+        self.assertEqual(ko_posts.data["results"][0]["title"], "고급 품새의 핵심")
 
         # Products, Pages, Champions, Medal Winners (only APPROVED medals; no private fields)
         self.assertEqual(self.api.get("/api/v1/public/products/").status_code, 200)
@@ -182,7 +182,7 @@ class RestAPITests(TechwandoTestCase):
                 "status": "PUBLISHED",
                 "translations": [
                     {"language": "fa", "title": "مقاله جدید", "body": "متن فارسی مقاله."},
-                    {"language": "ja", "title": "新着記事", "body": "日本語の記事本文。"},
+                    {"language": "ko", "title": "新着記事", "body": "日本語の記事本文。"},
                 ],
             },
             format="json",

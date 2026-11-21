@@ -4,7 +4,7 @@ from __future__ import annotations
 from django.conf import settings
 from django.utils import translation
 
-SUPPORTED_LANGUAGES = ("fa", "ja")
+SUPPORTED_LANGUAGES = ("fa", "ko")
 
 
 def normalize_lang(lang_code: str | None = None) -> str:
@@ -15,7 +15,7 @@ def normalize_lang(lang_code: str | None = None) -> str:
 
 def get_fallback_lang(lang_code: str) -> str:
     norm = normalize_lang(lang_code)
-    return "ja" if norm == "fa" else "fa"
+    return "ko" if norm == "fa" else "fa"
 
 
 def resolve_translation(obj, lang_code: str | None = None, relation_name: str = "translations"):
@@ -42,10 +42,6 @@ def resolve_translation(obj, lang_code: str | None = None, relation_name: str = 
         return chosen
     if fallback in by_lang:
         chosen = by_lang[fallback]
-        chosen.is_fallback = True
-        return chosen
-    if items:
-        chosen = items[0]
         chosen.is_fallback = True
         return chosen
     return None

@@ -70,7 +70,7 @@ class AdminContactListView(AdminPortalMixin, ListView):
             qs = qs.filter(is_read=False)
         elif status == "read":
             qs = qs.filter(is_read=True)
-        if lang in {"fa", "ja"}:
+        if lang in {"fa", "ko"}:
             qs = qs.filter(language=lang)
         if q:
             qs = qs.filter(

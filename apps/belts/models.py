@@ -30,6 +30,9 @@ class BeltType(TimeStampedModel):
         db_index=True,
     )
     name_fa = models.CharField(_("Belt rank name (Persian)"), max_length=100)
+    name_ko = models.CharField(_("Belt rank name (Korean)"), max_length=100, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     name_ja = models.CharField(_("Belt rank name (Japanese)"), max_length=100)
     rank_code = models.CharField(
         _("Rank code"),
@@ -65,9 +68,9 @@ class BeltType(TimeStampedModel):
 
     @property
     def localized_name(self) -> str:
-        if normalize_lang() == "ja":
-            return self.name_ja or self.name_fa
-        return self.name_fa or self.name_ja
+        if normalize_lang() == "ko":
+            return self.name_ko or self.name_fa
+        return self.name_fa or self.name_ko
 
 
 class BeltHistoryQuerySet(models.QuerySet):

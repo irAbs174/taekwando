@@ -145,3 +145,12 @@ class ReviewLogAdmin(admin.ModelAdmin):
 
     def has_delete_permission(self, request, obj=None) -> bool:
         return False
+
+
+class SupportedTranslationInlineMixin:
+    """Keep historical translations without exposing them in supported-language forms."""
+
+    def get_queryset(self, request):
+        from apps.core.translation_utils import SUPPORTED_LANGUAGES
+
+        return super().get_queryset(request).filter(language__in=SUPPORTED_LANGUAGES)

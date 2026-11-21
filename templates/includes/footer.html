@@ -8,7 +8,7 @@
           {{ SITE_NAME }}
         </a>
         <p class="footer-about">
-          {% trans "A bilingual martial arts academy uniting Persian and Japanese budo traditions with modern sports education, transparent belt progression, and verified championship records." %}
+          {% trans "A bilingual martial arts academy uniting Persian and Korean budo traditions with modern sports education, transparent belt progression, and verified championship records." %}
         </p>
         <div class="social-links" aria-label="{% trans 'Social media' %}">
           {% for social in CLUB_SOCIAL_LINKS %}
@@ -68,7 +68,7 @@
       <span class="d-flex align-items-center gap-2 flex-wrap">
         <a href="{% switch_lang_url 'fa' %}" lang="fa" hreflang="fa">فارسی (fa-IR)</a>
         <span aria-hidden="true">·</span>
-        <a href="{% switch_lang_url 'ja' %}" lang="ja" hreflang="ja">日本語 (ja-JP)</a>
+        <a href="{% switch_lang_url 'ko' %}" lang="ko" hreflang="ko">한국어 (ko-KR)</a>
         <span aria-hidden="true">·</span>
         <a href="{% url 'api:swagger-ui' %}">{% trans "API Docs" %}</a>
       </span>

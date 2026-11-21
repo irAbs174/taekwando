@@ -23,14 +23,14 @@ class ProductCategoryBilingualForm(forms.ModelForm):
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "rtl"}),
     )
-    ja_name = forms.CharField(
-        label=_("Name (Japanese)"),
+    ko_name = forms.CharField(
+        label=_("Name (Korean)"),
         max_length=120,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_description = forms.CharField(
-        label=_("Description (Japanese)"),
+    ko_description = forms.CharField(
+        label=_("Description (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 2, "dir": "ltr"}),
     )
@@ -48,13 +48,13 @@ class ProductCategoryBilingualForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 if code in by_lang:
                     self.fields[f"{code}_name"].initial = by_lang[code].name
                     self.fields[f"{code}_description"].initial = by_lang[code].description
 
     def save_translations(self, cat: ProductCategory) -> None:
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             name = (self.cleaned_data.get(f"{code}_name") or "").strip()
             if name:
                 ProductCategoryTranslation.objects.update_or_create(
@@ -100,25 +100,25 @@ class ProductBilingualForm(forms.ModelForm):
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 3, "dir": "rtl"}),
     )
 
-    ja_name = forms.CharField(
-        label=_("Product Name (Japanese)"),
+    ko_name = forms.CharField(
+        label=_("Product Name (Korean)"),
         max_length=200,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_short = forms.CharField(
-        label=_("Short Description (Japanese)"),
+    ko_short = forms.CharField(
+        label=_("Short Description (Korean)"),
         max_length=400,
         required=False,
         widget=forms.TextInput(attrs={"class": "form-control", "dir": "ltr"}),
     )
-    ja_description = forms.CharField(
-        label=_("Description (Japanese)"),
+    ko_description = forms.CharField(
+        label=_("Description (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 5, "dir": "ltr"}),
     )
-    ja_specifications = forms.CharField(
-        label=_("Specifications (Japanese)"),
+    ko_specifications = forms.CharField(
+        label=_("Specifications (Korean)"),
         required=False,
         widget=forms.Textarea(attrs={"class": "form-control", "rows": 3, "dir": "ltr"}),
     )
@@ -156,7 +156,7 @@ class ProductBilingualForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if self.instance and self.instance.pk:
             by_lang = {t.language: t for t in self.instance.translations.all()}
-            for code in ("fa", "ja"):
+            for code in ("fa", "ko"):
                 tr = by_lang.get(code)
                 if tr:
                     self.fields[f"{code}_name"].initial = tr.name
@@ -169,17 +169,17 @@ class ProductBilingualForm(forms.ModelForm):
         has_fa = bool(
             (cleaned.get("fa_name") or "").strip() and (cleaned.get("fa_description") or "").strip()
         )
-        has_ja = bool(
-            (cleaned.get("ja_name") or "").strip() and (cleaned.get("ja_description") or "").strip()
+        has_ko = bool(
+            (cleaned.get("ko_name") or "").strip() and (cleaned.get("ko_description") or "").strip()
         )
-        if not has_fa and not has_ja:
+        if not has_fa and not has_ko:
             raise forms.ValidationError(
                 _("Provide product name and description in at least one language.")
             )
         return cleaned
 
     def save_related(self, product: Product) -> None:
-        for code in ("fa", "ja"):
+        for code in ("fa", "ko"):
             name = (self.cleaned_data.get(f"{code}_name") or "").strip()
             desc = (self.cleaned_data.get(f"{code}_description") or "").strip()
             if name and desc:
@@ -200,7 +200,7 @@ class ProductBilingualForm(forms.ModelForm):
                 product=product,
                 image=img,
                 alt_text_fa=self.cleaned_data.get("fa_name", ""),
-                alt_text_ja=self.cleaned_data.get("ja_name", ""),
+                alt_text_ko=self.cleaned_data.get("ko_name", ""),
                 is_primary=True,
                 display_order=0,
             )

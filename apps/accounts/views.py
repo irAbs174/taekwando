@@ -474,8 +474,8 @@ class AdminMemberListView(ClubManagerMixin, ListView):
             qs = qs.filter(
                 Q(first_name__icontains=q)
                 | Q(last_name__icontains=q)
-                | Q(first_name_ja__icontains=q)
-                | Q(last_name_ja__icontains=q)
+                | Q(first_name_ko__icontains=q)
+                | Q(last_name_ko__icontains=q)
                 | Q(membership_number__icontains=q)
                 | Q(user__email__icontains=q)
             )

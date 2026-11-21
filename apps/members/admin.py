@@ -10,6 +10,7 @@ from apps.members.services import review_membership_application
 
 @admin.register(MemberProfile)
 class MemberProfileAdmin(admin.ModelAdmin):
+    exclude = ('first_name_ja', 'last_name_ja', 'biography_ja')
     list_display = (
         "membership_number",
         "full_name",
@@ -31,8 +32,8 @@ class MemberProfileAdmin(admin.ModelAdmin):
         "membership_number",
         "first_name",
         "last_name",
-        "first_name_ja",
-        "last_name_ja",
+        "first_name_ko",
+        "last_name_ko",
         "user__email",
         "phone",
     )

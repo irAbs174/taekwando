@@ -69,6 +69,9 @@ class CategoryTranslation(models.Model):
 class Tag(TimeStampedModel):
     slug = models.SlugField(_("Slug"), max_length=80, unique=True, db_index=True)
     name_fa = models.CharField(_("Tag name (Persian)"), max_length=80)
+    name_ko = models.CharField(_("Tag name (Korean)"), max_length=80, blank=True)
+
+    # Legacy Korean data is retained but not used for Korean.
     name_ja = models.CharField(_("Tag name (Japanese)"), max_length=80, blank=True)
 
     class Meta:
@@ -81,9 +84,9 @@ class Tag(TimeStampedModel):
 
     @property
     def localized_name(self) -> str:
-        if normalize_lang() == "ja":
-            return self.name_ja or self.name_fa
-        return self.name_fa or self.name_ja
+        if normalize_lang() == "ko":
+            return self.name_ko or self.name_fa
+        return self.name_fa or self.name_ko
 
 
 class PostQuerySet(models.QuerySet):

@@ -11,6 +11,7 @@ from apps.members.models import MemberProfile
 
 
 class MemberProfileInline(admin.StackedInline):
+    exclude = ('first_name_ja', 'last_name_ja', 'biography_ja')
     model = MemberProfile
     fk_name = "user"
     can_delete = False
