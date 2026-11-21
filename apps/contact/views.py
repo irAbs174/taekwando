@@ -25,9 +25,9 @@ class PublicContactView(FormView):
             build_seo_context(
                 self.request,
                 route_key=RouteKey.CONTACT,
-                default_title=_("Contact TECHWANDO Club"),
+                default_title=_("Contact TEAKWONDO Club"),
                 default_description=_(
-                    "Reach out to TECHWANDO martial arts academy regarding classes, "
+                    "Reach out to TEAKWONDO martial arts academy regarding classes, "
                     "membership, competitions, and training equipment."
                 ),
             )
@@ -50,7 +50,7 @@ class PublicContactView(FormView):
 
         messages.success(
             self.request,
-            _("Thank you! Your message has been sent to the TECHWANDO club team."),
+            _("Thank you! Your message has been sent to the TEAKWONDO club team."),
         )
         return redirect("contact:public")
 

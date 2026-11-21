@@ -9,10 +9,10 @@ from apps.competitions.models import CompetitionParticipation
 from apps.core.models import ApprovalStatus, Discipline
 from apps.medals.models import Medal, MedalType
 from apps.notifications.models import Notification
-from tests.base import TechwandoTestCase
+from tests.base import TeakwondoTestCase
 
 
-class AuthorizationAndIsolationTests(TechwandoTestCase):
+class AuthorizationAndIsolationTests(TeakwondoTestCase):
     def setUp(self):
         self.super_admin = self.create_user("super@tw.test", role=UserRole.SUPER_ADMIN)
         self.content_admin = self.create_user("content@tw.test", role=UserRole.CONTENT_ADMIN)

@@ -10,10 +10,10 @@ from apps.medals.models import Medal, MedalType
 from apps.members.models import MembershipStatus
 from apps.pages.models import PageType
 from apps.notifications.models import Notification
-from tests.base import TechwandoTestCase
+from tests.base import TeakwondoTestCase
 
 
-class RestAPITests(TechwandoTestCase):
+class RestAPITests(TeakwondoTestCase):
     def setUp(self):
         cache.cache.clear()
         self.api = APIClient()

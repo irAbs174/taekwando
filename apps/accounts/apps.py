@@ -17,5 +17,5 @@ class AccountsConfig(AppConfig):
     def ready(self) -> None:
         post_migrate.connect(
             _sync_roles_after_migrate,
-            dispatch_uid="techwando_ensure_role_groups",
+            dispatch_uid="teakwondo_ensure_role_groups",
         )

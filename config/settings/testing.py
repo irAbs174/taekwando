@@ -1,10 +1,10 @@
-"""Testing settings for TECHWANDO automated test suite."""
+"""Testing settings for TEAKWONDO automated test suite."""
 import tempfile
 from pathlib import Path
 
 from .base import *  # noqa: F401,F403
 
-SECRET_KEY = "test-only-secret-key-for-techwando-automated-suite-9876543210abcdef"
+SECRET_KEY = "test-only-secret-key-for-teakwondo-automated-suite-9876543210abcdef"
 DEBUG = False
 
 ALLOWED_HOSTS = ["testserver", "localhost", "127.0.0.1"]
@@ -32,7 +32,7 @@ STORAGES = {
     },
 }
 
-_TEST_TMP = Path(tempfile.mkdtemp(prefix="techwando_test_media_"))
+_TEST_TMP = Path(tempfile.mkdtemp(prefix="teakwondo_test_media_"))
 MEDIA_ROOT = _TEST_TMP / "media"
 PRIVATE_MEDIA_ROOT = _TEST_TMP / "private_media"
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)

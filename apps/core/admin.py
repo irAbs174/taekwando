@@ -9,8 +9,8 @@ from apps.core.models import ApprovalStatus, ReviewLog
 from apps.core.permissions import can_moderate_submission
 from apps.core.services import ModerationService
 
-admin.site.site_header = _("TECHWANDO Administration")
-admin.site.site_title = _("TECHWANDO Admin")
+admin.site.site_header = _("TEAKWONDO Administration")
+admin.site.site_title = _("TEAKWONDO Admin")
 admin.site.index_title = _("Club, Athlete & Multilingual Content Management")
 
 

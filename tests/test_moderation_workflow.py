@@ -11,10 +11,10 @@ from apps.medals.models import Medal, MedalType
 from apps.members.models import MembershipStatus
 from apps.members.services import ensure_member_profile
 from apps.notifications.models import Notification
-from tests.base import TechwandoTestCase, make_pdf_upload
+from tests.base import TeakwondoTestCase, make_pdf_upload
 
 
-class ModerationWorkflowTests(TechwandoTestCase):
+class ModerationWorkflowTests(TeakwondoTestCase):
     def setUp(self):
         self.moderator = self.create_user("mod@tw.test", role=UserRole.MODERATOR)
         self.manager = self.create_user("mgr@tw.test", role=UserRole.CLUB_MANAGER)

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TECHWANDO — Dashboard enhancements
+   TEAKWONDO — Dashboard enhancements
    The dashboard is fully usable without this file; it only adds conveniences.
    ========================================================================== */
 (function () {

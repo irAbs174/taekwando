@@ -61,7 +61,7 @@ class BlogListView(ListView):
                 default_title=_("Martial Arts Blog & Technical Articles"),
                 default_description=_(
                     "Articles on Taekwondo techniques, sports science, belt preparation, "
-                    "and TECHWANDO championship updates."
+                    "and TEAKWONDO championship updates."
                 ),
             )
         )

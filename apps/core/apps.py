@@ -23,5 +23,5 @@ class CoreConfig(AppConfig):
     def ready(self) -> None:
         connection_created.connect(
             _configure_sqlite_connection,
-            dispatch_uid="techwando_sqlite_pragmas",
+            dispatch_uid="teakwondo_sqlite_pragmas",
         )

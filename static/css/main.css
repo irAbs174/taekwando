@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TECHWANDO — Main stylesheet entry point
+   TEAKWONDO — Main stylesheet entry point
    Loads the design system in cascade order. Page-specific styles
    (dashboard.css) and language modifiers (rtl.css) are linked separately in
    the base template so anonymous visitors never download unused CSS.

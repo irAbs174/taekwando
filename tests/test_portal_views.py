@@ -12,10 +12,10 @@ from apps.medals.models import Medal, MedalType
 from apps.notifications.models import Notification
 from apps.pages.models import PageType
 from apps.seo.models import SEOMetadata, SEOTranslation
-from tests.base import TechwandoTestCase, make_pdf_upload, make_png_upload
+from tests.base import TeakwondoTestCase, make_pdf_upload, make_png_upload
 
 
-class PortalFullTemplateCoverageTests(TechwandoTestCase):
+class PortalFullTemplateCoverageTests(TeakwondoTestCase):
     def setUp(self):
         self.super_admin = self.create_user("admin_ui@tw.test", role=UserRole.SUPER_ADMIN)
         self.member_user, self.member = self.create_member("athlete_ui@tw.test", public=True)

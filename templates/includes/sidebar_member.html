@@ -1,4 +1,4 @@
-{% load i18n static techwando_tags %}
+{% load i18n static teakwondo_tags %}
 {% with app=request.resolver_match.app_name view=request.resolver_match.view_name %}
 {% firstof profile user.member_profile as sidebar_profile %}
 {% if sidebar_profile %}

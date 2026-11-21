@@ -8,7 +8,7 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils import translation
 
-from tests.base import DEFAULT_PASSWORD, TechwandoTestCase
+from tests.base import DEFAULT_PASSWORD, TeakwondoTestCase
 
 
 class PublicShellTests(TestCase):
@@ -60,7 +60,7 @@ class PublicShellTests(TestCase):
                 self.assertIn("hreflang=\"ko-KR\"", html)
 
 
-class MemberPortalShellTests(TechwandoTestCase):
+class MemberPortalShellTests(TeakwondoTestCase):
     def test_member_dashboard_requires_authentication(self):
         url = reverse("members:dashboard")
         response = self.client.get(url)
@@ -98,7 +98,7 @@ class MemberPortalShellTests(TechwandoTestCase):
                 self.assertNotIn('type="password" autocomplete="current-password"', html)
 
 
-class AdminPortalShellTests(TechwandoTestCase):
+class AdminPortalShellTests(TeakwondoTestCase):
     def test_member_cannot_reach_admin_portal(self):
         user, _profile = self.create_member("frontend.no-admin@example.com")
         self.client.force_login(user)

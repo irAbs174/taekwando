@@ -90,7 +90,7 @@ class AccountService:
                 f"درخواست عضویت شما در انتظار تأیید مدیریت می‌باشد."
             ),
             message_ko=(
-                f"TECHWANDO에 오신 것을 환영합니다! 회원 번호는 {profile.membership_number}입니다. "
+                f"TEAKWONDO에 오신 것을 환영합니다! 회원 번호는 {profile.membership_number}입니다. "
                 f"회원 가입 신청은 관리자 승인 대기 중입니다."
             ),
             notification_type=NotificationType.MEMBERSHIP_UPDATE,

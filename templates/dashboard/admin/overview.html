@@ -1,11 +1,11 @@
 {% extends "dashboard/base_admin.html" %}
-{% load i18n techwando_tags %}
+{% load i18n teakwondo_tags %}
 {% block title %}{% trans "Administration Dashboard" %} | {{ SITE_NAME }}{% endblock %}
 
 {% block admin_content %}
 <div class="section-head">
   <div>
-    <h1 class="section-title section-title-lg">{% trans "TECHWANDO Administration Portal" %}</h1>
+    <h1 class="section-title section-title-lg">{% trans "TEAKWONDO Administration Portal" %}</h1>
     <p>{% trans "Signed in as" %} <strong class="ltr-inline">{{ user.email }}</strong> &bull; <span class="badge badge-dark">{{ user.get_role_display }}</span></p>
   </div>
 </div>

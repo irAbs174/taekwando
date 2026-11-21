@@ -1,4 +1,4 @@
-"""Development settings for TECHWANDO."""
+"""Development settings for TEAKWONDO."""
 import os
 
 from .base import *  # noqa: F401,F403
@@ -7,7 +7,7 @@ from .base import env_bool, env_list
 # Local-only fallback key; production.py requires DJANGO_SECRET_KEY from environment.
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY",
-    "django-insecure-techwando-dev-only-key-do-not-use-in-production-9f4c2a1b8e",
+    "django-insecure-teakwondo-dev-only-key-do-not-use-in-production-9f4c2a1b8e",
 )
 
 DEBUG = env_bool("DJANGO_DEBUG", True)

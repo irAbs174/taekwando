@@ -92,7 +92,7 @@ class MemberRegisterView(FormView):
         login(self.request, user)
         messages.success(
             self.request,
-            _("Welcome to TECHWANDO! Your member account has been created."),
+            _("Welcome to TEAKWONDO! Your member account has been created."),
         )
         return redirect("members:dashboard")
 

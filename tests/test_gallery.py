@@ -7,10 +7,10 @@ from django.urls import reverse
 
 from apps.activities.models import SocialActivity
 from apps.core.models import ApprovalStatus
-from tests.base import TechwandoTestCase, make_png_upload
+from tests.base import TeakwondoTestCase, make_png_upload
 
 
-class GallerySmokeTests(TechwandoTestCase):
+class GallerySmokeTests(TeakwondoTestCase):
     def setUp(self):
         super().setUp()
         _, self.member = self.create_member("gallery@tw.test", public=True)

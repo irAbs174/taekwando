@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n static techwando_tags %}
+{% load i18n static teakwondo_tags %}
 
 {% block title %}{{ athlete.localized_full_name }} | {{ SITE_NAME }}{% endblock %}
 
@@ -16,7 +16,7 @@
         <img class="avatar avatar-lg" src="{% static 'images/default-avatar.svg' %}" alt="{{ athlete.localized_full_name }}">
       {% endif %}
       <div>
-        <span class="badge badge-approved mb-2"><i class="bi bi-patch-check-fill" aria-hidden="true"></i>{% trans "Verified TECHWANDO Athlete" %}</span>
+        <span class="badge badge-approved mb-2"><i class="bi bi-patch-check-fill" aria-hidden="true"></i>{% trans "Verified TEAKWONDO Athlete" %}</span>
         <h1 style="margin: 0 0 0.35rem;">{{ athlete.localized_full_name }}</h1>
         <p class="mb-0" style="color: var(--tw-text-on-dark-muted);">
           {{ athlete.get_primary_discipline_display }}

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% load i18n static techwando_tags %}
+{% load i18n static teakwondo_tags %}
 
-{% block title %}{% if page_tr %}{{ page_tr.seo_title|default:page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %} | {{ SITE_NAME }}{% endblock %}
-{% block meta_description %}{% if page_tr %}{{ page_tr.seo_description|default:page_tr.summary }}{% else %}{% trans "Learn about TECHWANDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Korean cultural bridge." %}{% endif %}{% endblock %}
+{% block title %}{% if page_tr %}{{ page_tr.seo_title|default:page_tr.title }}{% else %}{% trans "About TEAKWONDO" %}{% endif %} | {{ SITE_NAME }}{% endblock %}
+{% block meta_description %}{% if page_tr %}{{ page_tr.seo_description|default:page_tr.summary }}{% else %}{% trans "Learn about TEAKWONDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Korean cultural bridge." %}{% endif %}{% endblock %}
 
 {% block content %}
 <section class="page-banner">
@@ -10,11 +10,11 @@
     {% if page_tr %}
       {% include "includes/breadcrumbs.html" with current_label=page_tr.title %}
     {% else %}
-      {% trans "About TECHWANDO" as about_label %}
+      {% trans "About TEAKWONDO" as about_label %}
       {% include "includes/breadcrumbs.html" with current_label=about_label %}
     {% endif %}
     <span class="hero-kicker mb-3"><i class="bi bi-buildings" aria-hidden="true"></i>{% trans "Established martial arts academy" %}</span>
-    <h1>{% if page_tr %}{{ page_tr.title }}{% else %}{% trans "About TECHWANDO" %}{% endif %}</h1>
+    <h1>{% if page_tr %}{{ page_tr.title }}{% else %}{% trans "About TEAKWONDO" %}{% endif %}</h1>
     <p>
       {% if page_tr and page_tr.subtitle %}
         {{ page_tr.subtitle }}
@@ -40,7 +40,7 @@
             {% endif %}
             {{ page_tr.body|linebreaks }}
           {% else %}
-            <p>{% trans "TECHWANDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Korean martial arts communities." %}</p>
+            <p>{% trans "TEAKWONDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Korean martial arts communities." %}</p>
             <p>{% trans "Every athlete keeps a permanent training record, and every belt promotion, medal and community activity is reviewed by our technical board before publication." %}</p>
           {% endif %}
         </div>

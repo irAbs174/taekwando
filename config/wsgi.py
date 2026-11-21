@@ -1,4 +1,4 @@
-"""WSGI config for TECHWANDO project."""
+"""WSGI config for TEAKWONDO project."""
 import os
 
 from django.core.wsgi import get_wsgi_application

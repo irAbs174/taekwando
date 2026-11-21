@@ -67,7 +67,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    """Custom TECHWANDO user with email login and role-based access control."""
+    """Custom TEAKWONDO user with email login and role-based access control."""
 
     email = models.EmailField(
         _("Email address"),

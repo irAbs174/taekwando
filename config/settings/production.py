@@ -1,5 +1,5 @@
 """
-Production settings for TECHWANDO.
+Production settings for TEAKWONDO.
 Enforces strict security, HTTPS, environment-based secrets, and zero DEBUG leakage.
 """
 import os
@@ -50,11 +50,11 @@ SECURE_HSTS_PRELOAD = True
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Lax"
-SESSION_COOKIE_NAME = "__Host-techwando_session"
+SESSION_COOKIE_NAME = "__Host-teakwondo_session"
 
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = "Lax"
-CSRF_COOKIE_NAME = "__Host-techwando_csrftoken"
+CSRF_COOKIE_NAME = "__Host-teakwondo_csrftoken"
 
 LANGUAGE_COOKIE_SECURE = True
 

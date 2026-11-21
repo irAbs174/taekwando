@@ -17,10 +17,10 @@ from apps.core.validators import (
     validate_safe_image as validate_image_upload,
 )
 from apps.medals.models import Medal, MedalType
-from tests.base import TechwandoTestCase, make_pdf_upload, make_png_upload
+from tests.base import TeakwondoTestCase, make_pdf_upload, make_png_upload
 
 
-class SecurityAndManagementCommandTests(TechwandoTestCase):
+class SecurityAndManagementCommandTests(TeakwondoTestCase):
     def setUp(self):
         self.moderator = self.create_user("sec_mod@tw.test", role=UserRole.MODERATOR)
         self.owner_user, self.owner = self.create_member("owner@tw.test")
@@ -136,8 +136,8 @@ class SecurityAndManagementCommandTests(TechwandoTestCase):
 
     def test_seed_command_idempotency_and_sqlite_online_backup_verification(self):
         # Run seed twice to prove full idempotency
-        call_command("seed_techwando", "--with-demo-accounts")
-        call_command("seed_techwando", "--with-demo-accounts")
+        call_command("seed_teakwondo", "--with-demo-accounts")
+        call_command("seed_teakwondo", "--with-demo-accounts")
         self.assertEqual(self.client.get("/fa/").status_code, 200)
         self.assertEqual(self.client.get("/ko/").status_code, 200)
 
@@ -147,7 +147,7 @@ class SecurityAndManagementCommandTests(TechwandoTestCase):
             out_dir = Path(tmp) / "backups"
             conn = sqlite3.connect(src_db)
             conn.execute("CREATE TABLE t (id INTEGER PRIMARY KEY, name TEXT)")
-            conn.execute("INSERT INTO t (name) VALUES ('techwando')")
+            conn.execute("INSERT INTO t (name) VALUES ('teakwondo')")
             conn.commit()
             conn.close()
 
@@ -160,7 +160,7 @@ class SecurityAndManagementCommandTests(TechwandoTestCase):
             finally:
                 settings.DATABASES["default"]["NAME"] = orig_name
 
-            snaps = list(out_dir.glob("techwando_*.sqlite3"))
+            snaps = list(out_dir.glob("teakwondo_*.sqlite3"))
             self.assertEqual(len(snaps), 1)
             sha_file = Path(f"{snaps[0]}.sha256")
             self.assertTrue(sha_file.exists())

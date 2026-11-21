@@ -1,4 +1,4 @@
-# TECHWANDO Security Architecture & Pre-Production Checklist
+# TEAKWONDO Security Architecture & Pre-Production Checklist
 
 ## 1. Implemented Security Controls
 

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n techwando_tags %}
+{% load i18n teakwondo_tags %}
 
 {% block title %}{% if legal_tr %}{{ legal_tr.seo_title|default:legal_tr.title }}{% else %}{% if legal_kind == "terms" %}{% trans "Terms of Use" %}{% else %}{% trans "Privacy Policy" %}{% endif %}{% endif %} | {{ SITE_NAME }}{% endblock %}
 
@@ -14,7 +14,7 @@
     {% else %}
       {% if legal_kind == "terms" %}
         {% trans "Terms of Use" as legal_title %}
-        {% trans "Rules for using the TECHWANDO platform and member code of conduct." as legal_subtitle %}
+        {% trans "Rules for using the TEAKWONDO platform and member code of conduct." as legal_subtitle %}
       {% else %}
         {% trans "Privacy Policy" as legal_title %}
         {% trans "How we collect, store and protect your information." as legal_subtitle %}

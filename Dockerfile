@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # =============================================================================
-# TECHWANDO — Production Multi-Stage Dockerfile (Django 5.2 LTS + Gunicorn)
+# TEAKWONDO — Production Multi-Stage Dockerfile (Django 5.2 LTS + Gunicorn)
 # =============================================================================
 FROM python:3.12-slim-bookworm AS builder
 
@@ -40,12 +40,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libwebp7 \
     curl \
     && rm -rf /var/lib/apt/lists/* \
-    && groupadd --system --gid 1001 techwando \
-    && useradd --system --uid 1001 --gid techwando --home-dir /app --shell /usr/sbin/nologin techwando
+    && groupadd --system --gid 1001 teakwondo \
+    && useradd --system --uid 1001 --gid teakwondo --home-dir /app --shell /usr/sbin/nologin teakwondo
 
 WORKDIR /app
 COPY --from=builder /opt/venv /opt/venv
-COPY --chown=techwando:techwando . /app
+COPY --chown=teakwondo:teakwondo . /app
 
 RUN mkdir -p /app/data /app/staticfiles /app/media /app/private_media /app/logs /app/backups \
     && chmod +x /app/deploy/entrypoint.sh /app/deploy/backup_cron.sh \
@@ -54,9 +54,9 @@ RUN mkdir -p /app/data /app/staticfiles /app/media /app/private_media /app/logs 
     && DJANGO_SETTINGS_MODULE=config.settings.development \
        DJANGO_SECRET_KEY="build-time-collectstatic-placeholder-key" \
        python manage.py collectstatic --noinput --clear \
-    && chown -R techwando:techwando /app
+    && chown -R teakwondo:teakwondo /app
 
-USER techwando
+USER teakwondo
 
 EXPOSE 8000
 

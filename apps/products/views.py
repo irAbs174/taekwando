@@ -61,7 +61,7 @@ class ProductListView(ListView):
                 route_key=RouteKey.PRODUCTS,
                 default_title=_("Martial Arts Equipment & Uniform Catalog"),
                 default_description=_(
-                    "Official TECHWANDO uniforms (Dobok & Dogi), certified protective gear, "
+                    "Official TEAKWONDO uniforms (Dobok & Dogi), certified protective gear, "
                     "belts, and training equipment."
                 ),
             )

@@ -340,9 +340,9 @@ class PublicChampionsListView(ListView):
             build_seo_context(
                 self.request,
                 route_key=RouteKey.CHAMPIONS,
-                default_title=_("TECHWANDO Champions & Verified Athletes"),
+                default_title=_("TEAKWONDO Champions & Verified Athletes"),
                 default_description=_(
-                    "Official directory of approved TECHWANDO martial arts athletes, "
+                    "Official directory of approved TEAKWONDO martial arts athletes, "
                     "medal winners, black belt holders, and championship records."
                 ),
             )
@@ -437,7 +437,7 @@ class PublicChampionDetailView(DetailView):
                 default_description=(
                     athlete.localized_biography[:200]
                     if athlete.localized_biography
-                    else _("Verified athlete profile at TECHWANDO Club.")
+                    else _("Verified athlete profile at TEAKWONDO Club.")
                 ),
                 og_image_url=athlete.profile_photo.url if athlete.profile_photo else "",
                 og_image_alt=athlete.localized_full_name,
@@ -513,7 +513,7 @@ class PublicMedalWinnersView(ListView):
                 route_key=RouteKey.MEDAL_WINNERS,
                 default_title=_("Medal Winners & Honor Roll"),
                 default_description=_(
-                    "Official verified Gold, Silver, and Bronze medal winners of TECHWANDO Club."
+                    "Official verified Gold, Silver, and Bronze medal winners of TEAKWONDO Club."
                 ),
             )
         )
@@ -570,7 +570,7 @@ class PublicBeltAchievementsView(ListView):
                 route_key=RouteKey.BELT_ACHIEVEMENTS,
                 default_title=_("Official Belt Promotions & Black Belt Registry"),
                 default_description=_(
-                    "Approved belt rank promotions and Dan black belt recipients at TECHWANDO."
+                    "Approved belt rank promotions and Dan black belt recipients at TEAKWONDO."
                 ),
             )
         )
@@ -627,7 +627,7 @@ class PublicCompetitionResultsView(ListView):
                 route_key=RouteKey.COMPETITION_RESULTS,
                 default_title=_("Championship & Competition Results"),
                 default_description=_(
-                    "Verified TECHWANDO team results, tournament standings, and medalists."
+                    "Verified TEAKWONDO team results, tournament standings, and medalists."
                 ),
             )
         )

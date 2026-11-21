@@ -1,4 +1,4 @@
-"""Customized Django Admin configuration for the TECHWANDO User model."""
+"""Customized Django Admin configuration for the TEAKWONDO User model."""
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.core.exceptions import PermissionDenied

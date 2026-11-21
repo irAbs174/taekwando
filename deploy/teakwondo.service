@@ -1,0 +1,32 @@
+# /etc/systemd/system/teakwondo.service
+# Bare-metal Ubuntu/Debian systemd service for TEAKWONDO (Gunicorn)
+
+[Unit]
+Description=TEAKWONDO Django Platform (Gunicorn)
+After=network.target
+
+[Service]
+Type=notify
+User=teakwondo
+Group=www-data
+WorkingDirectory=/srv/teakwondo
+EnvironmentFile=/srv/teakwondo/.env
+Environment="DJANGO_SETTINGS_MODULE=config.settings.production"
+ExecStart=/srv/teakwondo/.venv/bin/gunicorn config.wsgi:application \
+    --config /srv/teakwondo/deploy/gunicorn.conf.py \
+    --bind unix:/run/teakwondo/gunicorn.sock
+ExecReload=/bin/kill -s HUP $MAINPID
+RuntimeDirectory=teakwondo
+Restart=on-failure
+RestartSec=5s
+
+# Systemd security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/teakwondo/data /srv/teakwondo/media /srv/teakwondo/private_media /srv/teakwondo/logs /srv/teakwondo/backups /run/teakwondo
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

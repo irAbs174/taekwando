@@ -3,10 +3,10 @@ from django.db import IntegrityError, transaction
 
 from apps.blog.models import PostTranslation
 from apps.pages.models import PageType
-from tests.base import TechwandoTestCase
+from tests.base import TeakwondoTestCase
 
 
-class MultilingualAndSEOTests(TechwandoTestCase):
+class MultilingualAndSEOTests(TeakwondoTestCase):
     def setUp(self):
         self.about = self.create_bilingual_page("about", PageType.ABOUT)
         self.edu = self.create_bilingual_page("budo-basics", PageType.EDUCATION)
@@ -168,7 +168,7 @@ class MultilingualAndSEOTests(TechwandoTestCase):
     def test_korean_dates_and_no_japanese_route(self):
         import datetime
         from django.utils import translation
-        from apps.core.templatetags.techwando_tags import local_date
+        from apps.core.templatetags.teakwondo_tags import local_date
 
         with translation.override("ko"):
             self.assertEqual(local_date(datetime.date(2026, 11, 21)), "2026년 11월 21일")
