@@ -17,6 +17,7 @@ class RouteKey(models.TextChoices):
     ABOUT = "about", _("About Techwando")
     EDUCATION = "education", _("Educational Content")
     SERVICES = "services", _("Training Programs & Services")
+    GALLERY = "gallery", _("Photo Gallery")
     BLOG = "blog", _("Blog Index")
     PRODUCTS = "products", _("Products & Equipment")
     CHAMPIONS = "champions", _("Champions Directory")

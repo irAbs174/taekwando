@@ -220,6 +220,42 @@
   });
 
   /* ---------------------------------------------------------------------
+     Gallery lightbox (progressive enhancement — links work without JS)
+     --------------------------------------------------------------------- */
+  var lightboxElement = doc.getElementById("galleryLightbox");
+  if (lightboxElement && window.bootstrap) {
+    var lightboxModal = window.bootstrap.Modal.getOrCreateInstance(lightboxElement);
+    var lightboxImage = lightboxElement.querySelector("[data-lightbox-image]");
+    var lightboxCaption = lightboxElement.querySelector("[data-lightbox-caption]");
+    var lightboxTrigger = null;
+
+    doc.addEventListener("click", function (event) {
+      var trigger = event.target.closest("[data-lightbox]");
+      if (!trigger || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      var src = trigger.getAttribute("data-lightbox-src") || trigger.getAttribute("href");
+      if (!src || !lightboxImage) return;
+      event.preventDefault();
+      lightboxTrigger = trigger;
+      lightboxImage.src = src;
+      lightboxImage.alt = trigger.getAttribute("data-lightbox-alt") || "";
+      if (lightboxCaption) {
+        lightboxCaption.textContent = trigger.getAttribute("data-lightbox-caption") || "";
+      }
+      lightboxModal.show();
+    });
+
+    lightboxElement.addEventListener("hidden.bs.modal", function () {
+      if (lightboxImage) {
+        lightboxImage.src = "data:image/gif;base64,R0lGODlhAQABAAAAACw=";
+        lightboxImage.alt = "";
+      }
+      if (lightboxCaption) lightboxCaption.textContent = "";
+      if (lightboxTrigger) lightboxTrigger.focus();
+      lightboxTrigger = null;
+    });
+  }
+
+  /* ---------------------------------------------------------------------
      Remember the last dashboard section in the mobile menu? Not needed:
      Bootstrap offcanvas closes on navigation because the page reloads.
      --------------------------------------------------------------------- */

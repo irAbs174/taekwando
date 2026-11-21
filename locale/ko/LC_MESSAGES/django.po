@@ -1238,7 +1238,7 @@ msgid "Clear filters"
 msgstr ""
 
 msgid "Close"
-msgstr ""
+msgstr "닫기"
 
 msgid "Club activities beyond the mat"
 msgstr "도장 밖의 클럽 활동"
@@ -3858,3 +3858,68 @@ msgstr "언어 선택"
 
 msgid "Main navigation"
 msgstr "주 메뉴"
+
+msgid "Gallery"
+msgstr "갤러리"
+
+
+msgid "Photo Gallery"
+msgstr "사진 갤러리"
+
+
+msgid "TECHWANDO — Martial Arts & Club Academy"
+msgstr "TECHWANDO — 무술 및 클럽 아카데미"
+
+
+msgid "Community & club life"
+msgstr "커뮤니티와 클럽 생활"
+
+
+msgid "Club Gallery"
+msgstr "클럽 갤러리"
+
+
+msgid "Search photos"
+msgstr "사진 검색"
+
+
+msgid "Search by title, description or location"
+msgstr "제목, 설명 또는 장소로 검색"
+
+
+msgid "No club photos yet."
+msgstr "아직 클럽 사진이 없습니다."
+
+
+msgid ""
+"Photos from approved club activities appear here once members grant public "
+"visibility consent."
+msgstr "회원이 공개에 동의한 승인된 클럽 활동 사진이 여기에 표시됩니다."
+
+
+msgid "No photos found."
+msgstr "검색된 사진이 없습니다."
+
+
+msgid "Try a different search term or reset your search."
+msgstr "다른 검색어를 입력하거나 검색을 초기화하세요."
+
+
+msgid "Photo preview"
+msgstr "사진 미리보기"
+
+
+msgid "Club Gallery — TECHWANDO in Pictures"
+msgstr "클럽 갤러리 — 사진으로 보는 TECHWANDO"
+
+
+msgid ""
+"Approved club photos from training, competitions and community activities, "
+"published with member consent."
+msgstr "회원의 동의를 받아 공개된 훈련, 대회 및 커뮤니티 활동 사진입니다."
+
+
+msgid "%(counter)s approved club photo, published with member consent."
+msgid_plural ""
+"%(counter)s approved club photos, published with member consent."
+msgstr[0] "회원 동의하에 공개된 승인된 클럽 사진 %(counter)s장."

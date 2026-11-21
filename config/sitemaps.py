@@ -21,6 +21,7 @@ class StaticViewSitemap(Sitemap):
             "pages:about",
             "pages:education",
             "pages:services",
+            "pages:gallery",
             "blog:list",
             "products:list",
             "champions:list",

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n static techwando_tags %}
+
+{% block content %}
+<section class="page-banner">
+  <div class="container">
+    {% trans "Gallery" as crumb_current %}
+    {% include "includes/breadcrumbs.html" with current_label=crumb_current %}
+    <span class="eyebrow text-white-50" style="color: rgba(255,255,255,0.65);">{% trans "Community & club life" %}</span>
+    <h1>{% trans "Club Gallery" %}</h1>
+    <p>
+      {% blocktrans count counter=photo_count %}{{ counter }} approved club photo, published with member consent.{% plural %}{{ counter }} approved club photos, published with member consent.{% endblocktrans %}
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="filter-bar" method="get" action="{% url 'pages:gallery' %}" role="search">
+      <div>
+        <label class="form-label" for="gl-q">{% trans "Search photos" %}</label>
+        <div class="search-group">
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <input id="gl-q" name="q" type="search" class="form-control" value="{{ search_query }}"
+                 placeholder="{% trans 'Search by title, description or location' %}">
+        </div>
+      </div>
+      <div class="filter-actions">
+        <button type="submit" class="btn btn-primary">{% trans "Search" %}</button>
+        {% if search_query %}
+        <a class="btn btn-outline" href="{% url 'pages:gallery' %}">{% trans "Reset" %}</a>
+        {% endif %}
+      </div>
+    </form>
+
+    {% if photos %}
+    <div class="grid grid-3 gallery-grid">
+      {% for activity in photos %}
+      <article class="card gallery-card">
+        <a class="gallery-thumb" href="{{ activity.get_photo_url }}" data-lightbox
+           data-lightbox-src="{{ activity.get_photo_url }}"
+           data-lightbox-alt="{{ activity.localized_title }}"
+           data-lightbox-caption="{{ activity.localized_title }} — {{ activity.activity_date|local_date }} · {{ activity.localized_location }}">
+          <img src="{{ activity.get_photo_url }}" alt="{{ activity.localized_title }}" loading="lazy">
+          <span class="gallery-zoom" aria-hidden="true"><i class="bi bi-zoom-in"></i></span>
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">{{ activity.localized_title }}</h2>
+          <p class="card-text mb-0">{{ activity.localized_description|truncatechars:110 }}</p>
+          <div class="card-footer-meta">
+            <span><i class="bi bi-geo-alt" aria-hidden="true"></i> {{ activity.localized_location }}</span>
+            <a href="{{ activity.member.get_public_url }}">{{ activity.member.localized_full_name }}</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% include "includes/pagination.html" %}
+    {% else %}
+    {% if search_query %}
+      {% trans "No photos found." as empty_title %}
+      {% trans "Try a different search term or reset your search." as empty_text %}
+    {% else %}
+      {% trans "No club photos yet." as empty_title %}
+      {% trans "Photos from approved club activities appear here once members grant public visibility consent." as empty_text %}
+    {% endif %}
+    {% include "includes/empty_state.html" with empty_icon="bi-images" empty_title=empty_title empty_text=empty_text %}
+    {% endif %}
+  </div>
+</section>
+
+{% include "includes/lightbox.html" %}
+{% endblock %}
