@@ -1,0 +1,19 @@
+{% load i18n %}
+{# Accessible photo lightbox used by the gallery. Enhanced by main.js; gallery links still work without JS. #}
+<div class="modal fade" id="galleryLightbox" tabindex="-1" aria-labelledby="galleryLightboxTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h6 mb-0" id="galleryLightboxTitle">{% trans "Photo preview" %}</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{% trans 'Close' %}"></button>
+      </div>
+      <div class="modal-body">
+        <img class="lightbox-image" data-lightbox-image src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+        <p class="lightbox-caption" data-lightbox-caption></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="modal">{% trans "Close" %}</button>
+      </div>
+    </div>
+  </div>
+</div>

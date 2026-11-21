@@ -224,6 +224,55 @@ class ServicesPageView(ListView):
         return ctx
 
 
+class GalleryPageView(ListView):
+    """
+    Public photo gallery built exclusively from approved social activities whose
+    members granted explicit public visibility consent. Activities without a
+    photograph are skipped; nothing else is ever exposed here.
+    """
+
+    template_name = "public/gallery.html"
+    context_object_name = "photos"
+    paginate_by = 12
+
+    def get_queryset(self):
+        qs = (
+            SocialActivity.objects.publicly_visible()
+            .select_related("member")
+            .exclude(photograph="")
+            .order_by("-activity_date", "-id")
+        )
+        query = (self.request.GET.get("q") or "").strip()
+        if query:
+            qs = qs.filter(
+                Q(title__icontains=query)
+                | Q(title_ko__icontains=query)
+                | Q(description__icontains=query)
+                | Q(description_ko__icontains=query)
+                | Q(location__icontains=query)
+                | Q(location_ko__icontains=query)
+            )
+        return qs
+
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        ctx["search_query"] = (self.request.GET.get("q") or "").strip()
+        page_obj = ctx.get("page_obj")
+        ctx["photo_count"] = page_obj.paginator.count if page_obj else len(ctx["photos"])
+        ctx.update(
+            build_seo_context(
+                self.request,
+                route_key=RouteKey.GALLERY,
+                default_title=_("Club Gallery — TECHWANDO in Pictures"),
+                default_description=_(
+                    "Approved club photos from training, competitions and community "
+                    "activities, published with member consent."
+                ),
+            )
+        )
+        return ctx
+
+
 class StaticPageDetailView(DetailView):
     model = Page
     template_name = "public/page_detail.html"

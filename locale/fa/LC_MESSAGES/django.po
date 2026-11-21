@@ -4011,3 +4011,73 @@ msgstr "پنهان‌کردن گذرواژه"
 
 msgid "Scrollable table"
 msgstr "جدول قابل پیمایش"
+
+msgid "Gallery"
+msgstr "نگارخانه"
+
+
+msgid "Photo Gallery"
+msgstr "نگارخانه تصاویر"
+
+
+msgid "TECHWANDO — Martial Arts & Club Academy"
+msgstr "تکواندو — آکادمی و باشگاه هنرهای رزمی"
+
+
+msgid "Community & club life"
+msgstr "جامعه و زندگی باشگاهی"
+
+
+msgid "Club Gallery"
+msgstr "نگارخانه باشگاه"
+
+
+msgid "Search photos"
+msgstr "جستجوی تصاویر"
+
+
+msgid "Search by title, description or location"
+msgstr "جستجو بر اساس عنوان، توضیحات یا مکان"
+
+
+msgid "No club photos yet."
+msgstr "هنوز تصویری از باشگاه وجود ندارد."
+
+
+msgid ""
+"Photos from approved club activities appear here once members grant public "
+"visibility consent."
+msgstr ""
+"تصاویر فعالیت‌های تأییدشده باشگاه پس از رضایت اعضا برای نمایش عمومی در اینجا"
+" نمایش داده می‌شوند."
+
+
+msgid "No photos found."
+msgstr "تصویری یافت نشد."
+
+
+msgid "Try a different search term or reset your search."
+msgstr "عبارت دیگری را جستجو کنید یا جستجو را بازنشانی کنید."
+
+
+msgid "Photo preview"
+msgstr "پیش‌نمایش تصویر"
+
+
+msgid "Club Gallery — TECHWANDO in Pictures"
+msgstr "نگارخانه باشگاه — تکواندو در تصاویر"
+
+
+msgid ""
+"Approved club photos from training, competitions and community activities, "
+"published with member consent."
+msgstr ""
+"تصاویر تأییدشده تمرین‌ها، مسابقات و فعالیت‌های اجتماعی باشگاه که با رضایت "
+"اعضا منتشر شده‌اند."
+
+
+msgid "%(counter)s approved club photo, published with member consent."
+msgid_plural ""
+"%(counter)s approved club photos, published with member consent."
+msgstr[0] "%(counter)s تصویر تأییدشده باشگاه، منتشرشده با رضایت اعضا."
+msgstr[1] "%(counter)s تصویر تأییدشده باشگاه، منتشرشده با رضایت اعضا."

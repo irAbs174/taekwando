@@ -317,6 +317,22 @@ html[dir="rtl"] :focus-visible {
   backdrop-filter: blur(8px);
 }
 
+.hero-banner {
+  margin: -1.5rem -1.5rem 1.25rem;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.12);
+  border-start-start-radius: var(--tw-radius-lg);
+  border-start-end-radius: var(--tw-radius-lg);
+  overflow: hidden;
+}
+
+.hero-banner img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1200 / 440;
+  object-fit: cover;
+}
+
 .hero-panel h2 {
   color: #fff;
   font-size: 1rem;
