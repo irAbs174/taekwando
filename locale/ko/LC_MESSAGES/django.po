@@ -2556,7 +2556,7 @@ msgid "A bilingual martial arts academy uniting Persian and Korean budo traditio
 msgstr "페르시아와 한국의 무술 전통을 현대 스포츠 교육, 투명한 승급 과정 및 인증된 대회 기록과 결합한 이중 언어 무술 아카데미입니다."
 
 msgid "Social media"
-msgstr ""
+msgstr "소셜 미디어"
 
 msgid "The Academy"
 msgstr "아카데미"
@@ -2631,19 +2631,34 @@ msgid "Yes, Continue"
 msgstr ""
 
 msgid "Primary navigation"
-msgstr ""
+msgstr "주요 탐색"
 
 msgid "Martial Arts & Club Academy"
 msgstr "무술 및 클럽 아카데미"
+
+msgid "Education, discipline and perseverance are the prelude to excellence."
+msgstr "교육, 규율과 꾸준함은 탁월함의 서막입니다."
+
+msgid "About Niayesh Taekwondo Club"
+msgstr "나이아쉬 태권도 클럽 소개"
+
+msgid "Quick access"
+msgstr "빠른 링크"
+
+msgid "Club photo gallery"
+msgstr "클럽 사진 갤러리"
+
+msgid "Designer and developer"
+msgstr "디자이너 및 개발자"
 
 msgid "Toggle navigation"
 msgstr "메뉴 열기"
 
 msgid "The Club"
-msgstr ""
+msgstr "클럽"
 
 msgid "About Us"
-msgstr ""
+msgstr "기술 감독 및 수석 코치"
 
 msgid "Visit & Contact"
 msgstr "방문 및 문의"
@@ -2664,7 +2679,7 @@ msgid "Contact"
 msgstr "문의"
 
 msgid "Language selector"
-msgstr ""
+msgstr "언어 선택"
 
 msgid "Toggle dark mode"
 msgstr "다크 모드 전환"
@@ -2673,7 +2688,7 @@ msgid "Log Out"
 msgstr "로그아웃"
 
 msgid "Join the Club"
-msgstr ""
+msgstr "클럽 가입"
 
 msgid "My Account"
 msgstr ""
@@ -3137,31 +3152,25 @@ msgid "Photos from approved club activities appear here once members grant publi
 msgstr "회원이 공개에 동의한 승인된 클럽 활동 사진이 여기에 표시됩니다."
 
 msgid "Niayesh Taekwondo Club"
-msgstr ""
+msgstr "나이아쉬 태권도 클럽"
 
 msgid "Managed by Master Amir Shahabadi Farahani"
-msgstr ""
+msgstr "아미르 샤하바디 파라하니 사범이 지도합니다"
 
-#, fuzzy
-#| msgid "TEAKWONDO unites Persian and Korean budo traditions with modern sports science, transparent belt progression, and a certified record of every championship achievement."
 msgid "Taekwondo connects Persian martial arts traditions and Korean budo traditions with modern sports science, transparent belt progression, and a verified record of every championship achievement."
-msgstr "TEAKWONDO는 페르시아와 한국의 무술 전통을 현대 스포츠 과학, 투명한 승급 과정 및 인증된 대회 기록과 결합합니다."
+msgstr "태권도는 페르시아 무술 전통과 한국 무도 전통을 현대 스포츠 과학, 투명한 승급 과정, 모든 대회 성과의 검증된 기록과 연결합니다."
 
-#, fuzzy
-#| msgid "Champions"
 msgid "Club Champions"
-msgstr "챔피언"
+msgstr "클럽 챔피언"
 
 msgid "Become a Member"
 msgstr "회원 가입"
 
-#, fuzzy
-#| msgid "TEAKWONDO — Martial Arts & Club Academy"
 msgid "Taekwondo — Martial Arts Academy and Club"
-msgstr "TEAKWONDO — 무술 및 클럽 아카데미"
+msgstr "태권도 — 무술 아카데미 및 클럽"
 
 msgid "Academy at a glance"
-msgstr ""
+msgstr "아카데미 한눈에 보기"
 
 msgid "Approved Members"
 msgstr "승인된 회원"
@@ -3172,31 +3181,23 @@ msgstr "인증된 메달"
 msgid "Black Belt Holders"
 msgstr "검은띠 보유자"
 
-#, fuzzy
-#| msgid "Official Championships"
 msgid "Official Championship Appearances"
-msgstr "공식 대회"
+msgstr "공식 대회 참가 횟수"
 
 msgid "Why learning Taekwondo matters"
-msgstr ""
+msgstr "태권도를 배워야 하는 이유"
 
-#, fuzzy
-#| msgid "TEAKWONDO is a bilingual martial arts education and club management platform for athletes, families and coaches. Every promotion, medal and community activity is reviewed by our technical board before it becomes part of an athlete's official record."
 msgid "Taekwondo is a sport rooted in respect, effort and integrity. Every belt promotion, medal and community activity is reviewed by the technical committee before being registered in an athlete's official record."
-msgstr "TEAKWONDO는 선수, 가족, 지도자를 위한 이중 언어 무술 교육 및 클럽 관리 플랫폼입니다. 모든 승급, 메달 및 지역사회 활동은 기술위원회의 검토를 거쳐 선수의 공식 기록에 등록됩니다."
+msgstr "태권도는 존중과 노력, 정직을 바탕으로 하는 스포츠입니다. 모든 승급과 메달, 지역사회 활동은 선수의 공식 기록에 등록되기 전에 기술위원회의 검토를 받습니다."
 
-#, fuzzy
-#| msgid "From a child's first class to international championship preparation, our curriculum balances technique, physical conditioning, etiquette and personal responsibility."
 msgid "From a child's first class to preparation for international competitions, our programme maintains a balance between technique, physical fitness, etiquette and responsibility."
-msgstr "어린이의 첫 수업부터 국제 대회 준비까지 기술, 체력, 예절과 개인의 책임을 균형 있게 교육합니다."
+msgstr "어린이의 첫 수업부터 국제 대회 준비까지, 저희 프로그램은 기술과 체력, 예절, 책임감의 균형을 유지합니다."
 
 msgid "Read our story"
 msgstr "클럽 이야기 보기"
 
-#, fuzzy
-#| msgid "Explore the curriculum"
 msgid "View the curriculum"
-msgstr "교육 과정 살펴보기"
+msgstr "교육 과정 보기"
 
 msgid "Learn from experienced instructors"
 msgstr "경험 많은 강사진에게 배우세요"
@@ -3204,15 +3205,11 @@ msgstr "경험 많은 강사진에게 배우세요"
 msgid "Certified coaches with competition, teaching and safeguarding experience."
 msgstr "경기, 지도 및 안전 관리 경험을 갖춘 공인 지도진입니다."
 
-#, fuzzy
-#| msgid "Meet the team"
 msgid "Meet the Niayesh family"
-msgstr "지도진 소개"
+msgstr "나이아쉬 가족을 만나보세요"
 
-#, fuzzy
-#| msgid "Honours"
 msgid "Club Honours"
-msgstr "수상 기록"
+msgstr "클럽 명예의 전당"
 
 msgid "Latest achievements and medal winners"
 msgstr "최근 성과와 메달 수상자"
@@ -3220,36 +3217,32 @@ msgstr "최근 성과와 메달 수상자"
 msgid "Only records approved by the technical board and cleared for public display appear here."
 msgstr "기술위원회의 승인과 공개 동의를 받은 기록만 표시됩니다."
 
-#, fuzzy
-#| msgid "Medal honor roll"
 msgid "Medal honour roll"
-msgstr "메달 수상자 명단"
+msgstr "메달 명예의 전당"
 
 msgid "Athlete profiles"
 msgstr "선수 프로필"
 
-#, fuzzy
-#| msgid "Verified achievements will appear here once approved."
 msgid "Approved achievements and medals will appear here once available."
-msgstr "승인된 성과가 여기에 표시됩니다."
+msgstr "승인된 성과와 메달이 등록되면 여기에 표시됩니다."
 
 msgid "Legal"
-msgstr ""
+msgstr "주요 탐색"
 
 msgid "Rules for using the TEAKWONDO platform and member code of conduct."
-msgstr ""
+msgstr "클럽"
 
 msgid "How we collect, store and protect your information."
-msgstr ""
+msgstr "클럽 소개"
 
 msgid "Translation fallback active: displaying the available language version."
 msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
 
 msgid "Last updated"
-msgstr ""
+msgstr "언어 선택"
 
 msgid "Legal & policies"
-msgstr ""
+msgstr "클럽 가입"
 
 msgid "Full data protection record"
 msgstr ""

@@ -579,7 +579,7 @@ html.has-scroll-reveal .home-page [data-scroll-reveal].is-visible {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: clamp(1.5rem, 3vw, 2.75rem);
 }
 

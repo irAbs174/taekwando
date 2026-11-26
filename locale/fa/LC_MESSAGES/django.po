@@ -2674,6 +2674,21 @@ msgstr "ناوبری اصلی"
 msgid "Martial Arts & Club Academy"
 msgstr "آکادمی و باشگاه هنرهای رزمی"
 
+msgid "Education, discipline and perseverance are the prelude to excellence."
+msgstr "آموزش, نظم و استمرار مقدمه تعالی"
+
+msgid "About Niayesh Taekwondo Club"
+msgstr "درباره باشگاه تکواندو نیایش"
+
+msgid "Quick access"
+msgstr "دسترسی سریع"
+
+msgid "Club photo gallery"
+msgstr "گالری تصاویر"
+
+msgid "Designer and developer"
+msgstr "طراح و برنامه نویس"
+
 msgid "Toggle navigation"
 msgstr "باز و بسته کردن منو"
 
@@ -3181,73 +3196,53 @@ msgstr "باشگاه تکواندو نیایش"
 msgid "Managed by Master Amir Shahabadi Farahani"
 msgstr "با مدیریت استاد امیر شاه آبادی فراهانی"
 
-#, fuzzy
-#| msgid "A bilingual martial arts academy uniting Persian and Korean budo traditions with modern sports education, transparent belt progression, and verified championship records."
 msgid "Taekwondo connects Persian martial arts traditions and Korean budo traditions with modern sports science, transparent belt progression, and a verified record of every championship achievement."
-msgstr "آکادمی دوزبانه هنرهای رزمی که سنت‌های رزمی ایرانی و بودوی کره‌ای را با آموزش نوین ورزشی، ارتقای شفاف کمربند و سوابق تأییدشده قهرمانی پیوند می‌دهد."
+msgstr "تکواندو سنت‌های رزمی ایرانی و بودوی کره‌ای را با علوم نوین ورزشی، ارتقای شفاف کمربند و سابقه تأییدشده هر دستاورد قهرمانی پیوند می‌دهد."
 
-#, fuzzy
-#| msgid "Champions"
 msgid "Club Champions"
-msgstr "قهرمانان"
+msgstr "قهرمانان باشگاه"
 
-#, fuzzy
-#| msgid "Create Member"
 msgid "Become a Member"
-msgstr "ایجاد عضو جدید"
+msgstr "عضویت در باشگاه"
 
 msgid "Taekwondo — Martial Arts Academy and Club"
 msgstr "تکواندو — آکادمی و باشگاه هنرهای رزمی"
 
-#, fuzzy
-#| msgid "Club at a glance"
 msgid "Academy at a glance"
-msgstr "باشگاه در یک نگاه"
+msgstr "آکادمی در یک نگاه"
 
-#, fuzzy
-#| msgid "Approved Member"
 msgid "Approved Members"
-msgstr "عضو تأییدشده"
+msgstr "اعضای تاییدشده"
 
-#, fuzzy
-#| msgid "Total Verified Medals"
 msgid "Verified Medals"
-msgstr "مجموع مدال‌های تاییدشده"
+msgstr "مدال‌های تاییدشده"
 
-#, fuzzy
-#| msgid "Black belt (Dan) level"
 msgid "Black Belt Holders"
-msgstr "سطح کمربند مشکی (دان)"
+msgstr "دارندگان کمربند مشکی"
 
 msgid "Official Championship Appearances"
-msgstr ""
+msgstr "حضور در مسابقات رسمی"
 
 msgid "Why learning Taekwondo matters"
 msgstr "لزوم فراگیری تکواندو"
 
-#, fuzzy
-#| msgid "Every athlete keeps a permanent training record, and every belt promotion, medal and community activity is reviewed by our technical board before publication."
 msgid "Taekwondo is a sport rooted in respect, effort and integrity. Every belt promotion, medal and community activity is reviewed by the technical committee before being registered in an athlete's official record."
-msgstr "هر ورزشکار دارای سابقه تمرینی ماندگار است و هر ارتقای کمربند، مدال و فعالیت اجتماعی پیش از انتشار توسط هیئت فنی بررسی می‌شود."
+msgstr "تکواندو ورزشی است که ریشه در احترام، تلاش و درستکاری دارد. هر ارتقای کمربند، مدال و فعالیت اجتماعی پیش از ثبت در سابقه رسمی ورزشکار توسط هیئت فنی بررسی می‌شود."
 
 msgid "From a child's first class to preparation for international competitions, our programme maintains a balance between technique, physical fitness, etiquette and responsibility."
-msgstr ""
+msgstr "از نخستین کلاس کودک تا آماده‌سازی برای مسابقات بین‌المللی، برنامه ما تعادل میان تکنیک، آمادگی جسمانی، ادب و مسئولیت‌پذیری را حفظ می‌کند."
 
-#, fuzzy
-#| msgid "Our story"
 msgid "Read our story"
-msgstr "داستان ما"
+msgstr "داستان ما را بخوانید"
 
-#, fuzzy
-#| msgid "See the curriculum"
 msgid "View the curriculum"
 msgstr "مشاهده برنامه درسی"
 
 msgid "Learn from experienced instructors"
-msgstr ""
+msgstr "از مربیان باتجربه بیاموزید"
 
 msgid "Certified coaches with competition, teaching and safeguarding experience."
-msgstr ""
+msgstr "مربیان دارای گواهینامه با تجربه مسابقه، آموزش و صیانت از ورزشکاران."
 
 msgid "Meet the Niayesh family"
 msgstr "آشنایی با خانواده بزرگ نیایش"
@@ -3256,25 +3251,19 @@ msgid "Club Honours"
 msgstr "افتخارات باشگاه"
 
 msgid "Latest achievements and medal winners"
-msgstr ""
+msgstr "تازه‌ترین افتخارات و مدال‌آوران"
 
-#, fuzzy
-#| msgid "Only records reviewed and approved by the club technical board are displayed on this profile."
 msgid "Only records approved by the technical board and cleared for public display appear here."
-msgstr "در این پروفایل تنها سوابقی نمایش داده می‌شود که هیئت فنی باشگاه بررسی و تأیید کرده است."
+msgstr "تنها سوابقی در اینجا نمایش داده می‌شود که هیئت فنی تأیید کرده و مجوز نمایش عمومی دارند."
 
-#, fuzzy
-#| msgid "Medal Winners & Honor Roll"
 msgid "Medal honour roll"
-msgstr "مدال‌آوران و تالار افتخارات"
+msgstr "تالار افتخارات مدال"
 
-#, fuzzy
-#| msgid "Member profiles"
 msgid "Athlete profiles"
-msgstr "پروفایل‌های اعضا"
+msgstr "پروفایل ورزشکاران"
 
 msgid "Approved achievements and medals will appear here once available."
-msgstr ""
+msgstr "افتخارات و مدال‌های تأییدشده پس از ثبت در اینجا نمایش داده می‌شوند."
 
 msgid "Legal"
 msgstr ""

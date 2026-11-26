@@ -5,10 +5,10 @@
       <div>
         <a class="footer-brand" href="{% url 'pages:home' %}">
           <img src="{% static 'images/logo-mark.svg' %}" alt="" width="36" height="36">
-          {{ SITE_NAME }}
+          {% if CURRENT_LANG == 'ko' %}{% trans "Niayesh Taekwondo Club" %}{% else %}{{ SITE_NAME }}{% endif %}
         </a>
         <p class="footer-about">
-          {% trans "A bilingual martial arts academy uniting Persian and Korean budo traditions with modern sports education, transparent belt progression, and verified championship records." %}
+          {% trans "About Niayesh Taekwondo Club" %}
         </p>
         <div class="social-links" aria-label="{% trans 'Social media' %}">
           {% for social in CLUB_SOCIAL_LINKS %}
@@ -20,46 +20,12 @@
       </div>
 
       <div>
-        <h2>{% trans "The Academy" %}</h2>
+        <h2>{% trans "Quick access" %}</h2>
         <ul>
-          <li><a href="{% url 'pages:about' %}">{% trans "About TEAKWONDO" %}</a></li>
-          <li><a href="{% url 'pages:education' %}">{% trans "Education & Curriculum" %}</a></li>
-          <li><a href="{% url 'pages:services' %}">{% trans "Training Programs" %}</a></li>
-          <li><a href="{% url 'champions:competitions' %}">{% trans "Competition Results" %}</a></li>
-          <li><a href="{% url 'blog:list' %}">{% trans "Articles & News" %}</a></li>
-          <li><a href="{% url 'pages:gallery' %}">{% trans "Photo Gallery" %}</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>{% trans "Championship" %}</h2>
-        <ul>
-          <li><a href="{% url 'champions:list' %}">{% trans "Athletes Directory" %}</a></li>
+          <li><a href="{% url 'pages:gallery' %}">{% trans "Club photo gallery" %}</a></li>
           <li><a href="{% url 'champions:medals' %}">{% trans "Medal Winners" %}</a></li>
           <li><a href="{% url 'champions:belts' %}">{% trans "Belt Registry" %}</a></li>
-          <li><a href="{% url 'products:list' %}">{% trans "Equipment Catalog" %}</a></li>
-          <li><a href="{% url 'contact:public' %}">{% trans "Visit the Dojo" %}</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>{% trans "Members & Contact" %}</h2>
-        <ul>
-          {% if user.is_authenticated %}
-          <li><a href="{% url 'members:dashboard' %}">{% trans "Member Dashboard" %}</a></li>
-          <li><a href="{% url 'members:profile_edit' %}">{% trans "My Profile" %}</a></li>
-          {% else %}
-          <li><a href="{% url 'accounts:login' %}">{% trans "Member Log In" %}</a></li>
-          <li><a href="{% url 'accounts:register' %}">{% trans "Apply for Membership" %}</a></li>
-          {% endif %}
-          <li><a href="{% url 'pages:privacy' %}">{% trans "Privacy Policy" %}</a></li>
-          <li><a href="{% url 'pages:terms' %}">{% trans "Terms of Use" %}</a></li>
-          <li>
-            <a class="ltr-inline" href="mailto:{{ CLUB_CONTACT_EMAIL }}">{{ CLUB_CONTACT_EMAIL }}</a>
-          </li>
-          {% if CLUB_PHONE %}
-          <li><a class="ltr-inline" href="tel:{{ CLUB_PHONE }}">{{ CLUB_PHONE }}</a></li>
-          {% endif %}
+          <li><a href="{% url 'pages:about' %}">{% trans "About Us" %}</a></li>
         </ul>
       </div>
     </div>
@@ -71,7 +37,7 @@
         <span aria-hidden="true">·</span>
         <a href="{% switch_lang_url 'ko' %}" lang="ko" hreflang="ko">한국어 (ko-KR)</a>
         <span aria-hidden="true">·</span>
-        <a href="{% url 'api:swagger-ui' %}">{% trans "API Docs" %}</a>
+        <a href="https://damerchi.ir">{% trans "Designer and developer" %}</a>
       </span>
     </div>
   </div>

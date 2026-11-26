@@ -42,6 +42,83 @@ class PublicShellTests(TestCase):
         self.assertIn("/static/js/main.js", html)
         self.assertIn('class="skip-link"', html)
 
+    def test_persian_homepage_uses_supplied_section_copy(self):
+        response = self.client.get("/fa/", HTTP_ACCEPT_LANGUAGE="fa")
+        self.assertEqual(response.status_code, 200)
+        html = response.content.decode()
+        for copy in (
+            "با مدیریت استاد امیر شاه آبادی فراهانی",
+            "تکواندو سنت‌های رزمی ایرانی و بودوی کره‌ای را با علوم نوین ورزشی، ارتقای شفاف کمربند و سابقه تأییدشده هر دستاورد قهرمانی پیوند می‌دهد.",
+            "قهرمانان باشگاه",
+            "عضویت در باشگاه",
+            "آکادمی در یک نگاه",
+            "اعضای تاییدشده",
+            "مدال‌های تاییدشده",
+            "دارندگان کمربند مشکی",
+            "حضور در مسابقات رسمی",
+            "لزوم فراگیری تکواندو",
+            "تکواندو ورزشی است که ریشه در احترام، تلاش و درستکاری دارد.",
+            "از نخستین کلاس کودک تا آماده‌سازی برای مسابقات بین‌المللی",
+            "داستان ما را بخوانید",
+            "مشاهده برنامه درسی",
+            "از مربیان باتجربه بیاموزید",
+            "مربیان دارای گواهینامه با تجربه مسابقه، آموزش و صیانت از ورزشکاران.",
+            "آشنایی با خانواده بزرگ نیایش",
+            "افتخارات باشگاه",
+            "تازه‌ترین افتخارات و مدال‌آوران",
+            "تنها سوابقی در اینجا نمایش داده می‌شود که هیئت فنی تأیید کرده و مجوز نمایش عمومی دارند.",
+            "تالار افتخارات مدال",
+            "پروفایل ورزشکاران",
+            "افتخارات و مدال‌های تأییدشده پس از ثبت در اینجا نمایش داده می‌شوند.",
+        ):
+            with self.subTest(copy=copy):
+                self.assertIn(copy, html)
+
+    def test_persian_homepage_header_and_footer_match_reference(self):
+        response = self.client.get("/fa/", HTTP_ACCEPT_LANGUAGE="fa")
+        self.assertEqual(response.status_code, 200)
+        html = response.content.decode()
+        for copy in (
+            "آموزش, نظم و استمرار مقدمه تعالی",
+            "درباره باشگاه تکواندو نیایش",
+            "دسترسی سریع",
+            "گالری تصاویر",
+            "مدال‌آوران",
+            "ثبت کمربندها",
+            "درباره ما",
+            "طراح و برنامه نویس",
+        ):
+            with self.subTest(copy=copy):
+                self.assertIn(copy, html)
+        self.assertIn('href="https://damerchi.ir">طراح و برنامه نویس</a>', html)
+        self.assertIn('href="/fa/about/">درباره ما</a>', html)
+
+    def test_korean_homepage_uses_korean_section_copy(self):
+        response = self.client.get("/ko/", HTTP_ACCEPT_LANGUAGE="ko")
+        self.assertEqual(response.status_code, 200)
+        html = response.content.decode()
+        for copy in (
+            "나이아쉬 태권도 클럽",
+            "아미르 샤하바디 파라하니 사범이 지도합니다",
+            "태권도는 페르시아 무술 전통과 한국 무도 전통을 현대 스포츠 과학, 투명한 승급 과정, 모든 대회 성과의 검증된 기록과 연결합니다.",
+            "클럽 챔피언",
+            "아카데미 한눈에 보기",
+            "공식 대회 참가 횟수",
+            "태권도를 배워야 하는 이유",
+            "나이아쉬 가족을 만나보세요",
+            "클럽 명예의 전당",
+            "최근 성과와 메달 수상자",
+            "메달 명예의 전당",
+            "승인된 성과와 메달이 등록되면 여기에 표시됩니다.",
+            "주요 탐색",
+            "클럽 소개",
+            "빠른 링크",
+            "소셜 미디어",
+            "기술 감독 및 수석 코치",
+        ):
+            with self.subTest(copy=copy):
+                self.assertIn(copy, html)
+
     def test_korean_shell_is_ltr_and_uses_ko_typography(self):
         with translation.override("ko"):
             url = reverse("pages:home")
