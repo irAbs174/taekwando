@@ -102,31 +102,13 @@ CLUB_SOCIAL_LINKS = [
 # Names are content (not interface strings); roles are translated via gettext.
 CLUB_INSTRUCTORS = [
     {
-        "name_fa": "استاد رضا موسوی",
-        "name_ko": "레자 무사비 사범",
+        "name_fa": "استاد امیر شاه آبادی فراهانی",
+        "name_ko": "아미르 샤하바디 파라하니 사범",
         "role": _("Technical Director & Head Coach"),
         "discipline": _("Taekwondo"),
         "rank_fa": "دان ۴ — استاد",
         "rank_ko": "4단 사범",
         "photo": "images/placeholders/instructor-1.svg",
-    },
-    {
-        "name_fa": "استاد هاروکی تاناکا",
-        "name_ko": "다나카 하루키 사범",
-        "role": _("Karate & Kata Program Lead"),
-        "discipline": _("Karate"),
-        "rank_fa": "دان ۳ کاراته",
-        "rank_ko": "가라테 3단",
-        "photo": "images/placeholders/instructor-2.svg",
-    },
-    {
-        "name_fa": "استاد سارا احمدی",
-        "name_ko": "사라 아흐마디 사범",
-        "role": _("Youth Development & Conditioning"),
-        "discipline": _("Judo"),
-        "rank_fa": "دان ۲ جودو",
-        "rank_ko": "유도 2단",
-        "photo": "images/placeholders/instructor-3.svg",
     },
 ]
 

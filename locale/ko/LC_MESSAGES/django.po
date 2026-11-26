@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TEAKWONDO 1.0\n"
-"Report-Msgid-Bugs-To: info@teakwondo.example.com\n"
-"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-26 03:45+0000\n"
 "PO-Revision-Date: 2026-11-17 00:00+0000\n"
 "Last-Translator: TEAKWONDO Localization Team\n"
 "Language-Team: TEAKWONDO ko\n"
@@ -13,311 +13,1113 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Skip to main content"
-msgstr "본문으로 건너뛰기"
-
-msgid "Martial Arts & Club Academy"
-msgstr "무술 및 클럽 아카데미"
-
-msgid "Home"
-msgstr "홈"
-
-msgid "About"
-msgstr "소개"
-
-msgid "About Teakwondo"
-msgstr "TEAKWONDO 소개"
-
-msgid "About TEAKWONDO"
-msgstr "TEAKWONDO 소개"
-
-msgid "Education"
-msgstr "교육"
-
-msgid "Programs"
-msgstr "프로그램"
-
-msgid "Champions"
-msgstr "챔피언"
-
-msgid "Blog"
-msgstr "블로그"
-
-msgid "Products"
-msgstr "제품"
-
-msgid "Contact"
-msgstr "문의"
-
-msgid "Admin"
-msgstr "관리자"
-
-msgid "Administration"
-msgstr "관리"
-
-msgid "Portal"
-msgstr "포털"
-
-msgid "Member Portal"
-msgstr "회원 포털"
-
-msgid "Member Dashboard"
-msgstr "회원 대시보드"
-
-msgid "Log In"
-msgstr "로그인"
-
-msgid "Log Out"
-msgstr "로그아웃"
-
-msgid "Join Club"
-msgstr "클럽 가입"
-
-msgid "Become a Member"
-msgstr "회원 가입"
-
-msgid "Academy"
-msgstr "아카데미"
-
-msgid "Training Programs"
-msgstr "훈련 프로그램"
-
-msgid "Articles & Blog"
-msgstr "기사 및 블로그"
-
-msgid "Equipment Catalog"
-msgstr "장비 목록"
-
-msgid "Champions & Honors"
-msgstr "챔피언 및 수상"
-
-msgid "Champions Directory"
-msgstr "챔피언 명단"
-
-msgid "Medal Winners"
-msgstr "메달 수상자"
-
-msgid "Belt Achievements"
-msgstr "띠 승급 기록"
-
-msgid "Competition Results"
-msgstr "대회 결과"
-
-msgid "Member Access"
-msgstr "회원 서비스"
-
-msgid "Member Log In"
-msgstr "회원 로그인"
-
-msgid "Member Registration"
-msgstr "회원 가입"
-
-msgid "Contact Club"
-msgstr "클럽에 문의"
-
-msgid "API Docs (v1)"
-msgstr "API 문서 (v1)"
-
-msgid "Privacy Policy"
-msgstr "개인정보 처리방침"
-
-msgid "Supported Languages"
-msgstr "지원 언어"
-
-msgid "All rights reserved."
-msgstr "모든 권리 보유."
-
-msgid ""
-"Multilingual martial arts education, certified athlete registry, belt "
-"rankings, and championship medal verification platform."
+msgid "Personal Info"
 msgstr ""
 
-msgid "Official Martial Arts Academy & Club Registry"
+msgid "Role & Access Control"
 msgstr ""
 
-msgid "Discipline, Education, and Verified Martial Arts Excellence"
+msgid "Timestamps"
 msgstr ""
 
-msgid ""
-"TEAKWONDO unites traditional Budo values with modern sports science, athlete"
-" belt registries, championship medal verification, and multilingual club "
-"management."
+msgid "Accounts & Roles"
 msgstr ""
 
-msgid "Explore Champions"
+msgid "First name"
 msgstr ""
 
-msgid "Approved Members"
-msgstr "승인된 회원"
-
-msgid "Gold Medals"
-msgstr "금메달"
-
-msgid "Silver Medals"
-msgstr "은메달"
-
-msgid "Bronze Medals"
-msgstr "동메달"
-
-msgid "Special Awards"
-msgstr "특별상"
-
-msgid "Total Verified Medals"
-msgstr "인증된 총 메달"
-
-msgid "Black Belt Holders"
-msgstr "검은띠 보유자"
-
-msgid "Training Programs & Martial Arts Education"
-msgstr "훈련 프로그램과 무술 교육"
-
-msgid ""
-"Certified coaching programs for youth beginners, competitive fighters, and "
-"Dan black belt candidates."
+msgid "Last name"
 msgstr ""
 
-msgid "All Programs"
-msgstr "모든 프로그램"
-
-msgid "Program"
-msgstr "프로그램"
-
-msgid "Curriculum"
-msgstr "교육 과정"
-
-msgid "Learn more"
-msgstr "자세히 보기"
-
-msgid "Read Module"
-msgstr "학습 내용 보기"
-
-msgid "Program Details"
-msgstr "프로그램 상세"
-
-msgid "Club Champions & Verified Athletes"
+msgid "Email address"
 msgstr ""
 
-msgid ""
-"Athletes whose ranks, achievements, and medals have been officially reviewed"
-" and approved."
+msgid "Phone number (optional)"
 msgstr ""
 
-msgid "View All Champions"
-msgstr "모든 챔피언 보기"
-
-msgid "View Profile"
-msgstr "프로필 보기"
-
-msgid "Recent Medal Winners"
-msgstr "최근 메달 수상자"
-
-msgid "Latest officially verified championship podium finishes."
+msgid "Primary martial arts discipline"
 msgstr ""
 
-msgid "Full Honor Roll"
-msgstr "전체 수상자 명단"
-
-msgid "Official Uniforms & Equipment"
+msgid "Password"
 msgstr ""
 
-msgid ""
-"Competition-grade uniforms, certified protective gear, and custom Dan belts."
+msgid "Confirm password"
 msgstr ""
 
-msgid "Browse Catalog"
-msgstr "목록 보기"
-
-msgid "Inquire for price"
-msgstr "가격 문의"
-
-msgid "Details"
-msgstr "상세 정보"
-
-msgid "Latest Articles & Club News"
+msgid "I agree to the club code of conduct and privacy policy."
 msgstr ""
 
-msgid "Technical insights, competition coverage, and belt exam guides."
+msgid "An account with this email already exists."
 msgstr ""
 
-msgid "All Articles"
-msgstr "모든 기사"
-
-msgid "Read article"
-msgstr "기사 읽기"
-
-msgid ""
-"Uniting martial arts heritage, athletic excellence, and verified sports "
-"education."
+msgid "The two password fields did not match."
 msgstr ""
 
-msgid ""
-"TEAKWONDO is a multilingual martial arts education, athlete development, "
-"belt ranking, and championship verification club connecting Persian and "
-"Korean martial arts communities."
+msgid "This account is currently deactivated. Please contact the club administrator."
 msgstr ""
 
-msgid "Martial Arts Education & Curriculum"
+msgid "Invalid email address or password."
 msgstr ""
 
-msgid ""
-"Technical study guides, Budo etiquette, sports physiology, and belt "
-"examination preparation."
+msgid "This email address is already in use."
 msgstr ""
 
-msgid "Martial Arts Services & Training Programs"
+msgid "Phone number"
 msgstr ""
 
-msgid ""
-"Structured courses from beginner foundations to international championship "
-"squads."
+msgid "Primary discipline"
 msgstr ""
 
-msgid "Training Program"
-msgstr "훈련 프로그램"
-
-msgid "Educational Content"
-msgstr "교육 콘텐츠"
-
-msgid "TEAKWONDO Champions & Verified Athletes"
+msgid "User role"
 msgstr ""
 
-msgid ""
-"Official registry of approved club athletes who authorized public profile "
-"publication."
+msgid "Initial password"
+msgstr ""
+
+msgid "Approve membership immediately"
+msgstr ""
+
+msgid "Club Member"
+msgstr "클럽 회원"
+
+msgid "A user with this email already exists."
+msgstr ""
+
+msgid "Super Administrator"
+msgstr ""
+
+msgid "Content Administrator"
+msgstr ""
+
+msgid "Club Manager"
+msgstr "클럽 관리자"
+
+msgid "Moderator"
+msgstr ""
+
+msgid "An email address is required."
+msgstr ""
+
+msgid "A user with this email address already exists."
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "Preferred language"
+msgstr ""
+
+msgid "Active status"
+msgstr ""
+
+msgid "Designates whether this account can log in."
+msgstr ""
+
+msgid "Staff status"
+msgstr ""
+
+msgid "Designates whether the user can access administration tools."
+msgstr ""
+
+msgid "Date joined"
+msgstr ""
+
+msgid "Updated at"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Only a Super Administrator can assign administrative roles."
+msgstr ""
+
+msgid "Only Super Administrators can modify user roles."
+msgstr ""
+
+msgid "Invalid role selected."
+msgstr ""
+
+msgid "You cannot downgrade your own Super Administrator role."
+msgstr ""
+
+msgid "You cannot deactivate your own account."
+msgstr ""
+
+msgid "Only Super Administrators can activate or deactivate staff accounts."
+msgstr ""
+
+msgid "Welcome to TEAKWONDO! Your member account has been created."
+msgstr ""
+
+msgid "Too many failed login attempts. Please wait a few minutes and try again."
+msgstr ""
+
+#, python-format
+msgid "Welcome back, %(name)s."
+msgstr ""
+
+msgid "You have been signed out safely."
+msgstr ""
+
+msgid "Account settings updated."
+msgstr ""
+
+msgid "Your password has been changed successfully."
+msgstr ""
+
+msgid "Medal"
+msgstr "메달"
+
+msgid "Achievement"
+msgstr ""
+
+msgid "Belt Promotion"
+msgstr ""
+
+msgid "Social Activity"
+msgstr ""
+
+msgid "Competition Record"
+msgstr ""
+
+msgid "Moderation decision saved and the member has been notified."
+msgstr ""
+
+msgid "Member account created successfully."
+msgstr ""
+
+msgid "Membership status updated."
+msgstr ""
+
+msgid "Account active status updated."
+msgstr ""
+
+msgid "User role updated."
+msgstr ""
+
+msgid "Member profile updated."
+msgstr ""
+
+msgid "Please correct the highlighted profile fields."
+msgstr ""
+
+msgid "Certificate"
+msgstr "증명서"
+
+msgid "View"
+msgstr "보기"
+
+msgid "Sports Achievements"
+msgstr ""
+
+msgid "Member"
+msgstr ""
+
+msgid "Achievement title"
+msgstr ""
+
+msgid "Achievement title (Korean)"
+msgstr ""
+
+#, fuzzy
+#| msgid "Achievement Date"
+msgid "Achievement title (Japanese)"
+msgstr "성과 날짜"
+
+msgid "Description"
+msgstr ""
+
+msgid "Description (Korean)"
+msgstr ""
+
+msgid "Description (Japanese)"
+msgstr ""
+
+msgid "Martial arts discipline"
+msgstr ""
+
+msgid "Competition"
+msgstr "대회"
+
+msgid "Achievement date"
+msgstr ""
+
+msgid "Supporting certificate"
+msgstr ""
+
+msgid "Achievements"
+msgstr "성과"
+
+msgid "Achievement date cannot be in the future."
+msgstr ""
+
+msgid "Your sports achievement has been submitted and is pending administrator review."
+msgstr ""
+
+msgid "Achievement updated and resubmitted for review."
+msgstr ""
+
+msgid "Achievement deleted."
+msgstr ""
+
+msgid "Correction request recorded. You can now edit and resubmit the achievement."
+msgstr ""
+
+msgid "Photograph"
+msgstr ""
+
+msgid "Social Activities"
+msgstr ""
+
+msgid "Activity title"
+msgstr ""
+
+msgid "Activity title (Korean)"
+msgstr ""
+
+msgid "Activity title (Japanese)"
+msgstr ""
+
+msgid "Activity date"
+msgstr ""
+
+msgid "Location"
+msgstr "장소"
+
+msgid "Location (Korean)"
+msgstr ""
+
+msgid "Location (Japanese)"
+msgstr ""
+
+msgid "Activity photograph"
+msgstr ""
+
+msgid "Public visibility consent"
+msgstr ""
+
+msgid "Allow displaying this social activity on my public athlete profile once approved."
+msgstr ""
+
+msgid "Social activity"
+msgstr ""
+
+msgid "Social activities"
+msgstr ""
+
+msgid "Activity date cannot be in the future."
+msgstr ""
+
+msgid "Your social activity has been submitted and is pending moderation."
+msgstr ""
+
+msgid "Social activity updated and resubmitted for moderation."
+msgstr ""
+
+msgid "Social activity removed."
+msgstr ""
+
+msgid "Correction request recorded. You can now edit and resubmit the activity."
+msgstr ""
+
+msgid "REST API"
+msgstr ""
+
+msgid "Audit Logs"
+msgstr "감사 기록"
+
+msgid "Search"
+msgstr "검색"
+
+msgid "Email, action, model, IP..."
+msgstr ""
+
+msgid "Action"
+msgstr "작업"
+
+msgid "Target model"
+msgstr ""
+
+msgid "Actor"
+msgstr "처리자"
+
+msgid "Actor email snapshot"
+msgstr ""
+
+msgid "Target ID"
+msgstr ""
+
+msgid "Target summary"
+msgstr ""
+
+msgid "Previous state"
+msgstr ""
+
+msgid "New state"
+msgstr ""
+
+msgid "IP address"
+msgstr ""
+
+msgid "User agent"
+msgstr ""
+
+msgid "Timestamp"
+msgstr ""
+
+msgid "Audit log"
+msgstr ""
+
+msgid "Audit logs"
+msgstr ""
+
+msgid "Belts & Rankings"
+msgstr ""
+
+msgid "Belt rank name (Persian)"
+msgstr ""
+
+msgid "Belt rank name (Korean)"
+msgstr ""
+
+msgid "Belt rank name (Japanese)"
+msgstr ""
+
+msgid "Rank code"
+msgstr ""
+
+msgid "Example: 10-GEUP, 5-GEUP, 1-DAN, 3-DAN"
+msgstr ""
+
+msgid "Rank progression order"
+msgstr ""
+
+msgid "Higher numbers indicate higher ranks (e.g., White=1 ... 9th Dan=19)."
+msgstr ""
+
+msgid "Belt badge color"
+msgstr ""
+
+msgid "Black belt (Dan) level"
+msgstr ""
+
+msgid "Active"
+msgstr "활성"
+
+msgid "Belt type"
+msgstr ""
+
+msgid "Belt types"
+msgstr ""
+
+msgid "Belt rank"
+msgstr "띠 등급"
+
+msgid "Award date"
+msgstr ""
+
+msgid "Examiner / Federation"
+msgstr "심사관 / 협회"
+
+msgid "Additional notes"
+msgstr ""
+
+msgid "Official belt certificate"
+msgstr ""
+
+msgid "Belt history"
+msgstr ""
+
+msgid "Belt histories"
+msgstr ""
+
+msgid "Award date cannot be in the future."
+msgstr ""
+
+msgid "Selected belt rank must match the chosen discipline."
+msgstr ""
+
+msgid "Your belt promotion request has been submitted and is pending review."
+msgstr ""
+
+msgid "Belt promotion updated and resubmitted for administrator review."
+msgstr ""
+
+msgid "Belt promotion submission removed."
+msgstr ""
+
+msgid "Correction request recorded. You can now edit and resubmit the record."
+msgstr ""
+
+msgid "Belt rank created."
+msgstr ""
+
+msgid "Belt rank updated."
+msgstr ""
+
+msgid "Blog & Articles"
+msgstr ""
+
+msgid "Name (Persian)"
+msgstr ""
+
+msgid "Description (Persian)"
+msgstr ""
+
+msgid "Name (Korean)"
+msgstr ""
+
+msgid "Title (Persian)"
+msgstr ""
+
+msgid "Excerpt (Persian)"
+msgstr ""
+
+msgid "Body (Persian)"
+msgstr ""
+
+msgid "Image Alt (Persian)"
+msgstr ""
+
+msgid "SEO Title (Persian)"
+msgstr ""
+
+msgid "SEO Description (Persian)"
+msgstr ""
+
+msgid "Title (Korean)"
+msgstr ""
+
+msgid "Excerpt (Korean)"
+msgstr ""
+
+msgid "Body (Korean)"
+msgstr ""
+
+msgid "Image Alt (Korean)"
+msgstr ""
+
+msgid "SEO Title (Korean)"
+msgstr ""
+
+msgid "SEO Description (Korean)"
+msgstr ""
+
+msgid "Provide a complete title and body in at least one language (Persian or Korean)."
+msgstr ""
+
+msgid "Slug"
+msgstr ""
+
+msgid "Display order"
+msgstr ""
+
+msgid "Blog category"
+msgstr ""
+
+msgid "Blog categories"
+msgstr ""
+
+msgid "Category"
+msgstr "카테고리"
+
+msgid "Language"
+msgstr "언어"
+
+msgid "Category name"
+msgstr ""
+
+msgid "Category translation"
+msgstr ""
+
+msgid "Category translations"
+msgstr ""
+
+msgid "Tag name (Persian)"
+msgstr ""
+
+msgid "Tag name (Korean)"
+msgstr ""
+
+msgid "Tag name (Japanese)"
+msgstr ""
+
+msgid "Tag"
+msgstr "태그"
+
+msgid "Tags"
+msgstr ""
+
+msgid "Author"
+msgstr "작성자"
+
+msgid "Featured image"
+msgstr ""
+
+msgid "Publication status"
+msgstr ""
+
+msgid "Publication date"
+msgstr ""
+
+msgid "Set a future date/time with Scheduled status to auto-publish."
+msgstr ""
+
+msgid "Featured article"
+msgstr ""
+
+msgid "SEO index"
+msgstr ""
+
+msgid "SEO follow"
+msgstr ""
+
+msgid "Blog post"
+msgstr ""
+
+msgid "Blog posts"
+msgstr ""
+
+msgid "Post"
+msgstr ""
+
+msgid "Title"
+msgstr "제목"
+
+msgid "Excerpt / summary"
+msgstr ""
+
+msgid "Article content"
+msgstr ""
+
+msgid "Featured image alt text"
+msgstr ""
+
+msgid "SEO title"
+msgstr ""
+
+msgid "SEO description"
+msgstr ""
+
+msgid "Canonical URL"
+msgstr ""
+
+msgid "Open Graph title"
+msgstr ""
+
+msgid "Open Graph description"
+msgstr ""
+
+msgid "Post translation"
+msgstr ""
+
+msgid "Post translations"
+msgstr ""
+
+msgid "Martial Arts Blog & Technical Articles"
+msgstr ""
+
+msgid "Articles on Taekwondo techniques, sports science, belt preparation, and TEAKWONDO championship updates."
+msgstr ""
+
+msgid "Blog article created successfully."
+msgstr ""
+
+msgid "Blog article updated successfully."
+msgstr ""
+
+msgid "Blog category created."
+msgstr ""
+
+msgid "Blog category updated."
+msgstr ""
+
+msgid "Competitions"
+msgstr "대회"
+
+msgid "You already submitted a participation record for this competition and division."
+msgstr ""
+
+msgid "Title (Japanese)"
+msgstr ""
+
+msgid "Location (Persian)"
+msgstr ""
+
+msgid "Start date"
+msgstr ""
+
+msgid "End date"
+msgstr ""
+
+msgid "Organizer (Persian)"
+msgstr ""
+
+msgid "Organizer (Korean)"
+msgstr ""
+
+#, fuzzy
+#| msgid "Organizer"
+msgid "Organizer (Japanese)"
+msgstr "주최자"
+
+msgid "Results summary (Persian)"
+msgstr ""
+
+msgid "Results summary (Korean)"
+msgstr ""
+
+msgid "Results summary (Japanese)"
+msgstr ""
+
+msgid "Published"
+msgstr ""
+
+msgid "Participants"
+msgstr ""
+
+msgid "End date cannot be earlier than start date."
+msgstr ""
+
+msgid "Division / Weight category"
+msgstr ""
+
+msgid "Result / Standing"
+msgstr ""
+
+msgid "Example: 1st Place, Silver Medalist, Quarterfinalist"
+msgstr ""
+
+msgid "Result / Standing (Korean)"
+msgstr ""
+
+msgid "Result / Standing (Japanese)"
+msgstr ""
+
+msgid "Numeric placement"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid "Participation / result certificate"
+msgstr ""
+
+msgid "Competition participation"
+msgstr ""
+
+msgid "Competition participations"
+msgstr ""
+
+msgid "Competition participation submitted and awaiting review."
+msgstr ""
+
+msgid "Competition record updated and resubmitted."
+msgstr ""
+
+msgid "Competition participation deleted."
+msgstr ""
+
+msgid "Competition created."
+msgstr ""
+
+msgid "Competition updated."
+msgstr ""
+
+msgid "Mark selected messages as read"
+msgstr ""
+
+#, python-format
+msgid "%(count)d message(s) marked read."
+msgstr ""
+
+msgid "Mark selected messages as unread"
+msgstr ""
+
+#, python-format
+msgid "%(count)d message(s) marked unread."
+msgstr ""
+
+msgid "Contact Messages"
+msgstr "문의 메시지"
+
+msgid "Please write a message of at least 10 characters."
+msgstr ""
+
+msgid "Spam submission rejected."
+msgstr ""
+
+msgid "Mark as read"
+msgstr ""
+
+msgid "Internal staff note"
+msgstr ""
+
+msgid "Full name"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Read status"
+msgstr ""
+
+msgid "Read at"
+msgstr ""
+
+msgid "Reviewed by"
+msgstr ""
+
+msgid "Submission date"
+msgstr ""
+
+msgid "Contact message"
+msgstr ""
+
+msgid "Contact messages"
+msgstr ""
+
+msgid "Too many messages submitted recently. Please try again in a few minutes."
+msgstr ""
+
+msgid "Contact TEAKWONDO Club"
+msgstr "TEAKWONDO 클럽에 문의"
+
+msgid "Reach out to TEAKWONDO martial arts academy regarding classes, membership, competitions, and training equipment."
+msgstr ""
+
+msgid "Thank you! Your message has been sent to the TEAKWONDO club team."
+msgstr ""
+
+msgid "Contact message updated."
+msgstr ""
+
+msgid "TEAKWONDO Administration"
+msgstr ""
+
+msgid "TEAKWONDO Admin"
+msgstr ""
+
+msgid "Club, Athlete & Multilingual Content Management"
+msgstr ""
+
+#, python-format
+msgid "%(count)d submission(s) updated."
+msgstr ""
+
+#, python-format
+msgid "%(count)d own submission(s) skipped (self-approval forbidden)."
+msgstr ""
+
+msgid "Approve selected submissions"
+msgstr ""
+
+msgid "Reject selected submissions"
+msgstr ""
+
+msgid "Request revision on selected submissions"
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+msgid "Request Revision"
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Decision"
+msgstr ""
+
+msgid "Administrator feedback / note"
+msgstr ""
+
+msgid "Provide clear feedback for the athlete..."
+msgstr ""
+
+msgid "Please provide a reason when rejecting or requesting revision."
+msgstr ""
+
+msgid "Correction details"
+msgstr ""
+
+msgid "Explain what needs to be updated or corrected..."
+msgstr ""
+
+msgid "Persian (fa-IR)"
+msgstr "페르시아어 (fa-IR)"
+
+msgid "Korean (ko-KR)"
+msgstr "한국어 (ko-KR)"
+
+msgid "Pending Review"
+msgstr "검토 대기"
+
+msgid "Approved"
+msgstr "승인됨"
+
+msgid "Rejected"
+msgstr "거절됨"
+
+msgid "Needs Revision"
+msgstr "수정 필요"
+
+msgid "Draft"
+msgstr ""
+
+msgid "Scheduled"
+msgstr ""
+
+msgid "Archived"
+msgstr "보관됨"
+
+msgid "Taekwondo"
+msgstr "태권도"
+
+msgid "Karate"
+msgstr "가라테"
+
+msgid "Judo"
+msgstr "유도"
+
+msgid "Aikido"
+msgstr "합기도"
+
+msgid "Kendo"
+msgstr "검도"
+
+msgid "Hapkido"
+msgstr "합기도"
+
+msgid "Other Martial Art"
+msgstr ""
+
+msgid "Created at"
+msgstr ""
+
+msgid "Approval status"
+msgstr ""
+
+msgid "Administrator feedback"
+msgstr ""
+
+msgid "Member correction request"
+msgstr ""
+
+msgid "Reviewer"
+msgstr ""
+
+msgid "Review date"
+msgstr ""
+
+msgid "Submitted"
+msgstr ""
+
+msgid "Resubmitted"
+msgstr ""
+
+msgid "Correction Requested"
+msgstr ""
+
+msgid "Reviewed"
+msgstr ""
+
+msgid "Submission summary"
+msgstr ""
+
+msgid "Event type"
+msgstr ""
+
+msgid "Previous status"
+msgstr ""
+
+msgid "New status"
+msgstr ""
+
+msgid "Actor / Reviewer"
+msgstr ""
+
+msgid "Decision note"
+msgstr ""
+
+msgid "Recorded at"
+msgstr ""
+
+msgid "Review log"
+msgstr ""
+
+msgid "Review logs"
+msgstr ""
+
+msgid "You may only request corrections for your own records."
+msgstr ""
+
+msgid "Please describe the correction needed."
+msgstr ""
+
+msgid "You are not authorized to review this submission."
+msgstr ""
+
+msgid "Invalid approval status."
+msgstr ""
+
+msgid "You cannot review or approve your own submission."
+msgstr ""
+
+#, python-format
+msgid "File size cannot exceed %(max_mb)s MB."
+msgstr ""
+
+msgid "Uploaded file is empty."
+msgstr ""
+
+msgid "File header does not match a valid image format."
+msgstr ""
+
+msgid "Invalid WebP image file."
+msgstr ""
+
+msgid "Image dimensions exceed the maximum allowed size."
+msgstr ""
+
+msgid "Unsupported image format. Use JPEG, PNG, or WebP."
+msgstr ""
+
+msgid "The uploaded file is not a valid or safe image."
+msgstr ""
+
+msgid "The uploaded file is not a valid PDF document."
+msgstr ""
+
+msgid "PDF files containing embedded scripts or actions are not permitted."
+msgstr ""
+
+msgid "Allowed image formats: JPG, JPEG, PNG, WebP."
+msgstr ""
+
+msgid "Allowed document formats: PDF, JPG, JPEG, PNG, WebP."
+msgstr ""
+
+msgid "Enter a valid phone number (digits, spaces, +, -, parentheses)."
+msgstr ""
+
+msgid "Evidence"
+msgstr ""
+
+msgid "Medals"
+msgstr "메달"
+
+msgid "Enter the competition name or select a registered competition."
+msgstr ""
+
+msgid "Enter the competition location."
+msgstr ""
+
+msgid "Gold"
+msgstr "금"
+
+msgid "Silver"
+msgstr "은"
+
+msgid "Bronze"
+msgstr "동"
+
+msgid "Other / Special Award"
+msgstr ""
+
+msgid "Medal type"
+msgstr "메달 종류"
+
+msgid "Registered competition"
+msgstr ""
+
+msgid "Competition name"
+msgstr ""
+
+msgid "Competition title (auto-filled when selecting a registered competition)."
+msgstr ""
+
+msgid "Competition name (Korean)"
+msgstr ""
+
+#, fuzzy
+#| msgid "Competitions"
+msgid "Competition name (Japanese)"
+msgstr "대회"
+
+msgid "Competition location"
+msgstr ""
+
+msgid "Competition location (Korean)"
+msgstr ""
+
+#, fuzzy
+#| msgid "My Competition Participations"
+msgid "Competition location (Japanese)"
+msgstr "내 대회 참가 기록"
+
+msgid "Division / Category"
+msgstr ""
+
+msgid "Supporting evidence / certificate"
+msgstr ""
+
+msgid "Your medal submission has been recorded and is pending administrator review."
+msgstr ""
+
+msgid "Medal submission updated and resubmitted for review."
+msgstr ""
+
+msgid "Medal submission deleted."
+msgstr ""
+
+msgid "Correction request recorded. You can now edit and resubmit the medal."
+msgstr ""
+
+msgid "Approve selected membership applications"
+msgstr ""
+
+#, python-format
+msgid "%(count)d membership application(s) approved."
+msgstr ""
+
+msgid "Reject selected membership applications"
+msgstr ""
+
+#, python-format
+msgid "%(count)d membership application(s) rejected."
+msgstr ""
+
+msgid "Club Members"
+msgstr ""
+
+msgid "You must grant public profile consent to make your profile visible."
+msgstr ""
+
+msgid "Membership decision"
+msgstr ""
+
+msgid "Administrator note"
 msgstr ""
 
 msgid "Athlete name"
 msgstr "선수 이름"
+
+msgid "Search athlete name..."
+msgstr ""
 
 msgid "Discipline"
 msgstr "종목"
 
 msgid "All disciplines"
 msgstr "모든 종목"
-
-msgid "Belt rank"
-msgstr "띠 등급"
-
-msgid "Belt Rank"
-msgstr "띠 등급"
-
-msgid "All belt ranks"
-msgstr "모든 띠 등급"
-
-msgid "Competition"
-msgstr "대회"
-
-msgid "All competitions"
-msgstr "모든 대회"
-
-msgid "Medal type"
-msgstr "메달 종류"
-
-msgid "Any medal"
-msgstr "모든 메달"
-
-msgid "All medals"
-msgstr "모든 메달"
 
 msgid "Sort by"
 msgstr "정렬"
@@ -331,60 +1133,1747 @@ msgstr "오래된 성과순"
 msgid "Most medals"
 msgstr "메달 많은 순"
 
-msgid "Search"
-msgstr "검색"
-
-msgid "Filter"
-msgstr "필터"
-
-msgid "Apply Filter"
-msgstr "필터 적용"
-
-msgid "Reset"
-msgstr "초기화"
-
-msgid "Medals"
-msgstr "메달"
-
-msgid "Achievements"
-msgstr "성과"
-
-msgid "No matching athletes found"
-msgstr "일치하는 선수가 없습니다"
-
-msgid "Try adjusting your search or filter criteria."
-msgstr "검색어나 필터를 변경해 보세요."
-
-msgid "Verified TEAKWONDO Athlete"
+msgid "Name (A-Z)"
 msgstr ""
 
-msgid "Member since"
-msgstr "가입일"
+msgid "Approved Member"
+msgstr ""
 
-msgid "Athlete Biography"
-msgstr "선수 소개"
+msgid "Suspended"
+msgstr "일시 중지"
 
-msgid "Verified Medals"
-msgstr "인증된 메달"
+msgid "User account"
+msgstr ""
 
-msgid "Verified Sports Achievements"
-msgstr "인증된 스포츠 성과"
+msgid "First name (Korean)"
+msgstr ""
 
-msgid "Official Belt Progression"
-msgstr "공식 승급 기록"
+msgid "First name (Japanese)"
+msgstr ""
 
-msgid "Official Championships"
-msgstr "공식 대회"
+msgid "Last name (Korean)"
+msgstr ""
 
-msgid "Community & Social Contributions"
-msgstr "지역사회 활동"
+msgid "Last name (Japanese)"
+msgstr ""
+
+msgid "Public profile slug"
+msgstr ""
+
+msgid "Profile photo"
+msgstr ""
+
+msgid "Biography (Persian)"
+msgstr ""
+
+msgid "Biography (Korean)"
+msgstr ""
+
+msgid "Biography (Japanese)"
+msgstr ""
+
+msgid "Birth date"
+msgstr ""
+
+msgid "Membership number"
+msgstr ""
+
+msgid "Joining date"
+msgstr ""
+
+msgid "Membership status"
+msgstr ""
+
+msgid "Membership reviewer"
+msgstr ""
+
+msgid "Public profile consent"
+msgstr ""
+
+msgid "I consent to displaying my approved sports records and name on the public website."
+msgstr ""
+
+msgid "Public profile visibility"
+msgstr ""
+
+msgid "Show my athlete profile in the public Champions directory."
+msgstr ""
+
+msgid "Member profile"
+msgstr ""
+
+msgid "Member profiles"
+msgstr ""
+
+msgid "Birth date cannot be in the future."
+msgstr ""
+
+msgid "Enter a valid birth date."
+msgstr ""
+
+msgid "You are not authorized to review membership applications."
+msgstr ""
+
+msgid "Invalid membership status."
+msgstr ""
+
+msgid "You cannot approve your own membership application."
+msgstr ""
+
+msgid "Your profile has been updated."
+msgstr ""
+
+msgid "TEAKWONDO Champions & Verified Athletes"
+msgstr ""
+
+msgid "Official directory of approved TEAKWONDO martial arts athletes, medal winners, black belt holders, and championship records."
+msgstr ""
+
+msgid "Champion Profile"
+msgstr ""
+
+msgid "Verified athlete profile at TEAKWONDO Club."
+msgstr ""
 
 msgid "Medal Winners & Honor Roll"
 msgstr ""
 
-msgid ""
-"Officially reviewed and approved Gold, Silver, Bronze, and special "
-"championship medals."
+msgid "Official verified Gold, Silver, and Bronze medal winners of TEAKWONDO Club."
+msgstr ""
+
+msgid "Official Belt Promotions & Black Belt Registry"
+msgstr ""
+
+msgid "Approved belt rank promotions and Dan black belt recipients at TEAKWONDO."
+msgstr ""
+
+msgid "Championship & Competition Results"
+msgstr ""
+
+msgid "Verified TEAKWONDO team results, tournament standings, and medalists."
+msgstr ""
+
+msgid "Notifications"
+msgstr "알림"
+
+msgid "Submission Pending"
+msgstr ""
+
+msgid "Submission Approved"
+msgstr ""
+
+msgid "Submission Rejected"
+msgstr ""
+
+msgid "Revision Requested"
+msgstr ""
+
+msgid "Membership Status Update"
+msgstr ""
+
+msgid "New Contact Message"
+msgstr ""
+
+msgid "System Notification"
+msgstr ""
+
+msgid "Recipient"
+msgstr ""
+
+msgid "Message (Persian / default)"
+msgstr ""
+
+msgid "Message (Korean)"
+msgstr ""
+
+msgid "Message (Japanese)"
+msgstr ""
+
+msgid "Notification type"
+msgstr ""
+
+msgid "Target link"
+msgstr ""
+
+msgid "Notification"
+msgstr ""
+
+msgid "All notifications marked as read."
+msgstr ""
+
+msgid "Pages & Programs"
+msgstr "페이지 및 프로그램"
+
+msgid "Subtitle (Persian)"
+msgstr ""
+
+msgid "Summary (Persian)"
+msgstr ""
+
+msgid "Content (Persian)"
+msgstr ""
+
+msgid "Subtitle (Korean)"
+msgstr ""
+
+msgid "Summary (Korean)"
+msgstr ""
+
+msgid "Content (Korean)"
+msgstr ""
+
+msgid "Provide a page title and body in at least one language."
+msgstr ""
+
+msgid "About Page"
+msgstr ""
+
+msgid "Educational Module"
+msgstr ""
+
+msgid "Training Program / Service"
+msgstr ""
+
+msgid "General Static Page"
+msgstr ""
+
+msgid "Policy / Legal Page"
+msgstr ""
+
+msgid "Page category"
+msgstr ""
+
+msgid "Show link in footer"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Pages"
+msgstr ""
+
+msgid "Subtitle"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Page content"
+msgstr ""
+
+msgid "Image alt text"
+msgstr ""
+
+msgid "Page translation"
+msgstr ""
+
+msgid "Page translations"
+msgstr ""
+
+msgid "Martial Arts Academy, Champions & Club Platform"
+msgstr ""
+
+msgid "About TEAKWONDO"
+msgstr "TEAKWONDO 소개"
+
+msgid "Learn about TEAKWONDO's martial arts philosophy, certified coaching programs, athlete verification workflow, and Persian-Korean cultural bridge."
+msgstr ""
+
+msgid "Martial Arts Education & Curriculum"
+msgstr ""
+
+msgid "Structured educational syllabus covering Poomsae, Kyorugi tactics, etiquette (Reigi), sports nutrition, and belt examination criteria."
+msgstr ""
+
+msgid "Martial Arts Services & Training Programs"
+msgstr ""
+
+msgid "Youth fundamentals, competitive sparring squads, black belt Dan preparation, and international training seminars at TEAKWONDO."
+msgstr ""
+
+msgid "Club Gallery — TEAKWONDO in Pictures"
+msgstr "클럽 갤러리 — 사진으로 보는 TEAKWONDO"
+
+msgid "Approved club photos from training, competitions and community activities, published with member consent."
+msgstr "회원의 동의를 받아 공개된 훈련, 대회 및 커뮤니티 활동 사진입니다."
+
+msgid "Page created successfully."
+msgstr ""
+
+msgid "Page updated successfully."
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "개인정보 처리방침"
+
+msgid "How TEAKWONDO collects, stores and protects member data, certificates and public athlete profile information."
+msgstr ""
+
+msgid "Terms of Use"
+msgstr "이용 약관"
+
+msgid "Terms of use, member code of conduct and acceptable use rules for the TEAKWONDO club platform."
+msgstr ""
+
+msgid "Products & Equipment"
+msgstr ""
+
+msgid "Upload Primary Product Image"
+msgstr ""
+
+msgid "Product Name (Persian)"
+msgstr ""
+
+msgid "Short Description (Persian)"
+msgstr ""
+
+msgid "Specifications (Persian)"
+msgstr ""
+
+msgid "Product Name (Korean)"
+msgstr ""
+
+msgid "Short Description (Korean)"
+msgstr ""
+
+msgid "Specifications (Korean)"
+msgstr ""
+
+msgid "Provide product name and description in at least one language."
+msgstr ""
+
+msgid "Product category"
+msgstr ""
+
+msgid "Product categories"
+msgstr ""
+
+msgid "Product category translation"
+msgstr ""
+
+msgid "Product category translations"
+msgstr ""
+
+msgid "SKU"
+msgstr ""
+
+msgid "Recommended discipline"
+msgstr ""
+
+msgid "Price (optional)"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Available for club inquiry"
+msgstr ""
+
+msgid "Featured product"
+msgstr ""
+
+msgid "Product"
+msgstr ""
+
+msgid "Products"
+msgstr "제품"
+
+msgid "Product name"
+msgstr ""
+
+msgid "Short description"
+msgstr ""
+
+msgid "Detailed description"
+msgstr ""
+
+msgid "Technical specifications"
+msgstr ""
+
+msgid "One specification per line."
+msgstr ""
+
+msgid "Product translation"
+msgstr ""
+
+msgid "Product translations"
+msgstr ""
+
+msgid "Product image"
+msgstr ""
+
+msgid "Alt text (Persian)"
+msgstr ""
+
+msgid "Alt text (Korean)"
+msgstr ""
+
+msgid "Alt text (Japanese)"
+msgstr ""
+
+msgid "Primary image"
+msgstr ""
+
+msgid "Product images"
+msgstr ""
+
+msgid "Martial Arts Equipment & Uniform Catalog"
+msgstr ""
+
+msgid "Official TEAKWONDO uniforms (Dobok & Dogi), certified protective gear, belts, and training equipment."
+msgstr ""
+
+msgid "Product created successfully."
+msgstr ""
+
+msgid "Product updated successfully."
+msgstr ""
+
+msgid "Product category created."
+msgstr ""
+
+msgid "Product category updated."
+msgstr ""
+
+msgid "SEO & Metadata"
+msgstr ""
+
+msgid "Meta Description (Persian)"
+msgstr ""
+
+msgid "Open Graph Title (Persian)"
+msgstr ""
+
+msgid "Open Graph Description (Persian)"
+msgstr ""
+
+msgid "Canonical URL Override (Persian)"
+msgstr ""
+
+msgid "Meta Description (Korean)"
+msgstr ""
+
+msgid "Open Graph Title (Korean)"
+msgstr ""
+
+msgid "Open Graph Description (Korean)"
+msgstr ""
+
+msgid "Canonical URL Override (Korean)"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
+
+msgid "About Teakwondo"
+msgstr "TEAKWONDO 소개"
+
+msgid "Educational Content"
+msgstr "교육 콘텐츠"
+
+msgid "Training Programs & Services"
+msgstr ""
+
+msgid "Photo Gallery"
+msgstr "사진 갤러리"
+
+msgid "Blog Index"
+msgstr ""
+
+msgid "Champions Directory"
+msgstr "챔피언 명단"
+
+msgid "Medal Winners"
+msgstr "메달 수상자"
+
+msgid "Belt Achievements"
+msgstr "띠 승급 기록"
+
+msgid "Competition Results"
+msgstr "대회 결과"
+
+msgid "Contact Us"
+msgstr ""
+
+msgid "Static route key"
+msgstr ""
+
+msgid "Linked content model"
+msgstr ""
+
+msgid "Linked object ID"
+msgstr ""
+
+msgid "Open Graph image"
+msgstr ""
+
+msgid "Robots index"
+msgstr ""
+
+msgid "Robots follow"
+msgstr ""
+
+msgid "SEO metadata"
+msgstr ""
+
+msgid "SEO entry"
+msgstr ""
+
+msgid "SEO meta description"
+msgstr ""
+
+msgid "Canonical URL override"
+msgstr ""
+
+msgid "Open Graph image alt text"
+msgstr ""
+
+msgid "SEO translation"
+msgstr ""
+
+msgid "SEO translations"
+msgstr ""
+
+msgid "SEO metadata saved."
+msgstr ""
+
+msgid "SEO metadata updated."
+msgstr ""
+
+msgid "Technical Director & Head Coach"
+msgstr ""
+
+msgid "Persian"
+msgstr "페르시아어"
+
+msgid "Korean"
+msgstr "한국어"
+
+msgid "Access Denied (403)"
+msgstr "접근 거부 (403)"
+
+msgid "Access Denied"
+msgstr "접근 거부"
+
+msgid "You do not have permission to view this page or resource."
+msgstr ""
+
+msgid "Return to Homepage"
+msgstr "홈으로 돌아가기"
+
+msgid "Member Portal"
+msgstr "회원 포털"
+
+msgid "Page Not Found (404)"
+msgstr "페이지를 찾을 수 없습니다 (404)"
+
+msgid "Page Not Found"
+msgstr "페이지를 찾을 수 없습니다"
+
+msgid "The requested page could not be found or is not publicly available."
+msgstr ""
+
+msgid "Browse Champions"
+msgstr "챔피언 보기"
+
+msgid "Server Error"
+msgstr ""
+
+msgid "An unexpected server error occurred. Please try again shortly."
+msgstr "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."
+
+msgid "Account Settings"
+msgstr "계정 설정"
+
+msgid "Manage your login email, preferred interface language, and password."
+msgstr "로그인 이메일, 언어와 비밀번호를 관리하세요."
+
+msgid "Change Password"
+msgstr "비밀번호 변경"
+
+msgid "Assigned Role"
+msgstr "지정된 역할"
+
+msgid "Save Settings"
+msgstr "설정 저장"
+
+msgid "Member Log In"
+msgstr "회원 로그인"
+
+msgid "Sign In to TEAKWONDO"
+msgstr "TEAKWONDO 로그인"
+
+msgid "Access your private club member portal or administration panel."
+msgstr "회원 포털 또는 관리자 페이지에 로그인하세요."
+
+msgid "Log In"
+msgstr "로그인"
+
+msgid "Forgot your password?"
+msgstr "비밀번호를 잊으셨나요?"
+
+msgid "Apply for Membership"
+msgstr "회원 가입 신청"
+
+msgid "Your member data and uploaded documents remain private."
+msgstr ""
+
+msgid "Update Password"
+msgstr "비밀번호 변경"
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Reset Password"
+msgstr "비밀번호 재설정"
+
+msgid "Enter your registered email address and we will send reset instructions."
+msgstr "가입한 이메일 주소를 입력하시면 재설정 안내를 보내드립니다."
+
+msgid "Send Reset Link"
+msgstr "재설정 링크 보내기"
+
+msgid "Return to Log In"
+msgstr "로그인으로 돌아가기"
+
+msgid "Password Reset Complete"
+msgstr "비밀번호 재설정 완료"
+
+msgid "Password Updated"
+msgstr "비밀번호가 변경되었습니다"
+
+msgid "Your new password is active. You may now sign in."
+msgstr ""
+
+msgid "Set New Password"
+msgstr "새 비밀번호 설정"
+
+msgid "Choose a New Password"
+msgstr "새 비밀번호 선택"
+
+msgid "Save New Password"
+msgstr "새 비밀번호 저장"
+
+msgid "Invalid or Expired Link"
+msgstr ""
+
+msgid "This password reset link is invalid or has already been used."
+msgstr ""
+
+msgid "Request New Link"
+msgstr ""
+
+msgid "Reset Link Sent"
+msgstr "재설정 링크 전송 완료"
+
+msgid "Check Your Email"
+msgstr "이메일 확인"
+
+msgid "If an active account exists for the address entered, password reset instructions have been sent."
+msgstr ""
+
+msgid "Member Registration"
+msgstr "회원 가입"
+
+msgid "TEAKWONDO Membership Registration"
+msgstr "TEAKWONDO 회원 가입"
+
+msgid "Create your athlete portal account. Your membership application is reviewed by club administrators."
+msgstr ""
+
+msgid "Create Member Account"
+msgstr ""
+
+msgid "Already registered?"
+msgstr "이미 가입하셨나요?"
+
+msgid "Scrollable table"
+msgstr ""
+
+msgid "Skip to main content"
+msgstr "본문으로 건너뛰기"
+
+msgid "Back to top"
+msgstr "맨 위로"
+
+msgid "System Audit Logs"
+msgstr ""
+
+msgid "Immutable security and administrative event trail."
+msgstr ""
+
+msgid "Target"
+msgstr ""
+
+msgid "IP Address"
+msgstr ""
+
+msgid "Belt Rank Form"
+msgstr "띠 등급 양식"
+
+msgid "Belt Rank"
+msgstr "띠 등급"
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Belt Ranks"
+msgstr "띠 등급"
+
+msgid "Belt Rank Configuration"
+msgstr "띠 등급 설정"
+
+msgid "Add Belt Rank"
+msgstr "띠 등급 추가"
+
+msgid "Order"
+msgstr ""
+
+msgid "Code"
+msgstr ""
+
+msgid "Persian Name"
+msgstr ""
+
+msgid "Korean Name"
+msgstr ""
+
+msgid "Edit"
+msgstr "수정"
+
+msgid "Blog Category"
+msgstr "블로그 카테고리"
+
+msgid "Blog Categories"
+msgstr "블로그 카테고리"
+
+msgid "Add Category"
+msgstr "카테고리 추가"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Competition Form"
+msgstr ""
+
+msgid "Save Competition"
+msgstr ""
+
+msgid "Competitions Management"
+msgstr ""
+
+msgid "Add Competition"
+msgstr "대회 추가"
+
+msgid "Dates"
+msgstr ""
+
+msgid "Yes"
+msgstr "예"
+
+msgid "No"
+msgstr "아니요"
+
+msgid "Back to Inbox"
+msgstr "받은 편지함으로 돌아가기"
+
+msgid "From"
+msgstr ""
+
+msgid "Received"
+msgstr ""
+
+msgid "Save Review Note"
+msgstr ""
+
+msgid "Contact Inbox"
+msgstr ""
+
+msgid "Contact Messages Inbox"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "Lang"
+msgstr ""
+
+msgid "Status"
+msgstr "상태"
+
+msgid "Date"
+msgstr "날짜"
+
+msgid "Read"
+msgstr ""
+
+msgid "Unread"
+msgstr ""
+
+msgid "Review"
+msgstr "심사"
+
+msgid "No contact messages received yet."
+msgstr ""
+
+msgid "Deactivate Account"
+msgstr "계정 비활성화"
+
+msgid "Reactivate Account"
+msgstr "계정 재활성화"
+
+msgid "Membership Application Decision"
+msgstr ""
+
+msgid "Update Membership Status"
+msgstr ""
+
+msgid "Role Assignment (Super Admin)"
+msgstr ""
+
+msgid "Save Role"
+msgstr ""
+
+msgid "Edit Member Profile"
+msgstr ""
+
+msgid "Save Profile Changes"
+msgstr ""
+
+msgid "Create Account"
+msgstr ""
+
+msgid "Members & Applications"
+msgstr "회원 및 가입 신청"
+
+msgid "Club Members & Membership Applications"
+msgstr "클럽 회원 및 가입 신청"
+
+msgid "Review membership applications, edit profiles, and manage member account status."
+msgstr ""
+
+msgid "Create Member"
+msgstr "회원 생성"
+
+msgid "All statuses"
+msgstr "모든 상태"
+
+msgid "Membership #"
+msgstr ""
+
+msgid "Email"
+msgstr "이메일"
+
+msgid "Membership"
+msgstr "회원 자격"
+
+msgid "Account"
+msgstr "계정"
+
+msgid "Public"
+msgstr ""
+
+msgid "Manage"
+msgstr ""
+
+msgid "Inactive"
+msgstr "비활성"
+
+msgid "Visible"
+msgstr "공개"
+
+msgid "Private"
+msgstr "비공개"
+
+msgid "No members found."
+msgstr ""
+
+msgid "Moderation Queue"
+msgstr "심사 대기 목록"
+
+msgid "Member Submission Moderation Queue"
+msgstr "회원 제출물 심사 대기 목록"
+
+msgid "Inspect uploaded certificates and approve, reject, or request revision on submissions."
+msgstr ""
+
+msgid "Submission type"
+msgstr ""
+
+msgid "All types"
+msgstr "모든 유형"
+
+msgid "Filter"
+msgstr "필터"
+
+msgid "Type"
+msgstr ""
+
+msgid "Submission"
+msgstr ""
+
+msgid "Athlete"
+msgstr "선수"
+
+msgid "Updated"
+msgstr ""
+
+msgid "Correction requested"
+msgstr ""
+
+msgid "No submissions match this moderation filter."
+msgstr ""
+
+msgid "Administration Dashboard"
+msgstr "관리자 대시보드"
+
+msgid "TEAKWONDO Administration Portal"
+msgstr "TEAKWONDO 관리자 포털"
+
+msgid "Signed in as"
+msgstr ""
+
+msgid "Total Members"
+msgstr "전체 회원"
+
+msgid "Pending Applications"
+msgstr "대기 중인 신청"
+
+msgid "Pending Submissions"
+msgstr "검토 대기 제출물"
+
+msgid "Unread Contact Messages"
+msgstr "읽지 않은 문의"
+
+msgid "Recent Moderation Decisions"
+msgstr "최근 심사 결과"
+
+msgid "Open Queue"
+msgstr "대기 목록 보기"
+
+msgid "No moderation events recorded yet."
+msgstr ""
+
+msgid "Recent Audit Trail"
+msgstr "최근 감사 기록"
+
+msgid "All Logs"
+msgstr "전체 기록"
+
+msgid "No audit logs recorded yet."
+msgstr ""
+
+msgid "Page Editor"
+msgstr ""
+
+msgid "Page (fa-IR & ko-KR)"
+msgstr ""
+
+msgid "Save Page"
+msgstr ""
+
+msgid "Manage Pages"
+msgstr ""
+
+msgid "Pages, Education & Programs"
+msgstr ""
+
+msgid "Add Page"
+msgstr "페이지 추가"
+
+msgid "Blog Article Editor"
+msgstr "블로그 기사 편집기"
+
+msgid "Blog Article (fa-IR & ko-KR)"
+msgstr "블로그 기사 (fa-IR 및 ko-KR)"
+
+msgid "Save Article"
+msgstr ""
+
+msgid "Manage Blog"
+msgstr ""
+
+msgid "Blog Articles (Persian & Korean)"
+msgstr "블로그 기사 (페르시아어 및 한국어)"
+
+msgid "New Article"
+msgstr ""
+
+msgid "Actions"
+msgstr "작업"
+
+msgid "Product Category"
+msgstr ""
+
+msgid "Product Categories"
+msgstr "제품 카테고리"
+
+msgid "Product Editor"
+msgstr ""
+
+msgid "Product (fa-IR & ko-KR)"
+msgstr ""
+
+msgid "Save Product"
+msgstr ""
+
+msgid "Manage Products"
+msgstr ""
+
+msgid "Products Catalog Management"
+msgstr ""
+
+msgid "Add Product"
+msgstr "제품 추가"
+
+msgid "Price"
+msgstr ""
+
+msgid "Moderation History"
+msgstr "심사 기록"
+
+msgid "Moderation & Review History"
+msgstr "심사 및 검토 기록"
+
+msgid "Transition"
+msgstr ""
+
+msgid "Note"
+msgstr ""
+
+msgid "Review Submission"
+msgstr ""
+
+msgid "Back to Queue"
+msgstr "대기 목록으로 돌아가기"
+
+msgid "Submission Details"
+msgstr ""
+
+msgid "Member Correction Request"
+msgstr ""
+
+msgid "Inspect Supporting Certificate / Evidence"
+msgstr ""
+
+msgid "No supporting file attached."
+msgstr ""
+
+msgid "Moderation Decision"
+msgstr ""
+
+msgid "Save Decision & Notify Member"
+msgstr "결정 저장 및 회원에게 알림"
+
+msgid "SEO Editor"
+msgstr ""
+
+msgid "SEO Metadata (fa-IR & ko-KR)"
+msgstr ""
+
+msgid "Save SEO"
+msgstr ""
+
+msgid "SEO Management"
+msgstr ""
+
+msgid "Multilingual SEO Metadata"
+msgstr ""
+
+msgid "Add Route SEO"
+msgstr "페이지 SEO 추가"
+
+msgid "Route"
+msgstr ""
+
+msgid "Localized Title"
+msgstr ""
+
+msgid "Robots"
+msgstr ""
+
+msgid "Administration navigation"
+msgstr "관리 메뉴"
+
+msgid "Administration"
+msgstr "관리"
+
+msgid "Close"
+msgstr "닫기"
+
+msgid "Administration workspace"
+msgstr "관리 작업 공간"
+
+msgid "Menu"
+msgstr ""
+
+msgid "Member dashboard navigation"
+msgstr ""
+
+msgid "Dashboard content"
+msgstr ""
+
+msgid "Edit & Resubmit"
+msgstr "수정 후 다시 제출"
+
+msgid "Request Correction"
+msgstr "수정 요청"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Administrator Feedback"
+msgstr "관리자 의견"
+
+msgid "Achievement Date"
+msgstr "성과 날짜"
+
+msgid "Private Certificate"
+msgstr ""
+
+msgid "View Protected Certificate"
+msgstr "보호된 증명서 보기"
+
+msgid "Submit Achievement"
+msgstr "성과 제출"
+
+msgid "Edit Sports Achievement"
+msgstr ""
+
+msgid "Submit Sports Achievement"
+msgstr ""
+
+msgid "Submit for Review"
+msgstr "심사 요청"
+
+msgid "My Achievements"
+msgstr "내 성과"
+
+msgid "My Sports Achievements"
+msgstr "내 스포츠 성과"
+
+msgid "Submit sports achievements and track administrator approval status."
+msgstr ""
+
+msgid "Add Achievement"
+msgstr "성과 추가"
+
+msgid "No sports achievements submitted yet."
+msgstr ""
+
+msgid "Submit First Achievement"
+msgstr ""
+
+msgid "Public Display Consent"
+msgstr ""
+
+msgid "Granted"
+msgstr ""
+
+msgid "Not granted (private)"
+msgstr ""
+
+msgid "View Uploaded Photograph"
+msgstr "업로드된 사진 보기"
+
+msgid "Submit Social Activity"
+msgstr "사회 활동 제출"
+
+msgid "Edit Social Activity"
+msgstr ""
+
+msgid "Submit Activity"
+msgstr "활동 제출"
+
+msgid "My Social Activities"
+msgstr "내 사회 활동"
+
+msgid "My Social & Community Activities"
+msgstr "내 사회 및 지역사회 활동"
+
+msgid "Document coaching workshops, volunteer events, and cultural outreach."
+msgstr ""
+
+msgid "Public Consent"
+msgstr ""
+
+msgid "No social activities submitted yet."
+msgstr ""
+
+msgid "Award Date"
+msgstr "수상일"
+
+msgid "Belt Promotion Request"
+msgstr "승급 신청"
+
+msgid "Edit Belt Promotion"
+msgstr ""
+
+msgid "Submit Belt Promotion Request"
+msgstr ""
+
+msgid "Submit Promotion Request"
+msgstr ""
+
+msgid "My Belt History"
+msgstr "내 승급 기록"
+
+msgid "Track your approved belt rankings and submit belt promotion certificates."
+msgstr ""
+
+msgid "Request Belt Promotion"
+msgstr "승급 신청"
+
+msgid "No belt promotion records submitted yet."
+msgstr ""
+
+msgid "Submit Belt Promotion"
+msgstr ""
+
+msgid "Division"
+msgstr "부문"
+
+msgid "Result"
+msgstr "결과"
+
+msgid "Competition Participation"
+msgstr ""
+
+msgid "Edit Competition Record"
+msgstr ""
+
+msgid "Add Competition Participation"
+msgstr "대회 참가 추가"
+
+msgid "Submit Record"
+msgstr ""
+
+msgid "My Competitions"
+msgstr "내 대회"
+
+msgid "My Competition Participations"
+msgstr "내 대회 참가 기록"
+
+msgid "Record your tournament appearances, weight divisions, and standings."
+msgstr ""
+
+msgid "Add Competition Record"
+msgstr "대회 기록 추가"
+
+msgid "No competition participation records added yet."
+msgstr ""
+
+msgid "Confirm Deletion"
+msgstr ""
+
+msgid "Delete Submission?"
+msgstr ""
+
+msgid "Are you sure you want to permanently remove this submission?"
+msgstr "이 제출물을 영구 삭제하시겠습니까?"
+
+msgid "Yes, Delete"
+msgstr "예, 삭제합니다"
+
+msgid "Competition Location"
+msgstr ""
+
+msgid "Private Evidence File"
+msgstr ""
+
+msgid "View Protected Evidence"
+msgstr "보호된 증빙 자료 보기"
+
+msgid "Submit Medal"
+msgstr "메달 제출"
+
+msgid "Edit Medal Submission"
+msgstr ""
+
+msgid "My Medals"
+msgstr "내 메달"
+
+msgid "Submit championship medals with supporting certificates for club verification."
+msgstr ""
+
+msgid "You have not submitted any medals yet."
+msgstr ""
+
+msgid "Review decisions, membership updates, and club alerts."
+msgstr ""
+
+msgid "Mark All as Read"
+msgstr "모두 읽음으로 표시"
+
+msgid "New"
+msgstr "신규"
+
+msgid "Open"
+msgstr "열기"
+
+msgid "Mark Read"
+msgstr "읽음으로 표시"
+
+msgid "You have no notifications yet."
+msgstr ""
+
+msgid "Member Dashboard"
+msgstr "회원 대시보드"
+
+msgid "No approved belt recorded yet"
+msgstr "승인된 띠 기록이 없습니다"
+
+msgid "Edit Profile"
+msgstr "프로필 수정"
+
+msgid "View Public Profile"
+msgstr "공개 프로필 보기"
+
+msgid "Club Administration Note"
+msgstr "클럽 관리자 메모"
+
+msgid "Current Approved Belt"
+msgstr "현재 승인된 띠"
+
+msgid "Approved Medals"
+msgstr "승인된 메달"
+
+msgid "gold"
+msgstr ""
+
+msgid "silver"
+msgstr ""
+
+msgid "bronze"
+msgstr ""
+
+msgid "Approved Achievements"
+msgstr "승인된 성과"
+
+msgid "Quick Submit"
+msgstr "빠른 제출"
+
+msgid "All submissions are reviewed before publication."
+msgstr "모든 제출물은 공개 전에 검토됩니다."
+
+msgid "Recent Submissions"
+msgstr ""
+
+msgid "All achievements"
+msgstr "모든 성과"
+
+msgid "Your recent submissions"
+msgstr ""
+
+msgid "Record"
+msgstr ""
+
+msgid "Details"
+msgstr "상세 정보"
+
+msgid "You have not submitted any sports records yet. Use the buttons above to get started."
+msgstr ""
+
+msgid "Recent Notifications"
+msgstr ""
+
+msgid "View all"
+msgstr ""
+
+msgid "Recent Activities"
+msgstr ""
+
+msgid "Personal Profile"
+msgstr "개인 프로필"
+
+msgid "Personal Profile & Public Privacy"
+msgstr "개인 프로필 및 공개 설정"
+
+msgid "Membership Number"
+msgstr "회원 번호"
+
+msgid "Joined"
+msgstr "가입일"
+
+msgid "Your birth date, phone number, email address and uploaded certificates are always private and are never displayed on public pages."
+msgstr ""
+
+msgid "Save Profile"
+msgstr "프로필 저장"
+
+msgid "Public Profile"
+msgstr ""
+
+msgid "Belt History"
+msgstr "띠 승급 기록"
+
+msgid "No belt records yet."
+msgstr ""
+
+msgid "Request Record Correction"
+msgstr ""
+
+msgid "Submitting a correction request places this record back under review so you can update details for administrator re-verification."
+msgstr ""
+
+msgid "Submit Correction Request"
+msgstr "수정 요청 제출"
+
+msgid "Hello,"
+msgstr ""
+
+msgid "You requested a password reset for your TEAKWONDO Club account."
+msgstr ""
+
+msgid "Open the link below to set a new password:"
+msgstr ""
+
+msgid "If you did not request this change, you can safely ignore this email."
+msgstr ""
+
+msgid "TEAKWONDO — Password Reset Request"
+msgstr ""
+
+msgid "Breadcrumb"
+msgstr "현재 위치"
+
+msgid "Home"
+msgstr "홈"
+
+msgid "Begin your martial arts journey with TEAKWONDO"
+msgstr ""
+
+msgid "Train in a bilingual, safety-first dojo with certified coaches, transparent belt progression, and a verified record of every achievement you earn."
+msgstr ""
+
+msgid "Open Member Portal"
+msgstr ""
+
+msgid "Book a Trial Session"
+msgstr ""
+
+msgid "A bilingual martial arts academy uniting Persian and Korean budo traditions with modern sports education, transparent belt progression, and verified championship records."
+msgstr "페르시아와 한국의 무술 전통을 현대 스포츠 교육, 투명한 승급 과정 및 인증된 대회 기록과 결합한 이중 언어 무술 아카데미입니다."
+
+msgid "Social media"
+msgstr ""
+
+msgid "The Academy"
+msgstr "아카데미"
+
+msgid "Education & Curriculum"
+msgstr "교육 및 교육 과정"
+
+msgid "Training Programs"
+msgstr "훈련 프로그램"
+
+msgid "Articles & News"
+msgstr "기사 및 소식"
+
+msgid "Championship"
+msgstr "대회"
+
+msgid "Athletes Directory"
+msgstr "선수 명단"
+
+msgid "Belt Registry"
+msgstr "띠 등록부"
+
+msgid "Equipment Catalog"
+msgstr "장비 목록"
+
+msgid "Visit the Dojo"
+msgstr "도장 방문"
+
+msgid "Members & Contact"
+msgstr "회원 및 문의"
+
+msgid "My Profile"
+msgstr "내 프로필"
+
+msgid "All rights reserved."
+msgstr "모든 권리 보유."
+
+msgid "API Docs"
+msgstr "API 문서"
+
+msgid "Please correct the following errors:"
+msgstr ""
+
+msgid "Show password"
+msgstr ""
+
+msgid "Hide password"
+msgstr ""
+
+msgid "Selected images are previewed locally before upload. Certificates remain private."
+msgstr ""
+
+msgid "Photo preview"
+msgstr "사진 미리보기"
+
+msgid "Special Award"
+msgstr "특별상"
+
+msgid "System messages"
+msgstr ""
+
+msgid "Dismiss"
+msgstr ""
+
+msgid "Please confirm"
+msgstr ""
+
+msgid "Are you sure you want to continue? This action cannot be undone."
+msgstr "계속하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+
+msgid "Yes, Continue"
+msgstr ""
+
+msgid "Primary navigation"
+msgstr ""
+
+msgid "Martial Arts & Club Academy"
+msgstr "무술 및 클럽 아카데미"
+
+msgid "Toggle navigation"
+msgstr "메뉴 열기"
+
+msgid "The Club"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+msgid "Visit & Contact"
+msgstr "방문 및 문의"
+
+msgid "Champions"
+msgstr "챔피언"
+
+msgid "Blog"
+msgstr "블로그"
+
+msgid "Gallery"
+msgstr "갤러리"
+
+msgid "Equipment"
+msgstr "장비"
+
+msgid "Contact"
+msgstr "문의"
+
+msgid "Language selector"
+msgstr ""
+
+msgid "Toggle dark mode"
+msgstr "다크 모드 전환"
+
+msgid "Log Out"
+msgstr "로그아웃"
+
+msgid "Join the Club"
+msgstr ""
+
+msgid "My Account"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Pagination"
+msgstr ""
+
+msgid "Previous"
+msgstr "이전"
+
+msgid "Next"
+msgstr "다음"
+
+msgid "Event"
+msgstr "행사"
+
+msgid "Note / Feedback"
+msgstr ""
+
+msgid "Overview"
+msgstr "개요"
+
+msgid "Members & sport"
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Blog Articles"
+msgstr "블로그 기사"
+
+msgid "Products Catalog"
+msgstr "제품 목록"
+
+msgid "SEO & Translations"
+msgstr "SEO 및 번역"
+
+msgid "Inbox & system"
+msgstr ""
+
+msgid "Django Admin"
+msgstr "Django 관리자"
+
+msgid "My Belts"
+msgstr ""
+
+msgid "Learn about TEAKWONDO's martial arts philosophy, certified coaching, athlete verification workflow and Persian-Korean cultural bridge."
+msgstr ""
+
+msgid "Established martial arts academy"
+msgstr ""
+
+msgid "Uniting martial arts heritage, athletic excellence and verified sports education."
+msgstr ""
+
+msgid "Our story"
+msgstr "클럽 이야기"
+
+msgid "This content is currently shown in the club's alternate language."
+msgstr "이 콘텐츠는 현재 다른 언어로 표시됩니다."
+
+msgid "TEAKWONDO is a multilingual martial arts education, athlete development, belt ranking and championship verification club connecting Persian and Korean martial arts communities."
+msgstr ""
+
+msgid "Every athlete keeps a permanent training record, and every belt promotion, medal and community activity is reviewed by our technical board before publication."
+msgstr ""
+
+msgid "Club at a glance"
+msgstr ""
+
+msgid "Disciplines"
+msgstr ""
+
+msgid "Taekwondo · Karate · Judo"
+msgstr ""
+
+msgid "Languages"
+msgstr "언어"
+
+msgid "Youth, adult and elite squads"
+msgstr ""
+
+msgid "Records"
+msgstr ""
+
+msgid "Reviewed and verified"
+msgstr ""
+
+msgid "Visit the dojo"
+msgstr ""
+
+msgid "Contact the club"
+msgstr "클럽에 문의"
+
+msgid "Mission & values"
+msgstr ""
+
+msgid "What we stand for"
+msgstr ""
+
+msgid "Our mission is to develop confident, respectful and resilient people through authentic martial arts practice."
+msgstr ""
+
+msgid "Safety first"
+msgstr ""
+
+msgid "Progressive intensity, qualified supervision and evidence-based injury prevention guide every session."
+msgstr ""
+
+msgid "Respect & etiquette"
+msgstr ""
+
+msgid "Reigi, humility and mutual care are taught alongside technique, inside and outside the dojo."
+msgstr ""
+
+msgid "Honest progression"
+msgstr ""
+
+msgid "Belt ranks reflect demonstrated skill and character, never shortcuts or favouritism."
+msgstr ""
+
+msgid "Community responsibility"
+msgstr ""
+
+msgid "Members contribute through volunteering, youth mentoring and cultural exchange activities."
+msgstr ""
+
+msgid "One club, two languages"
+msgstr "하나의 클럽, 두 언어"
+
+msgid "Persian and Korean members share standards, events and a single verified record system."
+msgstr ""
+
+msgid "Privacy by design"
+msgstr ""
+
+msgid "Personal data and certificates stay private; public profiles require explicit consent."
+msgstr ""
+
+msgid "Training philosophy"
+msgstr ""
+
+msgid "Practice with purpose"
+msgstr ""
+
+msgid "Progress comes from repetition, reflection and respect — not from collecting belts."
+msgstr ""
+
+msgid "See the curriculum"
+msgstr ""
+
+msgid "Fundamentals first"
+msgstr ""
+
+msgid "Stance, balance, breathing and etiquette form the base of every discipline."
+msgstr ""
+
+msgid "Technical precision"
+msgstr ""
+
+msgid "Coaches break down each technique, then rebuild it under controlled pressure."
+msgstr ""
+
+msgid "Applied practice"
+msgstr ""
+
+msgid "Sparring, randori and scenario drills teach decision-making without sacrificing safety."
+msgstr ""
+
+msgid "Reflection and service"
+msgstr ""
+
+msgid "Self-assessment, mentoring and community service complete the path to senior rank."
+msgstr ""
+
+msgid "Coaching team"
+msgstr "지도진"
+
+msgid "Our instructors"
+msgstr "강사진"
+
+msgid "Qualified coaches who combine competition experience with a commitment to athlete welfare."
+msgstr ""
+
+msgid "Programs"
+msgstr "프로그램"
+
+msgid "Training programs"
+msgstr "훈련 프로그램"
+
+msgid "View all programs"
+msgstr "모든 프로그램 보기"
+
+msgid "All levels"
+msgstr "모든 수준"
+
+msgid "Program details"
 msgstr ""
 
 msgid "Belt Achievements & Black Belt Registry"
@@ -393,80 +2882,455 @@ msgstr ""
 msgid "Officially verified belt promotions and Dan black belt awards."
 msgstr ""
 
-msgid ""
-"Official championships, participating TEAKWONDO athletes, and verified "
-"podium outcomes."
+msgid "All belt ranks"
+msgstr "모든 띠 등급"
+
+msgid "Reset"
+msgstr "초기화"
+
+msgid "Verified belt promotions"
 msgstr ""
 
-msgid "Athlete"
-msgstr "선수"
+msgid "No belt promotion records match your filters."
+msgstr ""
 
-msgid "Medal"
-msgstr "메달"
+msgid "Journal"
+msgstr "소식지"
 
-msgid "Event"
-msgstr "행사"
+msgid "Translation fallback active: showing the available language edition."
+msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
 
-msgid "Location"
-msgstr "장소"
+msgid "Back to the journal"
+msgstr "소식지로 돌아가기"
 
-msgid "Date"
-msgstr "날짜"
+msgid "Article details"
+msgstr "기사 상세 정보"
 
-msgid "Award Date"
-msgstr "수상일"
+msgid "Related articles"
+msgstr ""
 
-msgid "Examiner / Federation"
-msgstr "심사관 / 협회"
-
-msgid "Division"
-msgstr "부문"
-
-msgid "Result"
-msgstr "결과"
-
-msgid "Organizer"
-msgstr "주최자"
+msgid "Knowledge & news"
+msgstr ""
 
 msgid "TEAKWONDO Blog & Martial Arts Journal"
 msgstr ""
 
-msgid ""
-"Technical insights, championship coverage, sports conditioning, and club "
-"announcements."
+msgid "Technical insights, championship coverage, sports conditioning and club announcements."
 msgstr ""
 
 msgid "Search articles"
 msgstr "기사 검색"
 
-msgid "Category"
-msgstr "카테고리"
+msgid "Search the journal"
+msgstr ""
 
 msgid "All categories"
 msgstr "모든 카테고리"
 
-msgid "Tag"
-msgstr "태그"
-
 msgid "All tags"
 msgstr "모든 태그"
 
-msgid "Back to Blog"
-msgstr "블로그로 돌아가기"
+msgid "By"
+msgstr "작성자"
 
-msgid "Official Products & Martial Arts Equipment"
+msgid "Read article"
+msgstr "기사 읽기"
+
+msgid "No published articles found."
 msgstr ""
 
-msgid ""
-"Club-approved uniforms (Dobok & Dogi), competition armor, embroidered Dan "
-"belts, and training tools."
+msgid "Try a different search term or browse all categories."
 msgstr ""
 
-msgid "Search catalog"
-msgstr "제품 검색"
+msgid "All articles"
+msgstr "모든 기사"
 
-msgid "SKU"
+msgid "Verified TEAKWONDO Athlete"
 msgstr ""
+
+msgid "Member since"
+msgstr "가입일"
+
+msgid "Total Verified Medals"
+msgstr "인증된 총 메달"
+
+msgid "Gold Medals"
+msgstr "금메달"
+
+msgid "Silver Medals"
+msgstr "은메달"
+
+msgid "Bronze Medals"
+msgstr "동메달"
+
+msgid "Athlete Biography"
+msgstr "선수 소개"
+
+msgid "Approved medal records"
+msgstr "승인된 메달 기록"
+
+msgid "No approved medals recorded yet."
+msgstr ""
+
+msgid "Verified Sports Achievements"
+msgstr "인증된 스포츠 성과"
+
+msgid "Community & Social Contributions"
+msgstr "지역사회 활동"
+
+msgid "Official Belt Progression"
+msgstr "공식 승급 기록"
+
+msgid "No approved belt rankings listed yet."
+msgstr ""
+
+msgid "Verification"
+msgstr ""
+
+msgid "Only records reviewed and approved by the club technical board are displayed on this profile."
+msgstr ""
+
+msgid "Privacy consent confirmed"
+msgstr ""
+
+msgid "Back to athletes"
+msgstr "선수 목록으로 돌아가기"
+
+msgid "Official registry of approved club athletes who authorized public profile publication."
+msgstr ""
+
+msgid "Profiles appear only when membership is approved, records are verified, and the athlete has granted explicit public visibility consent."
+msgstr ""
+
+msgid "Search name..."
+msgstr ""
+
+msgid "All competitions"
+msgstr "모든 대회"
+
+msgid "Any medal"
+msgstr "모든 메달"
+
+msgid "View Profile"
+msgstr "프로필 보기"
+
+msgid "No matching athletes found"
+msgstr "일치하는 선수가 없습니다"
+
+msgid "Try adjusting your search or filter criteria."
+msgstr "검색어나 필터를 변경해 보세요."
+
+msgid "Reset filters"
+msgstr ""
+
+msgid "Official championships, participating TEAKWONDO athletes and verified podium outcomes."
+msgstr ""
+
+msgid "Verified participant results will be published after the technical board review."
+msgstr ""
+
+msgid "No published competition results yet."
+msgstr ""
+
+msgid "We are here to help"
+msgstr "무엇을 도와드릴까요"
+
+msgid "Questions about training schedules, membership, seminars or official equipment? Send us a message."
+msgstr "훈련 일정, 회원 가입, 세미나 또는 공식 장비에 대해 궁금하신가요? 메시지를 보내 주세요."
+
+msgid "Send an inquiry"
+msgstr "문의 보내기"
+
+msgid "Our multilingual administration desk replies in Persian and Korean."
+msgstr "관리팀은 페르시아어와 한국어로 답변합니다."
+
+msgid "Send Message"
+msgstr "메시지 보내기"
+
+msgid "Club administration & dojo"
+msgstr "클럽 관리팀 및 도장"
+
+msgid "Phone"
+msgstr "전화"
+
+msgid "Persian (fa-IR) and Korean (ko-KR) support"
+msgstr "페르시아어 (fa-IR) 및 한국어 (ko-KR) 지원"
+
+msgid "Follow the club"
+msgstr "클럽 팔로우"
+
+msgid "Training clips, event announcements and belt examination results."
+msgstr "훈련 영상, 행사 공지와 승급 심사 결과를 확인하세요."
+
+msgid "Messages are stored securely and reviewed only by authorized club administrators. Never send identity documents through this form."
+msgstr "메시지는 안전하게 보관되며 권한 있는 관리자만 확인합니다. 이 양식으로 신분증을 보내지 마세요."
+
+msgid "Technical study guides, budo etiquette, sports physiology and belt examination preparation."
+msgstr ""
+
+msgid "Study path"
+msgstr ""
+
+msgid "A curriculum that grows with the athlete"
+msgstr ""
+
+msgid "Each module combines technical instruction, physical preparation and the ethical foundations of martial arts practice."
+msgstr ""
+
+msgid "How promotion works"
+msgstr ""
+
+msgid "Attend the required training hours."
+msgstr ""
+
+msgid "Submit the examination application."
+msgstr ""
+
+msgid "Technical board reviews and approves."
+msgstr ""
+
+msgid "Results appear in your private record."
+msgstr ""
+
+msgid "Education"
+msgstr "교육"
+
+msgid "Read Module"
+msgstr "학습 내용 보기"
+
+msgid "Educational curriculum modules are being prepared."
+msgstr ""
+
+msgid "Further reading"
+msgstr ""
+
+msgid "Technical articles published by our coaching team."
+msgstr ""
+
+msgid "Community & club life"
+msgstr "커뮤니티와 클럽 생활"
+
+msgid "Club Gallery"
+msgstr "클럽 갤러리"
+
+#, python-format
+msgid "%(counter)s approved club photo, published with member consent."
+msgid_plural "%(counter)s approved club photos, published with member consent."
+msgstr[0] "회원 동의하에 공개된 승인된 클럽 사진 %(counter)s장."
+
+msgid "Search photos"
+msgstr "사진 검색"
+
+msgid "Search by title, description or location"
+msgstr "제목, 설명 또는 장소로 검색"
+
+msgid "No photos found."
+msgstr "검색된 사진이 없습니다."
+
+msgid "Try a different search term or reset your search."
+msgstr "다른 검색어를 입력하거나 검색을 초기화하세요."
+
+msgid "No club photos yet."
+msgstr "아직 클럽 사진이 없습니다."
+
+msgid "Photos from approved club activities appear here once members grant public visibility consent."
+msgstr "회원이 공개에 동의한 승인된 클럽 활동 사진이 여기에 표시됩니다."
+
+msgid "Niayesh Taekwondo Club"
+msgstr ""
+
+msgid "Managed by Master Amir Shahabadi Farahani"
+msgstr ""
+
+#, fuzzy
+#| msgid "TEAKWONDO unites Persian and Korean budo traditions with modern sports science, transparent belt progression, and a certified record of every championship achievement."
+msgid "Taekwondo connects Persian martial arts traditions and Korean budo traditions with modern sports science, transparent belt progression, and a verified record of every championship achievement."
+msgstr "TEAKWONDO는 페르시아와 한국의 무술 전통을 현대 스포츠 과학, 투명한 승급 과정 및 인증된 대회 기록과 결합합니다."
+
+#, fuzzy
+#| msgid "Champions"
+msgid "Club Champions"
+msgstr "챔피언"
+
+msgid "Become a Member"
+msgstr "회원 가입"
+
+#, fuzzy
+#| msgid "TEAKWONDO — Martial Arts & Club Academy"
+msgid "Taekwondo — Martial Arts Academy and Club"
+msgstr "TEAKWONDO — 무술 및 클럽 아카데미"
+
+msgid "Academy at a glance"
+msgstr ""
+
+msgid "Approved Members"
+msgstr "승인된 회원"
+
+msgid "Verified Medals"
+msgstr "인증된 메달"
+
+msgid "Black Belt Holders"
+msgstr "검은띠 보유자"
+
+#, fuzzy
+#| msgid "Official Championships"
+msgid "Official Championship Appearances"
+msgstr "공식 대회"
+
+msgid "Why learning Taekwondo matters"
+msgstr ""
+
+#, fuzzy
+#| msgid "TEAKWONDO is a bilingual martial arts education and club management platform for athletes, families and coaches. Every promotion, medal and community activity is reviewed by our technical board before it becomes part of an athlete's official record."
+msgid "Taekwondo is a sport rooted in respect, effort and integrity. Every belt promotion, medal and community activity is reviewed by the technical committee before being registered in an athlete's official record."
+msgstr "TEAKWONDO는 선수, 가족, 지도자를 위한 이중 언어 무술 교육 및 클럽 관리 플랫폼입니다. 모든 승급, 메달 및 지역사회 활동은 기술위원회의 검토를 거쳐 선수의 공식 기록에 등록됩니다."
+
+#, fuzzy
+#| msgid "From a child's first class to international championship preparation, our curriculum balances technique, physical conditioning, etiquette and personal responsibility."
+msgid "From a child's first class to preparation for international competitions, our programme maintains a balance between technique, physical fitness, etiquette and responsibility."
+msgstr "어린이의 첫 수업부터 국제 대회 준비까지 기술, 체력, 예절과 개인의 책임을 균형 있게 교육합니다."
+
+msgid "Read our story"
+msgstr "클럽 이야기 보기"
+
+#, fuzzy
+#| msgid "Explore the curriculum"
+msgid "View the curriculum"
+msgstr "교육 과정 살펴보기"
+
+msgid "Learn from experienced instructors"
+msgstr "경험 많은 강사진에게 배우세요"
+
+msgid "Certified coaches with competition, teaching and safeguarding experience."
+msgstr "경기, 지도 및 안전 관리 경험을 갖춘 공인 지도진입니다."
+
+#, fuzzy
+#| msgid "Meet the team"
+msgid "Meet the Niayesh family"
+msgstr "지도진 소개"
+
+#, fuzzy
+#| msgid "Honours"
+msgid "Club Honours"
+msgstr "수상 기록"
+
+msgid "Latest achievements and medal winners"
+msgstr "최근 성과와 메달 수상자"
+
+msgid "Only records approved by the technical board and cleared for public display appear here."
+msgstr "기술위원회의 승인과 공개 동의를 받은 기록만 표시됩니다."
+
+#, fuzzy
+#| msgid "Medal honor roll"
+msgid "Medal honour roll"
+msgstr "메달 수상자 명단"
+
+msgid "Athlete profiles"
+msgstr "선수 프로필"
+
+#, fuzzy
+#| msgid "Verified achievements will appear here once approved."
+msgid "Approved achievements and medals will appear here once available."
+msgstr "승인된 성과가 여기에 표시됩니다."
+
+msgid "Legal"
+msgstr ""
+
+msgid "Rules for using the TEAKWONDO platform and member code of conduct."
+msgstr ""
+
+msgid "How we collect, store and protect your information."
+msgstr ""
+
+msgid "Translation fallback active: displaying the available language version."
+msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
+
+msgid "Last updated"
+msgstr ""
+
+msgid "Legal & policies"
+msgstr ""
+
+msgid "Full data protection record"
+msgstr ""
+
+msgid "Questions?"
+msgstr ""
+
+msgid "Contact the club administration for data requests or policy clarification."
+msgstr ""
+
+msgid "Officially reviewed and approved Gold, Silver, Bronze and special championship medals."
+msgstr ""
+
+msgid "Special Awards"
+msgstr "특별상"
+
+msgid "All medals"
+msgstr "모든 메달"
+
+msgid "Apply Filter"
+msgstr "필터 적용"
+
+msgid "Verified medal winners"
+msgstr ""
+
+msgid "No approved medals match the selected filters."
+msgstr ""
+
+msgid "Need more information?"
+msgstr ""
+
+msgid "Our administration desk can help with schedules, membership and programs."
+msgstr ""
+
+msgid "Quick links"
+msgstr ""
+
+msgid "Information we collect"
+msgstr ""
+
+msgid "We collect the information required to manage club membership: your name, contact details, chosen discipline, training and competition records, and the documents you submit for verification."
+msgstr ""
+
+msgid "Private by default"
+msgstr ""
+
+msgid "Email addresses, phone numbers, birth dates and uploaded certificates are stored in a protected private area. They are visible only to you and to authorized club reviewers; they are never shown on public pages or in public APIs."
+msgstr ""
+
+msgid "Public athlete profiles"
+msgstr ""
+
+msgid "An athlete profile is published only when membership is approved, the record has passed review, and the member has given explicit consent to both public profile consent and visibility. Consent can be withdrawn at any time from your account settings."
+msgstr ""
+
+msgid "Your rights"
+msgstr ""
+
+msgid "Access and correct your own profile information."
+msgstr ""
+
+msgid "Withdraw public visibility consent."
+msgstr ""
+
+msgid "Request correction of an approved record through the member portal."
+msgstr ""
+
+msgid "Contact the club administration to request deletion where legally permitted."
+msgstr ""
+
+msgid "Data retention and security"
+msgstr ""
+
+msgid "Access to member data is role-based, logged, and limited to what each administrator needs. Security events are recorded in an immutable audit log, and sensitive files are served only through authenticated endpoints."
+msgstr ""
+
+msgid "For privacy questions, contact the club administration using the contact form or the official email address published on this website."
+msgstr ""
+
+msgid "Translation fallback active: displaying the available language description."
+msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
 
 msgid "Available at Club Desk"
 msgstr "클럽에서 구매 가능"
@@ -486,3440 +3350,356 @@ msgstr "클럽에 문의"
 msgid "Back to Catalog"
 msgstr "목록으로 돌아가기"
 
-msgid "Contact TEAKWONDO Club"
-msgstr "TEAKWONDO 클럽에 문의"
-
-msgid ""
-"Questions about training schedules, membership applications, seminars, or "
-"official gear? Send us a message."
-msgstr ""
-
-msgid "Send an Inquiry"
-msgstr "문의 보내기"
-
-msgid "Send Message"
-msgstr "메시지 보내기"
-
-msgid "Club Administration & Dojang"
-msgstr ""
-
-msgid ""
-"Our multilingual administration desk responds to messages in both Persian "
-"(fa-IR) and Korean (ko-KR)."
-msgstr ""
-
-msgid "Official Email"
-msgstr "공식 이메일"
-
-msgid "Training Hours"
-msgstr "훈련 시간"
-
-msgid "Monday – Saturday, 09:00 – 21:00"
-msgstr ""
-
-msgid ""
-"Translation fallback active: displaying the available language version."
-msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
-
-msgid "Translation fallback active: showing the available language edition."
-msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
-
-msgid ""
-"Translation fallback active: displaying the available language description."
-msgstr "번역이 없어 제공 가능한 언어로 표시합니다."
-
-msgid "This content is currently shown in the club's alternate language."
-msgstr "이 콘텐츠는 현재 다른 언어로 표시됩니다."
-
-msgid "Gold"
-msgstr "금"
-
-msgid "Silver"
-msgstr "은"
-
-msgid "Bronze"
-msgstr "동"
-
-msgid "Special Award"
-msgstr "특별상"
-
-msgid "Pending Review"
-msgstr "검토 대기"
-
-msgid "Approved"
-msgstr "승인됨"
-
-msgid "Rejected"
-msgstr "거절됨"
-
-msgid "Needs Revision"
-msgstr "수정 필요"
-
-msgid "Suspended"
-msgstr "일시 중지"
-
-msgid "Super Admin"
-msgstr "최고 관리자"
-
-msgid "Content Admin"
-msgstr "콘텐츠 관리자"
-
-msgid "Club Manager"
-msgstr "클럽 관리자"
-
-msgid "Moderator / Coach Reviewer"
-msgstr "심사 담당자 / 코치"
-
-msgid "Club Member"
-msgstr "클럽 회원"
-
-msgid "Taekwondo"
-msgstr "태권도"
-
-msgid "Karate"
-msgstr "가라테"
-
-msgid "Judo"
-msgstr "유도"
-
-msgid "Aikido"
-msgstr "합기도"
-
-msgid "Hapkido"
-msgstr "합기도"
-
-msgid "General Martial Arts"
-msgstr "일반 무술"
-
-msgid "Persian (fa-IR)"
-msgstr "페르시아어 (fa-IR)"
-
-msgid "Korean (ko-KR)"
-msgstr "한국어 (ko-KR)"
-
-msgid "Sign In to TEAKWONDO"
-msgstr "TEAKWONDO 로그인"
-
-msgid "Access your private club member portal or administration panel."
-msgstr "회원 포털 또는 관리자 페이지에 로그인하세요."
-
-msgid "Forgot your password?"
-msgstr "비밀번호를 잊으셨나요?"
-
-msgid "Apply for Membership"
-msgstr "회원 가입 신청"
-
-msgid "TEAKWONDO Membership Registration"
-msgstr "TEAKWONDO 회원 가입"
-
-msgid ""
-"Create your individual athlete portal account. Your membership application "
-"will be reviewed by club administrators."
-msgstr "선수 포털 계정을 만드세요. 회원 가입 신청은 클럽 관리자가 검토합니다."
-
-msgid "Already registered?"
-msgstr "이미 가입하셨나요?"
-
-msgid "Account Settings"
-msgstr "계정 설정"
-
-msgid "Manage your login email, preferred interface language, and password."
-msgstr "로그인 이메일, 언어와 비밀번호를 관리하세요."
-
-msgid "Change Password"
-msgstr "비밀번호 변경"
-
-msgid "Assigned Role"
-msgstr "지정된 역할"
-
-msgid "Save Settings"
-msgstr "설정 저장"
-
-msgid "Update Password"
-msgstr "비밀번호 변경"
-
-msgid "Reset Password"
-msgstr "비밀번호 재설정"
-
-msgid ""
-"Enter your registered email address and we will send reset instructions."
-msgstr "가입한 이메일 주소를 입력하시면 재설정 안내를 보내드립니다."
-
-msgid "Send Reset Link"
-msgstr "재설정 링크 보내기"
-
-msgid "Return to Log In"
-msgstr "로그인으로 돌아가기"
-
-msgid "Check Your Email"
-msgstr "이메일 확인"
-
-msgid "Reset Link Sent"
-msgstr "재설정 링크 전송 완료"
-
-msgid "Set New Password"
-msgstr "새 비밀번호 설정"
-
-msgid "Choose a New Password"
-msgstr "새 비밀번호 선택"
-
-msgid "Save New Password"
-msgstr "새 비밀번호 저장"
-
-msgid "Password Reset Complete"
-msgstr "비밀번호 재설정 완료"
-
-msgid "Password Updated"
-msgstr "비밀번호가 변경되었습니다"
-
-msgid "Overview"
-msgstr "개요"
-
-msgid "Dashboard Overview"
-msgstr "대시보드 개요"
-
-msgid "Personal Profile"
-msgstr "개인 프로필"
-
-msgid "Personal Profile & Public Privacy"
-msgstr "개인 프로필 및 공개 설정"
-
-msgid "My Achievements"
-msgstr "내 성과"
-
-msgid "My Sports Achievements"
-msgstr "내 스포츠 성과"
-
-msgid "My Medals"
-msgstr "내 메달"
-
-msgid "My Belt History"
-msgstr "내 승급 기록"
-
-msgid "My Competitions"
-msgstr "내 대회"
-
-msgid "My Competition Participations"
-msgstr "내 대회 참가 기록"
-
-msgid "My Social Activities"
-msgstr "내 사회 활동"
-
-msgid "My Social & Community Activities"
-msgstr "내 사회 및 지역사회 활동"
-
-msgid "Notifications"
-msgstr "알림"
-
-msgid "Membership Number"
-msgstr "회원 번호"
-
-msgid "Membership"
-msgstr "회원 자격"
-
-msgid "Joined"
-msgstr "가입일"
-
-msgid "View Public Profile"
-msgstr "공개 프로필 보기"
-
-msgid "Edit Profile"
-msgstr "프로필 수정"
-
-msgid "Save Profile"
-msgstr "프로필 저장"
-
-msgid "Approved Achievements"
-msgstr "승인된 성과"
-
-msgid "Approved Medals"
-msgstr "승인된 메달"
-
-msgid "Pending Submissions"
-msgstr "검토 대기 제출물"
-
-msgid "Current Approved Belt"
-msgstr "현재 승인된 띠"
-
-msgid "No approved belt recorded yet"
-msgstr "승인된 띠 기록이 없습니다"
-
-msgid "Quick Submit"
-msgstr "빠른 제출"
-
-msgid "Add Achievement"
-msgstr "성과 추가"
-
-msgid "Submit Achievement"
-msgstr "성과 제출"
-
-msgid "Submit Medal"
-msgstr "메달 제출"
-
-msgid "Request Belt Promotion"
-msgstr "승급 신청"
-
-msgid "Add Competition"
-msgstr "대회 추가"
-
-msgid "Add Competition Record"
-msgstr "대회 기록 추가"
-
-msgid "Submit Activity"
-msgstr "활동 제출"
-
-msgid "Submit Social Activity"
-msgstr "사회 활동 제출"
-
-msgid "Submit for Review"
-msgstr "심사 요청"
-
-msgid "Edit & Resubmit"
-msgstr "수정 후 다시 제출"
-
-msgid "Request Correction"
-msgstr "수정 요청"
-
-msgid "Submit Correction Request"
-msgstr "수정 요청 제출"
-
-msgid "Administrator Feedback"
-msgstr "관리자 의견"
-
-msgid "Club Administration Note"
-msgstr "클럽 관리자 메모"
-
-msgid "Moderation & Review History"
-msgstr "심사 및 검토 기록"
-
-msgid "View Protected Certificate"
-msgstr "보호된 증명서 보기"
-
-msgid "View Protected Evidence"
-msgstr "보호된 증빙 자료 보기"
-
-msgid "View Uploaded Photograph"
-msgstr "업로드된 사진 보기"
-
-msgid "Mark All as Read"
-msgstr "모두 읽음으로 표시"
-
-msgid "Mark Read"
-msgstr "읽음으로 표시"
-
-msgid "Open"
-msgstr "열기"
-
-msgid "New"
-msgstr "신규"
-
-msgid "Administration Dashboard"
-msgstr "관리자 대시보드"
-
-msgid "TEAKWONDO Administration Portal"
-msgstr "TEAKWONDO 관리자 포털"
-
-msgid "Moderation Queue"
-msgstr "심사 대기 목록"
-
-msgid "Member Submission Moderation Queue"
-msgstr "회원 제출물 심사 대기 목록"
-
-msgid "Members & Applications"
-msgstr "회원 및 가입 신청"
-
-msgid "Club Members & Membership Applications"
-msgstr "클럽 회원 및 가입 신청"
-
-msgid "Belt Ranks"
-msgstr "띠 등급"
-
-msgid "Competitions"
-msgstr "대회"
-
-msgid "Blog Articles"
-msgstr "블로그 기사"
-
-msgid "Blog Categories"
-msgstr "블로그 카테고리"
-
-msgid "Products Catalog"
-msgstr "제품 목록"
-
-msgid "Product Categories"
-msgstr "제품 카테고리"
-
-msgid "Pages & Programs"
-msgstr "페이지 및 프로그램"
-
-msgid "SEO & Translations"
-msgstr "SEO 및 번역"
-
-msgid "Contact Messages"
-msgstr "문의 메시지"
-
-msgid "Audit Logs"
-msgstr "감사 기록"
-
-msgid "Moderation History"
-msgstr "심사 기록"
-
-msgid "Django Admin"
-msgstr "Django 관리자"
-
-msgid "Total Members"
-msgstr "전체 회원"
-
-msgid "Pending Applications"
-msgstr "대기 중인 신청"
-
-msgid "Unread Contact Messages"
-msgstr "읽지 않은 문의"
-
-msgid "Recent Moderation Decisions"
-msgstr "최근 심사 결과"
-
-msgid "Recent Audit Trail"
-msgstr "최근 감사 기록"
-
-msgid "Open Queue"
-msgstr "대기 목록 보기"
-
-msgid "All Logs"
-msgstr "전체 기록"
-
-msgid "Review"
-msgstr "심사"
-
-msgid "Save Decision & Notify Member"
-msgstr "결정 저장 및 회원에게 알림"
-
-msgid "Create Member"
-msgstr "회원 생성"
-
-msgid "Deactivate Account"
-msgstr "계정 비활성화"
-
-msgid "Reactivate Account"
-msgstr "계정 재활성화"
-
-msgid "Title"
-msgstr "제목"
-
-msgid "Name"
-msgstr "이름"
-
-msgid "Email"
-msgstr "이메일"
-
-msgid "Status"
-msgstr "상태"
-
-msgid "Action"
-msgstr "작업"
-
-msgid "Actions"
-msgstr "작업"
-
-msgid "View"
-msgstr "보기"
-
-msgid "Edit"
-msgstr "수정"
-
-msgid "Delete"
-msgstr "삭제"
-
-msgid "Save"
-msgstr "저장"
-
-msgid "Cancel"
-msgstr "취소"
-
-msgid "Yes"
-msgstr "예"
-
-msgid "No"
-msgstr "아니요"
-
-msgid "Yes, Delete"
-msgstr "예, 삭제합니다"
-
-msgid "Active"
-msgstr "활성"
-
-msgid "Inactive"
-msgstr "비활성"
-
-msgid "Visible"
-msgstr "공개"
-
-msgid "Private"
-msgstr "비공개"
-
-msgid "Previous"
-msgstr "이전"
-
-msgid "Next"
-msgstr "다음"
-
-msgid "Access Denied"
-msgstr "접근 거부"
-
-msgid "Access Denied (403)"
-msgstr "접근 거부 (403)"
-
-msgid "Page Not Found"
-msgstr "페이지를 찾을 수 없습니다"
-
-msgid "Page Not Found (404)"
-msgstr "페이지를 찾을 수 없습니다 (404)"
-
-msgid "Return to Homepage"
-msgstr "홈으로 돌아가기"
-
-msgid ""
-"A bilingual martial arts academy uniting Persian and Korean budo traditions "
-"with modern sports education, transparent belt progression, and verified "
-"championship records."
-msgstr ""
-"페르시아와 한국의 무술 전통을 현대 스포츠 교육, 투명한 승급 과정 및 인증된 대회 기록과 결합한 이중 언어 무술 아카데미입니다."
-
-msgid "A curriculum that grows with the athlete"
-msgstr ""
-
-msgid "A modern academy rooted in respect, effort and integrity"
-msgstr "존중과 노력, 정직을 바탕으로 한 현대적인 아카데미"
-
-msgid "API Docs"
-msgstr "API 문서"
-
-msgid "About Us"
-msgstr ""
-
-msgid "Acceptance of terms"
-msgstr ""
-
-msgid "Access and correct your own profile information."
-msgstr ""
-
-msgid ""
-"Access to member data is role-based, logged, and limited to what each "
-"administrator needs. Security events are recorded in an immutable audit log,"
-" and sensitive files are served only through authenticated endpoints."
-msgstr ""
-
-msgid "Account"
-msgstr "계정"
-
-msgid "Achievement Date"
-msgstr "성과 날짜"
-
-msgid ""
-"Achievements, medals, belt promotions, competitions and social activities "
-"are submitted for review. Administrators may approve, reject or request "
-"revisions, and may add feedback visible to you in the portal. Members cannot"
-" approve their own submissions or change review decisions."
-msgstr ""
-
-msgid "Actor"
-msgstr "처리자"
-
-msgid "Add Belt Rank"
-msgstr "띠 등급 추가"
-
-msgid "Add Category"
-msgstr "카테고리 추가"
-
-msgid "Add Competition Participation"
-msgstr "대회 참가 추가"
-
-msgid "Add Page"
-msgstr "페이지 추가"
-
-msgid "Add Product"
-msgstr "제품 추가"
-
-msgid "Add Route SEO"
-msgstr "페이지 SEO 추가"
-
-msgid "Administration navigation"
-msgstr "관리 메뉴"
-
-msgid "Administration workspace"
-msgstr "관리 작업 공간"
-
-msgid ""
-"Administrators review supporting documents before records are published."
-msgstr "기록을 공개하기 전에 관리자가 증빙 서류를 검토합니다."
-
-msgid ""
-"Age-appropriate groups, small class sizes and a respectful training culture."
-msgstr "연령에 맞는 소규모 수업과 서로를 존중하는 훈련 문화를 제공합니다."
-
-msgid "All achievements"
-msgstr "모든 성과"
-
-msgid "All articles"
-msgstr "모든 기사"
-
-msgid "All levels"
-msgstr "모든 수준"
-
-msgid "All programs"
-msgstr "모든 프로그램"
-
-msgid "All statuses"
-msgstr "모든 상태"
-
-msgid "All submissions are reviewed before publication."
-msgstr "모든 제출물은 공개 전에 검토됩니다."
-
-msgid "All types"
-msgstr "모든 유형"
-
-msgid ""
-"An athlete profile is published only when membership is approved, the record"
-" has passed review, and the member has given explicit consent to both public"
-" profile consent and visibility. Consent can be withdrawn at any time from "
-"your account settings."
-msgstr ""
-
-msgid "An unexpected server error occurred. Please try again shortly."
-msgstr "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."
-
-msgid "Applied practice"
-msgstr ""
-
-msgid "Approved and consented club activities will be published here."
-msgstr "승인과 공개 동의를 받은 클럽 활동이 여기에 게시됩니다."
-
-msgid "Approved medal records"
-msgstr "승인된 메달 기록"
-
-msgid "Archived"
-msgstr "보관됨"
-
-msgid "Are you sure you want to continue? This action cannot be undone."
-msgstr "계속하시겠습니까? 이 작업은 되돌릴 수 없습니다."
-
-msgid "Are you sure you want to permanently remove this submission?"
-msgstr "이 제출물을 영구 삭제하시겠습니까?"
-
-msgid "Article details"
-msgstr "기사 상세 정보"
-
-msgid "Articles & News"
-msgstr "기사 및 소식"
-
-msgid "Athlete profiles"
-msgstr "선수 프로필"
-
-msgid "Athletes Directory"
-msgstr "선수 명단"
-
-msgid "Attend the required training hours."
-msgstr ""
-
-msgid ""
-"Authentic instruction across striking, grappling and weapons-based Japanese "
-"and Korean arts."
-msgstr "타격, 잡기와 무기를 사용하는 일본 및 한국 무술을 정통 방식으로 지도합니다."
-
-msgid "Author"
-msgstr "작성자"
-
-msgid "Back to Inbox"
-msgstr "받은 편지함으로 돌아가기"
-
-msgid "Back to Queue"
-msgstr "대기 목록으로 돌아가기"
-
-msgid "Back to athletes"
-msgstr "선수 목록으로 돌아가기"
-
-msgid "Back to the journal"
-msgstr "소식지로 돌아가기"
-
-msgid "Back to top"
-msgstr "맨 위로"
-
-msgid "Bamboo sword fundamentals, zanshin and the discipline of the kendojo."
-msgstr "죽도 기본기, 잔심과 검도장의 규율을 배웁니다."
-
-msgid "Begin your martial arts journey with TEAKWONDO"
-msgstr ""
-
-msgid "Belt History"
-msgstr "띠 승급 기록"
-
-msgid "Belt Promotion Request"
-msgstr "승급 신청"
-
-msgid "Belt Rank Configuration"
-msgstr "띠 등급 설정"
-
-msgid "Belt Rank Form"
-msgstr "띠 등급 양식"
-
-msgid "Belt Registry"
-msgstr "띠 등록부"
-
-msgid ""
-"Belt ranks reflect demonstrated skill and character, never shortcuts or "
-"favouritism."
-msgstr ""
-
-msgid ""
-"Blending and redirecting energy, joint locks and non-resistance defence."
-msgstr "상대의 힘을 이용하는 관절기와 유연한 방어를 배웁니다."
-
-msgid "Blog Article (fa-IR & ko-KR)"
-msgstr "블로그 기사 (fa-IR 및 ko-KR)"
-
-msgid "Blog Article Editor"
-msgstr "블로그 기사 편집기"
-
-msgid "Blog Articles (Persian & Korean)"
-msgstr "블로그 기사 (페르시아어 및 한국어)"
-
-msgid "Blog Category"
-msgstr "블로그 카테고리"
-
-msgid "Book a Trial Session"
-msgstr ""
-
-msgid "Book a supervised trial session before joining."
-msgstr ""
-
-msgid "Breadcrumb"
-msgstr "현재 위치"
-
-msgid "Browse Champions"
-msgstr "챔피언 보기"
-
-msgid "Browse the catalog"
-msgstr "제품 목록 보기"
-
-msgid "By"
-msgstr "작성자"
-
-msgid ""
-"By using this website or the member portal you agree to these terms, the "
-"club code of conduct, and all applicable dojo rules. If you do not agree, "
-"please do not use the service."
-msgstr ""
-
-msgid "Certificate"
-msgstr "증명서"
-
-msgid ""
-"Certified coaches with competition, teaching and safeguarding experience."
-msgstr "경기, 지도 및 안전 관리 경험을 갖춘 공인 지도진입니다."
-
-msgid ""
-"Certified coaching for youth beginners, competitive athletes and Dan black "
-"belt candidates."
-msgstr ""
-
-msgid "Certified, safety-first coaching"
-msgstr "안전을 최우선으로 하는 공인 지도"
-
-msgid "Championship"
-msgstr "대회"
-
-msgid "Changes to these terms"
-msgstr ""
-
-msgid "Choose a program"
-msgstr ""
-
-msgid "Clear filters"
-msgstr ""
-
-msgid "Close"
-msgstr "닫기"
-
-msgid "Club activities beyond the mat"
-msgstr "도장 밖의 클럽 활동"
-
-msgid "Club administration & dojo"
-msgstr "클럽 관리팀 및 도장"
-
-msgid "Club at a glance"
-msgstr ""
-
-msgid ""
-"Club-approved uniforms, competition protection, embroidered Dan belts and "
-"training tools. In-store inquiry only — no online payment."
-msgstr ""
-
-msgid "Club-approved uniforms, protective gear and embroidered Dan belts."
-msgstr "클럽이 승인한 도복, 보호 장비와 자수 단띠입니다."
-
-msgid ""
-"Coaches break down each technique, then rebuild it under controlled "
-"pressure."
-msgstr ""
-
-msgid "Coaching team"
-msgstr "지도진"
-
-msgid "Code"
-msgstr ""
-
-msgid "Code of conduct"
-msgstr ""
-
-msgid "Community"
-msgstr "지역사회"
-
-msgid ""
-"Community activities are published only after administrator approval and "
-"explicit member consent."
-msgstr "지역사회 활동은 관리자의 승인과 회원의 명시적 동의 후에만 공개됩니다."
-
-msgid "Community responsibility"
-msgstr ""
-
-msgid "Competition Form"
-msgstr ""
-
-msgid "Competition Location"
-msgstr ""
-
-msgid "Competition Participation"
-msgstr ""
-
-msgid "Competitions Management"
-msgstr ""
-
-msgid "Confirm Deletion"
-msgstr ""
-
-msgid "Contact Inbox"
-msgstr ""
-
-msgid "Contact Messages Inbox"
-msgstr ""
-
-msgid "Contact the club"
-msgstr "클럽에 문의"
-
-msgid ""
-"Contact the club administration for data requests or policy clarification."
-msgstr ""
-
-msgid ""
-"Contact the club administration to request deletion where legally permitted."
-msgstr ""
-
-msgid "Content"
-msgstr ""
-
-msgid "Correction requested"
-msgstr ""
-
-msgid "Create Account"
-msgstr ""
-
-msgid "Create Member Account"
-msgstr ""
-
-msgid ""
-"Create your athlete portal account. Your membership application is reviewed "
-"by club administrators."
-msgstr ""
-
-msgid "Cultural bridge"
-msgstr "문화의 가교"
-
-msgid "Dashboard"
-msgstr ""
-
-msgid "Dashboard content"
-msgstr ""
-
-msgid "Data retention and security"
-msgstr ""
-
-msgid "Dates"
-msgstr ""
-
-msgid "Delete Submission?"
-msgstr ""
-
-msgid "Description"
-msgstr ""
-
-msgid "Discipline, education and verified martial arts excellence"
-msgstr "규율과 교육, 인증된 무술 실력"
-
-msgid "Disciplines"
-msgstr ""
-
-msgid "Disciplines taught at the academy"
-msgstr "아카데미에서 배우는 종목"
-
-msgid "Dismiss"
-msgstr ""
-
-msgid "Division / Category"
-msgstr ""
-
-msgid "Document coaching workshops, volunteer events, and cultural outreach."
-msgstr ""
-
-msgid "Dojo shop"
-msgstr "도장 상점"
-
-msgid "Draft"
-msgstr ""
-
-msgid ""
-"Dynamic kicking techniques, poomsae forms, Olympic-style sparring and Dan "
-"promotion."
-msgstr "역동적인 발차기, 품새, 올림픽식 겨루기와 단 승급을 배웁니다."
-
-msgid ""
-"Each module combines technical instruction, physical preparation and the "
-"ethical foundations of martial arts practice."
-msgstr ""
-
-msgid "Edit Belt Promotion"
-msgstr ""
-
-msgid "Edit Competition Record"
-msgstr ""
-
-msgid "Edit Medal Submission"
-msgstr ""
-
-msgid "Edit Member Profile"
-msgstr ""
-
-msgid "Edit Social Activity"
-msgstr ""
-
-msgid "Edit Sports Achievement"
-msgstr ""
-
-msgid "Education & Curriculum"
-msgstr "교육 및 교육 과정"
-
-msgid "Educational curriculum modules are being prepared."
-msgstr ""
-
-msgid ""
-"Email addresses, phone numbers, birth dates and uploaded certificates are "
-"stored in a protected private area. They are visible only to you and to "
-"authorized club reviewers; they are never shown on public pages or in public"
-" APIs."
-msgstr ""
-
-msgid "Equipment"
-msgstr "장비"
-
-msgid "Equipment catalog"
-msgstr ""
-
-msgid "Established martial arts academy"
-msgstr ""
-
-msgid ""
-"Every athlete keeps a permanent training record, and every belt promotion, "
-"medal and community activity is reviewed by our technical board before "
-"publication."
-msgstr ""
-
-msgid "Explore Our Champions"
-msgstr "챔피언 살펴보기"
-
-msgid "Explore the curriculum"
-msgstr "교육 과정 살펴보기"
-
-msgid "Family-friendly club"
-msgstr "가족 친화적인 클럽"
-
-msgid "Find the right training path"
-msgstr ""
-
-msgid "Follow the club"
-msgstr "클럽 팔로우"
-
-msgid ""
-"For privacy questions, contact the club administration using the contact "
-"form or the official email address published on this website."
-msgstr ""
-
-msgid "From"
-msgstr ""
-
-msgid ""
-"From a child's first class to international championship preparation, our "
-"curriculum balances technique, physical conditioning, etiquette and personal"
-" responsibility."
-msgstr "어린이의 첫 수업부터 국제 대회 준비까지 기술, 체력, 예절과 개인의 책임을 균형 있게 교육합니다."
-
-msgid "Full data protection record"
-msgstr ""
-
-msgid "Fully bilingual Persian and Korean"
-msgstr "페르시아어와 한국어 지원"
-
-msgid "Fundamentals first"
-msgstr ""
-
-msgid "Further reading"
-msgstr ""
-
-msgid "Granted"
-msgstr ""
-
-msgid "Hello,"
-msgstr ""
-
-msgid "Honest progression"
-msgstr ""
-
-msgid "Honours"
-msgstr "수상 기록"
-
-msgid "How promotion works"
-msgstr ""
-
-msgid "How we collect, store and protect your information."
-msgstr ""
-
-msgid "IP Address"
-msgstr ""
-
-msgid ""
-"If an active account exists for the address entered, password reset "
-"instructions have been sent."
-msgstr ""
-
-msgid "If you did not request this change, you can safely ignore this email."
-msgstr ""
-
-msgid "Immutable security and administrative event trail."
-msgstr ""
-
-msgid "Inbox & system"
-msgstr ""
-
-msgid "Information we collect"
-msgstr ""
-
-msgid "Inquire"
-msgstr ""
-
-msgid "Inspect Supporting Certificate / Evidence"
-msgstr ""
-
-msgid ""
-"Inspect uploaded certificates and approve, reject, or request revision on "
-"submissions."
-msgstr ""
-
-msgid "Invalid or Expired Link"
-msgstr ""
-
-msgid "Korean Name"
-msgstr ""
-
-msgid "Join the Club"
-msgstr ""
-
-msgid "Journal"
-msgstr "소식지"
-
-msgid "Keep your password confidential and do not share your account."
-msgstr ""
-
-msgid "Kendo"
-msgstr "검도"
-
-msgid "Knowledge & news"
-msgstr ""
-
-msgid "Lang"
-msgstr ""
-
-msgid "Language"
-msgstr "언어"
-
-msgid "Language selector"
-msgstr ""
-
-msgid "Languages"
-msgstr "언어"
-
-msgid "Last updated"
-msgstr ""
-
-msgid "Latest achievements and medal winners"
-msgstr "최근 성과와 메달 수상자"
-
-msgid "Latest articles and club news"
-msgstr "최신 기사와 클럽 소식"
-
-msgid ""
-"Learn about TEAKWONDO's martial arts philosophy, certified coaching, athlete"
-" verification workflow and Persian-Korean cultural bridge."
-msgstr ""
-
-msgid "Learn from experienced instructors"
-msgstr "경험 많은 강사진에게 배우세요"
-
-msgid "Legal"
-msgstr ""
-
-msgid "Legal & policies"
-msgstr ""
-
-msgid "Limitation of liability"
-msgstr ""
-
-msgid "Localized Title"
-msgstr ""
-
-msgid "Manage"
-msgstr ""
-
-msgid "Manage Blog"
-msgstr ""
-
-msgid "Manage Pages"
-msgstr ""
-
-msgid "Manage Products"
-msgstr ""
-
-msgid "Martial arts"
-msgstr "무술"
-
-msgid ""
-"Martial arts training carries inherent physical risk. Members must follow "
-"safety instructions and disclose relevant health conditions. The club is not"
-" liable for misuse of the platform or for training undertaken contrary to "
-"coach guidance."
-msgstr ""
-
-msgid "Medal honor roll"
-msgstr "메달 수상자 명단"
-
-msgid "Meet the team"
-msgstr "지도진 소개"
-
-msgid "Member Correction Request"
-msgstr ""
-
-msgid "Member dashboard navigation"
-msgstr ""
-
-msgid "Members & Contact"
-msgstr "회원 및 문의"
-
-msgid "Members & sport"
-msgstr ""
-
-msgid ""
-"Members contribute through volunteering, youth mentoring and cultural "
-"exchange activities."
-msgstr ""
-
-msgid "Membership #"
-msgstr ""
-
-msgid "Membership Application Decision"
-msgstr ""
-
-msgid "Membership and accounts"
-msgstr ""
-
-msgid "Membership is subject to review and approval by club administration."
-msgstr ""
-
-msgid "Membership status"
-msgstr ""
-
-msgid "Menu"
-msgstr ""
-
-msgid ""
-"Messages are stored securely and reviewed only by authorized club "
-"administrators. Never send identity documents through this form."
-msgstr "메시지는 안전하게 보관되며 권한 있는 관리자만 확인합니다. 이 양식으로 신분증을 보내지 마세요."
-
-msgid "Mission & values"
-msgstr ""
-
-msgid "Moderation Decision"
-msgstr ""
-
-msgid "Multilingual SEO Metadata"
-msgstr ""
-
-msgid "My Account"
-msgstr ""
-
-msgid "My Belts"
-msgstr ""
-
-msgid "My Profile"
-msgstr "내 프로필"
-
-msgid "Name or SKU"
-msgstr ""
-
-msgid "Need more information?"
-msgstr ""
-
-msgid "New Article"
-msgstr ""
-
-msgid "No approved belt rankings listed yet."
-msgstr ""
-
-msgid "No approved medals match the selected filters."
-msgstr ""
-
-msgid "No approved medals recorded yet."
-msgstr ""
-
-msgid "No audit logs recorded yet."
-msgstr ""
-
-msgid "No belt promotion records match your filters."
-msgstr ""
-
-msgid "No belt promotion records submitted yet."
-msgstr ""
-
-msgid "No belt records yet."
-msgstr ""
-
-msgid "No competition participation records added yet."
-msgstr ""
-
-msgid "No contact messages received yet."
-msgstr ""
-
-msgid "No members found."
-msgstr ""
-
-msgid "No moderation events recorded yet."
-msgstr ""
-
-msgid "No published articles found."
-msgstr ""
-
-msgid "No published competition results yet."
-msgstr ""
-
-msgid "No published products match your criteria."
-msgstr ""
-
-msgid "No social activities submitted yet."
-msgstr ""
-
-msgid "No sports achievements submitted yet."
-msgstr ""
-
-msgid "No submissions match this moderation filter."
-msgstr ""
-
-msgid "No supporting file attached."
-msgstr ""
-
-msgid "Not granted (private)"
-msgstr ""
-
-msgid "Note"
-msgstr ""
-
-msgid "Note / Feedback"
-msgstr ""
-
-msgid "Notes"
-msgstr ""
-
-msgid "Official Martial Arts Academy & Verified Club Registry"
-msgstr "공식 무술 아카데미 및 인증 클럽 등록부"
-
-msgid ""
-"Official championships, participating TEAKWONDO athletes and verified podium"
-" outcomes."
-msgstr ""
-
-msgid "Official uniforms and equipment"
-msgstr "공식 도복과 장비"
-
-msgid ""
-"Officially reviewed and approved Gold, Silver, Bronze and special "
-"championship medals."
-msgstr ""
-
-msgid "One club, two languages"
-msgstr "하나의 클럽, 두 언어"
-
-msgid ""
-"Only records approved by the technical board and cleared for public display "
-"appear here."
-msgstr "기술위원회의 승인과 공개 동의를 받은 기록만 표시됩니다."
-
-msgid ""
-"Only records reviewed and approved by the club technical board are displayed"
-" on this profile."
-msgstr ""
-
-msgid "Open Member Portal"
-msgstr ""
-
-msgid "Open the link below to set a new password:"
-msgstr ""
-
-msgid "Order"
+msgid "Related equipment"
 msgstr ""
 
 msgid "Other club-approved items you may need."
 msgstr ""
 
-msgid ""
-"Our administration desk can help with schedules, membership and programs."
-msgstr ""
-
-msgid "Our instructors"
-msgstr "강사진"
-
-msgid ""
-"Our mission is to develop confident, respectful and resilient people through"
-" authentic martial arts practice."
-msgstr ""
-
-msgid "Our multilingual administration desk replies in Persian and Korean."
-msgstr "관리팀은 페르시아어와 한국어로 답변합니다."
-
-msgid "Our story"
-msgstr "클럽 이야기"
-
-msgid "Page"
-msgstr ""
-
-msgid "Page (fa-IR & ko-KR)"
-msgstr ""
-
-msgid "Page Editor"
-msgstr ""
-
-msgid "Pages, Education & Programs"
-msgstr ""
-
-msgid "Pagination"
-msgstr ""
-
-msgid "Persian (fa-IR) and Korean (ko-KR) support"
-msgstr "페르시아어 (fa-IR) 및 한국어 (ko-KR) 지원"
-
-msgid "Persian Name"
-msgstr ""
-
-msgid "Persian and Korean language editions with shared standards and values."
-msgstr "동일한 기준과 가치를 공유하는 페르시아어와 한국어 서비스입니다."
-
-msgid ""
-"Persian and Korean members share standards, events and a single verified "
-"record system."
-msgstr ""
-
-msgid ""
-"Personal data and certificates stay private; public profiles require "
-"explicit consent."
-msgstr ""
-
-msgid "Phone"
-msgstr "전화"
-
-msgid "Please confirm"
-msgstr ""
-
-msgid "Please correct the following errors:"
-msgstr ""
-
-msgid "Practical self-defence, escapes, throws and pressure-point control."
-msgstr "실용적인 호신술, 탈출, 던지기와 급소 제압을 배웁니다."
-
-msgid "Practice with purpose"
-msgstr ""
-
-msgid "Precise linear strikes, kata bunkai and controlled kumite practice."
-msgstr "정확한 직선 타격, 카타 분석과 절제된 대련을 연습합니다."
-
-msgid "Price"
-msgstr ""
-
-msgid "Primary navigation"
-msgstr ""
-
-msgid "Privacy by design"
-msgstr ""
-
-msgid "Privacy consent confirmed"
-msgstr ""
-
-msgid "Private Certificate"
-msgstr ""
-
-msgid "Private Evidence File"
-msgstr ""
-
-msgid "Private by default"
-msgstr ""
-
-msgid "Product (fa-IR & ko-KR)"
-msgstr ""
-
-msgid "Product Category"
-msgstr ""
-
-msgid "Product Editor"
-msgstr ""
-
-msgid ""
-"Product listings are informational. No online checkout or payment is "
-"provided; prices, availability and custom orders must be confirmed directly "
-"with the club desk."
-msgstr ""
-
-msgid "Products Catalog Management"
-msgstr ""
-
-msgid ""
-"Profiles appear only when membership is approved, records are verified, and "
-"the athlete has granted explicit public visibility consent."
-msgstr ""
-
-msgid "Program details"
-msgstr ""
-
-msgid ""
-"Progress comes from repetition, reflection and respect — not from collecting"
-" belts."
-msgstr ""
-
-msgid ""
-"Progressive intensity, qualified supervision and evidence-based injury "
-"prevention guide every session."
-msgstr ""
-
-msgid ""
-"Progressive syllabi for poomsae, kata, sparring, self-defence and "
-"conditioning."
-msgstr "품새, 카타, 대련, 호신술과 체력 훈련을 위한 단계별 교육 과정입니다."
-
-msgid "Provide accurate registration and profile information."
-msgstr ""
-
-msgid "Public"
-msgstr ""
-
-msgid "Public Consent"
-msgstr ""
-
-msgid "Public Display Consent"
-msgstr ""
-
-msgid "Public Profile"
-msgstr ""
-
-msgid "Public athlete profiles"
-msgstr ""
-
-msgid "Published"
-msgstr ""
-
-msgid ""
-"Qualified coaches who combine competition experience with a commitment to "
-"athlete welfare."
-msgstr ""
-
-msgid ""
-"Questions about training schedules, membership, seminars or official "
-"equipment? Send us a message."
-msgstr "훈련 일정, 회원 가입, 세미나 또는 공식 장비에 대해 궁금하신가요? 메시지를 보내 주세요."
-
-msgid "Questions?"
-msgstr ""
-
-msgid "Quick links"
-msgstr ""
-
-msgid "Read"
-msgstr ""
-
-msgid "Read our story"
-msgstr "클럽 이야기 보기"
-
-msgid "Received"
-msgstr ""
-
-msgid "Recent Activities"
-msgstr ""
-
-msgid "Recent Notifications"
-msgstr ""
-
-msgid "Recent Submissions"
-msgstr ""
-
-msgid "Recent achievements"
-msgstr "최근 성과"
-
-msgid "Recent medal winners"
-msgstr "최근 메달 수상자"
-
-msgid "Record"
-msgstr ""
-
-msgid "Record your tournament appearances, weight divisions, and standings."
-msgstr ""
-
-msgid "Records"
-msgstr ""
-
-msgid "Reflection and service"
-msgstr ""
-
-msgid ""
-"Reigi, humility and mutual care are taught alongside technique, inside and "
-"outside the dojo."
-msgstr ""
-
-msgid "Related articles"
-msgstr ""
-
-msgid "Related equipment"
-msgstr ""
-
-msgid "Request New Link"
-msgstr ""
-
-msgid "Request Record Correction"
-msgstr ""
-
-msgid "Request correction of an approved record through the member portal."
-msgstr ""
-
-msgid "Reset filters"
-msgstr ""
-
-msgid "Respect & etiquette"
-msgstr ""
-
-msgid ""
-"Respect instructors, fellow members and visitors. Harassment, "
-"discrimination, unsafe training and the publication of another person's "
-"private information are prohibited and may result in suspension."
-msgstr ""
-
-msgid "Results appear in your private record."
-msgstr ""
-
-msgid "Review Submission"
-msgstr ""
-
-msgid "Review decisions, membership updates, and club alerts."
-msgstr ""
-
-msgid ""
-"Review membership applications, edit profiles, and manage member account "
-"status."
-msgstr ""
-
-msgid "Reviewed and verified"
-msgstr ""
-
-msgid "Reviewer"
-msgstr ""
-
-msgid "Robots"
-msgstr ""
-
-msgid "Role"
-msgstr ""
-
-msgid "Role Assignment (Super Admin)"
-msgstr ""
-
-msgid "Route"
-msgstr ""
-
-msgid "Rules for using the TEAKWONDO platform and member code of conduct."
-msgstr ""
-
-msgid "SEO Editor"
-msgstr ""
-
-msgid "SEO Management"
-msgstr ""
-
-msgid "SEO Metadata (fa-IR & ko-KR)"
-msgstr ""
-
-msgid "Safety first"
-msgstr ""
-
-msgid "Save Article"
-msgstr ""
-
-msgid "Save Competition"
-msgstr ""
-
-msgid "Save Page"
-msgstr ""
-
-msgid "Save Product"
-msgstr ""
-
-msgid "Save Profile Changes"
-msgstr ""
-
-msgid "Save Review Note"
-msgstr ""
-
-msgid "Save Role"
-msgstr ""
-
-msgid "Save SEO"
-msgstr ""
-
-msgid "Scheduled"
-msgstr ""
-
-msgid "Search name..."
-msgstr ""
-
-msgid "Search the journal"
-msgstr ""
-
-msgid "See club results"
-msgstr "클럽 성과 보기"
-
-msgid "See the curriculum"
-msgstr ""
-
-msgid "Select the group that matches age and experience."
-msgstr ""
-
-msgid ""
-"Selected images are previewed locally before upload. Certificates remain "
-"private."
-msgstr ""
-
-msgid ""
-"Self-assessment, mentoring and community service complete the path to senior"
-" rank."
-msgstr ""
-
-msgid "Send an inquiry"
-msgstr "문의 보내기"
-
-msgid "Sender"
-msgstr ""
-
-msgid "Server Error"
-msgstr ""
-
-msgid "Show password"
-msgstr ""
-
-msgid "Signed in as"
-msgstr ""
-
-msgid "Slug"
-msgstr ""
-
-msgid "Social media"
-msgstr ""
-
-msgid ""
-"Sparring, randori and scenario drills teach decision-making without "
-"sacrificing safety."
-msgstr ""
-
-msgid ""
-"Stance, balance, breathing and etiquette form the base of every discipline."
-msgstr ""
-
-msgid "Structured curriculum"
-msgstr "체계적인 교육 과정"
-
-msgid "Study path"
-msgstr ""
-
-msgid "Subject"
-msgstr ""
-
-msgid "Submission"
-msgstr ""
-
-msgid "Submission Details"
-msgstr ""
-
-msgid "Submission type"
-msgstr ""
-
-msgid "Submissions and moderation"
-msgstr ""
-
-msgid "Submit Belt Promotion"
-msgstr ""
-
-msgid "Submit Belt Promotion Request"
-msgstr ""
-
-msgid "Submit First Achievement"
-msgstr ""
-
-msgid "Submit Promotion Request"
-msgstr ""
-
-msgid "Submit Record"
-msgstr ""
-
-msgid "Submit Sports Achievement"
-msgstr ""
-
-msgid ""
-"Submit championship medals with supporting certificates for club "
-"verification."
-msgstr ""
-
-msgid "Submit sports achievements and track administrator approval status."
-msgstr ""
-
-msgid "Submit the examination application."
-msgstr ""
-
-msgid "Submitted"
-msgstr ""
-
-msgid ""
-"Submitting a correction request places this record back under review so you "
-"can update details for administrator re-verification."
-msgstr ""
-
-msgid "System Audit Logs"
-msgstr ""
-
-msgid "System messages"
-msgstr ""
-
-msgid ""
-"TEAKWONDO is a bilingual martial arts education and club management platform"
-" for athletes, families and coaches. Every promotion, medal and community "
-"activity is reviewed by our technical board before it becomes part of an "
-"athlete's official record."
-msgstr ""
-"TEAKWONDO는 선수, 가족, 지도자를 위한 이중 언어 무술 교육 및 클럽 관리 플랫폼입니다. 모든 승급, 메달 및 지역사회 활동은 "
-"기술위원회의 검토를 거쳐 선수의 공식 기록에 등록됩니다."
-
-msgid ""
-"TEAKWONDO is a multilingual martial arts education, athlete development, "
-"belt ranking and championship verification club connecting Persian and "
-"Korean martial arts communities."
-msgstr ""
-
-msgid ""
-"TEAKWONDO unites Persian and Korean budo traditions with modern sports "
-"science, transparent belt progression, and a certified record of every "
-"championship achievement."
-msgstr "TEAKWONDO는 페르시아와 한국의 무술 전통을 현대 스포츠 과학, 투명한 승급 과정 및 인증된 대회 기록과 결합합니다."
-
-msgid "Taekwondo · Karate · Judo"
-msgstr ""
-
-msgid "Tags"
-msgstr ""
-
-msgid "Target"
-msgstr ""
-
-msgid "Technical articles published by our coaching team."
-msgstr ""
-
-msgid "Technical board reviews and approves."
-msgstr ""
-
-msgid ""
-"Technical guidance, competition reports and belt examination preparation."
-msgstr "기술 안내, 대회 소식과 승급 심사 준비 정보를 확인하세요."
-
-msgid ""
-"Technical insights, championship coverage, sports conditioning and club "
-"announcements."
-msgstr ""
-
-msgid "Technical precision"
-msgstr ""
-
-msgid ""
-"Technical study guides, budo etiquette, sports physiology and belt "
-"examination preparation."
-msgstr ""
-
-msgid "Terms of Use"
-msgstr "이용 약관"
-
-msgid "The Academy"
-msgstr "아카데미"
-
-msgid "The Club"
-msgstr ""
-
-msgid "The requested page could not be found or is not publicly available."
-msgstr ""
-
-msgid "This password reset link is invalid or has already been used."
-msgstr ""
-
-msgid "Throws, groundwork and mutual welfare through safe, technical randori."
-msgstr "안전하고 기술적인 난취를 통해 던지기, 굳히기와 상호 존중을 배웁니다."
-
-msgid "Timestamp"
-msgstr ""
-
-msgid "Toggle dark mode"
-msgstr "다크 모드 전환"
-
-msgid "Toggle navigation"
-msgstr "메뉴 열기"
-
-msgid "Track progress"
-msgstr ""
-
-msgid ""
-"Track your approved belt rankings and submit belt promotion certificates."
-msgstr ""
-
-msgid ""
-"Train in a bilingual, safety-first dojo with certified coaches, transparent "
-"belt progression, and a verified record of every achievement you earn."
-msgstr ""
-
-msgid "Training clips, event announcements and belt examination results."
-msgstr "훈련 영상, 행사 공지와 승급 심사 결과를 확인하세요."
-
-msgid "Training philosophy"
-msgstr ""
+msgid "Inquire for price"
+msgstr "가격 문의"
 
-msgid "Training programs"
-msgstr "훈련 프로그램"
+msgid "Dojo shop"
+msgstr "도장 상점"
 
-msgid "Training programs will be listed soon."
+msgid "Official Products & Martial Arts Equipment"
 msgstr ""
 
-msgid "Transition"
+msgid "Club-approved uniforms, competition protection, embroidered Dan belts and training tools. In-store inquiry only — no online payment."
 msgstr ""
 
-msgid "Transparent belt and Dan progression"
-msgstr "투명한 띠와 단 승급 과정"
+msgid "Search catalog"
+msgstr "제품 검색"
 
-msgid "Try a class"
+msgid "Name or SKU"
 msgstr ""
 
-msgid "Try a different search term or browse all categories."
+msgid "No published products match your criteria."
 msgstr ""
 
 msgid "Try clearing the filters or contact the club desk for a custom order."
 msgstr ""
 
-msgid "Type"
+msgid "Clear filters"
 msgstr ""
 
-msgid ""
-"Uniting martial arts heritage, athletic excellence and verified sports "
-"education."
+msgid "Certified coaching for youth beginners, competitive athletes and Dan black belt candidates."
 msgstr ""
 
-msgid "Unread"
+msgid "Find the right training path"
 msgstr ""
 
-msgid "Update Membership Status"
+msgid "Weekly classes, squad training and examination preparation, grouped by age and level."
 msgstr ""
 
-msgid "Updated"
+msgid "Try a class"
 msgstr ""
 
-msgid "Verification"
+msgid "Book a supervised trial session before joining."
 msgstr ""
 
-msgid "Verified achievements will appear here once approved."
-msgstr "승인된 성과가 여기에 표시됩니다."
-
-msgid "Verified belt promotions"
+msgid "Choose a program"
 msgstr ""
 
-msgid "Verified competition and medal records"
-msgstr "인증된 대회 및 메달 기록"
-
-msgid "Verified medal winners"
+msgid "Select the group that matches age and experience."
 msgstr ""
 
-msgid "Verified medals will appear here once approved."
-msgstr "승인된 메달이 여기에 표시됩니다."
-
-msgid ""
-"Verified participant results will be published after the technical board "
-"review."
-msgstr ""
-
-msgid "Verified records"
-msgstr "인증된 기록"
-
-msgid "View all"
-msgstr ""
-
-msgid "View all programs"
-msgstr "모든 프로그램 보기"
-
-msgid "Visit & Contact"
-msgstr "방문 및 문의"
-
-msgid "Visit the Dojo"
-msgstr "도장 방문"
-
-msgid "Visit the dojo"
-msgstr ""
-
-msgid ""
-"Volunteering, cultural exchange and youth outreach organised by our members."
-msgstr "회원들이 함께하는 봉사, 문화 교류와 청소년 지원 활동입니다."
-
-msgid "We are here to help"
-msgstr "무엇을 도와드릴까요"
-
-msgid ""
-"We collect the information required to manage club membership: your name, "
-"contact details, chosen discipline, training and competition records, and "
-"the documents you submit for verification."
-msgstr ""
-
-msgid ""
-"We may update these terms to reflect changes in the club or the law. "
-"Material changes will be communicated through the member portal."
-msgstr ""
-
-msgid ""
-"Weekly classes, squad training and examination preparation, grouped by age "
-"and level."
-msgstr ""
-
-msgid "Welcome to the dojo"
-msgstr "도장에 오신 것을 환영합니다"
-
-msgid "What we stand for"
-msgstr ""
-
-msgid "Why TEAKWONDO"
-msgstr "TEAKWONDO를 선택하는 이유"
-
-msgid "Why train with us"
-msgstr ""
-
-msgid "Withdraw public visibility consent."
-msgstr ""
-
-msgid "Yes, Continue"
-msgstr ""
-
-msgid "You do not have permission to view this page or resource."
-msgstr ""
-
-msgid "You have no notifications yet."
-msgstr ""
-
-msgid "You have not submitted any medals yet."
-msgstr ""
-
-msgid ""
-"You have not submitted any sports records yet. Use the buttons above to get "
-"started."
-msgstr ""
-
-msgid "You may only access your own private records and submissions."
-msgstr ""
-
-msgid "You requested a password reset for your TEAKWONDO Club account."
+msgid "Track progress"
 msgstr ""
 
 msgid "Your belt and competition record lives in the portal."
 msgstr ""
 
-msgid ""
-"Your birth date, phone number, email address and uploaded certificates are "
-"always private and are never displayed on public pages."
-msgstr ""
-
-msgid "Your member data and uploaded documents remain private."
-msgstr ""
-
-msgid "Your new password is active. You may now sign in."
-msgstr ""
-
-msgid "Your recent submissions"
-msgstr ""
-
-msgid "Your rights"
-msgstr ""
-
-msgid "Youth, adult and elite squads"
-msgstr ""
-
-msgid "bronze"
-msgstr ""
-
-msgid "gold"
-msgstr ""
-
-msgid "silver"
-msgstr ""
-
-msgid "%(count)d membership application(s) approved."
-msgstr ""
-
-msgid "%(count)d membership application(s) rejected."
-msgstr ""
-
-msgid "%(count)d message(s) marked read."
-msgstr ""
-
-msgid "%(count)d message(s) marked unread."
-msgstr ""
-
-msgid "%(count)d own submission(s) skipped (self-approval forbidden)."
-msgstr ""
-
-msgid "%(count)d submission(s) updated."
-msgstr ""
-
-msgid "A user with this email address already exists."
-msgstr ""
-
-msgid "A user with this email already exists."
-msgstr ""
-
-msgid "About Page"
-msgstr ""
-
-msgid "Account active status updated."
-msgstr ""
-
-msgid "Account settings updated."
-msgstr ""
-
-msgid "Accounts & Roles"
-msgstr ""
-
-msgid "Achievement"
-msgstr ""
-
-msgid "Achievement date"
-msgstr ""
-
-msgid "Achievement date cannot be in the future."
-msgstr ""
-
-msgid "Achievement deleted."
-msgstr ""
-
-msgid "Achievement title"
-msgstr ""
-
-msgid "Achievement title (Korean)"
-msgstr ""
-
-msgid "Achievement updated and resubmitted for review."
-msgstr ""
-
-msgid "Active status"
-msgstr ""
-
-msgid "Activity date"
-msgstr ""
-
-msgid "Activity date cannot be in the future."
-msgstr ""
-
-msgid "Activity photograph"
-msgstr ""
-
-msgid "Activity title"
-msgstr ""
-
-msgid "Activity title (Korean)"
-msgstr ""
-
-msgid "Actor / Reviewer"
-msgstr ""
-
-msgid "Actor email snapshot"
-msgstr ""
-
-msgid "Additional notes"
-msgstr ""
-
-msgid "Administrator feedback"
-msgstr ""
-
-msgid "Administrator feedback / note"
-msgstr ""
-
-msgid "Administrator note"
-msgstr ""
-
-msgid "All notifications marked as read."
-msgstr ""
-
-msgid ""
-"Allow displaying this social activity on my public athlete profile once "
-"approved."
-msgstr ""
-
-msgid "Allowed document formats: PDF, JPG, JPEG, PNG, WebP."
-msgstr ""
-
-msgid "Allowed image formats: JPG, JPEG, PNG, WebP."
-msgstr ""
-
-msgid "Alt text (Korean)"
-msgstr ""
-
-msgid "Alt text (Persian)"
-msgstr ""
-
-msgid "An account with this email already exists."
-msgstr ""
-
-msgid "An email address is required."
-msgstr ""
-
-msgid "Approval status"
-msgstr ""
-
-msgid "Approve"
-msgstr ""
-
-msgid "Approve membership immediately"
-msgstr ""
-
-msgid "Approve selected membership applications"
-msgstr ""
-
-msgid "Approve selected submissions"
-msgstr ""
-
-msgid "Approved Member"
-msgstr ""
-
-msgid ""
-"Approved belt rank promotions and Dan black belt recipients at TEAKWONDO."
-msgstr ""
-
-msgid "Article content"
-msgstr ""
-
-msgid ""
-"Articles on Taekwondo techniques, sports science, belt preparation, and "
-"TEAKWONDO championship updates."
-msgstr ""
-
-msgid "Audit log"
-msgstr ""
-
-msgid "Audit logs"
-msgstr ""
-
-msgid "Available for club inquiry"
-msgstr ""
-
-msgid "Award date"
-msgstr ""
-
-msgid "Award date cannot be in the future."
-msgstr ""
-
-msgid "Belt Promotion"
-msgstr ""
-
-msgid "Belt badge color"
-msgstr ""
-
-msgid "Belt histories"
-msgstr ""
-
-msgid "Belt history"
-msgstr ""
-
-msgid "Belt promotion submission removed."
-msgstr ""
-
-msgid "Belt promotion updated and resubmitted for administrator review."
-msgstr ""
-
-msgid "Belt rank created."
-msgstr ""
-
-msgid "Belt rank name (Korean)"
-msgstr ""
-
-msgid "Belt rank name (Persian)"
-msgstr ""
-
-msgid "Belt rank updated."
-msgstr ""
-
-msgid "Belt type"
-msgstr ""
-
-msgid "Belt types"
-msgstr ""
-
-msgid "Belts & Rankings"
-msgstr ""
-
-msgid "Biography (Korean)"
-msgstr ""
-
-msgid "Biography (Persian)"
-msgstr ""
-
-msgid "Birth date"
-msgstr ""
-
-msgid "Birth date cannot be in the future."
-msgstr ""
-
-msgid "Black belt (Dan) level"
-msgstr ""
-
-msgid "Blog & Articles"
-msgstr ""
-
-msgid "Blog Index"
-msgstr ""
-
-msgid "Blog article created successfully."
-msgstr ""
-
-msgid "Blog article updated successfully."
-msgstr ""
-
-msgid "Blog categories"
-msgstr ""
-
-msgid "Blog category"
-msgstr ""
-
-msgid "Blog category created."
-msgstr ""
-
-msgid "Blog category updated."
-msgstr ""
-
-msgid "Blog post"
-msgstr ""
-
-msgid "Blog posts"
-msgstr ""
-
-msgid "Body (Korean)"
-msgstr ""
-
-msgid "Body (Persian)"
-msgstr ""
-
-msgid "Canonical URL"
-msgstr ""
-
-msgid "Canonical URL Override (Korean)"
-msgstr ""
-
-msgid "Canonical URL Override (Persian)"
-msgstr ""
-
-msgid "Canonical URL override"
-msgstr ""
-
-msgid "Category name"
-msgstr ""
-
-msgid "Category translation"
-msgstr ""
-
-msgid "Category translations"
-msgstr ""
-
-msgid "Champion Profile"
-msgstr ""
-
-msgid "Championship & Competition Results"
-msgstr ""
-
-msgid "Club Members"
-msgstr ""
-
-msgid "Club, Athlete & Multilingual Content Management"
-msgstr ""
-
-msgid "Competition Record"
-msgstr ""
-
-msgid "Competition created."
-msgstr ""
-
-msgid "Competition location"
-msgstr ""
-
-msgid "Competition location (Korean)"
-msgstr ""
-
-msgid "Competition name"
-msgstr ""
-
-msgid "Competition name (Korean)"
-msgstr ""
-
-msgid "Competition participation"
-msgstr ""
-
-msgid "Competition participation deleted."
-msgstr ""
-
-msgid "Competition participation submitted and awaiting review."
-msgstr ""
-
-msgid "Competition participations"
-msgstr ""
-
-msgid "Competition record updated and resubmitted."
-msgstr ""
-
-msgid ""
-"Competition title (auto-filled when selecting a registered competition)."
-msgstr ""
-
-msgid "Competition updated."
-msgstr ""
-
-msgid "Confirm password"
-msgstr ""
-
-msgid "Contact Us"
-msgstr ""
-
-msgid "Contact message"
-msgstr ""
-
-msgid "Contact message updated."
-msgstr ""
-
-msgid "Contact messages"
-msgstr ""
-
-msgid "Content (Korean)"
-msgstr ""
-
-msgid "Content (Persian)"
-msgstr ""
-
-msgid "Content Administrator"
-msgstr ""
-
-msgid "Correction Requested"
-msgstr ""
-
-msgid "Correction details"
-msgstr ""
-
-msgid ""
-"Correction request recorded. You can now edit and resubmit the achievement."
-msgstr ""
-
-msgid ""
-"Correction request recorded. You can now edit and resubmit the activity."
-msgstr ""
-
-msgid "Correction request recorded. You can now edit and resubmit the medal."
-msgstr ""
-
-msgid "Correction request recorded. You can now edit and resubmit the record."
-msgstr ""
-
-msgid "Created at"
-msgstr ""
-
-msgid "Currency"
-msgstr ""
-
-msgid "Date joined"
-msgstr ""
-
-msgid "Decision"
-msgstr ""
-
-msgid "Decision note"
-msgstr ""
-
-msgid "Description (Korean)"
-msgstr ""
-
-msgid "Description (Persian)"
-msgstr ""
-
-msgid "Designates whether the user can access administration tools."
-msgstr ""
-
-msgid "Designates whether this account can log in."
-msgstr ""
-
-msgid "Detailed description"
-msgstr ""
-
-msgid "Display order"
-msgstr ""
-
-msgid "Division / Weight category"
-msgstr ""
-
-msgid "Educational Module"
-msgstr ""
-
-msgid "Email address"
-msgstr ""
-
-msgid "Email, action, model, IP..."
-msgstr ""
-
-msgid "End date"
-msgstr ""
-
-msgid "End date cannot be earlier than start date."
-msgstr ""
-
-msgid "Enter a valid birth date."
-msgstr ""
-
-msgid "Enter a valid phone number (digits, spaces, +, -, parentheses)."
-msgstr ""
-
-msgid "Enter the competition location."
-msgstr ""
-
-msgid "Enter the competition name or select a registered competition."
-msgstr ""
-
-msgid "Event type"
-msgstr ""
-
-msgid "Evidence"
-msgstr ""
-
-msgid "Example: 10-GEUP, 5-GEUP, 1-DAN, 3-DAN"
-msgstr ""
-
-msgid "Example: 1st Place, Silver Medalist, Quarterfinalist"
-msgstr ""
-
-msgid "Excerpt (Korean)"
-msgstr ""
-
-msgid "Excerpt (Persian)"
-msgstr ""
-
-msgid "Excerpt / summary"
-msgstr ""
-
-msgid "Explain what needs to be updated or corrected..."
-msgstr ""
-
-msgid "Featured article"
-msgstr ""
-
-msgid "Featured image"
-msgstr ""
-
-msgid "Featured image alt text"
-msgstr ""
-
-msgid "Featured product"
-msgstr ""
-
-msgid "File header does not match a valid image format."
-msgstr ""
-
-msgid "File size cannot exceed %(max_mb)s MB."
-msgstr ""
-
-msgid "First name"
-msgstr ""
-
-msgid "First name (Korean)"
-msgstr ""
-
-msgid "Full name"
-msgstr ""
-
-msgid "General Static Page"
-msgstr ""
-
-msgid "Higher numbers indicate higher ranks (e.g., White=1 ... 9th Dan=19)."
-msgstr ""
-
-msgid "Homepage"
-msgstr ""
-
-msgid ""
-"How TEAKWONDO collects, stores and protects member data, certificates and "
-"public athlete profile information."
-msgstr ""
-
-msgid "I agree to the club code of conduct and privacy policy."
-msgstr ""
-
-msgid ""
-"I consent to displaying my approved sports records and name on the public "
-"website."
-msgstr ""
-
-msgid "IP address"
-msgstr ""
-
-msgid "Image Alt (Korean)"
-msgstr ""
-
-msgid "Image Alt (Persian)"
-msgstr ""
-
-msgid "Image alt text"
-msgstr ""
-
-msgid "Image dimensions exceed the maximum allowed size."
-msgstr ""
-
-msgid "Initial password"
-msgstr ""
-
-msgid "Internal staff note"
-msgstr ""
-
-msgid "Invalid WebP image file."
-msgstr ""
-
-msgid "Invalid approval status."
-msgstr ""
-
-msgid "Invalid email address or password."
-msgstr ""
-
-msgid "Invalid membership status."
-msgstr ""
-
-msgid "Invalid role selected."
-msgstr ""
-
-msgid "Joining date"
-msgstr ""
-
-msgid "Last name"
-msgstr ""
-
-msgid "Last name (Korean)"
-msgstr ""
-
-msgid ""
-"Learn about TEAKWONDO's martial arts philosophy, certified coaching "
-"programs, athlete verification workflow, and Persian-Korean cultural bridge."
-msgstr ""
-
-msgid "Linked content model"
-msgstr ""
-
-msgid "Linked object ID"
-msgstr ""
-
-msgid "Location (Korean)"
-msgstr ""
-
-msgid "Location (Persian)"
-msgstr ""
-
-msgid "Mark as read"
-msgstr ""
-
-msgid "Mark selected messages as read"
-msgstr ""
-
-msgid "Mark selected messages as unread"
-msgstr ""
-
-msgid "Martial Arts Academy, Champions & Club Platform"
-msgstr ""
-
-msgid "Martial Arts Blog & Technical Articles"
-msgstr ""
-
-msgid "Martial Arts Equipment & Uniform Catalog"
-msgstr ""
-
-msgid "Martial arts discipline"
-msgstr ""
-
-msgid "Medal submission deleted."
-msgstr ""
-
-msgid "Medal submission updated and resubmitted for review."
-msgstr ""
-
-msgid "Member"
-msgstr ""
-
-msgid "Member account created successfully."
-msgstr ""
-
-msgid "Member correction request"
-msgstr ""
-
-msgid "Member profile"
-msgstr ""
-
-msgid "Member profile updated."
-msgstr ""
-
-msgid "Member profiles"
-msgstr ""
-
-msgid "Membership Status Update"
-msgstr ""
-
-msgid "Membership decision"
-msgstr ""
-
-msgid "Membership number"
-msgstr ""
-
-msgid "Membership reviewer"
-msgstr ""
-
-msgid "Membership status updated."
-msgstr ""
-
-msgid "Message"
-msgstr ""
-
-msgid "Message (Korean)"
-msgstr ""
-
-msgid "Message (Persian / default)"
-msgstr ""
-
-msgid "Meta Description (Korean)"
-msgstr ""
-
-msgid "Meta Description (Persian)"
-msgstr ""
-
-msgid "Moderation decision saved and the member has been notified."
-msgstr ""
-
-msgid "Moderator"
-msgstr ""
-
-msgid "Name (A-Z)"
-msgstr ""
-
-msgid "Name (Korean)"
-msgstr ""
-
-msgid "Name (Persian)"
-msgstr ""
-
-msgid "New Contact Message"
-msgstr ""
-
-msgid "New state"
-msgstr ""
-
-msgid "New status"
-msgstr ""
-
-msgid "Notification"
-msgstr ""
-
-msgid "Notification type"
-msgstr ""
-
-msgid "Numeric placement"
-msgstr ""
-
-msgid "Official Belt Promotions & Black Belt Registry"
-msgstr ""
-
-msgid ""
-"Official TEAKWONDO uniforms (Dobok & Dogi), certified protective gear, "
-"belts, and training equipment."
-msgstr ""
-
-msgid "Official belt certificate"
-msgstr ""
-
-msgid ""
-"Official directory of approved TEAKWONDO martial arts athletes, medal "
-"winners, black belt holders, and championship records."
-msgstr ""
-
-msgid ""
-"Official verified Gold, Silver, and Bronze medal winners of TEAKWONDO Club."
-msgstr ""
-
-msgid "One specification per line."
-msgstr ""
-
-msgid "Only Super Administrators can activate or deactivate staff accounts."
-msgstr ""
-
-msgid "Only Super Administrators can modify user roles."
-msgstr ""
-
-msgid "Only a Super Administrator can assign administrative roles."
-msgstr ""
-
-msgid "Open Graph Description (Korean)"
-msgstr ""
-
-msgid "Open Graph Description (Persian)"
-msgstr ""
-
-msgid "Open Graph Title (Korean)"
-msgstr ""
-
-msgid "Open Graph Title (Persian)"
-msgstr ""
-
-msgid "Open Graph description"
-msgstr ""
-
-msgid "Open Graph image"
-msgstr ""
-
-msgid "Open Graph image alt text"
-msgstr ""
-
-msgid "Open Graph title"
-msgstr ""
-
-msgid "Organizer (Korean)"
-msgstr ""
-
-msgid "Organizer (Persian)"
-msgstr ""
-
-msgid "Other / Special Award"
-msgstr ""
-
-msgid "Other Martial Art"
-msgstr ""
-
-msgid "PDF files containing embedded scripts or actions are not permitted."
-msgstr ""
-
-msgid "Page category"
-msgstr ""
-
-msgid "Page content"
-msgstr ""
-
-msgid "Page created successfully."
-msgstr ""
-
-msgid "Page translation"
-msgstr ""
-
-msgid "Page translations"
-msgstr ""
-
-msgid "Page updated successfully."
-msgstr ""
-
-msgid "Pages"
-msgstr ""
-
-msgid "Participants"
-msgstr ""
-
-msgid "Participation / result certificate"
-msgstr ""
-
-msgid "Password"
-msgstr ""
-
-msgid "Personal Info"
-msgstr ""
-
-msgid "Phone number"
-msgstr ""
-
-msgid "Phone number (optional)"
-msgstr ""
-
-msgid "Photograph"
-msgstr ""
-
-msgid "Please correct the highlighted profile fields."
-msgstr ""
-
-msgid "Please describe the correction needed."
-msgstr ""
-
-msgid "Please provide a reason when rejecting or requesting revision."
-msgstr ""
-
-msgid "Please write a message of at least 10 characters."
-msgstr ""
-
-msgid "Policy / Legal Page"
-msgstr ""
-
-msgid "Post"
-msgstr ""
-
-msgid "Post translation"
-msgstr ""
-
-msgid "Post translations"
-msgstr ""
-
-msgid "Preferred language"
-msgstr ""
-
-msgid "Previous state"
-msgstr ""
-
-msgid "Previous status"
-msgstr ""
-
-msgid "Price (optional)"
-msgstr ""
-
-msgid "Primary discipline"
-msgstr ""
+msgid "Training Program"
+msgstr "훈련 프로그램"
 
-msgid "Primary image"
-msgstr ""
-
-msgid "Primary martial arts discipline"
-msgstr ""
-
-msgid "Product"
-msgstr ""
-
-msgid "Product Name (Korean)"
-msgstr ""
-
-msgid "Product Name (Persian)"
-msgstr ""
-
-msgid "Product categories"
-msgstr ""
-
-msgid "Product category"
-msgstr ""
-
-msgid "Product category created."
-msgstr ""
-
-msgid "Product category translation"
-msgstr ""
-
-msgid "Product category translations"
-msgstr ""
-
-msgid "Product category updated."
-msgstr ""
-
-msgid "Product created successfully."
-msgstr ""
-
-msgid "Product image"
-msgstr ""
-
-msgid "Product images"
-msgstr ""
-
-msgid "Product name"
-msgstr ""
-
-msgid "Product translation"
-msgstr ""
-
-msgid "Product translations"
-msgstr ""
-
-msgid "Product updated successfully."
-msgstr ""
-
-msgid "Products & Equipment"
-msgstr ""
-
-msgid "Profile photo"
-msgstr ""
-
-msgid ""
-"Provide a complete title and body in at least one language (Persian or "
-"Korean)."
-msgstr ""
-
-msgid "Provide a page title and body in at least one language."
-msgstr ""
-
-msgid "Provide clear feedback for the athlete..."
-msgstr ""
-
-msgid "Provide product name and description in at least one language."
-msgstr ""
-
-msgid "Public profile consent"
-msgstr ""
-
-msgid "Public profile slug"
-msgstr ""
-
-msgid "Public profile visibility"
-msgstr ""
-
-msgid "Public visibility consent"
-msgstr ""
-
-msgid "Publication date"
-msgstr ""
-
-msgid "Publication status"
-msgstr ""
-
-msgid "REST API"
-msgstr ""
-
-msgid "Rank code"
-msgstr ""
-
-msgid "Rank progression order"
-msgstr ""
-
-msgid ""
-"Reach out to TEAKWONDO martial arts academy regarding classes, membership, "
-"competitions, and training equipment."
-msgstr ""
-
-msgid "Read at"
-msgstr ""
-
-msgid "Read status"
-msgstr ""
-
-msgid "Recipient"
-msgstr ""
-
-msgid "Recommended discipline"
-msgstr ""
-
-msgid "Recorded at"
-msgstr ""
-
-msgid "Registered competition"
-msgstr ""
-
-msgid "Reject"
-msgstr ""
-
-msgid "Reject selected membership applications"
-msgstr ""
-
-msgid "Reject selected submissions"
-msgstr ""
-
-msgid "Request Revision"
-msgstr ""
-
-msgid "Request revision on selected submissions"
-msgstr ""
-
-msgid "Resubmitted"
-msgstr ""
-
-msgid "Result / Standing"
-msgstr ""
-
-msgid "Result / Standing (Korean)"
-msgstr ""
-
-msgid "Results summary (Korean)"
-msgstr ""
-
-msgid "Results summary (Persian)"
-msgstr ""
-
-msgid "Review date"
-msgstr ""
-
-msgid "Review log"
-msgstr ""
-
-msgid "Review logs"
-msgstr ""
-
-msgid "Reviewed"
-msgstr ""
-
-msgid "Reviewed by"
-msgstr ""
-
-msgid "Revision Requested"
-msgstr ""
-
-msgid "Robots follow"
-msgstr ""
-
-msgid "Robots index"
-msgstr ""
-
-msgid "Role & Access Control"
-msgstr ""
-
-msgid "SEO & Metadata"
-msgstr ""
-
-msgid "SEO Description (Korean)"
-msgstr ""
-
-msgid "SEO Description (Persian)"
-msgstr ""
-
-msgid "SEO Title (Korean)"
-msgstr ""
-
-msgid "SEO Title (Persian)"
-msgstr ""
-
-msgid "SEO description"
-msgstr ""
-
-msgid "SEO entry"
-msgstr ""
-
-msgid "SEO follow"
-msgstr ""
-
-msgid "SEO index"
-msgstr ""
-
-msgid "SEO meta description"
-msgstr ""
-
-msgid "SEO metadata"
-msgstr ""
-
-msgid "SEO metadata saved."
-msgstr ""
-
-msgid "SEO metadata updated."
-msgstr ""
-
-msgid "SEO title"
-msgstr ""
-
-msgid "SEO translation"
-msgstr ""
-
-msgid "SEO translations"
-msgstr ""
-
-msgid "Search athlete name..."
-msgstr ""
-
-msgid "Selected belt rank must match the chosen discipline."
-msgstr ""
-
-msgid "Set a future date/time with Scheduled status to auto-publish."
-msgstr ""
-
-msgid "Short Description (Korean)"
-msgstr ""
-
-msgid "Short Description (Persian)"
-msgstr ""
-
-msgid "Short description"
-msgstr ""
-
-msgid "Show link in footer"
-msgstr ""
-
-msgid "Show my athlete profile in the public Champions directory."
-msgstr ""
-
-msgid "Social Activities"
-msgstr ""
-
-msgid "Social Activity"
-msgstr ""
-
-msgid "Social activities"
-msgstr ""
-
-msgid "Social activity"
-msgstr ""
-
-msgid "Social activity removed."
-msgstr ""
-
-msgid "Social activity updated and resubmitted for moderation."
-msgstr ""
-
-msgid "Spam submission rejected."
-msgstr ""
-
-msgid "Specifications (Korean)"
-msgstr ""
-
-msgid "Specifications (Persian)"
-msgstr ""
-
-msgid "Sports Achievements"
-msgstr ""
-
-msgid "Staff status"
-msgstr ""
-
-msgid "Start date"
-msgstr ""
-
-msgid "Static route key"
-msgstr ""
-
-msgid ""
-"Structured educational syllabus covering Poomsae, Kyorugi tactics, etiquette"
-" (Reigi), sports nutrition, and belt examination criteria."
-msgstr ""
-
-msgid "Submission Approved"
-msgstr ""
-
-msgid "Submission Pending"
-msgstr ""
-
-msgid "Submission Rejected"
-msgstr ""
-
-msgid "Submission date"
-msgstr ""
-
-msgid "Submission summary"
-msgstr ""
-
-msgid "Subtitle"
-msgstr ""
-
-msgid "Subtitle (Korean)"
-msgstr ""
-
-msgid "Subtitle (Persian)"
-msgstr ""
-
-msgid "Summary"
-msgstr ""
-
-msgid "Summary (Korean)"
-msgstr ""
-
-msgid "Summary (Persian)"
-msgstr ""
+msgid "Program Details"
+msgstr "프로그램 상세"
 
-msgid "Super Administrator"
+msgid "Inquire"
 msgstr ""
 
-msgid "Supporting certificate"
+msgid "Training programs will be listed soon."
 msgstr ""
 
-msgid "Supporting evidence / certificate"
+msgid "Acceptance of terms"
 msgstr ""
 
-msgid "System Notification"
+msgid "By using this website or the member portal you agree to these terms, the club code of conduct, and all applicable dojo rules. If you do not agree, please do not use the service."
 msgstr ""
 
-msgid "TEAKWONDO Admin"
+msgid "Membership and accounts"
 msgstr ""
 
-msgid "TEAKWONDO Administration"
+msgid "Provide accurate registration and profile information."
 msgstr ""
 
-msgid "Tag name (Korean)"
+msgid "Keep your password confidential and do not share your account."
 msgstr ""
 
-msgid "Tag name (Persian)"
+msgid "Membership is subject to review and approval by club administration."
 msgstr ""
 
-msgid "Target ID"
+msgid "You may only access your own private records and submissions."
 msgstr ""
 
-msgid "Target link"
+msgid "Submissions and moderation"
 msgstr ""
 
-msgid "Target model"
+msgid "Achievements, medals, belt promotions, competitions and social activities are submitted for review. Administrators may approve, reject or request revisions, and may add feedback visible to you in the portal. Members cannot approve their own submissions or change review decisions."
 msgstr ""
 
-msgid "Target summary"
+msgid "Code of conduct"
 msgstr ""
 
-msgid "Technical specifications"
+msgid "Respect instructors, fellow members and visitors. Harassment, discrimination, unsafe training and the publication of another person's private information are prohibited and may result in suspension."
 msgstr ""
 
-msgid ""
-"Terms of use, member code of conduct and acceptable use rules for the "
-"TEAKWONDO club platform."
+msgid "Equipment catalog"
 msgstr ""
 
-msgid "Thank you! Your message has been sent to the TEAKWONDO club team."
+msgid "Product listings are informational. No online checkout or payment is provided; prices, availability and custom orders must be confirmed directly with the club desk."
 msgstr ""
 
-msgid "The two password fields did not match."
+msgid "Limitation of liability"
 msgstr ""
 
-msgid "The uploaded file is not a valid PDF document."
+msgid "Martial arts training carries inherent physical risk. Members must follow safety instructions and disclose relevant health conditions. The club is not liable for misuse of the platform or for training undertaken contrary to coach guidance."
 msgstr ""
 
-msgid "The uploaded file is not a valid or safe image."
+msgid "Changes to these terms"
 msgstr ""
 
-msgid ""
-"This account is currently deactivated. Please contact the club "
-"administrator."
+msgid "We may update these terms to reflect changes in the club or the law. Material changes will be communicated through the member portal."
 msgstr ""
 
-msgid "This email address is already in use."
-msgstr ""
+#~ msgid "About"
+#~ msgstr "소개"
 
-msgid "Timestamps"
-msgstr ""
+#~ msgid "Admin"
+#~ msgstr "관리자"
 
-msgid "Title (Korean)"
-msgstr ""
+#~ msgid "Portal"
+#~ msgstr "포털"
 
-msgid "Title (Persian)"
-msgstr ""
+#~ msgid "Join Club"
+#~ msgstr "클럽 가입"
 
-msgid ""
-"Too many failed login attempts. Please wait a few minutes and try again."
-msgstr ""
+#~ msgid "Academy"
+#~ msgstr "아카데미"
 
-msgid ""
-"Too many messages submitted recently. Please try again in a few minutes."
-msgstr ""
+#~ msgid "Articles & Blog"
+#~ msgstr "기사 및 블로그"
 
-msgid "Training Program / Service"
-msgstr ""
+#~ msgid "Champions & Honors"
+#~ msgstr "챔피언 및 수상"
 
-msgid "Training Programs & Services"
-msgstr ""
+#~ msgid "Member Access"
+#~ msgstr "회원 서비스"
 
-msgid "Unsupported image format. Use JPEG, PNG, or WebP."
-msgstr ""
+#~ msgid "Contact Club"
+#~ msgstr "클럽에 문의"
 
-msgid "Updated at"
-msgstr ""
+#~ msgid "API Docs (v1)"
+#~ msgstr "API 문서 (v1)"
 
-msgid "Upload Primary Product Image"
-msgstr ""
+#~ msgid "Supported Languages"
+#~ msgstr "지원 언어"
 
-msgid "Uploaded file is empty."
-msgstr ""
+#~ msgid "Training Programs & Martial Arts Education"
+#~ msgstr "훈련 프로그램과 무술 교육"
 
-msgid "User"
-msgstr ""
+#~ msgid "All Programs"
+#~ msgstr "모든 프로그램"
 
-msgid "User account"
-msgstr ""
+#~ msgid "Program"
+#~ msgstr "프로그램"
 
-msgid "User agent"
-msgstr ""
+#~ msgid "Curriculum"
+#~ msgstr "교육 과정"
 
-msgid "User role"
-msgstr ""
+#~ msgid "Learn more"
+#~ msgstr "자세히 보기"
 
-msgid "User role updated."
-msgstr ""
+#~ msgid "View All Champions"
+#~ msgstr "모든 챔피언 보기"
 
-msgid "Users"
-msgstr ""
+#~ msgid "Recent Medal Winners"
+#~ msgstr "최근 메달 수상자"
 
-msgid "Verified TEAKWONDO team results, tournament standings, and medalists."
-msgstr ""
+#~ msgid "Full Honor Roll"
+#~ msgstr "전체 수상자 명단"
 
-msgid "Verified athlete profile at TEAKWONDO Club."
-msgstr ""
+#~ msgid "Browse Catalog"
+#~ msgstr "목록 보기"
 
-msgid "Welcome back, %(name)s."
-msgstr ""
+#~ msgid "All Articles"
+#~ msgstr "모든 기사"
 
-msgid "Welcome to TEAKWONDO! Your member account has been created."
-msgstr ""
+#~ msgid "Back to Blog"
+#~ msgstr "블로그로 돌아가기"
 
-msgid ""
-"You already submitted a participation record for this competition and "
-"division."
-msgstr ""
+#~ msgid "Send an Inquiry"
+#~ msgstr "문의 보내기"
 
-msgid "You are not authorized to review membership applications."
-msgstr ""
+#~ msgid "Official Email"
+#~ msgstr "공식 이메일"
 
-msgid "You are not authorized to review this submission."
-msgstr ""
+#~ msgid "Training Hours"
+#~ msgstr "훈련 시간"
 
-msgid "You cannot approve your own membership application."
-msgstr ""
+#~ msgid "Super Admin"
+#~ msgstr "최고 관리자"
 
-msgid "You cannot deactivate your own account."
-msgstr ""
+#~ msgid "Content Admin"
+#~ msgstr "콘텐츠 관리자"
 
-msgid "You cannot downgrade your own Super Administrator role."
-msgstr ""
+#~ msgid "Moderator / Coach Reviewer"
+#~ msgstr "심사 담당자 / 코치"
 
-msgid "You cannot review or approve your own submission."
-msgstr ""
+#~ msgid "General Martial Arts"
+#~ msgstr "일반 무술"
 
-msgid "You have been signed out safely."
-msgstr ""
+#~ msgid "Create your individual athlete portal account. Your membership application will be reviewed by club administrators."
+#~ msgstr "선수 포털 계정을 만드세요. 회원 가입 신청은 클럽 관리자가 검토합니다."
 
-msgid "You may only request corrections for your own records."
-msgstr ""
+#~ msgid "Dashboard Overview"
+#~ msgstr "대시보드 개요"
 
-msgid "You must grant public profile consent to make your profile visible."
-msgstr ""
+#~ msgid "A modern academy rooted in respect, effort and integrity"
+#~ msgstr "존중과 노력, 정직을 바탕으로 한 현대적인 아카데미"
 
-msgid "Your belt promotion request has been submitted and is pending review."
-msgstr ""
+#~ msgid "Administrators review supporting documents before records are published."
+#~ msgstr "기록을 공개하기 전에 관리자가 증빙 서류를 검토합니다."
 
-msgid ""
-"Your medal submission has been recorded and is pending administrator review."
-msgstr ""
+#~ msgid "Age-appropriate groups, small class sizes and a respectful training culture."
+#~ msgstr "연령에 맞는 소규모 수업과 서로를 존중하는 훈련 문화를 제공합니다."
 
-msgid "Your password has been changed successfully."
-msgstr ""
+#~ msgid "All programs"
+#~ msgstr "모든 프로그램"
 
-msgid "Your profile has been updated."
-msgstr ""
+#~ msgid "Approved and consented club activities will be published here."
+#~ msgstr "승인과 공개 동의를 받은 클럽 활동이 여기에 게시됩니다."
 
-msgid "Your social activity has been submitted and is pending moderation."
-msgstr ""
+#~ msgid "Authentic instruction across striking, grappling and weapons-based Japanese and Korean arts."
+#~ msgstr "타격, 잡기와 무기를 사용하는 일본 및 한국 무술을 정통 방식으로 지도합니다."
 
-msgid ""
-"Your sports achievement has been submitted and is pending administrator "
-"review."
-msgstr ""
+#~ msgid "Bamboo sword fundamentals, zanshin and the discipline of the kendojo."
+#~ msgstr "죽도 기본기, 잔심과 검도장의 규율을 배웁니다."
 
-msgid ""
-"Youth fundamentals, competitive sparring squads, black belt Dan preparation,"
-" and international training seminars at TEAKWONDO."
-msgstr ""
+#~ msgid "Blending and redirecting energy, joint locks and non-resistance defence."
+#~ msgstr "상대의 힘을 이용하는 관절기와 유연한 방어를 배웁니다."
 
-msgid "TEAKWONDO — Password Reset Request"
-msgstr ""
+#~ msgid "Browse the catalog"
+#~ msgstr "제품 목록 보기"
 
-msgid "Hide password"
-msgstr ""
+#~ msgid "Certified, safety-first coaching"
+#~ msgstr "안전을 최우선으로 하는 공인 지도"
 
-msgid "Scrollable table"
-msgstr ""
+#~ msgid "Club activities beyond the mat"
+#~ msgstr "도장 밖의 클럽 활동"
 
-msgid "Persian"
-msgstr "페르시아어"
+#~ msgid "Club-approved uniforms, protective gear and embroidered Dan belts."
+#~ msgstr "클럽이 승인한 도복, 보호 장비와 자수 단띠입니다."
 
-msgid "Korean"
-msgstr "한국어"
+#~ msgid "Community"
+#~ msgstr "지역사회"
 
-msgid "Club"
-msgstr "클럽"
+#~ msgid "Community activities are published only after administrator approval and explicit member consent."
+#~ msgstr "지역사회 활동은 관리자의 승인과 회원의 명시적 동의 후에만 공개됩니다."
 
-msgid "Articles"
-msgstr "기사"
+#~ msgid "Cultural bridge"
+#~ msgstr "문화의 가교"
 
-msgid "Select language"
-msgstr "언어 선택"
+#~ msgid "Discipline, education and verified martial arts excellence"
+#~ msgstr "규율과 교육, 인증된 무술 실력"
 
-msgid "Main navigation"
-msgstr "주 메뉴"
+#~ msgid "Disciplines taught at the academy"
+#~ msgstr "아카데미에서 배우는 종목"
 
-msgid "Gallery"
-msgstr "갤러리"
+#~ msgid "Dynamic kicking techniques, poomsae forms, Olympic-style sparring and Dan promotion."
+#~ msgstr "역동적인 발차기, 품새, 올림픽식 겨루기와 단 승급을 배웁니다."
 
+#~ msgid "Explore Our Champions"
+#~ msgstr "챔피언 살펴보기"
 
-msgid "Photo Gallery"
-msgstr "사진 갤러리"
+#~ msgid "Family-friendly club"
+#~ msgstr "가족 친화적인 클럽"
 
+#~ msgid "Fully bilingual Persian and Korean"
+#~ msgstr "페르시아어와 한국어 지원"
 
-msgid "TEAKWONDO — Martial Arts & Club Academy"
-msgstr "TEAKWONDO — 무술 및 클럽 아카데미"
+#~ msgid "Latest articles and club news"
+#~ msgstr "최신 기사와 클럽 소식"
 
+#~ msgid "Martial arts"
+#~ msgstr "무술"
 
-msgid "Community & club life"
-msgstr "커뮤니티와 클럽 생활"
+#~ msgid "Official Martial Arts Academy & Verified Club Registry"
+#~ msgstr "공식 무술 아카데미 및 인증 클럽 등록부"
 
+#~ msgid "Official uniforms and equipment"
+#~ msgstr "공식 도복과 장비"
 
-msgid "Club Gallery"
-msgstr "클럽 갤러리"
+#~ msgid "Persian and Korean language editions with shared standards and values."
+#~ msgstr "동일한 기준과 가치를 공유하는 페르시아어와 한국어 서비스입니다."
 
+#~ msgid "Practical self-defence, escapes, throws and pressure-point control."
+#~ msgstr "실용적인 호신술, 탈출, 던지기와 급소 제압을 배웁니다."
 
-msgid "Search photos"
-msgstr "사진 검색"
+#~ msgid "Precise linear strikes, kata bunkai and controlled kumite practice."
+#~ msgstr "정확한 직선 타격, 카타 분석과 절제된 대련을 연습합니다."
 
+#~ msgid "Progressive syllabi for poomsae, kata, sparring, self-defence and conditioning."
+#~ msgstr "품새, 카타, 대련, 호신술과 체력 훈련을 위한 단계별 교육 과정입니다."
 
-msgid "Search by title, description or location"
-msgstr "제목, 설명 또는 장소로 검색"
+#~ msgid "Recent achievements"
+#~ msgstr "최근 성과"
 
+#~ msgid "Recent medal winners"
+#~ msgstr "최근 메달 수상자"
 
-msgid "No club photos yet."
-msgstr "아직 클럽 사진이 없습니다."
+#~ msgid "See club results"
+#~ msgstr "클럽 성과 보기"
 
+#~ msgid "Structured curriculum"
+#~ msgstr "체계적인 교육 과정"
 
-msgid ""
-"Photos from approved club activities appear here once members grant public "
-"visibility consent."
-msgstr "회원이 공개에 동의한 승인된 클럽 활동 사진이 여기에 표시됩니다."
+#~ msgid "Technical guidance, competition reports and belt examination preparation."
+#~ msgstr "기술 안내, 대회 소식과 승급 심사 준비 정보를 확인하세요."
 
+#~ msgid "Throws, groundwork and mutual welfare through safe, technical randori."
+#~ msgstr "안전하고 기술적인 난취를 통해 던지기, 굳히기와 상호 존중을 배웁니다."
 
-msgid "No photos found."
-msgstr "검색된 사진이 없습니다."
+#~ msgid "Transparent belt and Dan progression"
+#~ msgstr "투명한 띠와 단 승급 과정"
 
+#~ msgid "Verified competition and medal records"
+#~ msgstr "인증된 대회 및 메달 기록"
 
-msgid "Try a different search term or reset your search."
-msgstr "다른 검색어를 입력하거나 검색을 초기화하세요."
+#~ msgid "Verified medals will appear here once approved."
+#~ msgstr "승인된 메달이 여기에 표시됩니다."
 
+#~ msgid "Verified records"
+#~ msgstr "인증된 기록"
 
-msgid "Photo preview"
-msgstr "사진 미리보기"
+#~ msgid "Volunteering, cultural exchange and youth outreach organised by our members."
+#~ msgstr "회원들이 함께하는 봉사, 문화 교류와 청소년 지원 활동입니다."
 
+#~ msgid "Welcome to the dojo"
+#~ msgstr "도장에 오신 것을 환영합니다"
 
-msgid "Club Gallery — TEAKWONDO in Pictures"
-msgstr "클럽 갤러리 — 사진으로 보는 TEAKWONDO"
+#~ msgid "Why TEAKWONDO"
+#~ msgstr "TEAKWONDO를 선택하는 이유"
 
+#~ msgid "Club"
+#~ msgstr "클럽"
 
-msgid ""
-"Approved club photos from training, competitions and community activities, "
-"published with member consent."
-msgstr "회원의 동의를 받아 공개된 훈련, 대회 및 커뮤니티 활동 사진입니다."
+#~ msgid "Articles"
+#~ msgstr "기사"
 
+#~ msgid "Select language"
+#~ msgstr "언어 선택"
 
-msgid "%(counter)s approved club photo, published with member consent."
-msgid_plural ""
-"%(counter)s approved club photos, published with member consent."
-msgstr[0] "회원 동의하에 공개된 승인된 클럽 사진 %(counter)s장."
+#~ msgid "Main navigation"
+#~ msgstr "주 메뉴"
