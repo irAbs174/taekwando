@@ -3,12 +3,14 @@
 
 {% block title %}{{ seo_title|default:SITE_NAME }}{% endblock %}
 
+{% block body_class %}home-page{% endblock %}
+
 {% block content %}
 {# 1. Hero ----------------------------------------------------------------- #}
-<section class="hero">
+<section class="hero home-hero">
   <div class="container">
     <div class="hero-inner">
-      <div>
+      <div class="hero-copy">
         <span class="hero-kicker">
           <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
           {% trans "Official Martial Arts Academy & Verified Club Registry" %}
@@ -32,37 +34,40 @@
         </div>
       </div>
 
-      <aside class="hero-panel" aria-label="{% trans 'Why train with us' %}">
-        <div class="hero-banner">
-          <img src="{% static 'images/hero-banner.png' %}"
-               alt="{% trans 'TEAKWONDO — Martial Arts & Club Academy' %}"
-               width="1200" height="440" fetchpriority="high">
-        </div>
-        <h2>{% trans "Why TEAKWONDO" %}</h2>
-        <ul>
-          <li><i class="bi bi-shield-check" aria-hidden="true"></i>{% trans "Certified, safety-first coaching" %}</li>
-          <li><i class="bi bi-diagram-3" aria-hidden="true"></i>{% trans "Transparent belt and Dan progression" %}</li>
-          <li><i class="bi bi-award" aria-hidden="true"></i>{% trans "Verified competition and medal records" %}</li>
-          <li><i class="bi bi-translate" aria-hidden="true"></i>{% trans "Fully bilingual Persian and Korean" %}</li>
-        </ul>
-      </aside>
+      <div class="hero-panel hero-banner-panel" data-scroll-depth>
+        <img src="{% static 'images/tech.png' %}"
+             alt="{% trans 'TEAKWONDO — Martial Arts & Club Academy' %}"
+             width="1242" height="281" fetchpriority="high">
+      </div>
     </div>
 
-    <div class="stats-strip">
+    <div class="stats-strip" role="group" aria-label="{% trans 'Academy at a glance' %}" data-scroll-reveal>
       <div class="stat-box">
-        <span class="stat-value">{{ stats.active_members|local_num }}</span>
+        <div class="stat-heading">
+          <span class="stat-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+          <span class="stat-value">{{ stats.active_members|local_num }}</span>
+        </div>
         <span class="stat-label">{% trans "Approved Members" %}</span>
       </div>
       <div class="stat-box">
-        <span class="stat-value">{{ stats.approved_medals|local_num }}</span>
+        <div class="stat-heading">
+          <span class="stat-icon"><i class="bi bi-award" aria-hidden="true"></i></span>
+          <span class="stat-value">{{ stats.approved_medals|local_num }}</span>
+        </div>
         <span class="stat-label">{% trans "Verified Medals" %}</span>
       </div>
       <div class="stat-box">
-        <span class="stat-value">{{ stats.black_belts|local_num }}</span>
+        <div class="stat-heading">
+          <span class="stat-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+          <span class="stat-value">{{ stats.black_belts|local_num }}</span>
+        </div>
         <span class="stat-label">{% trans "Black Belt Holders" %}</span>
       </div>
       <div class="stat-box">
-        <span class="stat-value">{{ stats.competitions|local_num }}</span>
+        <div class="stat-heading">
+          <span class="stat-icon"><i class="bi bi-trophy" aria-hidden="true"></i></span>
+          <span class="stat-value">{{ stats.competitions|local_num }}</span>
+        </div>
         <span class="stat-label">{% trans "Official Championships" %}</span>
       </div>
     </div>
@@ -70,7 +75,7 @@
 </section>
 
 {# 2. Introduction --------------------------------------------------------- #}
-<section class="section">
+<section class="section" data-scroll-reveal>
   <div class="container">
     <div class="row g-5 align-items-start">
       <div class="col-lg-7">
@@ -92,7 +97,7 @@
       <div class="col-lg-5">
         <div class="row g-3">
           <div class="col-sm-6">
-            <div class="card h-100">
+            <div class="card card-hover h-100">
               <div class="card-body">
                 <span class="feature-icon"><i class="bi bi-mortarboard" aria-hidden="true"></i></span>
                 <h3 class="card-title">{% trans "Structured curriculum" %}</h3>
@@ -101,7 +106,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card h-100">
+            <div class="card card-hover h-100">
               <div class="card-body">
                 <span class="feature-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
                 <h3 class="card-title">{% trans "Family-friendly club" %}</h3>
@@ -110,7 +115,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card h-100">
+            <div class="card card-hover h-100">
               <div class="card-body">
                 <span class="feature-icon"><i class="bi bi-clipboard-check" aria-hidden="true"></i></span>
                 <h3 class="card-title">{% trans "Verified records" %}</h3>
@@ -119,7 +124,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card h-100">
+            <div class="card card-hover h-100">
               <div class="card-body">
                 <span class="feature-icon"><i class="bi bi-globe-asia-australia" aria-hidden="true"></i></span>
                 <h3 class="card-title">{% trans "Cultural bridge" %}</h3>
@@ -134,7 +139,7 @@
 </section>
 
 {# 3. Disciplines --------------------------------------------------------- #}
-<section class="section section-alt" id="disciplines">
+<section class="section section-alt" id="disciplines" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>
@@ -194,7 +199,7 @@
 
 {# 4. Featured instructors ------------------------------------------------ #}
 {% if CLUB_INSTRUCTORS %}
-<section class="section">
+<section class="section" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>
@@ -227,7 +232,7 @@
 {% endif %}
 
 {# 5. Achievements & medal winners ---------------------------------------- #}
-<section class="section section-alt">
+<section class="section section-alt" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>
@@ -247,7 +252,7 @@
         {% if recent_achievements %}
         <div class="d-grid gap-3">
           {% for achievement in recent_achievements %}
-          <article class="card">
+          <article class="card card-hover">
             <div class="card-body flex-row align-items-start gap-3">
               <span class="feature-icon mb-0"><i class="bi bi-star" aria-hidden="true"></i></span>
               <div class="flex-grow-1">
@@ -275,7 +280,7 @@
         {% if recent_medals %}
         <div class="d-grid gap-3">
           {% for medal in recent_medals|slice:":4" %}
-          <article class="card">
+          <article class="card card-hover">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
                 {% include "includes/medal_badge.html" with medal_type=medal.medal_type %}
@@ -300,7 +305,7 @@
 
 {# 6. Blog ---------------------------------------------------------------- #}
 {% if latest_posts %}
-<section class="section">
+<section class="section" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>
@@ -342,7 +347,7 @@
 {% endif %}
 
 {# 7. Club activities ----------------------------------------------------- #}
-<section class="section section-alt">
+<section class="section section-alt" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>
@@ -384,7 +389,7 @@
 
 {# 8. Equipment ----------------------------------------------------------- #}
 {% if featured_products %}
-<section class="section">
+<section class="section" data-scroll-reveal>
   <div class="container">
     <div class="section-head">
       <div>

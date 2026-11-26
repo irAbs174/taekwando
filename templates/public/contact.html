@@ -41,7 +41,7 @@
               <h2 class="card-title">{% trans "Club administration & dojo" %}</h2>
               <ul class="icon-list mt-1">
                 {% if CLUB_ADDRESS %}
-                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>{{ CLUB_ADDRESS }}</span></li>
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span><a href="{{ CLUB_MAP_URL }}" target="_blank" rel="noopener noreferrer">{{ CLUB_ADDRESS }}</a></span></li>
                 {% endif %}
                 {% if CLUB_TRAINING_HOURS %}
                 <li><i class="bi bi-clock" aria-hidden="true"></i><span>{{ CLUB_TRAINING_HOURS }}</span></li>

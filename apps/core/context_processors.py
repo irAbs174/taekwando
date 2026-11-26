@@ -57,6 +57,7 @@ def site_context(request) -> dict:
         "SITE_BASE_URL": base_url,
         "CLUB_CONTACT_EMAIL": settings.CLUB_CONTACT_EMAIL,
         "CLUB_PHONE": getattr(settings, "CLUB_PHONE", ""),
+        "CLUB_MAP_URL": getattr(settings, "CLUB_MAP_URL", ""),
         "CLUB_ADDRESS": getattr(settings, "CLUB_ADDRESS", {}).get(current_lang, ""),
         "CLUB_TRAINING_HOURS": getattr(settings, "CLUB_TRAINING_HOURS", {}).get(
             current_lang, ""

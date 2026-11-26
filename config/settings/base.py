@@ -55,21 +55,24 @@ def env_list(name: str, default: list[str] | None = None) -> list[str]:
 # -----------------------------------------------------------------------------
 # Site Metadata
 # -----------------------------------------------------------------------------
-SITE_NAME = os.environ.get("SITE_NAME", "TEAKWONDO")
+SITE_NAME = os.environ.get("SITE_NAME", "باشگاه تکواندو نیایش")
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "http://localhost:8000").rstrip("/")
 DJANGO_ADMIN_URL = os.environ.get("DJANGO_ADMIN_URL", "django-admin/").lstrip("/")
 if not DJANGO_ADMIN_URL.endswith("/"):
     DJANGO_ADMIN_URL += "/"
 CLUB_CONTACT_EMAIL = os.environ.get("CLUB_CONTACT_EMAIL", "info@teakwondo.example.com")
 CLUB_PHONE = os.environ.get("CLUB_PHONE", "+98 21 8888 0000")
+CLUB_MAP_URL = os.environ.get(
+    "CLUB_MAP_URL", "https://maps.app.goo.gl/GACjRuq4QeXWjHSQ6"
+)
 CLUB_ADDRESS = {
     "fa": os.environ.get(
         "CLUB_ADDRESS_FA",
-        "تهران، خیابان ولیعصر، بالاتر از پارک ساعی، پلاک ۱۲۴، طبقه دوم",
+        "تهران | خیابان ولیعصر، بالاتر از چهارراه ولیعصر، کانون فرهنگی تربیتی نیایش",
     ),
     "ko": os.environ.get(
         "CLUB_ADDRESS_KO",
-        "테헤란 발리아스르 거리 124번지 2층 (사이 공원 북쪽)",
+        "테헤란 | 발리아스르 거리, 발리아스르 교차로 위쪽, 니야예시 문화교육원",
     ),
 }
 CLUB_TRAINING_HOURS = {

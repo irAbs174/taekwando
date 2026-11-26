@@ -209,6 +209,47 @@
   }
 
   /* ---------------------------------------------------------------------
+     Homepage scroll depth and section reveals
+     --------------------------------------------------------------------- */
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var depthItems = doc.querySelectorAll("[data-scroll-depth]");
+
+  if (depthItems.length && !prefersReducedMotion) {
+    var depthFrame = 0;
+    var updateDepth = function () {
+      depthFrame = 0;
+      depthItems.forEach(function (item) {
+        var rect = item.getBoundingClientRect();
+        var progress = Math.max(0, Math.min(1, -rect.top / Math.max(rect.height, 1)));
+        item.style.setProperty("--hero-scroll-y", (-progress * 30).toFixed(1) + "px");
+      });
+    };
+    var requestDepthUpdate = function () {
+      if (!depthFrame) depthFrame = window.requestAnimationFrame(updateDepth);
+    };
+
+    window.addEventListener("scroll", requestDepthUpdate, { passive: true });
+    window.addEventListener("resize", requestDepthUpdate, { passive: true });
+    updateDepth();
+  }
+
+  var revealItems = doc.querySelectorAll(".home-page [data-scroll-reveal]");
+  if (revealItems.length && "IntersectionObserver" in window && !prefersReducedMotion) {
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
+
+    root.classList.add("has-scroll-reveal");
+    revealItems.forEach(function (item) {
+      revealObserver.observe(item);
+    });
+  }
+
+  /* ---------------------------------------------------------------------
      Auto-dismiss confirmation alerts (success / info only)
      --------------------------------------------------------------------- */
   doc.querySelectorAll(".messages-stack .alert-success, .messages-stack .alert-info").forEach(function (alert) {

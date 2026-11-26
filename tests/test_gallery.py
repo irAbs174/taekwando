@@ -21,7 +21,7 @@ class GallerySmokeTests(TeakwondoTestCase):
             resp = self.client.get(f"/{lang}/")
             self.assertEqual(resp.status_code, 200, f"home {lang}")
             content = resp.content.decode("utf-8")
-            self.assertIn("hero-banner.png", content, f"banner missing in {lang}")
+            self.assertIn("tech.png", content, f"banner missing in {lang}")
             self.assertIn("hero-banner", content, f"banner class missing in {lang}")
 
     def test_gallery_empty_state(self):

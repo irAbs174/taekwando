@@ -12,6 +12,24 @@ from tests.base import DEFAULT_PASSWORD, TeakwondoTestCase
 
 
 class PublicShellTests(TestCase):
+    def test_niayesh_branding_and_map_address_render(self):
+        for name in ("pages:home", "pages:about", "contact:public"):
+            with translation.override("fa"):
+                url = reverse(name)
+            response = self.client.get(url, HTTP_ACCEPT_LANGUAGE="fa")
+            self.assertEqual(response.status_code, 200)
+            self.assertContains(response, "باشگاه تکواندو نیایش")
+
+            if name != "pages:home":
+                self.assertContains(
+                    response,
+                    "تهران | خیابان ولیعصر، بالاتر از چهارراه ولیعصر، کانون فرهنگی تربیتی نیایش",
+                )
+                self.assertContains(
+                    response,
+                    'href="https://maps.app.goo.gl/GACjRuq4QeXWjHSQ6"',
+                )
+
     def test_persian_shell_is_rtl_and_uses_bootstrap_rtl(self):
         with translation.override("fa"):
             url = reverse("pages:home")
